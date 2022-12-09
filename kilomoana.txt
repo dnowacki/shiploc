@@ -1,13 +1,13 @@
-2022/12/07 14:30:01
+2022/12/08 14:30:01
 currents02km 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
 Current cruise: km2214     ** is logging **
 
-   wh300 2022/11/19  21:41:09 to 2022/12/07  14:29:10  (0 min. ago)
-  os38nb 2022/11/19  21:44:12 to 2022/12/07  14:29:08  (0 min. ago)
+   wh300 2022/11/19  21:41:09 to 2022/12/08  14:28:09  (1 min. ago)
+  os38nb 2022/11/19  21:44:12 to 2022/12/08  14:25:10  (4 min. ago)
 
-approximate lat, lon, depth:   18 6.62741 N  147 6.11842 E   depth=1476
+approximate lat, lon, depth:   18 6.63293 N  147 6.10196 E   depth=1476
 
-link: http://www.google.com/maps/place/18%206.62741N+147%206.11842E
+link: http://www.google.com/maps/place/18%206.63293N+147%206.10196E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
 
-ddrange: 339.6004159 to 340.6004070
-(2022/12/06 14:24:36 to 2022/12/07 14:24:35)
+ddrange: 340.6011594 to 341.6011505
+(2022/12/07 14:25:40 to 2022/12/08 14:25:39)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
+   241 out of 242   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.6
-   min  = 0.41, max = 1.34
-   mean = 0.79, stddev = 0.17
+   mean N = 596, stddev N =  52.7
+   min  = -0.47, max = 1.66
+   mean = 0.77, stddev = 0.25
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km.soest.hawaii.>     2   9   377   139    +16us[  +19us] +/- 1434us
+^* kmroute.km.soest.hawaii.>     2  10   377   957    -28us[  -42us] +/- 1147us
 
-Reference ID: 0A007801, Stratum=3, last offset=0.000002, RMS offset=0.000017
+Reference ID: 0A007801, Stratum=3, last offset=-0.000014, RMS offset=0.000033
 ------------------------------------------
 
 
@@ -66,17 +66,17 @@ Reference ID: 0A007801, Stratum=3, last offset=0.000002, RMS offset=0.000017
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2022/12/07 14:24:08) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2022/12/08 14:20:10) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2022/12/07 14:27:10) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2022/12/08 14:26:09) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 211 days, 21:35,  1 user,  load average: 0.70, 0.36, 0.30
+ 14:30:02 up 212 days, 21:35,  1 user,  load average: 0.06, 0.25, 0.27
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -89,7 +89,17 @@ https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      12 /home/adcp/log/3dayplots_os38nb.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      11 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -100,15 +110,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       4      /home/adcp/www/figures/os38nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_ddaycont.png
-       0      /home/adcp/www/figures/os38nb_ddaycont.png
+       4      /home/adcp/www/figures/os38nb_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
