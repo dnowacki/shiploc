@@ -4,6 +4,7 @@ ships=('armstrong'
        'atl_explorer'
        'atlantis'
        'blueheron'
+       'carson',
        'endeavor'
        'healy'
        'hugh_sharp'
