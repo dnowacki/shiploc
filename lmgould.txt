@@ -1,18 +1,8 @@
-2022/12/16 14:30:01
+2022/12/17 14:30:02
 gentoo3 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: LMG2213  *** not logging ***
-
-   nb150 2022/11/29  02:39:27 to 2022/12/16  12:07:20  (142 min. ago) 2.4 hrs
-  os38nb 2022/11/29  02:39:31 to 2022/12/16  12:07:22  (142 min. ago) 2.4 hrs
-
-approximate lat, lon, depth:   52 46.47537 S   67 58.85539 W   depth=74
-
-link: http://www.google.com/maps/place/52%2046.47537S+67%2058.85539W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
-
---->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
 
 
 
@@ -23,7 +13,7 @@ NOTE: This is the _primary_ computer
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  tick.lmg.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.lmg.usap.g .GNSS.           1 u  444 1024  377    0.215   -0.486   0.238
+*tick.lmg.usap.g .GNSS.           1 u  692 1024  377    0.221   -1.193   0.302
 ------------------------------------------
 
 
@@ -31,7 +21,7 @@ NOTE: This is the _primary_ computer
 
 
 ---------- uptime ------------
- 14:30:02 up 101 days, 23:31,  1 user,  load average: 0.24, 0.05, 0.02
+ 14:30:03 up 102 days, 23:31,  1 user,  load average: 0.01, 0.04, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_report/
@@ -46,14 +36,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_rep
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
+(1) I/O warnings:
+     3 I/O errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
 
-      14 /home/adcp/log/DAS_while_cruise.warn
-      24 /home/adcp/log/DAS_while_cruise.warn.2022-12-15
-(2) expected backup disk not found:
-
---->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
-
+      15 /home/adcp/log/DAS_while_cruise.warn
 
 Figures and files:
 
@@ -64,15 +51,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     141      /home/adcp/www/figures/ktprof_amp_lastens.png
-     141      /home/adcp/www/figures/os38nb_lastens.png
-     141      /home/adcp/www/figures/nb150_lastens.png
+    1582      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1582      /home/adcp/www/figures/os38nb_lastens.png
+    1582      /home/adcp/www/figures/nb150_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     141      /home/adcp/www/figures/os38nb_ddaycont.png
-     141      /home/adcp/www/figures/nb150_ddaycont.png
+    1582      /home/adcp/www/figures/os38nb_ddaycont.png
+    1582      /home/adcp/www/figures/nb150_ddaycont.png
 
 
 
