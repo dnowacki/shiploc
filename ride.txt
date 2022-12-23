@@ -1,29 +1,91 @@
-2022/12/21 14:30:01
+2022/12/22 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SR2215  *** not logging ***
+Current cruise: SR2215     ** is logging **
 
+   wh300 2022/12/21  16:21:29 to 2022/12/22  14:27:52  (2 min. ago)
+  os38nb 2022/12/21  16:44:55 to 2022/12/22  14:24:55  (5 min. ago)
 
-no positions found from filelist seapath_ser/*.gps.rbin
+approximate lat, lon, depth:   32 39.49478 N  121 21.46853 W   depth=3898
 
+link: http://www.google.com/maps/place/32%2039.49478N+121%2021.46853W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ hydrins_ser statistics ------
+===========================
+seapath_ser-hydrins_ser statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 354.6813477 to 355.6013130
+(2022/12/21 16:21:08 to 2022/12/22 14:25:53)
+all hydrins_ser messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   260 out of 260   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.0
+   min  = -0.13, max = 0.16
+   mean = -0.00, stddev = 0.05
+
+===========================
+------ trimble_ser statistics ------
+===========================
+seapath_ser-trimble_ser statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 354.6813477 to 355.6013361
+(2022/12/21 16:21:08 to 2022/12/22 14:25:55)
+all trimble_ser messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   260 out of 260   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.0
+   min  = -0.88, max = 0.67
+   mean = -0.02, stddev = 0.15
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.35   2 u  299 1024  377    0.188   -0.356   0.218
+*sr-bb-gw-das.uc 100.124.100.34   2 u  303 1024  377    0.213    1.912   4.192
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2022/12/22 14:25:52) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os38nb recent ping statistics
+
+(2022/12/22 14:19:55) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 22:17,  1 user,  load average: 0.08, 0.02, 0.01
+ 14:30:02 up 1 day, 22:17,  1 user,  load average: 0.21, 0.29, 0.42
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -38,8 +100,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      2 /home/adcp/log/quick_os38nb.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -50,10 +115,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
