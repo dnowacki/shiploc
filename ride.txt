@@ -1,13 +1,13 @@
-2022/12/26 14:30:01
+2022/12/27 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SR2215     ** is logging **
 
-   wh300 2022/12/21  16:21:29 to 2022/12/26  14:27:52  (2 min. ago)
-  os38nb 2022/12/21  16:44:55 to 2022/12/26  14:24:53  (5 min. ago)
+   wh300 2022/12/21  16:21:29 to 2022/12/27  14:29:52  (0 min. ago)
+  os38nb 2022/12/21  16:44:55 to 2022/12/27  14:24:53  (5 min. ago)
 
-approximate lat, lon, depth:   32 34.70789 N  118 31.20375 W   depth=1138
+approximate lat, lon, depth:   32 37.32634 N  117 19.43305 W   depth=95
 
-link: http://www.google.com/maps/place/32%2034.70789N+118%2031.20375W
+link: http://www.google.com/maps/place/32%2037.32634N+117%2019.43305W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,32 +24,32 @@ no heading correction device specified===========================
 ===========================
 seapath_ser-hydrins_ser statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 358.6015097 to 359.6014981
-(2022/12/25 14:26:10 to 2022/12/26 14:26:09)
+ddrange: 359.6015329 to 360.6015213
+(2022/12/26 14:26:12 to 2022/12/27 14:26:11)
 all hydrins_ser messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   286 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.0
-   min  = -0.18, max = 0.18
-   mean = 0.00, stddev = 0.06
+   mean N = 300, stddev N =  16.4
+   min  = -0.16, max = 4.83
+   mean = 0.12, stddev = 0.33
 
 ===========================
 ------ trimble_ser statistics ------
 ===========================
 seapath_ser-trimble_ser statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 358.6015213 to 359.6015097
-(2022/12/25 14:26:11 to 2022/12/26 14:26:10)
+ddrange: 359.6015444 to 360.6015329
+(2022/12/26 14:26:13 to 2022/12/27 14:26:12)
 all trimble_ser messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.0
-   min  = -0.47, max = 0.28
-   mean = -0.03, stddev = 0.10
+   min  = -0.44, max = 0.24
+   mean = -0.04, stddev = 0.10
 
 
 === Sonar Pingtype Summary =====
@@ -68,24 +68,24 @@ os38 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  599 1024  377    0.160    0.630   0.305
+*_gateway        100.124.100.34   2 u  146 1024  377    0.224    0.045   0.036
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2022/12/26 14:25:52) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2022/12/27 14:25:52) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38nb recent ping statistics
 
-(2022/12/26 14:19:53) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2022/12/27 14:19:53) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 5 days, 22:17,  1 user,  load average: 4.53, 2.66, 1.42
+ 14:30:02 up 6 days, 22:17,  1 user,  load average: 0.18, 0.35, 0.39
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -97,7 +97,14 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      16 /home/adcp/log/3dayplots_os38nb.warn
+      340 /home/adcp/log/lastensq_os38nb.warn
+      856 /home/adcp/log/lastensq_wh300.warn
 
 Figures and files:
 
@@ -109,8 +116,8 @@ Gyro logging and backup:
 Checking updating of 5-minute plots:
 age (minutes)          filename
        5      /home/adcp/www/figures/os38nb_lastens.png
-       2      /home/adcp/www/figures/wh300_lastens.png
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
