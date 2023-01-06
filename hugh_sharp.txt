@@ -1,25 +1,32 @@
-2023/01/04 14:30:01
-currents01hs 4.15.0-20-generic (bionic "Ubuntu 18.04 LTS")
+2023/01/05 14:30:01
+currents02hs 5.4.0-26-generic (focal "Ubuntu 20.04 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _primary_ computer
+NOTE: This is the _secondary_ computer
 
 
 
 
 
 
----------- ntpq -p ------------
-     remote           refid      st t when poll reach   delay   offset  jitter
-==============================================================================
- 192.168.20.245  .POOL.          16 p    -   64    0    0.000    0.000   0.000
+
+using chrony
+---------- chronyc tracking ------------
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* 192.168.20.245                1   8   377    29  +9453ns[  +17us] +/- 1224us
+
+Reference ID: C0A814F5, Stratum=2, last offset=0.000008, RMS offset=0.000058
 ------------------------------------------
 
 
 
 
+
+
 ---------- uptime ------------
- 14:30:02 up 28 days, 15:45,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 20:32,  1 user,  load average: 0.02, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -35,8 +42,12 @@ https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_
 Summary of warnings:
 ______________________
 
-(1) I/O warnings:
-     3 I/O errors in last 2 /var/log/syslog
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -47,13 +58,12 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   77893      /home/adcp/www/figures/wh300_lastens.png
-   77893      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1226      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1226      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   77893      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
