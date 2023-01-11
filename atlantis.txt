@@ -1,10 +1,7 @@
-2023/01/09 14:30:01
-atcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
-Current cruise: AT50-07  *** not logging ***
-
-
-no positions found from filelist seapath/*.gps.rbin
-
+2023/01/10 14:30:01
+atcurrents02 5.11.0-27-generic (focal "Ubuntu 20.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -18,9 +15,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.100.161.3                  2  10   377   637  -3107us[-2889us] +/-   39ms
+^* timeserver.atlantis.whoi>     1   6   377    56    +12us[  +12us] +/-   50us
 
-Reference ID: 0A64A103, Stratum=3, last offset=0.000218, RMS offset=0.000329
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
@@ -29,7 +26,7 @@ Reference ID: 0A64A103, Stratum=3, last offset=0.000218, RMS offset=0.000329
 
 
 ---------- uptime ------------
- 14:30:52 up 51 days, 3 min,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 19:22,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -41,7 +38,14 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      4 /home/adcp/log/zmq_monitor.warn
 
 Figures and files:
 
@@ -60,6 +64,5 @@ age (minutes)          filename
 
 
 local_status_mailto:
-
 
 
