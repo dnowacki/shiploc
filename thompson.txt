@@ -1,13 +1,70 @@
-2023/01/10 14:30:01
-currents03tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2023/01/11 14:30:02
+currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
+Current cruise: PostShipyard2022     ** is logging **
+
+   wh300 2023/01/10  22:23:42 to 2023/01/11  14:29:42  (0 min. ago)
+  os75nb 2023/01/10  22:26:43 to 2023/01/11  14:26:42  (3 min. ago)
+
+approximate lat, lon, depth:   47 38.97384 N  122 18.78779 W   depth=-1
+
+link: http://www.google.com/maps/place/47%2038.97384N+122%2018.78779W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _secondary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv5")
+===========================
+------ posmv5 statistics ------
+===========================
+gyro1-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
+
+ddrange:  9.9317414 to 10.5988811
+(2023/01/10 22:21:42 to 2023/01/11 14:22:23)
+all posmv5 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   192 out of 192   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.2
+   min  = -0.53, max = 0.16
+   mean = -0.19, stddev = 0.07
+
+===========================
+------ comparitor statistics ------
+===========================
+gyro1-comparitor statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange:  9.9317414 to 10.5988926
+(2023/01/10 22:21:42 to 2023/01/11 14:22:24)
+all comparitor messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   192 out of 192   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.2
+   min  = 0.00, max = 0.00
+   mean = 0.00, stddev = 0.00
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,3)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
@@ -15,18 +72,27 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.43.11.10                   1  10   377   660    +14us[  +16us] +/-  472us
+^* 10.43.11.10                   1   9   377   397  +6314ns[+6716ns] +/-  536us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000002, RMS offset=0.000010
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000000, RMS offset=0.000025
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/01/11 14:27:42) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os75nb recent ping statistics
+
+(2023/01/11 14:21:42) ens = 300 sec, 132 pings, (2.27 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 4 days, 17:48,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 5 days, 17:48,  1 user,  load average: 0.35, 0.27, 0.23
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -41,7 +107,24 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      84 /home/adcp/log/3dayplots_os75nb.warn
+      3168 /home/adcp/log/3dayplots_os75nb.warn.2023-01-10
+      3132 /home/adcp/log/3dayplots_wh300.warn
+      5218 /home/adcp/log/DAS_while_logging.warn
+      34 /home/adcp/log/lastensq_os75nb.warn
+      2959 /home/adcp/log/lastensq_os75nb.warn.2023-01-10
+      34 /home/adcp/log/lastensq_wh300.warn
+      7408 /home/adcp/log/lastensq_wh300.warn.2023-01-10
+      2314 /home/adcp/log/lastfewvec_os75nb.warn
+      5671 /home/adcp/log/lastfewvec_wh300.warn
+      5397 /home/adcp/log/quick_os75nb.warn
+      13230 /home/adcp/log/quick_wh300.warn
+      1566 /home/adcp/log/update_hbins_wh300.warn
 
 Figures and files:
 
@@ -52,15 +135,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  329731      /home/adcp/www/figures/ktprof_amp_lastens.png
-  329731      /home/adcp/www/figures/os75nb_lastens.png
-  329731      /home/adcp/www/figures/wh300_lastens.png
+       3      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  329731      /home/adcp/www/figures/wh300_ddaycont.png
-  329731      /home/adcp/www/figures/os75nb_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
