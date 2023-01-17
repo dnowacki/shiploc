@@ -1,13 +1,13 @@
-2023/01/15 14:30:01
+2023/01/16 14:30:02
 gentoo3 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: LMG2301_part2     ** is logging **
 
-   nb150 2023/01/03  00:23:16 to 2023/01/15  14:25:28  (4 min. ago)
-  os38nb 2023/01/03  00:23:21 to 2023/01/15  14:25:30  (4 min. ago)
+   nb150 2023/01/03  00:23:16 to 2023/01/16  14:25:30  (4 min. ago)
+  os38nb 2023/01/03  00:23:21 to 2023/01/16  14:25:29  (4 min. ago)
 
-approximate lat, lon, depth:   67 42.84375 S   68 9.60705 W   depth=492
+approximate lat, lon, depth:   66 40.90093 S   72 30.77427 W   depth=3385
 
-link: http://www.google.com/maps/place/67%2042.84375S+68%209.60705W
+link: http://www.google.com/maps/place/66%2040.90093S+72%2030.77427W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath330 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 13.5977988 to 14.5977788
-(2023/01/14 14:20:50 to 2023/01/15 14:20:48)
+ddrange: 14.5940287 to 15.5940086
+(2023/01/15 14:15:24 to 2023/01/16 14:15:22)
 all seapath330 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -1.72, max = -0.95
-   mean = -1.35, stddev = 0.19
+   min  = -1.58, max = -0.60
+   mean = -0.99, stddev = 0.21
 
 
 === Sonar Pingtype Summary =====
@@ -42,12 +42,12 @@ statistics of good data:
 nb150: triggering is not possible
 nb150 BB:  on
 nb150 NB:  on
-nb150 BT:  on
+nb150 BT:      off
 
 os38: Triggering not used (CX0,0)
 os38 BB:       off
 os38 NB:  on
-os38 BT:  on
+os38 BT:      off
 
 ===========================
 
@@ -55,24 +55,24 @@ os38 BT:  on
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  tick.lmg.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.lmg.usap.g .GNSS.           1 u  294 1024  377    0.226    0.058   0.194
+*tick.lmg.usap.g .GNSS.           1 u  387 1024  377    0.231    0.035   0.051
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2023/01/15 14:20:30) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2023/01/16 14:20:30) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 nb150 recent ping statistics
 
-(2023/01/15 14:20:30) ens = 300 sec, 119 pings, (2.52 sec/ping)
+(2023/01/16 14:20:29) ens = 300 sec, 248 pings, (1.21 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 12 days, 14:14,  1 user,  load average: 0.01, 0.10, 0.14
+ 14:30:02 up 13 days, 14:14,  1 user,  load average: 0.16, 0.13, 0.14
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_report/
@@ -87,12 +87,9 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_rep
 Summary of warnings:
 ______________________
 
-(1) I/O warnings:
-  3171 I/O errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      4 /home/adcp/log/3dayplots_nb150.warn
-      4 /home/adcp/log/3dayplots_nb150.warn.2023-01-14
+      4 /home/adcp/log/3dayplots_os38nb.warn
 
 Figures and files:
 
@@ -110,7 +107,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/nb150_ddaycont.png
+       5      /home/adcp/www/figures/nb150_ddaycont.png
        4      /home/adcp/www/figures/os38nb_ddaycont.png
 
 

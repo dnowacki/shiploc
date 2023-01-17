@@ -1,13 +1,13 @@
-2023/01/15 14:30:01
+2023/01/16 14:30:01
 currents02km 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
 Current cruise: km2302-post     ** is logging **
 
-   wh300 2023/01/11  15:11:44 to 2023/01/15  14:29:45  (0 min. ago)
-  os38nb 2023/01/11  15:14:44 to 2023/01/15  14:24:47  (5 min. ago)
+   wh300 2023/01/11  15:11:44 to 2023/01/16  14:29:45  (0 min. ago)
+  os38nb 2023/01/11  15:14:44 to 2023/01/16  14:24:46  (5 min. ago)
 
-approximate lat, lon, depth:   21 18.90466 N  157 52.64712 W   depth=-2
+approximate lat, lon, depth:   21 18.90446 N  157 52.64705 W   depth=-2
 
-link: http://www.google.com/maps/place/21%2018.90466N+157%2052.64712W
+link: http://www.google.com/maps/place/21%2018.90446N+157%2052.64705W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
 
-ddrange: 13.6009622 to 14.6009559
-(2023/01/14 14:25:23 to 2023/01/15 14:25:23)
-all posmv messages:  (100%)  were good  [using available QC]
+ddrange: 14.6009559 to 15.6009497
+(2023/01/15 14:25:23 to 2023/01/16 14:25:22)
+all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.4
-   min  = -0.09, max = 1.02
-   mean = 0.51, stddev = 0.19
+   min  = 0.03, max = 0.94
+   mean = 0.52, stddev = 0.17
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km.soest.hawaii.>     2  10   377   984    -17us[  -23us] +/-  750us
+^* kmroute.km.soest.hawaii.>     2  10   377   760    +12us[  +14us] +/- 1514us
 
-Reference ID: 0A007801, Stratum=3, last offset=-0.000006, RMS offset=0.000033
+Reference ID: 0A007801, Stratum=3, last offset=0.000002, RMS offset=0.000025
 ------------------------------------------
 
 
@@ -66,17 +66,17 @@ Reference ID: 0A007801, Stratum=3, last offset=-0.000006, RMS offset=0.000033
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2023/01/15 14:19:47) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2023/01/16 14:19:46) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2023/01/15 14:25:45) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2023/01/16 14:25:45) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 10 days, 15:22,  1 user,  load average: 0.20, 0.21, 0.22
+ 14:30:02 up 11 days, 15:22,  1 user,  load average: 0.34, 0.31, 0.28
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -94,7 +94,8 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      4 /home/adcp/log/lastensq_os38nb.warn
+      8 /home/adcp/log/lastensq_os38nb.warn
+      1 /home/adcp/log/lastensq_wh300.warn
 
 Figures and files:
 
@@ -106,8 +107,8 @@ Gyro logging and backup:
 Checking updating of 5-minute plots:
 age (minutes)          filename
        5      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
