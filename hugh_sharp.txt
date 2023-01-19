@@ -1,8 +1,9 @@
-2023/01/17 14:30:01
-currents02hs 5.4.0-26-generic (focal "Ubuntu 20.04 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
-NOTE: This is the _secondary_ computer
+2023/01/18 19:26:42
+currents01hs 5.15.0-46-generic (focal "Ubuntu 20.04.5 LTS")
+Current cruise: HRS2023-01-17-test  *** not logging ***
+
+ wh300 -- no data yet
+NOTE: This is the _primary_ computer
 
 
 
@@ -15,9 +16,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.20.245                1   9   377    15   -155us[ -255us] +/- 1238us
+^* 192.168.20.245                1   7   377    24    +56us[  +54us] +/- 1276us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000100, RMS offset=0.000052
+Reference ID: C0A814F5, Stratum=2, last offset=-0.000002, RMS offset=0.000018
 ------------------------------------------
 
 
@@ -26,7 +27,7 @@ Reference ID: C0A814F5, Stratum=2, last offset=-0.000100, RMS offset=0.000052
 
 
 ---------- uptime ------------
- 14:30:02 up 12 days, 20:32,  1 user,  load average: 0.10, 0.05, 0.01
+ 19:26:43 up 1 day,  2:59,  2 users,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -39,7 +40,11 @@ https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+    12 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -50,13 +55,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    6443      /home/adcp/www/figures/ktprof_amp_lastens.png
-    6443      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    6443      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
