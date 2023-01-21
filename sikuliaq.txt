@@ -1,82 +1,27 @@
-2023/01/20 01:27:01
+2023/01/20 14:30:02
 currents01skq 5.4.0-137-generic (focal "Ubuntu 20.04.5 LTS")
-Current cruise: skq2023-01-19-inport-test-focal     ** is logging **
-
-  os150nb 2023/01/19  23:29:48 to 2023/01/20  01:24:48  (2 min. ago)
-
-approximate lat, lon, depth:   47 38.97274 N  122 18.79014 W   depth=-1
-
-link: http://www.google.com/maps/place/47%2038.97274N+122%2018.79014W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- seapath statistics ------
-===========================
-gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 18.9755580 to 19.0590881
-(2023/01/19 23:24:48 to 2023/01/20 01:25:05)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   24 out of 24   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = 0.21, max = 0.26
-   mean = 0.24, stddev = 0.02
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:       off
-wh300 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:       off
-os75 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:       off
-os38 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-+shp-ntp-0.sikul .GPS.            1 u  195  256  377    0.127   -0.024   0.025
-*shp-ntp-1.sikul .GPS.            1 u  204  256  377    0.098   -0.043   0.015
++shp-ntp-0.sikul .GPS.            1 u  331 1024  377    0.102   -0.311   0.243
+*shp-ntp-1.sikul .GPS.            1 u  682 1024  377    0.129   -0.271   0.214
 ------------------------------------------
 
-
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2023/01/20 01:19:48) ens = 300 sec, 244 pings, (1.23 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 01:27:05 up  3:42,  1 user,  load average: 0.30, 0.31, 0.19
+ 14:30:03 up 16:45,  2 users,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -95,8 +40,9 @@ ______________________
     37 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      130 /home/adcp/log/3dayplots_os150nb.warn
+      170 /home/adcp/log/3dayplots_os150nb.warn
       3 /home/adcp/log/3dayplots_os150nb.warn.2023-01-19
+      7 /home/adcp/log/daily.py.warn
       1 /home/adcp/log/lastfewvec_os150nb.warn
 
 Figures and files:
@@ -108,13 +54,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+     588      /home/adcp/www/figures/os150nb_lastens.png
+     588      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
+     588      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
