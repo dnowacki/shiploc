@@ -1,14 +1,14 @@
-2023/01/21 14:30:02
+2023/01/22 17:23:34
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SR2302     ** is logging **
 
-   wh300 2023/01/20  21:57:14 to 2023/01/21  14:29:13  (0 min. ago)
-  os150nb 2023/01/20  22:00:14 to 2023/01/21  14:25:14  (4 min. ago)
-  os38nb 2023/01/20  22:00:17 to 2023/01/21  14:25:14  (4 min. ago)
+   wh300 2023/01/20  21:57:14 to 2023/01/22  17:23:14  (0 min. ago)
+  os150nb 2023/01/20  22:00:14 to 2023/01/22  17:20:14  (3 min. ago)
+  os38nb 2023/01/20  22:00:17 to 2023/01/22  17:20:14  (3 min. ago)
 
-approximate lat, lon, depth:   31 44.73589 N  121 17.08035 W   depth=3687
+approximate lat, lon, depth:   30 37.99841 N  126 22.09955 W   depth=4798
 
-link: http://www.google.com/maps/place/31%2044.73589N+121%2017.08035W
+link: http://www.google.com/maps/place/30%2037.99841N+126%2022.09955W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ no heading correction device specified===========================
 ===========================
 seapath_ser-hydrins_ser statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 19.9133616 to 20.6018801
-(2023/01/20 21:55:14 to 2023/01/21 14:26:42)
+ddrange: 20.7165213 to 21.7165097
+(2023/01/21 17:11:47 to 2023/01/22 17:11:46)
 all hydrins_ser messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   198 out of 198   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.1
-   min  = -0.06, max = 0.10
-   mean = 0.02, stddev = 0.03
+   mean N = 301, stddev N =  0.0
+   min  = -0.13, max = 0.14
+   mean = 0.00, stddev = 0.05
 
 ===========================
 ------ trimble_ser statistics ------
 ===========================
 seapath_ser-trimble_ser statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 19.9133616 to 20.6019032
-(2023/01/20 21:55:14 to 2023/01/21 14:26:44)
+ddrange: 20.7165329 to 21.7165213
+(2023/01/21 17:11:48 to 2023/01/22 17:11:47)
 all trimble_ser messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   198 out of 198   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.1
-   min  = -0.82, max = 0.58
-   mean = -0.04, stddev = 0.17
+   mean N = 301, stddev N =  0.0
+   min  = -0.70, max = 0.49
+   mean = -0.02, stddev = 0.13
 
 
 === Sonar Pingtype Summary =====
@@ -74,32 +74,28 @@ os38 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u   81 1024  377    0.177    0.524   0.106
+*_gateway        100.124.100.34   2 u   15 1024  377    0.182   -0.193   0.179
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2023/01/21 14:27:13) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2023/01/22 17:21:14) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2023/01/21 14:20:14) ens = 300 sec, 272 pings, (1.10 sec/ping)
+(2023/01/22 17:15:14) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 os38nb recent ping statistics
 
-(2023/01/21 14:20:14) ens = 300 sec, 100 pings, (3.00 sec/ping)
-
-os150bb recent ping statistics
-
-(2023/01/20 15:29:39) ens = 300 sec, 137 pings, (2.19 sec/ping)
+(2023/01/22 17:15:14) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 18 days, 21:38,  1 user,  load average: 0.35, 0.60, 0.68
+ 17:23:36 up 20 days, 31 min,  2 users,  load average: 0.53, 0.45, 0.47
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -116,19 +112,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      19 /home/adcp/log/3dayplots_os150bb.warn
-      16 /home/adcp/log/3dayplots_os38nb.warn
-      276 /home/adcp/log/3dayplots_wh300.warn
-      1 /home/adcp/log/DAS_while_logging.warn
-      342 /home/adcp/log/DAS_while_logging.warn.2023-01-20
-      49 /home/adcp/log/grab_pings_wh300.warn
-      1594 /home/adcp/log/lastensq_wh300.warn
-      2 /home/adcp/log/lastfewvec_os150nb.warn
-      2 /home/adcp/log/lastfewvec_os38nb.warn
-      505 /home/adcp/log/lastfewvec_wh300.warn
-      2 /home/adcp/log/quick_os150nb.warn
-      1 /home/adcp/log/quick_os38nb.warn
-      1120 /home/adcp/log/quick_wh300.warn
+      14 /home/adcp/log/3dayplots_os38nb.warn
 
 Figures and files:
 
@@ -139,17 +123,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_lastens.png
-       4      /home/adcp/www/figures/os38nb_lastens.png
+       3      /home/adcp/www/figures/os150nb_lastens.png
+       3      /home/adcp/www/figures/os38nb_lastens.png
        0      /home/adcp/www/figures/wh300_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/wh300_ddaycont.png
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
-       4      /home/adcp/www/figures/os38nb_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/os150nb_ddaycont.png
+       3      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
