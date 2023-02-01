@@ -1,6 +1,9 @@
-2023/01/30 14:15:02
+2023/01/31 14:15:03
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: sp2023-01-29-ntptest01     ** is logging **
+Current cruise: sp2023-01-30-ntptest01     ** is logging **
+
+
+no positions found from filelist gp150/*.gps.rbin
 
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
@@ -35,7 +38,7 @@ ntp is not running
 
 
 ---------- uptime ------------
- 14:15:04 up 95 days, 15:46,  1 user,  load average: 0.07, 0.05, 0.07
+ 14:15:05 up 96 days, 15:46,  1 user,  load average: 0.12, 0.08, 0.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -52,12 +55,20 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      106 /home/adcp/log/DAS_while_logging.warn
-      477 /home/adcp/log/update_hbins_os150nb.warn
-(2) rbin warnings:
- 
-gpshead gph  96880    0.50    0.02       1.0       0     2     1     0     0
-gpshead gph  96880    0.50    0.02       1.0       0     2     1     0     0
+      114 /home/adcp/log/DAS_while_logging.warn
+      178 /home/adcp/log/DAS_while_logging.warn.2023-01-30
+      456 /home/adcp/log/update_hbins_os150nb.warn
+      785 /home/adcp/log/update_hbins_os150nb.warn.2023-01-30
+(2) proc sensor incompatibilities:
+ - pitch_inst (abxtwo_b2_udp) not in sensor_cfg.py subdirs
+ - roll_inst (abxtwo_b2_udp) not in sensor_cfg.py subdirs
+ - hcorr_inst (abxtwo_b2_udp) not in sensor_cfg.py subdirs
+heading quality: hdg_inst_msgs
+ - abxtwo_b2_udp not in sensor_cfg.py subdirs
+(3) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 29.832385
+
 
 Figures and files:
 
