@@ -1,98 +1,21 @@
-2023/02/02 14:30:01
+2023/02/03 14:30:01
 currents01ae 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: Pierside_PostAE2303     ** is logging **
+Current cruise: AE2304  *** not logging ***
 
-  os75bb 2023/01/28  20:03:57 to 2023/02/02  14:28:56  (1 min. ago)
-  os75nb 2023/01/28  20:03:57 to 2023/02/02  14:28:56  (1 min. ago)
+  os75bb 2023/02/03  11:01:58 to 2023/02/03  12:36:57  (113 min. ago) 1.9 hrs
+  os75nb 2023/02/03  11:01:58 to 2023/02/03  12:36:57  (113 min. ago) 1.9 hrs
 
-approximate lat, lon, depth:   32 22.19998 N   64 41.75349 W   depth=-6
+approximate lat, lon, depth:   32 22.20132 N   64 41.75234 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2022.19998N+64%2041.75349W
+link: http://www.google.com/maps/place/32%2022.20132N+64%2041.75234W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-jrc_hdg4800-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 31.6038310 to 32.6038194
-(2023/02/01 14:29:31 to 2023/02/02 14:29:30)
-all abxtwo messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  1.7
-   min  = -1.52, max = 0.71
-   mean = -0.23, stddev = 0.34
-
-===========================
------- adu800 statistics ------
-===========================
-jrc_hdg4800-adu800 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 31.6038426 to 32.6038310
-(2023/02/01 14:29:32 to 2023/02/02 14:29:31)
-all adu800 messages:  (98%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   281 out of 286   (98%) were good
-statistics of good data:
-   mean N = 293, stddev N =  39.9
-   min  = -2.31, max = 0.21
-   mean = -0.82, stddev = 0.35
-
-===========================
------- jrc_port statistics ------
-===========================
-jrc_hdg4800-jrc_port statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 31.6038542 to 32.6038426
-(2023/02/01 14:29:33 to 2023/02/02 14:29:32)
-all jrc_port messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = 0.00, max = 0.00
-   mean = 0.00, stddev = 0.00
-
-===========================
------- jrc_stbd statistics ------
-===========================
-jrc_hdg4800-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 31.6038889 to 32.6038657
-(2023/02/01 14:29:36 to 2023/02/02 14:29:34)
-all jrc_stbd messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -2.60, max = 1.80
-   mean = 0.02, stddev = 0.64
-
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -100,27 +23,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    32   -484ns[-2135ns] +/-   55us
+^* 192.168.51.9                  1   7   377    83  -1835ns[  -17us] +/-   78us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000002, RMS offset=0.000004
+Reference ID: C0A83309, Stratum=2, last offset=-0.000015, RMS offset=0.000006
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2023/02/02 14:23:56) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/02/02 14:23:56) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 183 days, 16:19,  1 user,  load average: 0.75, 0.30, 0.19
+ 14:30:02 up 184 days, 16:19,  1 user,  load average: 0.04, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -137,16 +51,15 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      88 /home/adcp/log/DAS_while_logging.warn
-      144 /home/adcp/log/DAS_while_logging.warn.2023-02-01
-      58 /home/adcp/log/hcorrstats_adu800.warn
-      96 /home/adcp/log/hcorrstats_adu800.warn.2023-02-01
-      20 /home/adcp/log/lastensq_os75bb.warn
-      188 /home/adcp/log/lastensq_os75bb.warn.2023-02-01
-      30 /home/adcp/log/lastensq_os75nb.warn
-      196 /home/adcp/log/lastensq_os75nb.warn.2023-02-01
-      12 /home/adcp/log/update_hbins_os75nb.warn
-      36 /home/adcp/log/update_hbins_os75nb.warn.2023-02-01
+      74 /home/adcp/log/DAS_while_logging.warn
+      144 /home/adcp/log/DAS_while_logging.warn.2023-02-02
+      42 /home/adcp/log/hcorrstats_adu800.warn
+      96 /home/adcp/log/hcorrstats_adu800.warn.2023-02-02
+      86 /home/adcp/log/lastensq_os75bb.warn
+      18 /home/adcp/log/lastensq_os75nb.warn
+      97 /home/adcp/log/lastensq_os75nb.warn.2023-02-02
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
 
 Figures and files:
 
@@ -157,15 +70,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
+     108      /home/adcp/www/figures/os75bb_lastens.png
+     108      /home/adcp/www/figures/ktprof_amp_lastens.png
+     108      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+     108      /home/adcp/www/figures/os75bb_ddaycont.png
+     108      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
