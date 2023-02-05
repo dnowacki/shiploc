@@ -1,29 +1,99 @@
-2023/02/03 14:15:02
+2023/02/04 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: RR2301  *** not logging ***
+Current cruise: RR2301     ** is logging **
 
+  os150nb 2023/02/04  00:16:29 to 2023/02/04  14:13:29  (1 min. ago)
 
-no positions found from filelist seapath/*.gps.rbin
+approximate lat, lon, depth:   49 45.82708 S   50 36.98739 W   depth=2747
 
+link: http://www.google.com/maps/place/49%2045.82708S+50%2036.98739W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is a _virtual_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ phins statistics ------
+===========================
+gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
+
+ddrange: 34.0093753 to 34.5930443
+(2023/02/04 00:13:30 to 2023/02/04 14:13:59)
+all phins messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   168 out of 168   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  2.3
+   min  = 0.04, max = 0.26
+   mean = 0.14, stddev = 0.04
+
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 34.0093753 to 34.5930559
+(2023/02/04 00:13:30 to 2023/02/04 14:14:00)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   168 out of 168   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.48, max = -0.18
+   mean = -0.34, stddev = 0.05
+
+===========================
+------ abxtwo statistics ------
+===========================
+gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 34.0093753 to 34.5930791
+(2023/02/04 00:13:30 to 2023/02/04 14:14:02)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   168 out of 168   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.49, max = -0.21
+   mean = -0.39, stddev = 0.05
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  305 1024  377    0.322    0.167   0.239
+*rr-bb-gw-das.uc 100.124.36.34    2 u  109 1024  377    0.216    0.025   0.105
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2023/02/04 14:10:30) ens = 180 sec, 147 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 82 days, 21:27,  1 user,  load average: 0.09, 0.07, 0.07
+ 14:15:03 up 83 days, 21:27,  1 user,  load average: 0.78, 0.48, 0.34
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -35,7 +105,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -46,10 +122,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
