@@ -1,12 +1,12 @@
-2023/02/07 14:15:02
+2023/02/08 14:15:02
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2301     ** is logging **
 
-  os150nb 2023/02/04  00:16:29 to 2023/02/07  14:13:29  (1 min. ago)
+  os150nb 2023/02/04  00:16:29 to 2023/02/08  14:15:04  (0 min. ago)
 
-approximate lat, lon, depth:   48 30.09858 S   32 6.41781 W   depth=5103
+approximate lat, lon, depth:   48 29.98965 S   24 49.90041 W   depth=4201
 
-link: http://www.google.com/maps/place/48%2030.09858S+32%206.41781W
+link: http://www.google.com/maps/place/48%2029.98965S+24%2049.90041W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,48 +24,48 @@ NOTE: This is a _virtual_ computer
 ===========================
 gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
 
-ddrange: 36.5931601 to 37.5931485
-(2023/02/06 14:14:09 to 2023/02/07 14:14:08)
-all phins messages:  (99%)  were good  [using available QC]
+ddrange: 37.5879980 to 38.5879865
+(2023/02/07 14:06:43 to 2023/02/08 14:06:42)
+all phins messages:  (8%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   283 out of 283   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.6
-   min  = -0.00, max = 0.37
-   mean = 0.17, stddev = 0.07
+   mean N = 301, stddev N =  1.0
+   min  = 0.19, max = 0.57
+   mean = 0.42, stddev = 0.09
 
 ===========================
 ------ seapath statistics ------
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 36.5931832 to 37.5931716
-(2023/02/06 14:14:11 to 2023/02/07 14:14:10)
-all seapath messages:  (100%)  were good  [using available QC]
+ddrange: 37.5880212 to 38.5880096
+(2023/02/07 14:06:45 to 2023/02/08 14:06:44)
+all seapath messages:  (8%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   283 out of 283   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.50, max = -0.11
-   mean = -0.33, stddev = 0.07
+   min  = -0.30, max = 0.08
+   mean = -0.09, stddev = 0.10
 
 ===========================
 ------ abxtwo statistics ------
 ===========================
 gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 36.5932064 to 37.5931948
-(2023/02/06 14:14:13 to 2023/02/07 14:14:12)
-all abxtwo messages:  (99%)  were good  [using available QC]
+ddrange: 37.5880443 to 38.5880328
+(2023/02/07 14:06:47 to 2023/02/08 14:06:46)
+all abxtwo messages:  (8%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   283 out of 283   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.63, max = -0.14
-   mean = -0.33, stddev = 0.09
+   mean N = 301, stddev N =  0.7
+   min  = -0.35, max = 0.07
+   mean = -0.12, stddev = 0.10
 
 
 === Sonar Pingtype Summary =====
@@ -80,20 +80,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  313 1024  377    0.262    0.173   0.019
+*100.124.36.1 (r 100.124.36.34    2 u 1043 1024  377    0.243    0.377   0.376
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/02/07 14:10:29) ens = 180 sec, 147 pings, (1.22 sec/ping)
+(2023/02/08 14:12:04) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 86 days, 21:27,  1 user,  load average: 0.93, 0.44, 0.31
+ 14:15:23 up 22:09,  1 user,  load average: 0.18, 0.19, 0.18
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -105,6 +105,31 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      57 /home/adcp/log/hcorrstats_abxtwo.warn
+      30 /home/adcp/log/hcorrstats_abxtwo.warn.2023-02-07
+      57 /home/adcp/log/hcorrstats_phins.warn
+      30 /home/adcp/log/hcorrstats_phins.warn.2023-02-07
+      57 /home/adcp/log/hcorrstats_seapath.warn
+      30 /home/adcp/log/hcorrstats_seapath.warn.2023-02-07
+(3) rbin warnings:
+ 
+seapath gps  86250    1.00  -7513186.70       2.0       1     1     1     0     1
+seapath sea  86250    1.00  -7513186.70       2.0       1     1     1     0     1
+phins gps 172501    0.50  -7513186.70       1.0       1     1     1     0     1
+phins pmv 172501    0.50  -7513186.70       1.0       1     1     1     0     1
+abxtwo adu 172446    0.50  -7513187.19       5.5      16     1     1     0     1
+abxtwo gps 172502    0.50  -7513187.19       1.0       0     1     1     0     1
+gyro hdg  86060    1.00  -7513186.25       1.2       0     1     1     0     1
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 37.500007
 
 
 Figures and files:
@@ -122,7 +147,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_ddaycont.png
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
