@@ -1,7 +1,16 @@
-2023/02/12 14:30:01
-currents04en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2023/02/13 14:30:01
+currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
+Current cruise: EN697  *** not logging ***
+
+   wh300 2023/02/05  23:24:48 to 2023/02/13  12:20:49  (129 min. ago) 2.2 hrs
+  os75bb 2023/02/05  23:27:49 to 2023/02/13  12:17:47  (132 min. ago) 2.2 hrs
+  os75nb 2023/02/05  23:27:49 to 2023/02/13  12:22:47  (127 min. ago) 2.1 hrs
+
+approximate lat, lon, depth:   26 6.52468 N   80 0.53519 W   depth=229
+
+link: http://www.google.com/maps/place/26%206.52468N+80%200.53519W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
@@ -15,9 +24,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377   251    +25us[-1311ns] +/- 1238us
+^* 192.168.1.8                   1   8   377     6    +22us[  +29us] +/- 1196us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000026, RMS offset=0.000029
+Reference ID: C0A80108, Stratum=2, last offset=0.000007, RMS offset=0.000022
 ------------------------------------------
 
 
@@ -26,7 +35,7 @@ Reference ID: C0A80108, Stratum=2, last offset=-0.000026, RMS offset=0.000029
 
 
 ---------- uptime ------------
- 14:30:02 up 214 days,  1:08,  1 user,  load average: 0.07, 0.08, 0.09
+ 14:30:02 up 177 days, 46 min,  1 user,  load average: 0.03, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -40,7 +49,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      8 /home/adcp/log/3dayplots_os75bb.warn
+      1 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -51,10 +66,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+     125      /home/adcp/www/figures/os75nb_lastens.png
+     125      /home/adcp/www/figures/ktprof_amp_lastens.png
+     125      /home/adcp/www/figures/wh300_lastens.png
+     125      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+     125      /home/adcp/www/figures/os75bb_ddaycont.png
+     125      /home/adcp/www/figures/wh300_ddaycont.png
+     125      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
