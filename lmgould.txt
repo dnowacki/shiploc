@@ -1,13 +1,13 @@
-2023/02/13 14:30:02
+2023/02/14 14:30:01
 gentoo3 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: LMG2302     ** is logging **
 
-   nb150 2023/02/11  03:03:59 to 2023/02/13  14:27:29  (2 min. ago)
-  os38nb 2023/02/11  03:04:04 to 2023/02/13  14:27:30  (2 min. ago)
+   nb150 2023/02/11  03:03:59 to 2023/02/14  14:27:30  (2 min. ago)
+  os38nb 2023/02/11  03:04:04 to 2023/02/14  14:27:17  (2 min. ago)
 
-approximate lat, lon, depth:   62 0.49269 S   62 37.64853 W   depth=4592
+approximate lat, lon, depth:   62 41.48999 S   61 2.49948 W   depth=39
 
-link: http://www.google.com/maps/place/62%200.49269S+62%2037.64853W
+link: http://www.google.com/maps/place/62%2041.48999S+61%202.49948W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath330 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 42.6028831 to 43.6028670
-(2023/02/12 14:28:09 to 2023/02/13 14:28:08)
+ddrange: 43.5956793 to 44.5956619
+(2023/02/13 14:17:47 to 2023/02/14 14:17:45)
 all seapath330 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.76, max = -0.16
-   mean = -0.43, stddev = 0.17
+   min  = -0.85, max = -0.22
+   mean = -0.51, stddev = 0.13
 
 
 === Sonar Pingtype Summary =====
@@ -42,12 +42,12 @@ statistics of good data:
 nb150: triggering is not possible
 nb150 BB:  on
 nb150 NB:  on
-nb150 BT:      off
+nb150 BT:  on
 
 os38: Triggering not used (CX0,0)
 os38 BB:       off
 os38 NB:  on
-os38 BT:      off
+os38 BT:  on
 
 ===========================
 
@@ -55,24 +55,24 @@ os38 BT:      off
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  tick.lmg.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.lmg.usap.g .GNSS.           1 u  285 1024  377    0.159    0.196   0.202
+*tick.lmg.usap.g .GNSS.           1 u  711 1024  377    0.144    0.094   0.159
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2023/02/13 14:22:30) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2023/02/14 14:22:17) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 nb150 recent ping statistics
 
-(2023/02/13 14:22:29) ens = 300 sec, 243 pings, (1.23 sec/ping)
+(2023/02/14 14:22:29) ens = 300 sec, 249 pings, (1.20 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 41 days, 14:14,  2 users,  load average: 0.42, 0.24, 0.18
+ 14:30:02 up 42 days, 14:14,  2 users,  load average: 0.03, 0.11, 0.14
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_report/
@@ -90,9 +90,12 @@ ______________________
 (1) wordcount of log/*.warn:
 
       4176 /home/adcp/log/3dayplots_os38nb.warn
-      6912 /home/adcp/log/3dayplots_os38nb.warn.2023-02-12
-      174 /home/adcp/log/quick_os38nb.warn
-      288 /home/adcp/log/quick_os38nb.warn.2023-02-12
+      6888 /home/adcp/log/3dayplots_os38nb.warn.2023-02-13
+      3 /home/adcp/log/DAS_while_logging.warn
+      99 /home/adcp/log/lastensq_nb150.warn
+      99 /home/adcp/log/lastensq_os38nb.warn
+      140 /home/adcp/log/quick_os38nb.warn
+      287 /home/adcp/log/quick_os38nb.warn.2023-02-13
 
 Figures and files:
 
@@ -104,14 +107,14 @@ Gyro logging and backup:
 Checking updating of 5-minute plots:
 age (minutes)          filename
        2      /home/adcp/www/figures/os38nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/nb150_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/nb150_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/nb150_ddaycont.png
        2      /home/adcp/www/figures/os38nb_ddaycont.png
-       1      /home/adcp/www/figures/nb150_ddaycont.png
 
 
 

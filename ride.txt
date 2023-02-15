@@ -1,101 +1,26 @@
-2023/02/13 14:30:01
+2023/02/14 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SR2302     ** is logging **
-
-   wh300 2023/01/20  21:57:14 to 2023/02/13  14:29:12  (0 min. ago)
-  os150nb 2023/01/20  22:00:14 to 2023/02/13  14:27:12  (2 min. ago)
-  os38nb 2023/01/20  22:00:17 to 2023/02/13  14:27:14  (2 min. ago)
-
-approximate lat, lon, depth:   32 17.69075 N  118 20.20639 W   depth=1521
-
-link: http://www.google.com/maps/place/32%2017.69075N+118%2020.20639W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-no heading correction device specified===========================
------- hydrins_ser statistics ------
-===========================
-seapath_ser-hydrins_ser statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 42.5965329 to 43.5965213
-(2023/02/12 14:19:00 to 2023/02/13 14:18:59)
-all hydrins_ser messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.1
-   min  = -0.08, max = 0.17
-   mean = 0.03, stddev = 0.04
-
-===========================
------- trimble_ser statistics ------
-===========================
-seapath_ser-trimble_ser statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 42.5965560 to 43.5965444
-(2023/02/12 14:19:02 to 2023/02/13 14:19:01)
-all trimble_ser messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.0
-   min  = -0.78, max = 0.42
-   mean = -0.03, stddev = 0.16
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:  on
-os38 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  920 1024  377    0.183   -0.626   1.425
+*sr-bb-gw-das.uc 100.124.100.34   2 u  580 1024  377    0.267   -0.449   0.156
 ------------------------------------------
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2023/02/13 14:27:12) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os150nb recent ping statistics
-
-(2023/02/13 14:22:12) ens = 300 sec, 272 pings, (1.10 sec/ping)
-
-os38nb recent ping statistics
-
-(2023/02/13 14:22:14) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 41 days, 21:38,  2 users,  load average: 0.44, 0.50, 0.56
+ 14:30:02 up 42 days, 21:38,  2 users,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -112,7 +37,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      36 /home/adcp/log/3dayplots_os38nb.warn
+      48 /home/adcp/log/3dayplots_os38nb.warn
 
 Figures and files:
 
@@ -123,17 +48,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       2      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1383      /home/adcp/www/figures/os38nb_lastens.png
+    1383      /home/adcp/www/figures/os150nb_lastens.png
+    1383      /home/adcp/www/figures/wh300_lastens.png
+    1383      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
-       2      /home/adcp/www/figures/os150nb_ddaycont.png
-       1      /home/adcp/www/figures/os38nb_ddaycont.png
+    1383      /home/adcp/www/figures/os38nb_ddaycont.png
+    1383      /home/adcp/www/figures/os150nb_ddaycont.png
+    1383      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
