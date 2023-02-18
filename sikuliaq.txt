@@ -1,30 +1,87 @@
-2023/02/16 14:30:02
+2023/02/17 14:30:02
 currents01skq 5.4.0-137-generic (focal "Ubuntu 20.04.5 LTS")
-Current cruise: SKQ202303S  *** not logging ***
+Current cruise: SKQ202303S     ** is logging **
 
+   wh300 2023/02/16  17:14:24 to 2023/02/17  14:29:09  (1 min. ago)
+  os75nb 2023/02/16  17:17:24 to 2023/02/17  14:27:26  (2 min. ago)
 
-no positions found from filelist seapath/*.gps.rbin
+approximate lat, lon, depth:   47 6.08229 N  125 11.92021 W   depth=1552
 
+link: http://www.google.com/maps/place/47%206.08229N+125%2011.92021W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 46.7168774 to 47.5955117
+(2023/02/16 17:12:18 to 2023/02/17 14:17:32)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   253 out of 253   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.04, max = 0.36
+   mean = 0.18, stddev = 0.11
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os75: Triggering enabled  (CX1,3)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-+shp-ntp-0.sikul .GPS.            1 u 1030 1024  377    0.127   -0.021   0.016
-*shp-ntp-1.sikul .GPS.            1 u  143 1024  377    0.119   -0.026   0.025
+*shp-ntp-0.sikul .GPS.            1 u  389 1024  377    0.131    0.261   0.107
++shp-ntp-1.sikul .GPS.            1 u  888 1024  377    0.103    0.239   0.107
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2023/02/17 14:22:24) ens = 300 sec, 105 pings, (2.86 sec/ping)
+
+wh300 recent ping statistics
+
+(2023/02/17 14:27:09) ens = 120 sec, 85 pings, (1.41 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 27 days, 16:45,  1 user,  load average: 0.00, 0.02, 0.00
+ 14:30:03 up 28 days, 16:45,  1 user,  load average: 0.29, 0.41, 0.43
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -36,7 +93,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      42 /home/adcp/log/3dayplots_os75nb.warn
+      3 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      13 /home/adcp/log/quick_os75nb.warn
 
 Figures and files:
 
@@ -47,10 +113,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
