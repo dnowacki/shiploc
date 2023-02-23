@@ -1,43 +1,52 @@
-2022/04/01 14:30:01
-vega03 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
+2023/02/22 14:20:02
+rigel02 5.0.0-23-generic (bionic "Ubuntu 18.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is running 20.04
+NOTE: This is the _spare_ computer
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
 
 
 
 
 
-
-using chrony
----------- chronyc tracking ------------
-210 Number of sources = 1
-MS Name/IP address         Stratum Poll Reach LastRx Last sample               
-===============================================================================
-^* cuckoo.oceanus                1   7   377    73  +1102ns[-4438ns] +/-  465us
-
-Reference ID: 0A80F004, Stratum=2, last offset=-0.000006, RMS offset=0.000008
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ cuckoo.oceanus  .POOL.          16 p    -   64    0    0.000    0.000   0.000
 ------------------------------------------
 
 
 
 
-
-
 ---------- uptime ------------
- 14:30:02 up 7 days, 18:39,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:20:03 up 11:56,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/oceanus/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/oceanus/daily_report/
 
+ashtech QC plots:
+https://currents.soest.hawaii.edu/uhdas_fromships/oceanus/daily_report/adu5_qc.png
+https://currents.soest.hawaii.edu/uhdas_fromships/oceanus/daily_report/adu800_qc.png
 
 
 
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     5 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      6 /home/adcp/log/web_speedlog.warn
+      6 /home/adcp/log/zmq_monitor.warn
+(3) expected backup disk not found:
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
 
 Figures and files:
@@ -49,15 +58,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  188330      /home/adcp/www/figures/os75nb_lastens.png
-  188327      /home/adcp/www/figures/wh300_lastens.png
-  188327      /home/adcp/www/figures/ktprof_amp_lastens.png
+  1183033      /home/adcp/www/figures/wh300_lastens.png
+  1183033      /home/adcp/www/figures/ktprof_amp_lastens.png
+  1183033      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  188330      /home/adcp/www/figures/wh300_ddaycont.png
-  188329      /home/adcp/www/figures/os75nb_ddaycont.png
+  1183033      /home/adcp/www/figures/wh300_ddaycont.png
+  1183033      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
