@@ -1,71 +1,13 @@
-2023/02/26 14:30:01
-currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
-Current cruise: EN697b     ** is logging **
-
-   wh300 2023/02/24  15:33:03 to 2023/02/26  14:29:03  (1 min. ago)
-  os75bb 2023/02/24  15:36:05 to 2023/02/26  14:26:05  (4 min. ago)
-  os75nb 2023/02/24  15:36:05 to 2023/02/26  14:26:05  (4 min. ago)
-
-approximate lat, lon, depth:   26 30.87998 N   76 44.01748 W   depth=3947
-
-link: http://www.google.com/maps/place/26%2030.87998N+76%2044.01748W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2023/02/27 14:30:02
+currents04en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo_b2_udp")
-===========================
------- abxtwo_b2 statistics ------
-===========================
-gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 55.5951505 to 56.5951389
-(2023/02/25 14:17:01 to 2023/02/26 14:17:00)
-all abxtwo_b2 messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.35, max = 1.93
-   mean = 0.66, stddev = 0.31
-
-===========================
------- abxtwo_b2_udp statistics ------
-===========================
-gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 55.5951620 to 56.5951505
-(2023/02/25 14:17:02 to 2023/02/26 14:17:01)
-all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.25, max = 1.77
-   mean = 0.66, stddev = 0.31
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -73,31 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377    69    +31us[  +37us] +/- 1213us
+^* 192.168.1.8                   1   9   377   365    -22us[  -63us] +/- 1228us
 
-Reference ID: C0A80108, Stratum=2, last offset=0.000005, RMS offset=0.000032
+Reference ID: C0A80108, Stratum=2, last offset=-0.000040, RMS offset=0.000035
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2023/02/26 14:21:03) ens = 300 sec, 75 pings, (4.00 sec/ping)
-
-wh300 recent ping statistics
-
-(2023/02/26 14:27:03) ens = 120 sec, 94 pings, (1.28 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/02/26 14:21:03) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 190 days, 46 min,  1 user,  load average: 0.28, 0.29, 0.34
+ 14:30:02 up 229 days,  1:08,  1 user,  load average: 0.07, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -122,17 +51,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75bb_lastens.png
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/wh300_ddaycont.png
-       3      /home/adcp/www/figures/os75bb_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
