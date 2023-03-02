@@ -1,5 +1,5 @@
-2023/02/28 14:30:02
-currents04en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
+2023/03/01 14:30:02
+currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -15,9 +15,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   7   377     9    +16us[+8321ns] +/- 1279us
+^* 192.168.1.8                   1   8   377   102    +35us[  +51us] +/- 1189us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000008, RMS offset=0.000028
+Reference ID: C0A80108, Stratum=2, last offset=0.000016, RMS offset=0.000034
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: C0A80108, Stratum=2, last offset=-0.000008, RMS offset=0.000028
 
 
 ---------- uptime ------------
- 14:30:02 up 230 days,  1:08,  1 user,  load average: 0.03, 0.20, 0.15
+ 14:30:03 up 193 days, 46 min,  1 user,  load average: 0.01, 0.02, 0.06
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -40,7 +40,15 @@ https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      18 /home/adcp/log/3dayplots_wh300.warn
+      99 /home/adcp/log/lastensq_os75bb.warn
+      100 /home/adcp/log/lastensq_os75nb.warn
+      250 /home/adcp/log/lastensq_wh300.warn
 
 Figures and files:
 
@@ -51,10 +59,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+      32      /home/adcp/www/figures/os75nb_lastens.png
+      32      /home/adcp/www/figures/ktprof_amp_lastens.png
+      32      /home/adcp/www/figures/wh300_lastens.png
+      32      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+      32      /home/adcp/www/figures/os75bb_ddaycont.png
+      32      /home/adcp/www/figures/wh300_ddaycont.png
+      32      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
