@@ -1,11 +1,11 @@
-2023/03/07 14:15:02
+2023/03/09 02:11:00
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: sp2023-03-02-ntptest05     ** is logging **
+Current cruise: sp2023-03-07-test     ** is logging **
 
 
-approximate lat, lon, depth:   32 42.46313 N  117 14.20620 W   depth=1
+approximate lat, lon, depth:   32 42.46252 N  117 14.20418 W   depth=1
 
-link: http://www.google.com/maps/place/32%2042.46313N+117%2014.20620W
+link: http://www.google.com/maps/place/32%2042.46252N+117%2014.20418W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
@@ -22,16 +22,16 @@ NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 ===========================
 gpshead-bx992 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 64.5931134 to 65.5931019
-(2023/03/06 14:14:05 to 2023/03/07 14:14:04)
+ddrange: 66.9659838 to 67.0807407
+(2023/03/08 23:11:01 to 2023/03/09 01:56:16)
 all bx992 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   33 out of 33   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.69, max = 2.71
-   mean = 1.59, stddev = 0.39
+   mean N = 301, stddev N =  0.0
+   min  = 0.87, max = 2.06
+   mean = 1.43, stddev = 0.25
 
 
 === Sonar Pingtype Summary =====
@@ -53,7 +53,7 @@ ntp is not running
 
 
 ---------- uptime ------------
- 14:15:04 up 131 days, 15:49,  1 user,  load average: 0.35, 0.27, 0.19
+ 02:11:08 up  3:01,  1 user,  load average: 0.31, 0.15, 0.10
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -65,6 +65,24 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 
 
 
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      19 /home/adcp/log/DAS_while_cruise.warn
+      50 /home/adcp/log/DAS_while_logging.warn
+(3) rbin warnings:
+ 
+bx992 gps  21631    0.50    0.05       0.5       0     1     1     0     0
+bx992 gph  21631    0.50    0.05       0.5       0     1     1     0     0
+gpshead gph  21631    0.40    0.00       1.5       1     1     1     0     0
+gpshead gph  21631    0.40    0.00       0.6       0     2     1     0     0
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 66.965991
 
 
 Figures and files:
