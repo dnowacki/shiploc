@@ -1,35 +1,87 @@
-2023/03/15 14:30:02
+2023/03/16 14:30:02
 currents01skq 5.4.0-137-generic (focal "Ubuntu 20.04.5 LTS")
-Current cruise: SKQ202304S  *** not logging ***
+Current cruise: SKQ202304S     ** is logging **
 
-   wh300 2023/03/07  21:03:59 to 2023/03/15  01:28:02  (782 min. ago) 13.0 hrs
-  os75nb 2023/03/07  21:07:01 to 2023/03/15  01:26:59  (783 min. ago) 13.1 hrs
+   wh300 2023/03/07  21:03:59 to 2023/03/16  14:29:06  (1 min. ago)
+  os75nb 2023/03/07  21:07:01 to 2023/03/16  14:28:07  (2 min. ago)
 
-approximate lat, lon, depth:   44 35.88349 N  124 7.27907 W   depth=35
+approximate lat, lon, depth:   44 37.85001 N  124 17.22740 W   depth=77
 
-link: http://www.google.com/maps/place/44%2035.88349N+124%207.27907W
+link: http://www.google.com/maps/place/44%2037.85001N+124%2017.22740W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 74.1670973 to 74.6001760
+(2023/03/16 04:00:37 to 2023/03/16 14:24:15)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   124 out of 124   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.11, max = 0.23
+   mean = 0.17, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os75: Triggering enabled  (CX1,3)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*shp-ntp-0.sikul .GPS.            1 u  750 1024  377    0.125   -0.082   0.158
-+shp-ntp-1.sikul .GPS.            1 u  552 1024  377    0.113   -0.108   0.187
+*shp-ntp-0.sikul .GPS.            1 u  604 1024  377    0.137    0.012   0.145
++shp-ntp-1.sikul .GPS.            1 u  194 1024  377    0.112   -0.020   0.140
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2023/03/16 14:23:06) ens = 300 sec, 93 pings, (3.23 sec/ping)
+
+wh300 recent ping statistics
+
+(2023/03/16 14:27:05) ens = 120 sec, 74 pings, (1.62 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 54 days, 16:45,  1 user,  load average: 0.02, 0.05, 0.02
+ 14:30:03 up 55 days, 16:45,  1 user,  load average: 0.54, 0.48, 0.43
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -41,7 +93,14 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/3dayplots_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -52,15 +111,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     780      /home/adcp/www/figures/wh300_lastens.png
-     780      /home/adcp/www/figures/os75nb_lastens.png
-     780      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     780      /home/adcp/www/figures/wh300_ddaycont.png
-     780      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
