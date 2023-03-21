@@ -1,77 +1,35 @@
-2023/03/19 14:30:01
-currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.2 LTS")
-Current cruise: tt04     ** is logging **
+2023/03/21 04:24:11
+currents02km 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
+Current cruise: test-config-IGNORE  *** not logging ***
 
-   wh300 2023/03/18  00:28:55 to 2023/03/19  14:28:07  (2 min. ago)
 
-approximate lat, lon, depth:   21 18.92343 N  157 52.64820 W   depth=-2
+no positions found from filelist posmv/*.gps.rbin
 
-link: http://www.google.com/maps/place/21%2018.92343N+157%2052.64820W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
-
-ddrange: 76.5941707 to 77.5941645
-(2023/03/18 14:15:36 to 2023/03/19 14:15:36)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.4
-   min  = 0.54, max = 1.74
-   mean = 1.24, stddev = 0.21
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:       off
-os38 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
+210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km.soest.hawaii.>     2  10   377   924    +36us[  +52us] +/-  937us
-^+ kmroute.km.soest.hawaii.>     2  10   377    11    -44us[  -44us] +/- 1905us
+^* kmroute.km.soest.hawaii.>     2   8   377    52    +25us[  +28us] +/- 1279us
 
-Reference ID: 0A007801, Stratum=3, last offset=0.000016, RMS offset=0.000013
+Reference ID: 0A007801, Stratum=3, last offset=0.000003, RMS offset=0.000026
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2023/03/19 14:26:07) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 14:15,  1 user,  load average: 0.24, 0.31, 0.32
+ 04:24:12 up 75 days,  5:16,  2 users,  load average: 0.56, 0.36, 0.26
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -84,13 +42,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_q
 
 
 
-Summary of warnings:
-______________________
 
-(1) I/O warnings:
-     2 I/O errors in last 2 /var/log/syslog
-(2) EDAC memory warnings:
-    11 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -101,13 +53,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
