@@ -1,4 +1,4 @@
-2023/03/29 14:30:01
+2023/03/30 14:30:01
 atcurrents02 5.11.0-27-generic (focal "Ubuntu 20.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
@@ -15,9 +15,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    45     +2ns[ -901ns] +/-   49us
+^* timeserver.atlantis.whoi>     1   6   377    29  +4542ns[+3205ns] +/-   47us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000001
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000001
 
 
 ---------- uptime ------------
- 14:30:02 up 78 days, 19:22,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 79 days, 19:22,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -57,5 +57,96 @@ age (minutes)          filename
 
 
 local_status_mailto:
+
+
+nge: 87.5969139 to 88.5969023
+(2023/03/29 14:19:33 to 2023/03/30 14:19:32)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   156 out of 156   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.29, max = -0.10
+   mean = -0.21, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:       off
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* timeserver.atlantis.whoi>     1   6   377    63  +2303ns[+1651ns] +/-   52us
+
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000001
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/03/30 14:26:10) ens = 120 sec, 89 pings, (1.35 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:02 up 79 days, 19:50,  1 user,  load average: 0.53, 0.30, 0.23
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
+
+
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      13 /home/adcp/log/DAS_while_logging.warn
+      51 /home/adcp/log/DAS_while_logging.warn.2023-03-29
+      1 /home/adcp/log/lastfewvec_wh300.warn
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+
+
+
+local_status_mailto:
+
 
 
