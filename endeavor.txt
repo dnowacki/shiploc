@@ -1,0 +1,151 @@
+2023/04/03 23:02:50
+currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
+Current cruise: en699     ** is logging **
+
+   wh300 2023/04/03  13:53:11 to 2023/04/03  23:01:11  (1 min. ago)
+  os75bb 2023/04/03  13:56:14 to 2023/04/03  23:01:14  (1 min. ago)
+  os75nb 2023/04/03  13:56:14 to 2023/04/03  23:01:14  (1 min. ago)
+
+approximate lat, lon, depth:   42 4.62921 N   70 23.45366 W   depth=58
+
+link: http://www.google.com/maps/place/42%204.62921N+70%2023.45366W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _primary_ computer
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "abxtwo_b2_udp")
+===========================
+------ abxtwo_b2 statistics ------
+===========================
+gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 92.5772222 to 92.9526620
+(2023/04/03 13:51:12 to 2023/04/03 22:51:50)
+all abxtwo_b2 messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   108 out of 108   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  2.0
+   min  = -0.71, max = 1.72
+   mean = 0.57, stddev = 0.57
+
+===========================
+------ abxtwo_b2_udp statistics ------
+===========================
+gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 92.5772222 to 92.9526736
+(2023/04/03 13:51:12 to 2023/04/03 22:51:51)
+all abxtwo_b2_udp messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   108 out of 108   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  1.9
+   min  = -0.72, max = 1.52
+   mean = 0.56, stddev = 0.56
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* 192.168.1.8                   1   9   377   398    -32us[  -52us] +/- 1156us
+
+Reference ID: C0A80108, Stratum=2, last offset=-0.000020, RMS offset=0.000020
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os75bb recent ping statistics
+
+(2023/04/03 22:56:14) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
+wh300 recent ping statistics
+
+(2023/04/03 22:59:12) ens = 120 sec, 93 pings, (1.29 sec/ping)
+
+os75nb recent ping statistics
+
+(2023/04/03 22:56:14) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 23:02:51 up 226 days,  9:19,  2 users,  load average: 0.39, 0.40, 0.37
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
+
+QC plots:
+https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq2_qc.png
+https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_qc.png
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      48 /home/adcp/log/3dayplots_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      3 /home/adcp/log/quick_os75bb.warn
+      2 /home/adcp/log/quick_wh300.warn
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/os75bb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/os75bb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
+
+
+
+local_status_mailto:
+
+
