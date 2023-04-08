@@ -1,14 +1,7 @@
-2023/04/06 14:30:02
+2023/04/07 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SR2306  *** not logging ***
-
-   wh300 2023/04/04  15:45:46 to 2023/04/06  14:15:32  (14 min. ago)
-
-approximate lat, lon, depth:   32 45.02183 N  117 37.57082 W   depth=1076
-
-link: http://www.google.com/maps/place/32%2045.02183N+117%2037.57082W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -19,7 +12,7 @@ NOTE: This is the _primary_ computer
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  669 1024  377    0.266   -0.705   0.418
+*sr-bb-gw-das.uc 100.124.100.34   2 u   50 1024  377    0.247   -0.171   0.073
 ------------------------------------------
 
 
@@ -27,7 +20,7 @@ NOTE: This is the _primary_ computer
 
 
 ---------- uptime ------------
- 14:30:03 up 93 days, 21:38,  1 user,  load average: 0.11, 0.10, 0.10
+ 14:30:02 up 94 days, 21:38,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -44,11 +37,11 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      2 /home/adcp/log/3dayplots_os150nb.warn
-      1 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      2 /home/adcp/log/lastfewvec_wh300.warn
+      18 /home/adcp/log/lastensq_os150nb.warn
+      18 /home/adcp/log/lastensq_os38nb.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn
+      2 /home/adcp/log/lastfewvec_os38nb.warn
+      3 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -59,17 +52,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-      14      /home/adcp/www/figures/os38nb_lastens.png
-      14      /home/adcp/www/figures/os150nb_lastens.png
-      14      /home/adcp/www/figures/wh300_lastens.png
-      14      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1071      /home/adcp/www/figures/os38nb_lastens.png
+    1071      /home/adcp/www/figures/os150nb_lastens.png
+    1071      /home/adcp/www/figures/wh300_lastens.png
+    1071      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-      14      /home/adcp/www/figures/os38nb_ddaycont.png
-      14      /home/adcp/www/figures/os150nb_ddaycont.png
-      14      /home/adcp/www/figures/wh300_ddaycont.png
+    1071      /home/adcp/www/figures/os38nb_ddaycont.png
+    1071      /home/adcp/www/figures/os150nb_ddaycont.png
+    1071      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
