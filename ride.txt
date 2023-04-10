@@ -1,29 +1,101 @@
-2023/04/08 14:30:01
+2023/04/09 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SR2307  *** not logging ***
+Current cruise: SR2307     ** is logging **
 
+   wh300 2023/04/09  03:52:15 to 2023/04/09  14:28:15  (1 min. ago)
+  os150nb 2023/04/09  03:55:14 to 2023/04/09  14:25:15  (4 min. ago)
+  os38nb 2023/04/09  03:55:14 to 2023/04/09  14:25:16  (4 min. ago)
 
-no positions found from filelist hydrins_ser/*.gps.rbin
+approximate lat, lon, depth:   33 43.52442 N  118 12.63793 W   depth=17
 
+link: http://www.google.com/maps/place/33%2043.52442N+118%2012.63793W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ hydrins_ser statistics ------
+===========================
+seapath_ser-hydrins_ser statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 98.1599007 to 98.5983435
+(2023/04/09 03:50:15 to 2023/04/09 14:21:37)
+all hydrins_ser messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   126 out of 126   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.4
+   min  = -0.15, max = 0.20
+   mean = 0.02, stddev = 0.07
+
+===========================
+------ trimble_ser statistics ------
+===========================
+seapath_ser-trimble_ser statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 98.1599007 to 98.5983609
+(2023/04/09 03:50:15 to 2023/04/09 14:21:38)
+all trimble_ser messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   126 out of 126   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.5
+   min  = -0.41, max = 0.31
+   mean = -0.05, stddev = 0.12
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  617 1024  377    0.258   -0.322   0.107
+*sr-bb-gw-das.uc 100.124.100.34   2 u  429 1024  377    0.262    0.079   0.130
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/04/09 14:26:15) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os150nb recent ping statistics
+
+(2023/04/09 14:20:15) ens = 300 sec, 273 pings, (1.10 sec/ping)
+
+os38nb recent ping statistics
+
+(2023/04/09 14:20:16) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 19:18,  2 users,  load average: 0.01, 0.01, 0.00
+ 14:30:02 up 1 day, 19:18,  1 user,  load average: 0.29, 0.37, 0.40
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -38,8 +110,18 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      8 /home/adcp/log/3dayplots_os38nb.warn
+      200 /home/adcp/log/lastensq_os150nb.warn
+      200 /home/adcp/log/lastensq_os38nb.warn
+      506 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      2 /home/adcp/log/quick_os150nb.warn
+      4 /home/adcp/log/quick_os38nb.warn
+      10 /home/adcp/log/update_hbins_wh300.warn
 
 Figures and files:
 
@@ -50,10 +132,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os150nb_lastens.png
+       4      /home/adcp/www/figures/os38nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
+       4      /home/adcp/www/figures/os38nb_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
