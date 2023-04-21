@@ -1,12 +1,12 @@
-2023/04/19 14:15:01
+2023/04/20 14:15:02
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2303     ** is logging **
 
-  os150nb 2023/04/09  12:06:10 to 2023/04/19  14:12:10  (3 min. ago)
+  os150nb 2023/04/09  12:06:10 to 2023/04/20  14:12:10  (3 min. ago)
 
-approximate lat, lon, depth:   28 4.53087 S   52 14.80687 E   depth=5388
+approximate lat, lon, depth:   28 42.43644 S   53 10.84746 E   depth=4986
 
-link: http://www.google.com/maps/place/28%204.53087S+52%2014.80687E
+link: http://www.google.com/maps/place/28%2042.43644S+53%2010.84746E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,48 +24,48 @@ NOTE: This is a _virtual_ computer
 ===========================
 gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
 
-ddrange: 107.4032093 to 108.4031977
-(2023/04/18 09:40:37 to 2023/04/19 09:40:36)
+ddrange: 108.5906977 to 109.5906861
+(2023/04/19 14:10:36 to 2023/04/20 14:10:35)
 all phins messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  1.0
-   min  = 0.09, max = 0.35
-   mean = 0.23, stddev = 0.06
+   mean N = 301, stddev N =  0.7
+   min  = -0.00, max = 0.26
+   mean = 0.18, stddev = 0.07
 
 ===========================
 ------ seapath statistics ------
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 107.5907208 to 108.5907093
-(2023/04/18 14:10:38 to 2023/04/19 14:10:37)
+ddrange: 108.5907208 to 109.5907093
+(2023/04/19 14:10:38 to 2023/04/20 14:10:37)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.38, max = -0.14
-   mean = -0.26, stddev = 0.05
+   min  = -0.52, max = -0.18
+   mean = -0.32, stddev = 0.07
 
 ===========================
 ------ abxtwo statistics ------
 ===========================
 gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 107.5907324 to 108.5907208
-(2023/04/18 14:10:39 to 2023/04/19 14:10:38)
+ddrange: 108.5907324 to 109.5907208
+(2023/04/19 14:10:39 to 2023/04/20 14:10:38)
 all abxtwo messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  1.9
-   min  = -0.50, max = -0.12
-   mean = -0.31, stddev = 0.10
+   mean N = 300, stddev N =  7.2
+   min  = -0.63, max = -0.18
+   mean = -0.40, stddev = 0.08
 
 
 === Sonar Pingtype Summary =====
@@ -80,20 +80,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  449 1024  377    0.241   -0.139   0.040
+*rr-bb-gw-das.uc 100.124.36.34    2 u  550 1024  377    0.217    0.071   1.776
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/04/19 14:09:10) ens = 180 sec, 148 pings, (1.22 sec/ping)
+(2023/04/20 14:09:10) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 70 days, 22:09,  1 user,  load average: 0.17, 0.28, 0.26
+ 14:15:05 up 71 days, 22:09,  1 user,  load average: 0.19, 0.27, 0.26
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -110,9 +110,10 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      342 /home/adcp/log/hcorrstats_phins.warn
-      183 /home/adcp/log/lastensq_os150nb.warn
-      3 /home/adcp/log/update_hbins_os150nb.warn
+      760 /home/adcp/log/hcorrstats_phins.warn
+      1083 /home/adcp/log/hcorrstats_phins.warn.2023-04-19
+      255 /home/adcp/log/lastensq_os150nb.warn
+      1 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
