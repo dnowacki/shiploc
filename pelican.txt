@@ -1,24 +1,104 @@
-2023/04/23 14:30:02
+2023/04/24 14:30:02
 currents02pe 5.15.0-46-generic (focal "Ubuntu 20.04.5 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: PE23_19_Felker_ADCP     ** is logging **
+
+  wh1200 2023/04/23  23:31:26 to 2023/04/24  14:27:26  (2 min. ago)
+   wh300 2023/04/23  23:31:26 to 2023/04/24  14:29:25  (0 min. ago)
+  os75bb 2023/04/23  23:34:27 to 2023/04/24  14:29:29  (0 min. ago)
+  os75nb 2023/04/23  23:34:27 to 2023/04/24  14:29:29  (0 min. ago)
+
+approximate lat, lon, depth:   27 15.80641 N   91 11.43189 W   depth=1411
+
+link: http://www.google.com/maps/place/27%2015.80641N+91%2011.43189W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 112.9787731 to 113.5939236
+(2023/04/23 23:29:26 to 2023/04/24 14:15:15)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   177 out of 177   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -3.23, max = -1.28
+   mean = -2.49, stddev = 0.24
+
+===========================
+------ furuno statistics ------
+===========================
+gyro-furuno statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 112.9787731 to 113.5939352
+(2023/04/23 23:29:26 to 2023/04/24 14:15:16)
+all furuno messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   23 out of 24   (96%) were good
+statistics of good data:
+   mean N = 39, stddev N =  101.4
+   min  = -0.35, max = 1.78
+   mean = 0.54, stddev = 0.61
+
+
+=== Sonar Pingtype Summary =====
+
+wh1200: Triggering command not found
+wh1200 BB:  on
+wh1200 BT:      off
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh1200 recent ping statistics
+
+(2023/04/24 14:25:26) ens = 120 sec, 200 pings, (0.60 sec/ping)
+
+os75nb recent ping statistics
+
+(2023/04/24 14:24:27) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
+wh300 recent ping statistics
+
+(2023/04/24 14:27:25) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os75bb recent ping statistics
+
+(2023/04/24 14:24:27) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:04 up  3:03,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 1 day,  3:03,  1 user,  load average: 0.66, 0.42, 0.43
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -33,8 +113,32 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_rep
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      296 /home/adcp/log/3dayplots_os75bb.warn
+      296 /home/adcp/log/3dayplots_os75nb.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1029 /home/adcp/log/lastensq_os75bb.warn
+      42 /home/adcp/log/lastensq_os75bb.warn.2023-04-23
+      1036 /home/adcp/log/lastensq_os75nb.warn
+      42 /home/adcp/log/lastensq_os75nb.warn.2023-04-23
+      2590 /home/adcp/log/lastensq_wh1200.warn
+      98 /home/adcp/log/lastensq_wh1200.warn.2023-04-23
+      2583 /home/adcp/log/lastensq_wh300.warn
+      105 /home/adcp/log/lastensq_wh300.warn.2023-04-23
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh1200.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      8 /home/adcp/log/quick_os75bb.warn
+      5 /home/adcp/log/quick_os75bb.warn.2023-04-23
+      17 /home/adcp/log/quick_os75nb.warn
+      5 /home/adcp/log/quick_os75nb.warn.2023-04-23
+      6 /home/adcp/log/quick_wh1200.warn
+      1 /home/adcp/log/quick_wh300.warn
+      14 /home/adcp/log/quick_wh300.warn.2023-04-23
+      714 /home/adcp/log/update_hbins_wh1200.warn
+      14 /home/adcp/log/update_hbins_wh1200.warn.2023-04-23
 
 Figures and files:
 
@@ -45,19 +149,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   64307      /home/adcp/www/figures/os75bb_lastens.png
-   64307      /home/adcp/www/figures/ktprof_amp_lastens.png
-   64307      /home/adcp/www/figures/os75nb_lastens.png
-   64307      /home/adcp/www/figures/wh1200_lastens.png
-   64307      /home/adcp/www/figures/wh300_lastens.png
+       2      /home/adcp/www/figures/wh1200_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os75bb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   64307      /home/adcp/www/figures/wh300_ddaycont.png
-   64307      /home/adcp/www/figures/os75nb_ddaycont.png
-   64307      /home/adcp/www/figures/wh1200_ddaycont.png
-   64307      /home/adcp/www/figures/os75bb_ddaycont.png
+       5      /home/adcp/www/figures/wh1200_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/os75bb_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
