@@ -1,13 +1,13 @@
-2023/04/25 14:30:02
+2023/04/27 14:30:02
 currents01skq 5.4.0-137-generic (focal "Ubuntu 20.04.5 LTS")
 Current cruise: SKQ202307S     ** is logging **
 
-   wh300 2023/04/22  19:08:21 to 2023/04/25  14:29:06  (1 min. ago)
-  os75nb 2023/04/22  18:57:32 to 2023/04/25  14:26:05  (4 min. ago)
+   wh300 2023/04/22  19:08:21 to 2023/04/27  14:29:01  (1 min. ago)
+  os75nb 2023/04/22  18:57:32 to 2023/04/27  14:25:00  (5 min. ago)
 
-approximate lat, lon, depth:   59 22.56922 N  146 17.85207 W   depth=107
+approximate lat, lon, depth:   60 40.05379 N  147 40.14523 W   depth=291
 
-link: http://www.google.com/maps/place/59%2022.56922N+146%2017.85207W
+link: http://www.google.com/maps/place/60%2040.05379N+147%2040.14523W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,23 +25,23 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 113.5950024 to 114.5949909
-(2023/04/24 14:16:48 to 2023/04/25 14:16:47)
+ddrange: 115.5943774 to 116.5943659
+(2023/04/26 14:15:54 to 2023/04/27 14:15:53)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   280 out of 280   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.13, max = 0.45
-   mean = 0.26, stddev = 0.08
+   mean N = 301, stddev N =  0.3
+   min  = 0.19, max = 0.56
+   mean = 0.38, stddev = 0.10
 
 
 === Sonar Pingtype Summary =====
 
 wh300: Triggering command not found
 wh300 BB:  on
-wh300 BT:  on
+wh300 BT:      off
 
 os150: Triggering not used (CX0,0)
 os150 BB:       off
@@ -51,7 +51,7 @@ os150 BT:      off
 os75: Triggering enabled  (CX1,3)
 os75 BB:       off
 os75 NB:  on
-os75 BT:  on
+os75 BT:      off
 
 os38: Triggering not used (CX0,0)
 os38 BB:       off
@@ -63,25 +63,25 @@ os38 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-+shp-ntp-0.sikul .GPS.            1 u  996 1024  377    0.138    0.157   0.256
-*shp-ntp-1.sikul .GPS.            1 u  236 1024  377    0.126    0.132   0.218
++shp-ntp-0.sikul .GPS.            1 u  743 1024  377    0.135    0.477   0.436
+*shp-ntp-1.sikul .GPS.            1 u  886 1024  377    0.110    0.520   0.473
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2023/04/25 14:20:05) ens = 300 sec, 75 pings, (4.00 sec/ping)
+(2023/04/27 14:20:03) ens = 300 sec, 52 pings, (5.77 sec/ping)
 
 wh300 recent ping statistics
 
-(2023/04/25 14:27:05) ens = 120 sec, 71 pings, (1.69 sec/ping)
+(2023/04/27 14:27:02) ens = 120 sec, 41 pings, (2.93 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 95 days, 16:45,  1 user,  load average: 0.73, 0.57, 0.50
+ 14:30:03 up 97 days, 16:45,  1 user,  load average: 0.29, 0.49, 0.51
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -93,14 +93,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      1 /home/adcp/log/DAS_while_logging.warn
-      245 /home/adcp/log/lastensq_os75nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
 
 Figures and files:
 
@@ -111,15 +104,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/wh300_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
