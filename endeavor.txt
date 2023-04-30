@@ -1,13 +1,67 @@
-2023/04/28 14:30:01
-currents04en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2023/04/30 04:03:01
+currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
+Current cruise: en2023-04-29-garmintest01     ** is logging **
+
+
+approximate lat, lon, depth:   41 29.53901 N   71 25.10882 W   depth=11
+
+link: http://www.google.com/maps/place/41%2029.53901N+71%2025.10882W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo_b2_udp")
+===========================
+------ abxtwo_b2 statistics ------
+===========================
+gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 119.0440394 to 119.1588194
+(2023/04/30 01:03:25 to 2023/04/30 03:48:42)
+all abxtwo_b2 messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   33 out of 33   (100%) were good
+statistics of good data:
+   mean N = 299, stddev N =  6.4
+   min  = -0.39, max = -0.19
+   mean = -0.27, stddev = 0.05
+
+===========================
+------ abxtwo_b2_udp statistics ------
+===========================
+gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 119.0440394 to 119.1588310
+(2023/04/30 01:03:25 to 2023/04/30 03:48:43)
+all abxtwo_b2_udp messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   33 out of 33   (100%) were good
+statistics of good data:
+   mean N = 299, stddev N =  6.4
+   min  = -0.39, max = -0.17
+   mean = -0.27, stddev = 0.05
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:       off
+os75 BT:      off
+
+===========================
 
 
 using chrony
@@ -15,18 +69,19 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   6   377    24  -6246ns[-8817ns] +/- 1208us
+^* 192.168.1.8                   1  10   377    90    +13us[  +47us] +/- 1228us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000003, RMS offset=0.000019
+Reference ID: C0A80108, Stratum=2, last offset=0.000034, RMS offset=0.000025
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 289 days,  1:08,  1 user,  load average: 0.04, 0.02, 0.00
+ 04:03:02 up 252 days, 14:19,  1 user,  load average: 0.09, 0.04, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
