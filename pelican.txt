@@ -1,24 +1,92 @@
-2023/05/01 14:30:01
+2023/05/02 14:30:02
 currents02pe 5.15.0-46-generic (focal "Ubuntu 20.04.5 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: PE23_20_Thrash_ADCP     ** is logging **
+
+  wh1200 2023/05/02  12:06:20 to 2023/05/02  14:28:20  (1 min. ago)
+   wh300 2023/05/02  14:28:55 to 2023/05/02  14:28:55  (1 min. ago)
+ os75bb -- no data yet
+ os75nb -- no data yet
+
+approximate lat, lon, depth:   28 52.29461 N   90 29.55424 W   depth=18
+
+link: http://www.google.com/maps/place/28%2052.29461N+90%2029.55424W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 121.5030093 to 121.5968981
+(2023/05/02 12:04:20 to 2023/05/02 14:19:32)
+all abxtwo messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   27 out of 27   (100%) were good
+statistics of good data:
+   mean N = 298, stddev N =  9.6
+   min  = -3.42, max = -1.49
+   mean = -2.70, stddev = 0.51
+
+===========================
+------ furuno statistics ------
+===========================
+gyro-furuno statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 121.5030093 to 121.5969213
+(2023/05/02 12:04:20 to 2023/05/02 14:19:34)
+all furuno messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   27 out of 27   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.72, max = 2.46
+   mean = 0.25, stddev = 0.64
+
+
+=== Sonar Pingtype Summary =====
+
+wh1200: Triggering command not found
+wh1200 BB:  on
+wh1200 BT:      off
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh1200 recent ping statistics
+
+(2023/05/02 14:26:17) ens = 120 sec, 196 pings, (0.61 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 8 days,  3:03,  1 user,  load average: 0.06, 0.12, 0.08
+ 14:30:02 up 9 days,  3:03,  1 user,  load average: 0.16, 0.17, 0.12
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -30,7 +98,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_rep
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      16 /home/adcp/log/3dayplots_wh1200.warn
+      10 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh1200.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_wh1200.warn
 
 Figures and files:
 
@@ -41,19 +118,14 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1505      /home/adcp/www/figures/os75bb_lastens.png
-    1505      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1505      /home/adcp/www/figures/os75nb_lastens.png
-    1505      /home/adcp/www/figures/wh1200_lastens.png
-    1505      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/wh1200_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1505      /home/adcp/www/figures/wh300_ddaycont.png
-    1505      /home/adcp/www/figures/os75nb_ddaycont.png
-    1505      /home/adcp/www/figures/wh1200_ddaycont.png
-    1505      /home/adcp/www/figures/os75bb_ddaycont.png
+       3      /home/adcp/www/figures/wh1200_ddaycont.png
 
 
 
