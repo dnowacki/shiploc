@@ -1,12 +1,12 @@
-2023/05/02 14:15:02
+2023/05/03 14:15:02
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2303     ** is logging **
 
-  os150nb 2023/04/09  12:06:10 to 2023/05/02  14:12:08  (3 min. ago)
+  os150nb 2023/04/09  12:06:10 to 2023/05/03  14:12:08  (3 min. ago)
 
-approximate lat, lon, depth:   31 6.44289 S   56 50.76839 E   depth=4611
+approximate lat, lon, depth:   30 45.57872 S   58 16.60864 E   depth=3520
 
-link: http://www.google.com/maps/place/31%206.44289S+56%2050.76839E
+link: http://www.google.com/maps/place/30%2045.57872S+58%2016.60864E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,48 +24,48 @@ NOTE: This is a _virtual_ computer
 ===========================
 gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
 
-ddrange: 120.5908134 to 121.5908019
-(2023/05/01 14:10:46 to 2023/05/02 14:10:45)
+ddrange: 121.5907903 to 122.5907787
+(2023/05/02 14:10:44 to 2023/05/03 14:10:43)
 all phins messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  1.1
-   min  = 0.04, max = 0.31
-   mean = 0.19, stddev = 0.07
+   mean N = 301, stddev N =  1.0
+   min  = 0.02, max = 0.24
+   mean = 0.14, stddev = 0.04
 
 ===========================
 ------ seapath statistics ------
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 120.5908366 to 121.5908250
-(2023/05/01 14:10:48 to 2023/05/02 14:10:47)
+ddrange: 121.5908250 to 122.5908134
+(2023/05/02 14:10:47 to 2023/05/03 14:10:46)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.48, max = -0.18
-   mean = -0.32, stddev = 0.07
+   min  = -0.46, max = -0.21
+   mean = -0.34, stddev = 0.04
 
 ===========================
 ------ abxtwo statistics ------
 ===========================
 gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 120.5908597 to 121.5908481
-(2023/05/01 14:10:50 to 2023/05/02 14:10:49)
+ddrange: 121.5908481 to 122.5908366
+(2023/05/02 14:10:49 to 2023/05/03 14:10:48)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -1.48, max = -0.15
-   mean = -0.40, stddev = 0.11
+   min  = -0.59, max = -0.26
+   mean = -0.39, stddev = 0.06
 
 
 === Sonar Pingtype Summary =====
@@ -80,20 +80,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  124 1024  377    0.266    0.251   0.217
+*rr-bb-gw-das.uc 100.124.36.34    2 u   70 1024  377    0.270   -0.166   0.144
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/05/02 14:09:08) ens = 180 sec, 148 pings, (1.22 sec/ping)
+(2023/05/03 14:09:08) ens = 180 sec, 146 pings, (1.23 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:05 up 83 days, 22:09,  1 user,  load average: 0.42, 0.37, 0.34
+ 14:15:04 up 84 days, 22:09,  1 user,  load average: 0.17, 0.30, 0.31
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -105,7 +105,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      57 /home/adcp/log/hcorrstats_phins.warn
+      27 /home/adcp/log/hcorrstats_phins.warn.2023-05-02
+      2 /home/adcp/log/lastensq_os150nb.warn
+      289 /home/adcp/log/lastensq_os150nb.warn.2023-05-02
+      9 /home/adcp/log/update_hbins_os150nb.warn
 
 Figures and files:
 
@@ -116,8 +125,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
        2      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
