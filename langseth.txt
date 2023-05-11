@@ -1,13 +1,66 @@
-2023/05/09 14:30:01
+2023/05/10 14:30:01
 currents01mgl 5.4.0-128-generic (focal "Ubuntu 20.04.5 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: MGL2306     ** is logging **
+
+  os75bb 2023/05/09  20:21:59 to 2023/05/10  14:26:57  (3 min. ago)
+  os75nb 2023/05/09  20:21:59 to 2023/05/10  14:26:57  (3 min. ago)
+
+approximate lat, lon, depth:   35 8.11947 N   73 55.39501 W   depth=3438
+
+link: http://www.google.com/maps/place/35%208.11947N+73%2055.39501W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 128.8451051 to 129.5954639
+(2023/05/09 20:16:57 to 2023/05/10 14:17:28)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   216 out of 216   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 1.03, max = 1.82
+   mean = 1.36, stddev = 0.13
+
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
+
+ddrange: 128.8451051 to 129.5954870
+(2023/05/09 20:16:57 to 2023/05/10 14:17:30)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   216 out of 216   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 1.17, max = 2.09
+   mean = 1.55, stddev = 0.15
+
+
+=== Sonar Pingtype Summary =====
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
@@ -16,11 +69,20 @@ NOTE: This is the _primary_ computer
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
+os75bb recent ping statistics
+
+(2023/05/10 14:21:57) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
+os75nb recent ping statistics
+
+(2023/05/10 14:21:57) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 51 days, 16:58,  1 user,  load average: 0.02, 0.04, 0.00
+ 14:30:02 up 52 days, 16:58,  1 user,  load average: 0.18, 0.12, 0.10
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -33,7 +95,17 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      56 /home/adcp/log/3dayplots_os75bb.warn
+      6 /home/adcp/log/DAS_while_logging.warn
+      9 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      15 /home/adcp/log/quick_os75bb.warn
+      1 /home/adcp/log/quick_os75nb.warn
 
 Figures and files:
 
@@ -44,15 +116,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    7297      /home/adcp/www/figures/os75nb_lastens.png
-    7297      /home/adcp/www/figures/os75bb_lastens.png
-    7297      /home/adcp/www/figures/ktprof_amp_lastens.png
+       3      /home/adcp/www/figures/os75bb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    7297      /home/adcp/www/figures/os75nb_ddaycont.png
-    7297      /home/adcp/www/figures/os75bb_ddaycont.png
+       2      /home/adcp/www/figures/os75bb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
