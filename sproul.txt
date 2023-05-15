@@ -1,24 +1,59 @@
-2023/05/13 14:15:02
+2023/05/14 14:15:02
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: sp2023-05-13-no-pinging-test     ** is logging **
+
+
+approximate lat, lon, depth:   32 42.44873 N  117 14.20590 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.44873N+117%2014.20590W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "bx992")
+===========================
+------ bx992 statistics ------
+===========================
+gpshead-bx992 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 132.6740741 to 133.5910995
+(2023/05/13 16:10:40 to 2023/05/14 14:11:11)
+all bx992 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   264 out of 264   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.60, max = 2.49
+   mean = 1.55, stddev = 0.39
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+===========================
 
 ---------- ps -ef | grep ntpd | grep -v grep ------------
 ntp is not running
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 1 day, 17:24,  1 user,  load average: 0.03, 0.04, 0.00
+ 14:15:04 up 2 days, 17:24,  1 user,  load average: 0.32, 0.22, 0.15
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -41,13 +76,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    8178      /home/adcp/www/figures/ktprof_amp_lastens.png
-    8178      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    8178      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
