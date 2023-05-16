@@ -1,101 +1,26 @@
-2023/05/14 14:30:01
+2023/05/15 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SR2309     ** is logging **
-
-   wh300 2023/05/12  01:43:10 to 2023/05/14  14:29:11  (1 min. ago)
-  os150nb 2023/05/12  01:46:11 to 2023/05/14  14:26:11  (4 min. ago)
-  os38nb 2023/05/12  01:46:11 to 2023/05/14  14:26:12  (3 min. ago)
-
-approximate lat, lon, depth:   44 38.11940 N  125 1.70706 W   depth=1165
-
-link: http://www.google.com/maps/place/44%2038.11940N+125%201.70706W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-no heading correction device specified===========================
------- hydrins_ser statistics ------
-===========================
-seapath_ser-hydrins_ser statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 132.6018830 to 133.6018734
-(2023/05/13 14:26:43 to 2023/05/14 14:26:42)
-all hydrins_ser messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.5
-   min  = -0.14, max = 0.18
-   mean = 0.02, stddev = 0.05
-
-===========================
------- trimble_ser statistics ------
-===========================
-seapath_ser-trimble_ser statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 132.6019003 to 133.6018907
-(2023/05/13 14:26:44 to 2023/05/14 14:26:43)
-all trimble_ser messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.5
-   min  = -0.29, max = 0.34
-   mean = -0.01, stddev = 0.10
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:  on
-os38 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  981 1024  377    0.186   -0.016   0.023
+*sr-bb-gw-das.uc 100.124.100.34   2 u  710 1024  377    0.247   -0.253   0.192
 ------------------------------------------
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2023/05/14 14:27:11) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os150nb recent ping statistics
-
-(2023/05/14 14:21:11) ens = 300 sec, 273 pings, (1.10 sec/ping)
-
-os38nb recent ping statistics
-
-(2023/05/14 14:21:12) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 36 days, 19:18,  1 user,  load average: 0.51, 0.46, 0.46
+ 14:30:02 up 37 days, 19:18,  1 user,  load average: 0.00, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -118,17 +43,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_lastens.png
-       3      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+      85      /home/adcp/www/figures/os38nb_lastens.png
+      85      /home/adcp/www/figures/os150nb_lastens.png
+      85      /home/adcp/www/figures/wh300_lastens.png
+      85      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_ddaycont.png
-       3      /home/adcp/www/figures/os38nb_ddaycont.png
-       3      /home/adcp/www/figures/wh300_ddaycont.png
+      85      /home/adcp/www/figures/os38nb_ddaycont.png
+      85      /home/adcp/www/figures/os150nb_ddaycont.png
+      85      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
