@@ -1,26 +1,99 @@
-2023/05/26 14:15:02
+2023/05/27 14:15:02
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: RR2305     ** is logging **
+
+  os150nb 2023/05/27  12:21:22 to 2023/05/27  14:12:23  (2 min. ago)
+
+approximate lat, lon, depth:   19 48.34006 S   57 21.98401 E   depth=3220
+
+link: http://www.google.com/maps/place/19%2048.34006S+57%2021.98401E
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is a _virtual_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ phins statistics ------
+===========================
+gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
+
+ddrange: 146.5127617 to 146.5860719
+(2023/05/27 12:18:23 to 2023/05/27 14:03:57)
+all phins messages:  (98%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   21 out of 21   (100%) were good
+statistics of good data:
+   mean N = 297, stddev N =  5.2
+   min  = -0.25, max = -0.15
+   mean = -0.19, stddev = 0.02
+
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 146.5127617 to 146.5860950
+(2023/05/27 12:18:23 to 2023/05/27 14:03:59)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   21 out of 21   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.72, max = -0.61
+   mean = -0.66, stddev = 0.03
+
+===========================
+------ abxtwo statistics ------
+===========================
+gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 146.5127617 to 146.5861182
+(2023/05/27 12:18:23 to 2023/05/27 14:04:01)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   21 out of 21   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.80, max = -0.62
+   mean = -0.69, stddev = 0.05
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  467 1024  377    0.227   -0.205   0.223
+*rr-bb-gw-das.uc 100.124.36.34    2 u  209  512  377    0.235    0.012   0.197
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2023/05/27 14:09:22) ens = 180 sec, 145 pings, (1.24 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 107 days, 22:09,  1 user,  load average: 0.02, 0.02, 0.00
+ 14:15:05 up 108 days, 22:09,  1 user,  load average: 0.47, 0.35, 0.29
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -32,7 +105,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -43,13 +122,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1669      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1669      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1669      /home/adcp/www/figures/os150nb_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
