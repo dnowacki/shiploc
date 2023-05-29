@@ -1,12 +1,12 @@
-2023/05/27 14:15:02
+2023/05/28 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2305     ** is logging **
 
-  os150nb 2023/05/27  12:21:22 to 2023/05/27  14:12:23  (2 min. ago)
+  os150nb 2023/05/27  12:21:22 to 2023/05/28  14:12:23  (2 min. ago)
 
-approximate lat, lon, depth:   19 48.34006 S   57 21.98401 E   depth=3220
+approximate lat, lon, depth:   15 4.13751 S   58 18.76467 E   depth=3643
 
-link: http://www.google.com/maps/place/19%2048.34006S+57%2021.98401E
+link: http://www.google.com/maps/place/15%204.13751S+58%2018.76467E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -40,32 +40,32 @@ statistics of good data:
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 146.5127617 to 146.5860950
-(2023/05/27 12:18:23 to 2023/05/27 14:03:59)
+ddrange: 146.5861413 to 147.5861297
+(2023/05/27 14:04:03 to 2023/05/28 14:04:02)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   21 out of 21   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.72, max = -0.61
-   mean = -0.66, stddev = 0.03
+   mean N = 301, stddev N =  0.2
+   min  = -0.68, max = -0.05
+   mean = -0.28, stddev = 0.15
 
 ===========================
 ------ abxtwo statistics ------
 ===========================
 gyro-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 146.5127617 to 146.5861182
-(2023/05/27 12:18:23 to 2023/05/27 14:04:01)
+ddrange: 146.5861645 to 147.5861529
+(2023/05/27 14:04:05 to 2023/05/28 14:04:04)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   21 out of 21   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.80, max = -0.62
-   mean = -0.69, stddev = 0.05
+   mean N = 301, stddev N =  0.2
+   min  = -0.70, max = -0.05
+   mean = -0.29, stddev = 0.16
 
 
 === Sonar Pingtype Summary =====
@@ -80,20 +80,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  209  512  377    0.235    0.012   0.197
+*rr-bb-gw-das.uc 100.124.36.34    2 u 1042 1024  377    0.273   -0.098   0.263
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/05/27 14:09:22) ens = 180 sec, 145 pings, (1.24 sec/ping)
+(2023/05/28 14:09:23) ens = 180 sec, 146 pings, (1.23 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:05 up 108 days, 22:09,  1 user,  load average: 0.47, 0.35, 0.29
+ 14:15:04 up 109 days, 22:09,  1 user,  load average: 0.18, 0.21, 0.26
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -110,8 +110,15 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/quick_os150nb.warn
+      1083 /home/adcp/log/hcorrstats_phins.warn
+      741 /home/adcp/log/hcorrstats_phins.warn.2023-05-27
+      2 /home/adcp/log/lastensq_os150nb.warn
+      432 /home/adcp/log/lastensq_os150nb.warn.2023-05-27
+      24 /home/adcp/log/update_hbins_os150nb.warn
+(2) rbin warnings:
+ 
+gyro hdg  87117    1.00    0.00       9.1       1     9     6     0     0
+gyro hdg  87117    1.00    0.00       9.1       1     9     6     0     0
 
 Figures and files:
 
@@ -122,8 +129,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
        2      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
