@@ -1,24 +1,47 @@
-2023/05/31 14:30:01
+2023/06/01 14:30:01
 currents01sv 5.15.0-46-generic (focal "Ubuntu 20.04.5 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: sav-2023-05-31-test-wh1200A     ** is logging **
+
+  wh1200 2023/05/31  23:12:46 to 2023/06/01  14:28:46  (1 min. ago)
+
+approximate lat, lon, depth:   31 59.40151 N   81 1.36860 W   depth=0
+
+link: http://www.google.com/maps/place/31%2059.40151N+81%201.36860W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified
+=== Sonar Pingtype Summary =====
+
+wh1200: Triggering command not found
+wh1200 BB:  on
+wh1200 BT:  on
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh1200 recent ping statistics
+
+(2023/06/01 14:26:46) ens = 120 sec, 100 pings, (1.20 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 117 days, 19:28,  1 user,  load average: 0.20, 0.09, 0.01
+ 14:30:02 up 118 days, 19:28,  1 user,  load average: 0.06, 0.17, 0.18
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -30,7 +53,14 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      58 /home/adcp/log/DAS_while_logging.warn
+      3 /home/adcp/log/DAS_while_logging.warn.2023-05-31
+      2 /home/adcp/log/lastfewvec_wh1200.warn
 
 Figures and files:
 
@@ -41,13 +71,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    8644      /home/adcp/www/figures/ktprof_amp_lastens.png
-    8644      /home/adcp/www/figures/wh600_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh1200_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    8644      /home/adcp/www/figures/wh600_ddaycont.png
+       3      /home/adcp/www/figures/wh1200_ddaycont.png
 
 
 

@@ -1,55 +1,13 @@
-2023/05/31 14:30:01
+2023/06/01 14:30:02
 currents01bh 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: BH23-05_Austin     ** is logging **
-
- sv500 -- no data yet
-  os150bb 2023/05/31  11:18:38 to 2023/05/31  14:28:38  (1 min. ago)
-  os150nb 2023/05/31  11:18:38 to 2023/05/31  14:28:38  (1 min. ago)
-
-approximate lat, lon, depth:   46 49.12968 N   91 49.42309 W   depth=-132
-
-link: http://www.google.com/maps/place/46%2049.12968N+91%2049.42309W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-no heading correction device specified===========================
------- gpshead statistics ------
-===========================
-posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 150.4678017 to 150.6036363
-(2023/05/31 11:13:38 to 2023/05/31 14:29:14)
-all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   39 out of 39   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.44, max = 0.67
-   mean = 0.11, stddev = 0.27
-
-
-=== Sonar Pingtype Summary =====
-
-sv500: Triggering command not found
-sv500 BB:       off
-sv500 NB:  on
-sv500 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:  on
-os150 NB:  on
-os150 BT:      off
-
-===========================
 
 
 using chrony
@@ -57,27 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.105               1   7   377    59    +42us[  +43us] +/-  123us
+^* 192.168.100.105               1   8   377    44  +6069ns[  +39us] +/-  100us
 
-Reference ID: C0A86469, Stratum=2, last offset=0.000001, RMS offset=0.000006
+Reference ID: C0A86469, Stratum=2, last offset=0.000033, RMS offset=0.000021
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2023/05/31 14:23:39) ens = 300 sec, 137 pings, (2.19 sec/ping)
-
-os150bb recent ping statistics
-
-(2023/05/31 14:23:39) ens = 300 sec, 137 pings, (2.19 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 9 days, 54 min,  1 user,  load average: 0.34, 0.24, 0.20
+ 14:30:02 up 10 days, 54 min,  1 user,  load average: 0.04, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -95,18 +44,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      24 /home/adcp/log/3dayplots_os150bb.warn
-      34 /home/adcp/log/3dayplots_os150nb.warn
-      468 /home/adcp/log/3dayplots_sv500.warn
-      711 /home/adcp/log/DAS_while_logging.warn
-      91 /home/adcp/log/grab_pings_sv500.warn
-      2836 /home/adcp/log/lastensq_sv500.warn
-      1 /home/adcp/log/lastfewvec_os150bb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1116 /home/adcp/log/lastfewvec_sv500.warn
-      1 /home/adcp/log/quick_os150bb.warn
-      1 /home/adcp/log/quick_os150nb.warn
-      1364 /home/adcp/log/quick_sv500.warn
+      888 /home/adcp/log/3dayplots_sv500.warn
+      1340 /home/adcp/log/DAS_while_logging.warn
+      168 /home/adcp/log/grab_pings_sv500.warn
+      5746 /home/adcp/log/lastensq_sv500.warn
+      2106 /home/adcp/log/lastfewvec_sv500.warn
+      2574 /home/adcp/log/quick_sv500.warn
 
 Figures and files:
 
@@ -117,15 +60,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150bb_lastens.png
-       1      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1265      /home/adcp/www/figures/os150bb_lastens.png
+    1265      /home/adcp/www/figures/os150nb_lastens.png
+    1265      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150bb_ddaycont.png
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
+    1265      /home/adcp/www/figures/os150nb_ddaycont.png
+    1265      /home/adcp/www/figures/os150bb_ddaycont.png
 
 
 
