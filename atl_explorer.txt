@@ -1,13 +1,13 @@
-2023/06/02 19:31:06
+2023/06/03 14:30:01
 currents02ae 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
 Current cruise: AE2312a     ** is logging **
 
-  os75bb 2023/05/21  23:51:41 to 2023/06/02  19:28:32  (2 min. ago)
-  os75nb 2023/05/21  23:51:41 to 2023/06/02  19:28:32  (2 min. ago)
+  os75bb 2023/05/21  23:51:41 to 2023/06/03  14:28:29  (1 min. ago)
+  os75nb 2023/05/21  23:51:41 to 2023/06/03  14:28:29  (1 min. ago)
 
-approximate lat, lon, depth:   40 26.18901 N   68 31.25110 W   depth=91
+approximate lat, lon, depth:   41 31.43169 N   70 40.33458 W   depth=4
 
-link: http://www.google.com/maps/place/40%2026.18901N+68%2031.25110W
+link: http://www.google.com/maps/place/41%2031.43169N+70%2040.33458W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,31 +25,31 @@ NOTE: This is the _secondary_ computer
 ===========================
 jrc_hdg4800-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 151.8048958 to 152.8048843
-(2023/06/01 19:19:03 to 2023/06/02 19:19:02)
+ddrange: 152.5966551 to 153.5966435
+(2023/06/02 14:19:11 to 2023/06/03 14:19:10)
 all abxtwo messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  5.6
+   mean N = 301, stddev N =  5.3
    min  = -0.92, max = 11.00
-   mean = -0.15, stddev = 0.71
+   mean = -0.20, stddev = 0.71
 
 ===========================
 ------ jrc_port statistics ------
 ===========================
 jrc_hdg4800-jrc_port statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 151.8049074 to 152.8048958
-(2023/06/01 19:19:04 to 2023/06/02 19:19:03)
+ddrange: 152.5966667 to 153.5966551
+(2023/06/02 14:19:12 to 2023/06/03 14:19:11)
 all jrc_port messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -0.01, max = 0.02
+   mean N = 301, stddev N =  0.3
+   min  = -0.01, max = 0.03
    mean = 0.00, stddev = 0.00
 
 ===========================
@@ -57,16 +57,16 @@ statistics of good data:
 ===========================
 jrc_hdg4800-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 151.8049306 to 152.8049190
-(2023/06/01 19:19:06 to 2023/06/02 19:19:05)
+ddrange: 152.5966782 to 153.5966667
+(2023/06/02 14:19:13 to 2023/06/03 14:19:12)
 all jrc_stbd messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.4
-   min  = -1.39, max = 1.30
-   mean = -0.08, stddev = 0.48
+   min  = -1.61, max = 1.42
+   mean = -0.10, stddev = 0.50
 
 
 === Sonar Pingtype Summary =====
@@ -84,9 +84,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntp-51.triangle.local         1   6   377    29    +34us[  +13us] +/-   95us
+^* ntp-51.triangle.local         1   7   377   115    +31us[  +29us] +/-   85us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000022, RMS offset=0.000007
+Reference ID: C0A83309, Stratum=2, last offset=-0.000002, RMS offset=0.000015
 ------------------------------------------
 
 
@@ -94,17 +94,17 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000022, RMS offset=0.000007
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2023/06/02 19:23:30) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2023/06/03 14:23:28) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 os75nb recent ping statistics
 
-(2023/06/02 19:23:30) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2023/06/03 14:23:28) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 19:31:07 up 51 days,  5:31,  2 users,  load average: 0.05, 0.14, 0.16
+ 14:30:02 up 52 days, 30 min,  1 user,  load average: 0.48, 0.29, 0.21
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -121,11 +121,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      117 /home/adcp/log/DAS_while_logging.warn
-      144 /home/adcp/log/DAS_while_logging.warn.2023-06-01
-      19 /home/adcp/log/hcorrstats_abxtwo.warn
-      135 /home/adcp/log/lastensq_os75bb.warn
-      135 /home/adcp/log/lastensq_os75nb.warn
+      87 /home/adcp/log/DAS_while_logging.warn
+      144 /home/adcp/log/DAS_while_logging.warn.2023-06-02
+      58 /home/adcp/log/hcorrstats_abxtwo.warn
+      37 /home/adcp/log/hcorrstats_abxtwo.warn.2023-06-02
+      195 /home/adcp/log/lastensq_os75bb.warn
+      197 /home/adcp/log/lastensq_os75nb.warn
       16 /home/adcp/log/update_hbins_os75bb.warn
 
 Figures and files:
@@ -137,15 +138,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75bb_lastens.png
-       2      /home/adcp/www/figures/os75nb_lastens.png
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os75bb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75bb_ddaycont.png
-       2      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/os75bb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
