@@ -1,82 +1,21 @@
-2023/06/03 14:30:01
+2023/06/04 14:30:01
 currents02ae 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-Current cruise: AE2312a     ** is logging **
+Current cruise: AE2312a  *** not logging ***
 
-  os75bb 2023/05/21  23:51:41 to 2023/06/03  14:28:29  (1 min. ago)
-  os75nb 2023/05/21  23:51:41 to 2023/06/03  14:28:29  (1 min. ago)
+  os75bb 2023/05/21  23:51:41 to 2023/06/03  14:28:29  (1441 min. ago) 24.0 hrs
+  os75nb 2023/05/21  23:51:41 to 2023/06/03  14:28:29  (1441 min. ago) 24.0 hrs
 
 approximate lat, lon, depth:   41 31.43169 N   70 40.33458 W   depth=4
 
 link: http://www.google.com/maps/place/41%2031.43169N+70%2040.33458W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _secondary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-jrc_hdg4800-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 152.5966551 to 153.5966435
-(2023/06/02 14:19:11 to 2023/06/03 14:19:10)
-all abxtwo messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  5.3
-   min  = -0.92, max = 11.00
-   mean = -0.20, stddev = 0.71
-
-===========================
------- jrc_port statistics ------
-===========================
-jrc_hdg4800-jrc_port statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 152.5966667 to 153.5966551
-(2023/06/02 14:19:12 to 2023/06/03 14:19:11)
-all jrc_port messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.01, max = 0.03
-   mean = 0.00, stddev = 0.00
-
-===========================
------- jrc_stbd statistics ------
-===========================
-jrc_hdg4800-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 152.5966782 to 153.5966667
-(2023/06/02 14:19:13 to 2023/06/03 14:19:12)
-all jrc_stbd messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -1.61, max = 1.42
-   mean = -0.10, stddev = 0.50
-
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -84,27 +23,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntp-51.triangle.local         1   7   377   115    +31us[  +29us] +/-   85us
+^* ntp-51.triangle.local         1   6   377    41  +8937ns[  +12us] +/-   99us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000002, RMS offset=0.000015
+Reference ID: C0A83309, Stratum=2, last offset=0.000003, RMS offset=0.000006
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2023/06/03 14:23:28) ens = 300 sec, 74 pings, (4.05 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/06/03 14:23:28) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 52 days, 30 min,  1 user,  load average: 0.48, 0.29, 0.21
+ 14:30:02 up 53 days, 30 min,  1 user,  load average: 0.29, 0.09, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -116,18 +46,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      87 /home/adcp/log/DAS_while_logging.warn
-      144 /home/adcp/log/DAS_while_logging.warn.2023-06-02
-      58 /home/adcp/log/hcorrstats_abxtwo.warn
-      37 /home/adcp/log/hcorrstats_abxtwo.warn.2023-06-02
-      195 /home/adcp/log/lastensq_os75bb.warn
-      197 /home/adcp/log/lastensq_os75nb.warn
-      16 /home/adcp/log/update_hbins_os75bb.warn
 
 Figures and files:
 
@@ -138,15 +57,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/os75nb_lastens.png
+    1439      /home/adcp/www/figures/os75bb_lastens.png
+    1439      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1439      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75bb_ddaycont.png
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
+    1439      /home/adcp/www/figures/os75nb_ddaycont.png
+    1439      /home/adcp/www/figures/os75bb_ddaycont.png
 
 
 
