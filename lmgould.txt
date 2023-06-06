@@ -1,34 +1,68 @@
-2023/06/04 14:30:01
+2023/06/05 21:53:10
 gentoo3 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: LMG2305  *** not logging ***
+Current cruise: LMG2305     ** is logging **
 
-   nb150 2023/05/07  09:55:13 to 2023/06/04  12:57:00  (93 min. ago) 1.6 hrs
+   nb150 2023/05/07  09:55:13 to 2023/06/05  21:52:30  (1 min. ago)
 
-approximate lat, lon, depth:   64 46.68793 S   64 4.48527 W   depth=55
+approximate lat, lon, depth:   65 4.48348 S   63 56.71943 W   depth=-54
 
-link: http://www.google.com/maps/place/64%2046.68793S+64%204.48527W
+link: http://www.google.com/maps/place/65%204.48348S+63%2056.71943W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath330")
+===========================
+------ seapath330 statistics ------
+===========================
+gyro-seapath330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 155.6017913 to 155.9039524
+(2023/06/05 14:26:35 to 2023/06/05 21:41:41)
+all seapath330 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   87 out of 87   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -1.14, max = -0.68
+   mean = -0.95, stddev = 0.07
+
+
+=== Sonar Pingtype Summary =====
+
+nb150: triggering is not possible
+nb150 BB:  on
+nb150 NB:  on
+nb150 BT:  on
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  tick.lmg.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.lmg.usap.g .GNSS.           1 u  193  256  377    0.182    0.441   0.143
+*tick.lmg.usap.g .GNSS.           1 u   10   64   77    0.171    7.450  55.907
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+nb150 recent ping statistics
+
+(2023/06/05 21:44:43) ens = 300 sec, 91 pings, (3.30 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 49 days, 13:14,  1 user,  load average: 0.03, 0.01, 0.00
+ 21:53:12 up 6 min,  1 user,  load average: 0.31, 0.31, 0.20
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_report/
@@ -43,10 +77,23 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_rep
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
 
-      78 /home/adcp/log/DAS_while_logging.warn
-      144 /home/adcp/log/DAS_while_logging.warn.2023-06-03
+      43 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_nb150.warn
+(3) rbin warnings:
+ 
+seapath330 gps  26674    1.01  -4393678.07       1.0       0     1     1     0     1
+seapath330 gps_sea  26675    1.01  -4393678.05       1.0       0     1     1     0     1
+seapath330 sea  26675    1.01  -4393678.05       1.0       0     1     1     0     1
+gpsnav gps  26674    1.01  -4393677.06       1.1       0     1     1     0     1
+gyro hdg  29642    0.90  -4393677.18       0.9       0     1     1     0     1
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 153.750005
+
 
 Figures and files:
 
@@ -57,13 +104,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-      88      /home/adcp/www/figures/ktprof_amp_lastens.png
-      88      /home/adcp/www/figures/nb150_lastens.png
+       1      /home/adcp/www/figures/nb150_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-      88      /home/adcp/www/figures/nb150_ddaycont.png
+       0      /home/adcp/www/figures/nb150_ddaycont.png
 
 
 

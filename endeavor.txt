@@ -1,71 +1,13 @@
-2023/06/04 14:30:02
-currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
-Current cruise: EN702B     ** is logging **
-
-   wh300 2023/05/29  17:33:26 to 2023/06/04  14:29:14  (0 min. ago)
-  os75bb 2023/05/29  17:36:29 to 2023/06/04  14:27:16  (2 min. ago)
-  os75nb 2023/05/29  17:36:29 to 2023/06/04  14:27:16  (2 min. ago)
-
-approximate lat, lon, depth:   40 1.43351 N   68 40.33942 W   depth=1387
-
-link: http://www.google.com/maps/place/40%201.43351N+68%2040.33942W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2023/06/05 14:30:02
+currents04en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo_b2_udp")
-===========================
------- abxtwo_b2 statistics ------
-===========================
-gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 153.5959144 to 154.5959028
-(2023/06/03 14:18:07 to 2023/06/04 14:18:06)
-all abxtwo_b2 messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 300, stddev N =  2.6
-   min  = -0.15, max = 0.66
-   mean = 0.34, stddev = 0.15
-
-===========================
------- abxtwo_b2_udp statistics ------
-===========================
-gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 153.5959375 to 154.5959259
-(2023/06/03 14:18:09 to 2023/06/04 14:18:08)
-all abxtwo_b2_udp messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 300, stddev N =  2.6
-   min  = -0.15, max = 0.66
-   mean = 0.34, stddev = 0.15
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -73,31 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377   323    +41us[  +41us] +/- 1279us
+^* 192.168.1.8                   1   8   377   248   +498ns[  -10us] +/- 1300us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000001, RMS offset=0.000011
+Reference ID: C0A80108, Stratum=2, last offset=-0.000011, RMS offset=0.000031
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2023/06/04 14:22:16) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-wh300 recent ping statistics
-
-(2023/06/04 14:27:13) ens = 120 sec, 94 pings, (1.28 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/06/04 14:22:16) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 21 days, 23:35,  1 user,  load average: 0.30, 0.40, 0.41
+ 14:30:02 up 22 days, 23:35,  1 user,  load average: 0.03, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -111,18 +40,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      54 /home/adcp/log/hcorrstats_abxtwo_b2.warn
-      42 /home/adcp/log/hcorrstats_abxtwo_b2.warn.2023-06-03
-      54 /home/adcp/log/hcorrstats_abxtwo_b2_udp.warn
-      42 /home/adcp/log/hcorrstats_abxtwo_b2_udp.warn.2023-06-03
-      324 /home/adcp/log/lastensq_os75bb.warn
-      328 /home/adcp/log/lastensq_os75nb.warn
-      810 /home/adcp/log/lastensq_wh300.warn
 
 Figures and files:
 
@@ -133,17 +51,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75bb_lastens.png
-       2      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
-       2      /home/adcp/www/figures/os75bb_ddaycont.png
-       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
