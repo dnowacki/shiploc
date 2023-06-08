@@ -1,12 +1,12 @@
-2023/06/06 14:30:01
+2023/06/07 14:30:02
 gentoo3 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: LMG2305     ** is logging **
 
-   nb150 2023/05/07  09:55:13 to 2023/06/06  14:27:30  (2 min. ago)
+   nb150 2023/05/07  09:55:13 to 2023/06/07  14:27:28  (2 min. ago)
 
-approximate lat, lon, depth:   66 2.40675 S   65 30.15894 W   depth=195
+approximate lat, lon, depth:   66 5.00948 S   65 24.49346 W   depth=238
 
-link: http://www.google.com/maps/place/66%202.40675S+65%2030.15894W
+link: http://www.google.com/maps/place/66%205.00948S+65%2024.49346W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath330 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 155.6017913 to 156.5957767
-(2023/06/05 14:26:35 to 2023/06/06 14:17:55)
-all seapath330 messages:  (30%)  were good  [using available QC]
+ddrange: 156.5957767 to 157.5957571
+(2023/06/06 14:17:55 to 2023/06/07 14:17:53)
+all seapath330 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -1.14, max = -0.68
-   mean = -0.90, stddev = 0.09
+   mean N = 301, stddev N =  0.2
+   min  = -1.16, max = -0.78
+   mean = -0.96, stddev = 0.08
 
 
 === Sonar Pingtype Summary =====
@@ -49,20 +49,20 @@ nb150 BT:  on
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  tick.lmg.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.lmg.usap.g .GNSS.           1 u  365 1024  377    0.215    0.072   0.042
+*tick.lmg.usap.g .GNSS.           1 u  129 1024  377    0.206    0.030   0.081
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 nb150 recent ping statistics
 
-(2023/06/06 14:22:29) ens = 300 sec, 148 pings, (2.03 sec/ping)
+(2023/06/07 14:22:28) ens = 300 sec, 144 pings, (2.08 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 16:43,  1 user,  load average: 0.02, 0.06, 0.08
+ 14:30:02 up 1 day, 16:43,  1 user,  load average: 0.15, 0.12, 0.09
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_report/
@@ -77,26 +77,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_rep
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
       87 /home/adcp/log/DAS_while_logging.warn
-      56 /home/adcp/log/DAS_while_logging.warn.2023-06-05
-      58 /home/adcp/log/hcorrstats_seapath330.warn
-      8 /home/adcp/log/hcorrstats_seapath330.warn.2023-06-05
-      1 /home/adcp/log/lastfewvec_nb150.warn
-(3) rbin warnings:
- 
-seapath330 gps  86447    1.01  -4393678.07       1.0       0     1     1     0     1
-seapath330 gps_sea  86445    1.01  -4393678.05       2.0       0     1     1     0     1
-seapath330 sea  86445    1.01  -4393678.05       2.0       1     1     1     0     1
-gpsnav gps  86448    1.01  -4393677.06       1.1       0     1     1     0     1
-gyro hdg  96064    0.90  -4393677.18       0.9       0     1     1     0     1
-(4) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 154.500007
-
+      144 /home/adcp/log/DAS_while_logging.warn.2023-06-06
+      87 /home/adcp/log/hcorrstats_seapath330.warn
 
 Figures and files:
 
@@ -107,8 +92,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
        2      /home/adcp/www/figures/nb150_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
