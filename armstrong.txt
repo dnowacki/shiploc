@@ -1,14 +1,14 @@
-2023/06/11 14:30:01
+2023/06/12 14:30:02
 arcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
 Current cruise: ar74     ** is logging **
 
-   wh300 2023/06/09  12:00:48 to 2023/06/11  14:29:36  (0 min. ago)
-  os150nb 2023/06/09  12:03:48 to 2023/06/11  14:26:36  (3 min. ago)
-  os38nb 2023/06/09  12:03:48 to 2023/06/11  14:26:37  (3 min. ago)
+   wh300 2023/06/09  12:00:48 to 2023/06/12  14:28:11  (1 min. ago)
+  os150nb 2023/06/09  12:03:48 to 2023/06/12  14:26:10  (3 min. ago)
+  os38nb 2023/06/09  12:03:48 to 2023/06/12  14:26:10  (3 min. ago)
 
-approximate lat, lon, depth:   39 37.09727 N   63 38.67108 W   depth=4928
+approximate lat, lon, depth:   38 44.56845 N   62 13.76061 W   depth=5092
 
-link: http://www.google.com/maps/place/39%2037.09727N+63%2038.67108W
+link: http://www.google.com/maps/place/38%2044.56845N+62%2013.76061W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,32 +26,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.012)
 
-ddrange: 160.5953704 to 161.5953588
-(2023/06/10 14:17:20 to 2023/06/11 14:17:19)
+ddrange: 161.5985764 to 162.5985648
+(2023/06/11 14:21:57 to 2023/06/12 14:21:56)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   221 out of 221   (100%) were good
+   275 out of 275   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -2.82, max = -1.15
-   mean = -2.15, stddev = 0.25
+   mean N = 301, stddev N =  0.5
+   min  = -2.88, max = -1.37
+   mean = -2.12, stddev = 0.25
 
 ===========================
 ------ gyro2 statistics ------
 ===========================
 gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 160.5953819 to 161.5953704
-(2023/06/10 14:17:21 to 2023/06/11 14:17:20)
+ddrange: 161.5985880 to 162.5985764
+(2023/06/11 14:21:58 to 2023/06/12 14:21:57)
 all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   221 out of 221   (100%) were good
+   275 out of 275   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.44, max = 0.80
-   mean = -0.01, stddev = 0.20
+   mean N = 301, stddev N =  0.4
+   min  = -0.51, max = 0.30
+   mean = -0.14, stddev = 0.17
 
 
 === Sonar Pingtype Summary =====
@@ -78,9 +78,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* tekron.armstrong.whoi.edu     1   6   377    22  +5131ns[+5745ns] +/-   36us
+^* tekron.armstrong.whoi.edu     1   6   377    35    +15us[  +15us] +/-   48us
 
-Reference ID: C093290D, Stratum=2, last offset=0.000001, RMS offset=0.000001
+Reference ID: C093290D, Stratum=2, last offset=-0.000001, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -88,21 +88,21 @@ Reference ID: C093290D, Stratum=2, last offset=0.000001, RMS offset=0.000001
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2023/06/11 14:21:37) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2023/06/12 14:21:10) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 os150nb recent ping statistics
 
-(2023/06/11 14:21:36) ens = 300 sec, 272 pings, (1.10 sec/ping)
+(2023/06/12 14:21:11) ens = 300 sec, 272 pings, (1.10 sec/ping)
 
 wh300 recent ping statistics
 
-(2023/06/11 14:27:36) ens = 120 sec, 119 pings, (1.01 sec/ping)
+(2023/06/12 14:26:10) ens = 120 sec, 119 pings, (1.01 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 110 days, 23:44,  1 user,  load average: 0.34, 0.28, 0.28
+ 14:30:02 up 111 days, 23:44,  1 user,  load average: 0.30, 0.33, 0.28
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -122,7 +122,6 @@ ______________________
 
       1 /home/adcp/log/lastfewvec_os150nb.warn
       1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -135,8 +134,8 @@ Checking updating of 5-minute plots:
 age (minutes)          filename
        3      /home/adcp/www/figures/os150nb_lastens.png
        3      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
