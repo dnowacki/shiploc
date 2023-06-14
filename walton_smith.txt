@@ -1,55 +1,22 @@
-2023/06/12 14:30:01
+2023/06/13 14:30:01
 currents01ws 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: WS23139_Rosenheim     ** is logging **
+Current cruise: WS23139_Rosenheim  *** not logging ***
 
-   wh600 2023/06/05  20:50:46 to 2023/06/12  14:28:46  (1 min. ago)
-  os75bb 2023/06/05  20:53:47 to 2023/06/12  14:28:48  (1 min. ago)
-  os75nb 2023/06/05  20:53:47 to 2023/06/12  14:28:48  (1 min. ago)
+   wh600 2023/06/05  20:50:46 to 2023/06/13  03:34:46  (655 min. ago) 10.9 hrs
+  os75bb 2023/06/05  20:53:47 to 2023/06/13  03:33:46  (656 min. ago) 10.9 hrs
+  os75nb 2023/06/05  20:53:47 to 2023/06/13  03:33:46  (656 min. ago) 10.9 hrs
 
-approximate lat, lon, depth:    4 25.08076 N   51 39.96554 W   depth=1
+approximate lat, lon, depth:    4 51.21551 N   52 16.48744 W   depth=-4
 
-link: http://www.google.com/maps/place/4%2025.08076N+51%2039.96554W
+link: http://www.google.com/maps/place/4%2051.21551N+52%2016.48744W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
-
-ddrange: 161.5968403 to 162.5968287
-(2023/06/11 14:19:27 to 2023/06/12 14:19:26)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -2.54, max = 3.35
-   mean = 0.82, stddev = 0.55
-
-
-=== Sonar Pingtype Summary =====
-
-wh600: Triggering command not found
-wh600 BB:  on
-wh600 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -57,31 +24,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 4   8   377   101    +14us[  +22us] +/-  359ms
+^* 10.106.30.100                 4   6   377    55    +18us[  +15us] +/-  368ms
 
-Reference ID: 0A6A1E64, Stratum=5, last offset=0.000008, RMS offset=0.000005
+Reference ID: 0A6A1E64, Stratum=5, last offset=-0.000003, RMS offset=0.000005
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh600 recent ping statistics
-
-(2023/06/12 14:26:46) ens = 120 sec, 172 pings, (0.70 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/06/12 14:23:47) ens = 300 sec, 75 pings, (4.00 sec/ping)
-
-os75bb recent ping statistics
-
-(2023/06/12 14:23:47) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 23 days, 12:10,  1 user,  load average: 0.30, 0.36, 0.36
+ 14:30:02 up 24 days, 12:10,  1 user,  load average: 0.07, 0.09, 0.09
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -94,7 +48,15 @@ https://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/posm
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      10 /home/adcp/log/3dayplots_os75bb.warn
+      2 /home/adcp/log/3dayplots_os75bb.warn.2023-06-12
+      4 /home/adcp/log/3dayplots_os75nb.warn
+      1 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -105,17 +67,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh600_lastens.png
-       0      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
+     654      /home/adcp/www/figures/ktprof_amp_lastens.png
+     654      /home/adcp/www/figures/os75bb_lastens.png
+     654      /home/adcp/www/figures/wh600_lastens.png
+     654      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh600_ddaycont.png
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+     654      /home/adcp/www/figures/os75nb_ddaycont.png
+     654      /home/adcp/www/figures/os75bb_ddaycont.png
+     654      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 
