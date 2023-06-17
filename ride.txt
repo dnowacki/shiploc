@@ -1,29 +1,101 @@
-2023/06/15 14:30:01
+2023/06/16 22:18:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SR2312  *** not logging ***
+Current cruise: SR2312     ** is logging **
 
+   wh300 2023/06/15  19:39:42 to 2023/06/16  22:17:42  (0 min. ago)
+  os150nb 2023/06/15  19:42:42 to 2023/06/16  22:12:42  (5 min. ago)
+  os38nb 2023/06/15  19:42:45 to 2023/06/16  22:12:45  (5 min. ago)
 
-no positions found from filelist hydrins_udp/*.gps.rbin
+approximate lat, lon, depth:   44 24.34623 N  126 44.76100 W   depth=2954
 
+link: http://www.google.com/maps/place/44%2024.34623N+126%2044.76100W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ hydrins_udp statistics ------
+===========================
+seapath_udp-hydrins_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 165.9228231 to 166.9228163
+(2023/06/15 22:08:52 to 2023/06/16 22:08:51)
+all hydrins_udp messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   287 out of 288   (100%) were good
+statistics of good data:
+   mean N = 599, stddev N =  29.5
+   min  = -0.26, max = 0.18
+   mean = 0.02, stddev = 0.06
+
+===========================
+------ trimble_udp statistics ------
+===========================
+seapath_udp-trimble_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 165.9228405 to 166.9228337
+(2023/06/15 22:08:53 to 2023/06/16 22:08:53)
+all trimble_udp messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.4
+   min  = -0.67, max = 0.53
+   mean = -0.02, stddev = 0.14
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  995 1024  377    0.233   -0.069   0.076
+*sr-bb-gw-das.uc 100.124.100.34   2 u  161 1024  377    0.215   -0.107   0.032
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/06/16 22:13:42) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os150nb recent ping statistics
+
+(2023/06/16 22:07:42) ens = 300 sec, 273 pings, (1.10 sec/ping)
+
+os38nb recent ping statistics
+
+(2023/06/16 22:07:45) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 21:33,  1 user,  load average: 0.03, 0.03, 0.00
+ 22:18:03 up 3 days,  5:21,  1 user,  load average: 0.40, 0.33, 0.33
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -46,10 +118,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/os150nb_ddaycont.png
+       5      /home/adcp/www/figures/os38nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
