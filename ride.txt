@@ -1,26 +1,101 @@
-2023/06/23 14:30:01
+2023/06/24 14:30:02
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: SR2313     ** is logging **
+
+   wh300 2023/06/23  23:47:39 to 2023/06/24  14:29:39  (0 min. ago)
+  os150nb 2023/06/23  23:50:40 to 2023/06/24  14:25:40  (4 min. ago)
+  os38nb 2023/06/23  23:50:43 to 2023/06/24  14:25:41  (4 min. ago)
+
+approximate lat, lon, depth:   42 18.15665 N  124 57.73589 W   depth=1245
+
+link: http://www.google.com/maps/place/42%2018.15665N+124%2057.73589W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ hydrins_udp statistics ------
+===========================
+seapath_udp-hydrins_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 173.9900519 to 174.5950671
+(2023/06/23 23:45:40 to 2023/06/24 14:16:54)
+all hydrins_udp messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   174 out of 174   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.5
+   min  = -0.13, max = 0.36
+   mean = 0.04, stddev = 0.08
+
+===========================
+------ trimble_udp statistics ------
+===========================
+seapath_udp-trimble_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 173.9900519 to 174.5950845
+(2023/06/23 23:45:40 to 2023/06/24 14:16:55)
+all trimble_udp messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   174 out of 174   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.4
+   min  = -0.76, max = 0.60
+   mean = -0.03, stddev = 0.20
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  810 1024  377    0.193   -0.007   0.036
+*sr-bb-gw-das.uc 100.124.100.34   2 u   62 1024  377    0.222   -0.081   0.125
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/06/24 14:27:39) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os150nb recent ping statistics
+
+(2023/06/24 14:20:40) ens = 300 sec, 273 pings, (1.10 sec/ping)
+
+os38nb recent ping statistics
+
+(2023/06/24 14:20:41) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 9 days, 21:33,  1 user,  load average: 0.02, 0.03, 0.00
+ 14:30:03 up 10 days, 21:33,  1 user,  load average: 0.14, 0.23, 0.36
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -32,7 +107,19 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      26 /home/adcp/log/3dayplots_os38nb.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      2 /home/adcp/log/quick_os150nb.warn
+      1 /home/adcp/log/quick_os38nb.warn
+      4 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -43,17 +130,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2395      /home/adcp/www/figures/os38nb_lastens.png
-    2395      /home/adcp/www/figures/os150nb_lastens.png
-    2395      /home/adcp/www/figures/wh300_lastens.png
-    2395      /home/adcp/www/figures/ktprof_amp_lastens.png
+       4      /home/adcp/www/figures/os150nb_lastens.png
+       4      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2395      /home/adcp/www/figures/os38nb_ddaycont.png
-    2395      /home/adcp/www/figures/os150nb_ddaycont.png
-    2395      /home/adcp/www/figures/wh300_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
+       3      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
