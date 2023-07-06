@@ -1,14 +1,14 @@
-2023/07/04 14:30:01
+2023/07/05 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SR2314     ** is logging **
 
-   wh300 2023/07/03  15:28:08 to 2023/07/04  14:28:15  (1 min. ago)
-  os150nb 2023/07/03  15:31:09 to 2023/07/04  14:25:16  (4 min. ago)
-  os38nb 2023/07/03  15:31:12 to 2023/07/04  14:25:16  (4 min. ago)
+   wh300 2023/07/03  15:28:08 to 2023/07/05  14:28:15  (1 min. ago)
+  os150nb 2023/07/03  15:31:09 to 2023/07/05  14:25:16  (4 min. ago)
+  os38nb 2023/07/03  15:31:12 to 2023/07/05  14:25:16  (4 min. ago)
 
-approximate lat, lon, depth:   32 35.71847 N  118 2.81629 W   depth=1198
+approximate lat, lon, depth:   31 40.23984 N  119 56.62862 W   depth=3688
 
-link: http://www.google.com/maps/place/32%2035.71847N+118%202.81629W
+link: http://www.google.com/maps/place/31%2040.23984N+119%2056.62862W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ no heading correction device specified===========================
 ===========================
 seapath_udp-hydrins_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 183.6431644 to 184.5943068
-(2023/07/03 15:26:09 to 2023/07/04 14:15:48)
-all hydrins_udp messages:  (1%)  were good  [QC does not exist for this instrument]
+ddrange: 184.5943184 to 185.5943105
+(2023/07/04 14:15:49 to 2023/07/05 14:15:48)
+all hydrins_udp messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   271 out of 271   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.5
-   min  = -0.17, max = 0.27
-   mean = 0.03, stddev = 0.07
+   min  = -0.09, max = 0.22
+   mean = 0.04, stddev = 0.06
 
 ===========================
 ------ trimble_udp statistics ------
 ===========================
 seapath_udp-trimble_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 183.6431644 to 184.5943242
-(2023/07/03 15:26:09 to 2023/07/04 14:15:50)
-all trimble_udp messages:  (1%)  were good  [using available QC]
+ddrange: 184.5943358 to 185.5943279
+(2023/07/04 14:15:51 to 2023/07/05 14:15:50)
+all trimble_udp messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   271 out of 271   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.4
-   min  = -0.36, max = 0.44
-   mean = 0.00, stddev = 0.12
+   min  = -0.68, max = 0.28
+   mean = -0.02, stddev = 0.12
 
 
 === Sonar Pingtype Summary =====
@@ -74,28 +74,28 @@ os38 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  705 1024  377    0.250    0.053   0.046
+*sr-bb-gw-das.uc 100.124.100.34   2 u  837 1024  377    0.224    0.165   0.283
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2023/07/04 14:26:15) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2023/07/05 14:26:15) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2023/07/04 14:20:16) ens = 300 sec, 273 pings, (1.10 sec/ping)
+(2023/07/05 14:20:16) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 os38nb recent ping statistics
 
-(2023/07/04 14:20:16) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2023/07/05 14:20:16) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 22:33,  1 user,  load average: 0.32, 0.44, 0.49
+ 14:30:02 up 1 day, 22:33,  1 user,  load average: 0.14, 0.33, 0.41
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -110,36 +110,10 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/DAS_while_logging.warn
-      58 /home/adcp/log/hcorrstats_hydrins_udp.warn
-      31 /home/adcp/log/hcorrstats_hydrins_udp.warn.2023-07-03
-      58 /home/adcp/log/hcorrstats_trimble_udp.warn
-      31 /home/adcp/log/hcorrstats_trimble_udp.warn.2023-07-03
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      1 /home/adcp/log/quick_os150nb.warn
-(3) rbin warnings:
- 
-seapath_udp gps  82370    1.00  -1723718.45       1.0       0     1     1     0     1
-seapath_udp sea  82370    1.00  -1723718.45       1.0       0     1     1     0     1
-seapath_udp hdg  82370    1.00  -1723718.45       1.0       0     1     1     0     1
-hydrins_udp gps 164734    0.50  -1723718.43       1.0       1     1     1     0     1
-hydrins_udp hdg 164734    0.50  -1723718.43       1.0       1     1     1     0     1
-hydrins_udp pmv 164735    0.50  -1723718.43       1.0       1     1     1     0     1
-trimble_udp gps 164740    0.50  -1723718.45       0.6       0     1     1     0     1
-trimble_udp gph 164740    0.50  -1723718.45       0.6       0     1     1     0     1
-hemisphere_udp hdg 102183    0.52  -1723717.94       5.0   15394     1     1     0     1
-hemisphere hdg 164738    0.50  -1723717.95       0.5       0     1     1     0     1
-hemisphere gps 164738    0.50  -1723717.95       0.5       0     1     1     0     1
-(4) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 183.643162
-
+      64 /home/adcp/log/hcorrstats_hydrins_udp.warn
+      64 /home/adcp/log/hcorrstats_trimble_udp.warn
 
 Figures and files:
 

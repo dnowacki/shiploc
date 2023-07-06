@@ -1,13 +1,69 @@
-2023/07/04 14:30:01
-atcurrents02 5.11.0-27-generic (focal "Ubuntu 20.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2023/07/05 14:30:01
+atcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
+Current cruise: AT50_11     ** is logging **
+
+   wh300 2023/06/25  01:39:22 to 2023/07/05  14:29:00  (1 min. ago)
+
+approximate lat, lon, depth:   34 15.84078 N  120 1.93254 W   depth=583
+
+link: http://www.google.com/maps/place/34%2015.84078N+120%201.93254W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ hydrins2 statistics ------
+===========================
+hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 183.9110387 to 184.9110271
+(2023/07/03 21:51:54 to 2023/07/04 21:51:53)
+all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   108 out of 108   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.03, max = -0.01
+   mean = -0.02, stddev = 0.00
+
+===========================
+------ seapath statistics ------
+===========================
+hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 183.9110502 to 184.9110387
+(2023/07/03 21:51:55 to 2023/07/04 21:51:54)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   108 out of 108   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.28, max = -0.12
+   mean = -0.20, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:       off
+os75 BT:      off
+
+===========================
 
 
 using chrony
@@ -15,18 +71,23 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    28    +44ns[+2470ns] +/-   51us
+^* timeserver.atlantis.whoi>     1   7   377    98    +28us[  +25us] +/-   62us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000002, RMS offset=0.000003
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000003, RMS offset=0.000004
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/07/05 14:27:00) ens = 120 sec, 89 pings, (1.35 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 175 days, 19:22,  1 user,  load average: 0.04, 0.03, 0.01
+ 14:30:02 up 176 days, 19:50,  1 user,  load average: 0.19, 0.17, 0.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -38,7 +99,15 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      4 /home/adcp/log/3dayplots_wh300.warn
+      27 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn.2023-07-04
 
 Figures and files:
 
@@ -49,13 +118,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
 local_status_mailto:
+
 
 
