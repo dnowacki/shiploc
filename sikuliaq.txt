@@ -1,13 +1,14 @@
-2023/07/08 14:30:01
+2023/07/09 14:30:02
 currents01skq 5.4.0-137-generic (focal "Ubuntu 20.04.5 LTS")
 Current cruise: SKQ202310S_A     ** is logging **
 
-  os150nb 2023/06/15  18:06:47 to 2023/07/08  14:24:54  (5 min. ago)
-  os75nb 2023/06/15  18:06:48 to 2023/07/08  14:29:55  (0 min. ago)
+   wh300 2023/06/15  18:06:46 to 2023/07/09  14:29:52  (0 min. ago)
+  os150nb 2023/06/15  18:06:47 to 2023/07/09  14:24:52  (5 min. ago)
+  os75nb 2023/06/15  18:06:48 to 2023/07/09  14:24:52  (5 min. ago)
 
-approximate lat, lon, depth:   71 14.14790 N  164 41.93890 W   depth=43
+approximate lat, lon, depth:   70 24.54494 N  163 32.30954 W   depth=36
 
-link: http://www.google.com/maps/place/71%2014.14790N+164%2041.93890W
+link: http://www.google.com/maps/place/70%2024.54494N+163%2032.30954W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,23 +26,23 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 187.5943638 to 188.5943522
-(2023/07/07 14:15:53 to 2023/07/08 14:15:52)
+ddrange: 188.5947689 to 189.5947573
+(2023/07/08 14:16:28 to 2023/07/09 14:16:27)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   283 out of 283   (100%) were good
+   286 out of 286   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = 0.15, max = 0.41
-   mean = 0.29, stddev = 0.05
+   min  = 0.12, max = 0.42
+   mean = 0.22, stddev = 0.06
 
 
 === Sonar Pingtype Summary =====
 
 wh300: Triggering command not found
-wh300 BB:       off
-wh300 BT:      off
+wh300 BB:  on
+wh300 BT:  on
 
 os150: Triggering not used (CX0,0)
 os150 BB:       off
@@ -63,29 +64,29 @@ os38 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*shp-ntp-0.sikul .GPS.            1 u  839 1024  377    0.132   -1.136   0.918
-+shp-ntp-1.sikul .GPS.            1 u  466 1024  377    0.126   -0.801   0.639
+*shp-ntp-0.sikul .GPS.            1 u  189 1024  377    0.134   -0.800   0.816
++shp-ntp-1.sikul .GPS.            1 u  831 1024  377    0.110   -0.789   0.865
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2023/07/08 14:19:55) ens = 300 sec, 137 pings, (2.19 sec/ping)
+(2023/07/09 14:19:52) ens = 300 sec, 137 pings, (2.19 sec/ping)
 
 os150nb recent ping statistics
 
-(2023/07/08 14:19:53) ens = 300 sec, 232 pings, (1.29 sec/ping)
+(2023/07/09 14:19:51) ens = 300 sec, 232 pings, (1.29 sec/ping)
 
 wh300 recent ping statistics
 
-(2023/07/08 12:34:00) ens = 300 sec, 157 pings, (1.91 sec/ping)
+(2023/07/09 14:19:52) ens = 300 sec, 188 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 1 day, 55 min,  1 user,  load average: 0.18, 0.21, 0.26
+ 14:30:03 up 2 days, 55 min,  1 user,  load average: 0.33, 0.43, 0.47
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -100,18 +101,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-    19 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      6 /home/adcp/log/3dayplots_os150nb.warn
-      50 /home/adcp/log/hcorrstats_seapath.warn
-      39 /home/adcp/log/hcorrstats_seapath.warn.2023-07-07
-      235 /home/adcp/log/lastensq_wh300.warn
-      184 /home/adcp/log/lastensq_wh300.warn.2023-07-07
-      3 /home/adcp/log/lastfewvec_wh300.warn
-      3 /home/adcp/log/lastfewvec_wh300.warn.2023-07-07
-      1 /home/adcp/log/web_speedlog.warn
+      8 /home/adcp/log/3dayplots_os150nb.warn
+      6 /home/adcp/log/3dayplots_wh300.warn
+      1 /home/adcp/log/lastensq_os150nb.warn
+      260 /home/adcp/log/lastensq_wh300.warn
+      5 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -122,17 +118,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     105      /home/adcp/www/figures/wh300_lastens.png
-       5      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     105      /home/adcp/www/figures/wh300_ddaycont.png
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
        4      /home/adcp/www/figures/os75nb_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
