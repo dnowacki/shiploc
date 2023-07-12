@@ -1,24 +1,59 @@
-2023/07/10 14:15:01
+2023/07/11 14:15:02
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: post-SP2315-ancillary     ** is logging **
+
+
+approximate lat, lon, depth:   32 42.44800 N  117 14.20520 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.44800N+117%2014.20520W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "bx992")
+===========================
+------ bx992 statistics ------
+===========================
+gpshead-bx992 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 190.6304282 to 191.5891319
+(2023/07/10 15:07:49 to 2023/07/11 14:08:21)
+all bx992 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   276 out of 276   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.46, max = 3.22
+   mean = 1.69, stddev = 0.45
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+===========================
 
 ---------- ps -ef | grep ntpd | grep -v grep ------------
 ntp is not running
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:15:02 up 59 days, 17:24,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:15:03 up 60 days, 17:24,  1 user,  load average: 0.11, 0.13, 0.11
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -30,7 +65,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 
 
 
+Summary of warnings:
+______________________
 
+(1) rbin warnings:
+ 
+gpshead gph 166484    0.48    0.00       1.0       1     1     1     0     0
+gpshead gph 166484    0.48    0.00       1.0       1     1     1     0     0
 
 Figures and files:
 
@@ -41,13 +82,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    3683      /home/adcp/www/figures/ktprof_amp_lastens.png
-    3683      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    3683      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
