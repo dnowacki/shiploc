@@ -1,12 +1,12 @@
-2023/07/12 14:15:02
+2023/07/13 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2307     ** is logging **
 
-  os150nb 2023/07/02  13:37:17 to 2023/07/12  14:12:48  (2 min. ago)
+  os150nb 2023/07/02  13:37:17 to 2023/07/13  14:12:48  (2 min. ago)
 
-approximate lat, lon, depth:   26 13.83209 S  108 32.13157 E   depth=5295
+approximate lat, lon, depth:   28 50.55200 S  111 43.71347 E   depth=5282
 
-link: http://www.google.com/maps/place/26%2013.83209S+108%2032.13157E
+link: http://www.google.com/maps/place/28%2050.55200S+111%2043.71347E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -22,22 +22,34 @@ NOTE: This is a _virtual_ computer
 ===========================
 ------ phins statistics ------
 ===========================
-no good phins data out of 0 (300sec) ensembles
+gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
+
+ddrange: 191.9910194 to 192.9910079
+(2023/07/11 23:47:04 to 2023/07/12 23:47:03)
+all phins messages:  (0%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   69 out of 69   (100%) were good
+statistics of good data:
+   mean N = 72, stddev N =  128.2
+   min  = 0.01, max = 0.16
+   mean = 0.10, stddev = 0.04
+
 ===========================
 ------ seapath statistics ------
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 191.5848389 to 192.5848273
-(2023/07/11 14:02:10 to 2023/07/12 14:02:09)
+ddrange: 192.5848042 to 193.5847926
+(2023/07/12 14:02:07 to 2023/07/13 14:02:06)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.48, max = -0.22
-   mean = -0.37, stddev = 0.04
+   min  = -0.40, max = -0.22
+   mean = -0.30, stddev = 0.03
 
 ===========================
 ------ abxtwo statistics ------
@@ -56,20 +68,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  347 1024  377    0.199    0.004   0.044
+*rr-bb-gw-das.uc 100.124.36.34    2 u  234 1024  377    0.245    0.089   0.029
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/07/12 14:09:48) ens = 180 sec, 148 pings, (1.22 sec/ping)
+(2023/07/13 14:09:47) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:05 up 154 days, 22:09,  1 user,  load average: 0.14, 0.27, 0.28
+ 14:15:05 up 155 days, 22:09,  1 user,  load average: 0.13, 0.20, 0.27
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -87,11 +99,12 @@ ______________________
 (1) wordcount of log/*.warn:
 
       57 /home/adcp/log/DAS_while_logging.warn
-      64 /home/adcp/log/DAS_while_logging.warn.2023-07-11
-      2051 /home/adcp/log/lastensq_os150nb.warn
-      3444 /home/adcp/log/lastensq_os150nb.warn.2023-07-11
+      96 /home/adcp/log/DAS_while_logging.warn.2023-07-12
+      1083 /home/adcp/log/hcorrstats_phins.warn
+      2055 /home/adcp/log/lastensq_os150nb.warn
+      4064 /home/adcp/log/lastensq_os150nb.warn.2023-07-12
       1197 /home/adcp/log/update_hbins_os150nb.warn
-      2016 /home/adcp/log/update_hbins_os150nb.warn.2023-07-11
+      2031 /home/adcp/log/update_hbins_os150nb.warn.2023-07-12
 
 Figures and files:
 
@@ -102,8 +115,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
        2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
