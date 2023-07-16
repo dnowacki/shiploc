@@ -1,87 +1,26 @@
-2023/07/14 14:15:02
+2023/07/15 14:15:02
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: RR2307     ** is logging **
-
-  os150nb 2023/07/02  13:37:17 to 2023/07/14  14:12:48  (2 min. ago)
-
-approximate lat, lon, depth:   31 10.70224 S  114 38.90912 E   depth=1453
-
-link: http://www.google.com/maps/place/31%2010.70224S+114%2038.90912E
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is a _virtual_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- phins statistics ------
-===========================
-gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
-
-ddrange: 193.5848389 to 194.5848174
-(2023/07/13 14:02:10 to 2023/07/14 14:02:08)
-all phins messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  1.1
-   min  = 0.05, max = 0.16
-   mean = 0.10, stddev = 0.02
-
-===========================
------- seapath statistics ------
-===========================
-gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 193.5848620 to 194.5848405
-(2023/07/13 14:02:12 to 2023/07/14 14:02:10)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.44, max = -0.24
-   mean = -0.36, stddev = 0.03
-
-===========================
------- abxtwo statistics ------
-===========================
-no good abxtwo data out of 0 (300sec) ensembles
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u   43 1024  377    0.240    0.038   0.048
+*rr-bb-gw-das.uc 100.124.36.34    2 u  965 1024  377    0.263   -0.496   0.226
 ------------------------------------------
 
-
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2023/07/14 14:09:47) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:05 up 156 days, 22:09,  1 user,  load average: 0.11, 0.20, 0.26
+ 14:15:04 up 157 days, 22:09,  1 user,  load average: 0.05, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -98,14 +37,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      57 /home/adcp/log/DAS_while_logging.warn
-      96 /home/adcp/log/DAS_while_logging.warn.2023-07-13
-      152 /home/adcp/log/hcorrstats_phins.warn
-      1824 /home/adcp/log/hcorrstats_phins.warn.2023-07-13
-      2051 /home/adcp/log/lastensq_os150nb.warn
-      3448 /home/adcp/log/lastensq_os150nb.warn.2023-07-13
-      1197 /home/adcp/log/update_hbins_os150nb.warn
-      2016 /home/adcp/log/update_hbins_os150nb.warn.2023-07-13
+      1 /home/adcp/log/DAS_while_logging.warn
+      96 /home/adcp/log/DAS_while_logging.warn.2023-07-14
+      35 /home/adcp/log/lastensq_os150nb.warn
+      3444 /home/adcp/log/lastensq_os150nb.warn.2023-07-14
+      21 /home/adcp/log/update_hbins_os150nb.warn
+      2016 /home/adcp/log/update_hbins_os150nb.warn.2023-07-14
 
 Figures and files:
 
@@ -116,13 +53,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+     844      /home/adcp/www/figures/ktprof_amp_lastens.png
+     844      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_ddaycont.png
+     844      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
