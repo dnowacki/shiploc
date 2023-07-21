@@ -1,0 +1,152 @@
+2023/07/20 14:30:01
+currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
+Current cruise: TN420     ** is logging **
+
+   wh300 2023/07/17  21:18:51 to 2023/07/20  14:28:51  (1 min. ago)
+  os75nb 2023/07/17  21:21:53 to 2023/07/20  14:26:51  (3 min. ago)
+
+approximate lat, lon, depth:   45 55.39706 N  129 59.34491 W   depth=1615
+
+link: http://www.google.com/maps/place/45%2055.39706N+129%2059.34491W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _secondary_ computer
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv5")
+===========================
+------ posmv5 statistics ------
+===========================
+gyro1-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
+
+ddrange: 199.5955093 to 200.5955004
+(2023/07/19 14:17:32 to 2023/07/20 14:17:31)
+all posmv5 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.2
+   min  = -0.38, max = 0.04
+   mean = -0.16, stddev = 0.06
+
+===========================
+------ seapath statistics ------
+===========================
+gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 199.5955267 to 200.5955177
+(2023/07/19 14:17:34 to 2023/07/20 14:17:33)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.4
+   min  = -0.36, max = 0.06
+   mean = -0.16, stddev = 0.08
+
+===========================
+------ comparitor statistics ------
+===========================
+gyro1-comparitor statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 199.5955440 to 200.5955351
+(2023/07/19 14:17:35 to 2023/07/20 14:17:34)
+all comparitor messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.2
+   min  = -0.15, max = 0.00
+   mean = -0.09, stddev = 0.04
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,3)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ntpserver-11.rvtgt.uw.edu     1  10   377  1023    -15us[  -36us] +/-   70us
+
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000021, RMS offset=0.000028
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/07/20 14:26:51) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os75nb recent ping statistics
+
+(2023/07/20 14:21:51) ens = 300 sec, 132 pings, (2.27 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:03 up 9 days, 16:48,  1 user,  load average: 0.12, 0.25, 0.31
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
+
+posmv4 quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv4_qc.png
+posmv5 quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_qc.png
+
+
+
+
+
+
+
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
+
+
+
+local_status_mailto:
+
+
+

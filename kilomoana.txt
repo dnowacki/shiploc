@@ -1,0 +1,128 @@
+2023/07/20 14:30:01
+currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.2 LTS")
+Current cruise: km2309     ** is logging **
+
+   wh300 2023/07/17  20:50:22 to 2023/07/20  14:28:22  (1 min. ago)
+  os38bb 2023/07/17  20:53:27 to 2023/07/20  14:28:23  (1 min. ago)
+  os38nb 2023/07/17  20:53:27 to 2023/07/20  14:28:23  (1 min. ago)
+
+approximate lat, lon, depth:   54 48.11490 N  149 5.37234 W   depth=4246
+
+link: http://www.google.com/maps/place/54%2048.11490N+149%205.37234W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _primary_ computer
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
+
+ddrange: 199.5967816 to 200.5967751
+(2023/07/19 14:19:22 to 2023/07/20 14:19:21)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.4
+   min  = -1.69, max = 2.84
+   mean = 0.09, stddev = 0.59
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:  on
+os38 NB:  on
+os38 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ kmroute.km                    2  10   377   878    -49us[  -79us] +/- 1149us
+^* kmroute.km                    2   9   377   393    -89us[ -121us] +/- 1045us
+
+Reference ID: 0A009601, Stratum=3, last offset=-0.000032, RMS offset=0.000034
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os38nb recent ping statistics
+
+(2023/07/20 14:23:22) ens = 300 sec, 50 pings, (6.00 sec/ping)
+
+wh300 recent ping statistics
+
+(2023/07/20 14:26:22) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os38bb recent ping statistics
+
+(2023/07/20 14:23:22) ens = 300 sec, 50 pings, (6.00 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:02 up 124 days, 14:15,  1 user,  load average: 2.03, 1.90, 1.78
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
+
+posmv quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_qc.png
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/DAS_while_logging.warn
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/os38bb_lastens.png
+       1      /home/adcp/www/figures/os38nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/os38bb_ddaycont.png
+       0      /home/adcp/www/figures/os38nb_ddaycont.png
+
+
+
+local_status_mailto:
+
