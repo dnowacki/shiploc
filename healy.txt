@@ -1,13 +1,12 @@
-2023/07/28 14:30:01
-currents01hly 5.15.0-46-generic (focal "Ubuntu 20.04.6 LTS")
-Current cruise: HLY2301     ** is logging **
+2023/07/30 02:53:29
+ticurrents02 5.15.0-60-generic (jammy "Ubuntu 22.04.1 LTS")
+Current cruise: test_daily01     ** is logging **
 
-  os150nb 2023/07/22  00:04:48 to 2023/07/28  14:26:37  (3 min. ago)
-  os75nb 2023/07/22  00:04:48 to 2023/07/28  14:26:39  (3 min. ago)
+  os75nb 2023/07/30  11:30:26 to 2023/07/30  11:45:26  (-531 min. ago)
 
-approximate lat, lon, depth:   71 3.22127 N  158 58.04256 W   depth=45
+approximate lat, lon, depth:   48 6.91111 N  126 14.15275 W   depth=1738
 
-link: http://www.google.com/maps/place/71%203.22127N+158%2058.04256W
+link: http://www.google.com/maps/place/48%206.91111N+126%2014.15275W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -19,66 +18,25 @@ NOTE: This is the _primary_ computer
 
 ---- heading correction ----
 
-(heading correction from "posmv")
-===========================
------- seapath statistics ------
-===========================
-gyro27-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 207.6025181 to 208.6024979
-(2023/07/27 14:27:38 to 2023/07/28 14:27:36)
-all seapath messages:  (58%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   167 out of 167   (100%) were good
-statistics of good data:
-   mean N = 175, stddev N =  148.5
-   min  = -1.28, max = 0.89
-   mean = 0.25, stddev = 0.72
-
-===========================
------- posmv statistics ------
-===========================
-gyro27-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
-
-ddrange: 207.6025412 to 208.6025211
-(2023/07/27 14:27:40 to 2023/07/28 14:27:38)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -2.07, max = 1.03
-   mean = -0.47, stddev = 1.13
-
+(heading correction from "abxtwo")
 ===========================
 ------ abxtwo statistics ------
 ===========================
-gyro27-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+posmv-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 207.6025528 to 208.6025326
-(2023/07/27 14:27:41 to 2023/07/28 14:27:39)
+ddrange: 210.4759905 to 210.4864941
+(2023/07/30 11:25:26 to 2023/07/30 11:40:33)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   3 out of 3   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -2.87, max = 0.21
-   mean = -1.26, stddev = 1.13
+   mean N = 600, stddev N =  1.2
+   min  = -0.99, max = -0.94
+   mean = -0.96, stddev = 0.03
 
-===========================
------- gyro39 statistics ------
-===========================
-no good gyro39 data out of 0 (300sec) ensembles
 
 === Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
 
 os75: Triggering not used (CX0,0)
 os75 BB:       off
@@ -87,48 +45,45 @@ os75 BT:      off
 
 ===========================
 
-
-using chrony
----------- chronyc tracking ------------
-210 Number of sources = 2
-MS Name/IP address         Stratum Poll Reach LastRx Last sample               
-===============================================================================
-^+ PSNHTIMBRIDGE.healy.pola>     1  10   377   712    -40us[  -53us] +/-  130us
-^* PSNHTIMHCO.healy.polarsc>     1  10   377   371    -34us[  -48us] +/-  100us
-
-Reference ID: C0A82A29, Stratum=2, last offset=-0.000014, RMS offset=0.000017
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ 128.171.156.18  .POOL.          16 p    -   64    0    0.000   +0.000   0.000
+*smtp-server.soe 128.171.159.247  2 u  691 1024  377    0.387  -11.791   4.204
 ------------------------------------------
-
 
 
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2023/07/28 14:21:38) ens = 300 sec, 167 pings, (1.80 sec/ping)
-
-os150nb recent ping statistics
-
-(2023/07/28 14:21:37) ens = 300 sec, 273 pings, (1.10 sec/ping)
+(2023/07/30 11:40:27) ens = 300 sec, 84 pings, (3.57 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 10 days, 16:10,  1 user,  load average: 0.33, 0.42, 0.40
+ 02:53:30 up 167 days,  6:10,  3 users,  load average: 0.75, 0.80, 0.72
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
 
-QC plots:
-https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/posmv_qc.png
-https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/abxtwo_qc.png
+posmv quality plot:
+http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/posmv_qc.png
 
 
 
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+(2) proc sensor incompatibilities:
+ - pitch_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
+ - roll_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
 
 Figures and files:
 
@@ -139,18 +94,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_lastens.png
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
-       3      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
 local_status_mailto:
-
 
