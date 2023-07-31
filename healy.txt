@@ -1,89 +1,47 @@
-2023/07/30 02:53:29
-ticurrents02 5.15.0-60-generic (jammy "Ubuntu 22.04.1 LTS")
-Current cruise: test_daily01     ** is logging **
-
-  os75nb 2023/07/30  11:30:26 to 2023/07/30  11:45:26  (-531 min. ago)
-
-approximate lat, lon, depth:   48 6.91111 N  126 14.15275 W   depth=1738
-
-link: http://www.google.com/maps/place/48%206.91111N+126%2014.15275W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
-NOTE: This is the _primary_ computer
+2023/07/30 14:20:01
+currents02hly 5.15.0-46-generic (focal "Ubuntu 20.04.6 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
+NOTE: This is the _secondary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-posmv-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 210.4759905 to 210.4864941
-(2023/07/30 11:25:26 to 2023/07/30 11:40:33)
-all abxtwo messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   3 out of 3   (100%) were good
-statistics of good data:
-   mean N = 600, stddev N =  1.2
-   min  = -0.99, max = -0.94
-   mean = -0.96, stddev = 0.03
 
 
-=== Sonar Pingtype Summary =====
+using chrony
+---------- chronyc tracking ------------
+210 Number of sources = 2
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ PSNHTIMBRIDGE.healy.pola>     1  10   377    99    +15us[  +15us] +/-  167us
+^* PSNHTIMHCO.healy.polarsc>     1   9   377   258  +9808ns[  +18us] +/-  150us
 
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
-
----------- ntpq -p ------------
-     remote           refid      st t when poll reach   delay   offset  jitter
-==============================================================================
- 128.171.156.18  .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*smtp-server.soe 128.171.159.247  2 u  691 1024  377    0.387  -11.791   4.204
+Reference ID: C0A82A29, Stratum=2, last offset=0.000008, RMS offset=0.000015
 ------------------------------------------
 
 
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2023/07/30 11:40:27) ens = 300 sec, 84 pings, (3.57 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 02:53:30 up 167 days,  6:10,  3 users,  load average: 0.75, 0.80, 0.72
+ 14:20:01 up 69 days, 22:06,  1 user,  load average: 0.02, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
 
-posmv quality plot:
-http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/posmv_qc.png
+QC plots:
+https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/posmv_qc.png
+https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/abxtwo_qc.png
 
 
 
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-(2) proc sensor incompatibilities:
- - pitch_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
- - roll_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
 
 Figures and files:
 
@@ -94,15 +52,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75nb_lastens.png
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
 local_status_mailto:
+
 
