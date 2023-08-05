@@ -1,12 +1,12 @@
-2023/08/03 14:15:02
+2023/08/04 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2308     ** is logging **
 
-  os150nb 2023/07/22  06:52:43 to 2023/08/03  14:14:46  (0 min. ago)
+  os150nb 2023/07/22  06:52:43 to 2023/08/04  14:12:23  (2 min. ago)
 
-approximate lat, lon, depth:   33 59.94183 S   98 57.36311 E   depth=4743
+approximate lat, lon, depth:   33 59.83802 S   96 42.26170 E   depth=4600
 
-link: http://www.google.com/maps/place/33%2059.94183S+98%2057.36311E
+link: http://www.google.com/maps/place/33%2059.83802S+96%2042.26170E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,32 +24,32 @@ NOTE: This is a _virtual_ computer
 ===========================
 gyro-phins statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.150)
 
-ddrange: 213.5850791 to 214.5850672
-(2023/08/02 14:02:31 to 2023/08/03 14:02:30)
-all phins messages:  (99%)  were good  [using available QC]
+ddrange: 214.5920580 to 215.5920373
+(2023/08/03 14:12:34 to 2023/08/04 14:12:32)
+all phins messages:  (63%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   286 out of 286   (100%) were good
 statistics of good data:
-   mean N = 300, stddev N =  2.9
-   min  = -0.07, max = 0.25
-   mean = 0.14, stddev = 0.07
+   mean N = 299, stddev N =  4.9
+   min  = 0.22, max = 0.38
+   mean = 0.30, stddev = 0.04
 
 ===========================
 ------ seapath statistics ------
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 213.5851022 to 214.5850904
-(2023/08/02 14:02:33 to 2023/08/03 14:02:32)
+ddrange: 214.2308975 to 215.2308799
+(2023/08/03 05:32:30 to 2023/08/04 05:32:28)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.54, max = -0.20
-   mean = -0.35, stddev = 0.07
+   min  = -0.35, max = -0.16
+   mean = -0.25, stddev = 0.04
 
 ===========================
 ------ abxtwo statistics ------
@@ -68,20 +68,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  306 1024  377    0.270   -0.586   0.478
+*rr-bb-gw-das.uc 100.124.36.34    2 u  759 1024  377    0.286   -0.020   0.067
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/08/03 14:11:46) ens = 180 sec, 148 pings, (1.22 sec/ping)
+(2023/08/04 14:09:25) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:05 up 2 days, 12:35,  1 user,  load average: 0.26, 0.27, 0.30
+ 14:15:03 up  8:35,  1 user,  load average: 0.24, 0.30, 0.28
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -96,18 +96,31 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
 
-      57 /home/adcp/log/DAS_while_logging.warn
-      96 /home/adcp/log/DAS_while_logging.warn.2023-08-02
-      1995 /home/adcp/log/lastensq_os150nb.warn
-      3360 /home/adcp/log/lastensq_os150nb.warn.2023-08-02
-      1253 /home/adcp/log/update_hbins_os150nb.warn
-      2100 /home/adcp/log/update_hbins_os150nb.warn.2023-08-02
-(2) rbin warnings:
+      193 /home/adcp/log/DAS_while_logging.warn
+      96 /home/adcp/log/DAS_while_logging.warn.2023-08-03
+      34 /home/adcp/log/hcorrstats_phins.warn
+      646 /home/adcp/log/hcorrstats_seapath.warn
+      2030 /home/adcp/log/lastensq_os150nb.warn
+      3360 /home/adcp/log/lastensq_os150nb.warn.2023-08-03
+      1218 /home/adcp/log/update_hbins_os150nb.warn
+      2100 /home/adcp/log/update_hbins_os150nb.warn.2023-08-03
+(3) rbin warnings:
  
-gyro hdg  86923    1.00    0.00      16.5      72    33    19     0     0
-gyro hdg  86923    1.00    0.00      16.5      72    33    19     0     0
+seapath gps  81161    1.00  -267433.77       2.0       0     1     1     0     1
+seapath sea  81161    1.00  -267433.77       2.0       0     1     1     0     1
+phins gps 174133    0.50  -273339.27       1.0       3     1     1     0     1
+phins pmv 174133    0.50  -273339.27       1.0       3     1     1     0     1
+abxtwo gps 174136    0.50  -273339.27       1.0       2     1     1     0     1
+gyro hdg  86658    1.00    0.00     239.8      73    30    23     0     0
+gyro hdg  86658    1.00  -273338.98      14.2      72    31    24     0     1
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 214.500009
+
 
 Figures and files:
 
@@ -118,13 +131,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
