@@ -1,7 +1,17 @@
-2023/08/04 14:30:01
-currents02km 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2023/08/05 14:30:01
+currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.2 LTS")
+Current cruise: km2309-post     ** is logging **
+
+   wh300 2023/07/30  23:22:32 to 2023/08/05  14:30:32  (0 min. ago)
+  os38bb 2023/07/30  23:25:38 to 2023/08/05  14:25:35  (5 min. ago)
+  os38nb 2023/07/30  23:25:38 to 2023/08/05  14:25:35  (5 min. ago)
+
+approximate lat, lon, depth:   21 18.90683 N  157 52.64554 W   depth=-2
+
+link: http://www.google.com/maps/place/21%2018.90683N+157%2052.64554W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 --->>>  /media/kmnas/ NOT FOUND (check mounts) <<<---
@@ -10,25 +20,70 @@ NOTE: This is the _primary_ computer
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
+
+ddrange: 215.5983827 to 216.5983724
+(2023/08/04 14:21:40 to 2023/08/05 14:21:39)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.5
+   min  = -0.11, max = 0.51
+   mean = 0.19, stddev = 0.12
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:  on
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
-210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 10.0.120.1                    3  10     0  509m    -82us[ -214us] +/-   40ms
+^* kmroute.km                    2  10   377   464    -15us[  -44us] +/-  101us
+^+ kmroute.km                    2  10   377   907  -6613ns[  -34us] +/-  145us
 
-Reference ID: 0A007801, Stratum=4, last offset=-0.000132, RMS offset=0.000059
+Reference ID: 0A007801, Stratum=3, last offset=-0.000029, RMS offset=0.002770
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os38nb recent ping statistics
+
+(2023/08/05 14:20:35) ens = 300 sec, 50 pings, (6.00 sec/ping)
+
+wh300 recent ping statistics
+
+(2023/08/05 14:26:32) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os38bb recent ping statistics
+
+(2023/08/05 14:20:35) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:01 up 211 days, 15:22,  1 user,  load average: 1.04, 1.02, 1.00
+ 14:30:02 up 140 days, 14:15,  1 user,  load average: 2.34, 2.56, 2.57
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -44,7 +99,14 @@ https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_q
 Summary of warnings:
 ______________________
 
-(1) expected backup disk not found:
+(1) wordcount of log/*.warn:
+
+      15 /home/adcp/log/DAS_while_cruise.warn
+      18 /home/adcp/log/DAS_while_cruise.warn.2023-08-04
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/DAS_while_logging.warn.2023-08-04
+      4 /home/adcp/log/send_buffered_mail.warn
+(2) expected backup disk not found:
 
 --->>>  /media/kmnas/ NOT FOUND (check mounts) <<<---
 
@@ -58,10 +120,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/os38bb_lastens.png
+       5      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/os38bb_ddaycont.png
+       4      /home/adcp/www/figures/os38nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
