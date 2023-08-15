@@ -1,24 +1,64 @@
-2023/08/09 14:30:02
+2023/08/14 14:30:01
 currents01sv 5.15.0-46-generic (focal "Ubuntu 20.04.5 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: SAV-23-16_     ** is logging **
+
+   wh600 2023/08/14  12:41:56 to 2023/08/14  14:27:56  (2 min. ago)
+
+approximate lat, lon, depth:   31 49.89528 N   80 51.82142 W   depth=11
+
+link: http://www.google.com/maps/place/31%2049.89528N+80%2051.82142W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "vs330")
+===========================
+------ vs330 statistics ------
+===========================
+gyro-vs330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 225.5277315 to 225.6007060
+(2023/08/14 12:39:56 to 2023/08/14 14:25:01)
+all vs330 messages:  (94%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   21 out of 21   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -1.40, max = 0.63
+   mean = -0.14, stddev = 0.56
+
+
+=== Sonar Pingtype Summary =====
+
+wh600: Triggering command not found
+wh600 BB:  on
+wh600 BT:  on
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh600 recent ping statistics
+
+(2023/08/14 14:25:56) ens = 120 sec, 75 pings, (1.60 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 11 days, 19:38,  1 user,  load average: 0.00, 0.01, 0.00
+ 14:30:03 up  2:52,  1 user,  load average: 0.13, 0.26, 0.22
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -30,7 +70,19 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      36 /home/adcp/log/3dayplots_wh600.warn
+      48 /home/adcp/log/DAS_while_logging.warn
+      7 /home/adcp/log/grab_pings_wh600.warn
+      112 /home/adcp/log/lastensq_wh600.warn
+      73 /home/adcp/log/lastfewvec_wh600.warn
+      176 /home/adcp/log/quick_wh600.warn
 
 Figures and files:
 
@@ -41,13 +93,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    4984      /home/adcp/www/figures/ktprof_amp_lastens.png
-    4984      /home/adcp/www/figures/wh600_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    4984      /home/adcp/www/figures/wh600_ddaycont.png
+       4      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 
