@@ -1,14 +1,14 @@
-2023/08/19 14:30:01
+2023/08/20 14:30:01
 currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
 Current cruise: EN707     ** is logging **
 
-   wh300 2023/08/18  15:29:13 to 2023/08/19  14:29:14  (0 min. ago)
-  os75bb 2023/08/18  15:32:16 to 2023/08/19  14:27:13  (2 min. ago)
-  os75nb 2023/08/18  15:32:16 to 2023/08/19  14:27:13  (2 min. ago)
+   wh300 2023/08/18  15:29:13 to 2023/08/20  14:29:13  (0 min. ago)
+  os75bb 2023/08/18  15:32:16 to 2023/08/20  14:27:15  (2 min. ago)
+  os75nb 2023/08/18  15:32:16 to 2023/08/20  14:27:15  (2 min. ago)
 
-approximate lat, lon, depth:   43 37.04420 N   68 58.81162 W   depth=114
+approximate lat, lon, depth:   43 45.49750 N   66 26.28666 W   depth=78
 
-link: http://www.google.com/maps/place/43%2037.04420N+68%2058.81162W
+link: http://www.google.com/maps/place/43%2045.49750N+66%2026.28666W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,32 +26,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 229.6439120 to 230.6028935
-(2023/08/18 15:27:14 to 2023/08/19 14:28:10)
-all abxtwo_b2 messages:  (99%)  were good  [using available QC]
+ddrange: 230.6030556 to 231.6030440
+(2023/08/19 14:28:24 to 2023/08/20 14:28:23)
+all abxtwo_b2 messages:  (98%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   266 out of 272   (98%) were good
+   281 out of 283   (99%) were good
 statistics of good data:
-   mean N = 276, stddev N =  56.4
-   min  = -1.69, max = 1.27
-   mean = 0.26, stddev = 0.42
+   mean N = 283, stddev N =  48.0
+   min  = -1.56, max = 1.20
+   mean = -0.22, stddev = 0.50
 
 ===========================
 ------ abxtwo_b2_udp statistics ------
 ===========================
 gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 229.6439120 to 230.6029167
-(2023/08/18 15:27:14 to 2023/08/19 14:28:12)
-all abxtwo_b2_udp messages:  (99%)  were good  [using available QC]
+ddrange: 230.6030671 to 231.6030556
+(2023/08/19 14:28:25 to 2023/08/20 14:28:24)
+all abxtwo_b2_udp messages:  (98%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   266 out of 272   (98%) were good
+   281 out of 283   (99%) were good
 statistics of good data:
-   mean N = 276, stddev N =  56.3
-   min  = -1.60, max = 1.23
-   mean = 0.26, stddev = 0.41
+   mean N = 283, stddev N =  48.0
+   min  = -1.42, max = 1.05
+   mean = -0.22, stddev = 0.50
 
 
 === Sonar Pingtype Summary =====
@@ -73,9 +73,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1  10   377   600  +7419ns[+5804ns] +/- 1202us
+^* 192.168.1.8                   1   9   377   410    +36us[  +37us] +/- 1219us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000002, RMS offset=0.000010
+Reference ID: C0A80108, Stratum=2, last offset=0.000001, RMS offset=0.000034
 ------------------------------------------
 
 
@@ -83,21 +83,21 @@ Reference ID: C0A80108, Stratum=2, last offset=-0.000002, RMS offset=0.000010
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2023/08/19 14:22:13) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2023/08/20 14:22:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 wh300 recent ping statistics
 
-(2023/08/19 14:27:14) ens = 120 sec, 93 pings, (1.29 sec/ping)
+(2023/08/20 14:27:14) ens = 120 sec, 93 pings, (1.29 sec/ping)
 
 os75nb recent ping statistics
 
-(2023/08/19 14:22:13) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2023/08/20 14:22:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 24 days, 18:53,  1 user,  load average: 0.43, 0.44, 0.36
+ 14:30:02 up 25 days, 18:53,  1 user,  load average: 0.41, 0.48, 0.41
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -116,25 +116,18 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      32 /home/adcp/log/3dayplots_os75bb.warn
-      1 /home/adcp/log/DAS_while_logging.warn
       58 /home/adcp/log/hcorrstats_abxtwo_b2.warn
-      27 /home/adcp/log/hcorrstats_abxtwo_b2.warn.2023-08-18
+      96 /home/adcp/log/hcorrstats_abxtwo_b2.warn.2023-08-19
       58 /home/adcp/log/hcorrstats_abxtwo_b2_udp.warn
-      27 /home/adcp/log/hcorrstats_abxtwo_b2_udp.warn.2023-08-18
-      196 /home/adcp/log/lastensq_os75bb.warn
-      428 /home/adcp/log/lastensq_os75bb.warn.2023-08-18
-      192 /home/adcp/log/lastensq_os75nb.warn
-      428 /home/adcp/log/lastensq_os75nb.warn.2023-08-18
-      484 /home/adcp/log/lastensq_wh300.warn
-      1082 /home/adcp/log/lastensq_wh300.warn.2023-08-18
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      4 /home/adcp/log/quick_os75bb.warn
-      1 /home/adcp/log/quick_os75nb.warn
-      1 /home/adcp/log/quick_wh300.warn
-      72 /home/adcp/log/update_hbins_os75bb.warn
+      96 /home/adcp/log/hcorrstats_abxtwo_b2_udp.warn.2023-08-19
+      320 /home/adcp/log/lastensq_os75bb.warn
+      598 /home/adcp/log/lastensq_os75bb.warn.2023-08-19
+      306 /home/adcp/log/lastensq_os75nb.warn
+      594 /home/adcp/log/lastensq_os75nb.warn.2023-08-19
+      784 /home/adcp/log/lastensq_wh300.warn
+      1488 /home/adcp/log/lastensq_wh300.warn.2023-08-19
+      8 /home/adcp/log/update_hbins_os75bb.warn
+      28 /home/adcp/log/update_hbins_os75bb.warn.2023-08-19
 
 Figures and files:
 
@@ -153,9 +146,9 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_ddaycont.png
        2      /home/adcp/www/figures/os75bb_ddaycont.png
        2      /home/adcp/www/figures/os75nb_ddaycont.png
-       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
