@@ -1,93 +1,13 @@
-2023/08/22 14:30:02
+2023/08/23 14:30:02
 currents01hly 5.15.0-46-generic (focal "Ubuntu 20.04.6 LTS")
-Current cruise: HLY2301     ** is logging **
-
-  os150bb 2023/08/19  22:12:26 to 2023/08/22  14:29:21  (1 min. ago)
-  os150nb 2023/07/22  00:04:48 to 2023/08/22  14:29:21  (1 min. ago)
-  os75bb 2023/08/19  22:12:26 to 2023/08/22  14:29:24  (0 min. ago)
-  os75nb 2023/07/22  00:04:48 to 2023/08/22  14:29:24  (0 min. ago)
-
-approximate lat, lon, depth:   57 27.38000 N  152 6.22479 W   depth=43
-
-link: http://www.google.com/maps/place/57%2027.38000N+152%206.22479W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- seapath statistics ------
-===========================
-gyro27-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 232.6012365 to 233.6012249
-(2023/08/21 14:25:47 to 2023/08/22 14:25:46)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.33, max = 1.22
-   mean = 0.66, stddev = 0.20
-
-===========================
------- posmv statistics ------
-===========================
-gyro27-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
-
-ddrange: 232.6012480 to 233.6012365
-(2023/08/21 14:25:48 to 2023/08/22 14:25:47)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.46, max = 1.32
-   mean = 0.78, stddev = 0.20
-
-===========================
------- abxtwo statistics ------
-===========================
-gyro27-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 232.6012596 to 233.6012480
-(2023/08/21 14:25:49 to 2023/08/22 14:25:48)
-all abxtwo messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.36, max = 0.51
-   mean = -0.03, stddev = 0.20
-
-===========================
------- gyro39 statistics ------
-===========================
-/home/adcp/daily_report/gyro39_gyro27_pystats.txt does not (yet?) exist
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:  on
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -95,36 +15,19 @@ using chrony
 210 Number of sources = 2
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ PSNHTIMBRIDGE.healy.pola>     1  10   377   811    +40us[  +59us] +/-  129us
-^* PSNHTIMHCO.healy.polarsc>     1  10   377   607    +15us[  +34us] +/-   85us
+^+ PSNHTIMBRIDGE.healy.pola>     1   9   377   115    +47us[  +47us] +/-  107us
+^* PSNHTIMHCO.healy.polarsc>     1   8   377   198    +52us[  +51us] +/-   97us
 
-Reference ID: C0A82A29, Stratum=2, last offset=0.000019, RMS offset=0.000011
+Reference ID: C0A82A29, Stratum=2, last offset=-0.000000, RMS offset=0.000007
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os150bb recent ping statistics
-
-(2023/08/22 14:24:22) ens = 300 sec, 137 pings, (2.19 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/08/22 14:19:23) ens = 300 sec, 83 pings, (3.61 sec/ping)
-
-os150nb recent ping statistics
-
-(2023/08/22 14:24:22) ens = 300 sec, 137 pings, (2.19 sec/ping)
-
-os75bb recent ping statistics
-
-(2023/08/22 14:24:23) ens = 300 sec, 83 pings, (3.61 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 6 days, 10:38,  1 user,  load average: 0.92, 0.72, 0.61
+ 14:30:03 up 7 days, 10:38,  1 user,  load average: 0.34, 0.16, 0.10
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -143,15 +46,8 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      2 /home/adcp/log/3dayplots_os150bb.warn
-      132 /home/adcp/log/3dayplots_os150nb.warn
-      2 /home/adcp/log/3dayplots_os75bb.warn
-      100 /home/adcp/log/3dayplots_os75nb.warn
-      986 /home/adcp/log/hcorrstats_gyro39.warn
-      1615 /home/adcp/log/hcorrstats_gyro39.warn.2023-08-21
-      20 /home/adcp/log/lastensq_os75nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1224 /home/adcp/log/hcorrstats_gyro39.warn
+      30 /home/adcp/log/lastensq_os75nb.warn
 
 Figures and files:
 
@@ -162,19 +58,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150bb_lastens.png
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
+    1231      /home/adcp/www/figures/os150bb_lastens.png
+    1231      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1231      /home/adcp/www/figures/os75bb_lastens.png
+    1231      /home/adcp/www/figures/os75nb_lastens.png
+    1231      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150bb_ddaycont.png
-       0      /home/adcp/www/figures/os150nb_ddaycont.png
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+    1231      /home/adcp/www/figures/os75bb_ddaycont.png
+    1231      /home/adcp/www/figures/os150bb_ddaycont.png
+    1231      /home/adcp/www/figures/os75nb_ddaycont.png
+    1231      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
