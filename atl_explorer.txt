@@ -1,19 +1,27 @@
-2023/08/31 14:30:02
+2023/09/01 14:30:01
 currents02ae 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
 Current cruise: jh2023-08-28-test01     ** is logging **
 
-  os75bb 2023/08/29  01:34:41 to 2023/08/31  14:24:43  (5 min. ago)
-  os75nb 2023/08/29  01:34:41 to 2023/08/31  14:24:43  (5 min. ago)
+  os75bb 2023/08/29  01:34:41 to 2023/09/01  14:24:40  (5 min. ago)
+  os75nb 2023/08/29  01:34:41 to 2023/09/01  14:24:40  (5 min. ago)
 
-approximate lat, lon, depth:   32 22.20052 N   64 41.75384 W   depth=-6
+approximate lat, lon, depth:   32 22.20121 N   64 41.75376 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2022.20052N+64%2041.75384W
+link: http://www.google.com/maps/place/32%2022.20121N+64%2041.75376W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
 NOTE: This is the _secondary_ computer
 
 
+
+--->>> WARNING: check os75bb temperature: (max T = 40.29) <<<---
+
+--->>> WARNING: check os75bb temperature: 3 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: (max T = 40.29) <<<---
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
 
 
 
@@ -25,32 +33,32 @@ NOTE: This is the _secondary_ computer
 ===========================
 jrc_port-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 241.5938889 to 242.5938773
-(2023/08/30 14:15:12 to 2023/08/31 14:15:11)
-all abxtwo messages:  (100%)  were good  [using available QC]
+ddrange: 242.5939583 to 243.5939468
+(2023/08/31 14:15:18 to 2023/09/01 14:15:17)
+all abxtwo messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -1.04, max = 0.85
-   mean = -0.23, stddev = 0.35
+   mean N = 300, stddev N =  10.5
+   min  = -1.13, max = 0.86
+   mean = -0.23, stddev = 0.37
 
 ===========================
 ------ jrc_stbd statistics ------
 ===========================
 jrc_port-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 241.5939005 to 242.5938889
-(2023/08/30 14:15:13 to 2023/08/31 14:15:12)
+ddrange: 242.5939699 to 243.5939583
+(2023/08/31 14:15:19 to 2023/09/01 14:15:18)
 all jrc_stbd messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -1.40, max = 2.00
-   mean = -0.02, stddev = 0.60
+   min  = -2.00, max = 1.70
+   mean = -0.04, stddev = 0.61
 
 
 === Sonar Pingtype Summary =====
@@ -68,9 +76,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntp-51.triangle.local         1   6   377    32    +11us[  +11us] +/-   62us
+^* ntp-51.triangle.local         1   6   377    41    +22us[  +19us] +/-   67us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000006
+Reference ID: C0A83309, Stratum=2, last offset=-0.000003, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -78,17 +86,17 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2023/08/31 14:19:39) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2023/09/01 14:19:41) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 os75nb recent ping statistics
 
-(2023/08/31 14:19:39) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2023/09/01 14:19:41) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 141 days, 30 min,  1 user,  load average: 0.34, 0.18, 0.19
+ 14:30:02 up 142 days, 30 min,  1 user,  load average: 0.38, 0.22, 0.25
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -100,6 +108,18 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
+Summary of warnings:
+______________________
+
+(1) temperature warnings:
+
+--->>> WARNING: check os75bb temperature: (max T = 40.29) <<<---
+
+--->>> WARNING: check os75bb temperature: 3 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: (max T = 40.29) <<<---
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
 
 
 Figures and files:
@@ -119,7 +139,7 @@ age (minutes)          filename
 Checking updating of hourly plots:
 age (minutes)          filename
        5      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+       5      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
