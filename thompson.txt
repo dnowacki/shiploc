@@ -1,74 +1,13 @@
-2023/09/06 14:30:02
-currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-Current cruise: TN422     ** is logging **
-
-   wh300 2023/08/14  20:46:10 to 2023/09/06  14:28:12  (1 min. ago)
-  os75nb 2023/08/14  20:49:12 to 2023/09/06  14:29:14  (0 min. ago)
-
-approximate lat, lon, depth:   45 5.16207 N  126 14.64333 W   depth=2751
-
-link: http://www.google.com/maps/place/45%205.16207N+126%2014.64333W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2023/09/07 14:30:01
+currents03tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _secondary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv5")
-===========================
------- posmv5 statistics ------
-===========================
-gyro1-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
-
-ddrange: 247.6008061 to 248.6007969
-(2023/09/05 14:25:10 to 2023/09/06 14:25:09)
-all posmv5 messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = -0.27, max = 0.11
-   mean = -0.15, stddev = 0.05
-
-===========================
------- seapath statistics ------
-===========================
-no good seapath data out of 0 (300sec) ensembles
-===========================
------- comparitor statistics ------
-===========================
-gyro1-comparitor statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 247.6008581 to 248.6008489
-(2023/09/05 14:25:14 to 2023/09/06 14:25:13)
-all comparitor messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = -0.11, max = 0.02
-   mean = -0.00, stddev = 0.01
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,3)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -76,27 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.43.11.10                   1  10   377   407  -4812ns[  +49us] +/-  131us
+^* ntpserver-11.rvtgt.uw.edu     1   9   377   503    +10us[  +27us] +/-  132us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000054, RMS offset=0.000039
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000017, RMS offset=0.000033
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2023/09/06 14:26:12) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/09/06 14:24:12) ens = 300 sec, 132 pings, (2.27 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 57 days, 16:48,  1 user,  load average: 0.36, 0.35, 0.35
+ 14:30:02 up 58 days, 16:48,  1 user,  load average: 0.22, 0.11, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -122,15 +52,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+  675331      /home/adcp/www/figures/ktprof_amp_lastens.png
+  675331      /home/adcp/www/figures/os75nb_lastens.png
+  675331      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+  675331      /home/adcp/www/figures/wh300_ddaycont.png
+  675331      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
