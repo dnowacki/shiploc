@@ -1,29 +1,117 @@
-2023/09/07 14:30:01
+2023/09/08 14:30:02
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SR2320  *** not logging ***
+Current cruise: SR2320     ** is logging **
 
+   wh300 2023/09/07  15:41:41 to 2023/09/08  14:29:41  (0 min. ago)
+  os150nb 2023/09/07  15:44:41 to 2023/09/08  14:29:42  (0 min. ago)
+  os38nb 2023/09/07  15:44:44 to 2023/09/08  14:29:41  (0 min. ago)
 
-no positions found from filelist hydrins_udp/*.gps.rbin
+approximate lat, lon, depth:   40 41.96161 N  124 45.29649 W   depth=1187
 
+link: http://www.google.com/maps/place/40%2041.96161N+124%2045.29649W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ hydrins_udp statistics ------
+===========================
+seapath_udp-hydrins_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 249.6525668 to 250.6008088
+(2023/09/07 15:39:42 to 2023/09/08 14:25:10)
+all hydrins_udp messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   273 out of 273   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  2.1
+   min  = -0.38, max = 0.21
+   mean = 0.03, stddev = 0.07
+
+===========================
+------ trimble_udp statistics ------
+===========================
+seapath_udp-trimble_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 249.6525668 to 250.6008262
+(2023/09/07 15:39:42 to 2023/09/08 14:25:11)
+all trimble_udp messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   273 out of 273   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  2.1
+   min  = -0.75, max = 0.62
+   mean = -0.04, stddev = 0.14
+
+===========================
+------ hemisphere statistics ------
+===========================
+seapath_udp-hemisphere statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 249.6525668 to 250.6008435
+(2023/09/07 15:39:42 to 2023/09/08 14:25:13)
+all hemisphere messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   273 out of 273   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  2.1
+   min  = -4.07, max = 5.30
+   mean = 1.38, stddev = 1.42
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  463 1024  377    0.257   -0.280   0.117
+*sr-bb-gw-das.uc 100.124.100.34   2 u  394 1024  377    0.186    0.033   0.024
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/09/08 14:27:41) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os150nb recent ping statistics
+
+(2023/09/08 14:24:42) ens = 300 sec, 273 pings, (1.10 sec/ping)
+
+os38nb recent ping statistics
+
+(2023/09/08 14:19:41) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 65 days, 22:33,  1 user,  load average: 0.21, 0.10, 0.02
+ 14:30:03 up 66 days, 22:33,  1 user,  load average: 0.32, 0.26, 0.34
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -35,7 +123,18 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      16 /home/adcp/log/3dayplots_os38nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_os150nb.warn
+      1 /home/adcp/log/quick_os38nb.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -46,10 +145,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
