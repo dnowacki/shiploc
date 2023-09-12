@@ -1,13 +1,13 @@
-2023/09/10 14:30:02
+2023/09/11 14:30:02
 currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
 Current cruise: TN422     ** is logging **
 
-   wh300 2023/08/14  20:46:10 to 2023/09/10  14:29:09  (1 min. ago)
-  os75nb 2023/08/14  20:49:12 to 2023/09/10  14:28:09  (2 min. ago)
+   wh300 2023/08/14  20:46:10 to 2023/09/11  14:29:09  (1 min. ago)
+  os75nb 2023/08/14  20:49:12 to 2023/09/11  14:28:10  (2 min. ago)
 
-approximate lat, lon, depth:   44 22.10610 N  124 57.19853 W   depth=580
+approximate lat, lon, depth:   44 31.61461 N  125 23.27023 W   depth=2912
 
-link: http://www.google.com/maps/place/44%2022.10610N+124%2057.19853W
+link: http://www.google.com/maps/place/44%2031.61461N+125%2023.27023W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _secondary_ computer
 ===========================
 gyro1-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
 
-ddrange: 251.6000775 to 252.6000678
-(2023/09/09 14:24:07 to 2023/09/10 14:24:06)
+ddrange: 252.6000678 to 253.6000584
+(2023/09/10 14:24:06 to 2023/09/11 14:24:05)
 all posmv5 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.2
-   min  = -0.26, max = -0.01
-   mean = -0.12, stddev = 0.04
+   min  = -0.45, max = 0.03
+   mean = -0.13, stddev = 0.06
 
 ===========================
 ------ seapath statistics ------
@@ -45,15 +45,15 @@ no good seapath data out of 0 (300sec) ensembles
 ===========================
 gyro1-comparitor statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 251.6001296 to 252.6001199
-(2023/09/09 14:24:11 to 2023/09/10 14:24:10)
+ddrange: 252.6001199 to 253.6001105
+(2023/09/10 14:24:10 to 2023/09/11 14:24:10)
 all comparitor messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.2
-   min  = -0.00, max = 0.00
+   min  = -0.03, max = 0.05
    mean = -0.00, stddev = 0.00
 
 
@@ -76,9 +76,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntpserver-11.rvtgt.uw.edu     1  10   377    72    +21us[  +25us] +/-  117us
+^* ntpserver-11.rvtgt.uw.edu     1  10   377   117  -1054ns[  -65us] +/-  129us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000004, RMS offset=0.000015
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000064, RMS offset=0.000043
 ------------------------------------------
 
 
@@ -86,17 +86,17 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000004, RMS offset=0.000015
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2023/09/10 14:27:09) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2023/09/11 14:27:09) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75nb recent ping statistics
 
-(2023/09/10 14:23:09) ens = 300 sec, 132 pings, (2.27 sec/ping)
+(2023/09/11 14:23:10) ens = 300 sec, 132 pings, (2.27 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 61 days, 16:48,  1 user,  load average: 0.26, 0.38, 0.37
+ 14:30:03 up 62 days, 16:48,  1 user,  load average: 0.22, 0.30, 0.34
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -111,7 +111,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/3dayplots_wh300.warn
+      1 /home/adcp/log/DAS_while_cruise.warn
 
 Figures and files:
 

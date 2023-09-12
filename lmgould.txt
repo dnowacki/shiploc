@@ -1,27 +1,70 @@
-2023/09/10 14:30:01
-gentoo3 5.4.0-110-generic (focal "Ubuntu 20.04.6 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2023/09/11 17:32:00
+gentoo4 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
+Current cruise: jh2023-09-11-test03     ** is logging **
+
+   nb150 2023/09/11  17:07:26 to 2023/09/11  17:27:25  (4 min. ago)
+
+approximate lat, lon, depth:   53 10.16628 S   70 54.43289 W   depth=-8
+
+link: http://www.google.com/maps/place/53%2010.16628S+70%2054.43289W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
+--->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
 
 
 
 
+
+---- heading correction ----
+
+(heading correction from "seapath330")
+===========================
+------ seapath330 statistics ------
+===========================
+gyro-seapath330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 253.7100199 to 253.7205062
+(2023/09/11 17:02:26 to 2023/09/11 17:17:32)
+all seapath330 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   3 out of 3   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.6
+   min  = -0.03, max = 0.05
+   mean = 0.01, stddev = 0.04
+
+
+=== Sonar Pingtype Summary =====
+
+nb150: triggering is not possible
+nb150 BB:  on
+nb150 NB:  on
+nb150 BT:  on
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  tick.lmg.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.lmg.usap.g .GNSS.           1 u  371 1024  377    0.263    0.009   0.031
+*tick.lmg.usap.g .GNSS.           1 u  432 1024  377    0.257    0.178   0.073
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+nb150 recent ping statistics
+
+(2023/09/11 17:22:26) ens = 300 sec, 146 pings, (2.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 96 days, 16:43,  1 user,  load average: 0.00, 0.00, 0.00
+ 17:32:01 up 371 days,  2:12,  1 user,  load average: 0.02, 0.07, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_report/
@@ -33,6 +76,17 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_rep
 
 
 
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/3dayplots_nb150.warn
+      1 /home/adcp/log/DAS_while_cruise.warn
+      1 /home/adcp/log/lastfewvec_nb150.warn
+(2) expected backup disk not found:
+
+--->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
 
 
 Figures and files:
@@ -44,13 +98,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   63745      /home/adcp/www/figures/ktprof_amp_lastens.png
-   63745      /home/adcp/www/figures/nb150_lastens.png
+       4      /home/adcp/www/figures/nb150_lastens.png
+       4      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   63745      /home/adcp/www/figures/nb150_ddaycont.png
+       4      /home/adcp/www/figures/nb150_ddaycont.png
 
 
 
