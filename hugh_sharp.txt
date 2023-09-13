@@ -1,7 +1,14 @@
-2023/09/11 14:30:02
+2023/09/12 14:30:01
 currents02hs 5.4.0-26-generic (focal "Ubuntu 20.04 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: TEST_09_12_23  *** not logging ***
+
+ wh300 -- no data yet
+
+approximate lat, lon, depth:   38 47.30223 N   75 9.68424 W   depth=-1
+
+link: http://www.google.com/maps/place/38%2047.30223N+75%209.68424W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _secondary_ computer
 
 
@@ -15,9 +22,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.20.245                1   8   377    78    +16us[  +17us] +/- 1219us
+^* 192.168.20.245                1   7   377   103    -12us[  -17us] +/- 1194us
 
-Reference ID: C0A814F5, Stratum=2, last offset=0.000001, RMS offset=0.000014
+Reference ID: C0A814F5, Stratum=2, last offset=-0.000005, RMS offset=0.000014
 ------------------------------------------
 
 
@@ -26,7 +33,7 @@ Reference ID: C0A814F5, Stratum=2, last offset=0.000001, RMS offset=0.000014
 
 
 ---------- uptime ------------
- 14:30:02 up 107 days, 23:48,  1 user,  load average: 0.03, 0.02, 0.00
+ 14:30:03 up 22 min,  1 user,  load average: 0.07, 0.02, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -39,7 +46,11 @@ https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -50,13 +61,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  272236      /home/adcp/www/figures/ktprof_amp_lastens.png
-  272236      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  272236      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
