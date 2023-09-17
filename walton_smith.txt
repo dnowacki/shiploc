@@ -1,22 +1,55 @@
-2023/09/15 19:43:40
+2023/09/16 14:30:01
 currents01ws 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: WS23259_Kelble  *** not logging ***
+Current cruise: WS23259_Kelble     ** is logging **
 
-   wh600 2023/09/15  14:25:36 to 2023/09/15  15:10:33  (273 min. ago) 4.6 hrs
-  os75bb 2023/09/15  14:28:37 to 2023/09/15  15:09:34  (274 min. ago) 4.6 hrs
-  os75nb 2023/09/15  14:28:37 to 2023/09/15  15:09:34  (274 min. ago) 4.6 hrs
+   wh600 2023/09/15  14:25:36 to 2023/09/16  14:29:23  (0 min. ago)
+  os75bb 2023/09/15  14:28:37 to 2023/09/16  14:29:26  (0 min. ago)
+  os75nb 2023/09/15  14:28:37 to 2023/09/16  14:29:26  (0 min. ago)
 
-approximate lat, lon, depth:   25 43.88341 N   80 9.72799 W   depth=1
+approximate lat, lon, depth:   25 22.01687 N   80 8.03663 W   depth=34
 
-link: http://www.google.com/maps/place/25%2043.88341N+80%209.72799W
+link: http://www.google.com/maps/place/25%2022.01687N+80%208.03663W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
+
+ddrange: 257.5997338 to 258.5970602
+(2023/09/15 14:23:37 to 2023/09/16 14:19:46)
+all posmv messages:  (2%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   42 out of 42   (100%) were good
+statistics of good data:
+   mean N = 270, stddev N =  88.0
+   min  = -1.22, max = -0.76
+   mean = -1.01, stddev = 0.14
+
+
+=== Sonar Pingtype Summary =====
+
+wh600: Triggering command not found
+wh600 BB:  on
+wh600 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
@@ -24,18 +57,31 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 5   7   377   107  -3588ns[  -35us] +/-  960ms
+^* 10.106.30.100                 5   6   377    33    +23us[  +44us] +/-  347ms
 
-Reference ID: 0A6A1E64, Stratum=6, last offset=-0.000031, RMS offset=0.000010
+Reference ID: 0A6A1E64, Stratum=6, last offset=0.000022, RMS offset=0.000059
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh600 recent ping statistics
+
+(2023/09/16 14:27:23) ens = 120 sec, 172 pings, (0.70 sec/ping)
+
+os75nb recent ping statistics
+
+(2023/09/16 14:24:24) ens = 300 sec, 75 pings, (4.00 sec/ping)
+
+os75bb recent ping statistics
+
+(2023/09/16 14:24:24) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 19:43:42 up  4:50,  2 users,  load average: 0.22, 0.08, 0.03
+ 14:30:02 up 23:37,  1 user,  load average: 0.37, 0.23, 0.20
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -55,8 +101,11 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
+      16 /home/adcp/log/3dayplots_os75bb.warn
+      22 /home/adcp/log/3dayplots_os75nb.warn
       1 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/hcorrstats_posmv.warn
+      12 /home/adcp/log/hcorrstats_posmv.warn
+      1 /home/adcp/log/hcorrstats_posmv.warn.2023-09-15
       28 /home/adcp/log/lastensq_os75bb.warn
       28 /home/adcp/log/lastensq_os75nb.warn
       77 /home/adcp/log/lastensq_wh600.warn
@@ -66,10 +115,10 @@ ______________________
       7 /home/adcp/log/update_hbins_wh600.warn
 (3) rbin warnings:
  
-posmv gps   2659    0.99  -3102267.05      61.5       2     1     1     0     1
-posmv pmv   1385    0.99  -3102266.06      33.0       1     1     1     0     1
-gpsnav gps   2715    1.01  -3102265.86      33.0       1     1     1     0     1
-gyro hdg   3875    0.70  -3102267.11      32.8       1     1     1     0     1
+posmv gps  14115    0.99  -3102267.05   72440.1       3     1     1     0     1
+posmv pmv  12841    0.99  -3102266.06   72441.1       2     1     1     0     1
+gpsnav gps  14159    0.99  -3102265.86   72442.0       2     1     1     0     1
+gyro hdg  20179    0.70  -3102267.11   72459.1       2     1     1     0     1
 (4) timestamp warnings:
 jumps forward: 1   jumps back: 0
 max forward 0 seconds at dday 257.599729
@@ -84,17 +133,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     271      /home/adcp/www/figures/ktprof_amp_lastens.png
-     271      /home/adcp/www/figures/os75bb_lastens.png
-     271      /home/adcp/www/figures/wh600_lastens.png
-     271      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh600_lastens.png
+       0      /home/adcp/www/figures/os75bb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     271      /home/adcp/www/figures/os75nb_ddaycont.png
-     271      /home/adcp/www/figures/os75bb_ddaycont.png
-     271      /home/adcp/www/figures/wh600_ddaycont.png
+       0      /home/adcp/www/figures/wh600_ddaycont.png
+       0      /home/adcp/www/figures/os75bb_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
