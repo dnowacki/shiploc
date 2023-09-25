@@ -1,13 +1,13 @@
-2023/09/23 14:30:01
+2023/09/24 14:30:01
 currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
 Current cruise: EN709     ** is logging **
 
-   wh300 2023/09/04  14:56:08 to 2023/09/23  14:28:33  (1 min. ago)
-  os75nb 2023/09/04  14:59:12 to 2023/09/23  14:28:33  (1 min. ago)
+   wh300 2023/09/04  14:56:08 to 2023/09/24  14:28:33  (1 min. ago)
+  os75nb 2023/09/04  14:59:12 to 2023/09/24  14:28:34  (1 min. ago)
 
-approximate lat, lon, depth:   48 11.55831 N   59 44.80576 W   depth=236
+approximate lat, lon, depth:   44 44.48084 N   61 37.40708 W   depth=139
 
-link: http://www.google.com/maps/place/48%2011.55831N+59%2044.80576W
+link: http://www.google.com/maps/place/44%2044.48084N+61%2037.40708W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 264.6040278 to 265.6040162
-(2023/09/22 14:29:48 to 2023/09/23 14:29:47)
+ddrange: 265.6037731 to 266.6037616
+(2023/09/23 14:29:26 to 2023/09/24 14:29:25)
 all abxtwo_b2 messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   284 out of 286   (99%) were good
+   286 out of 287   (100%) were good
 statistics of good data:
-   mean N = 291, stddev N =  32.1
-   min  = -2.57, max = -0.99
-   mean = -1.90, stddev = 0.33
+   mean N = 293, stddev N =  23.6
+   min  = -2.35, max = 0.04
+   mean = -1.36, stddev = 0.78
 
 ===========================
 ------ abxtwo_b2_udp statistics ------
 ===========================
 gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 264.6040509 to 265.6040394
-(2023/09/22 14:29:50 to 2023/09/23 14:29:49)
+ddrange: 265.6037847 to 266.6037731
+(2023/09/23 14:29:27 to 2023/09/24 14:29:26)
 all abxtwo_b2_udp messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   284 out of 286   (99%) were good
+   286 out of 287   (100%) were good
 statistics of good data:
-   mean N = 291, stddev N =  32.1
-   min  = -2.58, max = -0.99
-   mean = -1.90, stddev = 0.33
+   mean N = 293, stddev N =  23.5
+   min  = -2.36, max = 0.04
+   mean = -1.36, stddev = 0.78
 
 
 === Sonar Pingtype Summary =====
@@ -72,9 +72,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377   462    +49us[  +55us] +/- 1320us
+^* 192.168.1.8                   1  10   377   277    -32us[  -81us] +/- 1174us
 
-Reference ID: C0A80108, Stratum=2, last offset=0.000006, RMS offset=0.000022
+Reference ID: C0A80108, Stratum=2, last offset=-0.000050, RMS offset=0.000078
 ------------------------------------------
 
 
@@ -82,17 +82,17 @@ Reference ID: C0A80108, Stratum=2, last offset=0.000006, RMS offset=0.000022
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2023/09/23 14:26:34) ens = 120 sec, 127 pings, (0.94 sec/ping)
+(2023/09/24 14:26:34) ens = 120 sec, 126 pings, (0.95 sec/ping)
 
 os75nb recent ping statistics
 
-(2023/09/23 14:23:33) ens = 300 sec, 108 pings, (2.78 sec/ping)
+(2023/09/24 14:23:32) ens = 300 sec, 108 pings, (2.78 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:04 up 59 days, 18:53,  1 user,  load average: 1.01, 0.61, 0.51
+ 14:30:04 up 60 days, 18:53,  1 user,  load average: 0.93, 0.62, 0.52
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -111,8 +111,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      82 /home/adcp/log/hcorrstats_abxtwo_b2.warn
-      82 /home/adcp/log/hcorrstats_abxtwo_b2_udp.warn
+      14 /home/adcp/log/lastensq_wh300.warn
 
 Figures and files:
 
@@ -123,15 +122,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
        1      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
