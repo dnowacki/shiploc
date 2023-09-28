@@ -1,70 +1,13 @@
-2023/09/26 14:30:02
+2023/09/27 14:30:02
 currents03en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
-Current cruise: EN709     ** is logging **
-
-   wh300 2023/09/04  14:56:08 to 2023/09/26  14:28:33  (1 min. ago)
-  os75nb 2023/09/04  14:59:12 to 2023/09/26  14:28:33  (1 min. ago)
-
-approximate lat, lon, depth:   41 47.62922 N   70 24.32960 W   depth=22
-
-link: http://www.google.com/maps/place/41%2047.62922N+70%2024.32960W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo_b2_udp")
-===========================
------- abxtwo_b2 statistics ------
-===========================
-gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 267.6038194 to 268.6038079
-(2023/09/25 14:29:30 to 2023/09/26 14:29:29)
-all abxtwo_b2 messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -2.01, max = 0.23
-   mean = -0.88, stddev = 0.34
-
-===========================
------- abxtwo_b2_udp statistics ------
-===========================
-gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 267.6038310 to 268.6038194
-(2023/09/25 14:29:31 to 2023/09/26 14:29:30)
-all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -1.80, max = 0.19
-   mean = -0.88, stddev = 0.34
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -72,27 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377   104   -585us[ -544us] +/- 1829us
+^* 192.168.1.8                   1   6   377     7   +116ns[-2087ns] +/- 1308us
 
-Reference ID: C0A80108, Stratum=2, last offset=0.000042, RMS offset=0.000031
+Reference ID: C0A80108, Stratum=2, last offset=-0.000002, RMS offset=0.000010
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2023/09/26 14:26:33) ens = 120 sec, 125 pings, (0.96 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/09/26 14:23:32) ens = 300 sec, 108 pings, (2.78 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:05 up 62 days, 18:53,  1 user,  load average: 1.26, 0.80, 0.64
+ 14:30:05 up 63 days, 18:53,  1 user,  load average: 0.13, 0.04, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -117,15 +51,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
+     397      /home/adcp/www/figures/os75nb_lastens.png
+     397      /home/adcp/www/figures/ktprof_amp_lastens.png
+     397      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
-       0      /home/adcp/www/figures/wh300_ddaycont.png
+     397      /home/adcp/www/figures/wh300_ddaycont.png
+     397      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
