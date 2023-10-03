@@ -1,66 +1,13 @@
-2023/10/01 14:30:01
-currents02ae 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-Current cruise: Pierside_PostAE2323     ** is logging **
-
-  os75bb 2023/09/28  11:35:44 to 2023/10/01  14:25:43  (4 min. ago)
-  os75nb 2023/09/28  11:35:44 to 2023/10/01  14:25:43  (4 min. ago)
-
-approximate lat, lon, depth:   32 22.20008 N   64 41.75353 W   depth=-6
-
-link: http://www.google.com/maps/place/32%2022.20008N+64%2041.75353W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2023/10/02 14:30:02
+currents01ae 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _secondary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-jrc_port-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 272.5945833 to 273.5945718
-(2023/09/30 14:16:12 to 2023/10/01 14:16:11)
-all abxtwo messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -1.16, max = 0.88
-   mean = -0.25, stddev = 0.36
-
-===========================
------- jrc_stbd statistics ------
-===========================
-jrc_port-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 272.5945949 to 273.5945833
-(2023/09/30 14:16:13 to 2023/10/01 14:16:12)
-all jrc_stbd messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -2.20, max = 1.40
-   mean = -0.15, stddev = 0.59
-
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -68,27 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntp-51.triangle.local         1   8   377   133    +16us[  +30us] +/-   64us
+^* ntp-51.triangle.local         1   8   377   171    +36us[  +38us] +/-  125us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000013, RMS offset=0.000039
+Reference ID: C0A83309, Stratum=2, last offset=0.000002, RMS offset=0.000015
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2023/10/01 14:20:43) ens = 300 sec, 76 pings, (3.95 sec/ping)
-
-os75nb recent ping statistics
-
-(2023/10/01 14:20:43) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 172 days, 30 min,  1 user,  load average: 0.16, 0.30, 0.31
+ 14:30:03 up  2:31,  1 user,  load average: 0.03, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -100,7 +38,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -111,15 +53,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75nb_lastens.png
-       4      /home/adcp/www/figures/os75bb_lastens.png
-       4      /home/adcp/www/figures/ktprof_amp_lastens.png
+  249152      /home/adcp/www/figures/os75bb_lastens.png
+  249152      /home/adcp/www/figures/ktprof_amp_lastens.png
+  249152      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_ddaycont.png
-       4      /home/adcp/www/figures/os75nb_ddaycont.png
+  249152      /home/adcp/www/figures/os75bb_ddaycont.png
+  249152      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
