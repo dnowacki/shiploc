@@ -1,27 +1,47 @@
-2023/10/02 14:30:01
+2023/10/03 14:30:01
 rigel03 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-Current cruise: RC0107  *** not logging ***
+Current cruise: RC0107     ** is logging **
 
+   wh300 2023/10/02  17:22:46 to 2023/10/03  14:28:45  (1 min. ago)
 
-no positions found from filelist gpsnav/*.gps.rbin
+approximate lat, lon, depth:   49 8.23504 N  125 51.99292 W   depth=1
 
+link: http://www.google.com/maps/place/49%208.23504N+125%2051.99292W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is running 20.04
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/10/03 14:26:45) ens = 120 sec, 75 pings, (1.60 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:01 up 13 days, 20:05,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:01 up 14 days, 20:05,  1 user,  load average: 0.03, 0.12, 0.10
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/carson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_report/
@@ -33,7 +53,14 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_repo
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      58 /home/adcp/log/DAS_while_logging.warn
+      26 /home/adcp/log/DAS_while_logging.warn.2023-10-02
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -44,10 +71,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
