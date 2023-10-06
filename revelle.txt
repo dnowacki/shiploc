@@ -1,71 +1,33 @@
-2023/10/04 14:15:02
+2023/10/05 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: RR2309     ** is logging **
+Current cruise: RR2309  *** not logging ***
 
-  os150nb 2023/09/22  15:52:59 to 2023/10/04  14:13:53  (1 min. ago)
+  os150nb 2023/09/22  15:52:59 to 2023/10/05  06:46:52  (448 min. ago) 7.5 hrs
 
-approximate lat, lon, depth:   49 6.30210 S   49 3.29650 W   depth=5849
+approximate lat, lon, depth:   49 43.90498 S   54 4.01947 W   depth=1557
 
-link: http://www.google.com/maps/place/49%206.30210S+49%203.29650W
+link: http://www.google.com/maps/place/49%2043.90498S+54%204.01947W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is a _virtual_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- phins statistics ------
-===========================
-/home/adcp/daily_report/phins_gyro_pystats.txt does not (yet?) exist
-===========================
------- seapath statistics ------
-===========================
-gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 275.5915328 to 276.5915120
-(2023/10/03 14:11:48 to 2023/10/04 14:11:47)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.46, max = -0.17
-   mean = -0.26, stddev = 0.03
-
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  931 1024  377    0.168   -0.190   0.156
+*rr-bb-gw-das.uc 100.124.36.34    2 u    7 1024  377    0.210    0.003   0.231
 ------------------------------------------
 
-
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2023/10/04 14:10:52) ens = 180 sec, 147 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 16 days, 15:58,  2 users,  load average: 0.35, 0.27, 0.22
+ 14:15:03 up 17 days, 15:58,  2 users,  load average: 0.09, 0.05, 0.06
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -82,12 +44,11 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      969 /home/adcp/log/hcorrstats_phins.warn
-      1632 /home/adcp/log/hcorrstats_phins.warn.2023-10-03
-      604 /home/adcp/log/lastensq_os150nb.warn
-      965 /home/adcp/log/lastensq_os150nb.warn.2023-10-03
-      24 /home/adcp/log/update_hbins_os150nb.warn
-      52 /home/adcp/log/update_hbins_os150nb.warn.2023-10-03
+      459 /home/adcp/log/hcorrstats_phins.warn
+      1632 /home/adcp/log/hcorrstats_phins.warn.2023-10-04
+      324 /home/adcp/log/lastensq_os150nb.warn
+      1087 /home/adcp/log/lastensq_os150nb.warn.2023-10-04
+      28 /home/adcp/log/update_hbins_os150nb.warn
 
 Figures and files:
 
@@ -98,13 +59,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/os150nb_lastens.png
+     447      /home/adcp/www/figures/ktprof_amp_lastens.png
+     447      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
+     447      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
