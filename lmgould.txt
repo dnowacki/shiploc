@@ -1,12 +1,12 @@
-2023/10/07 01:03:10
+2023/10/07 16:45:32
 gentoo3 5.4.0-110-generic (focal "Ubuntu 20.04.6 LTS")
-Current cruise: LMG2309     ** is logging **
+Current cruise: LMG2309_part2     ** is logging **
 
- nb150 -- no data yet
+   nb150 2023/10/07  16:05:18 to 2023/10/07  16:45:18  (0 min. ago)
 
-approximate lat, lon, depth:   53 57.18478 S   66 0.14931 W   depth=91
+approximate lat, lon, depth:   54 27.92126 S   65 7.86512 W   depth=103
 
-link: http://www.google.com/maps/place/53%2057.18478S+66%200.14931W
+link: http://www.google.com/maps/place/54%2027.92126S+65%207.86512W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath330 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 278.4370345 to 279.0360319
-(2023/10/06 10:29:20 to 2023/10/07 00:51:53)
+ddrange: 279.6668821 to 279.6982023
+(2023/10/07 16:00:19 to 2023/10/07 16:45:25)
 all seapath330 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   171 out of 171   (100%) were good
+   9 out of 9   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.29, max = 0.10
-   mean = -0.07, stddev = 0.10
+   mean N = 301, stddev N =  0.3
+   min  = -0.14, max = -0.06
+   mean = -0.11, stddev = 0.02
 
 
 === Sonar Pingtype Summary =====
@@ -49,16 +49,20 @@ nb150 BT:  on
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  tick.lmg.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.lmg.usap.g .GNSS.           1 u 1078 1024  377    0.218    0.317   0.132
+*tick.lmg.usap.g .GNSS.           1 u  599 1024  377    0.268    0.223   0.355
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
+nb150 recent ping statistics
+
+(2023/10/07 16:35:18) ens = 300 sec, 207 pings, (1.45 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 01:03:11 up 24 days,  3:44,  1 user,  load average: 0.01, 0.04, 0.02
+ 16:45:33 up 24 days, 19:27,  1 user,  load average: 0.16, 0.09, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/lmgould/daily_report/
@@ -75,16 +79,15 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      156 /home/adcp/log/3dayplots_nb150.warn
+      2304 /home/adcp/log/3dayplots_nb150.warn
       1920 /home/adcp/log/3dayplots_nb150.warn.2023-10-06
-      84 /home/adcp/log/DAS_while_logging.warn
+      1292 /home/adcp/log/DAS_while_logging.warn
       1139 /home/adcp/log/DAS_while_logging.warn.2023-10-06
-      22 /home/adcp/log/grab_pings_nb150.warn
-      240 /home/adcp/log/lastensq_nb150.warn
+      3760 /home/adcp/log/lastensq_nb150.warn
       3160 /home/adcp/log/lastensq_nb150.warn.2023-10-06
-      108 /home/adcp/log/lastfewvec_nb150.warn
+      1693 /home/adcp/log/lastfewvec_nb150.warn
       1422 /home/adcp/log/lastfewvec_nb150.warn.2023-10-06
-      312 /home/adcp/log/quick_nb150.warn
+      4888 /home/adcp/log/quick_nb150.warn
       4108 /home/adcp/log/quick_nb150.warn.2023-10-06
 
 Figures and files:
@@ -96,10 +99,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/nb150_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/nb150_ddaycont.png
 
 
 
