@@ -1,12 +1,14 @@
-2023/10/14 14:30:01
+2023/10/15 14:30:01
 currents05sr 5.4.0-121-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SR2323_part2  *** not logging ***
 
-   wh300 2023/10/13  20:16:39 to 2023/10/13  23:40:40  (889 min. ago) 14.8 hrs
+   wh300 2023/10/13  20:16:39 to 2023/10/15  12:28:16  (121 min. ago) 2.0 hrs
+  os150nb 2023/10/14  18:49:57 to 2023/10/15  12:24:16  (125 min. ago) 2.1 hrs
+  os38nb 2023/10/14  18:49:57 to 2023/10/15  12:24:19  (125 min. ago) 2.1 hrs
 
-approximate lat, lon, depth:   33 10.70400 N  118 48.61529 W   depth=842
+approximate lat, lon, depth:   32 35.09126 N  120 21.94915 W   depth=3756
 
-link: http://www.google.com/maps/place/33%2010.70400N+118%2048.61529W
+link: http://www.google.com/maps/place/32%2035.09126N+120%2021.94915W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
@@ -19,7 +21,7 @@ NOTE: This is the _primary_ computer
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sr-bb-gw-das.uc 100.124.100.34   2 u  449 1024  377    0.254   -0.092   0.043
+*sr-bb-gw-das.uc 100.124.100.34   2 u  388 1024  377    0.231   -0.622   0.203
 ------------------------------------------
 
 
@@ -27,7 +29,7 @@ NOTE: This is the _primary_ computer
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 17:47,  1 user,  load average: 0.09, 0.07, 0.02
+ 14:30:02 up 2 days, 17:47,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -44,15 +46,17 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      4 /home/adcp/log/3dayplots_wh300.warn
-      202 /home/adcp/log/DAS_while_logging.warn
-      1177 /home/adcp/log/hcorrstats_hemisphere.warn
-      1177 /home/adcp/log/hcorrstats_hydrins_udp.warn
-      1177 /home/adcp/log/hcorrstats_trimble_udp.warn
-      967 /home/adcp/log/lastensq_wh300.warn
+      2 /home/adcp/log/3dayplots_os38nb.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      330 /home/adcp/log/lastensq_os150nb.warn
+      330 /home/adcp/log/lastensq_os38nb.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn.2023-10-14
+      2 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn.2023-10-14
       2 /home/adcp/log/lastfewvec_wh300.warn
-      518 /home/adcp/log/quick_wh300.warn
-      12 /home/adcp/log/update_hbins_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn.2023-10-14
+      1 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -63,13 +67,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     888      /home/adcp/www/figures/wh300_lastens.png
-     888      /home/adcp/www/figures/ktprof_amp_lastens.png
+     120      /home/adcp/www/figures/os38nb_lastens.png
+     120      /home/adcp/www/figures/os150nb_lastens.png
+     120      /home/adcp/www/figures/wh300_lastens.png
+     120      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     888      /home/adcp/www/figures/wh300_ddaycont.png
+     120      /home/adcp/www/figures/os38nb_ddaycont.png
+     120      /home/adcp/www/figures/os150nb_ddaycont.png
+     120      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
