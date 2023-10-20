@@ -1,8 +1,10 @@
-2023/10/18 14:30:01
-arcurrents02 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
+2023/10/20 04:12:08
+arcurrents05 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
 
 
@@ -12,12 +14,12 @@ NOTE: This is the _primary_ computer
 
 using chrony
 ---------- chronyc tracking ------------
-210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* tekron.armstrong.whoi.edu     1   6   377    39  +2303ns[+4353ns] +/-   48us
+^* ese01.armstrong.whoi.edu      1  10    20   94m  -2371us[  +22ms] +/-   12ms
+^- bdds-arm.armstrong.whoi.>     4   8   377   493    -25ms[  -25ms] +/-   84ms
 
-Reference ID: C093290D, Stratum=2, last offset=0.000002, RMS offset=0.000002
+Reference ID: C093290C, Stratum=2, last offset=0.024307, RMS offset=0.008061
 ------------------------------------------
 
 
@@ -26,7 +28,7 @@ Reference ID: C093290D, Stratum=2, last offset=0.000002, RMS offset=0.000002
 
 
 ---------- uptime ------------
- 14:30:01 up 36 days, 17:07,  1 user,  load average: 0.18, 0.15, 0.14
+ 04:12:09 up 2 days,  4:52,  5 users,  load average: 0.01, 0.05, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -39,6 +41,16 @@ https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
+
+(1) I/O warnings:
+     2 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
+(3) expected backup disk not found:
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
 
 Figures and files:
@@ -50,13 +62,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    3078      /home/adcp/www/figures/os150nb_lastens.png
-    3078      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    3078      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
