@@ -1,7 +1,15 @@
-2023/10/20 04:12:08
+2023/10/20 23:17:00
 arcurrents05 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: test2023-10-20     ** is logging **
+
+   wh300 2023/10/20  22:17:57 to 2023/10/20  23:15:57  (1 min. ago)
+
+approximate lat, lon, depth:   41 31.43653 N   70 40.32998 W   depth=4
+
+link: http://www.google.com/maps/place/41%2031.43653N+70%2040.32998W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 --->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
@@ -10,25 +18,83 @@ NOTE: This is the _primary_ computer
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.012)
+
+ddrange: 292.9277546 to 292.9695833
+(2023/10/20 22:15:58 to 2023/10/20 23:16:12)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   12 out of 12   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.6
+   min  = -1.68, max = -1.42
+   mean = -1.51, stddev = 0.08
+
+===========================
+------ gyro2 statistics ------
+===========================
+gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 292.9277546 to 292.9695949
+(2023/10/20 22:15:58 to 2023/10/20 23:16:13)
+all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   12 out of 12   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 0.38, max = 0.49
+   mean = 0.44, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ese01.armstrong.whoi.edu      1  10    20   94m  -2371us[  +22ms] +/-   12ms
-^- bdds-arm.armstrong.whoi.>     4   8   377   493    -25ms[  -25ms] +/-   84ms
+^* ese01.armstrong.whoi.edu      1  10     0  291m  -4561us[-4864us] +/-   14ms
+^- bdds-arm.armstrong.whoi.>     4  10   377   717    -29ms[  -29ms] +/-  113ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.024307, RMS offset=0.008061
+Reference ID: C093290C, Stratum=2, last offset=-0.000302, RMS offset=0.007645
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2023/10/20 23:13:57) ens = 120 sec, 120 pings, (1.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 04:12:09 up 2 days,  4:52,  5 users,  load average: 0.01, 0.05, 0.02
+ 23:17:00 up 2 days, 23:57,  2 users,  load average: 1.76, 0.74, 0.51
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -48,7 +114,14 @@ ______________________
      2 I/O errors in last 2 /var/log/syslog
 (2) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
-(3) expected backup disk not found:
+(3) wordcount of log/*.warn:
+
+      3 /home/adcp/log/3dayplots_wh300.warn
+      2 /home/adcp/log/DAS_while_cruise.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_wh300.warn
+(4) expected backup disk not found:
 
 --->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
@@ -62,10 +135,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
