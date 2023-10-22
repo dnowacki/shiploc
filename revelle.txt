@@ -1,26 +1,71 @@
-2023/10/20 14:15:01
+2023/10/21 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: RR2310     ** is logging **
+
+  os150nb 2023/10/21  13:34:51 to 2023/10/21  14:13:52  (1 min. ago)
+
+approximate lat, lon, depth:   32 59.97408 S   71 42.01946 W   depth=139
+
+link: http://www.google.com/maps/place/32%2059.97408S+71%2042.01946W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is a _virtual_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ phins statistics ------
+===========================
+no good phins data out of 0 (300sec) ensembles
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 293.5637825 to 293.5849862
+(2023/10/21 13:31:51 to 2023/10/21 14:02:23)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   6 out of 6   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.5
+   min  = -0.03, max = 0.04
+   mean = 0.00, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
- 100.124.36.1    .INIT.          16 u    - 1024    0    0.000    0.000   0.000
+ rr-bb-gw-das.uc .INIT.          16 u    - 1024    0    0.000    0.000   0.000
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2023/10/21 14:10:52) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:12 up 1 day,  4:36,  1 user,  load average: 0.18, 0.07, 0.02
+ 14:15:03 up 2 days,  4:36,  1 user,  load average: 0.12, 0.13, 0.15
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -35,8 +80,10 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -47,13 +94,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   10350      /home/adcp/www/figures/ktprof_amp_lastens.png
-   10350      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   10350      /home/adcp/www/figures/os150nb_ddaycont.png
+       3      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
