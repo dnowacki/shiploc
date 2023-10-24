@@ -1,16 +1,55 @@
-2023/10/22 14:30:01
+2023/10/23 14:30:01
 currents01bh 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: BH23-23_Minor  *** not logging ***
+Current cruise: BH23-23_Minor     ** is logging **
 
+ sv500 -- no data yet
+  os150bb 2023/10/23  12:04:09 to 2023/10/23  14:29:08  (0 min. ago)
+  os150nb 2023/10/23  12:04:09 to 2023/10/23  14:29:08  (0 min. ago)
 
-no positions found from filelist posmv/*.gps.rbin
+approximate lat, lon, depth:   46 48.74161 N   91 49.70883 W   depth=-134
 
+link: http://www.google.com/maps/place/46%2048.74161N+91%2049.70883W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ gpshead statistics ------
+===========================
+posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 295.4994080 to 295.6039111
+(2023/10/23 11:59:09 to 2023/10/23 14:29:38)
+all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   30 out of 30   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -0.16, max = 0.50
+   mean = 0.17, stddev = 0.14
+
+
+=== Sonar Pingtype Summary =====
+
+sv500: Triggering command not found
+sv500 BB:       off
+sv500 NB:  on
+sv500 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:  on
+os150 NB:  on
+os150 BT:      off
+
+===========================
 
 
 using chrony
@@ -18,18 +57,27 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 192.168.100.105               1  10     0   12d  +3992ns[+3586ns] +/-  103us
+^? 192.168.100.105               1  10     0   13d  +3992ns[+3586ns] +/-  103us
 
 Reference ID: C0A86469, Stratum=2, last offset=-0.000000, RMS offset=0.000002
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2023/10/23 14:24:09) ens = 300 sec, 137 pings, (2.19 sec/ping)
+
+os150bb recent ping statistics
+
+(2023/10/23 14:24:09) ens = 300 sec, 137 pings, (2.19 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 73 days, 18:57,  1 user,  load average: 0.20, 0.08, 0.02
+ 14:30:02 up 74 days, 18:57,  1 user,  load average: 0.52, 0.28, 0.21
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -42,7 +90,21 @@ https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      48 /home/adcp/log/3dayplots_os150bb.warn
+      360 /home/adcp/log/3dayplots_sv500.warn
+      545 /home/adcp/log/DAS_while_logging.warn
+      70 /home/adcp/log/grab_pings_sv500.warn
+      2285 /home/adcp/log/lastensq_sv500.warn
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      855 /home/adcp/log/lastfewvec_sv500.warn
+      6 /home/adcp/log/quick_os150bb.warn
+      1045 /home/adcp/log/quick_sv500.warn
 
 Figures and files:
 
@@ -53,10 +115,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/os150bb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os150bb_ddaycont.png
 
 
 

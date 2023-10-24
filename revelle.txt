@@ -1,53 +1,13 @@
-2023/10/22 14:15:01
+2023/10/23 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: RR2310     ** is logging **
-
-  os150nb 2023/10/21  13:34:51 to 2023/10/22  14:13:52  (1 min. ago)
-
-approximate lat, lon, depth:   35 6.66841 S   72 41.81330 W   depth=184
-
-link: http://www.google.com/maps/place/35%206.66841S+72%2041.81330W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is a _virtual_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- phins statistics ------
-===========================
-no good phins data out of 0 (300sec) ensembles
-===========================
------- seapath statistics ------
-===========================
-gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 293.5840950 to 294.5840834
-(2023/10/21 14:01:06 to 2023/10/22 14:01:05)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.76, max = 0.03
-   mean = -0.54, stddev = 0.19
-
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
@@ -56,16 +16,11 @@ os150 BT:      off
 ------------------------------------------
 
 
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2023/10/22 14:10:50) ens = 180 sec, 144 pings, (1.25 sec/ping)
-
 
 
 
 ---------- uptime ------------
- 14:15:04 up 3 days,  4:36,  1 user,  load average: 0.03, 0.08, 0.12
+ 14:15:03 up 4 days,  4:36,  1 user,  load average: 0.10, 0.08, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -82,9 +37,8 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1083 /home/adcp/log/hcorrstats_phins.warn
-      190 /home/adcp/log/hcorrstats_phins.warn.2023-10-21
-      81 /home/adcp/log/lastensq_os150nb.warn
+      1615 /home/adcp/log/hcorrstats_phins.warn
+      1 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -95,13 +49,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+     304      /home/adcp/www/figures/ktprof_amp_lastens.png
+     304      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
+     304      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
