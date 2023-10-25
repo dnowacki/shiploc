@@ -1,14 +1,14 @@
-2023/10/23 14:30:01
+2023/10/24 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: ar78     ** is logging **
 
- wh300 -- no data yet
- os150nb -- no data yet
- os38nb -- no data yet
+   wh300 2023/10/23  14:31:35 to 2023/10/24  14:29:11  (1 min. ago)
+  os150nb 2023/10/23  14:34:35 to 2023/10/24  14:29:35  (0 min. ago)
+  os38nb 2023/10/23  14:34:35 to 2023/10/24  14:27:12  (3 min. ago)
 
-approximate lat, lon, depth:   41 31.43597 N   70 40.33030 W   depth=4
+approximate lat, lon, depth:   39 7.93946 N   72 40.99485 W   depth=298
 
-link: http://www.google.com/maps/place/41%2031.43597N+70%2040.33030W
+link: http://www.google.com/maps/place/39%207.93946N+72%2040.99485W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,11 +26,35 @@ NOTE: This is the _primary_ computer
 ===========================
 ------ posmv statistics ------
 ===========================
-/home/adcp/daily_report/posmv_gyro_pystats.txt does not (yet?) exist
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.012)
+
+ddrange: 295.6038889 to 296.5989699
+(2023/10/23 14:29:36 to 2023/10/24 14:22:31)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   284 out of 284   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -3.04, max = -0.71
+   mean = -1.84, stddev = 0.39
+
 ===========================
 ------ gyro2 statistics ------
 ===========================
-/home/adcp/daily_report/gyro2_gyro_pystats.txt does not (yet?) exist
+gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 295.6038889 to 296.5989931
+(2023/10/23 14:29:36 to 2023/10/24 14:22:33)
+all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   284 out of 284   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.48, max = 0.70
+   mean = 0.15, stddev = 0.23
+
 
 === Sonar Pingtype Summary =====
 
@@ -55,19 +79,31 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   456   -135us[ -150us] +/-   12ms
+^* 192.147.41.12                 1  10   377    15   +820us[ +959us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=-0.000014, RMS offset=0.000066
+Reference ID: C093290C, Stratum=2, last offset=0.000140, RMS offset=0.000171
 ------------------------------------------
 
 
 
 ------------- pings per ensemble ----------- 
+os38nb recent ping statistics
+
+(2023/10/24 14:22:12) ens = 300 sec, 100 pings, (3.00 sec/ping)
+
+os150nb recent ping statistics
+
+(2023/10/24 14:24:35) ens = 300 sec, 273 pings, (1.10 sec/ping)
+
+wh300 recent ping statistics
+
+(2023/10/24 14:27:11) ens = 120 sec, 119 pings, (1.01 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:07 up 13 days, 13:00,  2 users,  load average: 0.01, 0.02, 0.00
+ 14:30:07 up 14 days, 13:00,  2 users,  load average: 0.75, 0.63, 0.56
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -85,9 +121,27 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
+      20 /home/adcp/log/3dayplots_os150nb.warn
+      176 /home/adcp/log/3dayplots_os150nb.warn.2023-10-23
+      96 /home/adcp/log/3dayplots_os38nb.warn
       14 /home/adcp/log/DAS_while_cruise.warn
-      24 /home/adcp/log/DAS_while_cruise.warn.2023-10-22
+      24 /home/adcp/log/DAS_while_cruise.warn.2023-10-23
       2 /home/adcp/log/DAS_while_logging.warn
+      4 /home/adcp/log/DAS_while_logging.warn.2023-10-23
+      39 /home/adcp/log/lastensq_os150nb.warn
+      229 /home/adcp/log/lastensq_os38nb.warn
+      28 /home/adcp/log/lastensq_os38nb.warn.2023-10-23
+      529 /home/adcp/log/lastensq_wh300.warn
+      70 /home/adcp/log/lastensq_wh300.warn.2023-10-23
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn.2023-10-23
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn.2023-10-23
+      69 /home/adcp/log/quick_os150nb.warn
+      2 /home/adcp/log/quick_os38nb.warn
+      2 /home/adcp/log/quick_wh300.warn
+      10 /home/adcp/log/update_hbins_wh300.warn
 (2) expected backup disk not found:
 
 --->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
@@ -102,10 +156,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
