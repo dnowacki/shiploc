@@ -1,13 +1,13 @@
-2023/10/25 14:30:02
+2023/10/26 14:30:01
 currents01mgl 5.4.0-128-generic (focal "Ubuntu 20.04.5 LTS")
 Current cruise: MGL2313     ** is logging **
 
-  os75bb 2023/10/21  16:36:17 to 2023/10/25  14:26:15  (3 min. ago)
-  os75nb 2023/10/21  16:36:17 to 2023/10/25  14:26:15  (3 min. ago)
+  os75bb 2023/10/21  16:36:17 to 2023/10/26  14:26:16  (3 min. ago)
+  os75nb 2023/10/21  16:36:17 to 2023/10/26  14:26:16  (3 min. ago)
 
-approximate lat, lon, depth:   25 39.36249 N   67 44.37965 W   depth=5650
+approximate lat, lon, depth:   21 52.65314 N   66 48.82091 W   depth=5479
 
-link: http://www.google.com/maps/place/25%2039.36249N+67%2044.37965W
+link: http://www.google.com/maps/place/21%2052.65314N+66%2048.82091W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 296.5949543 to 297.5949466
-(2023/10/24 14:16:44 to 2023/10/25 14:16:43)
+ddrange: 297.5950276 to 298.5950193
+(2023/10/25 14:16:50 to 2023/10/26 14:16:50)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.8
-   min  = 1.07, max = 1.76
-   mean = 1.47, stddev = 0.11
+   min  = 0.71, max = 1.56
+   mean = 1.24, stddev = 0.21
 
 ===========================
 ------ posmv statistics ------
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
 
-ddrange: 296.5949717 to 297.5949639
-(2023/10/24 14:16:46 to 2023/10/25 14:16:45)
+ddrange: 297.5950449 to 298.5950366
+(2023/10/25 14:16:52 to 2023/10/26 14:16:51)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.5
-   min  = 1.32, max = 2.00
-   mean = 1.68, stddev = 0.12
+   min  = 0.96, max = 1.77
+   mean = 1.45, stddev = 0.21
 
 
 === Sonar Pingtype Summary =====
@@ -66,24 +66,24 @@ os75 BT:      off
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  192.168.3.14    .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*timeserve2.lang .GNSS.           1 u  511  512  377    0.089   -3.369   1.434
+*timeserve2.lang .GNSS.           1 u  365 1024  377    0.095   -0.008   0.040
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2023/10/25 14:21:17) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2023/10/26 14:21:14) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 os75nb recent ping statistics
 
-(2023/10/25 14:21:17) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2023/10/26 14:21:14) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 39 days,  1:07,  1 user,  load average: 0.16, 0.30, 0.21
+ 14:30:02 up 40 days,  1:07,  1 user,  load average: 0.05, 0.17, 0.13
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -96,7 +96,12 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/DAS_while_cruise.warn
 
 Figures and files:
 
@@ -107,8 +112,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75bb_lastens.png
        3      /home/adcp/www/figures/os75nb_lastens.png
+       3      /home/adcp/www/figures/os75bb_lastens.png
        3      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
