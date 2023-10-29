@@ -1,14 +1,14 @@
-2023/10/27 14:30:02
+2023/10/28 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: ar78     ** is logging **
 
-   wh300 2023/10/23  14:31:35 to 2023/10/27  14:29:17  (0 min. ago)
-  os150nb 2023/10/23  14:34:35 to 2023/10/27  14:26:18  (3 min. ago)
-  os38nb 2023/10/23  14:34:35 to 2023/10/27  14:26:19  (3 min. ago)
+   wh300 2023/10/23  14:31:35 to 2023/10/28  14:29:18  (0 min. ago)
+  os150nb 2023/10/23  14:34:35 to 2023/10/28  14:26:18  (3 min. ago)
+  os38nb 2023/10/23  14:34:35 to 2023/10/28  14:26:19  (3 min. ago)
 
-approximate lat, lon, depth:   35 51.46294 N   74 50.22658 W   depth=511
+approximate lat, lon, depth:   36 3.50765 N   74 46.51417 W   depth=248
 
-link: http://www.google.com/maps/place/35%2051.46294N+74%2050.22658W
+link: http://www.google.com/maps/place/36%203.50765N+74%2046.51417W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -28,32 +28,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.012)
 
-ddrange: 298.5987037 to 299.5986921
-(2023/10/26 14:22:08 to 2023/10/27 14:22:07)
+ddrange: 299.5988889 to 300.5988773
+(2023/10/27 14:22:24 to 2023/10/28 14:22:23)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   286 out of 287   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 300, stddev N =  12.7
-   min  = -3.14, max = -0.78
-   mean = -1.91, stddev = 0.35
+   mean N = 301, stddev N =  0.6
+   min  = -2.97, max = -1.22
+   mean = -2.06, stddev = 0.30
 
 ===========================
 ------ gyro2 statistics ------
 ===========================
 gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 298.5987153 to 299.5987037
-(2023/10/26 14:22:09 to 2023/10/27 14:22:08)
+ddrange: 299.5989005 to 300.5988889
+(2023/10/27 14:22:25 to 2023/10/28 14:22:24)
 all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -0.77, max = 0.67
-   mean = -0.06, stddev = 0.27
+   mean N = 301, stddev N =  0.2
+   min  = -1.03, max = 0.48
+   mean = -0.09, stddev = 0.27
 
 
 === Sonar Pingtype Summary =====
@@ -79,9 +79,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   573   +444us[ +497us] +/-   12ms
+^* 192.147.41.12                 1  10   377    51    -97us[ -111us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.000052, RMS offset=0.000092
+Reference ID: C093290C, Stratum=2, last offset=-0.000013, RMS offset=0.000117
 ------------------------------------------
 
 
@@ -89,21 +89,21 @@ Reference ID: C093290C, Stratum=2, last offset=0.000052, RMS offset=0.000092
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2023/10/27 14:21:19) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2023/10/28 14:21:19) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 os150nb recent ping statistics
 
-(2023/10/27 14:21:18) ens = 300 sec, 273 pings, (1.10 sec/ping)
+(2023/10/28 14:21:18) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 wh300 recent ping statistics
 
-(2023/10/27 14:27:17) ens = 120 sec, 119 pings, (1.01 sec/ping)
+(2023/10/28 14:27:18) ens = 120 sec, 119 pings, (1.01 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:07 up 17 days, 13:00,  2 users,  load average: 0.33, 0.46, 0.62
+ 14:30:07 up 18 days, 13:00,  2 users,  load average: 0.26, 0.45, 0.48
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -122,7 +122,7 @@ ______________________
 (1) wordcount of log/*.warn:
 
       14 /home/adcp/log/DAS_while_cruise.warn
-      24 /home/adcp/log/DAS_while_cruise.warn.2023-10-26
+      24 /home/adcp/log/DAS_while_cruise.warn.2023-10-27
 (2) expected backup disk not found:
 
 --->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
@@ -145,9 +145,9 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/wh300_ddaycont.png
        3      /home/adcp/www/figures/os150nb_ddaycont.png
        3      /home/adcp/www/figures/os38nb_ddaycont.png
-       3      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
