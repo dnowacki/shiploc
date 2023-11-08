@@ -1,10 +1,15 @@
-2023/11/06 14:30:01
-arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
-NOTE: This is the _primary_ computer
+2023/11/07 14:30:01
+arcurrents05 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: test2023-10-21  *** not logging ***
 
---->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
+   wh300 2023/10/21  00:05:05 to 2023/10/21  12:39:04  (24591 min. ago) 17.1 days
+
+approximate lat, lon, depth:   41 31.43663 N   70 40.33014 W   depth=4
+
+link: http://www.google.com/maps/place/41%2031.43663N+70%2040.33014W
+not using zmq publishers, position is from serial GPS
+
+NOTE: This is the _primary_ computer
 
 
 
@@ -16,9 +21,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   837    +52us[  +58us] +/-   12ms
+^* ese01.armstrong.whoi.edu      1  10     0  165m    -19us[  -33us] +/-   12ms
+^- bdds-arm.armstrong.whoi.>     4  10   377   673    -26ms[  -26ms] +/-  165ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.000006, RMS offset=0.000064
+Reference ID: C093290C, Stratum=2, last offset=-0.000015, RMS offset=0.007472
 ------------------------------------------
 
 
@@ -27,7 +33,7 @@ Reference ID: C093290C, Stratum=2, last offset=0.000006, RMS offset=0.000064
 
 
 ---------- uptime ------------
- 14:30:06 up 27 days, 13:00,  2 users,  load average: 0.01, 0.03, 0.00
+ 14:30:07 up 21:39,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -43,10 +49,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/posmv_q
 Summary of warnings:
 ______________________
 
-(1) expected backup disk not found:
+(1) I/O warnings:
+     2 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
 
---->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
-
+      4 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 
@@ -57,17 +66,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    3616      /home/adcp/www/figures/ktprof_amp_lastens.png
-    3616      /home/adcp/www/figures/wh300_lastens.png
-    3616      /home/adcp/www/figures/os38nb_lastens.png
-    3616      /home/adcp/www/figures/os150nb_lastens.png
+   24590      /home/adcp/www/figures/wh300_lastens.png
+   24590      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    3616      /home/adcp/www/figures/os38nb_ddaycont.png
-    3616      /home/adcp/www/figures/wh300_ddaycont.png
-    3616      /home/adcp/www/figures/os150nb_ddaycont.png
+   24590      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
