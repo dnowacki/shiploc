@@ -1,9 +1,13 @@
-2023/11/08 14:30:02
+2023/11/09 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: ar79  *** not logging ***
 
+  os38nb 2023/11/08  16:45:33 to 2023/11/09  12:55:31  (94 min. ago) 1.6 hrs
 
-no positions found from filelist gps_dps112/*.gps.rbin
+approximate lat, lon, depth:   38 40.54684 N   70 11.71616 W   depth=3062
+
+link: http://www.google.com/maps/place/38%2040.54684N+70%2011.71616W
+not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
 
@@ -17,9 +21,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   177   736   +270us[ +264us] +/-   12ms
+^* 192.147.41.12                 1  10   377   143   -254us[ -275us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=-0.000006, RMS offset=0.000040
+Reference ID: C093290C, Stratum=2, last offset=-0.000021, RMS offset=0.000058
 ------------------------------------------
 
 
@@ -28,7 +32,7 @@ Reference ID: C093290C, Stratum=2, last offset=-0.000006, RMS offset=0.000040
 
 
 ---------- uptime ------------
- 14:30:07 up 1 day, 21:58,  1 user,  load average: 0.02, 0.02, 0.00
+ 14:30:07 up 2 days, 21:58,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -46,6 +50,21 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      124 /home/adcp/log/3dayplots_os150nb.warn
+      76 /home/adcp/log/3dayplots_os38nb.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      18 /home/adcp/log/DAS_while_logging.warn.2023-11-08
+      18 /home/adcp/log/lastensq_os150nb.warn
+      6 /home/adcp/log/lastensq_os38nb.warn
+      12 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      10 /home/adcp/log/lastfewvec_os38nb.warn.2023-11-08
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      34 /home/adcp/log/quick_os150nb.warn
+      18 /home/adcp/log/quick_os38nb.warn
 
 Figures and files:
 
@@ -56,10 +75,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+      93      /home/adcp/www/figures/ktprof_amp_lastens.png
+      93      /home/adcp/www/figures/wh300_lastens.png
+      93      /home/adcp/www/figures/os38nb_lastens.png
+      93      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+      93      /home/adcp/www/figures/os38nb_ddaycont.png
+      93      /home/adcp/www/figures/wh300_ddaycont.png
+      93      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
