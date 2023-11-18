@@ -1,13 +1,9 @@
-2023/11/16 14:30:01
-arcurrents05 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: test2023-10-21  *** not logging ***
+2023/11/17 14:30:02
+arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: ar80  *** not logging ***
 
-   wh300 2023/10/21  00:05:05 to 2023/10/21  12:39:04  (37551 min. ago) 26.1 days
 
-approximate lat, lon, depth:   41 31.43663 N   70 40.33014 W   depth=4
-
-link: http://www.google.com/maps/place/41%2031.43663N+70%2040.33014W
-not using zmq publishers, position is from serial GPS
+no positions found from filelist gps_dps112/*.gps.rbin
 
 NOTE: This is the _primary_ computer
 
@@ -21,10 +17,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ese01.armstrong.whoi.edu      1  10   377   308   +904us[+3003us] +/-   12ms
-^- bdds-arm.armstrong.whoi.>     4   6   377     8    -31ms[  -31ms] +/-  114ms
+^* 192.147.41.12                 1  10   377   320    +76us[ +119us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.002099, RMS offset=0.000674
+Reference ID: C093290C, Stratum=2, last offset=0.000044, RMS offset=0.000191
 ------------------------------------------
 
 
@@ -33,7 +28,7 @@ Reference ID: C093290C, Stratum=2, last offset=0.002099, RMS offset=0.000674
 
 
 ---------- uptime ------------
- 14:30:02 up 2 days, 23:44,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:08 up  1:37,  1 user,  load average: 0.07, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -51,6 +46,9 @@ ______________________
 
 (1) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      2 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 
@@ -61,13 +59,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   37549      /home/adcp/www/figures/wh300_lastens.png
-   37549      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   37549      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 

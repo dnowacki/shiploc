@@ -1,86 +1,33 @@
-2023/11/16 14:30:01
-currents02km 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: km2318     ** is logging **
-
-   wh300 2023/11/14  17:32:05 to 2023/11/16  14:28:05  (2 min. ago)
-  os38bb 2023/11/14  17:35:11 to 2023/11/16  14:25:10  (5 min. ago)
-  os38nb 2023/11/14  17:35:11 to 2023/11/16  14:25:10  (5 min. ago)
-
-approximate lat, lon, depth:   20 36.50717 N  157 8.31850 W   depth=884
-
-link: http://www.google.com/maps/place/20%2036.50717N+157%208.31850W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2023/11/17 14:30:01
+currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.2 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
+--->>>  /media/kmnas/ NOT FOUND (check mounts) <<<---
 
 
 
 
----- heading correction ----
 
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
-
-ddrange: 318.5942143 to 319.5942036
-(2023/11/15 14:15:40 to 2023/11/16 14:15:39)
-all posmv messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.8
-   min  = -1.29, max = 1.77
-   mean = 0.25, stddev = 0.37
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:  on
-os38 NB:  on
-os38 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2   9   377    14    +17us[  +34us] +/- 1495us
+^* kmroute.km                    2  10   377   204   +235ns[+7220ns] +/- 1045us
 
-Reference ID: 0A009601, Stratum=3, last offset=0.000017, RMS offset=0.000031
+Reference ID: 0A009601, Stratum=3, last offset=0.000007, RMS offset=0.000028
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os38nb recent ping statistics
-
-(2023/11/16 14:20:10) ens = 300 sec, 50 pings, (6.00 sec/ping)
-
-wh300 recent ping statistics
-
-(2023/11/16 14:26:05) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os38bb recent ping statistics
-
-(2023/11/16 14:20:10) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:01 up 1 day, 21:09,  1 user,  load average: 0.42, 0.36, 0.38
+ 14:30:02 up 27 days, 16:27,  1 user,  load average: 0.02, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -96,11 +43,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_q
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      3 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/send_buffered_mail.warn
+(2) expected backup disk not found:
+
+--->>>  /media/kmnas/ NOT FOUND (check mounts) <<<---
+
 
 Figures and files:
 
@@ -111,17 +60,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os38bb_lastens.png
-       4      /home/adcp/www/figures/os38nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/wh300_ddaycont.png
-       4      /home/adcp/www/figures/os38bb_ddaycont.png
-       4      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
