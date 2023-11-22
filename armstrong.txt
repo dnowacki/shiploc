@@ -1,10 +1,7 @@
-2023/11/17 14:30:02
+2023/11/21 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: ar80  *** not logging ***
-
-
-no positions found from filelist gps_dps112/*.gps.rbin
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -17,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   320    +76us[ +119us] +/-   12ms
+^* 192.147.41.12                 1  10   377   615   -270us[ -307us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.000044, RMS offset=0.000191
+Reference ID: C093290C, Stratum=2, last offset=-0.000037, RMS offset=0.000078
 ------------------------------------------
 
 
@@ -28,7 +25,7 @@ Reference ID: C093290C, Stratum=2, last offset=0.000044, RMS offset=0.000191
 
 
 ---------- uptime ------------
- 14:30:08 up  1:37,  1 user,  load average: 0.07, 0.02, 0.00
+ 14:30:07 up 4 days,  1:37,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -45,10 +42,7 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      2 /home/adcp/log/web_speedlog.warn
+     2 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -59,10 +53,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    2789      /home/adcp/www/figures/ktprof_amp_lastens.png
+    2789      /home/adcp/www/figures/wh300_lastens.png
+    2789      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    2789      /home/adcp/www/figures/wh300_ddaycont.png
+    2789      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
