@@ -1,15 +1,7 @@
-2023/11/21 14:30:01
+2023/11/22 14:30:02
 currents01skq 5.4.0-137-generic (focal "Ubuntu 20.04.5 LTS")
-Current cruise: SKQ202314T  *** not logging ***
-
-   wh300 2023/11/15  22:12:46 to 2023/11/20  17:54:22  (1235 min. ago) 20.6 hrs
-  os150nb 2023/11/15  22:12:46 to 2023/11/20  17:52:22  (1237 min. ago) 20.6 hrs
-
-approximate lat, lon, depth:   60 5.87671 N  149 24.67523 W   depth=1
-
-link: http://www.google.com/maps/place/60%205.87671N+149%2024.67523W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -20,8 +12,8 @@ NOTE: This is the _primary_ computer
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*shp-ntp-0.sikul .GPS.            1 u  908 1024  377    0.121    0.087   0.076
-+shp-ntp-1.sikul .GPS.            1 u  760 1024  377    0.145    0.081   0.067
+*shp-ntp-0.sikul .GPS.            1 u  873 1024  377    0.124    0.189   1.252
++shp-ntp-1.sikul .GPS.            1 u  607 1024  377    0.123    0.312   1.336
 ------------------------------------------
 
 
@@ -29,7 +21,7 @@ NOTE: This is the _primary_ computer
 
 
 ---------- uptime ------------
- 14:30:02 up 113 days, 22:26,  1 user,  load average: 0.10, 0.09, 0.06
+ 14:30:03 up 114 days, 22:26,  1 user,  load average: 0.29, 0.13, 0.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -41,7 +33,12 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      170731 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 
@@ -52,17 +49,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1235      /home/adcp/www/figures/wh300_lastens.png
-    1235      /home/adcp/www/figures/os75nb_lastens.png
-    1235      /home/adcp/www/figures/os150nb_lastens.png
-    1235      /home/adcp/www/figures/ktprof_amp_lastens.png
+    2675      /home/adcp/www/figures/wh300_lastens.png
+    2675      /home/adcp/www/figures/os75nb_lastens.png
+    2675      /home/adcp/www/figures/os150nb_lastens.png
+    2675      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1235      /home/adcp/www/figures/wh300_ddaycont.png
-    1235      /home/adcp/www/figures/os75nb_ddaycont.png
-    1235      /home/adcp/www/figures/os150nb_ddaycont.png
+    2675      /home/adcp/www/figures/wh300_ddaycont.png
+    2675      /home/adcp/www/figures/os75nb_ddaycont.png
+    2675      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
