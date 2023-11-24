@@ -1,12 +1,12 @@
-2023/11/22 14:15:01
+2023/11/23 14:15:02
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2311     ** is logging **
 
-  os150nb 2023/11/18  21:17:31 to 2023/11/22  14:14:53  (0 min. ago)
+  os150nb 2023/11/18  21:17:31 to 2023/11/23  14:12:36  (2 min. ago)
 
-approximate lat, lon, depth:   20 5.99404 S   71 6.01785 W   depth=4590
+approximate lat, lon, depth:   20 5.99451 S   71 6.00546 W   depth=4590
 
-link: http://www.google.com/maps/place/20%205.99404S+71%206.01785W
+link: http://www.google.com/maps/place/20%205.99451S+71%206.00546W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -28,16 +28,16 @@ no good phins data out of 0 (300sec) ensembles
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 324.5837478 to 325.5837362
-(2023/11/21 14:00:36 to 2023/11/22 14:00:35)
+ddrange: 325.5843497 to 326.5843381
+(2023/11/22 14:01:28 to 2023/11/23 14:01:27)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   260 out of 260   (100%) were good
+   283 out of 283   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.51, max = -0.10
-   mean = -0.30, stddev = 0.09
+   min  = -0.69, max = -0.28
+   mean = -0.45, stddev = 0.07
 
 
 === Sonar Pingtype Summary =====
@@ -52,20 +52,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  976 1024  377    0.221   -0.112   0.194
+*rr-bb-gw-das.uc 100.124.36.34    2 u 1025 1024  377    0.180    0.263   0.128
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/11/22 14:08:53) ens = 180 sec, 147 pings, (1.22 sec/ping)
+(2023/11/23 14:09:36) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 5 days, 21:16,  1 user,  load average: 0.18, 0.14, 0.16
+ 14:15:04 up 6 days, 21:16,  1 user,  load average: 0.12, 0.13, 0.15
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -82,9 +82,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      156 /home/adcp/log/lastensq_os150nb.warn
-      2 /home/adcp/log/lastfewvec_os150nb.warn
-      9 /home/adcp/log/update_hbins_os150nb.warn
+      4 /home/adcp/log/3dayplots_os150nb.warn
+      306 /home/adcp/log/lastensq_os150nb.warn
+(2) rbin warnings:
+ 
+gyro hdg  85956    1.00    0.00    1163.3       2     7     6     0     0
+gyro hdg  85956    1.00    0.00    1163.3       2     7     6     0     0
 
 Figures and files:
 
@@ -95,13 +98,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_ddaycont.png
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
