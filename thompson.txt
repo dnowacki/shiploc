@@ -1,7 +1,15 @@
-2023/11/23 14:30:02
-currents03tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2023/11/24 14:30:02
+currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
+Current cruise: TN426  *** not logging ***
+
+   wh300 2023/11/23  20:50:20 to 2023/11/24  12:46:15  (103 min. ago) 1.7 hrs
+  os75nb 2023/11/23  20:53:20 to 2023/11/24  12:43:16  (106 min. ago) 1.8 hrs
+
+approximate lat, lon, depth:   12 40.40590 S  172 44.31295 W   depth=4697
+
+link: http://www.google.com/maps/place/12%2040.40590S+172%2044.31295W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _secondary_ computer
 
 
@@ -15,9 +23,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntpserver-11.rvtgt.uw.edu     1  10   377   354    +16us[  +23us] +/-  182us
+^* ntpserver-11.rvtgt.uw.edu     1  10   377   351    -48us[  -59us] +/-  157us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000006, RMS offset=0.000027
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000011, RMS offset=0.000015
 ------------------------------------------
 
 
@@ -26,7 +34,7 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000006, RMS offset=0.000027
 
 
 ---------- uptime ------------
- 14:30:04 up 21:40,  1 user,  load average: 0.20, 0.09, 0.01
+ 14:30:02 up 1 day, 21:40,  1 user,  load average: 0.24, 0.12, 0.04
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -44,8 +52,14 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn.2023-11-23
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn.2023-11-23
+      2 /home/adcp/log/quick_os75nb.warn
+      4 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -56,15 +70,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  786211      /home/adcp/www/figures/ktprof_amp_lastens.png
-  786211      /home/adcp/www/figures/os75nb_lastens.png
-  786211      /home/adcp/www/figures/wh300_lastens.png
+     102      /home/adcp/www/figures/wh300_lastens.png
+     102      /home/adcp/www/figures/os75nb_lastens.png
+     102      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  786211      /home/adcp/www/figures/wh300_ddaycont.png
-  786211      /home/adcp/www/figures/os75nb_ddaycont.png
+     102      /home/adcp/www/figures/wh300_ddaycont.png
+     102      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
