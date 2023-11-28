@@ -1,12 +1,12 @@
-2023/11/26 14:15:02
+2023/11/27 14:15:01
 rr-currents 5.4.0-122-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: RR2311     ** is logging **
 
-  os150nb 2023/11/18  21:17:31 to 2023/11/26  14:13:59  (1 min. ago)
+  os150nb 2023/11/18  21:17:31 to 2023/11/27  14:13:59  (1 min. ago)
 
-approximate lat, lon, depth:   20 6.00196 S   71 6.00017 W   depth=4590
+approximate lat, lon, depth:   19 6.30474 S   72 48.26364 W   depth=4138
 
-link: http://www.google.com/maps/place/20%206.00196S+71%206.00017W
+link: http://www.google.com/maps/place/19%206.30474S+72%2048.26364W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -22,22 +22,22 @@ NOTE: This is a _virtual_ computer
 ===========================
 ------ phins statistics ------
 ===========================
-no good phins data out of 0 (300sec) ensembles
+/home/adcp/daily_report/phins_gyro_pystats.txt does not (yet?) exist
 ===========================
 ------ seapath statistics ------
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 328.5872663 to 329.5872547
-(2023/11/25 14:05:40 to 2023/11/26 14:05:39)
+ddrange: 329.5872779 to 330.5872663
+(2023/11/26 14:05:41 to 2023/11/27 14:05:40)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.63, max = -0.30
-   mean = -0.43, stddev = 0.06
+   min  = -0.55, max = -0.10
+   mean = -0.33, stddev = 0.10
 
 
 === Sonar Pingtype Summary =====
@@ -52,20 +52,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.34    2 u  953 1024  377    0.178    0.048   0.069
+*rr-bb-gw-das.uc 100.124.36.34    2 u  796 1024  377    0.209    0.332   0.180
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2023/11/26 14:10:59) ens = 180 sec, 147 pings, (1.22 sec/ping)
+(2023/11/27 14:10:59) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 9 days, 21:16,  1 user,  load average: 0.26, 0.22, 0.22
+ 14:15:03 up 10 days, 21:16,  1 user,  load average: 0.30, 0.22, 0.23
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -82,7 +82,13 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      306 /home/adcp/log/hcorrstats_phins.warn
+      2 /home/adcp/log/3dayplots_os150nb.warn
+      969 /home/adcp/log/hcorrstats_phins.warn
+      969 /home/adcp/log/hcorrstats_phins.warn.2023-11-26
+(2) rbin warnings:
+ 
+gyro hdg  87115    1.00    0.00       5.6       1     6     2     0     0
+gyro hdg  87115    1.00    0.00       5.6       1     6     2     0     0
 
 Figures and files:
 
