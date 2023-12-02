@@ -1,8 +1,10 @@
-2023/11/30 14:30:01
-currents04en 5.4.0-26-generic (focal "Ubuntu 20.04.3 LTS")
+2023/12/01 14:30:01
+currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
 
 
@@ -12,12 +14,11 @@ NOTE: This is the _primary_ computer
 
 using chrony
 ---------- chronyc tracking ------------
-210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   7   377    62  -4840ns[-7411ns] +/- 1245us
+^* 192.168.1.8                   1   8   377   237    +33us[ +174us] +/- 1267us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000003, RMS offset=0.000012
+Reference ID: C0A80108, Stratum=2, last offset=0.000141, RMS offset=0.000150
 ------------------------------------------
 
 
@@ -26,7 +27,7 @@ Reference ID: C0A80108, Stratum=2, last offset=-0.000003, RMS offset=0.000012
 
 
 ---------- uptime ------------
- 14:30:05 up 1 day, 22:15,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:03 up 15:44,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -40,6 +41,14 @@ https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_
 
 
 
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(2) expected backup disk not found:
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
 
 Figures and files:
@@ -59,5 +68,4 @@ age (minutes)          filename
 
 
 local_status_mailto:
-
 
