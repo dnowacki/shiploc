@@ -1,66 +1,31 @@
-2023/12/15 14:30:01
-currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: en2023-12-01-test03A     ** is logging **
-
-   DAS_while_cruise.py is *not* running.
-   DAS_while_logging.py is *not* running.
-   wh300 2023/12/01  15:27:02 to 2023/12/08  19:19:51  (9790 min. ago)  6.8 days
-
-approximate lat, lon, depth:   41 35.21313 N   71 24.69799 W   depth=4
-
-link: http://www.google.com/maps/place/41%2035.21313N+71%2024.69799W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2023/12/16 14:30:01
+currents04en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo_b2_udp")
-===========================
------- abxtwo_b2 statistics ------
-===========================
-/home/adcp/daily_report/abxtwo_b2_gyro_pystats.txt does not (yet?) exist
-===========================
------- abxtwo_b2_udp statistics ------
-===========================
-/home/adcp/daily_report/abxtwo_b2_udp_gyro_pystats.txt does not (yet?) exist
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:       off
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   8   377   183    -17us[  -66us] +/- 1263us
+^* 192.168.1.8                   1   6   377    35   +400ns[  +22us] +/- 1192us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000049, RMS offset=0.000074
+Reference ID: C0A80108, Stratum=2, last offset=0.000022, RMS offset=0.000125
 ------------------------------------------
 
 
 
-------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days, 21:39,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 21:55,  1 user,  load average: 0.12, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -78,7 +43,7 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+     5 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -89,13 +54,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    9790      /home/adcp/www/figures/wh300_lastens.png
-    9790      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    9793      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
