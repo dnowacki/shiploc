@@ -1,13 +1,13 @@
-2023/12/30 03:21:00
+2023/12/30 14:30:01
 atcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
 Current cruise: AT50-18_part2     ** is logging **
 
-   wh300 2023/12/30  02:17:00 to 2023/12/30  03:19:01  (2 min. ago)
-  os75nb 2023/12/30  02:20:05 to 2023/12/30  03:20:03  (1 min. ago)
+   wh300 2023/12/30  02:17:00 to 2023/12/30  14:29:01  (1 min. ago)
+  os75nb 2023/12/30  02:20:05 to 2023/12/30  14:25:04  (5 min. ago)
 
-approximate lat, lon, depth:   45 42.48178 N  124 29.99875 W   depth=196
+approximate lat, lon, depth:   43 49.21642 N  124 50.12978 W   depth=439
 
-link: http://www.google.com/maps/place/45%2042.48178N+124%2029.99875W
+link: http://www.google.com/maps/place/43%2049.21642N+124%2050.12978W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 363.0937800 to 363.1358054
-(2023/12/30 02:15:03 to 2023/12/30 03:15:34)
+ddrange: 363.0937800 to 363.5940115
+(2023/12/30 02:15:03 to 2023/12/30 14:15:23)
 all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   12 out of 12   (100%) were good
+   144 out of 144   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.04, max = -0.03
-   mean = -0.04, stddev = 0.00
+   mean N = 301, stddev N =  0.4
+   min  = -0.04, max = -0.01
+   mean = -0.02, stddev = 0.01
 
 ===========================
 ------ seapath statistics ------
 ===========================
 hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 363.0937800 to 363.1358170
-(2023/12/30 02:15:03 to 2023/12/30 03:15:35)
+ddrange: 363.0937800 to 363.5940230
+(2023/12/30 02:15:03 to 2023/12/30 14:15:24)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   12 out of 12   (100%) were good
+   144 out of 144   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.25, max = -0.17
-   mean = -0.21, stddev = 0.02
+   mean N = 301, stddev N =  0.2
+   min  = -0.25, max = -0.15
+   mean = -0.20, stddev = 0.02
 
 
 === Sonar Pingtype Summary =====
@@ -72,9 +72,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    32  +3314ns[+1671ns] +/-   25us
+^* timeserver.atlantis.whoi>     1   6   377     9    +20us[  +21us] +/-   41us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000002, RMS offset=0.000001
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000000, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -82,7 +82,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000002, RMS offset=0.000001
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2023/12/30 03:17:01) ens = 120 sec, 89 pings, (1.35 sec/ping)
+(2023/12/30 14:27:01) ens = 120 sec, 89 pings, (1.35 sec/ping)
 
 os75bb recent ping statistics
 
@@ -90,13 +90,13 @@ os75bb recent ping statistics
 
 os75nb recent ping statistics
 
-(2023/12/30 03:15:04) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2023/12/30 14:20:04) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 03:21:00 up  3:06,  1 user,  load average: 0.39, 0.31, 0.28
+ 14:30:02 up 14:15,  1 user,  load average: 0.26, 0.24, 0.26
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -117,7 +117,7 @@ ______________________
 
       48 /home/adcp/log/3dayplots_os75bb.warn
       116 /home/adcp/log/3dayplots_os75nb.warn
-      25 /home/adcp/log/DAS_while_logging.warn
+      69 /home/adcp/log/DAS_while_logging.warn
       73 /home/adcp/log/DAS_while_logging.warn.2023-12-29
       7 /home/adcp/log/hcorrstats_hydrins2.warn
       7 /home/adcp/log/hcorrstats_seapath.warn
@@ -141,15 +141,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os75nb_lastens.png
        1      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
