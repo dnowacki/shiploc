@@ -1,13 +1,13 @@
-2023/12/31 14:30:01
+2024/01/01 14:30:02
 atcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
 Current cruise: AT50-18_part2     ** is logging **
 
-   wh300 2023/12/30  02:17:00 to 2023/12/31  14:29:46  (0 min. ago)
-  os75nb 2023/12/30  02:20:05 to 2023/12/31  14:27:47  (2 min. ago)
+   wh300 2023/12/30  02:17:00 to 2024/01/01  14:29:47  (0 min. ago)
+  os75nb 2023/12/30  02:20:05 to 2024/01/01  14:27:46  (2 min. ago)
 
-approximate lat, lon, depth:   38 47.78243 N  124 32.22747 W   depth=3529
+approximate lat, lon, depth:   34 25.28720 N  120 56.90506 W   depth=984
 
-link: http://www.google.com/maps/place/38%2047.78243N+124%2032.22747W
+link: http://www.google.com/maps/place/34%2025.28720N+120%2056.90506W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,39 +25,39 @@ NOTE: This is the _primary_ computer
 ===========================
 hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 363.5994513 to 364.5994397
-(2023/12/30 14:23:13 to 2023/12/31 14:23:12)
-all hydrins2 messages:  (26%)  were good  [QC does not exist for this instrument]
+ddrange: 364.6039883 to 365.6039767
+(2023/12/31 14:29:45 to 2024/01/01 14:29:44)
+all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   279 out of 279   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -0.02, max = 0.01
-   mean = -0.01, stddev = 0.01
+   min  = -0.01, max = 0.01
+   mean = 0.00, stddev = 0.00
 
 ===========================
 ------ seapath statistics ------
 ===========================
 hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 363.5994628 to 364.5994513
-(2023/12/30 14:23:14 to 2023/12/31 14:23:13)
-all seapath messages:  (26%)  were good  [using available QC]
+ddrange: 364.6039999 to 365.6039883
+(2023/12/31 14:29:46 to 2024/01/01 14:29:45)
+all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   279 out of 279   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.28, max = -0.12
-   mean = -0.21, stddev = 0.03
+   min  = -0.31, max = -0.15
+   mean = -0.22, stddev = 0.02
 
 
 === Sonar Pingtype Summary =====
 
 wh300: Triggering command not found
 wh300 BB:  on
-wh300 BT:  on
+wh300 BT:      off
 
 os75: Triggering not used (CX0,0)
 os75 BB:       off
@@ -72,9 +72,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    53    +17us[  +17us] +/-   35us
+^* timeserver.atlantis.whoi>     1   6   377     8    +18ns[ +232ns] +/-   19us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
@@ -82,17 +82,17 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2023/12/31 14:27:46) ens = 120 sec, 75 pings, (1.60 sec/ping)
+(2024/01/01 14:25:47) ens = 120 sec, 89 pings, (1.35 sec/ping)
 
 os75nb recent ping statistics
 
-(2023/12/31 14:22:48) ens = 300 sec, 133 pings, (2.26 sec/ping)
+(2024/01/01 14:22:47) ens = 300 sec, 132 pings, (2.27 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 20:25,  1 user,  load average: 0.17, 0.23, 0.25
+ 14:30:02 up 1 day, 20:25,  1 user,  load average: 0.63, 0.36, 0.30
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -107,30 +107,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
+      4 /home/adcp/log/3dayplots_os75nb.warn
       58 /home/adcp/log/DAS_while_logging.warn
-      132 /home/adcp/log/DAS_while_logging.warn.2023-12-30
-      58 /home/adcp/log/hcorrstats_hydrins2.warn
-      30 /home/adcp/log/hcorrstats_hydrins2.warn.2023-12-30
-      58 /home/adcp/log/hcorrstats_seapath.warn
-      30 /home/adcp/log/hcorrstats_seapath.warn.2023-12-30
-      4 /home/adcp/log/web_speedlog.warn
-(3) rbin warnings:
- 
-hydrins2 hdg  85928    1.01  -61897.98       1.0       0     1     1     0     1
-gpsnav gps  85930    1.01  -61898.99       1.0       0     1     1     0     1
-gpsnav2 gps  85929    0.99  -61897.70       1.9       0     3     1     0     1
-seapath gps  85929    1.01  -61898.01       1.0       0     1     1     0     1
-seapath hdg  85930    1.01  -61899.00       1.0       0     1     1     0     1
-seapath sea  85928    1.01  -61898.00       1.0       0     1     1     0     1
-hydrins1 hdg  85929    1.00  -61899.00       1.0       0     1     1     0     1
-(4) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 363.416672
-
+      98 /home/adcp/log/DAS_while_logging.warn.2023-12-31
+      70 /home/adcp/log/hcorrstats_hydrins2.warn
+      70 /home/adcp/log/hcorrstats_seapath.warn
 
 Figures and files:
 
@@ -141,15 +124,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
        0      /home/adcp/www/figures/wh300_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
