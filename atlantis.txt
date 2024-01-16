@@ -1,13 +1,70 @@
-2024/01/14 14:30:01
-atcurrents02 5.11.0-27-generic (focal "Ubuntu 20.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/01/15 14:30:01
+atcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
+Current cruise: AT50-20     ** is logging **
+
+   wh300 2024/01/15  01:51:17 to 2024/01/15  14:29:18  (0 min. ago)
+  os75nb 2024/01/15  01:54:18 to 2024/01/15  14:29:19  (0 min. ago)
+
+approximate lat, lon, depth:   13 44.97921 N  106 42.97953 W   depth=3673
+
+link: http://www.google.com/maps/place/13%2044.97921N+106%2042.97953W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ hydrins2 statistics ------
+===========================
+hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 14.0759214 to 14.5970788
+(2024/01/15 01:49:20 to 2024/01/15 14:19:48)
+all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   150 out of 150   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.02, max = -0.01
+   mean = -0.01, stddev = 0.00
+
+===========================
+------ seapath statistics ------
+===========================
+hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 14.0759214 to 14.5970904
+(2024/01/15 01:49:20 to 2024/01/15 14:19:49)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   150 out of 150   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.34, max = -0.19
+   mean = -0.25, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
@@ -15,18 +72,27 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.100.161.250                1   6   377    10  +1621ns[-1130ns] +/-   33us
+^* timeserver.atlantis.whoi>     1   6   377    12    +37us[  +37us] +/-   57us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000003, RMS offset=0.000002
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000000, RMS offset=0.000002
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/01/15 14:27:18) ens = 120 sec, 89 pings, (1.35 sec/ping)
+
+os75nb recent ping statistics
+
+(2024/01/15 14:24:19) ens = 300 sec, 141 pings, (2.13 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:37 up 14 days, 13:34,  1 user,  load average: 0.11, 0.03, 0.01
+ 14:30:02 up 9 days, 17:14,  1 user,  load average: 0.41, 0.32, 0.28
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -38,7 +104,14 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      52 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -49,10 +122,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
