@@ -1,89 +1,35 @@
-2024/01/19 14:30:02
+2024/01/20 14:30:01
 currents01mgl 5.4.0-128-generic (focal "Ubuntu 20.04.5 LTS")
-Current cruise: MGL2401     ** is logging **
+Current cruise: MGL2401  *** not logging ***
 
-  os75bb 2024/01/18  02:58:32 to 2024/01/19  14:28:18  (1 min. ago)
-  os75nb 2024/01/18  02:58:32 to 2024/01/19  14:28:18  (1 min. ago)
+  os75bb 2024/01/18  02:58:32 to 2024/01/19  15:43:18  (1366 min. ago) 22.8 hrs
+  os75nb 2024/01/18  02:58:32 to 2024/01/19  15:43:18  (1366 min. ago) 22.8 hrs
 
-approximate lat, lon, depth:   35 15.96575 N   67 23.89009 W   depth=5180
+approximate lat, lon, depth:   35 13.32786 N   67 8.44482 W   depth=5155
 
-link: http://www.google.com/maps/place/35%2015.96575N+67%2023.89009W
+link: http://www.google.com/maps/place/35%2013.32786N+67%208.44482W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- seapath statistics ------
-===========================
-gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 17.5996833 to 18.5996747
-(2024/01/18 14:23:33 to 2024/01/19 14:23:32)
-all seapath messages:  (3%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   269 out of 269   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.5
-   min  = 1.18, max = 1.50
-   mean = 1.35, stddev = 0.06
-
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
-
-ddrange: 17.5996949 to 18.5996863
-(2024/01/18 14:23:34 to 2024/01/19 14:23:33)
-all posmv messages:  (3%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   269 out of 269   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.4
-   min  = 1.37, max = 1.78
-   mean = 1.57, stddev = 0.08
-
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  192.168.3.14    .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*timeserve2.lang .GNSS.           1 u  813 1024  377    0.102    0.077   0.027
+*timeserve2.lang .GNSS.           1 u  693 1024  377    0.204   -0.082   0.031
 ------------------------------------------
 
-
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2024/01/19 14:23:18) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-os75nb recent ping statistics
-
-(2024/01/19 14:23:18) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:04 up 21:53,  1 user,  load average: 0.14, 0.11, 0.09
+ 14:30:02 up 1 day, 21:53,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -99,25 +45,11 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      40 /home/adcp/log/DAS_while_logging.warn
-      58 /home/adcp/log/hcorrstats_posmv.warn
-      29 /home/adcp/log/hcorrstats_posmv.warn.2024-01-18
-      58 /home/adcp/log/hcorrstats_seapath.warn
-      29 /home/adcp/log/hcorrstats_seapath.warn.2024-01-18
-      10 /home/adcp/log/lastfewvec_os75bb.warn
-      2 /home/adcp/log/lastfewvec_os75nb.warn
-(3) rbin warnings:
- 
-seapath gps  82645    1.01  -2709017.44       1.0       0     1     1     0     1
-seapath sea  82644    1.01  -2709017.44       1.0       0     1     1     0     1
-posmv gps 165291    0.50  -2709018.46       0.5       0     1     1     0     1
-posmv pmv 165290    0.50  -2709017.95       0.5       0     1     1     0     1
-gyro hdg  74395    1.10  -2709017.93       1.2       0     1     1     0     1
-(4) timestamp warnings:
+      60 /home/adcp/log/hcorrstats_posmv.warn
+      60 /home/adcp/log/hcorrstats_seapath.warn
+(2) timestamp warnings:
 jumps forward: 1   jumps back: 0
 max forward 0 seconds at dday 17.416671
 
@@ -131,15 +63,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       1      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1363      /home/adcp/www/figures/os75nb_lastens.png
+    1363      /home/adcp/www/figures/os75bb_lastens.png
+    1363      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75bb_ddaycont.png
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
+    1363      /home/adcp/www/figures/os75nb_ddaycont.png
+    1363      /home/adcp/www/figures/os75bb_ddaycont.png
 
 
 
