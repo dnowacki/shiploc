@@ -1,5 +1,5 @@
-2024/01/21 14:30:01
-currents01ws 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
+2024/01/22 14:10:02
+currents02ws 5.4.0-109-generic (focal "Ubuntu 20.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -9,24 +9,18 @@ NOTE: This is the _primary_ computer
 
 
 
-
-using chrony
----------- chronyc tracking ------------
-210 Number of sources = 1
-MS Name/IP address         Stratum Poll Reach LastRx Last sample               
-===============================================================================
-^* 10.106.30.100                 1   8   377   231    +31us[  +19us] +/-  572us
-
-Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000012, RMS offset=0.000008
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ 10.106.30.100   .POOL.          16 p    -   64    0    0.000    0.000   0.000
 ------------------------------------------
 
 
 
 
 
-
 ---------- uptime ------------
- 14:30:02 up 36 days, 19:24,  1 user,  load average: 0.00, 0.02, 0.00
+ 14:10:03 up 181 days, 22:53,  1 user,  load average: 0.08, 0.02, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -39,7 +33,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/posm
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      15 /home/adcp/log/send_buffered_mail.warn
+      25 /home/adcp/log/send_buffered_mail.warn.2024-01-21
 
 Figures and files:
 
@@ -50,17 +50,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    5587      /home/adcp/www/figures/ktprof_amp_lastens.png
-    5587      /home/adcp/www/figures/os75bb_lastens.png
-    5587      /home/adcp/www/figures/wh600_lastens.png
-    5587      /home/adcp/www/figures/os75nb_lastens.png
+  903524      /home/adcp/www/figures/ktprof_amp_lastens.png
+  903524      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    5587      /home/adcp/www/figures/os75nb_ddaycont.png
-    5587      /home/adcp/www/figures/os75bb_ddaycont.png
-    5587      /home/adcp/www/figures/wh600_ddaycont.png
+  903526      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 
