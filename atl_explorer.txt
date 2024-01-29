@@ -1,14 +1,14 @@
-2024/01/27 14:30:01
+2024/01/28 14:30:02
 currents02ae 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
 Current cruise: Pierside_PostAE2402     ** is logging **
 
  sv300 -- no data yet
-  os75bb 2024/01/19  18:23:53 to 2024/01/27  14:28:54  (1 min. ago)
-  os75nb 2024/01/19  18:23:53 to 2024/01/27  14:28:54  (1 min. ago)
+  os75bb 2024/01/19  18:23:53 to 2024/01/28  14:28:52  (1 min. ago)
+  os75nb 2024/01/19  18:23:53 to 2024/01/28  14:28:52  (1 min. ago)
 
-approximate lat, lon, depth:   32 22.20132 N   64 41.75271 W   depth=-6
+approximate lat, lon, depth:   32 22.20107 N   64 41.75228 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2022.20132N+64%2041.75271W
+link: http://www.google.com/maps/place/32%2022.20107N+64%2041.75228W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,35 +24,11 @@ NOTE: This is the _primary_ computer
 ===========================
 ------ abxtwo statistics ------
 ===========================
-jrc_port-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 25.5763194 to 26.5763079
-(2024/01/26 13:49:54 to 2024/01/27 13:49:53)
-all abxtwo messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   270 out of 270   (100%) were good
-statistics of good data:
-   mean N = 283, stddev N =  71.2
-   min  = -1.22, max = 1.04
-   mean = -0.24, stddev = 0.38
-
+no good abxtwo data out of 0 (300sec) ensembles
 ===========================
 ------ jrc_stbd statistics ------
 ===========================
-jrc_port-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 25.5763310 to 26.5763194
-(2024/01/26 13:49:55 to 2024/01/27 13:49:54)
-all jrc_stbd messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   270 out of 270   (100%) were good
-statistics of good data:
-   mean N = 283, stddev N =  71.2
-   min  = -1.70, max = 2.00
-   mean = 0.06, stddev = 0.61
-
+no good jrc_stbd data out of 0 (300sec) ensembles
 
 === Sonar Pingtype Summary =====
 
@@ -74,9 +50,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntp-51.triangle.local         1   6   377    39   +426ns[  -18us] +/-   30us
+^* ntp-51.triangle.local         1   7   377    48   +598ns[-7709ns] +/-   53us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000018, RMS offset=0.000007
+Reference ID: C0A83309, Stratum=2, last offset=-0.000008, RMS offset=0.000010
 ------------------------------------------
 
 
@@ -84,17 +60,17 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000018, RMS offset=0.000007
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2024/01/27 14:23:53) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2024/01/28 14:23:52) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 os75nb recent ping statistics
 
-(2024/01/27 14:23:53) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2024/01/28 14:23:52) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 96 days, 22:57,  1 user,  load average: 0.27, 0.21, 0.19
+ 14:30:02 up 97 days, 22:57,  1 user,  load average: 0.37, 0.21, 0.15
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -111,20 +87,23 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
+      2 /home/adcp/log/3dayplots_os75bb.warn
       2088 /home/adcp/log/3dayplots_sv300.warn
-      3456 /home/adcp/log/3dayplots_sv300.warn.2024-01-26
+      3456 /home/adcp/log/3dayplots_sv300.warn.2024-01-27
       2491 /home/adcp/log/DAS_while_logging.warn
-      4132 /home/adcp/log/DAS_while_logging.warn.2024-01-26
+      4127 /home/adcp/log/DAS_while_logging.warn.2024-01-27
       406 /home/adcp/log/grab_pings_sv300.warn
-      672 /home/adcp/log/grab_pings_sv300.warn.2024-01-26
-      34 /home/adcp/log/hcorrstats_abxtwo.warn
-      34 /home/adcp/log/hcorrstats_jrc_stbd.warn
-      13388 /home/adcp/log/lastensq_sv300.warn
-      22216 /home/adcp/log/lastensq_sv300.warn.2024-01-26
+      672 /home/adcp/log/grab_pings_sv300.warn.2024-01-27
+      833 /home/adcp/log/hcorrstats_abxtwo.warn
+      680 /home/adcp/log/hcorrstats_abxtwo.warn.2024-01-27
+      833 /home/adcp/log/hcorrstats_jrc_stbd.warn
+      680 /home/adcp/log/hcorrstats_jrc_stbd.warn.2024-01-27
+      13360 /home/adcp/log/lastensq_sv300.warn
+      22164 /home/adcp/log/lastensq_sv300.warn.2024-01-27
       3753 /home/adcp/log/lastfewvec_sv300.warn
-      6228 /home/adcp/log/lastfewvec_sv300.warn.2024-01-26
+      6219 /home/adcp/log/lastfewvec_sv300.warn.2024-01-27
       4587 /home/adcp/log/quick_sv300.warn
-      7612 /home/adcp/log/quick_sv300.warn.2024-01-26
+      7601 /home/adcp/log/quick_sv300.warn.2024-01-27
 
 Figures and files:
 

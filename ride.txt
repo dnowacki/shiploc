@@ -1,4 +1,4 @@
-2024/01/27 14:30:01
+2024/01/28 14:30:01
 currents06sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   8   377   152  -9003ns[  -14us] +/-  103ms
+^? 100.124.100.34                0  10     0     -     +0ns[   +0ns] +/-    0ns
+^* sr-bb-gw-das.ucsd.edu         2   8   377    98  -2373ns[ -633ns] +/-  267ms
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000005, RMS offset=0.000036
+Reference ID: 647C6401, Stratum=3, last offset=0.000002, RMS offset=0.000029
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: 647C6401, Stratum=3, last offset=-0.000005, RMS offset=0.000036
 
 
 ---------- uptime ------------
- 14:30:02 up 17:15,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:32 up 1 day, 17:16,  1 user,  load average: 0.05, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -42,7 +42,10 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     7 EDAC (memory) errors in last 2 /var/log/syslog
+     5 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      2 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
