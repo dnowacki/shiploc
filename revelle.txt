@@ -1,26 +1,49 @@
-2024/02/06 14:15:01
+2024/02/07 14:15:02
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: test2024-02-06-ancillary01     ** is logging **
+
+
+approximate lat, lon, depth:   32 42.40058 N  117 14.17783 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.40058N+117%2014.17783W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath380")
+===========================
+------ seapath statistics ------
+===========================
+no good seapath data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u  608 1024  377    0.258   -0.083   0.163
+*rr-bb-gw-das.uc 100.124.36.33    2 u  732 1024  377    0.222   -0.147   0.086
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:15:02 up 6 days, 10:00,  1 user,  load average: 0.00, 0.03, 0.03
+ 14:15:03 up 7 days, 10:00,  1 user,  load average: 0.29, 0.22, 0.19
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -37,6 +60,14 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      57 /home/adcp/log/DAS_while_logging.warn
+      19 /home/adcp/log/DAS_while_logging.warn.2024-02-06
+      42 /home/adcp/log/update_hbins_os150nb.warn
+(3) proc sensor incompatibilities:
+heading quality: hdg_inst_msgs
+ - seapath not in sensor_cfg.py subdirs
 
 Figures and files:
 
@@ -47,13 +78,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   51132      /home/adcp/www/figures/ktprof_amp_lastens.png
-   51132      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   51132      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

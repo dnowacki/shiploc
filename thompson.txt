@@ -1,86 +1,21 @@
-2024/02/06 14:30:01
+2024/02/07 14:30:01
 currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-Current cruise: TN429     ** is logging **
+Current cruise: TN429  *** not logging ***
 
-   wh300 2024/02/04  08:42:57 to 2024/02/06  14:27:18  (2 min. ago)
-  os75nb 2024/02/04  08:45:58 to 2024/02/06  14:24:20  (5 min. ago)
+   wh300 2024/02/04  08:42:57 to 2024/02/07  14:03:11  (27 min. ago)
+  os75nb 2024/02/04  08:45:58 to 2024/02/07  14:00:12  (30 min. ago)
 
-approximate lat, lon, depth:   37 26.88502 S  129 16.68952 E   depth=5663
+approximate lat, lon, depth:   36 29.66480 S  123 3.37322 E   depth=5435
 
-link: http://www.google.com/maps/place/37%2026.88502S+129%2016.68952E
+link: http://www.google.com/maps/place/36%2029.66480S+123%203.37322E
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _secondary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv5")
-===========================
------- posmv5 statistics ------
-===========================
-gyro1-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
-
-ddrange: 35.9161885 to 36.6040811
-(2024/02/05 21:59:19 to 2024/02/06 14:29:53)
-all posmv5 messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   198 out of 198   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.3
-   min  = -0.18, max = 0.11
-   mean = 0.02, stddev = 0.04
-
-===========================
------- seapath statistics ------
-===========================
-gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 35.9161885 to 36.6040985
-(2024/02/05 21:59:19 to 2024/02/06 14:29:54)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   198 out of 198   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.5
-   min  = -0.09, max = 0.12
-   mean = 0.00, stddev = 0.04
-
-===========================
------- comparitor statistics ------
-===========================
-gyro1-comparitor statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 35.9161885 to 36.6041159
-(2024/02/05 21:59:19 to 2024/02/06 14:29:56)
-all comparitor messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   198 out of 198   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = 0.25, max = 0.38
-   mean = 0.32, stddev = 0.03
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,3)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -88,27 +23,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.43.11.10                   1  10   377   262    +84us[ +125us] +/-  157us
+^* ntpserver-11.rvtgt.uw.edu     1  10   377   902    -13us[  -24us] +/-  155us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000041, RMS offset=0.000038
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000011, RMS offset=0.000057
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2024/02/06 14:25:18) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os75nb recent ping statistics
-
-(2024/02/06 14:19:20) ens = 300 sec, 133 pings, (2.26 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:04 up 75 days, 21:40,  1 user,  load average: 1.00, 0.43, 0.32
+ 14:30:05 up 76 days, 21:40,  1 user,  load average: 0.10, 0.08, 0.09
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -140,15 +66,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       5      /home/adcp/www/figures/os75nb_lastens.png
-       2      /home/adcp/www/figures/wh300_lastens.png
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+      25      /home/adcp/www/figures/wh300_lastens.png
+      25      /home/adcp/www/figures/os75nb_lastens.png
+      25      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       5      /home/adcp/www/figures/wh300_ddaycont.png
-       5      /home/adcp/www/figures/os75nb_ddaycont.png
+      25      /home/adcp/www/figures/wh300_ddaycont.png
+      25      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
