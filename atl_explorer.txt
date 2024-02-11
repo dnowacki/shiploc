@@ -1,20 +1,24 @@
-2024/02/09 14:30:02
+2024/02/10 14:30:01
 currents02ae 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
 Current cruise: Pierside_PostAE2403     ** is logging **
 
  sv300 -- no data yet
-  os75bb 2024/01/31  21:55:57 to 2024/02/09  14:25:59  (4 min. ago)
-  os75nb 2024/01/31  21:55:57 to 2024/02/09  14:25:59  (4 min. ago)
+  os75bb 2024/01/31  21:55:57 to 2024/02/10  14:25:56  (4 min. ago)
+  os75nb 2024/01/31  21:55:57 to 2024/02/10  14:25:56  (4 min. ago)
 
-approximate lat, lon, depth:   32 22.69462 N   64 40.90882 W   depth=10
+approximate lat, lon, depth:   32 22.69434 N   64 40.90862 W   depth=10
 
-link: http://www.google.com/maps/place/32%2022.69462N+64%2040.90882W
+link: http://www.google.com/maps/place/32%2022.69434N+64%2040.90862W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
 NOTE: This is the _primary_ computer
 
 
+
+--->>> WARNING: check os75bb temperature: 3 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
 
 
 
@@ -26,32 +30,32 @@ NOTE: This is the _primary_ computer
 ===========================
 jrc_port-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 38.5983565 to 39.5983449
-(2024/02/08 14:21:38 to 2024/02/09 14:21:37)
+ddrange: 39.5984954 to 40.5984838
+(2024/02/09 14:21:50 to 2024/02/10 14:21:49)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -1.46, max = 0.87
-   mean = -0.23, stddev = 0.36
+   min  = -1.15, max = 0.79
+   mean = -0.21, stddev = 0.36
 
 ===========================
 ------ jrc_stbd statistics ------
 ===========================
 jrc_port-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 38.5983681 to 39.5983565
-(2024/02/08 14:21:39 to 2024/02/09 14:21:38)
+ddrange: 39.5985069 to 40.5984954
+(2024/02/09 14:21:51 to 2024/02/10 14:21:50)
 all jrc_stbd messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -1.70, max = 1.70
-   mean = -0.04, stddev = 0.61
+   mean N = 301, stddev N =  0.2
+   min  = -1.60, max = 1.60
+   mean = -0.01, stddev = 0.61
 
 
 === Sonar Pingtype Summary =====
@@ -74,9 +78,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntp-51.triangle.local         1   6   377    64    +37us[  +36us] +/-   97us
+^* ntp-51.triangle.local         1   7   377   113    +43us[  +43us] +/-   97us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000005
+Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000010
 ------------------------------------------
 
 
@@ -84,17 +88,17 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000005
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2024/02/09 14:20:59) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2024/02/10 14:20:59) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 os75nb recent ping statistics
 
-(2024/02/09 14:20:59) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2024/02/10 14:20:59) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 109 days, 22:57,  1 user,  load average: 0.03, 0.12, 0.15
+ 14:30:02 up 110 days, 22:57,  1 user,  load average: 0.11, 0.15, 0.16
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -111,23 +115,28 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      10 /home/adcp/log/3dayplots_os75bb.warn
       2088 /home/adcp/log/3dayplots_sv300.warn
-      3456 /home/adcp/log/3dayplots_sv300.warn.2024-02-08
+      3456 /home/adcp/log/3dayplots_sv300.warn.2024-02-09
       2496 /home/adcp/log/DAS_while_logging.warn
-      4127 /home/adcp/log/DAS_while_logging.warn.2024-02-08
+      4127 /home/adcp/log/DAS_while_logging.warn.2024-02-09
       406 /home/adcp/log/grab_pings_sv300.warn
-      672 /home/adcp/log/grab_pings_sv300.warn.2024-02-08
-      79 /home/adcp/log/lastensq_os75bb.warn
-      24 /home/adcp/log/lastensq_os75bb.warn.2024-02-08
-      78 /home/adcp/log/lastensq_os75nb.warn
-      24 /home/adcp/log/lastensq_os75nb.warn.2024-02-08
-      13612 /home/adcp/log/lastensq_sv300.warn
-      22242 /home/adcp/log/lastensq_sv300.warn.2024-02-08
+      672 /home/adcp/log/grab_pings_sv300.warn.2024-02-09
+      73 /home/adcp/log/lastensq_os75bb.warn
+      122 /home/adcp/log/lastensq_os75bb.warn.2024-02-09
+      72 /home/adcp/log/lastensq_os75nb.warn
+      120 /home/adcp/log/lastensq_os75nb.warn.2024-02-09
+      13598 /home/adcp/log/lastensq_sv300.warn
+      22473 /home/adcp/log/lastensq_sv300.warn.2024-02-09
       3762 /home/adcp/log/lastfewvec_sv300.warn
-      6219 /home/adcp/log/lastfewvec_sv300.warn.2024-02-08
+      6219 /home/adcp/log/lastfewvec_sv300.warn.2024-02-09
       4598 /home/adcp/log/quick_sv300.warn
-      7601 /home/adcp/log/quick_sv300.warn.2024-02-08
+      7601 /home/adcp/log/quick_sv300.warn.2024-02-09
+(2) temperature warnings:
+
+--->>> WARNING: check os75bb temperature: 3 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
+
 
 Figures and files:
 
@@ -138,14 +147,14 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       3      /home/adcp/www/figures/os75bb_lastens.png
+       4      /home/adcp/www/figures/os75bb_lastens.png
        3      /home/adcp/www/figures/ktprof_amp_lastens.png
+       3      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_ddaycont.png
+       3      /home/adcp/www/figures/os75bb_ddaycont.png
        3      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
