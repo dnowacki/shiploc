@@ -1,12 +1,15 @@
-2024/02/14 14:30:02
+2024/02/15 14:30:02
 currents01skq 6.5.0-17-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: skq2024-02-13-test02     ** is logging **
+Current cruise: SKQ202402T_part2     ** is logging **
 
-  os150nb 2024/02/14  04:27:53 to 2024/02/14  14:27:53  (2 min. ago)
+   wh300 2024/02/14  22:14:00 to 2024/02/15  14:30:00  (0 min. ago)
+  os150nb 2024/02/14  22:17:00 to 2024/02/15  14:26:59  (3 min. ago)
+  os75nb 2024/02/14  22:17:00 to 2024/02/15  14:27:00  (3 min. ago)
+  os38nb 2024/02/14  22:17:02 to 2024/02/15  14:27:00  (3 min. ago)
 
-approximate lat, lon, depth:   60 7.16587 N  149 25.53529 W   depth=-4
+approximate lat, lon, depth:   59 24.84264 N  144 57.89591 W   depth=1512
 
-link: http://www.google.com/maps/place/60%207.16587N+149%2025.53529W
+link: http://www.google.com/maps/place/59%2024.84264N+144%2057.89591W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,22 +27,22 @@ NOTE: This is the _spare_ computer
 ===========================
 gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 44.1777262 to 44.5996012
-(2024/02/14 04:15:56 to 2024/02/14 14:23:26)
+ddrange: 44.9250063 to 45.6031081
+(2024/02/14 22:12:01 to 2024/02/15 14:28:29)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   120 out of 120   (100%) were good
+   195 out of 195   (100%) were good
 statistics of good data:
-   mean N = 300, stddev N =  7.8
-   min  = -0.83, max = -0.75
-   mean = -0.79, stddev = 0.02
+   mean N = 301, stddev N =  0.2
+   min  = -0.71, max = -0.59
+   mean = -0.64, stddev = 0.03
 
 
 === Sonar Pingtype Summary =====
 
 wh300: Triggering command not found
-wh300 BB:       off
+wh300 BB:  on
 wh300 BT:      off
 
 os150: Triggering not used (CX0,0)
@@ -49,12 +52,12 @@ os150 BT:      off
 
 os75: Triggering not used (CX0,0)
 os75 BB:       off
-os75 NB:       off
+os75 NB:  on
 os75 BT:      off
 
 os38: Triggering not used (CX0,0)
 os38 BB:       off
-os38 NB:       off
+os38 NB:  on
 os38 BT:      off
 
 ===========================
@@ -64,24 +67,40 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   7   377    63  -2371ns[-2371ns] +/-  132us
-^* 10.1.0.6                      1   8   377    90    +16us[  -14us] +/-  129us
+^+ 10.1.0.5                      1   6   377    16  -1703ns[-1703ns] +/-  125us
+^* 10.1.0.6                      1   7   377    42    -70us[ -103us] +/-  188us
 
-Reference ID: 0A010006, Stratum=2, last offset=-0.000029, RMS offset=0.000040
+Reference ID: 0A010006, Stratum=2, last offset=-0.000033, RMS offset=0.000023
 ------------------------------------------
 
 
 
 ------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/02/15 14:26:00) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os75nb recent ping statistics
+
+(2024/02/15 14:22:02) ens = 300 sec, 133 pings, (2.26 sec/ping)
+
+os38nb recent ping statistics
+
+(2024/02/15 14:22:00) ens = 300 sec, 100 pings, (3.00 sec/ping)
+
+os150bb recent ping statistics
+
+(2024/02/14 22:00:18) ens = 300 sec, 272 pings, (1.10 sec/ping)
+
 os150nb recent ping statistics
 
-(2024/02/14 14:22:53) ens = 300 sec, 244 pings, (1.23 sec/ping)
+(2024/02/15 14:22:00) ens = 300 sec, 244 pings, (1.23 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 10:16,  2 users,  load average: 0.16, 0.27, 0.27
+ 14:30:03 up 20:47,  1 user,  load average: 0.65, 0.92, 0.85
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -99,15 +118,25 @@ ______________________
 (1) I/O warnings:
      2 I/O errors in last 2 /var/log/syslog
 (2) EDAC memory warnings:
-    61 EDAC (memory) errors in last 2 /var/log/syslog
+    76 EDAC (memory) errors in last 2 /var/log/syslog
 (3) wordcount of log/*.warn:
 
-      32 /home/adcp/log/3dayplots_os150nb.warn
-      6 /home/adcp/log/DAS_while_cruise.warn
-      1 /home/adcp/log/DAS_while_logging.warn
-      120 /home/adcp/log/lastensq_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/quick_os150nb.warn
+      4164 /home/adcp/log/3dayplots_os38nb.warn
+      272 /home/adcp/log/3dayplots_os38nb.warn.2024-02-14
+      6204 /home/adcp/log/3dayplots_os75nb.warn
+      408 /home/adcp/log/3dayplots_os75nb.warn.2024-02-14
+      7 /home/adcp/log/DAS_while_logging.warn
+      3 /home/adcp/log/DAS_while_logging.warn.2024-02-14
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      2 /home/adcp/log/quick_os150nb.warn
+      39 /home/adcp/log/quick_os38nb.warn
+      20 /home/adcp/log/quick_os38nb.warn.2024-02-14
+      174 /home/adcp/log/quick_os75nb.warn
+      20 /home/adcp/log/quick_os75nb.warn.2024-02-14
 
 Figures and files:
 
@@ -118,13 +147,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       3      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
        2      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/os38nb_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
