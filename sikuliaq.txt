@@ -1,8 +1,8 @@
-2024/02/22 14:30:01
-currents01skq 6.5.0-17-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/02/23 14:30:01
+currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _spare_ computer
+NOTE: This is the _primary_ computer
 
 
 
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.1.0.5                      1   9   377   188    +33us[  +35us] +/-  153us
-^+ 10.1.0.6                      1   9   377   234    +20us[  +22us] +/-  168us
+^+ 10.1.0.5                      1   9   377   262  +6284ns[+4569ns] +/-  183us
+^* 10.1.0.6                      1   9   377    57    -59us[  -62us] +/-  212us
 
-Reference ID: 0A010005, Stratum=2, last offset=0.000002, RMS offset=0.000011
+Reference ID: 0A010006, Stratum=2, last offset=-0.000002, RMS offset=0.000017
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: 0A010005, Stratum=2, last offset=0.000002, RMS offset=0.000011
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days, 14:08,  1 user,  load average: 0.12, 0.04, 0.01
+ 14:30:02 up 2 days, 15:02,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -41,10 +41,8 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 Summary of warnings:
 ______________________
 
-(1) I/O warnings:
-     4 I/O errors in last 2 /var/log/syslog
-(2) EDAC memory warnings:
-   121 EDAC (memory) errors in last 2 /var/log/syslog
+(1) EDAC memory warnings:
+    52 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -55,6 +53,9 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    3696      /home/adcp/www/figures/ktprof_amp_lastens.png
+    3696      /home/adcp/www/figures/os75bb_lastens.png
+    3696      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
