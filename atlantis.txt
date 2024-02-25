@@ -1,7 +1,15 @@
-2024/02/23 14:30:01
-atcurrents02 5.11.0-27-generic (focal "Ubuntu 20.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/02/24 14:30:01
+atcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
+Current cruise: AT50-21  *** not logging ***
+
+   wh300 2024/02/18  20:53:06 to 2024/02/23  11:54:09  (1595 min. ago) 26.6 hrs
+  os75nb 2024/02/18  20:56:07 to 2024/02/23  11:52:11  (1597 min. ago) 26.6 hrs
+
+approximate lat, lon, depth:    9 54.34623 N  104 17.89512 W   depth=2591
+
+link: http://www.google.com/maps/place/9%2054.34623N+104%2017.89512W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
@@ -15,9 +23,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.100.161.250                1   6   377    62  +8087ns[+8266ns] +/-   30us
+^* timeserver.atlantis.whoi>     1   6   377    53    +19us[  +18us] +/-   40us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000000, RMS offset=0.000001
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
@@ -26,7 +34,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=0.000000, RMS offset=0.000001
 
 
 ---------- uptime ------------
- 14:30:48 up 54 days, 13:34,  1 user,  load average: 0.18, 0.18, 0.09
+ 14:30:01 up 49 days, 17:14,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -49,10 +57,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    1595      /home/adcp/www/figures/wh300_lastens.png
+    1595      /home/adcp/www/figures/os75nb_lastens.png
+    1595      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    1595      /home/adcp/www/figures/wh300_ddaycont.png
+    1595      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
