@@ -1,14 +1,7 @@
-2024/02/24 14:30:01
+2024/02/25 14:30:01
 currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: test  *** not logging ***
-
- os75nb -- no data yet
-
-approximate lat, lon, depth:   47 37.60851 N  122 22.92691 W   depth=1
-
-link: http://www.google.com/maps/place/47%2037.60851N+122%2022.92691W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -21,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1  10   377   301    +16us[  +20us] +/-  156us
-^* 10.1.0.6                      1   9   377    29  +6959ns[  +11us] +/-  167us
+^+ 10.1.0.5                      1  10   377   634  -4553ns[  -11us] +/-  147us
+^* 10.1.0.6                      1   9   377    46    +28us[  +33us] +/-  173us
 
-Reference ID: 0A010006, Stratum=2, last offset=0.000004, RMS offset=0.000006
+Reference ID: 0A010006, Stratum=2, last offset=0.000005, RMS offset=0.000012
 ------------------------------------------
 
 
@@ -33,7 +26,7 @@ Reference ID: 0A010006, Stratum=2, last offset=0.000004, RMS offset=0.000006
 
 
 ---------- uptime ------------
- 14:30:01 up 3 days, 15:02,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:01 up 4 days, 15:02,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -52,8 +45,11 @@ ______________________
     52 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      2 /home/adcp/log/DAS_while_logging.warn
-      2 /home/adcp/log/DAS_while_logging.warn.2024-02-23
+      36 /home/adcp/log/3dayplots_os75bb.warn
+      19 /home/adcp/log/DAS_while_logging.warn
+      18 /home/adcp/log/lastfewvec_os75bb.warn
+      2 /home/adcp/log/lastfewvec_os75nb.warn
+      22 /home/adcp/log/quick_os75bb.warn
 
 Figures and files:
 
@@ -64,10 +60,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    1136      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1136      /home/adcp/www/figures/os75bb_lastens.png
+    1136      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    1136      /home/adcp/www/figures/os75nb_ddaycont.png
+    1136      /home/adcp/www/figures/os75bb_ddaycont.png
 
 
 
