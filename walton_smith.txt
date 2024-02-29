@@ -1,14 +1,14 @@
-2024/02/27 14:30:02
+2024/02/28 14:30:02
 currents01ws 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: WS24058_Durham     ** is logging **
 
-   wh600 2024/02/27  12:54:48 to 2024/02/27  14:28:48  (1 min. ago)
-  os75bb 2024/02/27  12:57:51 to 2024/02/27  14:27:50  (2 min. ago)
-  os75nb 2024/02/27  12:57:51 to 2024/02/27  14:27:50  (2 min. ago)
+   wh600 2024/02/27  12:54:48 to 2024/02/28  14:28:48  (1 min. ago)
+  os75bb 2024/02/27  12:57:51 to 2024/02/28  14:27:50  (2 min. ago)
+  os75nb 2024/02/27  12:57:51 to 2024/02/28  14:27:50  (2 min. ago)
 
-approximate lat, lon, depth:   25 52.26529 N   80 0.61812 W   depth=267
+approximate lat, lon, depth:   29 19.19522 N   78 15.75587 W   depth=875
 
-link: http://www.google.com/maps/place/25%2052.26529N+80%200.61812W
+link: http://www.google.com/maps/place/29%2019.19522N+78%2015.75587W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
 
-ddrange: 57.5366782 to 57.5995139
-(2024/02/27 12:52:49 to 2024/02/27 14:23:18)
+ddrange: 57.5995718 to 58.5995602
+(2024/02/27 14:23:23 to 2024/02/28 14:23:22)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   18 out of 18   (100%) were good
+   229 out of 231   (99%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -1.30, max = -0.95
-   mean = -1.09, stddev = 0.10
+   mean N = 240, stddev N =  120.7
+   min  = -1.50, max = -0.29
+   mean = -0.69, stddev = 0.30
 
 
 === Sonar Pingtype Summary =====
@@ -57,9 +57,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   8   377   120   +436us[ +465us] +/-   33ms
+^* 10.106.30.100                 1   9   377   272   +292us[ +318us] +/- 1326ms
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=0.000029, RMS offset=0.000053
+Reference ID: 0A6A1E64, Stratum=2, last offset=0.000026, RMS offset=0.000064
 ------------------------------------------
 
 
@@ -67,21 +67,21 @@ Reference ID: 0A6A1E64, Stratum=2, last offset=0.000029, RMS offset=0.000053
 ------------- pings per ensemble ----------- 
 wh600 recent ping statistics
 
-(2024/02/27 14:26:48) ens = 120 sec, 172 pings, (0.70 sec/ping)
+(2024/02/28 14:26:48) ens = 120 sec, 171 pings, (0.70 sec/ping)
 
 os75nb recent ping statistics
 
-(2024/02/27 14:22:50) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/02/28 14:22:50) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/02/27 14:22:50) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/02/28 14:22:50) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 12 days, 22:45,  1 user,  load average: 0.07, 0.16, 0.17
+ 14:30:03 up 13 days, 22:45,  1 user,  load average: 0.14, 0.25, 0.25
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -99,9 +99,9 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh600.warn
+      43 /home/adcp/log/lastensq_os75bb.warn
+      42 /home/adcp/log/lastensq_os75nb.warn
+      107 /home/adcp/log/lastensq_wh600.warn
 
 Figures and files:
 
@@ -113,7 +113,7 @@ Gyro logging and backup:
 Checking updating of 5-minute plots:
 age (minutes)          filename
        2      /home/adcp/www/figures/os75bb_lastens.png
-       2      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
        1      /home/adcp/www/figures/wh600_lastens.png
 
