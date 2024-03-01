@@ -1,5 +1,5 @@
-2024/02/28 14:30:01
-currents01sv 5.15.0-46-generic (focal "Ubuntu 20.04.5 LTS")
+2024/03/01 02:51:55
+currents01sv 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -11,14 +11,32 @@ NOTE: This is the _primary_ computer
 
 
 using chrony
-WARNING: Chrony is installed but is not running
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? prod-ntp-5.ntp1.ps5.cano>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? prod-ntp-4.ntp4.ps5.cano>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? alphyn.canonical.com          0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? prod-ntp-3.ntp1.ps5.cano>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? 108.61.23.93.vultruserco>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? arm1.maxhost.io               0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? clock.sjc.he.net              0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? tick.srs1.ntfo.org            0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? sensei.ruselabs.com           0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? beta.kenyonralph.com          0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? 99-119-214-210.lightspee>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? nu.binary.net                 0  10     0     -     +0ns[   +0ns] +/-    0ns
+WARNING: Chrony cannot get time from the specified server
+Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
+------------------------------------------
+
 
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 20 days, 11:56,  1 user,  load average: 0.00, 0.00, 0.00
+ 02:52:01 up  1:22,  1 user,  load average: 0.08, 0.15, 0.22
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -30,7 +48,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) I/O warnings:
+     3 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     4 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -41,13 +65,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  221426      /home/adcp/www/figures/ktprof_amp_lastens.png
-  221426      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  221426      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 
