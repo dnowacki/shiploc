@@ -1,12 +1,12 @@
-2024/03/08 14:15:01
+2024/03/09 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: RR2402     ** is logging **
 
-  os150nb 2024/02/17  14:26:52 to 2024/03/08  14:15:01  (0 min. ago)
+  os150nb 2024/02/17  14:26:52 to 2024/03/09  14:12:02  (3 min. ago)
 
-approximate lat, lon, depth:   34 55.42459 N  121 25.00220 W   depth=462
+approximate lat, lon, depth:   34 53.38032 N  121 31.17296 W   depth=835
 
-link: http://www.google.com/maps/place/34%2055.42459N+121%2025.00220W
+link: http://www.google.com/maps/place/34%2053.38032N+121%2031.17296W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath380 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 66.5920819 to 67.5920704
-(2024/03/07 14:12:36 to 2024/03/08 14:12:35)
+ddrange: 67.5918852 to 68.5918699
+(2024/03/08 14:12:19 to 2024/03/09 14:12:18)
 all seapath380 messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.27, max = -0.03
-   mean = -0.13, stddev = 0.06
+   mean N = 300, stddev N =  10.4
+   min  = -0.45, max = -0.03
+   mean = -0.22, stddev = 0.10
 
 
 === Sonar Pingtype Summary =====
@@ -48,20 +48,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u   99 1024  377    0.252   -0.265   0.128
+*rr-bb-gw-das.uc 100.124.36.33    2 u  702 1024  377    0.301   +0.015   0.069
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2024/03/08 14:09:01) ens = 180 sec, 135 pings, (1.33 sec/ping)
+(2024/03/09 14:09:02) ens = 180 sec, 135 pings, (1.33 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 37 days, 10:00,  1 user,  load average: 0.26, 0.38, 0.34
+ 14:15:03 up 38 days, 10:00,  1 user,  load average: 0.22, 0.36, 0.42
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -78,19 +78,9 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      57 /home/adcp/log/hcorrstats_seapath380.warn
-      194 /home/adcp/log/lastensq_os150nb.warn
-      8 /home/adcp/log/update_hbins_os150nb.warn
-(2) rbin warnings:
- 
-seapath380 gps  87273    1.00    0.00      57.4       2    18    18     0     0
-seapath380 gps  87273    1.00    0.00      57.4       2    18    18     0     0
-seapath380 sea  87272    1.00    0.00      57.4       2    17    17     0     0
-seapath380 sea  87272    1.00    0.00      57.4       2    17    17     0     0
-abxtwo gps 174579    0.50    0.00      48.3       3    50    49     0     0
-abxtwo gps 174579    0.50    0.00      48.3       3    50    49     0     0
-gyro hdg  87119    1.00    0.00      22.7       1    21    20     0     0
-gyro hdg  87119    1.00    0.00      22.7       1    21    20     0     0
+      4 /home/adcp/log/3dayplots_os150nb.warn
+      9 /home/adcp/log/DAS_while_cruise.warn
+      96 /home/adcp/log/hcorrstats_seapath380.warn
 
 Figures and files:
 
@@ -101,13 +91,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
