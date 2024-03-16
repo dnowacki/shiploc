@@ -1,14 +1,14 @@
-2024/03/14 14:30:01
+2024/03/15 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: ar81-02  *** not logging ***
 
-   wh300 2024/03/13  13:07:19 to 2024/03/13  14:49:20  (1420 min. ago) 23.7 hrs
-  os150nb 2024/03/13  13:10:19 to 2024/03/13  14:50:19  (1419 min. ago) 23.7 hrs
-  os38nb 2024/03/13  13:10:19 to 2024/03/13  14:50:19  (1419 min. ago) 23.7 hrs
+   wh300 2024/03/13  13:07:19 to 2024/03/13  14:49:20  (2860 min. ago)  2.0 days
+  os150nb 2024/03/13  13:10:19 to 2024/03/13  14:50:19  (2859 min. ago)  2.0 days
+  os38nb 2024/03/13  13:10:19 to 2024/03/13  14:50:19  (2859 min. ago)  2.0 days
 
-approximate lat, lon, depth:   32 40.59876 N   79 42.84859 W   depth=12
+approximate lat, lon, depth:   31 50.83242 N   78 30.07400 W   depth=601
 
-link: http://www.google.com/maps/place/32%2040.59876N+79%2042.84859W
+link: http://www.google.com/maps/place/31%2050.83242N+78%2030.07400W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
@@ -23,9 +23,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   891   +351us[ +598us] +/-   12ms
+^* 192.147.41.12                 1  10   377   414   -159us[ -182us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.000247, RMS offset=0.000503
+Reference ID: C093290C, Stratum=2, last offset=-0.000023, RMS offset=0.000163
 ------------------------------------------
 
 
@@ -34,7 +34,7 @@ Reference ID: C093290C, Stratum=2, last offset=0.000247, RMS offset=0.000503
 
 
 ---------- uptime ------------
- 14:30:11 up 8 days, 19:32,  1 user,  load average: 0.03, 0.04, 0.00
+ 14:30:11 up 9 days, 19:32,  1 user,  load average: 0.09, 0.05, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -52,6 +52,10 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      2 /home/adcp/log/DAS_while_logging.warn
+      4 /home/adcp/log/DAS_while_logging.warn.2024-03-14
 
 Figures and files:
 
@@ -62,17 +66,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1419      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1419      /home/adcp/www/figures/wh300_lastens.png
-    1419      /home/adcp/www/figures/os38nb_lastens.png
-    1419      /home/adcp/www/figures/os150nb_lastens.png
+     789      /home/adcp/www/figures/ktprof_amp_lastens.png
+     789      /home/adcp/www/figures/wh300_lastens.png
+     789      /home/adcp/www/figures/os38nb_lastens.png
+     789      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1419      /home/adcp/www/figures/os38nb_ddaycont.png
-    1419      /home/adcp/www/figures/wh300_ddaycont.png
-    1419      /home/adcp/www/figures/os150nb_ddaycont.png
+     789      /home/adcp/www/figures/os38nb_ddaycont.png
+     789      /home/adcp/www/figures/wh300_ddaycont.png
+     789      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
