@@ -1,32 +1,98 @@
-2024/03/19 14:30:02
-currents01skq 6.5.0-17-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
-NOTE: This is the _spare_ computer
+2024/03/20 14:30:01
+currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: SKQ202404S     ** is logging **
+
+  os75nb 2024/03/17  03:34:39 to 2024/03/20  14:25:03  (5 min. ago)
+
+approximate lat, lon, depth:   47 21.29476 N  125 4.77116 W   depth=1465
+
+link: http://www.google.com/maps/place/47%2021.29476N+125%204.77116W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 78.5989538 to 79.5989422
+(2024/03/19 14:22:30 to 2024/03/20 14:22:29)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.50, max = 0.77
+   mean = -0.02, stddev = 0.29
+
+===========================
+------ gyro2 statistics ------
+===========================
+gyro1-gyro2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 78.5989654 to 79.5989538
+(2024/03/19 14:22:31 to 2024/03/20 14:22:30)
+all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 0.06, max = 0.16
+   mean = 0.11, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+os75: Triggering enabled  (CX1,3)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+os38: Triggering enabled  (CX1,3)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   9   377    76    -34us[  -34us] +/-  150us
-^* 10.1.0.6                      1   9   377   346    -32us[  -53us] +/-  162us
+^* 10.1.0.5                      1  10   377   516    +15us[  +34us] +/-  182us
+^+ 10.1.0.6                      1   9   377   484    +31us[  +31us] +/-  167us
 
-Reference ID: 0A010006, Stratum=2, last offset=-0.000021, RMS offset=0.000017
+Reference ID: 0A010005, Stratum=2, last offset=0.000019, RMS offset=0.000026
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2024/03/20 14:20:04) ens = 300 sec, 41 pings, (7.32 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 29 days, 14:08,  1 user,  load average: 0.16, 0.03, 0.01
+ 14:30:01 up 23 days, 14:29,  1 user,  load average: 0.23, 0.31, 0.35
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -49,10 +115,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    3728      /home/adcp/www/figures/os75bb_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    3728      /home/adcp/www/figures/os75bb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
