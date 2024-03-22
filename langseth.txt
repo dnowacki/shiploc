@@ -1,0 +1,123 @@
+2024/03/21 14:30:01
+currents01mgl 5.4.0-128-generic (focal "Ubuntu 20.04.5 LTS")
+Current cruise: MGL2402     ** is logging **
+
+  os75bb 2024/02/03  11:32:20 to 2024/03/21  14:24:36  (5 min. ago)
+  os75nb 2024/02/03  11:32:20 to 2024/03/21  14:29:36  (0 min. ago)
+
+approximate lat, lon, depth:   37 52.60972 S   15 25.94300 E   depth=4850
+
+link: http://www.google.com/maps/place/37%2052.60972S+15%2025.94300E
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _primary_ computer
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 79.5942227 to 80.5942139
+(2024/03/20 14:15:41 to 2024/03/21 14:15:40)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.6
+   min  = 1.49, max = 2.18
+   mean = 1.86, stddev = 0.12
+
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
+
+ddrange: 79.5942400 to 80.5942313
+(2024/03/20 14:15:42 to 2024/03/21 14:15:42)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.5
+   min  = 1.68, max = 2.42
+   mean = 2.08, stddev = 0.14
+
+
+=== Sonar Pingtype Summary =====
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ 192.168.3.14    .POOL.          16 p    -   64    0    0.000    0.000   0.000
+*timeserve2.lang .GNSS.           1 u  971 1024  377    0.229    0.056   0.022
+------------------------------------------
+
+
+------------- pings per ensemble ----------- 
+os75bb recent ping statistics
+
+(2024/03/21 14:19:36) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
+os75nb recent ping statistics
+
+(2024/03/21 14:24:36) ens = 300 sec, 73 pings, (4.11 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:02 up 31 days,  1:17,  1 user,  load average: 0.42, 0.36, 0.43
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
+
+posmv quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc.png
+
+
+
+
+
+
+
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       5      /home/adcp/www/figures/os75bb_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       5      /home/adcp/www/figures/os75bb_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
+
+
+
+local_status_mailto:
+
