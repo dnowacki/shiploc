@@ -1,8 +1,8 @@
-2024/03/31 14:30:02
-currents06sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/04/01 14:30:01
+currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _spare_ computer
+NOTE: This is the _primary_ computer
 
 
 
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? sr-endrun-sonoma.ucsd.edu     1  10     0   53d   -175ms[-2038us] +/-  938ms
-^* sr-bb-gw-das.ucsd.edu         2   9   377   290  -2335ns[-7774ns] +/-   25ms
+^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^* sr-bb-gw-das.ucsd.edu         2  10   377   800    -29us[  -40us] +/-   22ms
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000005, RMS offset=0.000036
+Reference ID: 647C6401, Stratum=3, last offset=-0.000011, RMS offset=0.000057
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: 647C6401, Stratum=3, last offset=-0.000005, RMS offset=0.000036
 
 
 ---------- uptime ------------
- 14:30:02 up 64 days, 17:15,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 23 days, 17:31,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -49,10 +49,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    2572      /home/adcp/www/figures/os38nb_lastens.png
+    2572      /home/adcp/www/figures/os150nb_lastens.png
+    2572      /home/adcp/www/figures/ktprof_amp_lastens.png
+    2572      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    2572      /home/adcp/www/figures/os150nb_ddaycont.png
+    2572      /home/adcp/www/figures/wh300_ddaycont.png
+    2572      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
