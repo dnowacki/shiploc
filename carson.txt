@@ -1,15 +1,13 @@
-2024/04/02 00:31:00
+2024/04/03 01:28:00
 rigel03 6.5.0-18-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: RC-PostShipyard-TestII     ** is logging **
+Current cruise: rc2024-04-02-testIII     ** is logging **
 
-   wh300 2024/04/01  16:39:38 to 2024/04/02  00:29:39  (1 min. ago)
 
-approximate lat, lon, depth:   47 38.97080 N  122 18.77526 W   depth=-1
+approximate lat, lon, depth:   47 38.97075 N  122 18.77523 W   depth=-1
 
-link: http://www.google.com/maps/place/47%2038.97080N+122%2018.77526W
+link: http://www.google.com/maps/place/47%2038.97075N+122%2018.77523W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _primary_ computer
 
 
@@ -19,27 +17,27 @@ NOTE: This is the _primary_ computer
 ---- heading correction ----
 
 no heading correction device specified===========================
------- seapath_udp statistics ------
+------ gpscompass statistics ------
 ===========================
-gpscompass-seapath_udp statistics (comment=same sign as cal/rotate/*ang)
+seapath_udp-gpscompass statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 91.6928079 to 92.0157824
-(2024/04/01 16:37:39 to 2024/04/02 00:22:44)
-all seapath_udp messages:  (100%)  were good  [using available QC]
+ddrange: 92.9778079 to 93.0507245
+(2024/04/02 23:28:03 to 2024/04/03 01:13:03)
+all gpscompass messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   93 out of 93   (100%) were good
+   21 out of 21   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -3.13, max = 2.40
-   mean = -0.27, stddev = 1.02
+   min  = -1.06, max = 1.79
+   mean = 0.60, stddev = 0.81
 
 
 === Sonar Pingtype Summary =====
 
 wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:  on
+wh300 BB:       off
+wh300 BT:      off
 
 ===========================
 
@@ -51,13 +49,13 @@ WARNING: Chrony is installed but is not running
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2024/04/02 00:27:39) ens = 120 sec, 75 pings, (1.60 sec/ping)
+(2024/04/02 22:59:39) ens = 120 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 00:31:00 up 7 days,  3:00,  1 user,  load average: 0.14, 0.18, 0.17
+ 01:28:00 up 8 days,  3:57,  1 user,  load average: 0.10, 0.08, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/carson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_report/
@@ -76,9 +74,8 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      2 /home/adcp/log/DAS_while_logging.warn
-      30 /home/adcp/log/DAS_while_logging.warn.2024-04-01
-      1 /home/adcp/log/lastfewvec_wh300.warn
+      5 /home/adcp/log/DAS_while_logging.warn
+      96 /home/adcp/log/DAS_while_logging.warn.2024-04-02
 
 Figures and files:
 
@@ -89,13 +86,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
