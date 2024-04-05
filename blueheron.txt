@@ -1,13 +1,53 @@
-2024/03/14 14:30:01
+2024/04/04 23:11:00
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: bh2024-04-04-test-ancil     ** is logging **
+
+ sv500 -- no data yet
+
+approximate lat, lon, depth:   46 42.75599 N   92 2.77652 W   depth=-178
+
+link: http://www.google.com/maps/place/46%2042.75599N+92%202.77652W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ gpshead statistics ------
+===========================
+posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 94.8816056 to 94.9545922
+(2024/04/04 21:09:31 to 2024/04/04 22:54:37)
+all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   21 out of 21   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.21, max = 0.49
+   mean = 0.11, stddev = 0.19
+
+
+=== Sonar Pingtype Summary =====
+
+sv500: Triggering command not found
+sv500 BB:       off
+sv500 NB:  on
+sv500 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+===========================
 
 
 using chrony
@@ -21,11 +61,12 @@ Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:01 up 16:59,  2 users,  load average: 0.00, 0.00, 0.00
+ 23:11:01 up 1 day,  3:25,  1 user,  load average: 0.04, 0.06, 0.06
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -44,7 +85,15 @@ ______________________
 (1) I/O warnings:
      2 I/O errors in last 2 /var/log/syslog
 (2) EDAC memory warnings:
-     7 EDAC (memory) errors in last 2 /var/log/syslog
+     8 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
+
+      276 /home/adcp/log/3dayplots_sv500.warn
+      426 /home/adcp/log/DAS_while_logging.warn
+      49 /home/adcp/log/grab_pings_sv500.warn
+      1650 /home/adcp/log/lastensq_sv500.warn
+      675 /home/adcp/log/lastfewvec_sv500.warn
+      825 /home/adcp/log/quick_sv500.warn
 
 Figures and files:
 
