@@ -1,14 +1,14 @@
-2024/04/04 14:30:02
+2024/04/05 14:30:01
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.2 LTS")
 Current cruise: km2402     ** is logging **
 
-   wh300 2024/04/01  18:01:11 to 2024/04/04  14:27:11  (3 min. ago)
-  os38bb 2024/04/01  18:04:11 to 2024/04/04  14:29:12  (1 min. ago)
-  os38nb 2024/04/01  18:04:11 to 2024/04/04  14:29:12  (1 min. ago)
+   wh300 2024/04/01  18:01:11 to 2024/04/05  14:27:11  (3 min. ago)
+  os38bb 2024/04/01  18:04:11 to 2024/04/05  14:24:14  (5 min. ago)
+  os38nb 2024/04/01  18:04:11 to 2024/04/05  14:29:14  (0 min. ago)
 
-approximate lat, lon, depth:   22 42.57037 N  158 4.67429 W   depth=4738
+approximate lat, lon, depth:   21 15.80319 N  157 55.04371 W   depth=415
 
-link: http://www.google.com/maps/place/22%2042.57037N+158%204.67429W
+link: http://www.google.com/maps/place/21%2015.80319N+157%2055.04371W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,18 +24,18 @@ NOTE: This is the _primary_ computer
 ===========================
 ------ posmv statistics ------
 ===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 93.5937432 to 94.5937354
-(2024/04/03 14:14:59 to 2024/04/04 14:14:59)
-all posmv messages:  (91%)  were good  [using available QC]
+ddrange: 94.5936544 to 95.5936469
+(2024/04/04 14:14:52 to 2024/04/05 14:14:51)
+all posmv messages:  (82%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
+   283 out of 284   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  1.0
-   min  = -1.06, max = 0.67
-   mean = 0.25, stddev = 0.19
+   mean N = 584, stddev N =  79.1
+   min  = -2.08, max = 2.07
+   mean = 0.31, stddev = 0.46
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2  10   377   896   -250ns[ +179ns] +/-  973us
+^* kmroute.km                    2  10   377   398    -27us[  -40us] +/- 1001us
 
-Reference ID: 0A009601, Stratum=3, last offset=0.000000, RMS offset=0.000017
+Reference ID: 0A009601, Stratum=3, last offset=-0.000013, RMS offset=0.000020
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A009601, Stratum=3, last offset=0.000000, RMS offset=0.000017
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2024/04/04 14:24:12) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/04/05 14:24:14) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/04/04 14:25:11) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/04/05 14:25:11) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2024/04/04 14:24:12) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/04/05 14:19:14) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 6 days, 17:49,  1 user,  load average: 0.86, 0.45, 0.47
+ 14:30:02 up 7 days, 17:49,  1 user,  load average: 0.66, 0.43, 0.48
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -98,6 +98,11 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      1 /home/adcp/log/DAS_while_cruise.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/DAS_while_logging.warn.2024-04-04
 
 Figures and files:
 
@@ -108,8 +113,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/os38bb_lastens.png
        2      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/os38bb_lastens.png
        0      /home/adcp/www/figures/os38nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
