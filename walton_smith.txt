@@ -1,55 +1,13 @@
-2024/04/05 14:30:01
+2024/04/06 14:30:01
 currents01ws 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: WS24095_Volkov     ** is logging **
-
-   wh600 2024/04/03  13:27:16 to 2024/04/05  14:29:33  (0 min. ago)
-  os75bb 2024/04/03  13:27:13 to 2024/04/05  14:28:34  (1 min. ago)
-  os75nb 2024/04/03  13:27:13 to 2024/04/05  14:28:34  (1 min. ago)
-
-approximate lat, lon, depth:   26 14.34580 N   80 2.03595 W   depth=167
-
-link: http://www.google.com/maps/place/26%2014.34580N+80%202.03595W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
-
-ddrange: 94.6033912 to 95.6033796
-(2024/04/04 14:28:53 to 2024/04/05 14:28:52)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -2.15, max = -0.59
-   mean = -1.34, stddev = 0.44
-
-
-=== Sonar Pingtype Summary =====
-
-wh600: Triggering command not found
-wh600 BB:  on
-wh600 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -57,31 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   8   377   400    +17us[  +20us] +/- 1453ms
+^* 10.106.30.100                 1   7   377    15    +61us[  +63us] +/-  575us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=0.000003, RMS offset=0.000005
+Reference ID: 0A6A1E64, Stratum=2, last offset=0.000002, RMS offset=0.000039
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh600 recent ping statistics
-
-(2024/04/05 14:27:34) ens = 120 sec, 172 pings, (0.70 sec/ping)
-
-os75nb recent ping statistics
-
-(2024/04/05 14:23:34) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-os75bb recent ping statistics
-
-(2024/04/05 14:23:34) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 15 days,  1:42,  1 user,  load average: 0.48, 0.39, 0.32
+ 14:30:02 up 16 days,  1:42,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -94,14 +39,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/posm
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      36 /home/adcp/log/3dayplots_os75bb.warn
-      4 /home/adcp/log/3dayplots_os75nb.warn
-      1 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
@@ -112,17 +50,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh600_lastens.png
+    1249      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1249      /home/adcp/www/figures/os75bb_lastens.png
+    1249      /home/adcp/www/figures/wh600_lastens.png
+    1249      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
-       1      /home/adcp/www/figures/wh600_ddaycont.png
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
+    1249      /home/adcp/www/figures/os75nb_ddaycont.png
+    1249      /home/adcp/www/figures/os75bb_ddaycont.png
+    1249      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 

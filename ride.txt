@@ -1,14 +1,14 @@
-2024/04/05 20:33:00
+2024/04/06 14:30:01
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: SR2404  *** not logging ***
 
-   wh300 2024/04/02  15:27:05 to 2024/04/05  20:27:50  (5 min. ago)
-  ec150cw 2024/04/02  19:15:22 to 2024/04/05  20:23:28  (9 min. ago)
-  os150nb 2024/04/02  15:30:05 to 2024/04/05  20:23:27  (9 min. ago)
+   wh300 2024/04/02  15:27:05 to 2024/04/06  03:45:31  (644 min. ago) 10.7 hrs
+  ec150fm 2024/04/03  00:07:39 to 2024/04/06  03:44:20  (645 min. ago) 10.8 hrs
+  os150nb 2024/04/02  15:30:05 to 2024/04/06  03:40:43  (649 min. ago) 10.8 hrs
 
-approximate lat, lon, depth:   32 47.48224 N  118 20.08249 W   depth=446
+approximate lat, lon, depth:   33 15.30207 N  118 16.85584 W   depth=648
 
-link: http://www.google.com/maps/place/32%2047.48224N+118%2020.08249W
+link: http://www.google.com/maps/place/33%2015.30207N+118%2016.85584W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
@@ -24,9 +24,9 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   9   377   109    +28us[  +28us] +/-   57ms
+^* sr-bb-gw-das.ucsd.edu         2   9   377    50    +39us[  +18us] +/-   26ms
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000000, RMS offset=0.000017
+Reference ID: 647C6401, Stratum=3, last offset=-0.000021, RMS offset=0.000025
 ------------------------------------------
 
 
@@ -35,7 +35,7 @@ Reference ID: 647C6401, Stratum=3, last offset=-0.000000, RMS offset=0.000017
 
 
 ---------- uptime ------------
- 20:33:00 up 27 days, 23:34,  1 user,  load average: 0.00, 0.13, 0.35
+ 14:30:02 up 28 days, 17:31,  1 user,  load average: 0.02, 0.06, 0.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -52,14 +52,19 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      20 /home/adcp/log/3dayplots_ec150cw.warn
-      16 /home/adcp/log/3dayplots_os150nb.warn
-      4 /home/adcp/log/DAS_while_logging.warn
+      40 /home/adcp/log/3dayplots_ec150fm.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      4 /home/adcp/log/DAS_while_logging.warn.2024-04-05
       154 /home/adcp/log/lastensq_ec150cw.warn
+      105 /home/adcp/log/lastensq_ec150fm.warn
       7 /home/adcp/log/lastensq_os150nb.warn
+      7 /home/adcp/log/lastensq_os150nb.warn.2024-04-05
       2 /home/adcp/log/lastfewvec_ec150cw.warn
-      2 /home/adcp/log/lastfewvec_os150nb.warn
-      2 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/lastfewvec_ec150fm.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn.2024-04-05
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      2 /home/adcp/log/lastfewvec_wh300.warn.2024-04-05
 
 Figures and files:
 
@@ -70,23 +75,23 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/ec150fm_lastens.png
-       4      /home/adcp/www/figures/os38nb_lastens.png
-       4      /home/adcp/www/figures/os150nb_lastens.png
-       4      /home/adcp/www/figures/ktprof_amp_lastens.png
-       4      /home/adcp/www/figures/os150bb_lastens.png
-       4      /home/adcp/www/figures/ec150cw_lastens.png
-       4      /home/adcp/www/figures/wh300_lastens.png
+     644      /home/adcp/www/figures/ec150fm_lastens.png
+     644      /home/adcp/www/figures/os38nb_lastens.png
+     644      /home/adcp/www/figures/os150nb_lastens.png
+     644      /home/adcp/www/figures/ktprof_amp_lastens.png
+     644      /home/adcp/www/figures/os150bb_lastens.png
+     644      /home/adcp/www/figures/ec150cw_lastens.png
+     644      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
-       4      /home/adcp/www/figures/ec150cw_ddaycont.png
-       4      /home/adcp/www/figures/os150bb_ddaycont.png
-       4      /home/adcp/www/figures/wh300_ddaycont.png
-       4      /home/adcp/www/figures/os38nb_ddaycont.png
-       4      /home/adcp/www/figures/ec150fm_ddaycont.png
+     644      /home/adcp/www/figures/os150nb_ddaycont.png
+     644      /home/adcp/www/figures/ec150cw_ddaycont.png
+     644      /home/adcp/www/figures/os150bb_ddaycont.png
+     644      /home/adcp/www/figures/wh300_ddaycont.png
+     644      /home/adcp/www/figures/os38nb_ddaycont.png
+     644      /home/adcp/www/figures/ec150fm_ddaycont.png
 
 
 
