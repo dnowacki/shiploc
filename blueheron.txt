@@ -1,72 +1,31 @@
-2024/04/07 22:24:00
+2024/04/08 14:30:01
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: bh2024-04-07-test-ancil     ** is logging **
-
- sv500 -- no data yet
-
-approximate lat, lon, depth:   46 42.75585 N   92 2.77610 W   depth=-178
-
-link: http://www.google.com/maps/place/46%2042.75585N+92%202.77610W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-no heading correction device specified===========================
------- gpshead statistics ------
-===========================
-posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 97.8916136 to 97.9229217
-(2024/04/07 21:23:55 to 2024/04/07 22:09:00)
-all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   9 out of 9   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -0.33, max = 0.18
-   mean = 0.04, stddev = 0.15
-
-
-=== Sonar Pingtype Summary =====
-
-sv500: Triggering command not found
-sv500 BB:       off
-sv500 NB:  on
-sv500 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:       off
-os150 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 192.168.100.105               0   9     0     -     +0ns[   +0ns] +/-    0ns
+^? 192.168.100.105               0  10     0     -     +0ns[   +0ns] +/-    0ns
 WARNING: Chrony cannot get time from the specified server
 Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
 
-------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 22:24:01 up 4 days,  2:39,  1 user,  load average: 0.08, 0.04, 0.05
+ 14:30:02 up 4 days, 18:45,  1 user,  load average: 0.48, 0.10, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -84,18 +43,13 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      3204 /home/adcp/log/3dayplots_sv500.warn
-      3456 /home/adcp/log/3dayplots_sv500.warn.2024-04-06
-      4853 /home/adcp/log/DAS_while_logging.warn
-      5217 /home/adcp/log/DAS_while_logging.warn.2024-04-06
-      623 /home/adcp/log/grab_pings_sv500.warn
-      672 /home/adcp/log/grab_pings_sv500.warn.2024-04-06
-      24294 /home/adcp/log/lastensq_sv500.warn
-      26421 /home/adcp/log/lastensq_sv500.warn.2024-04-06
-      7614 /home/adcp/log/lastfewvec_sv500.warn
-      8181 /home/adcp/log/lastfewvec_sv500.warn.2024-04-06
-      9306 /home/adcp/log/quick_sv500.warn
-      9999 /home/adcp/log/quick_sv500.warn.2024-04-06
+      3372 /home/adcp/log/3dayplots_sv500.warn
+      9 /home/adcp/log/DAS_while_cruise.warn
+      5098 /home/adcp/log/DAS_while_logging.warn
+      651 /home/adcp/log/grab_pings_sv500.warn
+      25326 /home/adcp/log/lastensq_sv500.warn
+      8001 /home/adcp/log/lastfewvec_sv500.warn
+      9779 /home/adcp/log/quick_sv500.warn
 
 Figures and files:
 
