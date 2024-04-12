@@ -1,0 +1,141 @@
+2024/04/11 14:30:01
+currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: SKQ202405S     ** is logging **
+
+   wh300 2024/03/28  23:00:22 to 2024/04/11  14:28:42  (1 min. ago)
+
+approximate lat, lon, depth:   44 38.34177 N  124 18.32412 W   depth=79
+
+link: http://www.google.com/maps/place/44%2038.34177N+124%2018.32412W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _primary_ computer
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+gyro1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 100.5968126 to 101.5968010
+(2024/04/10 14:19:25 to 2024/04/11 14:19:24)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.46, max = 0.01
+   mean = -0.23, stddev = 0.09
+
+===========================
+------ gyro2 statistics ------
+===========================
+gyro1-gyro2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 100.5968242 to 101.5968126
+(2024/04/10 14:19:26 to 2024/04/11 14:19:25)
+all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.02, max = 0.10
+   mean = 0.05, stddev = 0.02
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering enabled  (CX1,3)
+os75 BB:       off
+os75 NB:       off
+os75 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* 10.1.0.5                      1  10   377   656    +14us[  +19us] +/-  187us
+^+ 10.1.0.6                      1  10   377   119    +27us[  +27us] +/-  158us
+
+Reference ID: 0A010005, Stratum=2, last offset=0.000005, RMS offset=0.000014
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2024/04/10 18:54:42) ens = 300 sec, 102 pings, (2.94 sec/ping)
+
+wh300 recent ping statistics
+
+(2024/04/11 14:26:42) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:01 up 45 days, 14:29,  1 user,  load average: 0.25, 0.44, 0.44
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
+
+
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/DAS_while_logging.warn
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+    1165      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+    1165      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+
+
+
+local_status_mailto:
+
+
