@@ -1,12 +1,12 @@
-2024/04/16 14:15:01
+2024/04/17 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: RR2403     ** is logging **
 
-  os150nb 2024/03/29  20:15:39 to 2024/04/16  14:12:23  (2 min. ago)
+  os150nb 2024/03/29  20:15:39 to 2024/04/17  14:12:22  (2 min. ago)
 
-approximate lat, lon, depth:   19 7.25650 N  112 12.46453 W   depth=3464
+approximate lat, lon, depth:   18 57.23225 N  112 7.80799 W   depth=1440
 
-link: http://www.google.com/maps/place/19%207.25650N+112%2012.46453W
+link: http://www.google.com/maps/place/18%2057.23225N+112%207.80799W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,15 +24,15 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath380 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 105.5923676 to 106.5923560
-(2024/04/15 14:13:01 to 2024/04/16 14:13:00)
+ddrange: 106.5926801 to 107.5926685
+(2024/04/16 14:13:28 to 2024/04/17 14:13:27)
 all seapath380 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.45, max = -0.22
+   mean N = 301, stddev N =  0.2
+   min  = -0.42, max = -0.24
    mean = -0.32, stddev = 0.04
 
 
@@ -48,20 +48,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u  695 1024  377    0.229   -0.180   0.229
+*rr-bb-gw-das.uc 100.124.36.33    2 u  274 1024  377    0.194   +0.080   0.235
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2024/04/16 14:09:22) ens = 180 sec, 149 pings, (1.21 sec/ping)
+(2024/04/17 14:09:23) ens = 180 sec, 150 pings, (1.20 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 76 days, 10:00,  2 users,  load average: 0.41, 0.42, 0.37
+ 14:15:03 up 77 days, 10:00,  2 users,  load average: 0.38, 0.36, 0.32
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -76,14 +76,17 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 Summary of warnings:
 ______________________
 
-(1) rbin warnings:
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/send_buffered_mail.warn
+(2) rbin warnings:
  
-seapath380 gps  87199    1.00    0.00      31.3      38    12    12     0     0
-seapath380 gps  87199    1.00    0.00      31.3      38    12    12     0     0
-seapath380 sea  87196    1.00    0.00      32.3      38    11    11     0     0
-seapath380 sea  87196    1.00    0.00      32.3      38    11    11     0     0
-seapath380 hdg  87199    1.00    0.00      31.3      38    12    12     0     0
-seapath380 hdg  87199    1.00    0.00      31.3      38    12    12     0     0
+seapath380 gps  87265    1.00    0.00       7.7      30     6     5     0     0
+seapath380 gps  87265    1.00    0.00       7.7      30     6     5     0     0
+seapath380 sea  87264    1.00    0.00       8.7      30     6     5     0     0
+seapath380 sea  87264    1.00    0.00       8.7      30     6     5     0     0
+seapath380 hdg  87262    1.00    0.00       7.7      30     3     2     0     0
+seapath380 hdg  87262    1.00    0.00       7.7      30     3     2     0     0
 
 Figures and files:
 
@@ -94,13 +97,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
