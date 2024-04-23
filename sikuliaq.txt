@@ -1,8 +1,8 @@
-2024/04/21 14:30:02
-currents01skq 6.5.0-17-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/04/22 14:30:01
+currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _spare_ computer
+NOTE: This is the _primary_ computer
 
 
 
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.1.0.5                      1   6   377    54  +3020ns[+2875ns] +/-   93us
-^+ 10.1.0.6                      1   6   377     6  -2293ns[-2293ns] +/-   88us
+^* 10.1.0.5                      1   7   377    98  +4079ns[+9059ns] +/-  108us
+^+ 10.1.0.6                      1   6   377    15    +24us[  +24us] +/-  127us
 
-Reference ID: 0A010005, Stratum=2, last offset=-0.000000, RMS offset=0.000004
+Reference ID: 0A010005, Stratum=2, last offset=0.000005, RMS offset=0.000014
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: 0A010005, Stratum=2, last offset=-0.000000, RMS offset=0.000004
 
 
 ---------- uptime ------------
- 14:30:03 up 62 days, 14:08,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:01 up 56 days, 14:29,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -49,10 +49,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    2869      /home/adcp/www/figures/ktprof_amp_lastens.png
+    2869      /home/adcp/www/figures/wh300_lastens.png
+    2869      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    2869      /home/adcp/www/figures/os75nb_ddaycont.png
+    2869      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
