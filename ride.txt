@@ -1,8 +1,8 @@
-2024/04/23 14:30:02
-currents06sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/04/24 14:30:02
+currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _spare_ computer
+NOTE: This is the _primary_ computer
 
 
 
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? sr-endrun-sonoma.ucsd.edu     1  10     0   76d  -1463ms[-2038us] +/-  938ms
-^* sr-bb-gw-das.ucsd.edu         2  10   377   499    -35us[  -46us] +/-   28ms
+^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^* sr-bb-gw-das.ucsd.edu         2   8   377    91    +31us[  +38us] +/-   31ms
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000010, RMS offset=0.000007
+Reference ID: 647C6401, Stratum=3, last offset=0.000007, RMS offset=0.000014
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: 647C6401, Stratum=3, last offset=-0.000010, RMS offset=0.000007
 
 
 ---------- uptime ------------
- 14:30:02 up 87 days, 17:15,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 5 days, 22:42,  1 user,  load average: 0.06, 0.09, 0.04
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -38,7 +38,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -49,10 +53,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    8676      /home/adcp/www/figures/os38nb_lastens.png
+    8676      /home/adcp/www/figures/os150nb_lastens.png
+    8676      /home/adcp/www/figures/ktprof_amp_lastens.png
+    8676      /home/adcp/www/figures/ec150cw_lastens.png
+    8676      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    8676      /home/adcp/www/figures/os150nb_ddaycont.png
+    8676      /home/adcp/www/figures/ec150cw_ddaycont.png
+    8676      /home/adcp/www/figures/wh300_ddaycont.png
+    8676      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
