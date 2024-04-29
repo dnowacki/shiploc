@@ -1,14 +1,14 @@
-2024/04/28 02:08:00
+2024/04/28 20:21:00
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.2 LTS")
 Current cruise: km2405     ** is logging **
 
-   wh300 2024/04/27  17:38:01 to 2024/04/28  02:06:01  (2 min. ago)
-  os38bb 2024/04/27  17:41:07 to 2024/04/28  02:06:05  (2 min. ago)
-  os38nb 2024/04/27  17:41:07 to 2024/04/28  02:06:05  (2 min. ago)
+   wh300 2024/04/27  17:38:01 to 2024/04/28  20:20:01  (1 min. ago)
+  os38bb 2024/04/27  17:41:07 to 2024/04/28  20:16:02  (5 min. ago)
+  os38nb 2024/04/27  17:41:07 to 2024/04/28  20:16:02  (5 min. ago)
 
-approximate lat, lon, depth:   21 34.03122 N  158 19.97921 W   depth=267
+approximate lat, lon, depth:   22 45.00925 N  158 0.00518 W   depth=4705
 
-link: http://www.google.com/maps/place/21%2034.03122N+158%2019.97921W
+link: http://www.google.com/maps/place/22%2045.00925N+158%200.00518W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 117.7333542 to 118.0883565
-(2024/04/27 17:36:02 to 2024/04/28 02:07:14)
-all posmv messages:  (100%)  were good  [using available QC]
+ddrange: 117.8384839 to 118.8384775
+(2024/04/27 20:07:25 to 2024/04/28 20:07:24)
+all posmv messages:  (90%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   102 out of 102   (100%) were good
+   260 out of 267   (97%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.4
-   min  = -0.55, max = 1.18
-   mean = 0.37, stddev = 0.31
+   mean N = 543, stddev N =  173.1
+   min  = -0.22, max = 1.19
+   mean = 0.34, stddev = 0.24
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2   7   377   106    -30us[  -52us] +/- 1083us
+^* kmroute.km                    2   9   377   328   +136us[ +167us] +/-  944us
 
-Reference ID: 0A009601, Stratum=3, last offset=-0.000022, RMS offset=0.000045
+Reference ID: 0A009601, Stratum=3, last offset=0.000031, RMS offset=0.000023
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A009601, Stratum=3, last offset=-0.000022, RMS offset=0.000045
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2024/04/28 02:01:05) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/04/28 20:11:03) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/04/28 02:04:01) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/04/28 20:18:01) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2024/04/28 02:01:05) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/04/28 20:11:03) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 02:08:01 up 30 days,  5:27,  1 user,  load average: 1.19, 0.85, 0.68
+ 20:21:01 up 30 days, 23:40,  1 user,  load average: 0.44, 0.47, 0.50
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -98,14 +98,10 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      2 /home/adcp/log/DAS_while_cruise.warn
+      6 /home/adcp/log/3dayplots_os38bb.warn
+      17 /home/adcp/log/DAS_while_cruise.warn
       26 /home/adcp/log/DAS_while_cruise.warn.2024-04-27
-      5 /home/adcp/log/DAS_while_logging.warn
-      9 /home/adcp/log/lastensq_os38bb.warn
-      1 /home/adcp/log/lastfewvec_os38bb.warn
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      1 /home/adcp/log/quick_wh300.warn
+      1 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
@@ -116,17 +112,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os38bb_lastens.png
-       1      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       4      /home/adcp/www/figures/os38bb_lastens.png
+       4      /home/adcp/www/figures/os38nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_ddaycont.png
-       1      /home/adcp/www/figures/os38bb_ddaycont.png
-       1      /home/adcp/www/figures/os38nb_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
+       4      /home/adcp/www/figures/os38bb_ddaycont.png
+       4      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
