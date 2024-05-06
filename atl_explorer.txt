@@ -1,8 +1,8 @@
-2024/05/04 14:30:01
-currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/05/05 21:13:42
+currents01ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _primary_ computer
+NOTE: This is the _spare_ computer
 
 
 
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   7   377    71    +36us[  +27us] +/-   99us
-
-Reference ID: C0A83309, Stratum=2, last offset=-0.000009, RMS offset=0.000008
+^? 192.168.51.9                  0   6     0     -     +0ns[   +0ns] +/-    0ns
+WARNING: Chrony cannot get time from the specified server
+Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000009, RMS offset=0.000008
 
 
 ---------- uptime ------------
- 14:30:48 up  1:08,  1 user,  load average: 0.23, 0.25, 0.26
+ 21:14:10 up 1 min,  1 user,  load average: 1.14, 0.52, 0.19
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -41,9 +41,9 @@ Summary of warnings:
 ______________________
 
 (1) I/O warnings:
-     3 I/O errors in last 2 /var/log/syslog
+   238 I/O errors in last 2 /var/log/syslog
 (2) EDAC memory warnings:
-     4 EDAC (memory) errors in last 2 /var/log/syslog
+    13 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -54,10 +54,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    1655      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1655      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    1655      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
