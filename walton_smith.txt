@@ -1,5 +1,5 @@
-2024/05/05 14:30:01
-currents01ws 5.4.0-26-generic (focal "Ubuntu 20.04.4 LTS")
+2024/05/06 14:10:01
+currents02ws 5.4.0-109-generic (focal "Ubuntu 20.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -9,24 +9,19 @@ NOTE: This is the _primary_ computer
 
 
 
-
-using chrony
----------- chronyc tracking ------------
-210 Number of sources = 1
-MS Name/IP address         Stratum Poll Reach LastRx Last sample               
-===============================================================================
-^* 10.106.30.100                 1  10   377   544   +376us[ +378us] +/-  849us
-
-Reference ID: 0A6A1E64, Stratum=2, last offset=0.000002, RMS offset=0.000014
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*10.106.30.100   .GPS.            1 u  222 1024  377    0.976   -0.145   0.113
+ 10.106.32.100   162.159.200.123  4 u  41d 1024    0    0.403   -1.386   0.000
 ------------------------------------------
 
 
 
 
 
-
 ---------- uptime ------------
- 14:30:02 up 21 days,  4:37,  1 user,  load average: 0.00, 0.02, 0.00
+ 14:10:02 up 93 days,  7:36,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -50,17 +45,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    4166      /home/adcp/www/figures/ktprof_amp_lastens.png
-    4166      /home/adcp/www/figures/os75bb_lastens.png
-    4166      /home/adcp/www/figures/wh600_lastens.png
-    4166      /home/adcp/www/figures/os75nb_lastens.png
+  1054724      /home/adcp/www/figures/ktprof_amp_lastens.png
+  1054724      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    4166      /home/adcp/www/figures/os75nb_ddaycont.png
-    4166      /home/adcp/www/figures/os75bb_ddaycont.png
-    4166      /home/adcp/www/figures/wh600_ddaycont.png
+  1054726      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 
