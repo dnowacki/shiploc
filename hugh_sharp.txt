@@ -1,31 +1,71 @@
-2024/05/10 14:30:01
+2024/05/11 14:30:01
 currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: HRS2403_02_1m     ** is logging **
+
+   wh300 2024/05/10  22:38:00 to 2024/05/11  14:27:59  (2 min. ago)
+
+approximate lat, lon, depth:   41 36.13515 N   69 39.57870 W   depth=45
+
+link: http://www.google.com/maps/place/41%2036.13515N+69%2039.57870W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _spare_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
+
+ddrange: 130.9416706 to 131.5980082
+(2024/05/10 22:36:00 to 2024/05/11 14:21:08)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   189 out of 189   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.0
+   min  = -2.30, max = -0.50
+   mean = -1.32, stddev = 0.40
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* Spectracom.localdomain        1  10   377   666  -1147us[-1175us] +/- 2385us
+^* Spectracom.localdomain        1   8   377   144  +1768ns[+2477ns] +/- 1245us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000028, RMS offset=0.000022
+Reference ID: C0A814F5, Stratum=2, last offset=0.000001, RMS offset=0.000023
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/05/11 14:25:59) ens = 120 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 17 days, 22:08,  1 user,  load average: 0.01, 0.01, 0.00
+ 14:30:02 up 18 days, 22:08,  1 user,  load average: 0.11, 0.15, 0.17
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -45,7 +85,9 @@ ______________________
     71 I/O errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      1 /home/adcp/log/send_buffered_mail.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      12 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -56,13 +98,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     869      /home/adcp/www/figures/ktprof_amp_lastens.png
-     869      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     869      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
