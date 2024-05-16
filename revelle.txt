@@ -1,26 +1,47 @@
-2024/05/14 14:15:02
+2024/05/15 21:48:00
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: test-times-2024-05-15     ** is logging **
+
+
+approximate lat, lon, depth:   27 55.04756 N   82 25.72146 W   depth=2
+
+link: http://www.google.com/maps/place/27%2055.04756N+82%2025.72146W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
 
----------- ntpq -p ------------
-     remote           refid      st t when poll reach   delay   offset  jitter
-==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u  588 1024  377    0.268   +0.101   0.039
+(heading correction from "seapath380")
+===========================
+------ seapath380 statistics ------
+===========================
+no good seapath380 data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+===========================
+
+---------- ps -ef | grep ntpd | grep -v grep ------------
+ntp is not running
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 104 days, 10:00,  1 user,  load average: 0.20, 0.08, 0.02
+ 21:48:01 up  2:21,  1 user,  load average: 0.18, 0.16, 0.11
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -35,9 +56,8 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
-
-      1 /home/adcp/log/send_buffered_mail.warn
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -48,13 +68,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2370      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2370      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2370      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

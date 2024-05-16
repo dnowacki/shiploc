@@ -1,86 +1,32 @@
-2024/05/14 14:30:01
-currents01ws 6.5.0-28-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: WS24134_Volkov     ** is logging **
-
-   wh600 2024/05/13  04:40:35 to 2024/05/14  14:28:35  (1 min. ago)
-  os75bb 2024/05/13  04:43:36 to 2024/05/14  14:28:36  (1 min. ago)
-  os75nb 2024/05/13  04:43:36 to 2024/05/14  14:28:36  (1 min. ago)
-
-approximate lat, lon, depth:   26 46.35946 N   80 0.87881 W   depth=15
-
-link: http://www.google.com/maps/place/26%2046.35946N+80%200.87881W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
-NOTE: This is the _primary_ computer
+2024/05/15 14:30:02
+currents02ws 5.15.0-105-generic (focal "Ubuntu 20.04.6 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
+NOTE: This is the _spare_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
-
-ddrange: 133.6001770 to 134.6001579
-(2024/05/13 14:24:15 to 2024/05/14 14:24:14)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -1.88, max = -0.87
-   mean = -1.21, stddev = 0.19
-
-
-=== Sonar Pingtype Summary =====
-
-wh600: Triggering command not found
-wh600 BB:  on
-wh600 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
+210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   8   377   320  -1205ns[-6452ns] +/-  564us
+^* 10.106.30.100                 1  10   377   436   +973ns[  -18us] +/-  720us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000005, RMS offset=0.000005
+Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000019, RMS offset=0.000016
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2024/05/14 14:23:38) ens = 300 sec, 76 pings, (3.95 sec/ping)
-
-wh600 recent ping statistics
-
-(2024/05/14 14:26:35) ens = 120 sec, 172 pings, (0.70 sec/ping)
-
-os75bb recent ping statistics
-
-(2024/05/14 14:23:38) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days, 19:56,  1 user,  load average: 0.63, 0.46, 0.39
+ 14:30:03 up 4 days, 19:43,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -93,11 +39,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/posm
 
 
 
-Summary of warnings:
-______________________
 
-(1) EDAC memory warnings:
-    12 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -108,17 +50,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh600_lastens.png
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+    6967      /home/adcp/www/figures/os75bb_lastens.png
+    6967      /home/adcp/www/figures/os75nb_lastens.png
+    6967      /home/adcp/www/figures/wh600_lastens.png
+    6967      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh600_ddaycont.png
-       1      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+    6967      /home/adcp/www/figures/os75bb_ddaycont.png
+    6967      /home/adcp/www/figures/wh600_ddaycont.png
+    6967      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
