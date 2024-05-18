@@ -1,24 +1,68 @@
-2024/05/08 14:30:01
-currents01sv 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/05/18 01:37:00
+happy 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: test-wh600-2024-05-17     ** is logging **
+
+   wh600 2024/05/18  00:36:07 to 2024/05/18  01:36:07  (1 min. ago)
+
+approximate lat, lon, depth:   31 59.40160 N   81 1.36867 W   depth=0
+
+link: http://www.google.com/maps/place/31%2059.40160N+81%201.36867W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "vs330")
+===========================
+------ vs330 statistics ------
+===========================
+gyro-vs330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 138.0237153 to 138.0660880
+(2024/05/18 00:34:09 to 2024/05/18 01:35:10)
+all vs330 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   12 out of 12   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.0
+   min  = 0.09, max = 0.39
+   mean = 0.22, stddev = 0.08
+
+
+=== Sonar Pingtype Summary =====
+
+wh600: Triggering command not found
+wh600 BB:  on
+wh600 BT:  on
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh600 recent ping statistics
+
+(2024/05/18 01:34:07) ens = 120 sec, 75 pings, (1.60 sec/ping)
+
+wh1200 recent ping statistics
+
+(2024/05/18 00:28:23) ens = 120 sec, 100 pings, (1.20 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 20 days, 45 min,  1 user,  load average: 0.01, 0.01, 0.00
+ 01:37:02 up  4:17,  1 user,  load average: 1.10, 0.93, 0.82
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -34,7 +78,25 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     6 EDAC (memory) errors in last 2 /var/log/syslog
+    66 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      6 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh1200.warn
+      1 /home/adcp/log/lastfewvec_wh600.warn
+      1 /home/adcp/log/quick_wh1200.warn
+      1 /home/adcp/log/quick_wh600.warn
+(3) rbin warnings:
+ 
+gyro hdg   5701    0.64   -1.08       0.8       0     1     1     0     1
+vs330 gps   3798    1.00   -0.72       1.0       0     1     1     0     1
+vs330 hdg   3798    1.00   -0.72       1.0       0     1     1     0     1
+vs330 pvec   3798    1.00   -0.72       1.0       0     1     1     0     1
+hemisphere gps   7597    0.50   -1.22       0.5       0     1     1     0     1
+(4) timestamp warnings:
+jumps forward: 0   jumps back: 1
+max backward 0 seconds at dday 138.023688
+
 
 Figures and files:
 
@@ -45,10 +107,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/wh600_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 

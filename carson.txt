@@ -1,14 +1,7 @@
-2024/05/16 14:30:01
+2024/05/17 14:30:02
 rigel03 6.5.0-18-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: RC0118  *** not logging ***
-
-   wh300 2024/05/15  17:13:32 to 2024/05/15  20:03:33  (1106 min. ago) 18.4 hrs
-
-approximate lat, lon, depth:   47 39.61249 N  122 26.84884 W   depth=113
-
-link: http://www.google.com/maps/place/47%2039.61249N+122%2026.84884W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -25,7 +18,7 @@ WARNING: Chrony is installed but is not running
 
 
 ---------- uptime ------------
- 14:30:01 up 51 days, 17:00,  1 user,  load average: 0.05, 0.05, 0.02
+ 14:30:03 up 22:50,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/carson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_report/
@@ -42,12 +35,15 @@ ______________________
 
 (1) I/O warnings:
      3 I/O errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(2) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
 
-      2 /home/adcp/log/3dayplots_wh300.warn
-      11 /home/adcp/log/DAS_while_logging.warn
+      9 /home/adcp/log/DAS_while_cruise.warn
+      15 /home/adcp/log/DAS_while_logging.warn
+      15 /home/adcp/log/hcorrstats_gpscompass.warn
+      15 /home/adcp/log/lastensq_wh300.warn
       1 /home/adcp/log/lastfewvec_wh300.warn
-      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -58,13 +54,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1105      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1105      /home/adcp/www/figures/wh300_lastens.png
+    1127      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1127      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1105      /home/adcp/www/figures/wh300_ddaycont.png
+    1127      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
