@@ -1,12 +1,12 @@
-2024/05/19 14:15:02
+2024/05/20 14:15:02
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SP2407     ** is logging **
 
-  os150nb 2024/05/19  13:35:51 to 2024/05/19  14:14:49  (0 min. ago)
+  os150nb 2024/05/19  13:35:51 to 2024/05/20  14:14:49  (0 min. ago)
 
-approximate lat, lon, depth:   32 40.60746 N  117 18.55645 W   depth=84
+approximate lat, lon, depth:   33 35.13751 N  118 38.54553 W   depth=604
 
-link: http://www.google.com/maps/place/32%2040.60746N+117%2018.55645W
+link: http://www.google.com/maps/place/33%2035.13751N+118%2038.54553W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 ===========================
 gpshead-bx992 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 139.5644676 to 139.5855556
-(2024/05/19 13:32:50 to 2024/05/19 14:03:12)
+ddrange: 139.5857639 to 140.5857523
+(2024/05/19 14:03:30 to 2024/05/20 14:03:29)
 all bx992 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   6 out of 6   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.5
-   min  = 1.26, max = 2.43
-   mean = 1.94, stddev = 0.48
+   mean N = 301, stddev N =  0.2
+   min  = -5.36, max = 2.61
+   mean = 1.55, stddev = 0.60
 
 
 === Sonar Pingtype Summary =====
@@ -53,13 +53,13 @@ ntp is not running
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2024/05/19 14:08:51) ens = 180 sec, 79 pings, (2.28 sec/ping)
+(2024/05/20 14:08:49) ens = 180 sec, 77 pings, (2.34 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:05 up 1 day, 17:00,  1 user,  load average: 0.21, 0.21, 0.19
+ 14:15:04 up 2 days, 17:00,  1 user,  load average: 0.32, 0.18, 0.18
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -76,8 +76,13 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      32 /home/adcp/log/3dayplots_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
+      88 /home/adcp/log/3dayplots_os150nb.warn
+      1 /home/adcp/log/lastensq_os150nb.warn
+      32 /home/adcp/log/quick_os150nb.warn
+(2) rbin warnings:
+ 
+gpshead gph 174634    0.50    0.02       1.0       0     3     1     0     0
+gpshead gph 174634    0.50    0.02       1.0       0     3     1     0     0
 
 Figures and files:
 
@@ -88,8 +93,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
