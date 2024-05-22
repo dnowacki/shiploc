@@ -1,13 +1,14 @@
-2024/05/20 14:30:01
+2024/05/21 14:30:01
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: SR2408  *** not logging ***
 
-   wh300 2024/05/11  23:53:03 to 2024/05/20  12:13:18  (136 min. ago) 2.3 hrs
-  os150nb 2024/05/11  23:56:04 to 2024/05/20  12:10:18  (139 min. ago) 2.3 hrs
+   wh300 2024/05/11  23:53:03 to 2024/05/21  11:05:59  (204 min. ago) 3.4 hrs
+  os150nb 2024/05/11  23:56:04 to 2024/05/21  11:02:59  (207 min. ago) 3.5 hrs
+  os38nb 2024/05/20  20:12:59 to 2024/05/21  11:03:00  (207 min. ago) 3.5 hrs
 
-approximate lat, lon, depth:   25 32.92598 N  109 29.16973 W   depth=1065
+approximate lat, lon, depth:   24 24.45683 N  110 14.16629 W   depth=550
 
-link: http://www.google.com/maps/place/25%2032.92598N+109%2029.16973W
+link: http://www.google.com/maps/place/24%2024.45683N+110%2014.16629W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
@@ -23,9 +24,9 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   9   377   498    +66us[ +105us] +/-   28ms
+^* sr-bb-gw-das.ucsd.edu         2   8   377    58    -24us[+8802ns] +/-   11ms
 
-Reference ID: 647C6401, Stratum=3, last offset=0.000040, RMS offset=0.000062
+Reference ID: 647C6401, Stratum=3, last offset=0.000033, RMS offset=0.000074
 ------------------------------------------
 
 
@@ -34,7 +35,7 @@ Reference ID: 647C6401, Stratum=3, last offset=0.000040, RMS offset=0.000062
 
 
 ---------- uptime ------------
- 14:30:02 up 31 days, 22:42,  1 user,  load average: 0.00, 0.02, 0.00
+ 14:30:02 up 32 days, 22:42,  1 user,  load average: 0.41, 0.15, 0.05
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -46,7 +47,15 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1029 /home/adcp/log/lastensq_os38nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -57,15 +66,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     134      /home/adcp/www/figures/os150nb_lastens.png
-     134      /home/adcp/www/figures/ktprof_amp_lastens.png
-     134      /home/adcp/www/figures/wh300_lastens.png
+     203      /home/adcp/www/figures/os38nb_lastens.png
+     203      /home/adcp/www/figures/os150nb_lastens.png
+     203      /home/adcp/www/figures/ktprof_amp_lastens.png
+     203      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     134      /home/adcp/www/figures/os150nb_ddaycont.png
-     134      /home/adcp/www/figures/wh300_ddaycont.png
+     203      /home/adcp/www/figures/os150nb_ddaycont.png
+     203      /home/adcp/www/figures/wh300_ddaycont.png
+     203      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
