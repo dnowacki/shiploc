@@ -1,14 +1,14 @@
-2024/05/21 14:30:01
+2024/05/22 14:30:01
 currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: EN716     ** is logging **
 
-   wh300 2024/05/20  14:45:13 to 2024/05/21  14:29:14  (0 min. ago)
-  os75bb 2024/05/20  14:52:31 to 2024/05/21  14:27:32  (2 min. ago)
-  os75nb 2024/05/20  14:46:38 to 2024/05/21  14:27:32  (2 min. ago)
+   wh300 2024/05/20  14:45:13 to 2024/05/22  14:29:14  (0 min. ago)
+  os75bb 2024/05/20  14:52:31 to 2024/05/22  14:27:28  (2 min. ago)
+  os75nb 2024/05/20  14:46:38 to 2024/05/22  14:27:28  (2 min. ago)
 
-approximate lat, lon, depth:   39 25.03187 N   70 52.70084 W   depth=2498
+approximate lat, lon, depth:   41 16.60601 N   71 27.86764 W   depth=28
 
-link: http://www.google.com/maps/place/39%2025.03187N+70%2052.70084W
+link: http://www.google.com/maps/place/41%2016.60601N+71%2027.86764W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,32 +26,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 140.6133449 to 141.5962616
-(2024/05/20 14:43:13 to 2024/05/21 14:18:37)
+ddrange: 141.5962384 to 142.5962269
+(2024/05/21 14:18:35 to 2024/05/22 14:18:34)
 all abxtwo_b2 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   283 out of 283   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.87, max = 1.50
-   mean = 0.03, stddev = 0.54
+   mean N = 301, stddev N =  0.2
+   min  = -0.16, max = 1.44
+   mean = 0.95, stddev = 0.38
 
 ===========================
 ------ abxtwo_b2_udp statistics ------
 ===========================
 gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 140.6133449 to 141.5962847
-(2024/05/20 14:43:13 to 2024/05/21 14:18:39)
+ddrange: 141.5962500 to 142.5962384
+(2024/05/21 14:18:36 to 2024/05/22 14:18:35)
 all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   283 out of 283   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.86, max = 1.39
-   mean = 0.03, stddev = 0.54
+   mean N = 301, stddev N =  0.2
+   min  = -0.15, max = 1.44
+   mean = 0.95, stddev = 0.37
 
 
 === Sonar Pingtype Summary =====
@@ -72,9 +72,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   8   377   123    -15us[  -28us] +/- 1283us
+^* 192.168.1.8                   1   7   377    41  +2485ns[+3575ns] +/- 1171us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000013, RMS offset=0.000041
+Reference ID: C0A80108, Stratum=2, last offset=0.000001, RMS offset=0.000036
 ------------------------------------------
 
 
@@ -82,21 +82,21 @@ Reference ID: C0A80108, Stratum=2, last offset=-0.000013, RMS offset=0.000041
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/05/21 14:22:32) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/05/22 14:22:28) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/05/21 14:27:13) ens = 120 sec, 93 pings, (1.29 sec/ping)
+(2024/05/22 14:27:14) ens = 120 sec, 93 pings, (1.29 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/05/21 14:22:32) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/05/22 14:22:28) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 110 days, 19:39,  1 user,  load average: 0.19, 0.33, 0.35
+ 14:30:02 up 111 days, 19:39,  1 user,  load average: 0.22, 0.42, 0.44
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -115,10 +115,15 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      4 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      1 /home/adcp/log/quick_os75nb.warn
+      4 /home/adcp/log/3dayplots_os75bb.warn
+      4 /home/adcp/log/3dayplots_os75nb.warn
+      2 /home/adcp/log/3dayplots_wh300.warn
+      48 /home/adcp/log/lastensq_os75bb.warn
+      89 /home/adcp/log/lastensq_os75bb.warn.2024-05-21
+      49 /home/adcp/log/lastensq_os75nb.warn
+      89 /home/adcp/log/lastensq_os75nb.warn.2024-05-21
+      121 /home/adcp/log/lastensq_wh300.warn
+      223 /home/adcp/log/lastensq_wh300.warn.2024-05-21
 
 Figures and files:
 
