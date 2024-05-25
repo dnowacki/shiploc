@@ -1,24 +1,59 @@
-2024/05/23 14:15:02
+2024/05/24 14:15:02
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: POST-SP2407-ancillary     ** is logging **
+
+
+approximate lat, lon, depth:   32 42.37243 N  117 14.16775 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.37243N+117%2014.16775W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "bx992")
+===========================
+------ bx992 statistics ------
+===========================
+gpshead-bx992 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 143.8229977 to 144.5837384
+(2024/05/23 19:45:07 to 2024/05/24 14:00:35)
+all bx992 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   219 out of 219   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.45, max = 2.12
+   mean = 1.29, stddev = 0.30
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+===========================
 
 ---------- ps -ef | grep ntpd | grep -v grep ------------
 ntp is not running
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:15:07 up 5 days, 17:00,  1 user,  load average: 0.14, 0.08, 0.02
+ 14:15:05 up 6 days, 17:00,  1 user,  load average: 0.37, 0.22, 0.19
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -33,10 +68,12 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
-
-      4 /home/adcp/log/lastensq_os150nb.warn
-      6 /home/adcp/log/lastensq_os150nb.warn.2024-05-22
+(1) rbin warnings:
+ 
+gpshead gph 133215    0.60    0.00       1.0       0     2     1     0     0
+gpshead gph 133215    0.60    0.00       1.0       0     2     1     0     0
+gp170a gps  66607    1.00    0.05       1.7       0    10     1     0     0
+gp170a gps  66607    1.00    0.05       1.7       0    10     1     0     0
 
 Figures and files:
 
@@ -47,13 +84,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     110      /home/adcp/www/figures/ktprof_amp_lastens.png
-     110      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     110      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
