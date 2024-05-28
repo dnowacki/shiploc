@@ -1,8 +1,8 @@
-2024/05/26 14:30:01
-currents01ws 6.5.0-28-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/05/27 14:30:01
+currents02ws 5.15.0-105-generic (focal "Ubuntu 20.04.6 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _primary_ computer
+NOTE: This is the _spare_ computer
 
 
 
@@ -12,11 +12,12 @@ NOTE: This is the _primary_ computer
 
 using chrony
 ---------- chronyc tracking ------------
+210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   6   377    20  +2581ns[+1903ns] +/-  490us
+^* 10.106.30.100                 1  10   377   831   +116us[ +115us] +/-  822us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000001, RMS offset=0.000007
+Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000001, RMS offset=0.000005
 ------------------------------------------
 
 
@@ -25,7 +26,7 @@ Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000001, RMS offset=0.000007
 
 
 ---------- uptime ------------
- 14:30:02 up 15 days, 19:56,  1 user,  load average: 0.05, 0.05, 0.02
+ 14:30:03 up 16 days, 19:43,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -38,17 +39,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/posm
 
 
 
-Summary of warnings:
-______________________
 
-(1) EDAC memory warnings:
-    16 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      9 /home/adcp/log/DAS_while_cruise.warn
-      234 /home/adcp/log/lastensq_os75bb.warn
-      233 /home/adcp/log/lastensq_os75nb.warn
-      580 /home/adcp/log/lastensq_wh600.warn
 
 Figures and files:
 
@@ -59,17 +50,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1169      /home/adcp/www/figures/os75nb_lastens.png
-    1169      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1169      /home/adcp/www/figures/os75bb_lastens.png
-    1169      /home/adcp/www/figures/wh600_lastens.png
+   24247      /home/adcp/www/figures/os75bb_lastens.png
+   24247      /home/adcp/www/figures/os75nb_lastens.png
+   24247      /home/adcp/www/figures/wh600_lastens.png
+   24247      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1169      /home/adcp/www/figures/os75bb_ddaycont.png
-    1169      /home/adcp/www/figures/wh600_ddaycont.png
-    1169      /home/adcp/www/figures/os75nb_ddaycont.png
+   24247      /home/adcp/www/figures/os75bb_ddaycont.png
+   24247      /home/adcp/www/figures/wh600_ddaycont.png
+   24247      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
