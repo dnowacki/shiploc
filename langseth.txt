@@ -1,34 +1,36 @@
-2024/05/31 14:30:01
-currents01mgl 5.4.0-128-generic (focal "Ubuntu 20.04.5 LTS")
-Current cruise: MGL2406  *** not logging ***
-
-  os75bb 2024/04/30  22:00:04 to 2024/05/27  12:33:14  (5876 min. ago)  4.1 days
-  os75nb 2024/04/30  22:00:04 to 2024/05/27  12:33:14  (5876 min. ago)  4.1 days
-
-approximate lat, lon, depth:   40 24.67697 N   73 53.12047 W   depth=24
-
-link: http://www.google.com/maps/place/40%2024.67697N+73%2053.12047W
-not using zmq publishers, position is from serial GPS
-
+2024/06/01 18:08:58
+currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
+
+--->>>  /net/192.168.3.19/data/adcp/ NOT FOUND (check mounts) <<<---
 
 
 
 
 
----------- ntpq -p ------------
-     remote           refid      st t when poll reach   delay   offset  jitter
-==============================================================================
-*_gateway        78.95.141.162    4 u  899 1024  377    0.299    1.234   2.974
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* timeserve2.langseth.ldeo>     1   6   377    35    +26us[  +25us] +/-   77us
+^- _gateway                      4   6   377    32  +2935us[+2935us] +/-   45ms
+
+Reference ID: C0A8030E, Stratum=2, last offset=-0.000001, RMS offset=0.000536
 ------------------------------------------
 
 
 
 
 
+
 ---------- uptime ------------
- 14:30:02 up 5 days, 20:38,  1 user,  load average: 0.01, 0.01, 0.00
+ 18:08:59 up  2:07,  1 user,  load average: 0.02, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -41,6 +43,16 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
+(2) expected backup disk not found:
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
+
+--->>>  /net/192.168.3.19/data/adcp/ NOT FOUND (check mounts) <<<---
 
 
 Figures and files:
@@ -52,15 +64,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    5875      /home/adcp/www/figures/os75nb_lastens.png
-    5875      /home/adcp/www/figures/os75bb_lastens.png
-    5875      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    5875      /home/adcp/www/figures/os75nb_ddaycont.png
-    5875      /home/adcp/www/figures/os75bb_ddaycont.png
 
 
 
