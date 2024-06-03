@@ -1,36 +1,82 @@
-2024/06/01 18:08:58
-currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/06/02 19:51:02
+currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: mgl-2024-06-02-test01     ** is logging **
+
+  os75bb 2024/06/02  19:03:56 to 2024/06/02  19:48:57  (2 min. ago)
+  os75nb 2024/06/02  19:03:56 to 2024/06/02  19:48:57  (2 min. ago)
+
+approximate lat, lon, depth:   40 42.07859 N   73 58.33318 W   depth=-9
+
+link: http://www.google.com/maps/place/40%2042.07859N+73%2058.33318W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
---->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
-
---->>>  /net/192.168.3.19/data/adcp/ NOT FOUND (check mounts) <<<---
 
 
 
 
+---- heading correction ----
 
+(heading correction from "posmv")
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 153.7909070 to 153.8224058
+(2024/06/02 18:58:54 to 2024/06/02 19:44:16)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   9 out of 9   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  1.0
+   min  = 1.47, max = 1.69
+   mean = 1.59, stddev = 0.07
+
+===========================
+------ posmv statistics ------
+===========================
+no good posmv data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    35    +26us[  +25us] +/-   77us
-^- _gateway                      4   6   377    32  +2935us[+2935us] +/-   45ms
+^* timeserve2.langseth.ldeo>     1   6   377    31    +16us[  +16us] +/-   52us
+^- _gateway                      4   6   377    27  +2045us[+2045us] +/-   46ms
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000001, RMS offset=0.000536
+Reference ID: C0A8030E, Stratum=2, last offset=0.000000, RMS offset=0.000007
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2024/06/02 19:43:57) ens = 300 sec, 74 pings, (4.05 sec/ping)
+
+os75bb recent ping statistics
+
+(2024/06/02 19:43:57) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 18:08:59 up  2:07,  1 user,  load average: 0.02, 0.03, 0.00
+ 19:51:03 up  3:53,  2 users,  load average: 0.31, 0.32, 0.23
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -46,14 +92,15 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) expected backup disk not found:
+(1) I/O warnings:
+     2 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
 
---->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
-
---->>>  /net/192.168.3.19/data/adcp/ NOT FOUND (check mounts) <<<---
-
+      1 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
 
 Figures and files:
 
@@ -64,10 +111,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os75bb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/os75bb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
