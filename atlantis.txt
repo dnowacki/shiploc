@@ -1,13 +1,70 @@
-2024/06/02 14:30:02
-atcurrents02 5.11.0-27-generic (focal "Ubuntu 20.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/06/03 14:30:01
+atcurrents01 5.8.0-43-generic (focal "Ubuntu 20.04.3 LTS")
+Current cruise: AT50-24     ** is logging **
+
+   wh300 2024/05/16  05:27:35 to 2024/06/03  14:28:01  (2 min. ago)
+  os75nb 2024/05/16  05:30:37 to 2024/06/03  14:27:04  (3 min. ago)
+
+approximate lat, lon, depth:   53 44.86649 N  162 36.21812 W   depth=1904
+
+link: http://www.google.com/maps/place/53%2044.86649N+162%2036.21812W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ hydrins2 statistics ------
+===========================
+hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 153.5990348 to 154.5990233
+(2024/06/02 14:22:37 to 2024/06/03 14:22:36)
+all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   171 out of 171   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.03, max = -0.00
+   mean = -0.02, stddev = 0.01
+
+===========================
+------ seapath statistics ------
+===========================
+hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 153.5990464 to 154.5990348
+(2024/06/02 14:22:38 to 2024/06/03 14:22:37)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   171 out of 171   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.30, max = -0.07
+   mean = -0.18, stddev = 0.05
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
@@ -15,18 +72,27 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.100.161.250                1   6   377    17    +16us[  +17us] +/-   37us
+^* timeserver.atlantis.whoi>     1   6   377    21    +18us[  +18us] +/-   39us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000002
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/06/03 14:26:02) ens = 120 sec, 89 pings, (1.35 sec/ping)
+
+os75nb recent ping statistics
+
+(2024/06/03 14:22:04) ens = 300 sec, 132 pings, (2.27 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:37 up 154 days, 13:34,  1 user,  load average: 0.10, 0.03, 0.01
+ 14:30:02 up 68 days, 18:58,  1 user,  load average: 0.45, 0.39, 0.33
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -38,7 +104,15 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      50 /home/adcp/log/DAS_while_logging.warn
+      60 /home/adcp/log/DAS_while_logging.warn.2024-06-02
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -49,10 +123,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
