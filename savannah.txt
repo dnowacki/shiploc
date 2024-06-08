@@ -1,24 +1,64 @@
-2024/06/06 14:30:02
+2024/06/07 14:30:02
 happy 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: SAV-24-03     ** is logging **
+
+   wh600 2024/06/07  12:16:17 to 2024/06/07  14:28:16  (2 min. ago)
+
+approximate lat, lon, depth:   31 59.43285 N   81 1.28981 W   depth=0
+
+link: http://www.google.com/maps/place/31%2059.43285N+81%201.28981W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "vs330")
+===========================
+------ vs330 statistics ------
+===========================
+gyro-vs330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 158.5099074 to 158.5939236
+(2024/06/07 12:14:16 to 2024/06/07 14:15:15)
+all vs330 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   24 out of 24   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.0
+   min  = -0.12, max = 0.71
+   mean = 0.25, stddev = 0.27
+
+
+=== Sonar Pingtype Summary =====
+
+wh600: Triggering command not found
+wh600 BB:  on
+wh600 BT:  on
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh600 recent ping statistics
+
+(2024/06/07 14:26:16) ens = 120 sec, 75 pings, (1.60 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:04 up 19 days, 17:10,  1 user,  load average: 0.05, 0.03, 0.00
+ 14:30:04 up 20 days, 17:10,  1 user,  load average: 0.59, 0.68, 0.75
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -30,7 +70,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      12 /home/adcp/log/3dayplots_wh600.warn
+      1 /home/adcp/log/lastfewvec_wh600.warn
 
 Figures and files:
 
@@ -41,13 +87,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1139      /home/adcp/www/figures/wh600_lastens.png
-    1139      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1139      /home/adcp/www/figures/wh600_ddaycont.png
+       0      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 
