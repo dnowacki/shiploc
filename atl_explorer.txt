@@ -1,31 +1,99 @@
-2024/06/13 14:30:01
+2024/06/14 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: Pierside_PostAE2014     ** is logging **
+
+ sv300 -- no data yet
+  os75bb 2024/06/13  18:33:31 to 2024/06/14  14:28:29  (2 min. ago)
+  os75nb 2024/06/13  18:33:31 to 2024/06/14  14:28:29  (2 min. ago)
+
+approximate lat, lon, depth:   32 22.20145 N   64 41.75376 W   depth=-6
+
+link: http://www.google.com/maps/place/32%2022.20145N+64%2041.75376W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+jrc_port-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 164.7697801 to 165.6037153
+(2024/06/13 18:28:29 to 2024/06/14 14:29:21)
+all abxtwo messages:  (97%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   205 out of 223   (92%) were good
+statistics of good data:
+   mean N = 247, stddev N =  99.3
+   min  = -1.19, max = 0.75
+   mean = -0.17, stddev = 0.36
+
+===========================
+------ jrc_stbd statistics ------
+===========================
+jrc_port-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 164.7697801 to 165.6037269
+(2024/06/13 18:28:29 to 2024/06/14 14:29:22)
+all jrc_stbd messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   240 out of 240   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -2.00, max = 1.40
+   mean = -0.16, stddev = 0.68
+
+
+=== Sonar Pingtype Summary =====
+
+sv300: Triggering command not found
+sv300 BB:       off
+sv300 NB:  on
+sv300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   9   377   225    +40us[  +37us] +/-  106us
+^* 192.168.51.9                  1   6   377    12  +8556ns[  +11us] +/-   49us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000003, RMS offset=0.000013
+Reference ID: C0A83309, Stratum=2, last offset=0.000002, RMS offset=0.000004
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2024/06/14 14:23:29) ens = 300 sec, 76 pings, (3.95 sec/ping)
+
+os75bb recent ping statistics
+
+(2024/06/14 14:23:29) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:43 up 38 days, 17:11,  1 user,  load average: 0.19, 0.16, 0.10
+ 14:30:42 up 39 days, 17:11,  1 user,  load average: 1.01, 0.65, 0.42
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -44,16 +112,30 @@ ______________________
      6 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      2808 /home/adcp/log/3dayplots_sv300.warn
-      3351 /home/adcp/log/DAS_while_logging.warn
-      546 /home/adcp/log/grab_pings_sv300.warn
-      77 /home/adcp/log/hcorrstats_abxtwo.warn
-      564 /home/adcp/log/lastensq_os75bb.warn
-      555 /home/adcp/log/lastensq_os75nb.warn
-      19355 /home/adcp/log/lastensq_sv300.warn
-      5049 /home/adcp/log/lastfewvec_sv300.warn
-      6171 /home/adcp/log/quick_sv300.warn
-      194 /home/adcp/log/update_hbins_sv300.warn
+      2088 /home/adcp/log/3dayplots_sv300.warn
+      792 /home/adcp/log/3dayplots_sv300.warn.2024-06-13
+      2496 /home/adcp/log/DAS_while_logging.warn
+      950 /home/adcp/log/DAS_while_logging.warn.2024-06-13
+      406 /home/adcp/log/grab_pings_sv300.warn
+      154 /home/adcp/log/grab_pings_sv300.warn.2024-06-13
+      58 /home/adcp/log/hcorrstats_abxtwo.warn
+      16 /home/adcp/log/hcorrstats_abxtwo.warn.2024-06-13
+      95 /home/adcp/log/lastensq_os75bb.warn
+      152 /home/adcp/log/lastensq_os75bb.warn.2024-06-13
+      94 /home/adcp/log/lastensq_os75nb.warn
+      152 /home/adcp/log/lastensq_os75nb.warn.2024-06-13
+      13647 /home/adcp/log/lastensq_sv300.warn
+      4224 /home/adcp/log/lastensq_sv300.warn.2024-06-13
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      3762 /home/adcp/log/lastfewvec_sv300.warn
+      1431 /home/adcp/log/lastfewvec_sv300.warn.2024-06-13
+      1 /home/adcp/log/quick_os75bb.warn
+      1 /home/adcp/log/quick_os75nb.warn
+      4598 /home/adcp/log/quick_sv300.warn
+      1749 /home/adcp/log/quick_sv300.warn.2024-06-13
+      12 /home/adcp/log/update_hbins_sv300.warn
+      36 /home/adcp/log/update_hbins_sv300.warn.2024-06-13
 
 Figures and files:
 
@@ -64,15 +146,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1142      /home/adcp/www/figures/os75nb_lastens.png
-    1142      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1142      /home/adcp/www/figures/os75bb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1142      /home/adcp/www/figures/os75nb_ddaycont.png
-    1142      /home/adcp/www/figures/os75bb_ddaycont.png
+       2      /home/adcp/www/figures/os75bb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
