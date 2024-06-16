@@ -1,8 +1,8 @@
-2024/06/14 14:30:01
-currents01pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/06/15 14:30:01
+currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _secondary_ computer
+NOTE: This is the _primary_ computer
 
 
 
@@ -18,7 +18,7 @@ WARNING: Chrony is installed but is not running
 
 
 ---------- uptime ------------
- 14:30:02 up 22 days, 17:03,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 19:43,  1 user,  load average: 0.05, 0.04, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -34,7 +34,12 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     6 EDAC (memory) errors in last 2 /var/log/syslog
+     7 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      93 /home/adcp/log/DAS_while_logging.warn
+      20 /home/adcp/log/hcorrstats_abxtwo.warn
+      20 /home/adcp/log/hcorrstats_sc70.warn
 
 Figures and files:
 
@@ -45,15 +50,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  257593      /home/adcp/www/figures/ktprof_amp_lastens.png
-  257593      /home/adcp/www/figures/wh1200_lastens.png
-  257593      /home/adcp/www/figures/os75nb_lastens.png
+     863      /home/adcp/www/figures/wh1200_lastens.png
+     863      /home/adcp/www/figures/os75bb_lastens.png
+     863      /home/adcp/www/figures/ktprof_amp_lastens.png
+     863      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  257593      /home/adcp/www/figures/wh1200_ddaycont.png
-  257593      /home/adcp/www/figures/os75nb_ddaycont.png
+     863      /home/adcp/www/figures/os75bb_ddaycont.png
+     863      /home/adcp/www/figures/wh1200_ddaycont.png
+     863      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
