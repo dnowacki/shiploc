@@ -1,13 +1,13 @@
-2024/06/18 23:52:00
-atcurrents03 5.15.0-78-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: test05     ** is logging **
+2024/06/19 19:17:31
+atcurrents04 5.15.0-107-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: test40     ** is logging **
 
-   wh300 2024/06/18  23:02:53 to 2024/06/18  23:50:52  (1 min. ago)
-  os75nb 2024/06/18  23:05:53 to 2024/06/18  23:50:54  (1 min. ago)
+   wh300 2024/06/19  17:18:32 to 2024/06/19  19:17:23  (0 min. ago)
+  os75nb 2024/06/19  17:19:21 to 2024/06/19  19:14:24  (3 min. ago)
 
-approximate lat, lon, depth:   46 11.43681 N  123 51.53638 W   depth=1
+approximate lat, lon, depth:   46 11.43732 N  123 51.53538 W   depth=1
 
-link: http://www.google.com/maps/place/46%2011.43681N+123%2051.53638W
+link: http://www.google.com/maps/place/46%2011.43732N+123%2051.53538W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,15 +25,15 @@ NOTE: This is the _primary_ computer
 ===========================
 hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 169.9589538 to 169.9904237
-(2024/06/18 23:00:54 to 2024/06/18 23:46:13)
+ddrange: 170.7198334 to 170.7830858
+(2024/06/19 17:16:34 to 2024/06/19 18:47:39)
 all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   9 out of 9   (100%) were good
+   18 out of 18   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.7
-   min  = -0.04, max = -0.03
+   mean N = 301, stddev N =  1.1
+   min  = -0.03, max = -0.03
    mean = -0.03, stddev = 0.00
 
 ===========================
@@ -41,16 +41,16 @@ statistics of good data:
 ===========================
 hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 169.9589538 to 169.9904353
-(2024/06/18 23:00:54 to 2024/06/18 23:46:14)
+ddrange: 170.7198334 to 170.7830973
+(2024/06/19 17:16:34 to 2024/06/19 18:47:40)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   9 out of 9   (100%) were good
+   18 out of 18   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.7
-   min  = -0.23, max = -0.14
-   mean = -0.18, stddev = 0.03
+   mean N = 301, stddev N =  0.8
+   min  = -0.18, max = -0.12
+   mean = -0.15, stddev = 0.02
 
 
 === Sonar Pingtype Summary =====
@@ -71,9 +71,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377     7  +1719ns[+2870ns] +/-   28us
+^* timeserver.atlantis.whoi>     1   6   377    11  -1193ns[-6890ns] +/-   32us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000003
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000006, RMS offset=0.000016
 ------------------------------------------
 
 
@@ -81,17 +81,17 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000003
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2024/06/18 23:48:52) ens = 120 sec, 89 pings, (1.35 sec/ping)
+(2024/06/19 19:13:23) ens = 120 sec, 89 pings, (1.35 sec/ping)
 
 os75nb recent ping statistics
 
-(2024/06/18 23:45:53) ens = 300 sec, 132 pings, (2.27 sec/ping)
+(2024/06/19 19:02:11) ens = 300 sec, 47 pings, (6.38 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 23:52:00 up  1:06,  1 user,  load average: 0.54, 0.58, 0.46
+ 19:17:32 up 11 min,  2 users,  load average: 0.40, 0.61, 0.36
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -110,15 +110,24 @@ ______________________
     29 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      13 /home/adcp/log/3dayplots_os75nb.warn
-      6 /home/adcp/log/3dayplots_wh300.warn
-      11 /home/adcp/log/DAS_while_cruise.warn
-      5 /home/adcp/log/DAS_while_logging.warn
-      6 /home/adcp/log/lastensq_wh300.warn
-      4 /home/adcp/log/lastfewvec_os75nb.warn
-      4 /home/adcp/log/lastfewvec_wh300.warn
+      15 /home/adcp/log/3dayplots_os75nb.warn
+      9 /home/adcp/log/DAS_while_cruise.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
       1 /home/adcp/log/quick_os75nb.warn
-      2 /home/adcp/log/quick_wh300.warn
+(3) rbin warnings:
+ 
+hydrins2 hdg   6723    1.01  -98267.37      62.0       2     1     1     0     1
+gpsnav gps   6727    1.01  -98268.37      60.0       2     1     1     0     1
+gpsnav2 gps   6724    0.99  -98267.37      61.0       2     2     1     0     1
+seapath gps   6722    1.01  -98266.38      61.0       2     1     1     0     1
+seapath hdg   6724    1.01  -98267.38      61.0       2     1     1     0     1
+seapath sea   6722    1.01  -98266.38      61.0       2     1     1     0     1
+hydrins1 hdg   6721    1.00  -98266.38      62.0       2     1     1     0     1
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 170.719840
+
 
 Figures and files:
 
@@ -129,15 +138,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
+       3      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
