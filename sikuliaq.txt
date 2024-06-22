@@ -1,40 +1,103 @@
-2024/06/20 14:30:01
+2024/06/21 14:30:01
 currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: SKQ202408S  *** not logging ***
+Current cruise: SKQ202409S     ** is logging **
 
-   wh300 2024/05/29  19:14:30 to 2024/06/15  14:51:29  (7178 min. ago)  5.0 days
-  os75nb 2024/05/29  18:41:29 to 2024/06/15  14:50:29  (7179 min. ago)  5.0 days
+   wh300 2024/06/20  17:07:29 to 2024/06/21  14:29:30  (0 min. ago)
+  os75nb 2024/06/20  17:10:30 to 2024/06/21  14:25:30  (4 min. ago)
 
-approximate lat, lon, depth:   60 4.86395 N  149 24.62522 W   depth=16
+approximate lat, lon, depth:   56 43.67436 N  151 7.83017 W   depth=1500
 
-link: http://www.google.com/maps/place/60%204.86395N+149%2024.62522W
+link: http://www.google.com/maps/place/56%2043.67436N+151%207.83017W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 171.7121603 to 172.5960839
+(2024/06/20 17:05:31 to 2024/06/21 14:18:22)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   253 out of 253   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.5
+   min  = -0.10, max = 0.07
+   mean = -0.02, stddev = 0.04
+
+===========================
+------ mgc2 statistics ------
+===========================
+mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 171.7121603 to 172.5960955
+(2024/06/20 17:05:31 to 2024/06/21 14:18:23)
+all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   253 out of 253   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.04, max = 0.17
+   mean = 0.12, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.1.0.5                      1   9   377   112   +244ns[  -12us] +/-  134us
-^+ 10.1.0.6                      1   9   377   229   +534ns[  -11us] +/-  128us
+^* 10.1.0.5                      1   8   377    57    +19us[  +34us] +/-  132us
+^+ 10.1.0.6                      1   8   377   188  -6057ns[ +425ns] +/-  103us
 
-Reference ID: 0A010005, Stratum=2, last offset=-0.000012, RMS offset=0.000064
+Reference ID: 0A010005, Stratum=2, last offset=0.000015, RMS offset=0.000049
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2024/06/21 14:20:30) ens = 300 sec, 167 pings, (1.80 sec/ping)
+
+wh300 recent ping statistics
+
+(2024/06/21 14:27:30) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 115 days, 14:29,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:01 up 116 days, 14:29,  1 user,  load average: 0.55, 0.42, 0.39
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -46,7 +109,17 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/DAS_while_logging.warn
+      3 /home/adcp/log/DAS_while_logging.warn.2024-06-20
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_os75nb.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -57,15 +130,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    7177      /home/adcp/www/figures/ktprof_amp_lastens.png
-    7177      /home/adcp/www/figures/wh300_lastens.png
-    7177      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    7177      /home/adcp/www/figures/os75nb_ddaycont.png
-    7177      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
