@@ -1,7 +1,15 @@
-2024/06/23 14:30:01
-currents03tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/06/24 14:30:01
+currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.1 LTS")
+Current cruise: TN433  *** not logging ***
+
+   wh300 2024/06/18  06:46:40 to 2024/06/20  07:56:40  (6153 min. ago)  4.3 days
+  os75nb 2024/06/18  06:49:42 to 2024/06/20  07:54:42  (6155 min. ago)  4.3 days
+
+approximate lat, lon, depth:    3 2.16002 N   92 12.77486 E   depth=4154
+
+link: http://www.google.com/maps/place/3%202.16002N+92%2012.77486E
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _secondary_ computer
 
 
@@ -15,9 +23,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.43.11.10                   1   9   377   113    -26us[  -27us] +/-  163us
+^* ntpserver-11.rvtgt.uw.edu     1  10   377   601    -13us[  -18us] +/-  156us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000001, RMS offset=0.000038
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000004, RMS offset=0.000049
 ------------------------------------------
 
 
@@ -26,7 +34,7 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000001, RMS offset=0.000038
 
 
 ---------- uptime ------------
- 14:30:03 up 55 days, 14:22,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:03 up 56 days, 14:22,  1 user,  load average: 0.07, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -52,15 +60,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  1092931      /home/adcp/www/figures/ktprof_amp_lastens.png
-  1092931      /home/adcp/www/figures/os75nb_lastens.png
-  1092931      /home/adcp/www/figures/wh300_lastens.png
+    6153      /home/adcp/www/figures/wh300_lastens.png
+    6153      /home/adcp/www/figures/os75nb_lastens.png
+    6153      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  1092931      /home/adcp/www/figures/wh300_ddaycont.png
-  1092931      /home/adcp/www/figures/os75nb_ddaycont.png
+    6153      /home/adcp/www/figures/wh300_ddaycont.png
+    6153      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
