@@ -1,14 +1,14 @@
-2024/06/26 14:30:01
+2024/06/27 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: AE2415     ** is logging **
 
-   sv300 2024/06/24  10:48:44 to 2024/06/26  14:30:44  (0 min. ago)
-  os75bb 2024/06/24  10:51:46 to 2024/06/26  14:26:43  (4 min. ago)
-  os75nb 2024/06/24  10:51:46 to 2024/06/26  14:26:43  (4 min. ago)
+   sv300 2024/06/24  10:48:44 to 2024/06/27  14:30:44  (0 min. ago)
+  os75bb 2024/06/24  10:51:46 to 2024/06/27  14:26:46  (4 min. ago)
+  os75nb 2024/06/24  10:51:46 to 2024/06/27  14:26:46  (4 min. ago)
 
-approximate lat, lon, depth:   31 44.66037 N   64 10.27491 W   depth=4555
+approximate lat, lon, depth:   29 39.99298 N   64 28.13059 W   depth=4878
 
-link: http://www.google.com/maps/place/31%2044.66037N+64%2010.27491W
+link: http://www.google.com/maps/place/29%2039.99298N+64%2028.13059W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ no heading correction device specified===========================
 ===========================
 jrc_port-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 176.5957639 to 177.5957523
-(2024/06/25 14:17:54 to 2024/06/26 14:17:53)
-all abxtwo messages:  (86%)  were good  [using available QC]
+ddrange: 177.5957292 to 178.5957176
+(2024/06/26 14:17:51 to 2024/06/27 14:17:50)
+all abxtwo messages:  (72%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   119 out of 236   (50%) were good
+   42 out of 176   (24%) were good
 statistics of good data:
-   mean N = 118, stddev N =  110.6
-   min  = -0.60, max = 0.39
-   mean = -0.15, stddev = 0.20
+   mean N = 45, stddev N =  64.5
+   min  = -0.74, max = 0.51
+   mean = -0.11, stddev = 0.28
 
 ===========================
 ------ jrc_stbd statistics ------
 ===========================
 jrc_port-jrc_stbd statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 176.5957986 to 177.5957870
-(2024/06/25 14:17:57 to 2024/06/26 14:17:56)
+ddrange: 177.5957639 to 178.5957523
+(2024/06/26 14:17:54 to 2024/06/27 14:17:53)
 all jrc_stbd messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -1.10, max = 1.30
-   mean = 0.01, stddev = 0.40
+   mean N = 301, stddev N =  0.2
+   min  = -1.20, max = 1.10
+   mean = -0.06, stddev = 0.40
 
 
 === Sonar Pingtype Summary =====
@@ -72,9 +72,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    59  +1028ns[ -906ns] +/-   41us
+^* 192.168.51.9                  1   6   377    39    +40us[  +39us] +/-   86us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000000, RMS offset=0.000006
+Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -82,21 +82,21 @@ Reference ID: C0A83309, Stratum=2, last offset=0.000000, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/06/26 14:21:46) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2024/06/27 14:21:45) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 sv300 recent ping statistics
 
-(2024/06/26 14:26:44) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/06/27 14:26:44) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/06/26 14:21:46) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2024/06/27 14:21:45) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 51 days, 17:11,  1 user,  load average: 0.14, 0.34, 0.42
+ 14:30:52 up 52 days, 17:11,  1 user,  load average: 0.21, 0.54, 0.60
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -116,15 +116,15 @@ ______________________
 (2) wordcount of log/*.warn:
 
       58 /home/adcp/log/hcorrstats_abxtwo.warn
-      96 /home/adcp/log/hcorrstats_abxtwo.warn.2024-06-25
-      461 /home/adcp/log/lastensq_os75bb.warn
-      1390 /home/adcp/log/lastensq_os75bb.warn.2024-06-25
-      454 /home/adcp/log/lastensq_os75nb.warn
-      1390 /home/adcp/log/lastensq_os75nb.warn.2024-06-25
-      1141 /home/adcp/log/lastensq_sv300.warn
-      3470 /home/adcp/log/lastensq_sv300.warn.2024-06-25
-      72 /home/adcp/log/update_hbins_sv300.warn
-      346 /home/adcp/log/update_hbins_sv300.warn.2024-06-25
+      96 /home/adcp/log/hcorrstats_abxtwo.warn.2024-06-26
+      602 /home/adcp/log/lastensq_os75bb.warn
+      886 /home/adcp/log/lastensq_os75bb.warn.2024-06-26
+      602 /home/adcp/log/lastensq_os75nb.warn
+      880 /home/adcp/log/lastensq_os75nb.warn.2024-06-26
+      1521 /home/adcp/log/lastensq_sv300.warn
+      2204 /home/adcp/log/lastensq_sv300.warn.2024-06-26
+      154 /home/adcp/log/update_hbins_sv300.warn
+      168 /home/adcp/log/update_hbins_sv300.warn.2024-06-26
 
 Figures and files:
 

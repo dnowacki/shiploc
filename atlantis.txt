@@ -1,5 +1,5 @@
-2024/06/26 14:30:01
-atcurrents02 5.11.0-27-generic (focal "Ubuntu 20.04.3 LTS")
+2024/06/27 14:30:02
+atcurrents04 5.15.0-107-generic (jammy "Ubuntu 22.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -12,12 +12,11 @@ NOTE: This is the _primary_ computer
 
 using chrony
 ---------- chronyc tracking ------------
-210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.100.161.250                1   6   377    55    +14us[  +15us] +/-   37us
+^* timeserver.atlantis.whoi>     1   6   377    56  +1041ns[+1027ns] +/-   28us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000002
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
@@ -26,7 +25,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000002
 
 
 ---------- uptime ------------
- 14:30:37 up 4 days, 22:30,  1 user,  load average: 0.30, 0.09, 0.03
+ 14:30:02 up 5 days, 22:27,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -38,7 +37,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+    36 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -49,10 +52,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+   11223      /home/adcp/www/figures/wh300_lastens.png
+   11223      /home/adcp/www/figures/ktprof_amp_lastens.png
+   11223      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+   11223      /home/adcp/www/figures/wh300_ddaycont.png
+   11223      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
