@@ -1,16 +1,7 @@
-2024/07/02 14:30:01
+2024/07/03 14:30:01
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: SR2411  *** not logging ***
-
-   wh300 2024/06/13  22:22:14 to 2024/07/02  12:51:34  (98 min. ago) 1.6 hrs
-  os150nb 2024/06/13  22:25:14 to 2024/07/02  12:53:34  (96 min. ago) 1.6 hrs
-  os38nb 2024/06/13  22:25:14 to 2024/07/02  12:53:37  (96 min. ago) 1.6 hrs
-
-approximate lat, lon, depth:    1 55.90380 S   90 19.46185 W   depth=2957
-
-link: http://www.google.com/maps/place/1%2055.90380S+90%2019.46185W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -24,9 +15,9 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   9   377   172    +98us[  +37us] +/-   28ms
+^* sr-bb-gw-das.ucsd.edu         2   9   377   183    +36us[  +61us] +/-   28ms
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000061, RMS offset=0.000059
+Reference ID: 647C6401, Stratum=3, last offset=0.000025, RMS offset=0.000055
 ------------------------------------------
 
 
@@ -35,7 +26,7 @@ Reference ID: 647C6401, Stratum=3, last offset=-0.000061, RMS offset=0.000059
 
 
 ---------- uptime ------------
- 14:30:02 up 74 days, 22:42,  1 user,  load average: 0.15, 0.05, 0.01
+ 14:30:02 up 75 days, 22:42,  1 user,  load average: 0.00, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -52,13 +43,10 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      2 /home/adcp/log/3dayplots_os38nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      2 /home/adcp/log/lastfewvec_os150nb.warn.2024-07-01
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      2 /home/adcp/log/lastfewvec_os38nb.warn.2024-07-01
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      2 /home/adcp/log/lastfewvec_wh300.warn.2024-07-01
+      1 /home/adcp/log/DAS_while_logging.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn
+      2 /home/adcp/log/lastfewvec_os38nb.warn
+      2 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -69,17 +57,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-      95      /home/adcp/www/figures/os38nb_lastens.png
-      95      /home/adcp/www/figures/os150nb_lastens.png
-      95      /home/adcp/www/figures/ktprof_amp_lastens.png
-      95      /home/adcp/www/figures/wh300_lastens.png
+     401      /home/adcp/www/figures/os38nb_lastens.png
+     401      /home/adcp/www/figures/os150nb_lastens.png
+     401      /home/adcp/www/figures/ktprof_amp_lastens.png
+     401      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-      95      /home/adcp/www/figures/os150nb_ddaycont.png
-      95      /home/adcp/www/figures/wh300_ddaycont.png
-      95      /home/adcp/www/figures/os38nb_ddaycont.png
+     401      /home/adcp/www/figures/os150nb_ddaycont.png
+     401      /home/adcp/www/figures/wh300_ddaycont.png
+     401      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
