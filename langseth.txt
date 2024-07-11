@@ -1,13 +1,13 @@
-2024/07/09 14:30:01
+2024/07/10 14:30:01
 currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: MGL2407     ** is logging **
 
-  os75bb 2024/06/12  11:55:23 to 2024/07/09  14:26:04  (4 min. ago)
-  os75nb 2024/06/12  11:55:23 to 2024/07/09  14:26:04  (4 min. ago)
+  os75bb 2024/06/12  11:55:23 to 2024/07/10  14:26:03  (4 min. ago)
+  os75nb 2024/06/12  11:55:23 to 2024/07/10  14:26:03  (4 min. ago)
 
-approximate lat, lon, depth:   58 8.94377 N   54 1.21234 W   depth=3415
+approximate lat, lon, depth:   58 10.95995 N   53 32.10315 W   depth=3469
 
-link: http://www.google.com/maps/place/58%208.94377N+54%201.21234W
+link: http://www.google.com/maps/place/58%2010.95995N+53%2032.10315W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 189.5951855 to 190.5951766
-(2024/07/08 14:17:04 to 2024/07/09 14:17:03)
-all seapath messages:  (46%)  were good  [using available QC]
+ddrange: 190.5951593 to 191.5951505
+(2024/07/09 14:17:02 to 2024/07/10 14:17:01)
+all seapath messages:  (85%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   132 out of 141   (94%) were good
+   247 out of 248   (100%) were good
 statistics of good data:
-   mean N = 279, stddev N =  296.9
-   min  = 2.03, max = 3.02
-   mean = 2.59, stddev = 0.27
+   mean N = 514, stddev N =  209.5
+   min  = 1.85, max = 3.05
+   mean = 2.45, stddev = 0.28
 
 ===========================
 ------ posmv statistics ------
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
 
-ddrange: 189.5952202 to 190.5952113
-(2024/07/08 14:17:07 to 2024/07/09 14:17:06)
+ddrange: 190.5951824 to 191.5951736
+(2024/07/09 14:17:04 to 2024/07/10 14:17:03)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.5
-   min  = 2.18, max = 3.78
-   mean = 3.12, stddev = 0.36
+   min  = 2.10, max = 3.84
+   mean = 2.78, stddev = 0.39
 
 
 === Sonar Pingtype Summary =====
@@ -67,10 +67,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   9   377   141    +25us[  +31us] +/-   64us
-^- _gateway                      4   7   377   125  +2667us[+2667us] +/-   61ms
+^* timeserve2.langseth.ldeo>     1  10   377   972    +26us[+6095ns] +/-   62us
+^- _gateway                      4   6   377    63   +792us[ +792us] +/-   58ms
 
-Reference ID: C0A8030E, Stratum=2, last offset=0.000006, RMS offset=0.000017
+Reference ID: C0A8030E, Stratum=2, last offset=-0.000020, RMS offset=0.000007
 ------------------------------------------
 
 
@@ -78,17 +78,17 @@ Reference ID: C0A8030E, Stratum=2, last offset=0.000006, RMS offset=0.000017
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/07/09 14:21:04) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/07/10 14:21:03) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/07/09 14:21:04) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/07/10 14:21:03) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 4 days, 17:46,  1 user,  load average: 0.11, 0.26, 0.32
+ 14:30:02 up 5 days, 17:46,  1 user,  load average: 0.07, 0.22, 0.27
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -108,9 +108,8 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      2 /home/adcp/log/3dayplots_os75nb.warn
-      3 /home/adcp/log/DAS_while_cruise.warn
-      5 /home/adcp/log/DAS_while_cruise.warn.2024-07-08
+      4 /home/adcp/log/DAS_while_cruise.warn
+      7 /home/adcp/log/DAS_while_cruise.warn.2024-07-09
 
 Figures and files:
 
@@ -122,8 +121,8 @@ Gyro logging and backup:
 Checking updating of 5-minute plots:
 age (minutes)          filename
        3      /home/adcp/www/figures/os75bb_lastens.png
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
        3      /home/adcp/www/figures/os75nb_lastens.png
+       3      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
