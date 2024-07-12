@@ -1,15 +1,7 @@
-2024/07/10 14:30:01
-currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: SKQ202410S  *** not logging ***
-
-   wh300 2024/07/09  03:56:43 to 2024/07/10  13:02:08  (88 min. ago)
-  os75nb 2024/07/09  03:59:45 to 2024/07/10  12:58:37  (91 min. ago) 1.5 hrs
-
-approximate lat, lon, depth:   59 49.73665 N  139 42.00038 W   depth=33
-
-link: http://www.google.com/maps/place/59%2049.73665N+139%2042.00038W
-not using zmq publishers, position is from serial GPS
-
+2024/07/11 23:47:13
+currents01skq 6.5.0-17-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -22,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   7   377    82    +13us[  +13us] +/-  144us
-^* 10.1.0.6                      1   8   377   253    -15us[  -18us] +/-  105us
+^+ 10.1.0.5                      1  10   377   943    -16us[  -24us] +/-  117us
+^* 10.1.0.6                      1   9   377   220    -33us[  -37us] +/-  115us
 
-Reference ID: 0A010006, Stratum=2, last offset=-0.000003, RMS offset=0.000019
+Reference ID: 0A010006, Stratum=2, last offset=-0.000004, RMS offset=0.000007
 ------------------------------------------
 
 
@@ -34,7 +26,7 @@ Reference ID: 0A010006, Stratum=2, last offset=-0.000003, RMS offset=0.000019
 
 
 ---------- uptime ------------
- 14:30:02 up 4 days, 23:12,  1 user,  load average: 0.00, 0.00, 0.00
+ 23:47:14 up 11 days,  4:31,  2 users,  load average: 0.01, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -50,10 +42,7 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-   704 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      1 /home/adcp/log/DAS_while_logging.warn
+     4 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -64,15 +53,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-      86      /home/adcp/www/figures/ktprof_amp_lastens.png
-      86      /home/adcp/www/figures/wh300_lastens.png
-      86      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-      86      /home/adcp/www/figures/os75nb_ddaycont.png
-      86      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
