@@ -1,14 +1,14 @@
-2024/07/13 14:30:01
+2024/07/14 14:30:01
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: BH24-04_Hardisty     ** is logging **
 
  sv500 -- no data yet
-  os150bb 2024/07/09  11:35:16 to 2024/07/13  14:25:15  (4 min. ago)
-  os150nb 2024/07/09  11:35:16 to 2024/07/13  14:25:15  (4 min. ago)
+  os150bb 2024/07/09  11:35:16 to 2024/07/14  14:25:15  (4 min. ago)
+  os150nb 2024/07/09  11:35:16 to 2024/07/14  14:25:15  (4 min. ago)
 
-approximate lat, lon, depth:   41 56.73007 N   81 39.04580 W   depth=-150
+approximate lat, lon, depth:   42 29.43635 N   79 54.46046 W   depth=-122
 
-link: http://www.google.com/maps/place/41%2056.73007N+81%2039.04580W
+link: http://www.google.com/maps/place/42%2029.43635N+79%2054.46046W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ no heading correction device specified===========================
 ===========================
 posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 193.5942374 to 194.5942152
-(2024/07/12 14:15:42 to 2024/07/13 14:15:40)
+ddrange: 194.5944119 to 195.5944003
+(2024/07/13 14:15:57 to 2024/07/14 14:15:56)
 all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.23, max = 0.74
-   mean = 0.22, stddev = 0.16
+   min  = -0.47, max = 0.57
+   mean = 0.19, stddev = 0.16
 
 
 === Sonar Pingtype Summary =====
@@ -56,7 +56,7 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 192.168.100.14                1  10     0  230m  +1772ns[-5855ns] +/-  116us
+^? 192.168.100.14                1  10     0   27h  +1772ns[-5855ns] +/-  116us
 
 Reference ID: C0A8640E, Stratum=2, last offset=-0.000008, RMS offset=0.000009
 ------------------------------------------
@@ -66,17 +66,17 @@ Reference ID: C0A8640E, Stratum=2, last offset=-0.000008, RMS offset=0.000009
 ------------- pings per ensemble ----------- 
 os150bb recent ping statistics
 
-(2024/07/13 14:20:16) ens = 300 sec, 137 pings, (2.19 sec/ping)
+(2024/07/14 14:20:16) ens = 300 sec, 136 pings, (2.21 sec/ping)
 
 os150nb recent ping statistics
 
-(2024/07/13 14:20:16) ens = 300 sec, 137 pings, (2.19 sec/ping)
+(2024/07/14 14:20:16) ens = 300 sec, 136 pings, (2.21 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 100 days, 18:45,  1 user,  load average: 0.11, 0.23, 0.26
+ 14:30:03 up 101 days, 18:45,  1 user,  load average: 0.16, 0.24, 0.26
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -94,18 +94,21 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
+      2 /home/adcp/log/3dayplots_os150bb.warn
+      12 /home/adcp/log/3dayplots_os150nb.warn
       2088 /home/adcp/log/3dayplots_sv500.warn
-      3456 /home/adcp/log/3dayplots_sv500.warn.2024-07-12
-      3156 /home/adcp/log/DAS_while_logging.warn
-      5217 /home/adcp/log/DAS_while_logging.warn.2024-07-12
+      3456 /home/adcp/log/3dayplots_sv500.warn.2024-07-13
+      3151 /home/adcp/log/DAS_while_logging.warn
+      5222 /home/adcp/log/DAS_while_logging.warn.2024-07-13
       406 /home/adcp/log/grab_pings_sv500.warn
-      672 /home/adcp/log/grab_pings_sv500.warn.2024-07-12
-      15990 /home/adcp/log/lastensq_sv500.warn
-      26421 /home/adcp/log/lastensq_sv500.warn.2024-07-12
-      4950 /home/adcp/log/lastfewvec_sv500.warn
-      8181 /home/adcp/log/lastfewvec_sv500.warn.2024-07-12
-      6050 /home/adcp/log/quick_sv500.warn
-      9999 /home/adcp/log/quick_sv500.warn.2024-07-12
+      672 /home/adcp/log/grab_pings_sv500.warn.2024-07-13
+      15961 /home/adcp/log/lastensq_sv500.warn
+      26450 /home/adcp/log/lastensq_sv500.warn.2024-07-13
+      4941 /home/adcp/log/lastfewvec_sv500.warn
+      8190 /home/adcp/log/lastfewvec_sv500.warn.2024-07-13
+      6039 /home/adcp/log/quick_sv500.warn
+      10010 /home/adcp/log/quick_sv500.warn.2024-07-13
+      1 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
