@@ -1,15 +1,15 @@
-2024/07/15 14:30:01
+2024/07/16 14:30:01
 currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: PE25_02_Watts_ADCP     ** is logging **
 
-  wh1200 2024/07/15  11:01:21 to 2024/07/15  14:39:22  (-9 min. ago)
-   wh300 2024/07/15  11:01:21 to 2024/07/15  14:39:22  (-9 min. ago)
-  os75bb 2024/07/15  11:04:25 to 2024/07/15  14:39:24  (-9 min. ago)
-  os75nb 2024/07/15  11:04:25 to 2024/07/15  14:39:24  (-9 min. ago)
+  wh1200 2024/07/15  11:01:21 to 2024/07/16  14:39:21  (-9 min. ago)
+   wh300 2024/07/15  11:01:21 to 2024/07/16  14:39:22  (-9 min. ago)
+  os75bb 2024/07/15  11:04:25 to 2024/07/16  14:39:24  (-9 min. ago)
+  os75nb 2024/07/15  11:04:25 to 2024/07/16  14:39:24  (-9 min. ago)
 
-approximate lat, lon, depth:   27 56.97075 N   90 10.33405 W   depth=597
+approximate lat, lon, depth:   27 2.80776 N   89 13.10144 W   depth=2408
 
-link: http://www.google.com/maps/place/27%2056.97075N+90%2010.33405W
+link: http://www.google.com/maps/place/27%202.80776N+89%2013.10144W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -27,32 +27,32 @@ NOTE: This is the _primary_ computer
 ===========================
 furuno-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 196.4578935 to 196.6044676
-(2024/07/15 10:59:22 to 2024/07/15 14:30:26)
+ddrange: 196.6046065 to 197.6045949
+(2024/07/15 14:30:38 to 2024/07/16 14:30:37)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   42 out of 42   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.5
-   min  = -1.61, max = -0.01
-   mean = -0.85, stddev = 0.45
+   mean N = 301, stddev N =  0.2
+   min  = -2.27, max = 0.80
+   mean = -0.75, stddev = 0.47
 
 ===========================
 ------ sc70 statistics ------
 ===========================
 furuno-sc70 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 196.4578935 to 196.6044907
-(2024/07/15 10:59:22 to 2024/07/15 14:30:28)
+ddrange: 196.6046181 to 197.6046065
+(2024/07/15 14:30:39 to 2024/07/16 14:30:38)
 all sc70 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   42 out of 42   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = 0.60, max = 2.68
-   mean = 1.58, stddev = 0.45
+   min  = -0.18, max = 3.71
+   mean = 1.75, stddev = 0.58
 
 
 === Sonar Pingtype Summary =====
@@ -80,25 +80,25 @@ WARNING: Chrony is installed but is not running
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2024/07/15 14:34:23) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2024/07/16 14:34:24) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 os75nb recent ping statistics
 
-(2024/07/15 14:34:23) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2024/07/16 14:29:23) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 wh1200 recent ping statistics
 
-(2024/07/15 14:37:22) ens = 120 sec, 200 pings, (0.60 sec/ping)
+(2024/07/16 14:37:21) ens = 120 sec, 200 pings, (0.60 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/07/15 14:37:22) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/07/16 14:37:22) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 30 days, 19:53,  1 user,  load average: 1.45, 0.66, 0.54
+ 14:30:02 up 31 days, 19:53,  1 user,  load average: 1.11, 0.78, 0.67
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -115,12 +115,10 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      14 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh1200.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      1 /home/adcp/log/quick_wh300.warn
+      16 /home/adcp/log/3dayplots_os75nb.warn
+      58 /home/adcp/log/DAS_while_logging.warn
+      53 /home/adcp/log/DAS_while_logging.warn.2024-07-15
+      4 /home/adcp/log/lastensq_os75nb.warn
 
 Figures and files:
 
