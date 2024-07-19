@@ -1,14 +1,14 @@
-2024/07/17 14:30:01
+2024/07/18 14:30:02
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.2 LTS")
 Current cruise: km2410     ** is logging **
 
-   wh300 2024/07/15  18:04:57 to 2024/07/17  14:28:57  (1 min. ago)
-  os38bb 2024/07/15  18:08:02 to 2024/07/17  14:27:57  (2 min. ago)
-  os38nb 2024/07/15  18:08:02 to 2024/07/17  14:27:57  (2 min. ago)
+   wh300 2024/07/15  18:04:57 to 2024/07/18  14:28:57  (1 min. ago)
+  os38bb 2024/07/15  18:08:02 to 2024/07/18  14:27:59  (2 min. ago)
+  os38nb 2024/07/15  18:08:02 to 2024/07/18  14:27:59  (2 min. ago)
 
-approximate lat, lon, depth:   22 45.14697 N  158 1.08190 W   depth=4709
+approximate lat, lon, depth:   22 45.00069 N  158 0.00601 W   depth=4705
 
-link: http://www.google.com/maps/place/22%2045.14697N+158%201.08190W
+link: http://www.google.com/maps/place/22%2045.00069N+158%200.00601W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 197.6033773 to 198.6033662
-(2024/07/16 14:28:52 to 2024/07/17 14:28:51)
+ddrange: 198.6033720 to 199.6033610
+(2024/07/17 14:28:51 to 2024/07/18 14:28:50)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.4
-   min  = -1.45, max = 1.76
-   mean = 0.32, stddev = 0.43
+   min  = -0.55, max = 1.85
+   mean = 0.44, stddev = 0.40
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2  10   377    59   +469ns[ +233ns] +/- 1735us
+^* kmroute.km                    2   9   377    96  -7465ns[  -20us] +/- 1246us
 
-Reference ID: 0A009601, Stratum=3, last offset=-0.000000, RMS offset=0.000027
+Reference ID: 0A009601, Stratum=3, last offset=-0.000012, RMS offset=0.000031
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A009601, Stratum=3, last offset=-0.000000, RMS offset=0.000027
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2024/07/17 14:22:57) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/07/18 14:22:59) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/07/17 14:26:57) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/07/18 14:26:57) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2024/07/17 14:22:57) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/07/18 14:22:59) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 34 days, 11:31,  1 user,  load average: 0.90, 0.65, 0.56
+ 14:30:02 up 35 days, 11:31,  1 user,  load average: 0.80, 0.62, 0.57
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -93,7 +93,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      4 /home/adcp/log/3dayplots_os38nb.warn
+      2 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
