@@ -1,15 +1,9 @@
-2024/07/18 14:30:01
+2024/07/20 03:43:00
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: SR2412  *** not logging ***
+Current cruise: test_cruise01     ** is logging **
 
-   wh300 2024/07/04  23:33:48 to 2024/07/09  22:02:24  (12507 min. ago)  8.7 days
-  os150nb 2024/07/04  23:36:48 to 2024/07/09  22:01:24  (12508 min. ago)  8.7 days
-  os38nb 2024/07/04  23:36:48 to 2024/07/09  22:01:25  (12508 min. ago)  8.7 days
 
-approximate lat, lon, depth:   14 40.49511 N  103 22.06422 W   depth=3174
-
-link: http://www.google.com/maps/place/14%2040.49511N+103%2022.06422W
-not using zmq publishers, position is from serial GPS
+no positions found from filelist seapath_mru/*.gps.rbin
 
 NOTE: This is the _primary_ computer
 
@@ -17,6 +11,35 @@ NOTE: This is the _primary_ computer
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath_mru")
+===========================
+------ seapath_mru statistics ------
+===========================
+/home/adcp/daily_report/seapath_mru_seapath_mgc_pystats.txt does not (yet?) exist
+===========================
+------ hemisphere statistics ------
+===========================
+/home/adcp/daily_report/hemisphere_seapath_mgc_pystats.txt does not (yet?) exist
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
@@ -24,18 +47,19 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2  10   377  1008    -49us[  -91us] +/-   28ms
+^* sr-bb-gw-das.ucsd.edu         2   9   377   518    +45us[  +53us] +/-   16ms
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000042, RMS offset=0.000046
+Reference ID: 647C6401, Stratum=3, last offset=0.000007, RMS offset=0.000022
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 90 days, 22:42,  1 user,  load average: 0.12, 0.07, 0.02
+ 03:43:00 up 92 days, 11:55,  2 users,  load average: 0.45, 0.60, 0.65
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -47,7 +71,20 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      6 /home/adcp/log/DAS_while_logging.warn
+      84 /home/adcp/log/update_hbins_wh300.warn
+(2) proc sensor incompatibilities:
+ - pos_inst (seapath_mru) not in sensor_cfg.py subdirs
+ - pitch_inst (seapath_mru) not in sensor_cfg.py subdirs
+ - roll_inst (seapath_mru) not in sensor_cfg.py subdirs
+ - hcorr_inst (seapath_mru) not in sensor_cfg.py subdirs
+heading quality: hdg_inst_msgs
+ - seapath_mru not in sensor_cfg.py subdirs
 
 Figures and files:
 
@@ -58,17 +95,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   12507      /home/adcp/www/figures/os38nb_lastens.png
-   12507      /home/adcp/www/figures/os150nb_lastens.png
-   12507      /home/adcp/www/figures/ktprof_amp_lastens.png
-   12507      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   12507      /home/adcp/www/figures/os150nb_ddaycont.png
-   12507      /home/adcp/www/figures/wh300_ddaycont.png
-   12507      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
