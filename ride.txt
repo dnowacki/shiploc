@@ -1,9 +1,12 @@
-2024/07/20 03:43:00
+2024/07/21 00:05:15
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: test_cruise01     ** is logging **
+Current cruise: test_cruise02     ** is logging **
 
 
-no positions found from filelist seapath_mru/*.gps.rbin
+approximate lat, lon, depth:   32 42.43482 N  117 14.20324 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.43482N+117%2014.20324W
+not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
 
@@ -17,11 +20,35 @@ NOTE: This is the _primary_ computer
 ===========================
 ------ seapath_mru statistics ------
 ===========================
-/home/adcp/daily_report/seapath_mru_seapath_mgc_pystats.txt does not (yet?) exist
+seapath_mgc-seapath_mru statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 201.9780672 to 201.9885128
+(2024/07/20 23:28:25 to 2024/07/20 23:43:28)
+all seapath_mru messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   3 out of 3   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.6
+   min  = -0.11, max = -0.09
+   mean = -0.10, stddev = 0.01
+
 ===========================
 ------ hemisphere statistics ------
 ===========================
-/home/adcp/daily_report/hemisphere_seapath_mgc_pystats.txt does not (yet?) exist
+seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 201.9780672 to 201.9885302
+(2024/07/20 23:28:25 to 2024/07/20 23:43:29)
+all hemisphere messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   3 out of 3   (100%) were good
+statistics of good data:
+   mean N = 600, stddev N =  1.2
+   min  = 1.08, max = 1.34
+   mean = 1.24, stddev = 0.14
+
 
 === Sonar Pingtype Summary =====
 
@@ -47,9 +74,9 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   9   377   518    +45us[  +53us] +/-   16ms
+^* sr-bb-gw-das.ucsd.edu         2   9   377   430    +64us[  +51us] +/-   18ms
 
-Reference ID: 647C6401, Stratum=3, last offset=0.000007, RMS offset=0.000022
+Reference ID: 647C6401, Stratum=3, last offset=-0.000014, RMS offset=0.000078
 ------------------------------------------
 
 
@@ -59,7 +86,7 @@ Reference ID: 647C6401, Stratum=3, last offset=0.000007, RMS offset=0.000022
 
 
 ---------- uptime ------------
- 03:43:00 up 92 days, 11:55,  2 users,  load average: 0.45, 0.60, 0.65
+ 00:05:16 up 93 days,  8:18,  2 users,  load average: 0.01, 0.06, 0.11
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -76,15 +103,8 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      6 /home/adcp/log/DAS_while_logging.warn
-      84 /home/adcp/log/update_hbins_wh300.warn
-(2) proc sensor incompatibilities:
- - pos_inst (seapath_mru) not in sensor_cfg.py subdirs
- - pitch_inst (seapath_mru) not in sensor_cfg.py subdirs
- - roll_inst (seapath_mru) not in sensor_cfg.py subdirs
- - hcorr_inst (seapath_mru) not in sensor_cfg.py subdirs
-heading quality: hdg_inst_msgs
- - seapath_mru not in sensor_cfg.py subdirs
+      84 /home/adcp/log/DAS_while_logging.warn
+      1176 /home/adcp/log/update_hbins_wh300.warn
 
 Figures and files:
 
