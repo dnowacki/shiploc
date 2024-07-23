@@ -1,86 +1,31 @@
-2024/07/21 14:30:02
+2024/07/22 14:30:01
 currents01ws 6.5.0-28-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: WS24202_Kelble     ** is logging **
-
-   wh600 2024/07/20  06:01:17 to 2024/07/21  14:27:16  (2 min. ago)
-  os75bb 2024/07/20  06:04:17 to 2024/07/21  14:29:18  (0 min. ago)
-  os75nb 2024/07/20  06:04:17 to 2024/07/21  14:29:18  (0 min. ago)
-
-approximate lat, lon, depth:   25 43.88021 N   80 9.72577 W   depth=1
-
-link: http://www.google.com/maps/place/25%2043.88021N+80%209.72577W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
-
-ddrange: 201.5937058 to 202.5936865
-(2024/07/20 14:14:56 to 2024/07/21 14:14:55)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -1.63, max = -0.24
-   mean = -1.13, stddev = 0.42
-
-
-=== Sonar Pingtype Summary =====
-
-wh600: Triggering command not found
-wh600 BB:  on
-wh600 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   9   377   167   +338us[ +343us] +/-  951us
+^* 10.106.30.100                 1   9   377   710   +456us[ +454us] +/-  787us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=0.000006, RMS offset=0.000033
+Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000002, RMS offset=0.000008
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2024/07/21 14:24:20) ens = 300 sec, 76 pings, (3.95 sec/ping)
-
-wh600 recent ping statistics
-
-(2024/07/21 14:25:17) ens = 120 sec, 172 pings, (0.70 sec/ping)
-
-os75bb recent ping statistics
-
-(2024/07/21 14:24:20) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 13 days,  3:14,  1 user,  load average: 1.00, 0.52, 0.42
+ 14:30:02 up 14 days,  3:14,  1 user,  load average: 0.12, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -97,7 +42,10 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    31 EDAC (memory) errors in last 2 /var/log/syslog
+    36 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      4 /home/adcp/log/3dayplots_os75nb.warn
 
 Figures and files:
 
@@ -108,17 +56,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh600_lastens.png
-       0      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+     144      /home/adcp/www/figures/os75nb_lastens.png
+     144      /home/adcp/www/figures/ktprof_amp_lastens.png
+     144      /home/adcp/www/figures/os75bb_lastens.png
+     144      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       5      /home/adcp/www/figures/wh600_ddaycont.png
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+     144      /home/adcp/www/figures/os75bb_ddaycont.png
+     144      /home/adcp/www/figures/wh600_ddaycont.png
+     144      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
