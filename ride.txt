@@ -1,9 +1,12 @@
-2024/07/23 23:28:36
+2024/07/24 14:30:01
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: test-after-update02  *** not logging ***
+Current cruise: test-after-update02     ** is logging **
 
 
-no positions found from filelist seapath_mru/*.gps.rbin
+approximate lat, lon, depth:   32 42.43483 N  117 14.20297 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.43483N+117%2014.20297W
+not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
 
@@ -11,6 +14,59 @@ NOTE: This is the _primary_ computer
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath_mru")
+===========================
+------ seapath_mru statistics ------
+===========================
+seapath_mgc-seapath_mru statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 204.9787154 to 205.6040453
+(2024/07/23 23:29:21 to 2024/07/24 14:29:50)
+all seapath_mru messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   180 out of 180   (100%) were good
+statistics of good data:
+   mean N = 600, stddev N =  6.8
+   min  = -0.12, max = 0.13
+   mean = -0.02, stddev = 0.04
+
+===========================
+------ hemisphere statistics ------
+===========================
+seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 204.9787154 to 205.6040684
+(2024/07/23 23:29:21 to 2024/07/24 14:29:52)
+all hemisphere messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   180 out of 180   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.3
+   min  = -3.41, max = 5.53
+   mean = 1.44, stddev = 1.67
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
@@ -18,18 +74,23 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   7   377   112    +48us[  +49us] +/- 8588us
+^* sr-bb-gw-das.ucsd.edu         2  10   377   507    +34us[  +26us] +/-   22ms
 
-Reference ID: 647C6401, Stratum=3, last offset=0.000001, RMS offset=0.000222
+Reference ID: 647C6401, Stratum=3, last offset=-0.000008, RMS offset=0.000042
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/07/23 23:09:36) ens = 120 sec, 63 pings, (1.90 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 23:28:37 up 96 days,  7:41,  2 users,  load average: 0.51, 0.20, 0.18
+ 14:30:02 up 96 days, 22:42,  1 user,  load average: 0.73, 0.51, 0.72
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
