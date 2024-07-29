@@ -1,14 +1,14 @@
-2024/07/27 14:30:01
+2024/07/28 14:30:01
 currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: EN719     ** is logging **
 
-   wh300 2024/07/08  16:05:15 to 2024/07/27  14:29:13  (0 min. ago)
-  os75bb 2024/07/08  16:08:17 to 2024/07/27  14:28:13  (1 min. ago)
-  os75nb 2024/07/08  16:08:17 to 2024/07/27  14:28:13  (1 min. ago)
+   wh300 2024/07/08  16:05:15 to 2024/07/28  14:29:14  (1 min. ago)
+  os75bb 2024/07/08  16:08:17 to 2024/07/28  14:25:15  (4 min. ago)
+  os75nb 2024/07/08  16:08:17 to 2024/07/28  14:25:15  (4 min. ago)
 
-approximate lat, lon, depth:   40 7.37000 N   69 19.41230 W   depth=98
+approximate lat, lon, depth:   40 28.84357 N   70 44.44907 W   depth=76
 
-link: http://www.google.com/maps/place/40%207.37000N+69%2019.41230W
+link: http://www.google.com/maps/place/40%2028.84357N+70%2044.44907W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,39 +26,39 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 207.6004514 to 208.6004398
-(2024/07/26 14:24:39 to 2024/07/27 14:24:38)
+ddrange: 208.5980208 to 209.5980093
+(2024/07/27 14:21:09 to 2024/07/28 14:21:08)
 all abxtwo_b2 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   285 out of 285   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = 0.03, max = 0.59
-   mean = 0.29, stddev = 0.09
+   mean N = 301, stddev N =  0.2
+   min  = -1.68, max = 2.53
+   mean = -0.00, stddev = 0.57
 
 ===========================
 ------ abxtwo_b2_udp statistics ------
 ===========================
 gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 207.6004745 to 208.6004630
-(2024/07/26 14:24:41 to 2024/07/27 14:24:40)
+ddrange: 208.5980324 to 209.5980208
+(2024/07/27 14:21:10 to 2024/07/28 14:21:09)
 all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   285 out of 285   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.02, max = 0.57
-   mean = 0.29, stddev = 0.09
+   mean N = 301, stddev N =  0.2
+   min  = -1.53, max = 2.27
+   mean = -0.00, stddev = 0.56
 
 
 === Sonar Pingtype Summary =====
 
 wh300: Triggering command not found
 wh300 BB:  on
-wh300 BT:      off
+wh300 BT:  on
 
 os75: Triggering not used (CX0,0)
 os75 BB:  on
@@ -72,9 +72,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377    35    +14us[  +22us] +/- 1219us
+^* 192.168.1.8                   1   8   377   151    -24us[  -38us] +/- 1282us
 
-Reference ID: C0A80108, Stratum=2, last offset=0.000008, RMS offset=0.000033
+Reference ID: C0A80108, Stratum=2, last offset=-0.000014, RMS offset=0.000027
 ------------------------------------------
 
 
@@ -82,21 +82,21 @@ Reference ID: C0A80108, Stratum=2, last offset=0.000008, RMS offset=0.000033
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/07/27 14:23:13) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/07/28 14:20:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/07/27 14:27:13) ens = 120 sec, 94 pings, (1.28 sec/ping)
+(2024/07/28 14:27:13) ens = 120 sec, 56 pings, (2.14 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/07/27 14:23:13) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/07/28 14:20:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 177 days, 19:39,  1 user,  load average: 0.48, 0.61, 0.59
+ 14:30:03 up 178 days, 19:39,  1 user,  load average: 0.43, 0.52, 0.54
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -110,7 +110,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      4 /home/adcp/log/3dayplots_os75bb.warn
+      8 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
@@ -121,17 +127,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       1      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/os75bb_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
        0      /home/adcp/www/figures/wh300_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_ddaycont.png
-       1      /home/adcp/www/figures/os75bb_ddaycont.png
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
+       4      /home/adcp/www/figures/os75bb_ddaycont.png
+       3      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
