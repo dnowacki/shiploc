@@ -1,13 +1,13 @@
-2024/08/01 22:27:23
+2024/08/02 19:40:37
 oshkosh 6.8.0-31-generic (noble "Ubuntu 24.04 LTS")
 Current cruise: test24_04-04     ** is logging **
 
-   wh300 2024/08/01  19:54:51 to 2024/08/01  22:26:11  (1 min. ago)
-  os75nb 2024/08/01  19:57:53 to 2024/08/01  22:23:11  (4 min. ago)
+   wh300 2024/08/01  19:54:51 to 2024/08/02  19:40:11  (0 min. ago)
+  os75nb 2024/08/01  19:57:53 to 2024/08/02  19:38:11  (2 min. ago)
 
-approximate lat, lon, depth:   21 18.96233 N  157 52.61638 W   depth=-2
+approximate lat, lon, depth:   21 18.96226 N  157 52.61605 W   depth=-2
 
-link: http://www.google.com/maps/place/21%2018.96233N+157%2052.61638W
+link: http://www.google.com/maps/place/21%2018.96226N+157%2052.61605W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro2-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
 
-ddrange: 213.8283771 to 213.8730187
-(2024/08/01 19:52:52 to 2024/08/01 20:57:09)
-all posmv5 messages:  (100%)  were good  [using available QC]
+ddrange: 213.8283771 to 214.8149355
+(2024/08/01 19:52:52 to 2024/08/02 19:33:30)
+all posmv5 messages:  (97%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   11 out of 11   (100%) were good
+   268 out of 268   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.4
-   min  = -0.05, max = 0.23
-   mean = 0.06, stddev = 0.08
+   mean N = 601, stddev N =  0.2
+   min  = -0.18, max = 0.23
+   mean = 0.01, stddev = 0.07
 
 ===========================
 ------ seapath statistics ------
@@ -45,16 +45,16 @@ no good seapath data out of 0 (300sec) ensembles
 ===========================
 gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 213.8283771 to 213.8730534
-(2024/08/01 19:52:52 to 2024/08/01 20:57:12)
-all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
+ddrange: 213.8283771 to 214.8149991
+(2024/08/01 19:52:52 to 2024/08/02 19:33:36)
+all gyro1 messages:  (97%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   11 out of 11   (100%) were good
+   268 out of 268   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.4
-   min  = 0.12, max = 0.14
-   mean = 0.13, stddev = 0.01
+   mean N = 601, stddev N =  0.2
+   min  = 0.03, max = 0.19
+   mean = 0.12, stddev = 0.03
 
 
 === Sonar Pingtype Summary =====
@@ -75,17 +75,16 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ prod-ntp-3.ntp4.ps5.cano>     2   9   377   679  -9118us[-9118us] +/-  103ms
-^+ prod-ntp-5.ntp1.ps5.cano>     2  10   377   187    -12ms[  -12ms] +/-  112ms
-^+ prod-ntp-4.ntp4.ps5.cano>     2   9   377   439  -1190us[-1190us] +/-  108ms
-^+ alphyn.canonical.com          2   9   375   176  -3453us[-3453us] +/-   96ms
-^* time.cloudflare.com           3   9   377   20m    -13ms[  -15ms] +/-   61ms
-^+ s2-a.time.mci1.us.rozint>     4  10   377   433  -6391us[-6391us] +/-   68ms
-^+ jane.qotw.net                 2   8   377    55  -7580us[-7580us] +/-   96ms
-^+ sensei.ruselabs.com           2   9   377   695    -12ms[  -12ms] +/-   61ms
-^? aegean.rvtgt.uw.edu           0   9     0     -     +0ns[   +0ns] +/-    0ns
+^? 185.125.190.56                2  10     0   20h   +801us[ +801us] +/-   98ms
+^? 185.125.190.58                2  10     0   20h   -773us[-2388us] +/-  113ms
+^? 185.125.190.57                2  10     0   20h  -4452us[-6067us] +/-  105ms
+^? 91.189.91.157                 2  10     0   20h  -3221us[-4335us] +/-  132ms
+^? 162.159.200.1                 3  10     0   20h  -3671us[-5286us] +/-   67ms
+^? 23.150.41.123                 4  10     0   20h  -2790us[-3903us] +/-  107ms
+^? 72.14.183.39                  2  10     0   20h  +1195us[  +82us] +/-  137ms
+^? 45.33.53.84                   2  10     0   20h    -16ms[  -16ms] +/-   64ms
 
-Reference ID: A29FC801, Stratum=4, last offset=-0.002072, RMS offset=0.006707
+Reference ID: A29FC801, Stratum=4, last offset=-0.001615, RMS offset=0.005857
 ------------------------------------------
 
 
@@ -93,17 +92,17 @@ Reference ID: A29FC801, Stratum=4, last offset=-0.002072, RMS offset=0.006707
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2024/08/01 22:24:11) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/08/02 19:38:11) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75nb recent ping statistics
 
-os75nb recent ping statistics
+(2024/08/02 19:33:11) ens = 300 sec, 141 pings, (2.13 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 22:27:30 up  1:24,  3 users,  load average: 0.16, 0.19, 0.10
+ 19:40:38 up 22:37,  4 users,  load average: 0.17, 0.22, 0.22
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -127,22 +126,27 @@ ______________________
 
       75 /home/adcp/log/3dayplots_os75nb.warn
       97 /home/adcp/log/3dayplots_wh300.warn
-      2 /home/adcp/log/DAS_while_cruise.warn
       76 /home/adcp/log/DAS_while_logging.warn
+      79 /home/adcp/log/hcorrstats_gyro1.warn
+      6 /home/adcp/log/hcorrstats_gyro1.warn.2024-08-01
+      79 /home/adcp/log/hcorrstats_posmv5.warn
+      6 /home/adcp/log/hcorrstats_posmv5.warn.2024-08-01
       56 /home/adcp/log/lastensq_os75nb.warn
       376 /home/adcp/log/lastensq_wh300.warn
       45 /home/adcp/log/lastfewvec_os75nb.warn
       111 /home/adcp/log/lastfewvec_wh300.warn
-      236 /home/adcp/log/quick_os75nb.warn
-      798 /home/adcp/log/quick_wh300.warn
+      2832 /home/adcp/log/quick_os75nb.warn
+      464 /home/adcp/log/quick_os75nb.warn.2024-08-01
+      7092 /home/adcp/log/quick_wh300.warn
+      1350 /home/adcp/log/quick_wh300.warn.2024-08-01
 (3) rbin warnings:
  
-gps_cnav gps   4508    1.01  -2159.39     191.0       1     1     1     0     1
-posmv5 gps   9018    0.50  -2160.36     190.0       1     1     1     0     1
-posmv5 pmv   9017    0.50  -2159.86     190.0       1     1     1     0     1
-posmv5 hdg   9018    0.50  -2160.36     190.0       1     1     1     0     1
-gyro1 hdg  15028    0.30  -2160.46     189.9       1     1     1     0     1
-gyro2 hdg  15026    0.30  -2159.98     189.9       1     1     1     0     1
+gps_cnav gps  80896    1.01  -2159.39     191.0       1     1     1     0     1
+posmv5 gps 161794    0.50  -2160.36     190.0       1     1     1     0     1
+posmv5 pmv 161793    0.50  -2159.86     190.0       1     1     1     0     1
+posmv5 hdg 161794    0.50  -2160.36     190.0       1     1     1     0     1
+gyro1 hdg 269614    0.30  -2160.46     189.9       1     1     1     0     1
+gyro2 hdg 269594    0.30  -2159.98     189.9       1     1     1     0     1
 (4) proc sensor incompatibilities:
 heading quality: hdg_inst_msgs
  - seapath not in sensor_cfg.py subdirs
@@ -160,15 +164,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/wh300_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/wh300_ddaycont.png
-       4      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
