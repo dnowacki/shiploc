@@ -1,13 +1,13 @@
-2024/08/11 14:30:01
+2024/08/12 14:30:01
 currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: MGL2408     ** is logging **
+Current cruise: MGL2408_part2     ** is logging **
 
-  os75bb 2024/08/04  11:34:27 to 2024/08/11  11:59:27  (150 min. ago) 2.5 hrs
-  os75nb 2024/08/04  11:34:27 to 2024/08/11  11:59:27  (150 min. ago) 2.5 hrs
+  os75bb 2024/08/12  00:04:56 to 2024/08/12  14:24:58  (5 min. ago)
+  os75nb 2024/08/12  00:04:56 to 2024/08/12  14:24:58  (5 min. ago)
 
-approximate lat, lon, depth:   60 33.96544 N   29 15.64805 W   depth=1430
+approximate lat, lon, depth:   60 24.06579 N   32 16.52135 W   depth=2427
 
-link: http://www.google.com/maps/place/60%2033.96544N+29%2015.64805W
+link: http://www.google.com/maps/place/60%2024.06579N+32%2016.52135W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 222.4582118 to 223.4582033
-(2024/08/10 10:59:49 to 2024/08/11 10:59:49)
+ddrange: 224.0492292 to 224.6007613
+(2024/08/12 01:10:53 to 2024/08/12 14:25:06)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
+   158 out of 158   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.7
-   min  = 2.00, max = 2.90
-   mean = 2.41, stddev = 0.20
+   min  = 2.18, max = 2.80
+   mean = 2.44, stddev = 0.13
 
 ===========================
 ------ posmv statistics ------
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
 
-ddrange: 222.4582118 to 223.4582033
-(2024/08/10 10:59:49 to 2024/08/11 10:59:49)
+ddrange: 224.0492292 to 224.6007786
+(2024/08/12 01:10:53 to 2024/08/12 14:25:07)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
+   158 out of 158   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.7
-   min  = 2.19, max = 3.60
-   mean = 2.62, stddev = 0.23
+   mean N = 600, stddev N =  7.1
+   min  = 2.39, max = 3.04
+   mean = 2.65, stddev = 0.14
 
 
 === Sonar Pingtype Summary =====
@@ -67,10 +67,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   9   377   439    +18us[  +17us] +/-   65us
-^- _gateway                      4   6   377    25  +4299us[+4299us] +/-   98ms
+^* timeserve2.langseth.ldeo>     1  10   377   540    +26us[  +28us] +/-   64us
+^- _gateway                      4   6   377     2  -3601us[-3601us] +/-  104ms
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000001, RMS offset=0.000006
+Reference ID: C0A8030E, Stratum=2, last offset=0.000002, RMS offset=0.000006
 ------------------------------------------
 
 
@@ -78,17 +78,17 @@ Reference ID: C0A8030E, Stratum=2, last offset=-0.000001, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/08/11 11:54:27) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/08/12 14:19:58) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/08/11 11:54:27) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/08/12 14:19:58) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 7 days,  3:04,  1 user,  load average: 1.19, 0.41, 0.25
+ 14:30:02 up 8 days,  3:04,  1 user,  load average: 0.14, 0.21, 0.23
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -108,11 +108,27 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      2 /home/adcp/log/3dayplots_os75nb.warn
-      58 /home/adcp/log/DAS_while_logging.warn
-      66 /home/adcp/log/lastensq_os75bb.warn
-      66 /home/adcp/log/lastensq_os75nb.warn
-      19 /home/adcp/log/update_hbins_os75bb.warn
+      265 /home/adcp/log/3dayplots_os75bb.warn
+      252 /home/adcp/log/3dayplots_os75bb.warn.2024-08-11
+      288 /home/adcp/log/3dayplots_os75nb.warn
+      254 /home/adcp/log/3dayplots_os75nb.warn.2024-08-11
+      9 /home/adcp/log/DAS_while_cruise.warn
+      196 /home/adcp/log/DAS_while_logging.warn
+      511 /home/adcp/log/DAS_while_logging.warn.2024-08-11
+      138 /home/adcp/log/lastensq_os75bb.warn
+      673 /home/adcp/log/lastensq_os75bb.warn.2024-08-11
+      136 /home/adcp/log/lastensq_os75nb.warn
+      672 /home/adcp/log/lastensq_os75nb.warn.2024-08-11
+      126 /home/adcp/log/lastfewvec_os75bb.warn
+      189 /home/adcp/log/lastfewvec_os75bb.warn.2024-08-11
+      126 /home/adcp/log/lastfewvec_os75nb.warn
+      189 /home/adcp/log/lastfewvec_os75nb.warn.2024-08-11
+      298 /home/adcp/log/quick_os75bb.warn
+      441 /home/adcp/log/quick_os75bb.warn.2024-08-11
+      298 /home/adcp/log/quick_os75nb.warn
+      441 /home/adcp/log/quick_os75nb.warn.2024-08-11
+      90 /home/adcp/log/update_hbins_os75bb.warn
+      224 /home/adcp/log/update_hbins_os75bb.warn.2024-08-11
 
 Figures and files:
 
@@ -123,14 +139,14 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     149      /home/adcp/www/figures/os75bb_lastens.png
-     149      /home/adcp/www/figures/ktprof_amp_lastens.png
-     149      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/os75bb_lastens.png
+       4      /home/adcp/www/figures/ktprof_amp_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       5      /home/adcp/www/figures/os75bb_ddaycont.png
+       0      /home/adcp/www/figures/os75bb_ddaycont.png
        0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
