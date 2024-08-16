@@ -1,5 +1,5 @@
-2024/08/11 14:30:02
-peale3 5.4.0-110-generic (focal "Ubuntu 20.04.6 LTS")
+2024/08/15 19:43:57
+peale3 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -11,19 +11,24 @@ NOTE: This is the _primary_ computer
 
 
 
----------- ntpq -p ------------
-     remote           refid      st t when poll reach   delay   offset  jitter
-==============================================================================
- tick.nbp.usap.g .POOL.          16 p    -   64    0    0.000    0.000   0.000
-*tick.nbp.usap.g .GNSS.           1 u 1001 1024  377    0.279   -0.030   0.068
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? 2620:11d:300e:d100::66        0   8     0     -     +0ns[   +0ns] +/-    0ns
+^* NBP-MSDC-01-P.usap.gov        3   6   377    50    -26us[  -31us] +/-  161ms
+
+Reference ID: 9D848242, Stratum=4, last offset=-0.000005, RMS offset=0.000044
 ------------------------------------------
 
 
 
 
 
+
 ---------- uptime ------------
- 14:30:03 up 317 days, 22:20,  1 user,  load average: 0.18, 0.06, 0.01
+ 19:43:58 up 14 min,  3 users,  load average: 0.09, 0.10, 0.17
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_report/
@@ -38,7 +43,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_re
 Summary of warnings:
 ______________________
 
-(1) expected backup disk not found:
+(1) I/O warnings:
+     2 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     5 EDAC (memory) errors in last 2 /var/log/syslog
+(3) expected backup disk not found:
 
 --->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
 
@@ -52,17 +61,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  142931      /home/adcp/www/figures/os38nb_lastens.png
-  142931      /home/adcp/www/figures/os75bb_lastens.png
-  142931      /home/adcp/www/figures/ktprof_amp_lastens.png
-  142931      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  142931      /home/adcp/www/figures/os75bb_ddaycont.png
-  142931      /home/adcp/www/figures/os75nb_ddaycont.png
-  142931      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
