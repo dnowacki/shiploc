@@ -1,34 +1,123 @@
-2024/08/18 14:30:01
+2024/08/19 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: ar84-03  *** not logging ***
+Current cruise: ar84-03     ** is logging **
 
+   wh300 2024/08/19  10:49:48 to 2024/08/19  14:24:49  (5 min. ago)
+  os150nb 2024/08/19  10:49:48 to 2024/08/19  14:29:48  (0 min. ago)
+  os38nb 2024/08/19  10:49:48 to 2024/08/19  14:29:48  (0 min. ago)
 
-no positions found from filelist posmv/*.gps.rbin
+approximate lat, lon, depth:   63 57.13674 N   23 1.43098 W   depth=101
 
+link: http://www.google.com/maps/place/63%2057.13674N+23%201.43098W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ seapath_udp statistics ------
+===========================
+gyro-seapath_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 231.4477820 to 231.5942119
+(2024/08/19 10:44:48 to 2024/08/19 14:15:40)
+all seapath_udp messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   42 out of 42   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.5
+   min  = -2.07, max = 1.46
+   mean = -0.36, stddev = 0.93
+
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.014)
+
+ddrange: 231.4477820 to 231.5942235
+(2024/08/19 10:44:48 to 2024/08/19 14:15:41)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   42 out of 42   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -1.95, max = 1.46
+   mean = -0.33, stddev = 0.91
+
+===========================
+------ gyro2 statistics ------
+===========================
+gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 231.4477820 to 231.5942351
+(2024/08/19 10:44:48 to 2024/08/19 14:15:42)
+all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   42 out of 42   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -0.88, max = 2.59
+   mean = 1.41, stddev = 0.81
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   236   -418us[ -492us] +/-   12ms
+^* 192.147.41.12                 1  10   377   805   -481us[ -691us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=-0.000074, RMS offset=0.000154
+Reference ID: C093290C, Stratum=2, last offset=-0.000210, RMS offset=0.000444
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os38nb recent ping statistics
+
+(2024/08/19 14:19:48) ens = 300 sec, 100 pings, (3.00 sec/ping)
+
+os150nb recent ping statistics
+
+(2024/08/19 14:24:48) ens = 300 sec, 273 pings, (1.10 sec/ping)
+
+wh300 recent ping statistics
+
+(2024/08/19 14:19:48) ens = 300 sec, 187 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:07 up 42 days, 16:38,  2 users,  load average: 0.04, 0.01, 0.00
+ 14:30:07 up 43 days, 16:38,  2 users,  load average: 0.39, 0.28, 0.31
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -41,7 +130,19 @@ https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      76 /home/adcp/log/3dayplots_os150nb.warn
+      8 /home/adcp/log/3dayplots_wh300.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      15 /home/adcp/log/quick_os150nb.warn
+      29 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -52,10 +153,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
