@@ -1,14 +1,14 @@
-2024/08/24 14:30:01
+2024/08/25 14:30:02
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: km2414     ** is logging **
 
-   wh300 2024/08/22  17:12:17 to 2024/08/24  14:28:18  (1 min. ago)
-  os38bb 2024/08/22  17:15:17 to 2024/08/24  14:25:22  (4 min. ago)
-  os38nb 2024/08/22  17:15:17 to 2024/08/24  14:25:22  (4 min. ago)
+   wh300 2024/08/22  17:12:17 to 2024/08/25  14:28:18  (1 min. ago)
+  os38bb 2024/08/22  17:15:17 to 2024/08/25  14:25:19  (4 min. ago)
+  os38nb 2024/08/22  17:15:17 to 2024/08/25  14:25:19  (4 min. ago)
 
-approximate lat, lon, depth:   22 29.10204 N  158 38.86803 W   depth=4669
+approximate lat, lon, depth:   22 19.21654 N  158 33.18485 W   depth=4845
 
-link: http://www.google.com/maps/place/22%2029.10204N+158%2038.86803W
+link: http://www.google.com/maps/place/22%2019.21654N+158%2033.18485W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 235.6014805 to 236.6014696
-(2024/08/23 14:26:08 to 2024/08/24 14:26:07)
-all posmv messages:  (99%)  were good  [using available QC]
+ddrange: 236.6013539 to 237.6013431
+(2024/08/24 14:25:57 to 2024/08/25 14:25:56)
+all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.4
-   min  = -0.97, max = 1.73
-   mean = 0.38, stddev = 0.37
+   min  = -0.07, max = 1.17
+   mean = 0.32, stddev = 0.18
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2   8   377   132   +882ns[-4373ns] +/- 1050us
+^* kmroute.km                    2  10   377   375    +46us[  +43us] +/- 1456us
 
-Reference ID: 0A009601, Stratum=3, last offset=-0.000005, RMS offset=0.000037
+Reference ID: 0A009601, Stratum=3, last offset=-0.000003, RMS offset=0.000019
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A009601, Stratum=3, last offset=-0.000005, RMS offset=0.000037
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2024/08/24 14:20:22) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/08/25 14:20:19) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/08/24 14:26:17) ens = 120 sec, 149 pings, (0.81 sec/ping)
+(2024/08/25 14:26:18) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2024/08/24 14:20:22) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/08/25 14:20:19) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 7 days, 19:16,  1 user,  load average: 0.21, 0.58, 0.72
+ 14:30:03 up 8 days, 19:16,  1 user,  load average: 0.34, 0.62, 0.78
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -96,11 +96,9 @@ https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_q
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      2 /home/adcp/log/DAS_while_logging.warn
+      10 /home/adcp/log/3dayplots_os38bb.warn
 
 Figures and files:
 
@@ -111,8 +109,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os38bb_lastens.png
        4      /home/adcp/www/figures/os38nb_lastens.png
+       3      /home/adcp/www/figures/os38bb_lastens.png
        1      /home/adcp/www/figures/wh300_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
