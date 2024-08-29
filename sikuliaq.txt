@@ -1,98 +1,32 @@
-2024/08/27 14:30:01
-currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: SKQ202412S     ** is logging **
-
-   wh300 2024/08/06  04:50:45 to 2024/08/27  14:29:26  (0 min. ago)
-
-approximate lat, lon, depth:   64 26.40978 N  165 41.66978 W   depth=15
-
-link: http://www.google.com/maps/place/64%2026.40978N+165%2041.66978W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2024/08/28 14:30:02
+currents01skq 6.5.0-17-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- seapath statistics ------
-===========================
-mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 238.5990209 to 239.5990094
-(2024/08/26 14:22:35 to 2024/08/27 14:22:34)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.20, max = 0.12
-   mean = -0.01, stddev = 0.07
-
-===========================
------- mgc2 statistics ------
-===========================
-mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 238.5990441 to 239.5990325
-(2024/08/26 14:22:37 to 2024/08/27 14:22:36)
-all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = 0.04, max = 0.13
-   mean = 0.10, stddev = 0.02
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering enabled  (CX1,3)
-os75 BB:       off
-os75 NB:       off
-os75 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:       off
-os38 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1  10   377   163  +9559ns[  +11us] +/-  138us
-^* 10.1.0.6                      1  10   377    50  -2857ns[-1726ns] +/-  126us
+^* 10.1.0.5                      1   9   377   407  +2621ns[-6682ns] +/-  100us
+^+ 10.1.0.6                      1   7   377    73  +8152ns[+8152ns] +/-   88us
 
-Reference ID: 0A010006, Stratum=2, last offset=0.000001, RMS offset=0.000012
+Reference ID: 0A010005, Stratum=2, last offset=-0.000009, RMS offset=0.000011
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2024/08/27 14:27:27) ens = 120 sec, 115 pings, (1.04 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 35 days, 21:00,  1 user,  load average: 0.18, 0.24, 0.30
+ 14:30:03 up 58 days, 19:14,  1 user,  load average: 0.05, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -104,13 +38,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      2 /home/adcp/log/3dayplots_wh300.warn
-      4 /home/adcp/log/3dayplots_wh300.warn.2024-08-26
 
 Figures and files:
 
@@ -121,15 +49,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   12502      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   12502      /home/adcp/www/figures/os75nb_ddaycont.png
-       2      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 

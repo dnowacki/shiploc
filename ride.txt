@@ -1,14 +1,14 @@
-2024/08/27 14:30:01
+2024/08/28 14:30:01
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: SR2414  *** not logging ***
 
-   wh300 2024/08/16  17:30:01 to 2024/08/21  20:36:36  (8273 min. ago)  5.7 days
-  os150nb 2024/08/16  17:33:01 to 2024/08/21  20:33:37  (8276 min. ago)  5.7 days
-  os38nb 2024/08/16  17:33:00 to 2024/08/21  20:33:39  (8276 min. ago)  5.7 days
+   wh300 2024/08/16  17:30:01 to 2024/08/27  22:49:58  (940 min. ago) 15.7 hrs
+  os150nb 2024/08/16  17:33:01 to 2024/08/27  22:47:58  (942 min. ago) 15.7 hrs
+  os38nb 2024/08/16  17:33:00 to 2024/08/27  22:48:01  (942 min. ago) 15.7 hrs
 
-approximate lat, lon, depth:   34 17.39868 N  119 59.94935 W   depth=571
+approximate lat, lon, depth:   40 54.60074 N  124 20.21771 W   depth=99
 
-link: http://www.google.com/maps/place/34%2017.39868N+119%2059.94935W
+link: http://www.google.com/maps/place/40%2054.60074N+124%2020.21771W
 not using zmq publishers, position is from serial GPS
 
 active status is found here: https://currents.soest.hawaii.edu/uhdas_fromships/CONFIGURATION/active_status_yml.txt
@@ -23,10 +23,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ptp01-das.ucsd.edu         1  10   377   962    +43us[  +85us] +/-  618us
-^- sr-bb-gw-das.ucsd.edu         2  10   377   684    -19us[  -19us] +/-   10ms
+^* sr-ptp01-das.ucsd.edu         1  10    77   420   -113us[ -136us] +/-  736us
+^- sr-bb-gw-das.ucsd.edu         2  10   377   461   -296us[ -319us] +/-   10ms
 
-Reference ID: 647C6421, Stratum=2, last offset=0.000042, RMS offset=0.000030
+Reference ID: 647C6421, Stratum=2, last offset=-0.000023, RMS offset=0.000039
 ------------------------------------------
 
 
@@ -35,7 +35,7 @@ Reference ID: 647C6421, Stratum=2, last offset=0.000042, RMS offset=0.000030
 
 
 ---------- uptime ------------
- 14:30:02 up 12 days, 48 min,  1 user,  load average: 0.05, 0.07, 0.03
+ 14:30:02 up 13 days, 48 min,  1 user,  load average: 0.03, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -47,7 +47,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      36 /home/adcp/log/3dayplots_os150nb.warn
+      36 /home/adcp/log/3dayplots_os38nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -58,17 +67,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    8271      /home/adcp/www/figures/os38nb_lastens.png
-    8271      /home/adcp/www/figures/os150nb_lastens.png
-    8271      /home/adcp/www/figures/ktprof_amp_lastens.png
-    8271      /home/adcp/www/figures/wh300_lastens.png
+     939      /home/adcp/www/figures/os38nb_lastens.png
+     939      /home/adcp/www/figures/os150nb_lastens.png
+     939      /home/adcp/www/figures/ktprof_amp_lastens.png
+     939      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    8271      /home/adcp/www/figures/os150nb_ddaycont.png
-    8271      /home/adcp/www/figures/wh300_ddaycont.png
-    8271      /home/adcp/www/figures/os38nb_ddaycont.png
+     939      /home/adcp/www/figures/os150nb_ddaycont.png
+     939      /home/adcp/www/figures/wh300_ddaycont.png
+     939      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 

@@ -1,31 +1,97 @@
-2024/08/27 14:30:01
-atcurrents04 5.15.0-107-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/08/28 14:30:01
+atcurrents03 5.15.0-78-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: at50-29     ** is logging **
+
+   wh300 2024/08/08  19:41:07 to 2024/08/28  14:28:27  (1 min. ago)
+  os75nb 2024/08/08  19:44:07 to 2024/08/28  14:25:29  (4 min. ago)
+
+approximate lat, lon, depth:   44 57.48110 N  126 48.38834 W   depth=2858
+
+link: http://www.google.com/maps/place/44%2057.48110N+126%2048.38834W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ hydrins2 statistics ------
+===========================
+hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 239.6669953 to 240.5943448
+(2024/08/27 16:00:28 to 2024/08/28 14:15:51)
+all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   267 out of 267   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -0.04, max = -0.02
+   mean = -0.03, stddev = 0.01
+
+===========================
+------ seapath statistics ------
+===========================
+hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 239.6669953 to 240.5943679
+(2024/08/27 16:00:28 to 2024/08/28 14:15:53)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   267 out of 267   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.32, max = -0.17
+   mean = -0.25, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   9   377    75   +446ns[ -892ns] +/-   27us
+^* timeserver.atlantis.whoi>     1   6   377    14  +4822ns[+5275ns] +/-   30us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000003
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/08/28 14:26:27) ens = 120 sec, 89 pings, (1.35 sec/ping)
+
+os75nb recent ping statistics
+
+(2024/08/28 14:20:27) ens = 300 sec, 132 pings, (2.27 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 52 days, 19:41,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 43 days, 21:30,  1 user,  load average: 0.35, 0.96, 1.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -40,8 +106,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-    15 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      44 /home/adcp/log/3dayplots_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -52,15 +121,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   99063      /home/adcp/www/figures/wh300_lastens.png
-   99063      /home/adcp/www/figures/ktprof_amp_lastens.png
-   99063      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   99063      /home/adcp/www/figures/wh300_ddaycont.png
-   99063      /home/adcp/www/figures/os75nb_ddaycont.png
+       4      /home/adcp/www/figures/wh300_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
