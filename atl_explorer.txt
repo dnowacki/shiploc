@@ -1,14 +1,14 @@
-2024/08/28 14:30:01
+2024/08/29 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: Pierside_PostAE2418b     ** is logging **
 
-   sv300 2024/08/17  14:39:03 to 2024/08/28  14:29:01  (2 min. ago)
-  os75bb 2024/08/17  14:42:04 to 2024/08/28  14:27:02  (3 min. ago)
-  os75nb 2024/08/17  14:42:04 to 2024/08/28  14:27:02  (3 min. ago)
+   sv300 2024/08/17  14:39:03 to 2024/08/29  14:29:01  (2 min. ago)
+  os75bb 2024/08/17  14:42:04 to 2024/08/29  14:26:59  (4 min. ago)
+  os75nb 2024/08/17  14:42:04 to 2024/08/29  14:26:59  (4 min. ago)
 
-approximate lat, lon, depth:   32 22.20243 N   64 41.75043 W   depth=-6
+approximate lat, lon, depth:   32 22.20268 N   64 41.75053 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2022.20243N+64%2041.75043W
+link: http://www.google.com/maps/place/32%2022.20268N+64%2041.75053W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,32 +26,32 @@ Database time ranges:
 ===========================
 jrc_stbd-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 239.5959606 to 240.5959491
-(2024/08/27 14:18:11 to 2024/08/28 14:18:10)
+ddrange: 239.9918056 to 240.9917940
+(2024/08/27 23:48:12 to 2024/08/28 23:48:11)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -3.17, max = -0.96
-   mean = -2.26, stddev = 0.36
+   mean N = 301, stddev N =  0.3
+   min  = -3.17, max = -1.09
+   mean = -2.29, stddev = 0.36
 
 ===========================
 ------ jrc_port statistics ------
 ===========================
 jrc_stbd-jrc_port statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 239.5959838 to 240.5959722
-(2024/08/27 14:18:13 to 2024/08/28 14:18:12)
+ddrange: 239.9918287 to 240.9918171
+(2024/08/27 23:48:14 to 2024/08/28 23:48:13)
 all jrc_port messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -3.80, max = 0.10
-   mean = -1.89, stddev = 0.73
+   min  = -3.70, max = 0.10
+   mean = -1.91, stddev = 0.72
 
 
 === Sonar Pingtype Summary =====
@@ -73,9 +73,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377     1    +46us[  +45us] +/-   86us
+^* 192.168.51.9                  1   6   377    17    +41us[  +41us] +/-   81us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000005
+Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000006
 ------------------------------------------
 
 
@@ -83,21 +83,21 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000005
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/08/28 14:21:58) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2024/08/29 14:22:00) ens = 300 sec, 77 pings, (3.90 sec/ping)
 
 sv300 recent ping statistics
 
-(2024/08/28 14:27:02) ens = 120 sec, 137 pings, (0.88 sec/ping)
+(2024/08/29 14:27:01) ens = 120 sec, 136 pings, (0.88 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/08/28 14:21:58) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2024/08/29 14:22:00) ens = 300 sec, 77 pings, (3.90 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 15 days, 19:35,  1 user,  load average: 0.15, 0.38, 0.48
+ 14:30:52 up 16 days, 19:35,  1 user,  load average: 0.19, 0.38, 0.46
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -112,12 +112,19 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
+(1) EDAC memory warnings:
+     6 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
 
+      522 /home/adcp/log/hcorrstats_abxtwo.warn
+      522 /home/adcp/log/hcorrstats_jrc_port.warn
+      73 /home/adcp/log/lastensq_os75bb.warn
+      72 /home/adcp/log/lastensq_os75nb.warn
+      181 /home/adcp/log/lastensq_sv300.warn
       174 /home/adcp/log/quick_os75bb.warn
-      288 /home/adcp/log/quick_os75bb.warn.2024-08-27
+      288 /home/adcp/log/quick_os75bb.warn.2024-08-28
       174 /home/adcp/log/quick_os75nb.warn
-      288 /home/adcp/log/quick_os75nb.warn.2024-08-27
+      288 /home/adcp/log/quick_os75nb.warn.2024-08-28
 
 Figures and files:
 
