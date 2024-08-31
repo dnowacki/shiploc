@@ -1,16 +1,7 @@
-2024/08/29 14:30:01
+2024/08/30 14:30:02
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: BH24-08_Werne  *** not logging ***
-
- sv500 -- no data yet
-  os150bb 2024/08/25  23:32:56 to 2024/08/29  14:17:55  (12 min. ago)
-  os150nb 2024/08/25  23:32:56 to 2024/08/29  14:12:56  (17 min. ago)
-
-approximate lat, lon, depth:   41 40.37194 N   82 49.61088 W   depth=-165
-
-link: http://www.google.com/maps/place/41%2040.37194N+82%2049.61088W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -23,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.14                1   6   377     3    +20us[  +20us] +/-   56us
+^* 192.168.100.14                1   6   377    38    +20us[  +20us] +/-   61us
 
-Reference ID: C0A8640E, Stratum=2, last offset=0.000000, RMS offset=0.000003
+Reference ID: C0A8640E, Stratum=2, last offset=-0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
@@ -34,7 +25,7 @@ Reference ID: C0A8640E, Stratum=2, last offset=0.000000, RMS offset=0.000003
 
 
 ---------- uptime ------------
- 14:30:02 up 147 days, 18:45,  1 user,  load average: 0.10, 0.07, 0.15
+ 14:30:03 up 148 days, 18:45,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -47,24 +38,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/posmv_q
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      4 /home/adcp/log/3dayplots_os150bb.warn
-      2064 /home/adcp/log/3dayplots_sv500.warn
-      3456 /home/adcp/log/3dayplots_sv500.warn.2024-08-28
-      3110 /home/adcp/log/DAS_while_logging.warn
-      5217 /home/adcp/log/DAS_while_logging.warn.2024-08-28
-      399 /home/adcp/log/grab_pings_sv500.warn
-      672 /home/adcp/log/grab_pings_sv500.warn.2024-08-28
-      15758 /home/adcp/log/lastensq_sv500.warn
-      26421 /home/adcp/log/lastensq_sv500.warn.2024-08-28
-      4878 /home/adcp/log/lastfewvec_sv500.warn
-      8181 /home/adcp/log/lastfewvec_sv500.warn.2024-08-28
-      5962 /home/adcp/log/quick_sv500.warn
-      9999 /home/adcp/log/quick_sv500.warn.2024-08-28
 
 Figures and files:
 
@@ -75,15 +49,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-      11      /home/adcp/www/figures/os150nb_lastens.png
-      11      /home/adcp/www/figures/ktprof_amp_lastens.png
-      11      /home/adcp/www/figures/os150bb_lastens.png
+    1451      /home/adcp/www/figures/os150nb_lastens.png
+    1451      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1451      /home/adcp/www/figures/os150bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-      11      /home/adcp/www/figures/os150nb_ddaycont.png
-      11      /home/adcp/www/figures/os150bb_ddaycont.png
+    1451      /home/adcp/www/figures/os150nb_ddaycont.png
+    1451      /home/adcp/www/figures/os150bb_ddaycont.png
 
 
 
