@@ -1,7 +1,16 @@
-2024/09/03 14:30:01
-currents06sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/09/04 14:30:01
+currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: SR2414  *** not logging ***
+
+   wh300 2024/08/16  17:30:01 to 2024/08/30  12:43:14  (7306 min. ago)  5.1 days
+  os150nb 2024/08/16  17:33:01 to 2024/08/30  12:42:14  (7307 min. ago)  5.1 days
+  os38nb 2024/08/16  17:33:00 to 2024/08/30  12:42:16  (7307 min. ago)  5.1 days
+
+approximate lat, lon, depth:   40 53.90655 N  124 18.37640 W   depth=79
+
+link: http://www.google.com/maps/place/40%2053.90655N+124%2018.37640W
+not using zmq publishers, position is from serial GPS
+
 active status is found here: https://currents.soest.hawaii.edu/uhdas_fromships/CONFIGURATION/active_status_yml.txt
 
 
@@ -14,10 +23,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? sr-ptp01-das.ucsd.edu         1  10     0    5d    -63ms[ +106us] +/- 7492us
-^* sr-bb-gw-das.ucsd.edu         2   9   377   481    +30us[  +86us] +/-   30ms
+^? sr-ptp01-das.ucsd.edu         1  10     0    6d  -6450us[  +38us] +/-  674us
+^* sr-bb-gw-das.ucsd.edu         2   9   377   262  -7753ns[  -21us] +/- 7248us
 
-Reference ID: 647C6401, Stratum=3, last offset=0.000056, RMS offset=0.000049
+Reference ID: 647C6401, Stratum=3, last offset=-0.000014, RMS offset=0.000045
 ------------------------------------------
 
 
@@ -26,7 +35,7 @@ Reference ID: 647C6401, Stratum=3, last offset=0.000056, RMS offset=0.000049
 
 
 ---------- uptime ------------
- 14:30:01 up 41 days, 14:04,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 20 days, 48 min,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -49,10 +58,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    7305      /home/adcp/www/figures/os38nb_lastens.png
+    7305      /home/adcp/www/figures/os150nb_lastens.png
+    7305      /home/adcp/www/figures/ktprof_amp_lastens.png
+    7305      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    7305      /home/adcp/www/figures/os150nb_ddaycont.png
+    7305      /home/adcp/www/figures/wh300_ddaycont.png
+    7305      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 

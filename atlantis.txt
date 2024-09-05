@@ -1,15 +1,7 @@
-2024/09/03 14:30:01
-atcurrents03 5.15.0-78-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: at50-29  *** not logging ***
-
-   wh300 2024/08/08  19:41:07 to 2024/09/01  18:22:26  (2647 min. ago)  1.8 days
-  os75nb 2024/08/08  19:44:07 to 2024/09/01  18:20:28  (2649 min. ago)  1.8 days
-
-approximate lat, lon, depth:   45 57.31915 N  130 0.50321 W   depth=1528
-
-link: http://www.google.com/maps/place/45%2057.31915N+130%200.50321W
-not using zmq publishers, position is from serial GPS
-
+2024/09/04 14:30:01
+atcurrents04 5.15.0-107-generic (jammy "Ubuntu 22.04.4 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -22,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    63    -44ns[ -333ns] +/-   27us
+^* timeserver.atlantis.whoi>     1  10   377   878  +2739ns[+3444ns] +/-   28us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000000
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000001
 ------------------------------------------
 
 
@@ -33,7 +25,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000000
 
 
 ---------- uptime ------------
- 14:30:02 up 49 days, 21:30,  1 user,  load average: 0.01, 0.02, 0.05
+ 14:30:02 up 60 days, 19:41,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -45,7 +37,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+    15 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -56,15 +52,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2647      /home/adcp/www/figures/wh300_lastens.png
-    2647      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2647      /home/adcp/www/figures/os75nb_lastens.png
+  110583      /home/adcp/www/figures/wh300_lastens.png
+  110583      /home/adcp/www/figures/ktprof_amp_lastens.png
+  110583      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2647      /home/adcp/www/figures/wh300_ddaycont.png
-    2647      /home/adcp/www/figures/os75nb_ddaycont.png
+  110583      /home/adcp/www/figures/wh300_ddaycont.png
+  110583      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
