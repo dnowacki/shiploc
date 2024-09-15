@@ -1,0 +1,143 @@
+2024/09/14 14:30:01
+currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: SR2415     ** is logging **
+
+   wh300 2024/09/07  17:10:30 to 2024/09/14  14:28:30  (1 min. ago)
+  os150nb 2024/09/07  17:13:30 to 2024/09/14  14:28:29  (1 min. ago)
+  os38nb 2024/09/07  17:13:33 to 2024/09/14  14:28:29  (1 min. ago)
+
+approximate lat, lon, depth:   44 16.58670 N  126 18.95957 W   depth=2918
+
+link: http://www.google.com/maps/place/44%2016.58670N+126%2018.95957W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+active status is found here: https://currents.soest.hawaii.edu/uhdas_fromships/CONFIGURATION/active_status_yml.txt
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "seapath_mru")
+===========================
+------ seapath_mru statistics ------
+===========================
+seapath_mgc-seapath_mru statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 256.6001679 to 257.6001622
+(2024/09/13 14:24:15 to 2024/09/14 14:24:14)
+all seapath_mru messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.2
+   min  = -0.13, max = 0.10
+   mean = -0.03, stddev = 0.04
+
+===========================
+------ hemisphere statistics ------
+===========================
+seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 256.6001911 to 257.6001853
+(2024/09/13 14:24:17 to 2024/09/14 14:24:16)
+all hemisphere messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.2
+   min  = -5.71, max = 5.68
+   mean = 1.29, stddev = 1.83
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? sr-ptp01-das.ucsd.edu         1  10     0   16d   -233ms[  +38us] +/-  674us
+^* sr-bb-gw-das.ucsd.edu         2  10   377   270    +14us[  +18us] +/- 5912us
+
+Reference ID: 647C6401, Stratum=3, last offset=0.000003, RMS offset=0.000028
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/09/14 14:26:30) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os150nb recent ping statistics
+
+(2024/09/14 14:23:30) ens = 300 sec, 273 pings, (1.10 sec/ping)
+
+os38nb recent ping statistics
+
+(2024/09/14 14:23:29) ens = 300 sec, 100 pings, (3.00 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:02 up 30 days, 48 min,  1 user,  load average: 0.69, 0.60, 0.56
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
+
+
+
+
+
+
+
+
+
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os38nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os38nb_ddaycont.png
+
+
+
+local_status_mailto:
+
