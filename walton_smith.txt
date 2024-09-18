@@ -1,14 +1,14 @@
-2024/09/16 14:30:01
+2024/09/17 19:48:13
 currents01ws 6.5.0-28-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: WS24258_Kelble     ** is logging **
 
-   wh600 2024/09/14  09:29:48 to 2024/09/16  14:29:48  (0 min. ago)
-  os75bb 2024/09/14  09:32:49 to 2024/09/16  14:27:50  (2 min. ago)
-  os75nb 2024/09/14  09:32:49 to 2024/09/16  14:27:50  (2 min. ago)
+   wh600 2024/09/14  09:29:48 to 2024/09/17  19:47:48  (0 min. ago)
+  os75bb 2024/09/14  09:32:49 to 2024/09/17  19:47:48  (0 min. ago)
+  os75nb 2024/09/14  09:32:49 to 2024/09/17  19:42:50  (5 min. ago)
 
-approximate lat, lon, depth:   26 34.79481 N   82 29.71567 W   depth=19
+approximate lat, lon, depth:   27 32.06194 N   82 52.23574 W   depth=12
 
-link: http://www.google.com/maps/place/26%2034.79481N+82%2029.71567W
+link: http://www.google.com/maps/place/27%2032.06194N+82%2052.23574W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
 
-ddrange: 258.6034834 to 259.6034630
-(2024/09/15 14:29:01 to 2024/09/16 14:28:59)
-all posmv messages:  (99%)  were good  [using available QC]
+ddrange: 259.8218921 to 260.8218720
+(2024/09/16 19:43:31 to 2024/09/17 19:43:30)
+all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -1.89, max = -0.28
-   mean = -0.85, stddev = 0.35
+   min  = -1.84, max = -0.51
+   mean = -1.12, stddev = 0.35
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   8   377   110  -1555ns[ +685ns] +/-  582us
+^* 10.106.30.100                 1   7   377    35    +39us[  +40us] +/-  343us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=0.000002, RMS offset=0.000026
+Reference ID: 0A6A1E64, Stratum=2, last offset=0.000001, RMS offset=0.000004
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A6A1E64, Stratum=2, last offset=0.000002, RMS offset=0.000026
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/09/16 14:22:48) ens = 300 sec, 75 pings, (4.00 sec/ping)
+(2024/09/17 19:37:49) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 wh600 recent ping statistics
 
-(2024/09/16 14:25:48) ens = 120 sec, 171 pings, (0.70 sec/ping)
+(2024/09/17 19:45:48) ens = 120 sec, 172 pings, (0.70 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/09/16 14:22:48) ens = 300 sec, 75 pings, (4.00 sec/ping)
+(2024/09/17 19:37:49) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 2 days, 23:54,  1 user,  load average: 0.85, 0.62, 0.47
+ 19:48:14 up 4 days,  5:13,  2 users,  load average: 0.83, 0.45, 0.40
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -98,6 +98,9 @@ ______________________
 
 (1) EDAC memory warnings:
     12 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      2 /home/adcp/log/3dayplots_os75bb.warn
 
 Figures and files:
 
@@ -108,17 +111,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       1      /home/adcp/www/figures/os75nb_lastens.png
+       5      /home/adcp/www/figures/os75nb_lastens.png
        0      /home/adcp/www/figures/wh600_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh600_ddaycont.png
-       1      /home/adcp/www/figures/os75bb_ddaycont.png
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       5      /home/adcp/www/figures/os75bb_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/wh600_ddaycont.png
 
 
 
