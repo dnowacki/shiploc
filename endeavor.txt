@@ -1,31 +1,97 @@
-2024/09/18 14:30:01
-currents04en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/09/19 14:30:01
+currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: EN721     ** is logging **
+
+   wh300 2024/09/18  14:34:23 to 2024/09/19  14:28:22  (1 min. ago)
+  os75nb 2024/09/18  14:37:26 to 2024/09/19  14:27:24  (2 min. ago)
+
+approximate lat, lon, depth:   41 25.32739 N   67 13.89294 W   depth=44
+
+link: http://www.google.com/maps/place/41%2025.32739N+67%2013.89294W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo_b2_udp")
+===========================
+------ abxtwo_b2 statistics ------
+===========================
+gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 261.6058218 to 262.5956713
+(2024/09/18 14:32:23 to 2024/09/19 14:17:46)
+all abxtwo_b2 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   285 out of 285   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -1.43, max = 1.39
+   mean = -0.15, stddev = 0.79
+
+===========================
+------ abxtwo_b2_udp statistics ------
+===========================
+gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 261.6058218 to 262.5956944
+(2024/09/18 14:32:23 to 2024/09/19 14:17:48)
+all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   285 out of 285   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -1.43, max = 1.41
+   mean = -0.16, stddev = 0.79
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:  on
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   8   377    32    +58us[  +64us] +/- 1263us
+^* 192.168.1.8                   1   8   377    52    +30us[  +28us] +/- 1324us
 
-Reference ID: C0A80108, Stratum=2, last offset=0.000007, RMS offset=0.000021
+Reference ID: C0A80108, Stratum=2, last offset=-0.000002, RMS offset=0.000029
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2024/09/19 14:22:24) ens = 300 sec, 74 pings, (4.05 sec/ping)
+
+wh300 recent ping statistics
+
+(2024/09/19 14:26:23) ens = 120 sec, 56 pings, (2.14 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:13 up 19 days,  1:42,  1 user,  load average: 0.00, 0.01, 0.00
+ 14:30:02 up 20 days,  1:42,  1 user,  load average: 0.07, 0.21, 0.25
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -39,7 +105,18 @@ https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/DAS_while_logging.warn
+      75 /home/adcp/log/lastensq_os75nb.warn
+      186 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_os75nb.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -50,10 +127,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
