@@ -1,8 +1,8 @@
-2024/09/24 14:30:01
-currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2024/09/25 14:30:01
+currents01hs 6.5.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-NOTE: This is the _spare_ computer
+NOTE: This is the _primary_ computer
 
 
 
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.20.245                1   7   377    67    -10us[  -19us] +/- 1143us
+^* 192.168.20.245                1   7   377   116    +21us[  +24us] +/- 1273us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000009, RMS offset=0.000007
+Reference ID: C0A814F5, Stratum=2, last offset=0.000002, RMS offset=0.000113
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: C0A814F5, Stratum=2, last offset=-0.000009, RMS offset=0.000007
 
 
 ---------- uptime ------------
- 14:30:03 up  2:53,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 1 day,  2:52,  1 user,  load average: 0.16, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -42,10 +42,7 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      2 /home/adcp/log/web_speedlog.warn
+     7 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -56,13 +53,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   39814      /home/adcp/www/figures/ktprof_amp_lastens.png
-   39814      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   39814      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
