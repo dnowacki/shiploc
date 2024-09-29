@@ -1,13 +1,14 @@
-2024/09/27 14:30:01
+2024/09/28 14:30:01
 currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: SKQ202414T     ** is logging **
 
-   wh300 2024/09/20  16:19:57 to 2024/09/27  14:28:04  (2 min. ago)
-  os75nb 2024/09/20  16:22:57 to 2024/09/27  14:26:05  (4 min. ago)
+   wh300 2024/09/20  16:19:57 to 2024/09/28  14:28:04  (2 min. ago)
+  os75nb 2024/09/20  16:22:57 to 2024/09/28  14:26:04  (4 min. ago)
+  os38nb 2024/09/28  13:44:41 to 2024/09/28  14:24:41  (5 min. ago)
 
-approximate lat, lon, depth:   50 11.72012 N  138 41.12073 W   depth=3853
+approximate lat, lon, depth:   48 16.89580 N  133 16.67003 W   depth=2277
 
-link: http://www.google.com/maps/place/50%2011.72012N+138%2041.12073W
+link: http://www.google.com/maps/place/48%2016.89580N+133%2016.67003W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +26,32 @@ NOTE: This is the _primary_ computer
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 269.5948659 to 270.5948543
-(2024/09/26 14:16:36 to 2024/09/27 14:16:35)
+ddrange: 270.6007571 to 271.6007455
+(2024/09/27 14:25:05 to 2024/09/28 14:25:04)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.26, max = -0.18
-   mean = -0.22, stddev = 0.02
+   min  = -0.24, max = -0.09
+   mean = -0.16, stddev = 0.04
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 269.5948890 to 270.5948774
-(2024/09/26 14:16:38 to 2024/09/27 14:16:37)
+ddrange: 270.6007686 to 271.6007571
+(2024/09/27 14:25:06 to 2024/09/28 14:25:05)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.4
-   min  = -0.06, max = -0.00
-   mean = -0.03, stddev = 0.01
+   min  = -0.03, max = 0.06
+   mean = 0.02, stddev = 0.03
 
 
 === Sonar Pingtype Summary =====
@@ -66,7 +67,7 @@ os75 BT:      off
 
 os38: Triggering not used (CX0,0)
 os38 BB:       off
-os38 NB:       off
+os38 NB:  on
 os38 BT:      off
 
 ===========================
@@ -76,10 +77,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.1.0.5                      1  10   377   657    -31us[  -87us] +/-  130us
-^+ 10.1.0.6                      1  10   377   434    -70us[  -70us] +/-  102us
+^* 10.1.0.5                      1  10   377   856    +11us[  -60us] +/-  133us
+^+ 10.1.0.6                      1  10   377   177  -8438ns[-8438ns] +/-  124us
 
-Reference ID: 0A010005, Stratum=2, last offset=-0.000056, RMS offset=0.000021
+Reference ID: 0A010005, Stratum=2, last offset=-0.000070, RMS offset=0.000046
 ------------------------------------------
 
 
@@ -87,17 +88,21 @@ Reference ID: 0A010005, Stratum=2, last offset=-0.000056, RMS offset=0.000021
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/09/27 14:21:05) ens = 300 sec, 132 pings, (2.27 sec/ping)
+(2024/09/28 14:21:06) ens = 300 sec, 133 pings, (2.26 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/09/27 14:26:04) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/09/28 14:26:04) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os38nb recent ping statistics
+
+(2024/09/28 14:19:41) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 66 days, 21:00,  1 user,  load average: 0.11, 0.25, 0.37
+ 14:30:02 up 67 days, 21:00,  1 user,  load average: 0.77, 0.93, 0.75
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -114,7 +119,9 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      18 /home/adcp/log/DAS_while_logging.warn
+      660 /home/adcp/log/lastensq_os38nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      6 /home/adcp/log/quick_os38nb.warn
 
 Figures and files:
 
@@ -126,14 +133,16 @@ Gyro logging and backup:
 Checking updating of 5-minute plots:
 age (minutes)          filename
        3      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
        1      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/wh300_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
+       5      /home/adcp/www/figures/os38nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
