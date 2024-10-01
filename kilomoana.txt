@@ -1,14 +1,14 @@
-2024/09/29 14:30:02
+2024/09/30 14:30:01
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: kmseatrial-09282024-post     ** is logging **
 
-   wh300 2024/09/29  01:55:48 to 2024/09/29  14:29:49  (0 min. ago)
-  os38bb 2024/09/29  01:58:49 to 2024/09/29  14:28:53  (1 min. ago)
-  os38nb 2024/09/29  01:58:49 to 2024/09/29  14:28:53  (1 min. ago)
+   wh300 2024/09/29  01:55:48 to 2024/09/30  14:29:49  (0 min. ago)
+  os38bb 2024/09/29  01:58:49 to 2024/09/30  14:28:49  (1 min. ago)
+  os38nb 2024/09/29  01:58:49 to 2024/09/30  14:28:49  (1 min. ago)
 
-approximate lat, lon, depth:   21 18.90649 N  157 52.64579 W   depth=-2
+approximate lat, lon, depth:   21 18.90649 N  157 52.64568 W   depth=-2
 
-link: http://www.google.com/maps/place/21%2018.90649N+157%2052.64579W
+link: http://www.google.com/maps/place/21%2018.90649N+157%2052.64568W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 272.0790437 to 272.6007348
-(2024/09/29 01:53:49 to 2024/09/29 14:25:03)
-all posmv messages:  (100%)  were good  [using available QC]
+ddrange: 272.6005611 to 273.6005510
+(2024/09/29 14:24:48 to 2024/09/30 14:24:48)
+all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   150 out of 150   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.4
-   min  = 0.03, max = 1.98
-   mean = 0.85, stddev = 0.27
+   min  = 0.37, max = 0.89
+   mean = 0.76, stddev = 0.09
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2   9   377    28    +28us[  +30us] +/- 1848us
+^* kmroute.km                    2  10   377   644   -939ns[-8139ns] +/- 1146us
 
-Reference ID: 0A009601, Stratum=3, last offset=0.000001, RMS offset=0.000036
+Reference ID: 0A009601, Stratum=3, last offset=-0.000007, RMS offset=0.000018
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A009601, Stratum=3, last offset=0.000001, RMS offset=0.000036
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2024/09/29 14:23:53) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/09/30 14:23:49) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/09/29 14:27:49) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/09/30 14:25:49) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2024/09/29 14:23:53) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2024/09/30 14:23:49) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 43 days, 19:16,  1 user,  load average: 0.59, 0.56, 0.54
+ 14:30:02 up 44 days, 19:16,  1 user,  load average: 0.89, 0.89, 0.79
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -93,22 +93,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_q
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      6 /home/adcp/log/3dayplots_os38bb.warn
-      546 /home/adcp/log/3dayplots_wh300.warn
-      1 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/lastfewvec_os38bb.warn
-      1 /home/adcp/log/lastfewvec_os38bb.warn.2024-09-28
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_os38nb.warn.2024-09-28
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn.2024-09-28
-      35 /home/adcp/log/quick_wh300.warn
-      1 /home/adcp/log/quick_wh300.warn.2024-09-28
 
 Figures and files:
 
