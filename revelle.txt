@@ -1,11 +1,11 @@
-2024/10/02 02:55:30
+2024/10/03 02:08:21
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: rrtest-ancillary-2024-11-01b     ** is logging **
 
 
-approximate lat, lon, depth:   41 31.44232 N   70 40.33008 W   depth=4
+approximate lat, lon, depth:   41 31.44230 N   70 40.33006 W   depth=4
 
-link: http://www.google.com/maps/place/41%2031.44232N+70%2040.33008W
+link: http://www.google.com/maps/place/41%2031.44230N+70%2040.33006W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
@@ -38,7 +38,7 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u   14  128  377    0.217   -0.062   0.032
+*rr-bb-gw-das.uc 100.124.36.33    2 u   33  128  377    0.186   -0.056   0.025
 ------------------------------------------
 
 
@@ -47,7 +47,7 @@ os150 BT:      off
 
 
 ---------- uptime ------------
- 02:55:32 up 51 min,  2 users,  load average: 0.38, 0.29, 0.20
+ 02:08:24 up  4:41,  2 users,  load average: 0.03, 0.14, 0.12
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -63,10 +63,27 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+     3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      63 /home/adcp/log/update_hbins_os150nb.warn
+      140 /home/adcp/log/update_hbins_os150nb.warn
+      1211 /home/adcp/log/update_hbins_os150nb.warn.2024-10-02
+(3) rbin warnings:
+ 
+seapath380 gps  80481    1.00  -63954.36      27.8      14     3     1     0     1
+seapath380mgc gps  80484    1.00    0.00    5817.0      14     1     1     0     0
+seapath380mgc gps  80484    1.00  -63954.36      28.0      13     2     2     0     1
+seapath380mgc sea  80485    1.00    0.00    5817.0      14     1     1     0     0
+seapath380mgc sea  80485    1.00  -63954.36      28.0      13     2     2     0     1
+seapath380mgc hdg  80485    1.00    0.00    5817.0      14     1     1     0     0
+seapath380mgc hdg  80485    1.00  -63954.36      28.0      13     2     2     0     1
+abxtwo gps 160949    0.50  -63954.36      27.0      22     1     1     0     1
+gyro hdg  80324    1.00    0.00    5816.8       6     9     8     0     0
+gyro hdg  80324    1.00  -63954.57      28.7       5    10     9     0     1
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 275.088915
+
 
 Figures and files:
 

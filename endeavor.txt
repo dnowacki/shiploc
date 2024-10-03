@@ -1,13 +1,13 @@
-2024/10/01 14:30:01
+2024/10/02 14:30:01
 currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: EN721     ** is logging **
 
-   wh300 2024/09/18  14:34:23 to 2024/10/01  14:29:47  (0 min. ago)
-  os75nb 2024/09/18  14:37:26 to 2024/10/01  14:26:48  (3 min. ago)
+   wh300 2024/09/18  14:34:23 to 2024/10/02  14:29:47  (0 min. ago)
+  os75nb 2024/09/18  14:37:26 to 2024/10/02  14:26:47  (3 min. ago)
 
-approximate lat, lon, depth:   50 50.65696 N   53 34.82194 W   depth=285
+approximate lat, lon, depth:   50 57.96732 N   57 39.90116 W   depth=59
 
-link: http://www.google.com/maps/place/50%2050.65696N+53%2034.82194W
+link: http://www.google.com/maps/place/50%2057.96732N+57%2039.90116W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -15,7 +15,9 @@ NOTE: This is the _primary_ computer
 
 
 
---->>> WARNING: check os75nb temperature: (max T = 71.85) <<<---
+--->>> WARNING: check os75nb temperature: (max T = 83.18) <<<---
+
+--->>> WARNING: check os75nb temperature: 6 outliers <<<---
 
 
 
@@ -27,32 +29,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 273.6022685 to 274.6022569
-(2024/09/30 14:27:16 to 2024/10/01 14:27:15)
+ddrange: 274.6022801 to 275.6022685
+(2024/10/01 14:27:17 to 2024/10/02 14:27:16)
 all abxtwo_b2 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -2.15, max = 0.81
-   mean = -0.16, stddev = 0.60
+   mean N = 301, stddev N =  0.3
+   min  = -1.91, max = 1.25
+   mean = -0.45, stddev = 0.65
 
 ===========================
 ------ abxtwo_b2_udp statistics ------
 ===========================
 gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 273.6022917 to 274.6022801
-(2024/09/30 14:27:18 to 2024/10/01 14:27:17)
+ddrange: 274.6023032 to 275.6022917
+(2024/10/01 14:27:19 to 2024/10/02 14:27:18)
 all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -2.17, max = 0.81
-   mean = -0.16, stddev = 0.59
+   mean N = 301, stddev N =  0.2
+   min  = -1.91, max = 1.26
+   mean = -0.45, stddev = 0.65
 
 
 === Sonar Pingtype Summary =====
@@ -73,9 +75,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377   461  +3697ns[ -888ns] +/- 1249us
+^* 192.168.1.8                   1   9   377   140    +94us[ +232us] +/- 1250us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000005, RMS offset=0.000028
+Reference ID: C0A80108, Stratum=2, last offset=0.000138, RMS offset=0.000065
 ------------------------------------------
 
 
@@ -83,17 +85,17 @@ Reference ID: C0A80108, Stratum=2, last offset=-0.000005, RMS offset=0.000028
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/10/01 14:21:48) ens = 300 sec, 141 pings, (2.13 sec/ping)
+(2024/10/02 14:21:47) ens = 300 sec, 141 pings, (2.13 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/10/01 14:25:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/10/02 14:25:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 32 days,  1:42,  1 user,  load average: 0.35, 0.33, 0.35
+ 14:30:03 up 33 days,  1:42,  1 user,  load average: 0.52, 0.45, 0.43
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -114,11 +116,13 @@ ______________________
      6 I/O errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      89 /home/adcp/log/lastensq_os75nb.warn
-      222 /home/adcp/log/lastensq_wh300.warn
+      109 /home/adcp/log/lastensq_os75nb.warn
+      272 /home/adcp/log/lastensq_wh300.warn
 (3) temperature warnings:
 
---->>> WARNING: check os75nb temperature: (max T = 71.85) <<<---
+--->>> WARNING: check os75nb temperature: (max T = 83.18) <<<---
+
+--->>> WARNING: check os75nb temperature: 6 outliers <<<---
 
 
 Figures and files:
