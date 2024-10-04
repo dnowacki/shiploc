@@ -1,13 +1,15 @@
-2024/10/03 02:08:21
+2024/10/03 21:25:16
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: rrtest-ancillary-2024-11-01b     ** is logging **
+Current cruise: rrtest-2024-10-03     ** is logging **
 
+  os150nb 2024/10/03  21:03:40 to 2024/10/03  21:24:40  (1 min. ago)
 
-approximate lat, lon, depth:   41 31.44230 N   70 40.33006 W   depth=4
+approximate lat, lon, depth:   41 31.44237 N   70 40.32985 W   depth=4
 
-link: http://www.google.com/maps/place/41%2031.44230N+70%2040.33006W
+link: http://www.google.com/maps/place/41%2031.44237N+70%2040.32985W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
@@ -30,7 +32,7 @@ no good seapath380mgc data out of 0 (300sec) ensembles
 
 os150: Triggering not used (CX0,0)
 os150 BB:       off
-os150 NB:       off
+os150 NB:  on
 os150 BT:      off
 
 ===========================
@@ -38,16 +40,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u   33  128  377    0.186   -0.056   0.025
+*rr-bb-gw-das.uc 100.124.36.33    2 u  988 1024  377    0.245   -0.581   0.081
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2024/10/03 21:21:40) ens = 180 sec, 148 pings, (1.22 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 02:08:24 up  4:41,  2 users,  load average: 0.03, 0.14, 0.12
+ 21:25:17 up 23:58,  2 users,  load average: 0.15, 0.21, 0.17
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -66,24 +72,11 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      140 /home/adcp/log/update_hbins_os150nb.warn
+      1 /home/adcp/log/3dayplots_os150nb.warn
+      112 /home/adcp/log/lastensq_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1407 /home/adcp/log/update_hbins_os150nb.warn
       1211 /home/adcp/log/update_hbins_os150nb.warn.2024-10-02
-(3) rbin warnings:
- 
-seapath380 gps  80481    1.00  -63954.36      27.8      14     3     1     0     1
-seapath380mgc gps  80484    1.00    0.00    5817.0      14     1     1     0     0
-seapath380mgc gps  80484    1.00  -63954.36      28.0      13     2     2     0     1
-seapath380mgc sea  80485    1.00    0.00    5817.0      14     1     1     0     0
-seapath380mgc sea  80485    1.00  -63954.36      28.0      13     2     2     0     1
-seapath380mgc hdg  80485    1.00    0.00    5817.0      14     1     1     0     0
-seapath380mgc hdg  80485    1.00  -63954.36      28.0      13     2     2     0     1
-abxtwo gps 160949    0.50  -63954.36      27.0      22     1     1     0     1
-gyro hdg  80324    1.00    0.00    5816.8       6     9     8     0     0
-gyro hdg  80324    1.00  -63954.57      28.7       5    10     9     0     1
-(4) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 275.088915
-
 
 Figures and files:
 
@@ -94,10 +87,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
