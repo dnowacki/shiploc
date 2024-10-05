@@ -1,12 +1,12 @@
-2024/10/03 21:25:16
+2024/10/04 20:43:00
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: rrtest-2024-10-03     ** is logging **
+Current cruise: RR2412     ** is logging **
 
-  os150nb 2024/10/03  21:03:40 to 2024/10/03  21:24:40  (1 min. ago)
+  os150nb 2024/10/04  16:15:50 to 2024/10/04  20:42:50  (0 min. ago)
 
-approximate lat, lon, depth:   41 31.44237 N   70 40.32985 W   depth=4
+approximate lat, lon, depth:   40 58.69179 N   71 11.87533 W   depth=52
 
-link: http://www.google.com/maps/place/41%2031.44237N+70%2040.32985W
+link: http://www.google.com/maps/place/40%2058.69179N+71%2011.87533W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -22,11 +22,35 @@ NOTE: This is the _primary_ computer
 ===========================
 ------ seapath380 statistics ------
 ===========================
-no good seapath380 data out of 0 (300sec) ensembles
+gyro-seapath380 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 277.6755764 to 277.8527655
+(2024/10/04 16:12:50 to 2024/10/04 20:27:59)
+all seapath380 messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   31 out of 31   (100%) were good
+statistics of good data:
+   mean N = 186, stddev N =  147.4
+   min  = -0.20, max = -0.09
+   mean = -0.14, stddev = 0.03
+
 ===========================
 ------ seapath380mgc statistics ------
 ===========================
-no good seapath380mgc data out of 0 (300sec) ensembles
+gyro-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 277.6755764 to 277.8528002
+(2024/10/04 16:12:50 to 2024/10/04 20:28:02)
+all seapath380mgc messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   31 out of 32   (97%) were good
+statistics of good data:
+   mean N = 187, stddev N =  146.9
+   min  = -0.18, max = -0.10
+   mean = -0.14, stddev = 0.02
+
 
 === Sonar Pingtype Summary =====
 
@@ -40,20 +64,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u  988 1024  377    0.245   -0.581   0.081
+*rr-bb-gw-das.uc 100.124.36.33    2 u  301 1024  377    0.196   -0.150   0.193
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2024/10/03 21:21:40) ens = 180 sec, 148 pings, (1.22 sec/ping)
+(2024/10/04 20:39:50) ens = 180 sec, 149 pings, (1.21 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 21:25:17 up 23:58,  2 users,  load average: 0.15, 0.21, 0.17
+ 20:43:02 up 1 day, 23:16,  1 user,  load average: 0.17, 0.25, 0.26
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -72,11 +96,14 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      1 /home/adcp/log/3dayplots_os150nb.warn
-      112 /home/adcp/log/lastensq_os150nb.warn
+      2 /home/adcp/log/3dayplots_os150nb.warn
+      259 /home/adcp/log/lastensq_os150nb.warn
+      112 /home/adcp/log/lastensq_os150nb.warn.2024-10-03
       1 /home/adcp/log/lastfewvec_os150nb.warn
-      1407 /home/adcp/log/update_hbins_os150nb.warn
-      1211 /home/adcp/log/update_hbins_os150nb.warn.2024-10-02
+      1 /home/adcp/log/lastfewvec_os150nb.warn.2024-10-03
+      4 /home/adcp/log/quick_os150nb.warn
+      1568 /home/adcp/log/update_hbins_os150nb.warn
+      1701 /home/adcp/log/update_hbins_os150nb.warn.2024-10-03
 
 Figures and files:
 
@@ -93,7 +120,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
