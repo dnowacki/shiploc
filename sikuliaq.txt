@@ -1,13 +1,13 @@
-2024/10/06 01:08:45
+2024/10/06 14:30:01
 currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: SKQ202415S     ** is logging **
 
-   wh300 2024/10/04  22:06:35 to 2024/10/06  01:08:34  (0 min. ago)
-  os75nb 2024/10/04  22:06:34 to 2024/10/06  01:06:34  (2 min. ago)
+   wh300 2024/10/04  22:06:35 to 2024/10/06  14:28:37  (1 min. ago)
+  os75nb 2024/10/04  22:06:34 to 2024/10/06  14:26:32  (3 min. ago)
 
-approximate lat, lon, depth:   46 51.66921 N  124 56.99723 W   depth=631
+approximate lat, lon, depth:   46 50.30211 N  124 59.49116 W   depth=603
 
-link: http://www.google.com/maps/place/46%2051.66921N+124%2056.99723W
+link: http://www.google.com/maps/place/46%2050.30211N+124%2059.49116W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 278.0405950 to 279.0405834
-(2024/10/05 00:58:27 to 2024/10/06 00:58:26)
+ddrange: 278.6030950 to 279.6030834
+(2024/10/05 14:28:27 to 2024/10/06 14:28:26)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.27, max = -0.09
-   mean = -0.19, stddev = 0.03
+   min  = -0.30, max = -0.09
+   mean = -0.22, stddev = 0.05
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 278.0406066 to 279.0405950
-(2024/10/05 00:58:28 to 2024/10/06 00:58:27)
+ddrange: 278.6031066 to 279.6030950
+(2024/10/05 14:28:28 to 2024/10/06 14:28:27)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.03, max = 0.08
-   mean = 0.02, stddev = 0.03
+   mean N = 301, stddev N =  0.4
+   min  = -0.07, max = 0.08
+   mean = -0.01, stddev = 0.04
 
 
 === Sonar Pingtype Summary =====
@@ -76,10 +76,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.1.0.5                      1  10   377   498    +18us[  +44us] +/-  136us
-^+ 10.1.0.6                      1  10   377   747    +19us[  +43us] +/-  131us
+^* 10.1.0.5                      1  10   377     6    +16us[  -41us] +/-  135us
+^+ 10.1.0.6                      1  10   377   193    -18us[  -73us] +/-   98us
 
-Reference ID: 0A010005, Stratum=2, last offset=0.000026, RMS offset=0.000046
+Reference ID: 0A010005, Stratum=2, last offset=-0.000057, RMS offset=0.000028
 ------------------------------------------
 
 
@@ -87,17 +87,17 @@ Reference ID: 0A010005, Stratum=2, last offset=0.000026, RMS offset=0.000046
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/10/06 01:01:32) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2024/10/06 14:21:35) ens = 300 sec, 124 pings, (2.42 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/10/06 01:04:36) ens = 120 sec, 61 pings, (1.97 sec/ping)
+(2024/10/06 14:26:36) ens = 120 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 01:08:45 up 75 days,  7:39,  2 users,  load average: 0.47, 0.68, 0.64
+ 14:30:02 up 75 days, 21:00,  1 user,  load average: 0.48, 0.83, 0.74
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -109,12 +109,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_re
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      2 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
@@ -125,15 +120,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
+       3      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
