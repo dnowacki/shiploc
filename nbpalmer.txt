@@ -1,10 +1,17 @@
-2024/10/07 14:30:02
-peale4 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
-NOTE: This is the _primary_ computer
+2024/10/08 14:30:01
+peale3 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: NBP2409  *** not logging ***
 
---->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
+  os75bb 2024/10/05  12:56:29 to 2024/10/07  12:06:28  (1583 min. ago) 26.4 hrs
+  os75nb 2024/10/05  12:56:29 to 2024/10/07  12:06:28  (1583 min. ago) 26.4 hrs
+  os38nb 2024/10/05  12:56:28 to 2024/10/07  12:06:28  (1583 min. ago) 26.4 hrs
+
+approximate lat, lon, depth:   64 46.48121 S   64 3.37675 W   depth=-52
+
+link: http://www.google.com/maps/place/64%2046.48121S+64%203.37675W
+not using zmq publishers, position is from serial GPS
+
+NOTE: This is the _primary_ computer
 
 
 
@@ -16,11 +23,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* tick.nbp.usap.gov             1   9   377    20    +17us[  +21us] +/-  216us
-^? NBP-MSDC-01-P.usap.gov        0  10     0     -     +0ns[   +0ns] +/-    0ns
-^- NBP-MSDC-01-P.usap.gov        3   6   377    25  -8018us[-8014us] +/-  359ms
+^* tick.nbp.usap.gov             1   9   377   291    -49us[ -104us] +/-  245us
 
-Reference ID: 9D8482A8, Stratum=2, last offset=0.000004, RMS offset=0.000022
+Reference ID: 9D8482A8, Stratum=2, last offset=-0.000055, RMS offset=0.000043
 ------------------------------------------
 
 
@@ -29,7 +34,7 @@ Reference ID: 9D8482A8, Stratum=2, last offset=0.000004, RMS offset=0.000022
 
 
 ---------- uptime ------------
- 14:30:02 up 53 days, 18:36,  1 user,  load average: 0.04, 0.03, 0.00
+ 14:30:02 up 3 days,  9:23,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_report/
@@ -44,10 +49,8 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_re
 Summary of warnings:
 ______________________
 
-(1) expected backup disk not found:
-
---->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
-
+(1) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -58,15 +61,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   77024      /home/adcp/www/figures/ktprof_amp_lastens.png
-   77024      /home/adcp/www/figures/os75nb_lastens.png
-   77024      /home/adcp/www/figures/os38nb_lastens.png
+    1580      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1580      /home/adcp/www/figures/os75bb_lastens.png
+    1580      /home/adcp/www/figures/os38nb_lastens.png
+    1580      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   77024      /home/adcp/www/figures/os75nb_ddaycont.png
-   77024      /home/adcp/www/figures/os38nb_ddaycont.png
+    1580      /home/adcp/www/figures/os38nb_ddaycont.png
+    1580      /home/adcp/www/figures/os75bb_ddaycont.png
+    1580      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
