@@ -1,34 +1,71 @@
-2024/10/08 14:30:01
+2024/10/09 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: Pierside_PostAE2423  *** not logging ***
+Current cruise: Pierside_PostAE2423     ** is logging **
+
+   sv300 2024/10/09  14:28:34 to 2024/10/09  14:30:34  (0 min. ago)
+ os75bb -- no data yet
+ os75nb -- no data yet
+
+approximate lat, lon, depth:   32 22.20319 N   64 41.74899 W   depth=-6
+
+link: http://www.google.com/maps/place/32%2022.20319N+64%2041.74899W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
-no positions found from filelist jrc_stbd/*.gps.rbin
 
 
 
 
+---- heading correction ----
 
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+/home/adcp/daily_report/abxtwo_jrc_stbd_pystats.txt does not (yet?) exist
+===========================
+------ jrc_port statistics ------
+===========================
+/home/adcp/daily_report/jrc_port_jrc_stbd_pystats.txt does not (yet?) exist
 
+=== Sonar Pingtype Summary =====
 
+sv300: Triggering command not found
+sv300 BB:  on
+sv300 NB:  on
+sv300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   9   377   458    +55us[  +84us] +/-   84us
+^* 192.168.51.9                  1  10   377  1007    +48us[  +53us] +/-   95us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000029, RMS offset=0.000024
+Reference ID: C0A83309, Stratum=2, last offset=0.000005, RMS offset=0.000013
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+sv300 recent ping statistics
+
+(2024/10/09 14:28:34) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 56 days, 19:35,  1 user,  load average: 0.12, 0.12, 0.09
+ 14:30:52 up 57 days, 19:35,  1 user,  load average: 0.27, 0.15, 0.10
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -45,6 +82,9 @@ ______________________
 
 (1) EDAC memory warnings:
      6 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_sv300.warn
 
 Figures and files:
 
@@ -55,6 +95,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/sv300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
