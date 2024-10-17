@@ -1,24 +1,64 @@
-2024/10/16 03:08:29
+2024/10/16 14:30:01
 currents01sv 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: SAV-24-12     ** is logging **
+
+   wh300 2024/10/16  10:48:35 to 2024/10/16  14:28:37  (1 min. ago)
+
+approximate lat, lon, depth:   31 55.17365 N   80 57.17240 W   depth=7
+
+link: http://www.google.com/maps/place/31%2055.17365N+80%2057.17240W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "vs330")
+===========================
+------ vs330 statistics ------
+===========================
+gyro-vs330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 289.4490162 to 289.5949537
+(2024/10/16 10:46:35 to 2024/10/16 14:16:44)
+all vs330 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   42 out of 42   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.54, max = 2.13
+   mean = 0.27, stddev = 0.60
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/10/16 14:26:37) ens = 120 sec, 75 pings, (1.60 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 03:08:30 up 12 days, 12:08,  2 users,  load average: 0.17, 0.28, 0.20
+ 14:30:02 up 12 days, 23:30,  1 user,  load average: 0.24, 0.26, 0.21
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -35,10 +75,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/DAS_speedlog.log.warn
-      3 /home/adcp/log/lastensq_wh300.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      4 /home/adcp/log/quick_wh300.warn
+      4 /home/adcp/log/3dayplots_wh300.warn
+      4 /home/adcp/log/DAS_speedlog.log.warn
+      7 /home/adcp/log/grab_pings_wh300.warn
+      116 /home/adcp/log/lastensq_wh300.warn
+      2 /home/adcp/log/lastfewvec_wh300.warn
+      118 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -55,6 +97,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
