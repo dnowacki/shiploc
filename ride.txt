@@ -1,16 +1,7 @@
-2024/10/16 14:30:01
+2024/10/17 14:30:01
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: SR2418  *** not logging ***
-
-   wh300 2024/10/09  15:30:51 to 2024/10/15  03:54:35  (2075 min. ago)  1.4 days
-  os150nb 2024/10/09  15:33:50 to 2024/10/15  03:56:35  (2073 min. ago)  1.4 days
-  os38nb 2024/10/09  15:33:49 to 2024/10/15  03:56:38  (2073 min. ago)  1.4 days
-
-approximate lat, lon, depth:   32 57.12135 N  118 57.92908 W   depth=1731
-
-link: http://www.google.com/maps/place/32%2057.12135N+118%2057.92908W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 active status is found here: https://currents.soest.hawaii.edu/uhdas_fromships/CONFIGURATION/active_status_yml.txt
 
 
@@ -23,11 +14,11 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-seapath.ucsd.edu           1  10   377   425    -18us[  -26us] +/-  138us
-^- sr-bb-gw-das.ucsd.edu         2  10   377   989    +59us[  +51us] +/-   24ms
-^+ sr-ptp01-das.ucsd.edu         1  10   377   906   +156us[ +148us] +/-  639us
+^* sr-seapath.ucsd.edu           1   9   377    12    -59us[  -79us] +/-  159us
+^- sr-bb-gw-das.ucsd.edu         2   8   377   136   -153us[ -173us] +/-   18ms
+^+ sr-ptp01-das.ucsd.edu         1  10   377   876    +72us[+4505ns] +/-  566us
 
-Reference ID: 647C6423, Stratum=2, last offset=-0.000008, RMS offset=0.000009
+Reference ID: 647C6423, Stratum=2, last offset=-0.000020, RMS offset=0.000039
 ------------------------------------------
 
 
@@ -36,7 +27,7 @@ Reference ID: 647C6423, Stratum=2, last offset=-0.000008, RMS offset=0.000009
 
 
 ---------- uptime ------------
- 14:30:02 up 5 days, 14:33,  1 user,  load average: 0.08, 0.08, 0.03
+ 14:30:02 up 6 days, 14:33,  1 user,  load average: 0.09, 0.05, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -63,17 +54,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2072      /home/adcp/www/figures/os38nb_lastens.png
-    2072      /home/adcp/www/figures/os150nb_lastens.png
-    2072      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2072      /home/adcp/www/figures/wh300_lastens.png
+    3512      /home/adcp/www/figures/os38nb_lastens.png
+    3512      /home/adcp/www/figures/os150nb_lastens.png
+    3512      /home/adcp/www/figures/ktprof_amp_lastens.png
+    3512      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2072      /home/adcp/www/figures/os150nb_ddaycont.png
-    2072      /home/adcp/www/figures/wh300_ddaycont.png
-    2072      /home/adcp/www/figures/os38nb_ddaycont.png
+    3512      /home/adcp/www/figures/os150nb_ddaycont.png
+    3512      /home/adcp/www/figures/wh300_ddaycont.png
+    3512      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
