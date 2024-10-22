@@ -1,10 +1,27 @@
-2024/10/20 14:30:01
-currents04en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2024/10/21 14:30:02
+currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: EN723  *** not logging ***
+
+   wh300 2024/10/20  14:52:21 to 2024/10/21  13:47:28  (42 min. ago)
+  os75bb 2024/10/20  14:55:24 to 2024/10/21  13:46:29  (43 min. ago)
+  os75nb 2024/10/20  14:55:24 to 2024/10/21  13:46:29  (43 min. ago)
+
+approximate lat, lon, depth:   39 58.27356 N   70 13.06168 W   depth=631
+
+link: http://www.google.com/maps/place/39%2058.27356N+70%2013.06168W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
+
+--->>> WARNING: check os75bb temperature: (max T = 88.32) <<<---
+
+--->>> WARNING: check os75bb temperature: 59 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: (max T = 88.32) <<<---
+
+--->>> WARNING: check os75nb temperature: 59 outliers <<<---
 
 
 
@@ -14,9 +31,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   8   377    95    -33us[  -44us] +/- 1332us
+^* 192.168.1.8                   1   9   377   464    -29us[ -136us] +/- 1297us
 
-Reference ID: C0A80108, Stratum=2, last offset=-0.000011, RMS offset=0.000029
+Reference ID: C0A80108, Stratum=2, last offset=-0.000107, RMS offset=0.000068
 ------------------------------------------
 
 
@@ -25,7 +42,7 @@ Reference ID: C0A80108, Stratum=2, last offset=-0.000011, RMS offset=0.000029
 
 
 ---------- uptime ------------
- 14:30:12 up 51 days,  1:42,  1 user,  load average: 0.07, 0.02, 0.00
+ 14:30:03 up 52 days,  1:42,  1 user,  load average: 0.10, 0.06, 0.04
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -39,6 +56,26 @@ https://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/ashpaq5_
 
 
 
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      18 /home/adcp/log/lastensq_os75bb.warn
+      243 /home/adcp/log/lastensq_os75bb.warn.2024-10-20
+      234 /home/adcp/log/lastensq_os75nb.warn
+      2 /home/adcp/log/lastfewvec_os75bb.warn
+      2 /home/adcp/log/lastfewvec_os75nb.warn
+      2 /home/adcp/log/lastfewvec_wh300.warn
+(2) temperature warnings:
+
+--->>> WARNING: check os75bb temperature: (max T = 88.32) <<<---
+
+--->>> WARNING: check os75bb temperature: 59 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: (max T = 88.32) <<<---
+
+--->>> WARNING: check os75nb temperature: 59 outliers <<<---
 
 
 Figures and files:
@@ -50,10 +87,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+      42      /home/adcp/www/figures/wh300_lastens.png
+      42      /home/adcp/www/figures/os75bb_lastens.png
+      42      /home/adcp/www/figures/ktprof_amp_lastens.png
+      42      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+      42      /home/adcp/www/figures/os75bb_ddaycont.png
+      42      /home/adcp/www/figures/wh300_ddaycont.png
+      42      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
