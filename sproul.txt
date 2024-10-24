@@ -1,11 +1,11 @@
-2024/10/23 00:09:19
+2024/10/23 16:52:01
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: test-ntp     ** is logging **
 
 
-approximate lat, lon, depth:   32 42.36997 N  117 14.17118 W   depth=1
+approximate lat, lon, depth:   32 42.36982 N  117 14.17134 W   depth=1
 
-link: http://www.google.com/maps/place/32%2042.36997N+117%2014.17118W
+link: http://www.google.com/maps/place/32%2042.36982N+117%2014.17134W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
@@ -21,16 +21,16 @@ no heading correction device specified===========================
 ===========================
 bx992-sc30 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 295.9179572 to 296.0014236
-(2024/10/22 22:01:52 to 2024/10/23 00:02:03)
+ddrange: 295.9179572 to 296.6994155
+(2024/10/22 22:01:52 to 2024/10/23 16:47:09)
 all sc30 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   24 out of 24   (100%) were good
+   225 out of 225   (100%) were good
 statistics of good data:
-   mean N = 600, stddev N =  2.7
-   min  = -2.05, max = -0.58
-   mean = -1.29, stddev = 0.40
+   mean N = 600, stddev N =  4.7
+   min  = -2.11, max = -0.45
+   mean = -1.31, stddev = 0.34
 
 
 === Sonar Pingtype Summary =====
@@ -42,11 +42,8 @@ os150 BT:      off
 
 ===========================
 
----------- ntpq -p ------------
-     remote           refid      st t when poll reach   delay   offset  jitter
-==============================================================================
- 100.124.164.33  .STEP.          16 u    -  512    0    0.000    0.000   0.000
- _gateway        132.239.1.6      2 u   59   64    1    0.076  2658.40 5191.77
+---------- ps -ef | grep ntpd | grep -v grep ------------
+ntp is not running
 ------------------------------------------
 
 
@@ -55,7 +52,7 @@ os150 BT:      off
 
 
 ---------- uptime ------------
- 00:09:20 up 2 days,  9:14,  1 user,  load average: 0.00, 0.02, 0.00
+ 16:52:01 up 3 days,  1:19,  4 users,  load average: 0.00, 0.09, 0.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -74,8 +71,8 @@ ______________________
 
       1 /home/adcp/log/DAS_while_cruise.warn
 (2) timestamp warnings:
-jumps forward: 5   jumps back: 0
-max forward 0 seconds at dday 295.917220
+jumps forward: 39   jumps back: 0
+max forward 0 seconds at dday 295.917410
 
 
 Figures and files:
