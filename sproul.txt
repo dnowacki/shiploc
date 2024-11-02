@@ -1,11 +1,11 @@
-2024/10/31 22:59:13
+2024/11/01 14:15:01
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: test-no-ntp-B     ** is logging **
 
 
-approximate lat, lon, depth:   32 42.36984 N  117 14.17079 W   depth=1
+approximate lat, lon, depth:   32 42.36963 N  117 14.17110 W   depth=1
 
-link: http://www.google.com/maps/place/32%2042.36984N+117%2014.17079W
+link: http://www.google.com/maps/place/32%2042.36963N+117%2014.17110W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
@@ -19,7 +19,19 @@ NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 no heading correction device specified===========================
 ------ sc30 statistics ------
 ===========================
-/home/adcp/daily_report/sc30_bx992_pystats.txt does not (yet?) exist
+bx992-sc30 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 304.9575116 to 305.5931424
+(2024/10/31 22:58:49 to 2024/11/01 14:14:08)
+all sc30 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   180 out of 180   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.6
+   min  = -2.48, max = -0.22
+   mean = -1.28, stddev = 0.40
+
 
 === Sonar Pingtype Summary =====
 
@@ -33,8 +45,8 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sp-bx992.ucsd.e .GPS.            1 u  256 1024  377    0.214    1.828   1.696
-+_gateway        100.124.164.36   2 u   21 1024  377    0.087    0.034   0.086
+*sp-bx992.ucsd.e .GPS.            1 u  313 1024  377    0.189   -0.066   0.021
++_gateway        100.124.164.36   2 u 1036 1024  377    0.085    0.023   0.050
 ------------------------------------------
 
 
@@ -43,7 +55,7 @@ os150 BT:      off
 
 
 ---------- uptime ------------
- 22:59:14 up 1 day, 57 min,  2 users,  load average: 0.12, 0.03, 0.01
+ 14:15:06 up 1 day, 16:13,  1 user,  load average: 0.19, 0.10, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -58,11 +70,17 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
+(1) rbin warnings:
+ 
+sc30 gph  54983    1.00    0.00       3.7       1     4     2     0     0
+sc30 gph  54983    1.00    0.00       3.7       1     4     2     0     0
+gp170a gps  54983    1.00    0.00       3.2       1     2     2     0     0
+gp170a gps  54983    1.00    0.00       3.2       1     2     2     0     0
+gp170b gps  54983    1.00    0.00       3.2       1     3     2     0     0
+gp170b gps  54983    1.00    0.00       3.2       1     3     2     0     0
 (2) timestamp warnings:
-jumps forward: 2   jumps back: 0
-max forward 0 seconds at dday 302.833344
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 303.416667
 
 
 Figures and files:
