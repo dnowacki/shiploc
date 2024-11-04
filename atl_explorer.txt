@@ -1,14 +1,14 @@
-2024/11/02 14:30:02
+2024/11/03 14:30:02
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: AE2426a     ** is logging **
 
-   sv300 2024/10/31  10:59:19 to 2024/11/02  14:29:20  (1 min. ago)
-  os75bb 2024/10/31  11:02:20 to 2024/11/02  14:27:20  (3 min. ago)
-  os75nb 2024/10/31  11:02:20 to 2024/11/02  14:27:20  (3 min. ago)
+   sv300 2024/10/31  10:59:19 to 2024/11/03  14:29:20  (1 min. ago)
+  os75bb 2024/10/31  11:02:20 to 2024/11/03  14:27:22  (3 min. ago)
+  os75nb 2024/10/31  11:02:20 to 2024/11/03  14:27:22  (3 min. ago)
 
-approximate lat, lon, depth:   37 26.64755 N   70 5.59975 W   depth=4176
+approximate lat, lon, depth:   41 25.06133 N   70 48.39821 W   depth=16
 
-link: http://www.google.com/maps/place/37%2026.64755N+70%205.59975W
+link: http://www.google.com/maps/place/41%2025.06133N+70%2048.39821W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,32 +26,32 @@ Database time ranges:
 ===========================
 jrc_stbd-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 305.6031134 to 306.6031019
-(2024/11/01 14:28:29 to 2024/11/02 14:28:28)
-all abxtwo messages:  (100%)  were good  [using available QC]
+ddrange: 306.5985185 to 307.5985069
+(2024/11/02 14:21:52 to 2024/11/03 14:21:51)
+all abxtwo messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -1.39, max = 0.90
-   mean = -0.40, stddev = 0.41
+   mean N = 301, stddev N =  4.1
+   min  = -1.75, max = 0.43
+   mean = -0.43, stddev = 0.35
 
 ===========================
 ------ jrc_port statistics ------
 ===========================
 jrc_stbd-jrc_port statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 305.6031366 to 306.6031250
-(2024/11/01 14:28:31 to 2024/11/02 14:28:30)
+ddrange: 306.5985417 to 307.5985301
+(2024/11/02 14:21:54 to 2024/11/03 14:21:53)
 all jrc_port messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.89, max = 3.10
-   mean = 1.92, stddev = 0.43
+   mean N = 301, stddev N =  0.3
+   min  = 0.50, max = 3.00
+   mean = 1.91, stddev = 0.44
 
 
 === Sonar Pingtype Summary =====
@@ -59,7 +59,7 @@ statistics of good data:
 sv300: Triggering command not found
 sv300 BB:  on
 sv300 NB:  on
-sv300 BT:      off
+sv300 BT:  on
 
 os75: Triggering not used (CX0,0)
 os75 BB:  on
@@ -73,9 +73,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    37    +15us[  +19us] +/-   60us
+^* 192.168.51.9                  1   6   377    28   -270ns[-2526ns] +/-   43us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000003, RMS offset=0.000004
+Reference ID: C0A83309, Stratum=2, last offset=-0.000002, RMS offset=0.000005
 ------------------------------------------
 
 
@@ -83,21 +83,21 @@ Reference ID: C0A83309, Stratum=2, last offset=0.000003, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/11/02 14:22:20) ens = 300 sec, 75 pings, (4.00 sec/ping)
+(2024/11/03 14:22:22) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 sv300 recent ping statistics
 
-(2024/11/02 14:27:20) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/11/03 14:27:20) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/11/02 14:22:20) ens = 300 sec, 75 pings, (4.00 sec/ping)
+(2024/11/03 14:22:22) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:53 up 21 days, 11:49,  1 user,  load average: 0.51, 0.71, 0.60
+ 14:30:52 up 22 days, 11:49,  1 user,  load average: 0.09, 0.32, 0.45
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -109,11 +109,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
-Summary of warnings:
-______________________
 
-(1) EDAC memory warnings:
-     6 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -132,9 +128,9 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75bb_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
-       1      /home/adcp/www/figures/sv300_ddaycont.png
+       4      /home/adcp/www/figures/sv300_ddaycont.png
+       4      /home/adcp/www/figures/os75bb_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
