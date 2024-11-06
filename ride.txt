@@ -1,33 +1,76 @@
-2024/11/04 14:30:01
+2024/11/06 02:50:00
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: sr2024-11-04-test-mgc-b     ** is logging **
+
+
+approximate lat, lon, depth:   32 42.44057 N  117 14.20321 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.44057N+117%2014.20321W
+not using zmq publishers, position is from serial GPS
+
 active status is found here: https://currents.soest.hawaii.edu/uhdas_fromships/CONFIGURATION/active_status_yml.txt
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ hemisphere statistics ------
+===========================
+seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 310.0274947 to 310.1180329
+(2024/11/06 00:39:36 to 2024/11/06 02:49:58)
+all hemisphere messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   26 out of 26   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.9
+   min  = -2.59, max = 5.25
+   mean = 1.06, stddev = 2.18
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-seapath.ucsd.edu           1  10   377   207  +4843ns[  +11us] +/-  139us
-^- sr-bb-gw-das.ucsd.edu         2  10   377   576    -46us[  -40us] +/- 8397us
+^* sr-seapath.ucsd.edu           1   9   377   124  +9352ns[  +11us] +/-  217us
+^- sr-bb-gw-das.ucsd.edu         2   8   377   109   -221us[ -221us] +/-   19ms
 ^? sr-ptp01-das.ucsd.edu         0  10     0     -     +0ns[   +0ns] +/-    0ns
 
-Reference ID: 647C6423, Stratum=2, last offset=0.000006, RMS offset=0.000018
+Reference ID: 647C6423, Stratum=2, last offset=0.000002, RMS offset=0.000029
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 11 days, 18:07,  1 user,  load average: 0.03, 0.03, 0.00
+ 02:50:01 up 13 days,  6:27,  1 user,  load average: 0.31, 0.25, 0.18
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -50,17 +93,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2989      /home/adcp/www/figures/os38nb_lastens.png
-    2989      /home/adcp/www/figures/os150nb_lastens.png
-    2989      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2989      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2989      /home/adcp/www/figures/os150nb_ddaycont.png
-    2989      /home/adcp/www/figures/wh300_ddaycont.png
-    2989      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
