@@ -1,12 +1,12 @@
-2024/11/04 14:15:01
+2024/11/06 14:15:02
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR2414     ** is logging **
+Current cruise: RR2414_b     ** is logging **
 
-  os150nb 2024/11/02  15:20:33 to 2024/11/04  14:14:32  (0 min. ago)
+  os150nb 2024/11/05  18:21:12 to 2024/11/06  14:12:12  (3 min. ago)
 
-approximate lat, lon, depth:   33 41.83625 N   75 23.20326 W   depth=3235
+approximate lat, lon, depth:   25 35.33431 N   79 34.78120 W   depth=844
 
-link: http://www.google.com/maps/place/33%2041.83625N+75%2023.20326W
+link: http://www.google.com/maps/place/25%2035.33431N+79%2034.78120W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,32 +24,32 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath380 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 307.5852192 to 308.5852076
-(2024/11/03 14:02:43 to 2024/11/04 14:02:42)
+ddrange: 309.7626382 to 310.5858095
+(2024/11/05 18:18:12 to 2024/11/06 14:03:34)
 all seapath380 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   237 out of 237   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.16, max = -0.00
-   mean = -0.07, stddev = 0.02
+   min  = -0.17, max = 0.01
+   mean = -0.08, stddev = 0.04
 
 ===========================
 ------ seapath380mgc statistics ------
 ===========================
 gyro-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 307.5852424 to 308.5852308
-(2024/11/03 14:02:45 to 2024/11/04 14:02:44)
+ddrange: 309.7626382 to 310.5858326
+(2024/11/05 18:18:12 to 2024/11/06 14:03:36)
 all seapath380mgc messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   237 out of 237   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.13, max = -0.00
-   mean = -0.06, stddev = 0.02
+   min  = -0.16, max = 0.01
+   mean = -0.08, stddev = 0.04
 
 
 === Sonar Pingtype Summary =====
@@ -64,20 +64,20 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*rr-bb-gw-das.uc 100.124.36.33    2 u  909 1024  377    0.181  +10.352   5.435
+*rr-bb-gw-das.uc 100.124.36.33    2 u  838 1024  377    0.225   +0.174   0.244
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2024/11/04 14:11:33) ens = 180 sec, 149 pings, (1.21 sec/ping)
+(2024/11/06 14:09:11) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 2 days, 23:53,  1 user,  load average: 0.24, 0.23, 0.23
+ 14:15:04 up 20:14,  1 user,  load average: 0.27, 0.22, 0.19
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -93,7 +93,14 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      6 /home/adcp/log/3dayplots_os150nb.warn
+      67 /home/adcp/log/DAS_while_logging.warn
+      558 /home/adcp/log/lastensq_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      117 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -104,13 +111,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

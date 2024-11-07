@@ -1,31 +1,98 @@
-2024/11/05 14:30:02
+2024/11/06 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: AE2426     ** is logging **
+
+   sv300 2024/11/06  12:37:06 to 2024/11/06  14:29:06  (1 min. ago)
+  os75nb 2024/11/06  12:40:07 to 2024/11/06  14:30:08  (0 min. ago)
+
+approximate lat, lon, depth:   41 22.54599 N   70 51.30022 W   depth=26
+
+link: http://www.google.com/maps/place/41%2022.54599N+70%2051.30022W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+jrc_stbd-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 310.5243866 to 310.5975231
+(2024/11/06 12:35:07 to 2024/11/06 14:20:26)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   21 out of 21   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.96, max = 0.51
+   mean = -0.32, stddev = 0.38
+
+===========================
+------ jrc_port statistics ------
+===========================
+jrc_stbd-jrc_port statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 310.5243866 to 310.5975463
+(2024/11/06 12:35:07 to 2024/11/06 14:20:28)
+all jrc_port messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   21 out of 21   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 1.20, max = 3.20
+   mean = 2.05, stddev = 0.44
+
+
+=== Sonar Pingtype Summary =====
+
+sv300: Triggering command not found
+sv300 BB:  on
+sv300 NB:  on
+sv300 BT:  on
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    46    +35us[  +35us] +/-   86us
+^* 192.168.51.9                  1   6   377    33    +31us[  +30us] +/-   82us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000000, RMS offset=0.000008
+Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000003
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2024/11/06 14:25:07) ens = 300 sec, 133 pings, (2.26 sec/ping)
+
+sv300 recent ping statistics
+
+(2024/11/06 14:27:06) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 24 days, 11:49,  1 user,  load average: 0.00, 0.01, 0.00
+ 14:30:52 up 25 days, 11:49,  1 user,  load average: 0.27, 0.26, 0.28
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -37,7 +104,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      4 /home/adcp/log/3dayplots_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_sv300.warn
+      1 /home/adcp/log/quick_os75nb.warn
+      1 /home/adcp/log/quick_sv300.warn
 
 Figures and files:
 
@@ -48,17 +124,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2792      /home/adcp/www/figures/sv300_lastens.png
-    2792      /home/adcp/www/figures/os75nb_lastens.png
-    2792      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2792      /home/adcp/www/figures/os75bb_lastens.png
+       1      /home/adcp/www/figures/sv300_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2792      /home/adcp/www/figures/os75nb_ddaycont.png
-    2792      /home/adcp/www/figures/os75bb_ddaycont.png
-    2792      /home/adcp/www/figures/sv300_ddaycont.png
+       0      /home/adcp/www/figures/sv300_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
