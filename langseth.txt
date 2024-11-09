@@ -1,13 +1,13 @@
-2024/11/07 14:30:01
+2024/11/08 14:30:02
 currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: MGL2410_part3     ** is logging **
 
-  os75bb 2024/11/07  03:35:33 to 2024/11/07  14:25:31  (4 min. ago)
-  os75nb 2024/11/07  03:35:33 to 2024/11/07  14:25:31  (4 min. ago)
+  os75bb 2024/11/07  03:35:33 to 2024/11/08  14:25:33  (4 min. ago)
+  os75nb 2024/11/07  03:35:33 to 2024/11/08  14:25:33  (4 min. ago)
 
-approximate lat, lon, depth:   53 38.68791 N    5 23.41375 E   depth=26
+approximate lat, lon, depth:   50 36.52877 N    0 32.05947 E   depth=42
 
-link: http://www.google.com/maps/place/53%2038.68791N+5%2023.41375E
+link: http://www.google.com/maps/place/50%2036.52877N+0%2032.05947E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 311.1461958 to 311.5942630
-(2024/11/07 03:30:31 to 2024/11/07 14:15:44)
+ddrange: 311.5943787 to 312.5943630
+(2024/11/07 14:15:54 to 2024/11/08 14:15:53)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   129 out of 129   (100%) were good
+   286 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.24, max = 1.96
-   mean = 0.51, stddev = 0.52
+   mean N = 300, stddev N =  16.7
+   min  = -0.34, max = 0.65
+   mean = 0.05, stddev = 0.14
 
 ===========================
 ------ posmv statistics ------
@@ -55,10 +55,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     2   6   377    53    +28us[  +29us] +/- 1073us
-^- _gateway                      4   6   377     3    +12ms[  +12ms] +/-   88ms
+^* timeserve2.langseth.ldeo>     2   7   377    71    +31us[  +29us] +/- 1088us
+^- _gateway                      4   6   377    48    +21ms[  +21ms] +/-   88ms
 
-Reference ID: C0A8030E, Stratum=3, last offset=0.000001, RMS offset=0.000003
+Reference ID: C0A8030E, Stratum=3, last offset=-0.000002, RMS offset=0.000005
 ------------------------------------------
 
 
@@ -66,17 +66,17 @@ Reference ID: C0A8030E, Stratum=3, last offset=0.000001, RMS offset=0.000003
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/11/07 14:20:32) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/11/08 14:20:30) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/11/07 14:20:32) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/11/08 14:20:30) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:01 up 11 days, 10:53,  1 user,  load average: 0.03, 0.14, 0.22
+ 14:30:02 up 12 days, 10:53,  1 user,  load average: 0.00, 0.07, 0.11
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -94,16 +94,8 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      12 /home/adcp/log/3dayplots_os75bb.warn
-      49 /home/adcp/log/DAS_while_logging.warn
-      95 /home/adcp/log/DAS_while_logging.warn.2024-11-06
-      35 /home/adcp/log/lastensq_os75bb.warn
-      35 /home/adcp/log/lastensq_os75nb.warn
-      9 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      16 /home/adcp/log/quick_os75bb.warn
-      1 /home/adcp/log/quick_os75nb.warn
-      21 /home/adcp/log/update_hbins_os75bb.warn
+      58 /home/adcp/log/DAS_while_logging.warn
+      87 /home/adcp/log/DAS_while_logging.warn.2024-11-07
 
 Figures and files:
 

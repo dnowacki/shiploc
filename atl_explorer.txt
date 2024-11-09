@@ -1,19 +1,21 @@
-2024/11/07 14:30:01
+2024/11/08 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: AE2426     ** is logging **
 
-   sv300 2024/11/06  12:37:06 to 2024/11/07  14:28:57  (2 min. ago)
-  os75nb 2024/11/06  12:40:07 to 2024/11/07  14:29:57  (1 min. ago)
+   sv300 2024/11/06  12:37:06 to 2024/11/08  14:28:56  (2 min. ago)
+  os75nb 2024/11/06  12:40:07 to 2024/11/08  14:29:56  (1 min. ago)
 
-approximate lat, lon, depth:   40 35.05435 N   70 52.86881 W   depth=69
+approximate lat, lon, depth:   39 49.84790 N   70 52.83190 W   depth=994
 
-link: http://www.google.com/maps/place/40%2035.05435N+70%2052.86881W
+link: http://www.google.com/maps/place/39%2049.84790N+70%2052.83190W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
 
 
 
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
 
 
 
@@ -25,32 +27,32 @@ Database time ranges:
 ===========================
 jrc_stbd-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 310.6044329 to 311.6044213
-(2024/11/06 14:30:23 to 2024/11/07 14:30:22)
-all abxtwo messages:  (99%)  were good  [using available QC]
+ddrange: 311.6044329 to 312.6044213
+(2024/11/07 14:30:23 to 2024/11/08 14:30:22)
+all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.9
-   min  = -1.32, max = 0.50
-   mean = -0.38, stddev = 0.33
+   mean N = 301, stddev N =  0.2
+   min  = -1.96, max = 0.91
+   mean = -0.35, stddev = 0.39
 
 ===========================
 ------ jrc_port statistics ------
 ===========================
 jrc_stbd-jrc_port statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 310.6044560 to 311.6044444
-(2024/11/06 14:30:25 to 2024/11/07 14:30:24)
+ddrange: 311.6044444 to 312.6044329
+(2024/11/07 14:30:24 to 2024/11/08 14:30:23)
 all jrc_port messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = 0.80, max = 2.90
-   mean = 1.87, stddev = 0.33
+   mean N = 301, stddev N =  0.2
+   min  = 0.30, max = 3.20
+   mean = 1.93, stddev = 0.43
 
 
 === Sonar Pingtype Summary =====
@@ -72,9 +74,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    61    +39us[  +39us] +/-   85us
+^* 192.168.51.9                  1   8   377   156    +30us[  +29us] +/-   82us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000000, RMS offset=0.000004
+Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000014
 ------------------------------------------
 
 
@@ -82,17 +84,17 @@ Reference ID: C0A83309, Stratum=2, last offset=0.000000, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/11/07 14:24:58) ens = 300 sec, 133 pings, (2.26 sec/ping)
+(2024/11/08 14:24:57) ens = 300 sec, 132 pings, (2.27 sec/ping)
 
 sv300 recent ping statistics
 
-(2024/11/07 14:26:56) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/11/08 14:26:56) ens = 120 sec, 117 pings, (1.03 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 26 days, 11:49,  1 user,  load average: 0.67, 0.40, 0.38
+ 14:30:52 up 27 days, 11:49,  1 user,  load average: 0.68, 0.53, 0.44
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -109,12 +111,11 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      6 /home/adcp/log/3dayplots_os75nb.warn
-      40 /home/adcp/log/3dayplots_os75nb.warn.2024-11-06
-      10 /home/adcp/log/3dayplots_sv300.warn
       1 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/DAS_while_logging.warn.2024-11-06
-      7 /home/adcp/log/grab_pings_sv300.warn
+(2) temperature warnings:
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
+
 
 Figures and files:
 
