@@ -1,14 +1,14 @@
-2024/11/08 14:30:01
+2024/11/09 14:30:01
 currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: SKQ202417S     ** is logging **
 
-   wh300 2024/11/05  19:15:55 to 2024/11/08  14:28:48  (1 min. ago)
-  os75nb 2024/11/05  19:18:58 to 2024/11/08  14:27:48  (2 min. ago)
-  os38nb 2024/11/07  08:20:35 to 2024/11/08  14:27:50  (2 min. ago)
+   wh300 2024/11/05  19:15:55 to 2024/11/09  14:28:48  (1 min. ago)
+  os75nb 2024/11/05  19:18:58 to 2024/11/09  14:27:49  (2 min. ago)
+  os38nb 2024/11/07  08:20:35 to 2024/11/09  14:27:48  (2 min. ago)
 
-approximate lat, lon, depth:   14 1.16346 N  151 1.29983 W   depth=5523
+approximate lat, lon, depth:   11 48.29397 N  148 51.52239 W   depth=5616
 
-link: http://www.google.com/maps/place/14%201.16346N+151%201.29983W
+link: http://www.google.com/maps/place/11%2048.29397N+148%2051.52239W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,32 +26,32 @@ NOTE: This is the _primary_ computer
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 311.5960348 to 312.5960233
-(2024/11/07 14:18:17 to 2024/11/08 14:18:16)
+ddrange: 312.5960811 to 313.5960696
+(2024/11/08 14:18:21 to 2024/11/09 14:18:20)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   285 out of 285   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.20, max = -0.12
-   mean = -0.15, stddev = 0.02
+   min  = -0.23, max = -0.10
+   mean = -0.16, stddev = 0.03
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 311.5960580 to 312.5960464
-(2024/11/07 14:18:19 to 2024/11/08 14:18:18)
+ddrange: 312.5960927 to 313.5960811
+(2024/11/08 14:18:22 to 2024/11/09 14:18:21)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   285 out of 285   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.01, max = 0.05
-   mean = 0.03, stddev = 0.02
+   min  = -0.04, max = 0.07
+   mean = 0.03, stddev = 0.03
 
 
 === Sonar Pingtype Summary =====
@@ -77,10 +77,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   7   377    98   +405ns[ +581ns] +/-   92us
-^* 10.1.0.6                      1   6   377    36  +3911ns[+4618ns] +/-   83us
+^+ 10.1.0.5                      1  10   377   677  -1536ns[ -359ns] +/-   88us
+^* 10.1.0.6                      1   7   377    98    -12us[  -13us] +/-   86us
 
-Reference ID: 0A010006, Stratum=2, last offset=0.000001, RMS offset=0.000003
+Reference ID: 0A010006, Stratum=2, last offset=-0.000001, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -88,21 +88,21 @@ Reference ID: 0A010006, Stratum=2, last offset=0.000001, RMS offset=0.000003
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/11/08 14:22:48) ens = 300 sec, 141 pings, (2.13 sec/ping)
+(2024/11/09 14:22:49) ens = 300 sec, 141 pings, (2.13 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/11/08 14:26:48) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/11/09 14:26:48) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38nb recent ping statistics
 
-(2024/11/08 14:22:50) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2024/11/09 14:22:48) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:01 up 2 days, 13:52,  1 user,  load average: 2.02, 0.72, 0.64
+ 14:30:01 up 3 days, 13:52,  1 user,  load average: 0.38, 0.45, 0.55
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -119,12 +119,6 @@ ______________________
 
 (1) EDAC memory warnings:
    652 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      740 /home/adcp/log/3dayplots_os38nb.warn
-      8 /home/adcp/log/DAS_while_logging.warn
-      444 /home/adcp/log/lastensq_os38nb.warn
-      34 /home/adcp/log/quick_os38nb.warn
 
 Figures and files:
 
