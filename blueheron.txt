@@ -1,31 +1,82 @@
-2024/11/11 14:30:01
+2024/11/12 14:30:01
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: BH24-15_Sharp     ** is logging **
+
+ sv500 -- no data yet
+  os150bb 2024/11/12  12:27:26 to 2024/11/12  14:27:25  (2 min. ago)
+  os150nb 2024/11/12  12:27:26 to 2024/11/12  14:27:25  (2 min. ago)
+
+approximate lat, lon, depth:   46 48.63789 N   92 0.48518 W   depth=-151
+
+link: http://www.google.com/maps/place/46%2048.63789N+92%200.48518W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ gpshead statistics ------
+===========================
+posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 316.5155712 to 316.5994489
+(2024/11/12 12:22:25 to 2024/11/12 14:23:12)
+all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   24 out of 24   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.11, max = 0.52
+   mean = 0.20, stddev = 0.16
+
+
+=== Sonar Pingtype Summary =====
+
+sv500: Triggering command not found
+sv500 BB:       off
+sv500 NB:  on
+sv500 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:  on
+os150 NB:  on
+os150 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.14                1   6   377    42  +2537ns[+4638ns] +/-   43us
+^* 192.168.100.14                1   6   377    41    +29us[  +30us] +/-   65us
 
-Reference ID: C0A8640E, Stratum=2, last offset=0.000002, RMS offset=0.000003
+Reference ID: C0A8640E, Stratum=2, last offset=0.000001, RMS offset=0.000004
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os150bb recent ping statistics
+
+(2024/11/12 14:22:26) ens = 300 sec, 137 pings, (2.19 sec/ping)
+
+os150nb recent ping statistics
+
+(2024/11/12 14:22:26) ens = 300 sec, 137 pings, (2.19 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 31 days, 13:41,  1 user,  load average: 0.11, 0.05, 0.01
+ 14:30:02 up 32 days, 13:41,  1 user,  load average: 0.26, 0.29, 0.25
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -38,7 +89,23 @@ https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      47 /home/adcp/log/3dayplots_os150bb.warn
+      59 /home/adcp/log/3dayplots_os150nb.warn
+      300 /home/adcp/log/3dayplots_sv500.warn
+      457 /home/adcp/log/DAS_while_logging.warn
+      56 /home/adcp/log/grab_pings_sv500.warn
+      1615 /home/adcp/log/lastensq_sv500.warn
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      720 /home/adcp/log/lastfewvec_sv500.warn
+      1 /home/adcp/log/quick_os150bb.warn
+      1 /home/adcp/log/quick_os150nb.warn
+      880 /home/adcp/log/quick_sv500.warn
 
 Figures and files:
 
@@ -49,15 +116,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2599      /home/adcp/www/figures/os150nb_lastens.png
-    2599      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2599      /home/adcp/www/figures/os150bb_lastens.png
+       2      /home/adcp/www/figures/os150bb_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2599      /home/adcp/www/figures/os150nb_ddaycont.png
-    2599      /home/adcp/www/figures/os150bb_ddaycont.png
+       2      /home/adcp/www/figures/os150bb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
