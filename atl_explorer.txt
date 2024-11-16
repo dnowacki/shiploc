@@ -1,14 +1,14 @@
-2024/11/14 14:30:01
+2024/11/15 14:30:02
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: AE2426b     ** is logging **
 
-   sv300 2024/11/11  16:51:40 to 2024/11/14  14:29:08  (1 min. ago)
-  os75bb 2024/11/11  16:54:40 to 2024/11/14  14:30:08  (0 min. ago)
-  os75nb 2024/11/11  16:54:40 to 2024/11/14  14:30:08  (0 min. ago)
+   sv300 2024/11/11  16:51:40 to 2024/11/15  14:29:08  (1 min. ago)
+  os75bb 2024/11/11  16:54:40 to 2024/11/15  14:30:07  (0 min. ago)
+  os75nb 2024/11/11  16:54:40 to 2024/11/15  14:30:07  (0 min. ago)
 
-approximate lat, lon, depth:   41 23.97252 N   70 49.69404 W   depth=22
+approximate lat, lon, depth:   37 50.80022 N   69 32.43019 W   depth=4048
 
-link: http://www.google.com/maps/place/41%2023.97252N+70%2049.69404W
+link: http://www.google.com/maps/place/37%2050.80022N+69%2032.43019W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,32 +26,32 @@ Database time ranges:
 ===========================
 jrc_stbd-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 318.5452315 to 318.5977431
-(2024/11/14 13:05:08 to 2024/11/14 14:20:45)
+ddrange: 318.5977662 to 319.5977546
+(2024/11/14 14:20:47 to 2024/11/15 14:20:46)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   15 out of 15   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -1.32, max = 0.08
-   mean = -0.67, stddev = 0.36
+   mean N = 301, stddev N =  0.2
+   min  = -1.05, max = 0.88
+   mean = -0.33, stddev = 0.34
 
 ===========================
 ------ jrc_port statistics ------
 ===========================
 jrc_stbd-jrc_port statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 318.5452315 to 318.5977662
-(2024/11/14 13:05:08 to 2024/11/14 14:20:47)
+ddrange: 318.5977778 to 319.5977662
+(2024/11/14 14:20:48 to 2024/11/15 14:20:47)
 all jrc_port messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   15 out of 15   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = 0.90, max = 2.30
-   mean = 1.58, stddev = 0.39
+   mean N = 301, stddev N =  0.2
+   min  = 1.19, max = 3.40
+   mean = 1.94, stddev = 0.34
 
 
 === Sonar Pingtype Summary =====
@@ -73,9 +73,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    19  +7047ns[ +288ns] +/-   52us
+^* 192.168.51.9                  1   7   377    79    +24us[  +23us] +/-   81us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000007, RMS offset=0.000004
+Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000005
 ------------------------------------------
 
 
@@ -83,21 +83,21 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000007, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/11/14 14:25:07) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/11/15 14:25:09) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 sv300 recent ping statistics
 
-(2024/11/14 14:27:08) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/11/15 14:27:07) ens = 120 sec, 138 pings, (0.87 sec/ping)
 
 os75bb recent ping statistics
 
-(2024/11/14 14:25:07) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2024/11/15 14:25:09) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 33 days, 11:49,  1 user,  load average: 0.51, 0.52, 0.47
+ 14:30:53 up 34 days, 11:49,  1 user,  load average: 0.54, 0.56, 0.50
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -114,12 +114,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      36 /home/adcp/log/3dayplots_os75bb.warn
-      36 /home/adcp/log/3dayplots_os75nb.warn
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_sv300.warn
-      3 /home/adcp/log/quick_sv300.warn
+      3 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
