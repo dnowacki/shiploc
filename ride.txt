@@ -1,5 +1,5 @@
-2024/12/03 14:30:02
-currents06sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
+2024/12/04 14:30:01
+currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 active status is found here: https://currents.soest.hawaii.edu/uhdas_fromships/CONFIGURATION/active_status_yml.txt
@@ -14,10 +14,11 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? sr-ptp01-das.ucsd.edu         1  10     0   46d  +1118ms[+7221ns] +/-  589us
-^* sr-bb-gw-das.ucsd.edu         2   8   377   159  +4414ns[+4661ns] +/-   23ms
+^? sr-seapath-mru.ucsd.edu       1  10     0   27d   +325ms[  -29us] +/-  119us
+^* sr-bb-gw-das.ucsd.edu         2  10   377    81  -3591ns[  +21us] +/-   18ms
+^? sr-ptp01-das.ucsd.edu         0  10     0     -     +0ns[   +0ns] +/-    0ns
 
-Reference ID: 647C6401, Stratum=3, last offset=0.000000, RMS offset=0.000018
+Reference ID: 647C6401, Stratum=3, last offset=0.000024, RMS offset=0.000029
 ------------------------------------------
 
 
@@ -26,7 +27,7 @@ Reference ID: 647C6401, Stratum=3, last offset=0.000000, RMS offset=0.000018
 
 
 ---------- uptime ------------
- 14:30:02 up 73 days, 21:03,  1 user,  load average: 0.14, 0.04, 0.01
+ 14:30:02 up 41 days, 18:07,  1 user,  load average: 0.03, 0.04, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -49,10 +50,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+   13956      /home/adcp/www/figures/os38nb_lastens.png
+   13956      /home/adcp/www/figures/os150nb_lastens.png
+   13956      /home/adcp/www/figures/ktprof_amp_lastens.png
+   13956      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+   13956      /home/adcp/www/figures/os150nb_ddaycont.png
+   13956      /home/adcp/www/figures/wh300_ddaycont.png
+   13956      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
