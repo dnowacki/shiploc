@@ -1,13 +1,13 @@
-2024/12/04 14:30:02
+2024/12/05 14:30:02
 currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.6 LTS")
 Current cruise: TN438     ** is logging **
 
-   wh300 2024/11/19  06:53:21 to 2024/12/04  14:29:24  (0 min. ago)
-  os75nb 2024/11/19  06:56:23 to 2024/12/04  14:27:26  (2 min. ago)
+   wh300 2024/11/19  06:53:21 to 2024/12/05  14:29:23  (0 min. ago)
+  os75nb 2024/11/19  06:56:23 to 2024/12/05  14:27:25  (2 min. ago)
 
-approximate lat, lon, depth:   12 24.23036 N  143 43.75163 E   depth=3744
+approximate lat, lon, depth:   11 39.54832 N  143 2.84910 E   depth=5638
 
-link: http://www.google.com/maps/place/12%2024.23036N+143%2043.75163E
+link: http://www.google.com/maps/place/11%2039.54832N+143%202.84910E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _secondary_ computer
 ===========================
 gyro2-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
 
-ddrange: 338.2829246 to 338.5958842
-(2024/12/04 06:47:25 to 2024/12/04 14:18:04)
-all posmv5 messages:  (100%)  were good  [using available QC]
+ddrange: 338.5962488 to 339.5962396
+(2024/12/04 14:18:36 to 2024/12/05 14:18:35)
+all posmv5 messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   90 out of 90   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = -0.33, max = 0.13
-   mean = -0.12, stddev = 0.09
+   mean N = 601, stddev N =  0.3
+   min  = -0.41, max = 0.51
+   mean = -0.04, stddev = 0.17
 
 ===========================
 ------ seapath statistics ------
@@ -45,15 +45,15 @@ no good seapath data out of 0 (300sec) ensembles
 ===========================
 gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 338.2829246 to 338.5959305
-(2024/12/04 06:47:25 to 2024/12/04 14:18:08)
+ddrange: 338.5962951 to 339.5962859
+(2024/12/04 14:18:40 to 2024/12/05 14:18:39)
 all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   90 out of 90   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.2
-   min  = -0.01, max = 0.00
+   min  = -0.06, max = 0.03
    mean = -0.00, stddev = 0.00
 
 
@@ -76,9 +76,9 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntpserver-11.rvtgt.uw.edu     1   9   377   362    +34us[  +26us] +/-  191us
+^* ntpserver-11.rvtgt.uw.edu     1  10   377   802    +13us[  +16us] +/-  163us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000008, RMS offset=0.000031
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000002, RMS offset=0.000016
 ------------------------------------------
 
 
@@ -86,17 +86,17 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000008, RMS offset=0.000031
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2024/12/04 14:27:24) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/12/05 14:27:23) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75nb recent ping statistics
 
-(2024/12/04 14:22:24) ens = 300 sec, 140 pings, (2.14 sec/ping)
+(2024/12/05 14:22:24) ens = 300 sec, 140 pings, (2.14 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 47 days, 14:34,  1 user,  load average: 0.33, 0.28, 0.27
+ 14:30:03 up 48 days, 14:34,  1 user,  load average: 0.35, 0.33, 0.34
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -116,12 +116,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/DAS_while_logging.warn
-      644 /home/adcp/log/lastensq_os75nb.warn
-      1652 /home/adcp/log/lastensq_wh300.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      630 /home/adcp/log/update_hbins_wh300.warn
+      1218 /home/adcp/log/lastensq_os75nb.warn
+      1442 /home/adcp/log/lastensq_os75nb.warn.2024-12-04
+      3101 /home/adcp/log/lastensq_wh300.warn
+      3675 /home/adcp/log/lastensq_wh300.warn.2024-12-04
+      1218 /home/adcp/log/update_hbins_wh300.warn
+      1428 /home/adcp/log/update_hbins_wh300.warn.2024-12-04
 
 Figures and files:
 
