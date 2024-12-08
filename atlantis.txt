@@ -1,4 +1,4 @@
-2024/12/06 14:30:01
+2024/12/07 14:30:01
 atcurrents04 5.15.0-107-generic (jammy "Ubuntu 22.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377     0   +357ns[ +271ns] +/-   29us
+^* timeserver.atlantis.whoi>     1   6   377    34   -405ns[-1369ns] +/-   28us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000000
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000001
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000000
 
 
 ---------- uptime ------------
- 14:30:02 up 84 days, 23:22,  1 user,  load average: 0.00, 0.01, 0.00
+ 14:30:02 up 85 days, 23:22,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -52,15 +52,106 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  244503      /home/adcp/www/figures/wh300_lastens.png
-  244503      /home/adcp/www/figures/ktprof_amp_lastens.png
-  244503      /home/adcp/www/figures/os75nb_lastens.png
+  245943      /home/adcp/www/figures/wh300_lastens.png
+  245943      /home/adcp/www/figures/ktprof_amp_lastens.png
+  245943      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  244503      /home/adcp/www/figures/wh300_ddaycont.png
-  244503      /home/adcp/www/figures/os75nb_ddaycont.png
+  245943      /home/adcp/www/figures/wh300_ddaycont.png
+  245943      /home/adcp/www/figures/os75nb_ddaycont.png
+
+
+
+local_status_mailto:
+
+
+
+  0.2
+   min  = -0.36, max = -0.10
+   mean = -0.22, stddev = 0.05
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* timeserver.atlantis.whoi>     1   7   377   123  -1806ns[-2467ns] +/-   28us
+
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000001
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2024/12/07 14:25:03) ens = 120 sec, 89 pings, (1.35 sec/ping)
+
+os75nb recent ping statistics
+
+(2024/12/07 14:24:03) ens = 300 sec, 132 pings, (2.27 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:03 up 32 days, 19:37,  1 user,  load average: 0.94, 0.78, 0.91
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
+
+
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      36 /home/adcp/log/3dayplots_os75nb.warn
+      3 /home/adcp/log/3dayplots_wh300.warn
+      7 /home/adcp/log/lastensq_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       5      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
