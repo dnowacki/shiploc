@@ -1,8 +1,10 @@
-2024/12/08 14:30:02
-peale3 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
+2024/12/10 02:37:49
+peale4 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
+
+--->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
 
 
 
@@ -14,9 +16,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* tick.nbp.usap.gov             1   9   377    75    +34us[  +40us] +/-  303us
+^* tick.nbp.usap.gov             1   8   377    36    +24us[  +13us] +/-  270us
 
-Reference ID: 9D8482A8, Stratum=2, last offset=0.000006, RMS offset=0.000040
+Reference ID: 9D8482A8, Stratum=2, last offset=-0.000010, RMS offset=0.000019
 ------------------------------------------
 
 
@@ -25,7 +27,7 @@ Reference ID: 9D8482A8, Stratum=2, last offset=0.000006, RMS offset=0.000040
 
 
 ---------- uptime ------------
- 14:30:02 up 64 days,  9:23,  1 user,  load average: 0.05, 0.04, 0.01
+ 02:37:50 up 35 days,  8:39,  2 users,  load average: 0.08, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_report/
@@ -37,6 +39,12 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_re
 
 
 
+Summary of warnings:
+______________________
+
+(1) expected backup disk not found:
+
+--->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
 
 
 Figures and files:
@@ -48,17 +56,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    7692      /home/adcp/www/figures/ktprof_amp_lastens.png
-    7692      /home/adcp/www/figures/os75bb_lastens.png
-    7692      /home/adcp/www/figures/os38nb_lastens.png
-    7692      /home/adcp/www/figures/os75nb_lastens.png
+  168471      /home/adcp/www/figures/ktprof_amp_lastens.png
+  168471      /home/adcp/www/figures/os75nb_lastens.png
+  168471      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    7692      /home/adcp/www/figures/os38nb_ddaycont.png
-    7692      /home/adcp/www/figures/os75bb_ddaycont.png
-    7692      /home/adcp/www/figures/os75nb_ddaycont.png
+  168471      /home/adcp/www/figures/os75nb_ddaycont.png
+  168471      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
