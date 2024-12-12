@@ -1,36 +1,13 @@
-2024/12/11 01:39:38
+2024/12/12 00:55:01
 currents06sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: EF-Dec10-01     ** is logging **
-
-  ec150cw 2024/12/10  19:07:26 to 2024/12/11  01:35:04  (4 min. ago)
-
-approximate lat, lon, depth:   34 20.27585 N  119 51.01109 W   depth=299
-
-link: http://www.google.com/maps/place/34%2020.27585N+119%2051.01109W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 active status is found here: https://currents.soest.hawaii.edu/uhdas_fromships/CONFIGURATION/active_status_yml.txt
 
 
 
 
 
----- heading correction ----
-
-no heading correction device specified===========================
------- hemisphere statistics ------
-===========================
-no good hemisphere data out of 0 (300sec) ensembles
-
-=== Sonar Pingtype Summary =====
-
-ec150: Triggering command not found
-ec150 BB:  on
-ec150 NB:  on
-ec150 BT:      off
-
-===========================
 
 
 using chrony
@@ -38,23 +15,18 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-ptp01-das.ucsd.edu         0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   6   377    23    -18us[  -21us] +/-   65ms
+^* sr-bb-gw-das.ucsd.edu         3   7   377    80    -13us[  -15us] +/-   97ms
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000003, RMS offset=0.000025
+Reference ID: 647C6401, Stratum=4, last offset=-0.000002, RMS offset=0.000019
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-ec150cw recent ping statistics
-
-(2024/12/11 01:30:05) ens = 300 sec, 421 pings, (0.71 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 01:39:39 up  1:12,  3 users,  load average: 0.10, 0.21, 0.20
+ 00:55:02 up 1 day, 28 min,  1 user,  load average: 0.08, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -71,24 +43,6 @@ ______________________
 
 (1) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      1320 /home/adcp/log/3dayplots_ec150cw.warn
-      1 /home/adcp/log/lastfewvec_ec150cw.warn
-      2 /home/adcp/log/lastfewvec_ec150cw.warn.2024-12-10
-      66 /home/adcp/log/quick_ec150cw.warn
-(3) rbin warnings:
- 
-seapath_mgc gps  23442    0.50  -7011513.99       0.5       0     1     1     0     1
-seapath_mgc hdg  23442    0.50  -7011513.99       0.5       0     1     1     0     1
-seapath_mgc sea  23442    0.50  -7011513.99       0.5       0     1     1     0     1
-(4) proc sensor incompatibilities:
-heading quality: hdg_inst_msgs
- - hemisphere not in sensor_cfg.py subdirs
-(5) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 344.793374
-
 
 Figures and files:
 
@@ -99,13 +53,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/ec150cw_lastens.png
-       4      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/ec150cw_ddaycont.png
 
 
 
