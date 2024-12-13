@@ -1,103 +1,31 @@
-2024/12/11 14:30:01
+2024/12/12 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: AE2429     ** is logging **
-
-   sv300 2024/12/07  16:02:56 to 2024/12/11  14:28:57  (2 min. ago)
-  os75bb 2024/12/07  16:05:59 to 2024/12/11  14:25:59  (5 min. ago)
-  os75nb 2024/12/07  16:05:59 to 2024/12/11  14:25:59  (5 min. ago)
-
-approximate lat, lon, depth:   30 21.71825 N   81 15.96088 W   depth=16
-
-link: http://www.google.com/maps/place/30%2021.71825N+81%2015.96088W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-jrc_stbd-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 344.5949190 to 345.5949074
-(2024/12/10 14:16:41 to 2024/12/11 14:16:40)
-all abxtwo messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -1.63, max = 0.79
-   mean = -0.37, stddev = 0.38
-
-===========================
------- jrc_port statistics ------
-===========================
-jrc_stbd-jrc_port statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 344.5949306 to 345.5949190
-(2024/12/10 14:16:42 to 2024/12/11 14:16:41)
-all jrc_port messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.70, max = 3.00
-   mean = 1.92, stddev = 0.41
-
-
-=== Sonar Pingtype Summary =====
-
-sv300: Triggering command not found
-sv300 BB:  on
-sv300 NB:  on
-sv300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    18    +53us[  +53us] +/-   96us
+^* 192.168.51.9                  1   6   377     2   -222ns[  -26us] +/-   60us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000000, RMS offset=0.000004
+Reference ID: C0A83309, Stratum=2, last offset=-0.000025, RMS offset=0.000011
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2024/12/11 14:20:59) ens = 300 sec, 74 pings, (4.05 sec/ping)
-
-sv300 recent ping statistics
-
-(2024/12/11 14:26:57) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os75bb recent ping statistics
-
-(2024/12/11 14:20:59) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 60 days, 11:49,  1 user,  load average: 0.12, 0.29, 0.40
+ 14:30:52 up 61 days, 11:49,  1 user,  load average: 0.03, 0.10, 0.04
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -120,17 +48,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_lastens.png
-       4      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/sv300_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1402      /home/adcp/www/figures/sv300_lastens.png
+    1402      /home/adcp/www/figures/os75nb_lastens.png
+    1402      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1402      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/sv300_ddaycont.png
-       4      /home/adcp/www/figures/os75bb_ddaycont.png
-       4      /home/adcp/www/figures/os75nb_ddaycont.png
+    1402      /home/adcp/www/figures/os75nb_ddaycont.png
+    1402      /home/adcp/www/figures/os75bb_ddaycont.png
+    1402      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
