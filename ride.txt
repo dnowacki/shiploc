@@ -1,14 +1,14 @@
-2024/12/12 19:30:01
+2024/12/13 19:30:01
 currents05sr 6.2.0-26-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: SR2422     ** is logging **
 
-   wh300 2024/12/06  16:19:00 to 2024/12/12  19:29:00  (1 min. ago)
-  os150nb 2024/12/06  16:22:00 to 2024/12/12  19:27:00  (3 min. ago)
-  os38nb 2024/12/06  16:22:03 to 2024/12/12  19:27:02  (3 min. ago)
+   wh300 2024/12/06  16:19:00 to 2024/12/13  19:29:00  (1 min. ago)
+  os150nb 2024/12/06  16:22:00 to 2024/12/13  19:27:00  (3 min. ago)
+  os38nb 2024/12/06  16:22:03 to 2024/12/13  19:27:02  (3 min. ago)
 
-approximate lat, lon, depth:   33 39.79143 N  119 8.82477 W   depth=195
+approximate lat, lon, depth:   33 12.59925 N  117 27.48076 W   depth=24
 
-link: http://www.google.com/maps/place/33%2039.79143N+119%208.82477W
+link: http://www.google.com/maps/place/33%2012.59925N+117%2027.48076W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ no heading correction device specified===========================
 ===========================
 seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 345.8042771 to 346.8042713
-(2024/12/11 19:18:10 to 2024/12/12 19:18:09)
+ddrange: 346.8043118 to 347.8043060
+(2024/12/12 19:18:13 to 2024/12/13 19:18:12)
 all hemisphere messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.4
-   min  = -4.19, max = 6.42
-   mean = 1.16, stddev = 1.85
+   mean N = 601, stddev N =  0.3
+   min  = -3.49, max = 6.85
+   mean = 1.59, stddev = 1.83
 
 
 === Sonar Pingtype Summary =====
@@ -61,10 +61,10 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-seapath-mru.ucsd.edu       0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* sr-bb-gw-das.ucsd.edu         2   7   377    49   -890ns[-1372ns] +/-   79ms
+^* sr-bb-gw-das.ucsd.edu         2   8   377    22    +12us[  +15us] +/-   34ms
 ^? sr-ptp01-das.ucsd.edu         0  10     0     -     +0ns[   +0ns] +/-    0ns
 
-Reference ID: 647C6401, Stratum=3, last offset=-0.000000, RMS offset=0.000032
+Reference ID: 647C6401, Stratum=3, last offset=0.000003, RMS offset=0.000034
 ------------------------------------------
 
 
@@ -72,21 +72,21 @@ Reference ID: 647C6401, Stratum=3, last offset=-0.000000, RMS offset=0.000032
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2024/12/12 19:27:00) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/12/13 19:27:00) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2024/12/12 19:22:00) ens = 300 sec, 272 pings, (1.10 sec/ping)
+(2024/12/13 19:22:00) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 os38nb recent ping statistics
 
-(2024/12/12 19:22:02) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2024/12/13 19:22:02) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 19:30:02 up 7 days, 23:15,  1 user,  load average: 0.26, 0.49, 0.58
+ 19:30:02 up 8 days, 23:15,  1 user,  load average: 1.88, 0.92, 0.66
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -105,7 +105,9 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
+      2 /home/adcp/log/3dayplots_os150nb.warn
       12 /home/adcp/log/3dayplots_os38nb.warn
+      34 /home/adcp/log/3dayplots_os38nb.warn.2024-12-12
 
 Figures and files:
 
@@ -116,7 +118,7 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
+       3      /home/adcp/www/figures/os150nb_lastens.png
        2      /home/adcp/www/figures/os38nb_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
        1      /home/adcp/www/figures/wh300_lastens.png
@@ -124,9 +126,9 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
        2      /home/adcp/www/figures/os150nb_ddaycont.png
        2      /home/adcp/www/figures/os38nb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
