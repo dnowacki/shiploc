@@ -1,13 +1,13 @@
-2024/12/14 14:30:01
+2024/12/15 14:30:01
 currents03skq 5.15.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: SKQ202418S     ** is logging **
 
-   wh300 2024/12/13  19:53:27 to 2024/12/14  14:28:47  (1 min. ago)
-  os75nb 2024/12/13  19:56:12 to 2024/12/14  14:28:48  (1 min. ago)
+   wh300 2024/12/13  19:53:27 to 2024/12/15  14:28:47  (1 min. ago)
+  os75nb 2024/12/13  19:56:12 to 2024/12/15  14:28:47  (1 min. ago)
 
-approximate lat, lon, depth:   20 18.76898 N  161 7.21537 W   depth=4689
+approximate lat, lon, depth:   19 10.89098 N  164 44.66817 W   depth=5349
 
-link: http://www.google.com/maps/place/20%2018.76898N+161%207.21537W
+link: http://www.google.com/maps/place/19%2010.89098N+164%2044.66817W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 347.8285904 to 348.6036483
-(2024/12/13 19:53:10 to 2024/12/14 14:29:15)
+ddrange: 348.6036946 to 349.6036830
+(2024/12/14 14:29:19 to 2024/12/15 14:29:18)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   223 out of 223   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  6.2
-   min  = -0.19, max = -0.01
-   mean = -0.08, stddev = 0.04
+   mean N = 301, stddev N =  0.2
+   min  = -0.11, max = -0.03
+   mean = -0.07, stddev = 0.02
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 347.8285904 to 348.6036598
-(2024/12/13 19:53:10 to 2024/12/14 14:29:16)
+ddrange: 348.6037061 to 349.6036946
+(2024/12/14 14:29:20 to 2024/12/15 14:29:19)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   223 out of 223   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 300, stddev N =  6.4
-   min  = -0.02, max = 0.13
-   mean = 0.09, stddev = 0.04
+   mean N = 301, stddev N =  0.4
+   min  = 0.09, max = 0.15
+   mean = 0.12, stddev = 0.01
 
 
 === Sonar Pingtype Summary =====
@@ -76,10 +76,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   6   377    24  -5730ns[-5730ns] +/-   90us
-^* 10.1.0.6                      1   6   377    24  -3650ns[-8631ns] +/-   86us
+^+ 10.1.0.5                      1   6   377     7   +315ns[ +315ns] +/-   91us
+^* 10.1.0.6                      1   6   377    47  +1405ns[+2165ns] +/-   80us
 
-Reference ID: 0A010006, Stratum=2, last offset=-0.000005, RMS offset=0.000005
+Reference ID: 0A010006, Stratum=2, last offset=0.000001, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -87,17 +87,17 @@ Reference ID: 0A010006, Stratum=2, last offset=-0.000005, RMS offset=0.000005
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2024/12/14 14:23:47) ens = 300 sec, 167 pings, (1.80 sec/ping)
+(2024/12/15 14:23:48) ens = 300 sec, 167 pings, (1.80 sec/ping)
 
 wh300 recent ping statistics
 
-(2024/12/14 14:26:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2024/12/15 14:26:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 4 days, 19:00,  1 user,  load average: 2.85, 1.28, 0.82
+ 14:30:02 up 5 days, 19:00,  1 user,  load average: 2.18, 1.10, 0.73
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -114,11 +114,6 @@ ______________________
 
 (1) EDAC memory warnings:
      7 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      28 /home/adcp/log/3dayplots_os75nb.warn
-      1 /home/adcp/log/quick_os75nb.warn
-      2 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
