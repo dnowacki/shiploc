@@ -1,8 +1,8 @@
-2024/12/19 14:30:01
+2024/12/20 14:30:02
 currents02sv 6.5.0-18-generic (jammy "Ubuntu 22.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
-
+NOTE: This is the _primary_ computer
 
 
 
@@ -11,31 +11,14 @@ zmq is not enabled. no zmq position.
 
 
 using chrony
----------- chronyc tracking ------------
-MS Name/IP address         Stratum Poll Reach LastRx Last sample               
-===============================================================================
-^? prod-ntp-4.ntp1.ps5.cano>     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? alphyn.canonical.com          0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? prod-ntp-3.ntp4.ps5.cano>     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? prod-ntp-5.ntp4.ps5.cano>     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? ntpserver-2.walkeritg.org     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? sonic.boom.net                0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* time.cloudflare.com           3   9   377   164    +23us[  +52us] +/-   40ms
-^? 66.205.249.28                 0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? LAX.CALTICK.NET               0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? ovh.maxhost.io                0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? shed.galexander.org           0  10     0     -     +0ns[   +0ns] +/-    0ns
-
-Reference ID: A29FC87B, Stratum=4, last offset=0.000030, RMS offset=0.000165
-------------------------------------------
-
+WARNING: Chrony is installed but is not running
 
 
 
 
 
 ---------- uptime ------------
- 14:30:06 up 11:01,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 11:52,  1 user,  load average: 0.01, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -53,7 +36,11 @@ ______________________
 (1) I/O warnings:
      3 I/O errors in last 2 /var/log/syslog
 (2) EDAC memory warnings:
-     4 EDAC (memory) errors in last 2 /var/log/syslog
+     7 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
+
+      2 /home/adcp/log/send_buffered_mail.warn
+      10 /home/adcp/log/send_buffered_mail.warn.2024-12-19
 
 Figures and files:
 
