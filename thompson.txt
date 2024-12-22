@@ -1,74 +1,13 @@
-2024/12/20 14:30:02
-currents04tt 5.4.0-26-generic (focal "Ubuntu 20.04.6 LTS")
-Current cruise: TN439     ** is logging **
-
-   wh300 2024/12/11  23:43:58 to 2024/12/20  14:29:59  (0 min. ago)
-  os75nb 2024/12/11  23:46:59 to 2024/12/20  14:26:59  (3 min. ago)
-
-approximate lat, lon, depth:   13 47.08628 N  146 0.21848 E   depth=3584
-
-link: http://www.google.com/maps/place/13%2047.08628N+146%200.21848E
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2024/12/21 14:30:01
+currents03tt 5.4.0-26-generic (focal "Ubuntu 20.04.6 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _secondary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv5")
-===========================
------- posmv5 statistics ------
-===========================
-gyro2-posmv5 statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
-
-ddrange: 353.6022967 to 354.6022874
-(2024/12/19 14:27:18 to 2024/12/20 14:27:18)
-all posmv5 messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = -0.47, max = 0.39
-   mean = 0.02, stddev = 0.07
-
-===========================
------- seapath statistics ------
-===========================
-no good seapath data out of 0 (300sec) ensembles
-===========================
------- gyro1 statistics ------
-===========================
-gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 353.6023430 to 354.6023337
-(2024/12/19 14:27:22 to 2024/12/20 14:27:22)
-all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = -0.01, max = 0.00
-   mean = -0.00, stddev = 0.00
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,3)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
@@ -76,27 +15,18 @@ using chrony
 210 Number of sources = 1
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntpserver-11.rvtgt.uw.edu     1  10   377    77    -81us[ -110us] +/-  130us
+^* 10.43.11.10                   1  10   377   596  -4155ns[-7063ns] +/-  135us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000030, RMS offset=0.000024
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000003, RMS offset=0.000033
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2024/12/20 14:25:59) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os75nb recent ping statistics
-
-(2024/12/20 14:21:59) ens = 300 sec, 141 pings, (2.13 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 9 days, 15:57,  1 user,  load average: 0.12, 0.26, 0.26
+ 14:30:02 up 10 days, 15:57,  1 user,  load average: 0.28, 0.08, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -111,17 +41,7 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      1218 /home/adcp/log/lastensq_os75nb.warn
-      2016 /home/adcp/log/lastensq_os75nb.warn.2024-12-19
-      3101 /home/adcp/log/lastensq_wh300.warn
-      5124 /home/adcp/log/lastensq_wh300.warn.2024-12-19
-      1218 /home/adcp/log/update_hbins_wh300.warn
-      2016 /home/adcp/log/update_hbins_wh300.warn.2024-12-19
 
 Figures and files:
 
@@ -132,15 +52,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+  199608      /home/adcp/www/figures/ktprof_amp_lastens.png
+  199608      /home/adcp/www/figures/os75nb_lastens.png
+  199608      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75nb_ddaycont.png
-       2      /home/adcp/www/figures/wh300_ddaycont.png
+  199608      /home/adcp/www/figures/wh300_ddaycont.png
+  199608      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
