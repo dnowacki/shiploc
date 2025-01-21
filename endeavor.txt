@@ -1,12 +1,12 @@
-2025/01/19 14:30:02
+2025/01/20 14:30:01
 currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: en2025-04-test-single-home     ** is logging **
+Current cruise: en2025-05-test-single-home     ** is logging **
 
-   wh300 2025/01/18  02:33:22 to 2025/01/19  14:29:22  (0 min. ago)
+   wh300 2025/01/20  01:45:47 to 2025/01/20  14:29:47  (0 min. ago)
 
-approximate lat, lon, depth:   41 29.53914 N   71 25.10835 W   depth=11
+approximate lat, lon, depth:   41 29.53967 N   71 25.10845 W   depth=11
 
-link: http://www.google.com/maps/place/41%2029.53914N+71%2025.10835W
+link: http://www.google.com/maps/place/41%2029.53967N+71%2025.10845W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -22,34 +22,22 @@ Database time ranges:
 ===========================
 ------ abxtwo_b2 statistics ------
 ===========================
-gyro-abxtwo_b2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 17.5948148 to 18.5948032
-(2025/01/18 14:16:32 to 2025/01/19 14:16:31)
-all abxtwo_b2 messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.06, max = 0.43
-   mean = 0.21, stddev = 0.08
-
+no good abxtwo_b2 data out of 0 (300sec) ensembles
 ===========================
 ------ abxtwo_b2_udp statistics ------
 ===========================
 gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 17.5948264 to 18.5948148
-(2025/01/18 14:16:33 to 2025/01/19 14:16:32)
+ddrange: 19.0720718 to 19.6034144
+(2025/01/20 01:43:47 to 2025/01/20 14:28:55)
 all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   153 out of 153   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -0.06, max = 0.42
-   mean = 0.21, stddev = 0.08
+   min  = 0.02, max = 0.44
+   mean = 0.22, stddev = 0.09
 
 
 === Sonar Pingtype Summary =====
@@ -80,13 +68,13 @@ Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/01/19 14:27:22) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/01/20 14:27:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 13:30,  1 user,  load average: 0.34, 0.20, 0.19
+ 14:30:02 up 2 days, 13:30,  1 user,  load average: 0.33, 0.22, 0.19
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -107,8 +95,14 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      61 /home/adcp/log/lastensq_wh300.warn
-      145 /home/adcp/log/lastensq_wh300.warn.2025-01-18
+      138 /home/adcp/log/DAS_while_logging.warn
+      46 /home/adcp/log/grab_pings_wh300.warn
+      420 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_wh300.warn
+(3) proc sensor incompatibilities:
+heading quality: hdg_inst_msgs
+ - abxtwo_b2 not in sensor_cfg.py subdirs
 
 Figures and files:
 
@@ -125,7 +119,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
