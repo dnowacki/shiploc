@@ -1,12 +1,12 @@
-2025/01/20 14:30:01
+2025/01/22 03:15:20
 currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: en2025-05-test-single-home     ** is logging **
 
-   wh300 2025/01/20  01:45:47 to 2025/01/20  14:29:47  (0 min. ago)
+   wh300 2025/01/20  01:45:47 to 2025/01/21  14:17:47  (777 min. ago) 13.0 hrs
 
-approximate lat, lon, depth:   41 29.53967 N   71 25.10845 W   depth=11
+approximate lat, lon, depth:   41 29.53979 N   71 25.10835 W   depth=11
 
-link: http://www.google.com/maps/place/41%2029.53967N+71%2025.10845W
+link: http://www.google.com/maps/place/41%2029.53979N+71%2025.10835W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -28,16 +28,16 @@ no good abxtwo_b2 data out of 0 (300sec) ensembles
 ===========================
 gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 19.0720718 to 19.6034144
-(2025/01/20 01:43:47 to 2025/01/20 14:28:55)
+ddrange: 20.1349421 to 21.1349306
+(2025/01/21 03:14:19 to 2025/01/22 03:14:18)
 all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   153 out of 153   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = 0.02, max = 0.44
-   mean = 0.22, stddev = 0.09
+   min  = -0.09, max = 0.64
+   mean = 0.31, stddev = 0.11
 
 
 === Sonar Pingtype Summary =====
@@ -58,9 +58,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 192.168.1.8                   0  10     0     -     +0ns[   +0ns] +/-    0ns
-WARNING: Chrony cannot get time from the specified server
-Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
+^* 192.168.1.8                   1  10   377   540    +43us[  +42us] +/- 1318us
+
+Reference ID: C0A80108, Stratum=2, last offset=-0.000001, RMS offset=0.000011
 ------------------------------------------
 
 
@@ -68,13 +68,13 @@ Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/01/20 14:27:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/01/21 14:15:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 2 days, 13:30,  1 user,  load average: 0.33, 0.22, 0.19
+ 03:15:21 up 4 days,  2:15,  2 users,  load average: 0.47, 0.28, 0.16
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -95,14 +95,17 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      138 /home/adcp/log/DAS_while_logging.warn
-      46 /home/adcp/log/grab_pings_wh300.warn
-      420 /home/adcp/log/lastensq_wh300.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      1 /home/adcp/log/quick_wh300.warn
+      107 /home/adcp/log/DAS_while_logging.warn
+      375 /home/adcp/log/DAS_while_logging.warn.2025-01-21
+      1608 /home/adcp/log/lastensq_wh300.warn
+      3059 /home/adcp/log/lastensq_wh300.warn.2025-01-21
 (3) proc sensor incompatibilities:
 heading quality: hdg_inst_msgs
  - abxtwo_b2 not in sensor_cfg.py subdirs
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 19.916670
+
 
 Figures and files:
 
@@ -113,13 +116,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+     777      /home/adcp/www/figures/wh300_lastens.png
+     777      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
