@@ -1,10 +1,14 @@
-2025/01/23 16:26:00
+2025/01/24 20:42:00
 currents03en 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: en2025-test-abxtwo-udp-03     ** is logging **
+Current cruise: en727     ** is logging **
 
- wh300 -- no data yet
+   wh300 2025/01/24  15:25:45 to 2025/01/24  20:41:45  (0 min. ago)
+  os75nb 2025/01/24  15:28:46 to 2025/01/24  20:38:46  (3 min. ago)
 
-no positions found from filelist abxtwo_b2_udp/*.gps.rbin
+approximate lat, lon, depth:   41 11.06476 N   70 52.98875 W   depth=23
+
+link: http://www.google.com/maps/place/41%2011.06476N+70%2052.98875W
+not using zmq publishers, position is from serial GPS
 
 Database time ranges:
 
@@ -15,26 +19,22 @@ Database time ranges:
 
 ---- heading correction ----
 
-(heading correction from "abxtwo_b2_udp")
+(heading correction from "abxtwo_b2_adu")
 ===========================
------- abxtwo_b2 statistics ------
+------ abxtwo_b2_adu statistics ------
 ===========================
-no good abxtwo_b2 data out of 0 (300sec) ensembles
-===========================
------- abxtwo_b2_udp statistics ------
-===========================
-gyro-abxtwo_b2_udp statistics (comment=same sign as cal/rotate/*ang)
+gyro-abxtwo_b2_adu statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 20.7908912 to 21.7908796
-(2025/01/21 18:58:53 to 2025/01/22 18:58:52)
-all abxtwo_b2_udp messages:  (100%)  were good  [using available QC]
+ddrange: 23.6414931 to 23.8604977
+(2025/01/24 15:23:45 to 2025/01/24 20:39:07)
+all abxtwo_b2_adu messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   63 out of 63   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -0.09, max = 0.48
-   mean = 0.26, stddev = 0.10
+   min  = -0.48, max = 2.07
+   mean = 0.12, stddev = 0.45
 
 
 === Sonar Pingtype Summary =====
@@ -45,7 +45,7 @@ wh300 BT:      off
 
 os75: Triggering not used (CX0,0)
 os75 BB:       off
-os75 NB:       off
+os75 NB:  on
 os75 BT:      off
 
 ===========================
@@ -55,23 +55,27 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.1.8                   1   9   377   334    +34us[  +37us] +/- 1277us
+^* 192.168.1.8                   1   8   377   174    -27us[  -57us] +/- 1265us
 
-Reference ID: C0A80108, Stratum=2, last offset=0.000004, RMS offset=0.007426
+Reference ID: C0A80108, Stratum=2, last offset=-0.000029, RMS offset=0.000020
 ------------------------------------------
 
 
 
 ------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2025/01/24 20:33:44) ens = 300 sec, 132 pings, (2.27 sec/ping)
+
 wh300 recent ping statistics
 
-(2025/01/21 14:15:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/01/24 20:39:45) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 16:26:01 up 5 days, 15:26,  3 users,  load average: 0.06, 0.16, 0.10
+ 20:42:01 up 6 days, 19:42,  1 user,  load average: 0.24, 0.33, 0.31
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/endeavor/daily_report/
@@ -92,21 +96,21 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      1956 /home/adcp/log/3dayplots_wh300.warn
+      768 /home/adcp/log/3dayplots_wh300.warn
+      3048 /home/adcp/log/3dayplots_wh300.warn.2025-01-23
       9 /home/adcp/log/DAS_while_cruise.warn
-      2345 /home/adcp/log/DAS_while_logging.warn
-      624 /home/adcp/log/DAS_while_logging.warn.2025-01-22
-      2758 /home/adcp/log/lastensq_wh300.warn
-      9366 /home/adcp/log/lastensq_wh300.warn.2025-01-22
-      3546 /home/adcp/log/lastfewvec_wh300.warn
-      8274 /home/adcp/log/quick_wh300.warn
-      742 /home/adcp/log/update_hbins_wh300.warn
-(3) proc sensor incompatibilities:
- - pos_inst (abxtwo_b2_udp) not in sensor_cfg.py subdirs
- - hcorr_inst (abxtwo_b2_udp) not in sensor_cfg.py subdirs
-heading quality: hdg_inst_msgs
- - abxtwo_b2 not in sensor_cfg.py subdirs
- - abxtwo_b2_udp not in sensor_cfg.py subdirs
+      914 /home/adcp/log/DAS_while_logging.warn
+      3650 /home/adcp/log/DAS_while_logging.warn.2025-01-23
+      56 /home/adcp/log/lastensq_os75nb.warn
+      1212 /home/adcp/log/lastensq_wh300.warn
+      4284 /home/adcp/log/lastensq_wh300.warn.2025-01-23
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1379 /home/adcp/log/lastfewvec_wh300.warn
+      5508 /home/adcp/log/lastfewvec_wh300.warn.2025-01-23
+      3217 /home/adcp/log/quick_wh300.warn
+      12852 /home/adcp/log/quick_wh300.warn.2025-01-23
+      294 /home/adcp/log/update_hbins_wh300.warn
+      1176 /home/adcp/log/update_hbins_wh300.warn.2025-01-23
 
 Figures and files:
 
@@ -117,10 +121,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
