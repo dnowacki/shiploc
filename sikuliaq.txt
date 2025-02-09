@@ -1,12 +1,12 @@
-2025/02/07 14:30:01
+2025/02/08 14:30:02
 currents03skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: test01     ** is logging **
 
-   wh300 2025/02/07  00:59:28 to 2025/02/07  14:29:28  (0 min. ago)
+   wh300 2025/02/07  00:59:28 to 2025/02/08  14:29:28  (0 min. ago)
 
-approximate lat, lon, depth:   21 18.92135 N  157 52.63951 W   depth=-2
+approximate lat, lon, depth:   21 18.92161 N  157 52.63957 W   depth=-2
 
-link: http://www.google.com/maps/place/21%2018.92135N+157%2052.63951W
+link: http://www.google.com/maps/place/21%2018.92161N+157%2052.63957W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,31 +24,31 @@ Database time ranges:
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 37.0399120 to 37.6026667
-(2025/02/07 00:57:28 to 2025/02/07 14:27:50)
+ddrange: 37.6026088 to 38.6025972
+(2025/02/07 14:27:45 to 2025/02/08 14:27:44)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   162 out of 162   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.28, max = -0.16
-   mean = -0.23, stddev = 0.03
+   min  = -0.28, max = -0.19
+   mean = -0.24, stddev = 0.02
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 37.0399120 to 37.6026782
-(2025/02/07 00:57:28 to 2025/02/07 14:27:51)
+ddrange: 37.6026204 to 38.6026088
+(2025/02/07 14:27:46 to 2025/02/08 14:27:45)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   162 out of 162   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.06, max = 0.00
+   mean N = 301, stddev N =  0.2
+   min  = -0.06, max = -0.01
    mean = -0.03, stddev = 0.01
 
 
@@ -75,32 +75,24 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   9   377   266  +1807ns[  +11us] +/-  105us
-^* 10.1.0.6                      1   8   377   205  +6748ns[  +16us] +/-  109us
+^+ 10.1.0.5                      1   9   377    31   +399ns[ +399ns] +/-  106us
+^* 10.1.0.6                      1   9   377   408    +27us[  +27us] +/-  125us
 
-Reference ID: 0A010006, Stratum=2, last offset=0.000010, RMS offset=0.000008
+Reference ID: 0A010006, Stratum=2, last offset=-0.000000, RMS offset=0.000003
 ------------------------------------------
 
 
 
 ------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2025/02/06 20:28:18) ens = 300 sec, 141 pings, (2.13 sec/ping)
-
 wh300 recent ping statistics
 
-(2025/02/07 14:27:28) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os38nb recent ping statistics
-
-(2025/02/06 20:28:19) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2025/02/08 14:27:28) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 13:42,  2 users,  load average: 0.28, 0.29, 0.27
+ 14:30:02 up 1 day, 13:42,  2 users,  load average: 0.18, 0.17, 0.24
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -117,21 +109,6 @@ ______________________
 
 (1) EDAC memory warnings:
     13 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      51 /home/adcp/log/3dayplots_wh300.warn
-      3 /home/adcp/log/hcorrstats_mgc2.warn
-      3 /home/adcp/log/hcorrstats_seapath.warn
-      312 /home/adcp/log/lastensq_os38nb.warn
-      312 /home/adcp/log/lastensq_os75nb.warn
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      2 /home/adcp/log/lastfewvec_wh300.warn.2025-02-06
-      9 /home/adcp/log/quick_os38nb.warn
-      1 /home/adcp/log/quick_os75nb.warn
-      1 /home/adcp/log/quick_wh300.warn
-      12922 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 
