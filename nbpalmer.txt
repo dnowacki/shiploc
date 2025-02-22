@@ -1,71 +1,15 @@
-2025/02/20 14:30:01
-peale3 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: NBP2501_Part2     ** is logging **
+2025/02/21 14:30:01
+peale4 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 
-  os75bb 2025/02/20  00:06:13 to 2025/02/20  14:26:13  (3 min. ago)
-  os75nb 2025/02/20  00:06:13 to 2025/02/20  14:26:13  (3 min. ago)
-  os38nb 2025/02/20  00:06:15 to 2025/02/20  14:26:13  (3 min. ago)
 
-approximate lat, lon, depth:   75 54.41224 S  165 31.68061 E   depth=636
-
-link: http://www.google.com/maps/place/75%2054.41224S+165%2031.68061E
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+--->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
 
 
 
 
 
-
----- heading correction ----
-
-no heading correction device specified===========================
------- seapath380 statistics ------
-===========================
-seapath330-seapath380 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 50.0008565 to 50.5950347
-(2025/02/20 00:01:14 to 2025/02/20 14:16:51)
-all seapath380 messages:  (71%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   122 out of 122   (100%) were good
-statistics of good data:
-   mean N = 215, stddev N =  136.5
-   min  = -0.08, max = 0.12
-   mean = 0.01, stddev = 0.04
-
-===========================
------- gyro statistics ------
-===========================
-seapath330-gyro statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 50.0008565 to 50.5950579
-(2025/02/20 00:01:14 to 2025/02/20 14:16:53)
-all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   171 out of 171   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = 1.17, max = 3.96
-   mean = 2.42, stddev = 0.85
-
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:  on
-os38 BT:      off
-
-===========================
 
 
 using chrony
@@ -73,31 +17,18 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? tick.nbp.usap.gov             0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* tick.nbp.usap.gov             1  10   377   406    +87us[  +82us] +/-  249us
+^* tick.nbp.usap.gov             1  10   377   157    +12us[  +23us] +/-  206us
 
-Reference ID: 9D8482A8, Stratum=2, last offset=-0.000005, RMS offset=0.000049
+Reference ID: 9D8482A8, Stratum=2, last offset=0.000011, RMS offset=0.000015
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2025/02/20 14:21:17) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-os75nb recent ping statistics
-
-(2025/02/20 14:21:17) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-os38nb recent ping statistics
-
-(2025/02/20 14:21:13) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 138 days,  9:23,  1 user,  load average: 0.05, 0.22, 0.29
+ 14:30:02 up 108 days, 20:32,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_report/
@@ -112,15 +43,10 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_re
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
+(1) expected backup disk not found:
 
-      80 /home/adcp/log/3dayplots_os38nb.warn
-      80 /home/adcp/log/3dayplots_os75bb.warn
-      80 /home/adcp/log/3dayplots_os75nb.warn
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/quick_os38nb.warn
+--->>>  /media/adcp/UHDAS/data NOT FOUND (check mounts) <<<---
+
 
 Figures and files:
 
@@ -131,17 +57,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       3      /home/adcp/www/figures/os38nb_lastens.png
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
-       3      /home/adcp/www/figures/os75bb_lastens.png
+  274304      /home/adcp/www/figures/ktprof_amp_lastens.png
+  274304      /home/adcp/www/figures/os75nb_lastens.png
+  274304      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75bb_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
-       3      /home/adcp/www/figures/os38nb_ddaycont.png
+  274304      /home/adcp/www/figures/os75nb_ddaycont.png
+  274304      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
