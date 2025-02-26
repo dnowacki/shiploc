@@ -1,15 +1,15 @@
-2025/02/25 03:40:00
+2025/02/25 21:46:00
 currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: PE25_18_FUGRO_ADCP_5     ** is logging **
+Current cruise: PE25_18_FUGRO_ADCP_6     ** is logging **
 
-  wh1200 2025/02/25  03:10:51 to 2025/02/25  03:38:51  (1 min. ago)
-   wh300 2025/02/25  03:10:50 to 2025/02/25  03:38:50  (1 min. ago)
-  os75bb 2025/02/25  03:13:50 to 2025/02/25  03:38:51  (1 min. ago)
-  os75nb 2025/02/25  03:13:50 to 2025/02/25  03:38:51  (1 min. ago)
+  wh1200 2025/02/25  21:09:18 to 2025/02/25  21:45:18  (0 min. ago)
+   wh300 2025/02/25  21:09:17 to 2025/02/25  21:45:16  (0 min. ago)
+  os75bb 2025/02/25  21:12:17 to 2025/02/25  21:42:17  (3 min. ago)
+  os75nb 2025/02/25  21:12:17 to 2025/02/25  21:42:17  (3 min. ago)
 
-approximate lat, lon, depth:   28 22.34953 N   90 38.92719 W   depth=47
+approximate lat, lon, depth:   26 22.22432 N   90 48.11635 W   depth=2968
 
-link: http://www.google.com/maps/place/28%2022.34953N+90%2038.92719W
+link: http://www.google.com/maps/place/26%2022.22432N+90%2048.11635W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -23,13 +23,25 @@ Database time ranges:
 
 (heading correction from "abxtwo")
 ===========================
------- sc70 statistics ------
-===========================
-no good sc70 data out of 0 (300sec) ensembles
-===========================
 ------ abxtwo statistics ------
 ===========================
-no good abxtwo data out of 0 (300sec) ensembles
+sc70-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 55.8800694 to 55.9015394
+(2025/02/25 21:07:18 to 2025/02/25 21:38:13)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   6 out of 6   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -2.93, max = -2.37
+   mean = -2.67, stddev = 0.21
+
+===========================
+------ furuno statistics ------
+===========================
+no good furuno data out of 0 (300sec) ensembles
 
 === Sonar Pingtype Summary =====
 
@@ -56,25 +68,25 @@ WARNING: Chrony is installed but is not running
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2025/02/25 03:33:53) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2025/02/25 21:37:20) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 os75nb recent ping statistics
 
-(2025/02/25 03:33:53) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2025/02/25 21:37:20) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 wh1200 recent ping statistics
 
-(2025/02/25 03:36:51) ens = 120 sec, 200 pings, (0.60 sec/ping)
+(2025/02/25 21:43:18) ens = 120 sec, 201 pings, (0.60 sec/ping)
 
 wh300 recent ping statistics
 
-(2025/02/25 03:36:50) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/02/25 21:43:16) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 03:40:01 up  5:19,  1 user,  load average: 1.30, 0.55, 0.40
+ 21:46:01 up 23:25,  2 users,  load average: 0.65, 0.63, 0.54
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -93,42 +105,42 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      786 /home/adcp/log/3dayplots_os75bb.warn
+      5071 /home/adcp/log/3dayplots_os75bb.warn
       199 /home/adcp/log/3dayplots_os75bb.warn.2025-02-24
-      786 /home/adcp/log/3dayplots_os75nb.warn
+      5079 /home/adcp/log/3dayplots_os75nb.warn
       199 /home/adcp/log/3dayplots_os75nb.warn.2025-02-24
-      790 /home/adcp/log/3dayplots_wh1200.warn
+      5092 /home/adcp/log/3dayplots_wh1200.warn
       212 /home/adcp/log/3dayplots_wh1200.warn.2025-02-24
-      799 /home/adcp/log/3dayplots_wh300.warn
+      5092 /home/adcp/log/3dayplots_wh300.warn
       212 /home/adcp/log/3dayplots_wh300.warn.2025-02-24
       10 /home/adcp/log/DAS_while_cruise.warn
-      183 /home/adcp/log/DAS_while_logging.warn
+      1091 /home/adcp/log/DAS_while_logging.warn
       101 /home/adcp/log/DAS_while_logging.warn.2025-02-24
-      124 /home/adcp/log/lastensq_os75bb.warn
+      721 /home/adcp/log/lastensq_os75bb.warn
       167 /home/adcp/log/lastensq_os75bb.warn.2025-02-24
-      122 /home/adcp/log/lastensq_os75nb.warn
+      710 /home/adcp/log/lastensq_os75nb.warn
       167 /home/adcp/log/lastensq_os75nb.warn.2025-02-24
-      318 /home/adcp/log/lastensq_wh1200.warn
+      1835 /home/adcp/log/lastensq_wh1200.warn
       426 /home/adcp/log/lastensq_wh1200.warn.2025-02-24
-      310 /home/adcp/log/lastensq_wh300.warn
+      1815 /home/adcp/log/lastensq_wh300.warn
       422 /home/adcp/log/lastensq_wh300.warn.2025-02-24
-      1 /home/adcp/log/lastfewvec_os75bb.warn
+      2 /home/adcp/log/lastfewvec_os75bb.warn
       10 /home/adcp/log/lastfewvec_os75bb.warn.2025-02-24
-      1 /home/adcp/log/lastfewvec_os75nb.warn
+      2 /home/adcp/log/lastfewvec_os75nb.warn
       10 /home/adcp/log/lastfewvec_os75nb.warn.2025-02-24
-      1 /home/adcp/log/lastfewvec_wh1200.warn
+      2 /home/adcp/log/lastfewvec_wh1200.warn
       19 /home/adcp/log/lastfewvec_wh1200.warn.2025-02-24
-      1 /home/adcp/log/lastfewvec_wh300.warn
+      2 /home/adcp/log/lastfewvec_wh300.warn
       19 /home/adcp/log/lastfewvec_wh300.warn.2025-02-24
-      42 /home/adcp/log/quick_os75bb.warn
+      251 /home/adcp/log/quick_os75bb.warn
       36 /home/adcp/log/quick_os75bb.warn.2025-02-24
-      42 /home/adcp/log/quick_os75nb.warn
+      251 /home/adcp/log/quick_os75nb.warn
       36 /home/adcp/log/quick_os75nb.warn.2025-02-24
-      108 /home/adcp/log/quick_wh1200.warn
+      631 /home/adcp/log/quick_wh1200.warn
       82 /home/adcp/log/quick_wh1200.warn.2025-02-24
-      108 /home/adcp/log/quick_wh300.warn
+      632 /home/adcp/log/quick_wh300.warn
       82 /home/adcp/log/quick_wh300.warn.2025-02-24
-      28 /home/adcp/log/update_hbins_wh1200.warn
+      148 /home/adcp/log/update_hbins_wh1200.warn
       80 /home/adcp/log/update_hbins_wh1200.warn.2025-02-24
 
 Figures and files:
@@ -140,15 +152,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
+       3      /home/adcp/www/figures/os75bb_lastens.png
+       3      /home/adcp/www/figures/os75nb_lastens.png
        0      /home/adcp/www/figures/wh1200_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/wh1200_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/os75bb_ddaycont.png
+       3      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
