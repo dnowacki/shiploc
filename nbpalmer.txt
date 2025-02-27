@@ -1,14 +1,14 @@
-2025/02/25 14:30:01
+2025/02/26 14:30:01
 peale3 6.8.0-40-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: NBP2501_Part2     ** is logging **
 
-  os75bb 2025/02/20  00:06:13 to 2025/02/25  14:26:15  (3 min. ago)
-  os75nb 2025/02/20  00:06:13 to 2025/02/25  14:26:15  (3 min. ago)
-  os38nb 2025/02/20  00:06:15 to 2025/02/25  14:26:15  (3 min. ago)
+  os75bb 2025/02/20  00:06:13 to 2025/02/26  14:26:15  (3 min. ago)
+  os75nb 2025/02/20  00:06:13 to 2025/02/26  14:26:15  (3 min. ago)
+  os38nb 2025/02/20  00:06:15 to 2025/02/26  14:26:15  (3 min. ago)
 
-approximate lat, lon, depth:   76 2.87169 S  165 4.80837 E   depth=891
+approximate lat, lon, depth:   76 2.85651 S  164 58.76427 E   depth=893
 
-link: http://www.google.com/maps/place/76%202.87169S+165%204.80837E
+link: http://www.google.com/maps/place/76%202.85651S+164%2058.76427E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ no heading correction device specified===========================
 ===========================
 seapath330-seapath380 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 54.5951273 to 55.5951157
-(2025/02/24 14:16:59 to 2025/02/25 14:16:58)
+ddrange: 55.5951157 to 56.5951042
+(2025/02/25 14:16:58 to 2025/02/26 14:16:57)
 all seapath380 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.4
-   min  = -0.14, max = 0.11
-   mean = 0.01, stddev = 0.04
+   min  = -0.08, max = 0.10
+   mean = 0.02, stddev = 0.03
 
 ===========================
 ------ gyro statistics ------
 ===========================
 seapath330-gyro statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 54.5951389 to 55.5951273
-(2025/02/24 14:17:00 to 2025/02/25 14:16:59)
+ddrange: 55.5951389 to 56.5951273
+(2025/02/25 14:17:00 to 2025/02/26 14:16:59)
 all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = 1.51, max = 2.20
-   mean = 1.88, stddev = 0.21
+   min  = 1.44, max = 2.45
+   mean = 1.89, stddev = 0.19
 
 
 === Sonar Pingtype Summary =====
@@ -73,9 +73,9 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? tick.nbp.usap.gov             0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* tick.nbp.usap.gov             1  10   377   381    +83us[ +101us] +/-  193us
+^* tick.nbp.usap.gov             1  10   377   923    +19us[  +22us] +/-  270us
 
-Reference ID: 9D8482A8, Stratum=2, last offset=0.000018, RMS offset=0.000024
+Reference ID: 9D8482A8, Stratum=2, last offset=0.000003, RMS offset=0.000026
 ------------------------------------------
 
 
@@ -83,21 +83,21 @@ Reference ID: 9D8482A8, Stratum=2, last offset=0.000018, RMS offset=0.000024
 ------------- pings per ensemble ----------- 
 os75bb recent ping statistics
 
-(2025/02/25 14:21:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2025/02/26 14:21:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 os75nb recent ping statistics
 
-(2025/02/25 14:21:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
+(2025/02/26 14:21:15) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 os38nb recent ping statistics
 
-(2025/02/25 14:21:15) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2025/02/26 14:21:15) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 143 days,  9:23,  1 user,  load average: 0.73, 0.45, 0.39
+ 14:30:02 up 144 days,  9:23,  1 user,  load average: 0.25, 0.47, 0.49
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/nbpalmer/daily_report/
@@ -114,7 +114,9 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      4 /home/adcp/log/3dayplots_os75nb.warn
+      4 /home/adcp/log/3dayplots_os38nb.warn
+      2 /home/adcp/log/3dayplots_os75bb.warn
+      2 /home/adcp/log/3dayplots_os75nb.warn
 
 Figures and files:
 
@@ -127,8 +129,8 @@ Checking updating of 5-minute plots:
 age (minutes)          filename
        3      /home/adcp/www/figures/os75bb_lastens.png
        3      /home/adcp/www/figures/os75nb_lastens.png
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
        3      /home/adcp/www/figures/os38nb_lastens.png
+       3      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
