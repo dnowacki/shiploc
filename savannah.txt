@@ -1,12 +1,12 @@
-2025/03/03 18:06:00
+2025/03/04 14:30:01
 currents01sv 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: post-SAV-25-01     ** is logging **
+Current cruise: post-SAV-25-01C     ** is logging **
 
-  wh1200 2025/03/03  17:36:55 to 2025/03/03  18:04:54  (1 min. ago)
+  wh1200 2025/03/04  12:10:46 to 2025/03/04  14:28:32  (1 min. ago)
 
-approximate lat, lon, depth:   31 59.40202 N   81 1.36873 W   depth=0
+approximate lat, lon, depth:   31 59.40227 N   81 1.36923 W   depth=0
 
-link: http://www.google.com/maps/place/31%2059.40202N+81%201.36873W
+link: http://www.google.com/maps/place/31%2059.40227N+81%201.36923W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-vs330 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 61.7325810 to 61.7535995
-(2025/03/03 17:34:55 to 2025/03/03 18:05:11)
+ddrange: 62.5060880 to 62.5979745
+(2025/03/04 12:08:46 to 2025/03/04 14:21:05)
 all vs330 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   6 out of 6   (100%) were good
+   24 out of 25   (96%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.5
-   min  = 0.43, max = 0.60
-   mean = 0.51, stddev = 0.06
+   mean N = 282, stddev N =  69.4
+   min  = 0.23, max = 0.57
+   mean = 0.39, stddev = 0.09
 
 
 === Sonar Pingtype Summary =====
@@ -50,19 +50,15 @@ WARNING: Chrony is installed but is not running
 
 
 ------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2025/03/02 18:10:26) ens = 120 sec, 45 pings, (2.67 sec/ping)
-
 wh1200 recent ping statistics
 
-(2025/03/03 18:02:55) ens = 120 sec, 98 pings, (1.22 sec/ping)
+(2025/03/04 14:26:32) ens = 120 sec, 98 pings, (1.22 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 18:06:00 up 151 days,  3:09,  2 users,  load average: 0.73, 0.34, 0.20
+ 14:30:03 up 12:26,  1 user,  load average: 0.04, 0.16, 0.17
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -77,10 +73,15 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_re
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
 
+      48 /home/adcp/log/lastensq_wh1200.warn
       1 /home/adcp/log/lastfewvec_wh1200.warn
-      1 /home/adcp/log/quick_wh1200.warn
+      1 /home/adcp/log/lastfewvec_wh1200.warn.2025-03-03
+      3 /home/adcp/log/quick_wh1200.warn
+      1 /home/adcp/log/quick_wh1200.warn.2025-03-03
 
 Figures and files:
 
@@ -91,13 +92,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh1200_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh1200_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh1200_ddaycont.png
+       4      /home/adcp/www/figures/wh1200_ddaycont.png
 
 
 
