@@ -1,94 +1,32 @@
-2025/03/13 14:30:02
-currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: MGL2501     ** is logging **
-
-  os75bb 2025/03/02  00:00:49 to 2025/03/13  14:25:46  (4 min. ago)
-  os75nb 2025/03/02  00:00:49 to 2025/03/13  14:25:46  (4 min. ago)
-
-approximate lat, lon, depth:   18 41.68116 N   30 14.63634 W   depth=4999
-
-link: http://www.google.com/maps/place/18%2041.68116N+30%2014.63634W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2025/03/14 14:30:01
+currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- seapath statistics ------
-===========================
-gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 70.6020250 to 71.6020134
-(2025/03/12 14:26:55 to 2025/03/13 14:26:54)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.26, max = -0.05
-   mean = -0.15, stddev = 0.04
-
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
-
-ddrange: 70.6020481 to 71.6020366
-(2025/03/12 14:26:57 to 2025/03/13 14:26:56)
-all posmv messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 300, stddev N =  8.1
-   min  = -0.08, max = 0.22
-   mean = 0.08, stddev = 0.05
-
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    20    +30us[  +33us] +/-   60us
-^- _gateway                      4   6   377    62   +362us[ +364us] +/-  121ms
+^* 192.168.3.14                  1   6   377    10    +21us[  +22us] +/-   81us
+^- 192.168.3.1                   4   6   377    21    +41ms[  +41ms] +/-  382ms
 
-Reference ID: C0A8030E, Stratum=2, last offset=0.000004, RMS offset=0.000005
+Reference ID: C0A8030E, Stratum=2, last offset=0.000001, RMS offset=0.000004
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2025/03/13 14:20:46) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-os75bb recent ping statistics
-
-(2025/03/13 14:20:46) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 11 days, 14:39,  1 user,  load average: 0.13, 0.23, 0.25
+ 14:30:32 up 12 days, 14:40,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -112,15 +50,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_lastens.png
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
+  410432      /home/adcp/www/figures/os75nb_lastens.png
+  410432      /home/adcp/www/figures/os75bb_lastens.png
+  410432      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
+  410432      /home/adcp/www/figures/os75bb_ddaycont.png
+  410432      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
