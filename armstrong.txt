@@ -1,34 +1,75 @@
-2025/03/16 14:30:01
+2025/03/17 14:30:02
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: ar86-07  *** not logging ***
+Current cruise: ar86-07     ** is logging **
+
+   wh300 2025/03/17  14:29:50 to 2025/03/17  14:29:50  (0 min. ago)
+ os150nb -- no data yet
+ os38nb -- no data yet
+
+approximate lat, lon, depth:   26 4.92817 N   80 6.83386 W   depth=-2
+
+link: http://www.google.com/maps/place/26%204.92817N+80%206.83386W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
-no positions found from filelist seapath_udp/*.gps.rbin
 
 
 
 
+---- heading correction ----
 
+(heading correction from "posmv")
+===========================
+------ seapath_udp statistics ------
+===========================
+/home/adcp/daily_report/seapath_udp_gyro_pystats.txt does not (yet?) exist
+===========================
+------ posmv statistics ------
+===========================
+/home/adcp/daily_report/posmv_gyro_pystats.txt does not (yet?) exist
+===========================
+------ gyro2 statistics ------
+===========================
+/home/adcp/daily_report/gyro2_gyro_pystats.txt does not (yet?) exist
 
+=== Sonar Pingtype Summary =====
 
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   507   +288us[ +302us] +/-   12ms
+^* 192.147.41.12                 1  10   377  1007   +372us[ +412us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.000015, RMS offset=0.000031
+Reference ID: C093290C, Stratum=2, last offset=0.000040, RMS offset=0.000056
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:06 up 86 days,  1:27,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:07 up 87 days,  1:27,  1 user,  load average: 0.07, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -41,7 +82,12 @@ https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -52,6 +98,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
