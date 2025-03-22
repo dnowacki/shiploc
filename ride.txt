@@ -1,7 +1,10 @@
-2025/03/20 14:30:01
+2025/03/21 14:30:02
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: SR2505  *** not logging ***
+
+
+no positions found from filelist seapath_mgc/*.gps.rbin
+
 
 
 
@@ -15,10 +18,10 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^- sr-bb-gw-das.ucsd.edu         2   9   377     9   -187us[ -187us] +/-   11ms
-^* sr-ptp01-das.ucsd.edu         1  10   377   662    +58us[  +81us] +/-  694us
+^- sr-bb-gw-das.ucsd.edu         2  10   377   964   -120us[ -133us] +/- 5879us
+^* sr-ptp01-das.ucsd.edu         1  10   377   296    -25us[  -40us] +/-  704us
 
-Reference ID: 647C6421, Stratum=2, last offset=0.000023, RMS offset=0.000040
+Reference ID: 647C6421, Stratum=2, last offset=-0.000014, RMS offset=0.000013
 ------------------------------------------
 
 
@@ -27,7 +30,7 @@ Reference ID: 647C6421, Stratum=2, last offset=0.000023, RMS offset=0.000040
 
 
 ---------- uptime ------------
- 14:30:02 up 12 days, 16:05,  3 users,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 21:40,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -39,7 +42,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -50,17 +57,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    7184      /home/adcp/www/figures/os38nb_lastens.png
-    7184      /home/adcp/www/figures/os150nb_lastens.png
-    7184      /home/adcp/www/figures/ktprof_amp_lastens.png
-    7184      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    7184      /home/adcp/www/figures/os150nb_ddaycont.png
-    7184      /home/adcp/www/figures/wh300_ddaycont.png
-    7184      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
