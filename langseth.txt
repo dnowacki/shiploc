@@ -1,94 +1,32 @@
-2025/03/25 14:30:01
-currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: MGL2502     ** is logging **
-
-  os75bb 2025/03/17  22:45:38 to 2025/03/25  14:25:26  (4 min. ago)
-  os75nb 2025/03/17  22:45:38 to 2025/03/25  14:25:26  (4 min. ago)
-
-approximate lat, lon, depth:    4 11.59087 N   18 5.35554 W   depth=5037
-
-link: http://www.google.com/maps/place/4%2011.59087N+18%205.35554W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2025/03/27 14:30:01
+currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- seapath statistics ------
-===========================
-gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 82.5979625 to 83.5979509
-(2025/03/24 14:21:04 to 2025/03/25 14:21:03)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.11, max = 0.12
-   mean = -0.03, stddev = 0.04
-
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
-
-ddrange: 82.5979856 to 83.5979741
-(2025/03/24 14:21:06 to 2025/03/25 14:21:05)
-all posmv messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  1.7
-   min  = 0.09, max = 0.34
-   mean = 0.20, stddev = 0.05
-
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    12    +29us[  +28us] +/-   62us
-^- _gateway                      4   6   377    64    +29ms[  +29ms] +/-  420ms
+^* 192.168.3.14                  1   6   377    42  -1067ns[  -17us] +/-   57us
+^- _gateway                      4   6   377    47    +27ms[  +27ms] +/-  105ms
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000000, RMS offset=0.000003
+Reference ID: C0A8030E, Stratum=2, last offset=-0.000016, RMS offset=0.000006
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2025/03/25 14:20:24) ens = 300 sec, 75 pings, (4.00 sec/ping)
-
-os75bb recent ping statistics
-
-(2025/03/25 14:20:24) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 23 days, 14:39,  1 user,  load average: 0.03, 0.16, 0.20
+ 14:30:16 up 25 days, 14:40,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -112,15 +50,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75nb_lastens.png
-       4      /home/adcp/www/figures/os75bb_lastens.png
-       4      /home/adcp/www/figures/ktprof_amp_lastens.png
+  429152      /home/adcp/www/figures/os75nb_lastens.png
+  429152      /home/adcp/www/figures/os75bb_lastens.png
+  429152      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_ddaycont.png
-       4      /home/adcp/www/figures/os75nb_ddaycont.png
+  429152      /home/adcp/www/figures/os75bb_ddaycont.png
+  429152      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
