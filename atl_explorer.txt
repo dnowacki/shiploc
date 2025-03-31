@@ -1,14 +1,14 @@
-2025/03/29 14:30:01
+2025/03/30 14:30:02
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: AE2505     ** is logging **
 
-   sv300 2025/03/25  16:24:59 to 2025/03/29  14:28:58  (2 min. ago)
-  os75bb 2025/03/25  16:29:04 to 2025/03/29  14:29:03  (1 min. ago)
-  os75nb 2025/03/25  16:29:04 to 2025/03/29  14:29:03  (1 min. ago)
+   sv300 2025/03/25  16:24:59 to 2025/03/30  14:28:59  (2 min. ago)
+  os75bb 2025/03/25  16:29:04 to 2025/03/30  14:29:01  (2 min. ago)
+  os75nb 2025/03/25  16:29:04 to 2025/03/30  14:29:01  (2 min. ago)
 
-approximate lat, lon, depth:   37 2.04850 N   58 58.74577 W   depth=4386
+approximate lat, lon, depth:   35 0.02513 N   59 47.66579 W   depth=4731
 
-link: http://www.google.com/maps/place/37%202.04850N+58%2058.74577W
+link: http://www.google.com/maps/place/35%200.02513N+59%2047.66579W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,15 +26,15 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 86.6009954 to 87.6009838
-(2025/03/28 14:25:26 to 2025/03/29 14:25:25)
-all abxtwo messages:  (100%)  were good  [using available QC]
+ddrange: 87.6018634 to 88.6018519
+(2025/03/29 14:26:41 to 2025/03/30 14:26:40)
+all abxtwo messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.69, max = -0.34
+   mean N = 301, stddev N =  0.4
+   min  = -0.66, max = -0.33
    mean = -0.47, stddev = 0.05
 
 
@@ -43,12 +43,12 @@ statistics of good data:
 sv300: Triggering command not found
 sv300 BB:  on
 sv300 NB:  on
-sv300 BT:  on
+sv300 BT:      off
 
 os75: Triggering not used (CX0,0)
 os75 BB:  on
 os75 NB:  on
-os75 BT:  on
+os75 BT:      off
 
 ===========================
 
@@ -57,9 +57,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    32  +5784ns[+8177ns] +/-   53us
+^* 192.168.51.9                  1   6   377    21    +23us[  +29us] +/-   62us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000002, RMS offset=0.000005
+Reference ID: C0A83309, Stratum=2, last offset=0.000006, RMS offset=0.000006
 ------------------------------------------
 
 
@@ -67,21 +67,21 @@ Reference ID: C0A83309, Stratum=2, last offset=0.000002, RMS offset=0.000005
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/03/29 14:24:03) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/03/30 14:24:01) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 sv300 recent ping statistics
 
-(2025/03/29 14:26:59) ens = 120 sec, 128 pings, (0.94 sec/ping)
+(2025/03/30 14:26:59) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75bb recent ping statistics
 
-(2025/03/29 14:24:03) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/03/30 14:24:01) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 39 days,  1:04,  1 user,  load average: 0.47, 0.66, 0.58
+ 14:30:53 up 40 days,  1:04,  1 user,  load average: 0.26, 0.50, 0.53
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -98,8 +98,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      4 /home/adcp/log/3dayplots_os75bb.warn
-      1 /home/adcp/log/DAS_while_logging.warn
+      8 /home/adcp/log/3dayplots_os75bb.warn
 
 Figures and files:
 
@@ -118,9 +117,9 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/sv300_ddaycont.png
-       1      /home/adcp/www/figures/os75bb_ddaycont.png
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       4      /home/adcp/www/figures/os75bb_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
+       4      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
