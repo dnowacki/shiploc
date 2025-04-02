@@ -1,24 +1,103 @@
-2025/03/31 14:30:02
-currents01pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2025/04/01 20:02:18
+currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: PE25_20_APL_ADCP     ** is logging **
+
+  wh1200 2025/03/27  13:11:31 to 2025/04/01  20:01:31  (0 min. ago)
+   wh300 2025/03/27  13:11:30 to 2025/04/01  20:01:30  (0 min. ago)
+  os75nb 2025/03/27  13:14:32 to 2025/04/01  19:59:30  (2 min. ago)
+
+approximate lat, lon, depth:   24 25.57445 N   82 49.80649 W   depth=43
+
+link: http://www.google.com/maps/place/24%2025.57445N+82%2049.80649W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+sc70_tech-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 89.8299421 to 90.8299306
+(2025/03/31 19:55:07 to 2025/04/01 19:55:06)
+all abxtwo messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 298, stddev N =  11.7
+   min  = -9.13, max = -1.40
+   mean = -2.59, stddev = 0.64
+
+===========================
+------ abxtwo_b2a1 statistics ------
+===========================
+sc70_tech-abxtwo_b2a1 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 89.8299653 to 90.8299537
+(2025/03/31 19:55:09 to 2025/04/01 19:55:08)
+all abxtwo_b2a1 messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 298, stddev N =  11.8
+   min  = -9.13, max = -1.39
+   mean = -2.59, stddev = 0.64
+
+===========================
+------ sc70_bridge statistics ------
+===========================
+no good sc70_bridge data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+wh1200: Triggering command not found
+wh1200 BB:  on
+wh1200 BT:      off
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2025/04/01 19:54:30) ens = 300 sec, 141 pings, (2.13 sec/ping)
+
+wh1200 recent ping statistics
+
+(2025/04/01 19:59:31) ens = 120 sec, 200 pings, (0.60 sec/ping)
+
+wh300 recent ping statistics
+
+(2025/04/01 19:59:30) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 49 days,  1:25,  1 user,  load average: 0.00, 0.00, 0.00
+ 20:02:19 up 35 days, 21:41,  2 users,  load average: 0.73, 0.59, 0.56
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -30,7 +109,15 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_rep
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/3dayplots_wh300.warn
+      80 /home/adcp/log/DAS_while_logging.warn
+      96 /home/adcp/log/DAS_while_logging.warn.2025-03-31
+      1 /home/adcp/log/lastensq_wh300.warn
 
 Figures and files:
 
@@ -41,15 +128,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  675193      /home/adcp/www/figures/ktprof_amp_lastens.png
-  675193      /home/adcp/www/figures/wh1200_lastens.png
-  675193      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh1200_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  675193      /home/adcp/www/figures/wh1200_ddaycont.png
-  675193      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/wh1200_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
