@@ -1,9 +1,13 @@
-2025/04/03 14:15:02
+2025/04/04 14:15:02
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SP2509  *** not logging ***
 
+  os150nb 2025/04/03  15:41:57 to 2025/04/04  05:38:58  (516 min. ago) 8.6 hrs
 
-no positions found from filelist bx992/*.gps.rbin
+approximate lat, lon, depth:   32 51.46839 N  117 16.16628 W   depth=0
+
+link: http://www.google.com/maps/place/32%2051.46839N+117%2016.16628W
+not using zmq publishers, position is from serial GPS
 
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
@@ -15,10 +19,10 @@ NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-+208.91.112.63   216.197.228.230  2 u   86 1024  375   46.144   -1.139  20.060
-+208.91.112.61   216.197.228.230  2 u 1040 1024  377   44.901    4.709  59.439
--208.91.112.62   216.197.228.230  2 u  935 1024  377   46.010    0.829   2.404
-*208.91.112.60   172.17.101.2     2 u   17 1024  377   33.656    0.209   2.252
++208.91.112.63   216.197.228.230  2 u  985 1024  377   40.204    0.243  23.690
+-208.91.112.61   216.197.228.230  2 u  663 1024  377   38.852   -5.553 124.886
+*208.91.112.62   216.197.228.230  2 u  870 1024  377   33.954   -1.251   2.949
++208.91.112.60   172.17.101.2     2 u  241 1024  377   51.193   -1.624   7.604
 ------------------------------------------
 
 
@@ -26,7 +30,7 @@ NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 ---------- uptime ------------
- 14:15:04 up 7 days, 22:51,  1 user,  load average: 0.14, 0.13, 0.06
+ 14:15:07 up 8 days, 22:51,  1 user,  load average: 0.16, 0.06, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -38,7 +42,15 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      40 /home/adcp/log/3dayplots_os150nb.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      30 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -49,10 +61,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+     513      /home/adcp/www/figures/ktprof_amp_lastens.png
+     513      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+     513      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
