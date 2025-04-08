@@ -1,14 +1,12 @@
-2025/04/06 14:30:01
+2025/04/07 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: SR2507  *** not logging ***
+Current cruise: SR2025-0406_kongsbergtest  *** not logging ***
 
- ec150fm -- no data yet
-  os150nb 2025/04/04  19:41:52 to 2025/04/05  20:10:05  (1100 min. ago) 18.3 hrs
-  os38nb 2025/04/04  19:41:55 to 2025/04/05  20:10:50  (1099 min. ago) 18.3 hrs
+ ec150cw -- no data yet
 
-approximate lat, lon, depth:   35 30.38109 N  121 31.97432 W   depth=875
+approximate lat, lon, depth:   37 47.42708 N  122 17.31341 W   depth=-1
 
-link: http://www.google.com/maps/place/35%2030.38109N+121%2031.97432W
+link: http://www.google.com/maps/place/37%2047.42708N+122%2017.31341W
 not using zmq publishers, position is from serial GPS
 
 
@@ -23,11 +21,11 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 100.124.100.34                0  10     0     -     +0ns[   +0ns] +/-    0ns
-^- sr-bb-gw-das.ucsd.edu         2   8   377   117   -370us[ -370us] +/-   40ms
-^* 100.124.100.33                1  10   377   365    -84us[ -200us] +/-  655us
+^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^- sr-bb-gw-das.ucsd.edu         2   9   377   358   -528us[ -528us] +/-   25ms
+^* sr-ptp01-das.ucsd.edu         1  10   377   888  +1739ns[-4441ns] +/-  555us
 
-Reference ID: 647C6421, Stratum=2, last offset=-0.000116, RMS offset=0.000049
+Reference ID: 647C6421, Stratum=2, last offset=-0.000006, RMS offset=0.000017
 ------------------------------------------
 
 
@@ -36,7 +34,7 @@ Reference ID: 647C6421, Stratum=2, last offset=-0.000116, RMS offset=0.000049
 
 
 ---------- uptime ------------
- 14:30:36 up 6 days, 18:12,  2 users,  load average: 1.20, 1.17, 1.01
+ 14:30:02 up 7 days, 18:11,  2 users,  load average: 0.15, 0.06, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -53,11 +51,6 @@ ______________________
 
 (1) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      66 /home/adcp/log/DAS_while_logging.warn
-      14 /home/adcp/log/lastensq_os150nb.warn
-      14 /home/adcp/log/lastensq_os38nb.warn
 
 Figures and files:
 
@@ -68,17 +61,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     925      /home/adcp/www/figures/os38nb_lastens.png
-     925      /home/adcp/www/figures/os150nb_lastens.png
-     925      /home/adcp/www/figures/ktprof_amp_lastens.png
-     925      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     925      /home/adcp/www/figures/os150nb_ddaycont.png
-     925      /home/adcp/www/figures/wh300_ddaycont.png
-     925      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 

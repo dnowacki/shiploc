@@ -1,29 +1,74 @@
-2025/04/06 14:15:02
+2025/04/07 19:57:42
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: SP2510     ** is logging **
+
+  os150bb 2025/04/07  15:38:18 to 2025/04/07  19:56:18  (1 min. ago)
+  os150nb 2025/04/07  15:38:18 to 2025/04/07  19:56:18  (1 min. ago)
+
+approximate lat, lon, depth:   32 51.63297 N  117 16.58478 W   depth=56
+
+link: http://www.google.com/maps/place/32%2051.63297N+117%2016.58478W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ sc30 statistics ------
+===========================
+bx992-sc30 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 96.6494907 to 96.8267882
+(2025/04/07 15:35:16 to 2025/04/07 19:50:35)
+all sc30 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   51 out of 51   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.6
+   min  = -2.77, max = -0.49
+   mean = -1.47, stddev = 0.52
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:  on
+os150 NB:  on
+os150 BT:  on
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*208.91.112.63   216.197.228.230  2 u  990 1024  377   14.333    0.347   0.430
--208.91.112.61   216.197.228.230  2 u  909 1024  377   14.029    0.100   0.376
-+208.91.112.62   216.197.228.230  2 u  733 1024  377   13.040   -0.259   0.486
-+208.91.112.60   172.17.101.2     2 u  947 1024  377   13.285    0.231   0.400
+*208.91.112.63   216.197.228.230  2 u  349 1024  377   38.549    0.698   2.091
+-208.91.112.61   216.197.228.230  2 u  170 1024  377   36.226   -2.923  26.906
++208.91.112.62   216.197.228.230  2 u  108 1024  377   39.674   -2.757   4.877
++208.91.112.60   172.17.101.2     2 u  184 1024  377   38.519    0.760  11.456
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150bb recent ping statistics
+
+(2025/04/07 19:53:19) ens = 180 sec, 53 pings, (3.40 sec/ping)
+
+os150nb recent ping statistics
+
+(2025/04/07 19:53:19) ens = 180 sec, 53 pings, (3.40 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 10 days, 22:51,  1 user,  load average: 0.06, 0.04, 0.00
+ 19:57:43 up 12 days,  4:33,  2 users,  load average: 0.06, 0.10, 0.09
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -35,7 +80,17 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      80 /home/adcp/log/3dayplots_os150bb.warn
+      48 /home/adcp/log/3dayplots_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      14 /home/adcp/log/quick_os150bb.warn
+      10 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -46,15 +101,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2320      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2320      /home/adcp/www/figures/os150nb_lastens.png
-    2320      /home/adcp/www/figures/os150bb_lastens.png
+       1      /home/adcp/www/figures/os150bb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2320      /home/adcp/www/figures/os150bb_ddaycont.png
-    2320      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os150bb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
