@@ -1,13 +1,14 @@
-2025/04/10 14:30:02
+2025/04/11 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SR2508     ** is logging **
 
-   wh300 2025/04/08  16:43:32 to 2025/04/10  14:29:19  (0 min. ago)
-  os150nb 2025/04/08  16:43:32 to 2025/04/10  14:27:55  (2 min. ago)
+   wh300 2025/04/08  16:43:32 to 2025/04/11  14:29:19  (0 min. ago)
+  ec150cw 2025/04/08  16:59:16 to 2025/04/11  14:26:00  (4 min. ago)
+  os150nb 2025/04/08  16:43:32 to 2025/04/11  14:28:36  (1 min. ago)
 
-approximate lat, lon, depth:   34 32.25358 N  126 55.40729 W   depth=4799
+approximate lat, lon, depth:   34 28.29939 N  126 51.25241 W   depth=4734
 
-link: http://www.google.com/maps/place/34%2032.25358N+126%2055.40729W
+link: http://www.google.com/maps/place/34%2028.29939N+126%2051.25241W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +25,16 @@ no heading correction device specified===========================
 ===========================
 seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 98.5998285 to 99.5998227
-(2025/04/09 14:23:45 to 2025/04/10 14:23:45)
+ddrange: 99.5992961 to 100.5992903
+(2025/04/10 14:22:59 to 2025/04/11 14:22:59)
 all hemisphere messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   278 out of 278   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.5
-   min  = -4.46, max = 5.55
-   mean = 0.65, stddev = 1.56
+   mean N = 601, stddev N =  0.4
+   min  = -4.24, max = 7.72
+   mean = 1.06, stddev = 1.83
 
 
 === Sonar Pingtype Summary =====
@@ -65,10 +66,10 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? sr-endrun-sonoma.ucsd.edu     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^- sr-bb-gw-das.ucsd.edu         2  10   377   108   -329us[ -329us] +/-   35ms
-^* sr-ptp01-das.ucsd.edu         1  10   377   774    +70us[  +76us] +/-  715us
+^- sr-bb-gw-das.ucsd.edu         2   9   377   214   +213us[ +213us] +/-   19ms
+^* sr-ptp01-das.ucsd.edu         1  10   377   280   +100us[ +106us] +/-  626us
 
-Reference ID: 647C6421, Stratum=2, last offset=0.000006, RMS offset=0.000017
+Reference ID: 647C6421, Stratum=2, last offset=0.000007, RMS offset=0.000014
 ------------------------------------------
 
 
@@ -76,25 +77,25 @@ Reference ID: 647C6421, Stratum=2, last offset=0.000006, RMS offset=0.000017
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/04/10 14:27:19) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/04/11 14:27:19) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 ec150cw recent ping statistics
 
-(2025/04/09 22:19:13) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2025/04/11 14:21:00) ens = 300 sec, 150 pings, (2.00 sec/ping)
 
 os150nb recent ping statistics
 
-(2025/04/10 14:22:55) ens = 300 sec, 273 pings, (1.10 sec/ping)
+(2025/04/11 14:23:36) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 os38nb recent ping statistics
 
-(2025/04/09 22:24:20) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2025/04/10 16:13:38) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 10 days, 18:11,  2 users,  load average: 0.38, 0.37, 0.36
+ 14:30:02 up 11 days, 18:11,  2 users,  load average: 0.85, 0.65, 0.60
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -113,8 +114,12 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      20 /home/adcp/log/DAS_while_logging.warn
-      7 /home/adcp/log/lastensq_os150nb.warn
+      2 /home/adcp/log/3dayplots_ec150cw.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      280 /home/adcp/log/lastensq_ec150cw.warn
+      266 /home/adcp/log/lastensq_os38nb.warn
+      1 /home/adcp/log/lastfewvec_ec150cw.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
 
 Figures and files:
 
@@ -125,19 +130,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     907      /home/adcp/www/figures/os38nb_lastens.png
-     907      /home/adcp/www/figures/ec150cw_lastens.png
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
+    1328      /home/adcp/www/figures/os38nb_lastens.png
+       4      /home/adcp/www/figures/ec150cw_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     907      /home/adcp/www/figures/ec150cw_ddaycont.png
-     907      /home/adcp/www/figures/os38nb_ddaycont.png
+    1328      /home/adcp/www/figures/os38nb_ddaycont.png
        2      /home/adcp/www/figures/wh300_ddaycont.png
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/ec150cw_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
