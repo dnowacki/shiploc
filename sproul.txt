@@ -1,36 +1,57 @@
-2025/04/10 23:17:15
+2025/04/12 14:15:02
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SP2510B  *** not logging ***
+Current cruise: SP2510B     ** is logging **
 
-  os150nb 2025/04/10  04:37:04 to 2025/04/10  19:08:28  (248 min. ago) 4.1 hrs
+  os150nb 2025/04/10  04:37:04 to 2025/04/12  14:14:37  (0 min. ago)
 
-approximate lat, lon, depth:   32 51.91668 N  117 16.51431 W   depth=56
+approximate lat, lon, depth:   32 51.51559 N  117 16.22363 W   depth=24
 
-link: http://www.google.com/maps/place/32%2051.91668N+117%2016.51431W
+link: http://www.google.com/maps/place/32%2051.51559N+117%2016.22363W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ sc30 statistics ------
+===========================
+/home/adcp/daily_report/sc30_bx992_pystats.txt does not (yet?) exist
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:  on
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*208.91.112.63   216.197.228.230  2 u   11 1024  377   38.397   -1.480   7.893
--208.91.112.61   216.197.228.230  2 u  204 1024  377   43.620   -2.750  50.777
-+208.91.112.60   172.17.101.2     2 u  212 1024  377   50.857    3.411  28.678
-+208.91.112.62   216.197.228.230  2 u 1814 1024  376   49.436   -0.217   3.066
++208.91.112.63   216.197.228.230  2 u  903 1024  377   47.611   -3.674   7.242
+*208.91.112.61   216.197.228.230  2 u  182 1024  377   38.574    1.878 102.986
++208.91.112.60   172.17.101.2     2 u   91 1024  377   36.271    1.619   4.088
++208.91.112.62   216.197.228.230  2 u  560 1024  377   36.273    1.434  66.607
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2025/04/12 14:11:36) ens = 180 sec, 79 pings, (2.28 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 23:17:18 up  5:41,  2 users,  load average: 0.08, 0.03, 0.01
+ 14:15:06 up 1 day, 20:39,  1 user,  load average: 0.02, 0.05, 0.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -45,37 +66,23 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      119 /home/adcp/log/3dayplots_os150nb.warn
-      1810 /home/adcp/log/3dayplots_os150nb.warn.2025-04-09
-      94 /home/adcp/log/DAS_while_logging.warn
-      1237 /home/adcp/log/DAS_while_logging.warn.2025-04-09
-      119 /home/adcp/log/hcorrstats_sc30.warn
-      241 /home/adcp/log/lastensq_os150nb.warn
-      3719 /home/adcp/log/lastensq_os150nb.warn.2025-04-09
-      104 /home/adcp/log/lastfewvec_os150nb.warn
-      1787 /home/adcp/log/lastfewvec_os150nb.warn.2025-04-09
-      256 /home/adcp/log/quick_os150nb.warn
-      4425 /home/adcp/log/quick_os150nb.warn.2025-04-09
-(3) rbin warnings:
+      12 /home/adcp/log/3dayplots_os150nb.warn
+      113 /home/adcp/log/DAS_while_logging.warn
+      901 /home/adcp/log/hcorrstats_sc30.warn
+      850 /home/adcp/log/hcorrstats_sc30.warn.2025-04-11
+      311 /home/adcp/log/lastensq_os150nb.warn
+      9 /home/adcp/log/lastfewvec_os150nb.warn
+      15 /home/adcp/log/quick_os150nb.warn
+(2) rbin warnings:
  
-bx992 gps 119047    0.50    0.00   15140.5     145   184   174     0     0
-bx992 gps 119047    0.50  -138092.84   15140.5     144   185   175     0     1
-bx992 gph 118333    0.50    0.00   15140.5     146   184   174     0     0
-bx992 gph 118333    0.50  -138092.84   15140.5     145   185   175     0     1
-sc30 gph  56028    1.00    0.00   15140.3       9    13    11     0     0
-sc30 gph  56028    1.00  -137181.62   15140.3       8    14    12     0     1
-gp170a gps  56026    1.00    0.00   15141.0       8    12    11     0     0
-gp170a gps  56026    1.00  -137180.33   15141.0       7    13    12     0     1
-gp170b gps  56026    1.00    0.00   15141.5       8    13    11     0     0
-gp170b gps  56026    1.00  -137180.90   15141.5       7    14    12     0     1
-(4) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 98.750000
-
+sc30 gph  68842    1.00    0.00    6768.0       5     8     6     0     0
+sc30 gph  68842    1.00    0.00    6768.0       5     8     6     0     0
+gp170a gps  68840    1.00    0.00    6769.0       5     7     6     0     0
+gp170a gps  68840    1.00    0.00    6769.0       5     7     6     0     0
+gp170b gps  68840    1.00    0.00    6769.5       5     7     6     0     0
+gp170b gps  68840    1.00    0.00    6769.5       5     7     6     0     0
 
 Figures and files:
 
@@ -86,13 +93,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     245      /home/adcp/www/figures/ktprof_amp_lastens.png
-     245      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     245      /home/adcp/www/figures/os150nb_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

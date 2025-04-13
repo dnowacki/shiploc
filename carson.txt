@@ -1,12 +1,12 @@
-2025/04/11 14:30:01
+2025/04/13 00:52:33
 rigel03 6.5.0-18-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: RC0132     ** is logging **
+Current cruise: rc2025-04-12-test     ** is logging **
 
-   wh300 2025/04/08  18:17:36 to 2025/04/11  14:29:06  (1 min. ago)
+   wh300 2025/04/12  22:14:25 to 2025/04/13  00:51:25  (1 min. ago)
 
-approximate lat, lon, depth:   47 59.80998 N  122 13.42700 W   depth=-1
+approximate lat, lon, depth:   47 38.97019 N  122 18.77497 W   depth=-1
 
-link: http://www.google.com/maps/place/47%2059.80998N+122%2013.42700W
+link: http://www.google.com/maps/place/47%2038.97019N+122%2018.77497W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -18,22 +18,21 @@ NOTE: This is the _primary_ computer
 
 ---- heading correction ----
 
-(heading correction from "seapath_udp")
+no heading correction device specified===========================
+------ gpscompass statistics ------
 ===========================
------- seapath_udp statistics ------
-===========================
-gpscompass-seapath_udp statistics (comment=same sign as cal/rotate/*ang)
+seapath_udp-gpscompass statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 99.6024323 to 100.6024207
-(2025/04/10 14:27:30 to 2025/04/11 14:27:29)
-all seapath_udp messages:  (99%)  were good  [using available QC]
+ddrange: 101.9259971 to 102.0303374
+(2025/04/12 22:13:26 to 2025/04/13 00:43:41)
+all gpscompass messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   284 out of 284   (100%) were good
+   30 out of 30   (100%) were good
 statistics of good data:
-   mean N = 300, stddev N =  7.6
-   min  = -88.44, max = 21.46
-   mean = -1.25, stddev = 5.43
+   mean N = 301, stddev N =  0.2
+   min  = -0.97, max = 2.43
+   mean = 0.74, stddev = 0.76
 
 
 === Sonar Pingtype Summary =====
@@ -52,13 +51,13 @@ WARNING: Chrony is installed but is not running
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/04/11 14:28:06) ens = 60 sec, 120 pings, (0.50 sec/ping)
+(2025/04/13 00:50:25) ens = 60 sec, 120 pings, (0.50 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 86 days, 17:24,  1 user,  load average: 0.23, 0.35, 0.31
+ 00:52:34 up 88 days,  3:47,  2 users,  load average: 0.23, 0.26, 0.27
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/carson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_report/
@@ -75,10 +74,11 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      58 /home/adcp/log/DAS_while_logging.warn
-      93 /home/adcp/log/DAS_while_logging.warn.2025-04-10
-      530 /home/adcp/log/lastensq_wh300.warn
-      1239 /home/adcp/log/lastensq_wh300.warn.2025-04-10
+      3 /home/adcp/log/DAS_while_logging.warn
+      7 /home/adcp/log/DAS_while_logging.warn.2025-04-12
+      52 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -95,7 +95,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
