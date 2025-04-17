@@ -1,11 +1,11 @@
-2025/04/15 14:15:01
+2025/04/16 14:15:01
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SP25test-041425     ** is logging **
+Current cruise: CrashTest1     ** is logging **
 
 
-approximate lat, lon, depth:   32 42.36964 N  117 14.17106 W   depth=1
+approximate lat, lon, depth:   32 42.36960 N  117 14.17094 W   depth=1
 
-link: http://www.google.com/maps/place/32%2042.36964N+117%2014.17106W
+link: http://www.google.com/maps/place/32%2042.36960N+117%2014.17094W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
@@ -21,16 +21,16 @@ no heading correction device specified===========================
 ===========================
 bx992-sc30 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 104.1409317 to 104.5889873
-(2025/04/15 03:22:57 to 2025/04/15 14:08:08)
+ddrange: 104.9083218 to 105.5855556
+(2025/04/15 21:47:59 to 2025/04/16 14:03:12)
 all sc30 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   129 out of 129   (100%) were good
+   195 out of 195   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.5
-   min  = -2.10, max = 0.19
-   mean = -1.13, stddev = 0.45
+   min  = -2.05, max = -0.62
+   mean = -1.31, stddev = 0.30
 
 
 === Sonar Pingtype Summary =====
@@ -45,10 +45,10 @@ os150 BT:      off
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*208.91.112.61   216.197.228.230  2 u  978 1024  377   13.310    0.026   0.370
-+208.91.112.63   216.197.228.230  2 u   35 1024  377   13.610    0.110   0.539
-+208.91.112.62   216.197.228.230  2 u  199 1024  377   13.091   -0.148   0.446
--208.91.112.60   172.17.101.2     2 u 1006 1024  377   13.082    0.125   0.347
+-208.91.112.61   216.197.228.230  2 u  712 1024  377   13.366    1.355   0.473
++208.91.112.63   216.197.228.230  2 u   14 1024  377   13.290   -0.197   0.618
++208.91.112.62   216.197.228.230  2 u  881 1024  377   12.956   -0.024   0.683
+*208.91.112.60   172.17.101.2     2 u   38 1024  377   13.268   -0.051   0.529
 ------------------------------------------
 
 
@@ -57,7 +57,7 @@ os150 BT:      off
 
 
 ---------- uptime ------------
- 14:15:05 up 11:05,  1 user,  load average: 0.07, 0.05, 0.00
+ 14:15:04 up 1 day, 11:05,  1 user,  load average: 0.00, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -76,12 +76,16 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) rbin warnings:
  
-sc30 gph  39133    1.00    0.00       7.4       1     6     6     0     0
-sc30 gph  39133    1.00    0.00       7.4       1     6     6     0     0
-gp170a gps  39133    1.00    0.00       7.9       1     7     6     0     0
-gp170a gps  39133    1.00    0.00       7.9       1     7     6     0     0
-gp170b gps  39133    1.00    0.00       7.8       1     7     6     0     0
-gp170b gps  39133    1.00    0.00       7.8       1     7     6     0     0
+bx992 gps 118447    0.50    0.00       3.0       3     1     1     0     0
+bx992 gps 118447    0.50    0.00       3.0       3     1     1     0     0
+bx992 gph 118447    0.50    0.00       3.0       3     1     1     0     0
+bx992 gph 118447    0.50    0.00       3.0       3     1     1     0     0
+sc30 gph  59228    1.00    0.00       7.7       1     7     6     0     0
+sc30 gph  59228    1.00    0.00       7.7       1     7     6     0     0
+gp170a gps  59227    1.00    0.00       7.1       1     6     6     0     0
+gp170a gps  59227    1.00    0.00       7.1       1     6     6     0     0
+gp170b gps  59227    1.00    0.00       7.6       1    14     6     0     0
+gp170b gps  59227    1.00    0.00       7.6       1    14     6     0     0
 
 Figures and files:
 
