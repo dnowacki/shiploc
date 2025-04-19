@@ -1,31 +1,63 @@
-2025/04/17 14:30:01
+2025/04/18 14:30:01
 rigel03 6.5.0-18-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: RC0133  *** not logging ***
+Current cruise: RC0133     ** is logging **
 
-   wh300 2025/04/14  18:43:34 to 2025/04/14  22:51:33  (3818 min. ago)  2.7 days
+   wh300 2025/04/14  18:43:34 to 2025/04/18  14:29:02  (1 min. ago)
 
-approximate lat, lon, depth:   48 10.76410 N  122 32.69494 W   depth=86
+approximate lat, lon, depth:   47 18.62288 N  122 30.47491 W   depth=150
 
-link: http://www.google.com/maps/place/48%2010.76410N+122%2032.69494W
+link: http://www.google.com/maps/place/47%2018.62288N+122%2030.47491W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ gpscompass statistics ------
+===========================
+seapath_udp-gpscompass statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 107.5785087 to 107.5995156
+(2025/04/18 13:53:03 to 2025/04/18 14:23:18)
+all gpscompass messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   6 out of 6   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -0.02, max = 1.36
+   mean = 0.80, stddev = 0.49
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2025/04/18 14:28:02) ens = 60 sec, 121 pings, (0.50 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 92 days, 17:24,  1 user,  load average: 0.06, 0.09, 0.04
+ 14:30:02 up 93 days, 17:24,  1 user,  load average: 0.18, 0.29, 0.28
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/carson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_report/
@@ -37,7 +69,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_repo
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -48,13 +86,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    3817      /home/adcp/www/figures/ktprof_amp_lastens.png
-    3817      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    3817      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
