@@ -1,23 +1,61 @@
-2025/04/21 02:57:16
+2025/04/22 02:41:55
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR2501_part3  *** not logging ***
+Current cruise: RR2501_part5     ** is logging **
 
-  os150bb 2025/04/21  02:52:51 to 2025/04/21  02:55:50  (1 min. ago)
-  os150nb 2025/04/21  02:52:51 to 2025/04/21  02:55:50  (1 min. ago)
-  os75bb 2025/04/21  02:52:50 to 2025/04/21  02:55:51  (1 min. ago)
-  os75nb 2025/04/21  02:52:50 to 2025/04/21  02:55:51  (1 min. ago)
+  os150bb 2025/04/21  17:14:02 to 2025/04/22  02:38:01  (4 min. ago)
+  os150nb 2025/04/21  17:14:02 to 2025/04/22  02:41:01  (1 min. ago)
+  os75bb 2025/04/21  17:14:04 to 2025/04/22  02:41:01  (1 min. ago)
+  os75nb 2025/04/21  17:14:04 to 2025/04/22  02:41:01  (1 min. ago)
 
-approximate lat, lon, depth:   24 50.94375 N   84 18.94680 W   depth=913
+approximate lat, lon, depth:   24 52.39043 N   84 6.50034 W   depth=325
 
-link: http://www.google.com/maps/place/24%2050.94375N+84%2018.94680W
+link: http://www.google.com/maps/place/24%2052.39043N+84%206.50034W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath380mgc")
+===========================
+------ seapath380mgc statistics ------
+===========================
+seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 110.7159828 to 111.1021402
+(2025/04/21 17:11:01 to 2025/04/22 02:27:05)
+all seapath380mgc messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   111 out of 111   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.02, max = 0.06
+   mean = 0.01, stddev = 0.01
+
+===========================
+------ gyro statistics ------
+===========================
+no good gyro data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:  on
+os150 NB:  on
+os150 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
@@ -26,11 +64,28 @@ NOTE: This is the _primary_ computer
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
+os150bb recent ping statistics
+
+(2025/04/22 02:35:02) ens = 180 sec, 77 pings, (2.34 sec/ping)
+
+os150nb recent ping statistics
+
+(2025/04/22 02:38:01) ens = 180 sec, 76 pings, (2.37 sec/ping)
+
+os75bb recent ping statistics
+
+(2025/04/22 02:38:04) ens = 180 sec, 44 pings, (4.09 sec/ping)
+
+os75nb recent ping statistics
+
+(2025/04/22 02:35:04) ens = 180 sec, 44 pings, (4.09 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 02:57:17 up 11 days,  7:58,  2 users,  load average: 0.53, 0.47, 0.52
+ 02:41:57 up 12 days,  7:43,  2 users,  load average: 1.00, 0.68, 0.63
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -48,30 +103,19 @@ ______________________
 (1) wordcount of log/*.warn:
 
       9 /home/adcp/log/DAS_while_cruise.warn
-      21 /home/adcp/log/lastensq_os150bb.warn
-      63 /home/adcp/log/lastensq_os150bb.warn.2025-04-20
-      14 /home/adcp/log/lastensq_os150nb.warn
-      70 /home/adcp/log/lastensq_os150nb.warn.2025-04-20
-      14 /home/adcp/log/lastensq_os75bb.warn
-      63 /home/adcp/log/lastensq_os75bb.warn.2025-04-20
-      14 /home/adcp/log/lastensq_os75nb.warn
-      63 /home/adcp/log/lastensq_os75nb.warn.2025-04-20
-      1 /home/adcp/log/lastfewvec_os150bb.warn
-      1 /home/adcp/log/lastfewvec_os150bb.warn.2025-04-20
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn.2025-04-20
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75bb.warn.2025-04-20
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn.2025-04-20
-      1 /home/adcp/log/quick_os150bb.warn
-      18 /home/adcp/log/quick_os150bb.warn.2025-04-20
-      1 /home/adcp/log/quick_os150nb.warn
-      1 /home/adcp/log/quick_os75bb.warn
-      1 /home/adcp/log/quick_os75bb.warn.2025-04-20
-      1 /home/adcp/log/quick_os75nb.warn
-      1 /home/adcp/log/quick_os75nb.warn.2025-04-20
-      14 /home/adcp/log/update_hbins_os150nb.warn
+      140 /home/adcp/log/lastensq_os150bb.warn
+      126 /home/adcp/log/lastensq_os150nb.warn
+      126 /home/adcp/log/lastensq_os75bb.warn
+      126 /home/adcp/log/lastensq_os75nb.warn
+      2 /home/adcp/log/lastfewvec_os150bb.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn
+      2 /home/adcp/log/lastfewvec_os75bb.warn
+      2 /home/adcp/log/lastfewvec_os75nb.warn
+      2 /home/adcp/log/quick_os150bb.warn
+      2 /home/adcp/log/quick_os150nb.warn
+      2 /home/adcp/log/quick_os75bb.warn
+      2 /home/adcp/log/quick_os75nb.warn
+      42 /home/adcp/log/update_hbins_os150nb.warn
 
 Figures and files:
 
@@ -82,15 +126,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       3      /home/adcp/www/figures/os150bb_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/os75bb_lastens.png
        0      /home/adcp/www/figures/os75nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os150bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       5      /home/adcp/www/figures/os150bb_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os75bb_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
