@@ -1,12 +1,12 @@
-2025/04/21 14:30:01
+2025/04/22 14:30:01
 currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: TEST_04-14-25     ** is logging **
+Current cruise: test_04_22_25     ** is logging **
 
-   wh300 2025/04/14  12:09:12 to 2025/04/21  14:29:13  (0 min. ago)
+   wh300 2025/04/22  12:06:30 to 2025/04/22  14:28:30  (1 min. ago)
 
-approximate lat, lon, depth:   38 47.30289 N   75 9.68449 W   depth=-1
+approximate lat, lon, depth:   38 47.30284 N   75 9.68406 W   depth=-1
 
-link: http://www.google.com/maps/place/38%2047.30289N+75%209.68449W
+link: http://www.google.com/maps/place/38%2047.30284N+75%209.68406W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ NOTE: This is the _spare_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
 
-ddrange: 109.5988767 to 110.5988640
-(2025/04/20 14:22:23 to 2025/04/21 14:22:22)
+ddrange: 111.5031442 to 111.5969878
+(2025/04/22 12:04:32 to 2025/04/22 14:19:40)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   27 out of 27   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.0
-   min  = -1.56, max = -0.87
-   mean = -1.28, stddev = 0.11
+   min  = -1.55, max = -1.01
+   mean = -1.27, stddev = 0.19
 
 
 === Sonar Pingtype Summary =====
@@ -49,9 +49,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* Spectracom.localdomain        1   8   377   177    -28us[  -33us] +/- 1269us
+^* Spectracom.localdomain        1   9   377   340  -4878ns[  +28us] +/- 1196us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000004, RMS offset=0.000026
+Reference ID: C0A814F5, Stratum=2, last offset=0.000033, RMS offset=0.000033
 ------------------------------------------
 
 
@@ -59,13 +59,13 @@ Reference ID: C0A814F5, Stratum=2, last offset=-0.000004, RMS offset=0.000026
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/04/21 14:27:13) ens = 120 sec, 75 pings, (1.60 sec/ping)
+(2025/04/22 14:26:30) ens = 120 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:01 up 9 days, 21:20,  1 user,  load average: 0.12, 0.31, 0.27
+ 14:30:03 up  2:27,  1 user,  load average: 0.29, 0.19, 0.18
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -82,7 +82,15 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    11 EDAC (memory) errors in last 2 /var/log/syslog
+    13 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      132 /home/adcp/log/3dayplots_wh300.warn
+      27 /home/adcp/log/DAS_while_cruise.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      29 /home/adcp/log/quick_wh300.warn
+      4 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 
@@ -93,13 +101,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
