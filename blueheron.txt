@@ -1,82 +1,31 @@
-2025/04/22 14:30:01
+2025/04/23 14:30:01
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: BH25-02_Sharp     ** is logging **
-
- sv500 -- no data yet
-  os150bb 2025/04/22  12:14:53 to 2025/04/22  14:29:53  (1 min. ago)
-  os150nb 2025/04/22  12:14:53 to 2025/04/22  14:29:53  (1 min. ago)
-
-approximate lat, lon, depth:   46 50.39716 N   91 53.40989 W   depth=-134
-
-link: http://www.google.com/maps/place/46%2050.39716N+91%2053.40989W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-no heading correction device specified===========================
------- gpshead statistics ------
-===========================
-posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 111.5068589 to 111.6010150
-(2025/04/22 12:09:53 to 2025/04/22 14:25:28)
-all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   27 out of 27   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.26, max = 0.49
-   mean = 0.23, stddev = 0.19
-
-
-=== Sonar Pingtype Summary =====
-
-sv500: Triggering command not found
-sv500 BB:       off
-sv500 NB:  on
-sv500 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:  on
-os150 NB:  on
-os150 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.14                1   6   377     2  -2142ns[-4535ns] +/-   37us
+^* 192.168.100.14                1   6   377     3    +15us[  +15us] +/-   55us
 
-Reference ID: C0A8640E, Stratum=2, last offset=-0.000002, RMS offset=0.000003
+Reference ID: C0A8640E, Stratum=2, last offset=-0.000000, RMS offset=0.000002
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os150bb recent ping statistics
-
-(2025/04/22 14:24:54) ens = 300 sec, 137 pings, (2.19 sec/ping)
-
-os150nb recent ping statistics
-
-(2025/04/22 14:24:54) ens = 300 sec, 137 pings, (2.19 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 21 days, 17:45,  1 user,  load average: 0.43, 0.28, 0.26
+ 14:30:52 up 22 days, 17:45,  1 user,  load average: 0.00, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -94,27 +43,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      87 /home/adcp/log/3dayplots_os150bb.warn
-      8 /home/adcp/log/3dayplots_os150nb.warn
-      87 /home/adcp/log/3dayplots_os150nb.warn.2025-04-21
-      1956 /home/adcp/log/3dayplots_sv500.warn
-      3456 /home/adcp/log/3dayplots_sv500.warn.2025-04-21
-      2955 /home/adcp/log/DAS_while_logging.warn
-      5669 /home/adcp/log/DAS_while_logging.warn.2025-04-21
-      378 /home/adcp/log/grab_pings_sv500.warn
-      672 /home/adcp/log/grab_pings_sv500.warn.2025-04-21
-      4154 /home/adcp/log/lastensq_os150bb.warn
-      4133 /home/adcp/log/lastensq_os150nb.warn
-      14170 /home/adcp/log/lastensq_sv500.warn
-      25250 /home/adcp/log/lastensq_sv500.warn.2025-04-21
-      1 /home/adcp/log/lastfewvec_os150bb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      4635 /home/adcp/log/lastfewvec_sv500.warn
-      8181 /home/adcp/log/lastfewvec_sv500.warn.2025-04-21
-      1 /home/adcp/log/quick_os150bb.warn
-      1 /home/adcp/log/quick_os150nb.warn
-      5665 /home/adcp/log/quick_sv500.warn
-      9999 /home/adcp/log/quick_sv500.warn.2025-04-21
+      2904 /home/adcp/log/3dayplots_sv500.warn
+      4388 /home/adcp/log/DAS_while_logging.warn
+      560 /home/adcp/log/grab_pings_sv500.warn
+      20770 /home/adcp/log/lastensq_sv500.warn
+      6885 /home/adcp/log/lastfewvec_sv500.warn
+      8415 /home/adcp/log/quick_sv500.warn
 
 Figures and files:
 
@@ -125,15 +59,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150bb_lastens.png
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1042      /home/adcp/www/figures/os150nb_lastens.png
+    1042      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1042      /home/adcp/www/figures/os150bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150bb_ddaycont.png
-       0      /home/adcp/www/figures/os150nb_ddaycont.png
+    1042      /home/adcp/www/figures/os150nb_ddaycont.png
+    1042      /home/adcp/www/figures/os150bb_ddaycont.png
 
 
 
