@@ -1,15 +1,7 @@
-2025/04/28 14:15:01
+2025/04/30 00:52:56
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR2501_part5  *** not logging ***
-
-  os150nb 2025/04/21  17:14:02 to 2025/04/28  11:09:34  (185 min. ago) 3.1 hrs
-  os75nb 2025/04/21  17:14:04 to 2025/04/28  11:09:36  (185 min. ago) 3.1 hrs
-
-approximate lat, lon, depth:   38 13.19706 N   70 28.38574 W   depth=3402
-
-link: http://www.google.com/maps/place/38%2013.19706N+70%2028.38574W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -20,7 +12,7 @@ NOTE: This is the _primary_ computer
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
- 100.124.5.133   .INIT.          16 u    - 1024    0    0.000   +0.000   0.000
+ rr-ptp01-net.uc .INIT.          16 u    - 1024    0    0.000   +0.000   0.000
 ------------------------------------------
 
 
@@ -28,7 +20,7 @@ NOTE: This is the _primary_ computer
 
 
 ---------- uptime ------------
- 14:15:04 up 18 days, 19:15,  1 user,  load average: 0.11, 0.11, 0.09
+ 00:52:57 up 20 days,  5:53,  2 users,  load average: 0.04, 0.06, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -40,18 +32,6 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
-Summary of warnings:
-______________________
-
-(1) wordcount of log/*.warn:
-
-      1 /home/adcp/log/DAS_while_logging.warn
-      1386 /home/adcp/log/lastensq_os150nb.warn
-      1358 /home/adcp/log/lastensq_os75nb.warn
-      462 /home/adcp/log/update_hbins_os150nb.warn
-(2) timestamp warnings:
-jumps forward: 2   jumps back: 0
-max forward 0 seconds at dday 116.250019
 
 
 Figures and files:
@@ -63,19 +43,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     182      /home/adcp/www/figures/os75nb_lastens.png
-     182      /home/adcp/www/figures/ktprof_amp_lastens.png
-     182      /home/adcp/www/figures/os75bb_lastens.png
-     182      /home/adcp/www/figures/os150nb_lastens.png
-     182      /home/adcp/www/figures/os150bb_lastens.png
+    2260      /home/adcp/www/figures/os75nb_lastens.png
+    2260      /home/adcp/www/figures/ktprof_amp_lastens.png
+    2260      /home/adcp/www/figures/os75bb_lastens.png
+    2260      /home/adcp/www/figures/os150nb_lastens.png
+    2260      /home/adcp/www/figures/os150bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     182      /home/adcp/www/figures/os75bb_ddaycont.png
-     182      /home/adcp/www/figures/os150bb_ddaycont.png
-     182      /home/adcp/www/figures/os75nb_ddaycont.png
-     182      /home/adcp/www/figures/os150nb_ddaycont.png
+    2260      /home/adcp/www/figures/os75bb_ddaycont.png
+    2260      /home/adcp/www/figures/os150bb_ddaycont.png
+    2260      /home/adcp/www/figures/os75nb_ddaycont.png
+    2260      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
