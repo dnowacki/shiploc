@@ -1,12 +1,9 @@
-2025/05/09 14:15:01
+2025/05/10 14:15:01
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: PortTest_5_8_2025  *** not logging ***
+Current cruise: SP2516  *** not logging ***
 
 
-approximate lat, lon, depth:   32 42.36938 N  117 14.17043 W   depth=1
-
-link: http://www.google.com/maps/place/32%2042.36938N+117%2014.17043W
-not using zmq publishers, position is from serial GPS
+no positions found from filelist bx992/*.gps.rbin
 
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
@@ -18,10 +15,10 @@ NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-+208.91.112.63   162.159.200.123  4 u  272 1024  377   13.021    0.297   0.322
-*208.91.112.61   172.17.101.2     2 u  663 1024  377   13.344   -0.638   0.855
--208.91.112.60   172.17.101.2     2 u  263 1024  377   13.176   -1.305   0.484
-+208.91.112.62   162.159.200.123  4 u 1033 1024  377   13.734    0.920   0.561
++208.91.112.63   162.159.200.123  4 u 1079 1024  377   13.056    0.466   0.366
+*208.91.112.61   172.17.101.2     2 u  245 1024  377   13.225   -0.482   1.842
+-208.91.112.60   172.17.101.2     2 u  588 1024  377   13.349   -1.335   0.268
++208.91.112.62   162.159.200.123  4 u  121 1024  377   12.955    0.589   0.312
 ------------------------------------------
 
 
@@ -29,7 +26,7 @@ NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 ---------- uptime ------------
- 14:15:03 up 17:44,  1 user,  load average: 0.01, 0.01, 0.00
+ 14:15:02 up 20:20,  1 user,  load average: 0.11, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -45,7 +42,10 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      98 /home/adcp/log/update_hbins_os150nb.warn
 
 Figures and files:
 
