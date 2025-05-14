@@ -1,7 +1,16 @@
-2025/03/18 14:30:01
+2025/05/13 14:30:01
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: km25-postshipyard  *** not logging ***
+
+ wh300 -- no data yet
+ os38bb -- no data yet
+ os38nb -- no data yet
+
+approximate lat, lon, depth:   21 18.96576 N  157 52.62372 W   depth=-2
+
+link: http://www.google.com/maps/place/21%2018.96576N+157%2052.62372W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
@@ -14,9 +23,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    3  10   377   107  +7576ns[  +65us] +/-   38ms
+^* kmroute.km                    4  10   377   501    -31us[ -110us] +/-   40ms
 
-Reference ID: 0A009601, Stratum=4, last offset=0.000057, RMS offset=0.000033
+Reference ID: 0A009601, Stratum=5, last offset=-0.000079, RMS offset=0.000034
 ------------------------------------------
 
 
@@ -25,7 +34,7 @@ Reference ID: 0A009601, Stratum=4, last offset=0.000057, RMS offset=0.000033
 
 
 ---------- uptime ------------
- 14:30:02 up 6 days, 16:32,  1 user,  load average: 0.08, 0.02, 0.01
+ 14:30:02 up 15:46,  2 users,  load average: 0.35, 0.10, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -43,6 +52,14 @@ ______________________
 
 (1) EDAC memory warnings:
      6 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      14 /home/adcp/log/DAS_while_cruise.warn
+      10 /home/adcp/log/DAS_while_cruise.warn.2025-05-12
+(3) rbin warnings:
+ 
+posmv gps    443    0.50  -1363.89     360.1       1     1     1     0     1
+posmv pmv    442    0.50  -1364.02     360.6       1     1     1     0     1
 
 Figures and files:
 
@@ -53,17 +70,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    9638      /home/adcp/www/figures/wh300_lastens.png
-    9638      /home/adcp/www/figures/os38nb_lastens.png
-    9638      /home/adcp/www/figures/ktprof_amp_lastens.png
-    9638      /home/adcp/www/figures/os38bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    9638      /home/adcp/www/figures/wh300_ddaycont.png
-    9638      /home/adcp/www/figures/os38bb_ddaycont.png
-    9638      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 

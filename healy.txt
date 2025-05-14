@@ -1,15 +1,7 @@
-2024/12/08 14:30:01
+2025/05/13 14:30:01
 currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: HLY24TH  *** not logging ***
-
-  os150nb 2024/11/11  00:20:36 to 2024/12/04  18:26:30  (5523 min. ago)  3.8 days
-  os75nb 2024/11/11  00:20:37 to 2024/12/04  18:26:32  (5523 min. ago)  3.8 days
-
-approximate lat, lon, depth:   58 16.74581 N  134 23.11307 W   depth=-84
-
-link: http://www.google.com/maps/place/58%2016.74581N+134%2023.11307W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -22,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ PSNHTIMBRIDGE.healy.pola>     1   8   377   112    +64us[  +64us] +/-  157us
-^* PSNHTIMHCO.healy.polarsc>     1   9   377   506    +68us[  +60us] +/-  158us
-
-Reference ID: C0A82A29, Stratum=2, last offset=-0.000008, RMS offset=0.000011
+^? 192.168.42.40                 0   6     0     -     +0ns[   +0ns] +/-    0ns
+^? 192.168.42.41                 0   6     0     -     +0ns[   +0ns] +/-    0ns
+WARNING: Chrony cannot get time from the specified server
+Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
@@ -34,7 +26,7 @@ Reference ID: C0A82A29, Stratum=2, last offset=-0.000008, RMS offset=0.000011
 
 
 ---------- uptime ------------
- 14:30:01 up 34 days, 14:17,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:01 up 6 days, 21:33,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -49,7 +41,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repor
 Summary of warnings:
 ______________________
 
-(1) proc sensor incompatibilities:
+(1) wordcount of log/*.warn:
+
+      15 /home/adcp/log/send_buffered_mail.warn
+      25 /home/adcp/log/send_buffered_mail.warn.2025-05-12
+(2) proc sensor incompatibilities:
  - pitch_msg (pmvm) not in sensor_cfg.py posmv messages: (['pmv', 'gps'])
 
 Figures and files:
@@ -61,15 +57,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    5518      /home/adcp/www/figures/os150nb_lastens.png
-    5518      /home/adcp/www/figures/os75nb_lastens.png
-    5518      /home/adcp/www/figures/ktprof_amp_lastens.png
+  230158      /home/adcp/www/figures/os150nb_lastens.png
+  230158      /home/adcp/www/figures/os75nb_lastens.png
+  230158      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    5518      /home/adcp/www/figures/os150nb_ddaycont.png
-    5518      /home/adcp/www/figures/os75nb_ddaycont.png
+  230158      /home/adcp/www/figures/os150nb_ddaycont.png
+  230158      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 

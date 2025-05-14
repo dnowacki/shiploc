@@ -1,20 +1,24 @@
-2025/05/12 14:30:02
+2025/05/13 14:30:02
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: Pierside_PostAE2510     ** is logging **
 
-   sv300 2025/05/11  12:07:45 to 2025/05/12  14:29:46  (1 min. ago)
-  os75bb 2025/05/11  12:10:45 to 2025/05/12  14:30:44  (0 min. ago)
-  os75nb 2025/05/11  12:10:45 to 2025/05/12  14:25:47  (5 min. ago)
+   sv300 2025/05/11  12:07:45 to 2025/05/13  14:29:45  (1 min. ago)
+  os75bb 2025/05/11  12:10:45 to 2025/05/13  14:30:47  (0 min. ago)
+  os75nb 2025/05/11  12:10:45 to 2025/05/13  14:25:46  (5 min. ago)
 
-approximate lat, lon, depth:   32 22.20068 N   64 41.75294 W   depth=-6
+approximate lat, lon, depth:   32 22.20050 N   64 41.75327 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2022.20068N+64%2041.75294W
+link: http://www.google.com/maps/place/32%2022.20050N+64%2041.75327W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
 
 
 
+
+--->>> WARNING: check os75bb temperature: 4 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: 4 outliers <<<---
 
 
 
@@ -26,16 +30,16 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 130.5981713 to 131.5981597
-(2025/05/11 14:21:22 to 2025/05/12 14:21:21)
-all abxtwo messages:  (100%)  were good  [using available QC]
+ddrange: 131.5982060 to 132.5981944
+(2025/05/12 14:21:25 to 2025/05/13 14:21:24)
+all abxtwo messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   275 out of 275   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.75, max = -0.23
-   mean = -0.50, stddev = 0.09
+   mean N = 301, stddev N =  1.2
+   min  = -0.72, max = -0.29
+   mean = -0.51, stddev = 0.08
 
 
 === Sonar Pingtype Summary =====
@@ -57,9 +61,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    37    +48us[  +48us] +/-   88us
+^* 192.168.51.9                  1   6   377    34    +49us[  +50us] +/-   86us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000004
+Reference ID: C0A83309, Stratum=2, last offset=0.000001, RMS offset=0.000004
 ------------------------------------------
 
 
@@ -67,21 +71,21 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/05/12 14:20:47) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2025/05/13 14:20:46) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 sv300 recent ping statistics
 
-(2025/05/12 14:27:46) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/05/13 14:27:45) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75bb recent ping statistics
 
-(2025/05/12 14:20:47) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2025/05/13 14:20:46) ens = 300 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:53 up 83 days,  1:04,  1 user,  load average: 0.24, 0.30, 0.35
+ 14:30:53 up 84 days,  1:04,  1 user,  load average: 0.58, 0.51, 0.52
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -98,10 +102,13 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      4 /home/adcp/log/3dayplots_os75bb.warn
-      18 /home/adcp/log/3dayplots_os75bb.warn.2025-05-11
-      72 /home/adcp/log/3dayplots_os75nb.warn
-      39 /home/adcp/log/3dayplots_sv300.warn
+      50 /home/adcp/log/3dayplots_sv300.warn
+(2) temperature warnings:
+
+--->>> WARNING: check os75bb temperature: 4 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: 4 outliers <<<---
+
 
 Figures and files:
 
