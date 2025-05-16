@@ -1,87 +1,32 @@
-2025/05/14 21:46:58
-currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: test05     ** is logging **
-
-  os150nb 2025/05/14  21:38:37 to 2025/05/14  21:43:37  (3 min. ago)
-  os75nb 2025/05/14  21:38:37 to 2025/05/14  21:43:38  (3 min. ago)
-
-approximate lat, lon, depth:   47 35.54094 N  122 20.56866 W   depth=61
-
-link: http://www.google.com/maps/place/47%2035.54094N+122%2020.56866W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2025/05/15 14:30:01
+currents02hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath385")
-===========================
------- posmv statistics ------
-===========================
-/home/adcp/daily_report/posmv_seapath330_pystats.txt does not (yet?) exist
-===========================
------- gyro39 statistics ------
-===========================
-/home/adcp/daily_report/gyro39_seapath330_pystats.txt does not (yet?) exist
-===========================
------- seapath385 statistics ------
-===========================
-/home/adcp/daily_report/seapath385_seapath330_pystats.txt does not (yet?) exist
-===========================
------- abxtwo statistics ------
-===========================
-/home/adcp/daily_report/abxtwo_seapath330_pystats.txt does not (yet?) exist
-===========================
------- gyro27 statistics ------
-===========================
-/home/adcp/daily_report/gyro27_seapath330_pystats.txt does not (yet?) exist
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.42.40                 1   7   377   108    +57us[  +57us] +/-  112us
-^+ 192.168.42.41                 1   8   377    94    +69us[  +69us] +/-  117us
+^+ 192.168.42.40                 1   7   377    89    +52us[  +51us] +/-  121us
+^* 192.168.42.41                 1   8   377    87  -5571ns[-7150ns] +/-   57us
 
-Reference ID: C0A82A28, Stratum=2, last offset=-0.000000, RMS offset=0.000004
+Reference ID: C0A82A29, Stratum=2, last offset=-0.000002, RMS offset=0.000004
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2025/05/14 21:38:37) ens = 300 sec, 167 pings, (1.80 sec/ping)
-
-os150nb recent ping statistics
-
-(2025/05/14 21:38:37) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 21:46:59 up 8 days,  4:52,  4 users,  load average: 0.26, 0.20, 0.17
+ 14:30:02 up 17:31,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -96,21 +41,12 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repor
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
+(1) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
 
-      12 /home/adcp/log/3dayplots_os150nb.warn
-      12 /home/adcp/log/3dayplots_os75nb.warn
-      9 /home/adcp/log/DAS_while_cruise.warn
-      20 /home/adcp/log/DAS_while_logging.warn
-      6 /home/adcp/log/DAS_while_logging.warn.2025-05-13
-      50 /home/adcp/log/lastensq_os150nb.warn
-      50 /home/adcp/log/lastensq_os75nb.warn
-      10 /home/adcp/log/lastfewvec_os150nb.warn
-      10 /home/adcp/log/lastfewvec_os75nb.warn
-      21 /home/adcp/log/quick_os150nb.warn
-      21 /home/adcp/log/quick_os75nb.warn
-      25 /home/adcp/log/send_buffered_mail.warn
-(2) proc sensor incompatibilities:
+      2 /home/adcp/log/web_speedlog.warn
+(3) proc sensor incompatibilities:
  - pitch_msg (pmvm) not in sensor_cfg.py posmv messages: (['pmv', 'gps'])
 
 Figures and files:
@@ -122,15 +58,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_lastens.png
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os150nb_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 

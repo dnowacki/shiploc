@@ -1,64 +1,24 @@
-2025/05/14 14:30:01
+2025/05/15 14:30:01
 currents02sv 6.5.0-18-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: SAV-25-04_part2     ** is logging **
-
-   wh300 2025/05/06  23:01:15 to 2025/05/14  14:29:14  (0 min. ago)
-
-approximate lat, lon, depth:   30 27.72141 N   80 12.22753 W   depth=55
-
-link: http://www.google.com/maps/place/30%2027.72141N+80%2012.22753W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "bx992_udp")
-===========================
------- bx992_udp statistics ------
-===========================
-gyro-bx992_udp statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 132.6038657 to 133.6038542
-(2025/05/13 14:29:34 to 2025/05/14 14:29:33)
-all bx992_udp messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -0.42, max = 2.15
-   mean = 0.97, stddev = 0.53
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:  on
-
-===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2025/05/14 14:27:14) ens = 120 sec, 75 pings, (1.60 sec/ping)
-
 
 
 
 ---------- uptime ------------
- 14:30:02 up 21 days, 16:53,  1 user,  load average: 1.42, 0.64, 0.47
+ 14:30:01 up 22 days, 16:53,  1 user,  load average: 0.12, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -73,17 +33,19 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_re
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
+(1) I/O warnings:
+    11 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
      6 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(3) wordcount of log/*.warn:
 
-      127 /home/adcp/log/DAS_speedlog.log.warn
-      58 /home/adcp/log/grab_pings_wh300.warn
-      96 /home/adcp/log/grab_pings_wh300.warn.2025-05-13
-      443 /home/adcp/log/lastensq_wh300.warn
-      732 /home/adcp/log/lastensq_wh300.warn.2025-05-13
-      440 /home/adcp/log/quick_wh300.warn
-      735 /home/adcp/log/quick_wh300.warn.2025-05-13
+      134 /home/adcp/log/DAS_speedlog.log.warn
+      18 /home/adcp/log/grab_pings_wh300.warn
+      96 /home/adcp/log/grab_pings_wh300.warn.2025-05-14
+      140 /home/adcp/log/lastensq_wh300.warn
+      732 /home/adcp/log/lastensq_wh300.warn.2025-05-14
+      141 /home/adcp/log/quick_wh300.warn
+      734 /home/adcp/log/quick_wh300.warn.2025-05-14
 
 Figures and files:
 
@@ -94,13 +56,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+     594      /home/adcp/www/figures/wh300_lastens.png
+     594      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_ddaycont.png
+     594      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
