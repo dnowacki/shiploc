@@ -1,5 +1,5 @@
-2025/05/15 14:30:01
-currents02hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2025/05/16 14:30:02
+currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 192.168.42.40                 1   7   377    89    +52us[  +51us] +/-  121us
-^* 192.168.42.41                 1   8   377    87  -5571ns[-7150ns] +/-   57us
+^* 192.168.42.40                 1   8   377     0  -4195ns[  -28us] +/-   64us
+^+ 192.168.42.41                 1   8   377   151    +44us[  +21us] +/-  110us
 
-Reference ID: C0A82A29, Stratum=2, last offset=-0.000002, RMS offset=0.000004
+Reference ID: C0A82A28, Stratum=2, last offset=-0.000023, RMS offset=0.000009
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: C0A82A29, Stratum=2, last offset=-0.000002, RMS offset=0.000004
 
 
 ---------- uptime ------------
- 14:30:02 up 17:31,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 9 days, 21:35,  1 user,  load average: 0.08, 0.02, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -41,12 +41,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repor
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      2 /home/adcp/log/web_speedlog.warn
-(3) proc sensor incompatibilities:
+(1) proc sensor incompatibilities:
  - pitch_msg (pmvm) not in sensor_cfg.py posmv messages: (['pmv', 'gps'])
 
 Figures and files:
