@@ -1,121 +1,32 @@
-2025/05/31 14:30:01
+2025/06/01 14:30:01
 currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: HLY25TA     ** is logging **
-
-  os150bb 2025/05/27  22:31:36 to 2025/05/31  14:27:21  (2 min. ago)
-  os150nb 2025/05/27  22:31:36 to 2025/05/31  14:27:21  (2 min. ago)
-  os75bb 2025/05/27  22:31:37 to 2025/05/31  14:28:38  (1 min. ago)
-  os75nb 2025/05/29  09:48:38 to 2025/05/31  14:28:38  (1 min. ago)
-
-approximate lat, lon, depth:   48 12.03622 N  123 5.80399 W   depth=104
-
-link: http://www.google.com/maps/place/48%2012.03622N+123%205.80399W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath385")
-===========================
------- posmv statistics ------
-===========================
-/home/adcp/daily_report/posmv_seapath330_pystats.txt does not (yet?) exist
-===========================
------- gyro39 statistics ------
-===========================
-/home/adcp/daily_report/gyro39_seapath330_pystats.txt does not (yet?) exist
-===========================
------- seapath385 statistics ------
-===========================
-seapath330-seapath385 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 149.6011115 to 150.6010999
-(2025/05/30 14:25:36 to 2025/05/31 14:25:35)
-all seapath385 messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.04, max = 0.05
-   mean = 0.00, stddev = 0.02
-
-===========================
------- abxtwo statistics ------
-===========================
-seapath330-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 149.6011346 to 150.6011230
-(2025/05/30 14:25:38 to 2025/05/31 14:25:37)
-all abxtwo messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 300, stddev N =  7.9
-   min  = -0.82, max = -0.64
-   mean = -0.73, stddev = 0.04
-
-===========================
------- gyro27 statistics ------
-===========================
-/home/adcp/daily_report/gyro27_seapath330_pystats.txt does not (yet?) exist
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:  on
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 192.168.42.40                 1   9   377    29    +88us[  +88us] +/-  135us
-^* 192.168.42.41                 1   7   377   109    +75us[  +74us] +/-  113us
+^+ 192.168.42.40                 1   8   377   217    +27us[  +28us] +/-   87us
+^* 192.168.42.41                 1   8   377     8    +12us[  +13us] +/-   69us
 
-Reference ID: C0A82A29, Stratum=2, last offset=-0.000000, RMS offset=0.000001
+Reference ID: C0A82A29, Stratum=2, last offset=0.000001, RMS offset=0.000003
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os150bb recent ping statistics
-
-(2025/05/31 14:22:20) ens = 300 sec, 136 pings, (2.21 sec/ping)
-
-os75nb recent ping statistics
-
-(2025/05/31 14:23:40) ens = 300 sec, 83 pings, (3.61 sec/ping)
-
-os150nb recent ping statistics
-
-(2025/05/31 14:22:20) ens = 300 sec, 136 pings, (2.21 sec/ping)
-
-os75bb recent ping statistics
-
-(2025/05/31 14:23:40) ens = 300 sec, 83 pings, (3.61 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:07 up 2 days,  8:19,  1 user,  load average: 1.12, 0.69, 0.51
+ 14:30:02 up 3 days,  8:19,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -134,19 +45,11 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      986 /home/adcp/log/hcorrstats_gyro27.warn
-      1632 /home/adcp/log/hcorrstats_gyro27.warn.2025-05-30
-      986 /home/adcp/log/hcorrstats_gyro39.warn
-      1632 /home/adcp/log/hcorrstats_gyro39.warn.2025-05-30
-      986 /home/adcp/log/hcorrstats_posmv.warn
-      1632 /home/adcp/log/hcorrstats_posmv.warn.2025-05-30
-(3) rbin warnings:
- 
-gyro39 hdg 882204    0.08    0.03       0.4   148642     1     1     0     0
-gyro39 hdg 882204    0.08    0.03       0.4   148643     1     1     0     0
-gyro27 hdg 882067    0.09    0.02       0.4   88248 218515 252006     0     0
-gyro27 hdg 882067    0.09    0.02       0.4   88248 218515 252006     0     0
-(4) proc sensor incompatibilities:
+      1343 /home/adcp/log/hcorrstats_gyro27.warn
+      1343 /home/adcp/log/hcorrstats_gyro39.warn
+      1343 /home/adcp/log/hcorrstats_posmv.warn
+      119 /home/adcp/log/hcorrstats_seapath385.warn
+(3) proc sensor incompatibilities:
  - pitch_msg (pmvm) not in sensor_cfg.py posmv messages: (['pmv', 'gps'])
 
 Figures and files:
@@ -158,19 +61,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150bb_lastens.png
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/os75bb_lastens.png
-       1      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1125      /home/adcp/www/figures/os150nb_lastens.png
+    1125      /home/adcp/www/figures/os150bb_lastens.png
+    1125      /home/adcp/www/figures/os75nb_lastens.png
+    1125      /home/adcp/www/figures/os75bb_lastens.png
+    1125      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150bb_ddaycont.png
-       0      /home/adcp/www/figures/os150nb_ddaycont.png
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+    1125      /home/adcp/www/figures/os75bb_ddaycont.png
+    1125      /home/adcp/www/figures/os150nb_ddaycont.png
+    1125      /home/adcp/www/figures/os150bb_ddaycont.png
+    1125      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
