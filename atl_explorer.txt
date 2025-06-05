@@ -1,20 +1,24 @@
-2025/06/03 14:30:01
+2025/06/04 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: AE2513     ** is logging **
 
-   sv300 2025/06/02  10:32:47 to 2025/06/03  14:28:47  (2 min. ago)
-  os75bb 2025/06/02  10:35:47 to 2025/06/03  14:25:47  (5 min. ago)
-  os75nb 2025/06/02  10:35:47 to 2025/06/03  14:25:47  (5 min. ago)
+   sv300 2025/06/02  10:32:47 to 2025/06/04  14:28:47  (2 min. ago)
+  os75bb 2025/06/02  10:35:47 to 2025/06/04  14:25:49  (5 min. ago)
+  os75nb 2025/06/02  10:35:47 to 2025/06/04  14:25:49  (5 min. ago)
 
-approximate lat, lon, depth:   31 39.28381 N   64 6.74686 W   depth=4542
+approximate lat, lon, depth:   31 41.29725 N   64 6.65577 W   depth=4522
 
-link: http://www.google.com/maps/place/31%2039.28381N+64%206.74686W
+link: http://www.google.com/maps/place/31%2041.29725N+64%206.65577W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
 
 
 
+
+--->>> WARNING: check os75bb temperature: 3 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
 
 
 
@@ -26,16 +30,16 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 152.5947801 to 153.5947685
-(2025/06/02 14:16:29 to 2025/06/03 14:16:28)
+ddrange: 153.5947917 to 154.5947801
+(2025/06/03 14:16:30 to 2025/06/04 14:16:29)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -0.70, max = -0.11
-   mean = -0.46, stddev = 0.06
+   min  = -0.60, max = -0.03
+   mean = -0.45, stddev = 0.07
 
 
 === Sonar Pingtype Summary =====
@@ -57,9 +61,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    14    +41us[  +34us] +/-   88us
+^* 192.168.51.9                  1   6   377    48    +49us[  +51us] +/-   86us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000007, RMS offset=0.000005
+Reference ID: C0A83309, Stratum=2, last offset=0.000001, RMS offset=0.000004
 ------------------------------------------
 
 
@@ -67,21 +71,21 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000007, RMS offset=0.000005
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/06/03 14:20:50) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2025/06/04 14:20:47) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 sv300 recent ping statistics
 
-(2025/06/03 14:26:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/06/04 14:26:47) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75bb recent ping statistics
 
-(2025/06/03 14:20:50) ens = 300 sec, 74 pings, (4.05 sec/ping)
+(2025/06/04 14:20:47) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 105 days,  1:04,  1 user,  load average: 0.39, 0.38, 0.44
+ 14:30:52 up 106 days,  1:04,  1 user,  load average: 0.28, 0.40, 0.43
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -93,6 +97,17 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/3dayplots_sv300.warn
+(2) temperature warnings:
+
+--->>> WARNING: check os75bb temperature: 3 outliers <<<---
+
+--->>> WARNING: check os75nb temperature: 3 outliers <<<---
 
 
 Figures and files:
@@ -106,8 +121,8 @@ Checking updating of 5-minute plots:
 age (minutes)          filename
        4      /home/adcp/www/figures/os75nb_lastens.png
        2      /home/adcp/www/figures/sv300_lastens.png
-       0      /home/adcp/www/figures/os75bb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
