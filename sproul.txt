@@ -1,31 +1,56 @@
-2025/06/07 14:15:01
+2025/06/08 19:52:54
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SP2522  *** not logging ***
+Current cruise: SP2522     ** is logging **
 
+  os150nb 2025/06/08  14:11:03 to 2025/06/08  19:50:04  (2 min. ago)
 
-no positions found from filelist bx992/*.gps.rbin
+approximate lat, lon, depth:   32 44.04625 N  117 30.55681 W   depth=692
 
+link: http://www.google.com/maps/place/32%2044.04625N+117%2030.55681W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the VIRTUAL computer, noy yet ready for primetime.
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ sc30 statistics ------
+===========================
+no good sc30 data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:  on
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sp-bx992.ucsd.e .GPS.            1 u  750 1024  377    0.189    0.350   0.453
+*sp-bx992.ucsd.e .GPS.            1 u  371 1024  377    0.217    1.288   0.242
  sp-ptp01-net.uc .STEP.          16 u    - 1024    0    0.000    0.000   0.000
- sp-ptp01-das.uc .STEP.          16 u    - 1024    0    0.000    0.000   0.000
+ 100.124.164.33  .STEP.          16 u    - 1024    0    0.000    0.000   0.000
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2025/06/08 19:47:04) ens = 180 sec, 76 pings, (2.37 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:01 up 7 days, 21:59,  1 user,  load average: 0.00, 0.00, 0.00
+ 19:52:55 up 9 days,  3:37,  2 users,  load average: 0.09, 0.10, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -37,7 +62,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      96 /home/adcp/log/3dayplots_os150nb.warn
+      812 /home/adcp/log/lastensq_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      20 /home/adcp/log/quick_os150nb.warn
+      154 /home/adcp/log/update_hbins_os150nb.warn
 
 Figures and files:
 
@@ -48,10 +82,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
