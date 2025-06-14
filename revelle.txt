@@ -1,13 +1,13 @@
-2025/06/12 23:42:03
+2025/06/13 17:17:42
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR2504     ** is logging **
+Current cruise: RR2504_part2     ** is logging **
 
-  os150nb 2025/06/07  21:21:30 to 2025/06/12  23:40:24  (1 min. ago)
-  os75nb 2025/06/07  21:21:30 to 2025/06/12  23:40:24  (1 min. ago)
+  os150nb 2025/06/13  15:27:09 to 2025/06/13  17:15:08  (2 min. ago)
+  os75nb 2025/06/13  15:27:09 to 2025/06/13  17:15:08  (2 min. ago)
 
-approximate lat, lon, depth:   49 3.10853 N   52 26.63946 W   depth=312
+approximate lat, lon, depth:   52 18.42050 N   53 50.06110 W   depth=356
 
-link: http://www.google.com/maps/place/49%203.10853N+52%2026.63946W
+link: http://www.google.com/maps/place/52%2018.42050N+53%2050.06110W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,15 +25,15 @@ NOTE: This is the _primary_ computer
 ===========================
 seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 161.9826198 to 162.9826082
-(2025/06/11 23:34:58 to 2025/06/12 23:34:57)
+ddrange: 163.6417633 to 163.7150041
+(2025/06/13 15:24:08 to 2025/06/13 17:09:36)
 all seapath380mgc messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   285 out of 285   (100%) were good
+   21 out of 21   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.03, max = 0.04
+   min  = -0.01, max = 0.03
    mean = 0.01, stddev = 0.01
 
 ===========================
@@ -41,16 +41,16 @@ statistics of good data:
 ===========================
 seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 161.8865550 to 162.8865434
-(2025/06/11 21:16:38 to 2025/06/12 21:16:37)
+ddrange: 163.6417633 to 163.7150272
+(2025/06/13 15:24:08 to 2025/06/13 17:09:38)
 all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   21 out of 21   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.28, max = 0.44
-   mean = 0.36, stddev = 0.03
+   mean N = 301, stddev N =  0.3
+   min  = 0.29, max = 0.36
+   mean = 0.32, stddev = 0.01
 
 
 === Sonar Pingtype Summary =====
@@ -67,28 +67,25 @@ os75 BT:      off
 
 ===========================
 
----------- ntpq -p ------------
-     remote           refid      st t when poll reach   delay   offset  jitter
-==============================================================================
- 100.124.36.33   .POOL.          16 p    -   64    0    0.000   +0.000   0.000
- rr-ptp01-das.uc .GPS.            1 u   28   64  177    0.165  -48596.   9.059
+---------- ps -ef | grep ntpd | grep -v grep ------------
+ntp is not running
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2025/06/12 23:37:24) ens = 180 sec, 147 pings, (1.22 sec/ping)
+(2025/06/13 17:12:08) ens = 180 sec, 147 pings, (1.22 sec/ping)
 
 os75nb recent ping statistics
 
-(2025/06/12 23:37:25) ens = 180 sec, 79 pings, (2.28 sec/ping)
+(2025/06/13 17:12:09) ens = 180 sec, 79 pings, (2.28 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 23:42:05 up 7 days, 13:47,  2 users,  load average: 0.51, 0.44, 0.45
+ 17:17:45 up 8 days,  7:23,  2 users,  load average: 0.33, 0.38, 0.36
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -107,22 +104,12 @@ ______________________
      4 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      18 /home/adcp/log/DAS_while_logging.warn
-      152 /home/adcp/log/hcorrstats_gyro.warn
-(3) rbin warnings:
- 
-seapath380 gps  92108    1.00  -47.59     426.0      10     9     9     0     9
-seapath380 sea  92108    1.00  -47.59     426.0      10     9     9     0     9
-seapath380 hdg  92108    1.00  -47.59     426.0      10     9     9     0     9
-seapath380mgc gps  92106    1.00  -47.59     426.0      14    10    10     0    10
-seapath380mgc sea  92106    1.00  -47.59     426.0      14    10    10     0    10
-seapath380mgc hdg  92106    1.00  -47.59     426.0      14    10    10     0    10
-gyro hdg  91903    1.00  -47.59     426.2      10    11     9     0     9
-(4) timestamp warnings:
-jumps forward: 9   jumps back: 9
-max forward 0 seconds at dday 161.833422
-max backward 0 seconds at dday 161.833434
-
+      96 /home/adcp/log/DAS_while_logging.warn
+      18 /home/adcp/log/DAS_while_logging.warn.2025-06-12
+      1178 /home/adcp/log/hcorrstats_gyro.warn
+      171 /home/adcp/log/hcorrstats_gyro.warn.2025-06-12
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
 
 Figures and files:
 
@@ -133,15 +120,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
-       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
