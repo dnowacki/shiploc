@@ -1,24 +1,80 @@
-2025/06/13 14:30:02
+2025/06/14 14:30:01
 currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: PE25_27_Fraiser_ADCP     ** is logging **
+
+  wh1200 2025/06/14  12:56:03 to 2025/06/14  14:28:03  (2 min. ago)
+ wh300 -- no data yet
+  os75bb 2025/06/14  12:59:07 to 2025/06/14  14:29:07  (1 min. ago)
+  os75nb 2025/06/14  12:59:07 to 2025/06/14  14:29:07  (1 min. ago)
+
+approximate lat, lon, depth:   28 9.30357 N   90 8.97279 W   depth=227
+
+link: http://www.google.com/maps/place/28%209.30357N+90%208.97279W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+no good abxtwo data out of 0 (300sec) ensembles
+===========================
+------ abxtwo_b2a1 statistics ------
+===========================
+no good abxtwo_b2a1 data out of 0 (300sec) ensembles
+===========================
+------ sc70_bridge statistics ------
+===========================
+no good sc70_bridge data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+wh1200: Triggering command not found
+wh1200 BB:  on
+wh1200 BT:      off
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+os75bb recent ping statistics
+
+(2025/06/14 14:24:06) ens = 300 sec, 76 pings, (3.95 sec/ping)
+
+os75nb recent ping statistics
+
+(2025/06/14 14:24:06) ens = 300 sec, 76 pings, (3.95 sec/ping)
+
+wh1200 recent ping statistics
+
+(2025/06/14 14:26:03) ens = 120 sec, 200 pings, (0.60 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:03 up 11 days,  1:26,  1 user,  load average: 0.02, 0.05, 0.08
+ 14:30:02 up 12 days,  1:26,  1 user,  load average: 0.40, 0.41, 0.45
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -34,29 +90,25 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    11 EDAC (memory) errors in last 2 /var/log/syslog
+    16 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      1752 /home/adcp/log/3dayplots_wh300.warn
-      3456 /home/adcp/log/3dayplots_wh300.warn.2025-06-12
-      2214 /home/adcp/log/DAS_while_logging.warn
-      4372 /home/adcp/log/DAS_while_logging.warn.2025-06-12
-      343 /home/adcp/log/grab_pings_wh300.warn
-      672 /home/adcp/log/grab_pings_wh300.warn.2025-06-12
-      2213 /home/adcp/log/lastensq_os75bb.warn
-      2147 /home/adcp/log/lastensq_os75bb.warn.2025-06-12
-      2152 /home/adcp/log/lastensq_os75nb.warn
-      2084 /home/adcp/log/lastensq_os75nb.warn.2025-06-12
-      5346 /home/adcp/log/lastensq_wh1200.warn
-      4986 /home/adcp/log/lastensq_wh1200.warn.2025-06-12
-      18482 /home/adcp/log/lastensq_wh300.warn
-      29067 /home/adcp/log/lastensq_wh300.warn.2025-06-12
-      3150 /home/adcp/log/lastfewvec_wh300.warn
-      6228 /home/adcp/log/lastfewvec_wh300.warn.2025-06-12
-      7700 /home/adcp/log/quick_wh300.warn
-      15224 /home/adcp/log/quick_wh300.warn.2025-06-12
-      1596 /home/adcp/log/update_hbins_wh1200.warn
-      1344 /home/adcp/log/update_hbins_wh1200.warn.2025-06-12
+      105 /home/adcp/log/3dayplots_os75nb.warn
+      228 /home/adcp/log/3dayplots_wh300.warn
+      290 /home/adcp/log/DAS_while_logging.warn
+      42 /home/adcp/log/grab_pings_wh300.warn
+      231 /home/adcp/log/lastensq_os75bb.warn
+      231 /home/adcp/log/lastensq_os75nb.warn
+      595 /home/adcp/log/lastensq_wh1200.warn
+      1311 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh1200.warn
+      414 /home/adcp/log/lastfewvec_wh300.warn
+      5 /home/adcp/log/quick_os75nb.warn
+      1 /home/adcp/log/quick_wh1200.warn
+      1012 /home/adcp/log/quick_wh300.warn
+      210 /home/adcp/log/update_hbins_wh1200.warn
 
 Figures and files:
 
@@ -67,17 +119,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     140      /home/adcp/www/figures/ktprof_amp_lastens.png
-     140      /home/adcp/www/figures/os75nb_lastens.png
-     140      /home/adcp/www/figures/wh1200_lastens.png
-     140      /home/adcp/www/figures/os75bb_lastens.png
+       1      /home/adcp/www/figures/wh1200_lastens.png
+       0      /home/adcp/www/figures/os75bb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     140      /home/adcp/www/figures/os75nb_ddaycont.png
-     140      /home/adcp/www/figures/os75bb_ddaycont.png
-     140      /home/adcp/www/figures/wh1200_ddaycont.png
+       0      /home/adcp/www/figures/wh1200_ddaycont.png
+       0      /home/adcp/www/figures/os75bb_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
