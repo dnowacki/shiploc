@@ -1,13 +1,13 @@
-2025/06/15 14:30:01
+2025/06/16 14:30:02
 currents03skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SKQ202512S     ** is logging **
 
-   wh300 2025/06/14  12:33:02 to 2025/06/15  14:29:18  (0 min. ago)
-  os75nb 2025/06/14  12:36:03 to 2025/06/15  14:25:19  (4 min. ago)
+   wh300 2025/06/14  12:33:02 to 2025/06/16  14:29:19  (0 min. ago)
+  os75nb 2025/06/14  12:36:03 to 2025/06/16  14:25:18  (4 min. ago)
 
-approximate lat, lon, depth:   57 7.78907 N  135 28.16485 W   depth=1
+approximate lat, lon, depth:   56 58.11503 N  135 16.39006 W   depth=-101
 
-link: http://www.google.com/maps/place/57%207.78907N+135%2028.16485W
+link: http://www.google.com/maps/place/56%2058.11503N+135%2016.39006W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ Database time ranges:
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 164.5943052 to 165.5942936
-(2025/06/14 14:15:48 to 2025/06/15 14:15:47)
+ddrange: 165.5942589 to 166.5942473
+(2025/06/15 14:15:44 to 2025/06/16 14:15:43)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.26, max = -0.07
-   mean = -0.14, stddev = 0.06
+   min  = -0.22, max = -0.04
+   mean = -0.12, stddev = 0.04
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 164.5943284 to 165.5943168
-(2025/06/14 14:15:50 to 2025/06/15 14:15:49)
+ddrange: 165.5942705 to 166.5942589
+(2025/06/15 14:15:45 to 2025/06/16 14:15:44)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   286 out of 286   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.05, max = 0.09
-   mean = 0.02, stddev = 0.04
+   min  = -0.02, max = 0.09
+   mean = 0.04, stddev = 0.03
 
 
 === Sonar Pingtype Summary =====
@@ -76,10 +76,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   8   377   157    +55us[  +55us] +/-  109us
-^* 10.1.0.6                      1  10   377   474    +34us[  +72us] +/-  100us
+^+ 10.1.0.5                      1  10   377  1018    -11us[  -12us] +/-  148us
+^* 10.1.0.6                      1  10   377   563  -1786ns[-2890ns] +/-  118us
 
-Reference ID: 0A010006, Stratum=2, last offset=0.000038, RMS offset=0.000014
+Reference ID: 0A010006, Stratum=2, last offset=-0.000001, RMS offset=0.000007
 ------------------------------------------
 
 
@@ -87,17 +87,17 @@ Reference ID: 0A010006, Stratum=2, last offset=0.000038, RMS offset=0.000014
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/06/15 14:20:19) ens = 300 sec, 115 pings, (2.61 sec/ping)
+(2025/06/16 14:20:20) ens = 300 sec, 104 pings, (2.88 sec/ping)
 
 wh300 recent ping statistics
 
-(2025/06/15 14:27:17) ens = 120 sec, 85 pings, (1.41 sec/ping)
+(2025/06/16 14:27:18) ens = 120 sec, 119 pings, (1.01 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days, 18:27,  2 users,  load average: 0.21, 0.28, 0.35
+ 14:30:02 up 4 days, 18:27,  3 users,  load average: 0.60, 0.90, 0.77
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -114,6 +114,11 @@ ______________________
 
 (1) EDAC memory warnings:
      7 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      2 /home/adcp/log/3dayplots_os75nb.warn
+      3 /home/adcp/log/DAS_while_logging.warn
+      2 /home/adcp/log/DAS_while_logging.warn.2025-06-15
 
 Figures and files:
 
