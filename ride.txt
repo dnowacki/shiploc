@@ -1,14 +1,14 @@
-2025/06/17 14:30:01
+2025/06/18 14:30:02
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SR2514     ** is logging **
 
-   wh300 2025/06/08  20:00:05 to 2025/06/17  14:29:05  (1 min. ago)
-  os150nb 2025/06/08  20:03:06 to 2025/06/17  14:26:04  (4 min. ago)
-  os38bb 2025/06/09  02:46:04 to 2025/06/17  14:26:03  (4 min. ago)
+   wh300 2025/06/08  20:00:05 to 2025/06/18  14:29:34  (0 min. ago)
+  os150nb 2025/06/08  20:03:06 to 2025/06/18  14:26:35  (3 min. ago)
+  os38bb 2025/06/09  02:46:04 to 2025/06/18  14:26:32  (3 min. ago)
 
-approximate lat, lon, depth:   47 4.15077 N  124 54.58032 W   depth=161
+approximate lat, lon, depth:   47 4.21751 N  124 54.52973 W   depth=161
 
-link: http://www.google.com/maps/place/47%204.15077N+124%2054.58032W
+link: http://www.google.com/maps/place/47%204.21751N+124%2054.52973W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ no heading correction device specified===========================
 ===========================
 seapath_mgc-seapath_mru statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 166.5988563 to 167.5988505
-(2025/06/16 14:22:21 to 2025/06/17 14:22:21)
+ddrange: 167.6022995 to 168.6022938
+(2025/06/17 14:27:19 to 2025/06/18 14:27:18)
 all seapath_mru messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.2
-   min  = -0.18, max = 0.08
-   mean = -0.05, stddev = 0.04
+   min  = -0.11, max = 0.09
+   mean = -0.02, stddev = 0.04
 
 ===========================
 ------ hemisphere statistics ------
 ===========================
 seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 166.5988852 to 167.5988794
-(2025/06/16 14:22:24 to 2025/06/17 14:22:23)
+ddrange: 167.6023285 to 168.6023227
+(2025/06/17 14:27:21 to 2025/06/18 14:27:21)
 all hemisphere messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = -2.94, max = 5.43
-   mean = 1.58, stddev = 1.42
+   mean N = 601, stddev N =  0.3
+   min  = -2.99, max = 5.50
+   mean = 1.59, stddev = 1.47
 
 
 === Sonar Pingtype Summary =====
@@ -81,10 +81,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-seapath-mru.ucsd.edu       1  10   377   703    +56us[  +63us] +/-  165us
-^+ sr-seapath-mgc.ucsd.edu       1  10   377   185    +21us[  +21us] +/-  153us
+^* sr-seapath-mru.ucsd.edu       1  10   377   146    +15us[  +28us] +/-  150us
+^+ sr-seapath-mgc.ucsd.edu       1  10   377   694    +36us[  +49us] +/-  148us
 
-Reference ID: 647C6423, Stratum=2, last offset=0.000007, RMS offset=0.000012
+Reference ID: 647C6423, Stratum=2, last offset=0.000013, RMS offset=0.000009
 ------------------------------------------
 
 
@@ -92,21 +92,25 @@ Reference ID: 647C6423, Stratum=2, last offset=0.000007, RMS offset=0.000012
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/06/17 14:27:05) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/06/18 14:27:34) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+ec150cw recent ping statistics
+
+ec150cw recent ping statistics
 
 os150nb recent ping statistics
 
-(2025/06/17 14:21:04) ens = 300 sec, 272 pings, (1.10 sec/ping)
+(2025/06/18 14:21:35) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 os38bb recent ping statistics
 
-(2025/06/17 14:21:03) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2025/06/18 14:21:32) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 8 days, 16:15,  3 users,  load average: 0.23, 0.37, 0.47
+ 14:30:02 up 9 days, 16:15,  3 users,  load average: 0.47, 0.53, 0.56
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -123,6 +127,12 @@ ______________________
 
 (1) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      44 /home/adcp/log/3dayplots_ec150cw.warn
+      826 /home/adcp/log/lastensq_ec150cw.warn
+      1 /home/adcp/log/lastfewvec_ec150cw.warn
+      1 /home/adcp/log/quick_ec150cw.warn
 
 Figures and files:
 
@@ -133,8 +143,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    5649      /home/adcp/www/figures/os38nb_lastens.png
-    5649      /home/adcp/www/figures/ec150cw_lastens.png
+     798      /home/adcp/www/figures/os38nb_lastens.png
+     798      /home/adcp/www/figures/ec150cw_lastens.png
        3      /home/adcp/www/figures/os150nb_lastens.png
        3      /home/adcp/www/figures/os38bb_lastens.png
        0      /home/adcp/www/figures/wh300_lastens.png
@@ -143,11 +153,11 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    5649      /home/adcp/www/figures/ec150cw_ddaycont.png
-    5649      /home/adcp/www/figures/os38nb_ddaycont.png
-       3      /home/adcp/www/figures/wh300_ddaycont.png
+     798      /home/adcp/www/figures/ec150cw_ddaycont.png
+     798      /home/adcp/www/figures/os38nb_ddaycont.png
        3      /home/adcp/www/figures/os150nb_ddaycont.png
        3      /home/adcp/www/figures/os38bb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
