@@ -1,91 +1,32 @@
-2025/06/21 14:15:02
+2025/06/22 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR2504_part2     ** is logging **
+Current cruise: RR2504_part2  *** not logging ***
 
-  os150nb 2025/06/13  15:27:09 to 2025/06/21  14:14:00  (1 min. ago)
-  os75nb 2025/06/13  15:27:09 to 2025/06/21  14:14:00  (1 min. ago)
+  os150nb 2025/06/13  15:27:09 to 2025/06/22  12:32:00  (103 min. ago) 1.7 hrs
+  os75nb 2025/06/13  15:27:09 to 2025/06/22  12:32:02  (103 min. ago) 1.7 hrs
 
-approximate lat, lon, depth:   55 21.76177 N   51 43.87022 W   depth=3223
+approximate lat, lon, depth:   57 1.37858 N   50 47.04941 W   depth=3591
 
-link: http://www.google.com/maps/place/55%2021.76177N+51%2043.87022W
+link: http://www.google.com/maps/place/57%201.37858N+50%2047.04941W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath380mgc")
-===========================
------- seapath380mgc statistics ------
-===========================
-seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 170.5877124 to 171.5877008
-(2025/06/20 14:06:18 to 2025/06/21 14:06:17)
-all seapath380mgc messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.04, max = 0.05
-   mean = 0.01, stddev = 0.01
-
-===========================
------- gyro statistics ------
-===========================
-seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 170.5877355 to 171.5877240
-(2025/06/20 14:06:20 to 2025/06/21 14:06:19)
-all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.25, max = 0.43
-   mean = 0.34, stddev = 0.04
-
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 ---------- ps -ef | grep ntpd | grep -v grep ------------
 ntp is not running
 ------------------------------------------
 
 
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2025/06/21 14:08:00) ens = 180 sec, 147 pings, (1.22 sec/ping)
-
-os75nb recent ping statistics
-
-(2025/06/21 14:08:01) ens = 180 sec, 79 pings, (2.28 sec/ping)
-
 
 
 
 ---------- uptime ------------
- 14:15:04 up 16 days,  4:20,  1 user,  load average: 0.28, 0.36, 0.43
+ 14:15:04 up 17 days,  4:20,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -97,12 +38,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      2 /home/adcp/log/lastensq_os150nb.warn
 
 Figures and files:
 
@@ -113,15 +49,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+     100      /home/adcp/www/figures/os75nb_lastens.png
+     100      /home/adcp/www/figures/ktprof_amp_lastens.png
+     100      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
-       4      /home/adcp/www/figures/os75nb_ddaycont.png
+     100      /home/adcp/www/figures/os75nb_ddaycont.png
+     100      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
