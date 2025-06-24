@@ -1,12 +1,12 @@
-2025/06/22 14:15:02
+2025/06/23 14:15:02
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SP2525     ** is logging **
 
-  os150nb 2025/06/18  17:20:52 to 2025/06/22  14:14:38  (0 min. ago)
+  os150nb 2025/06/18  17:20:52 to 2025/06/23  14:14:39  (0 min. ago)
 
-approximate lat, lon, depth:   35 7.36747 N  120 45.24183 W   depth=44
+approximate lat, lon, depth:   35 6.15965 N  120 44.57711 W   depth=51
 
-link: http://www.google.com/maps/place/35%207.36747N+120%2045.24183W
+link: http://www.google.com/maps/place/35%206.15965N+120%2044.57711W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -35,22 +35,22 @@ os150 BT:  on
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sp-bx992.ucsd.e .GPS.            1 u  522 1024  377    0.187   -0.371   0.283
- sp-ptp01-net.uc .INIT.          16 u    - 1024    0    0.000    0.000   0.000
- sp-ptp01-das.uc .INIT.          16 u    - 1024    0    0.000    0.000   0.000
+*100.124.164.36  .GPS.            1 u  631 1024  377    0.184   -0.002   0.138
+ 100.124.133.133 .INIT.          16 u    - 1024    0    0.000    0.000   0.000
+ 100.124.164.33  .INIT.          16 u    - 1024    0    0.000    0.000   0.000
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2025/06/22 14:11:39) ens = 180 sec, 79 pings, (2.28 sec/ping)
+(2025/06/23 14:11:38) ens = 180 sec, 79 pings, (2.28 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:06 up 5 days, 8 min,  1 user,  load average: 0.26, 0.12, 0.74
+ 14:15:06 up 6 days, 8 min,  1 user,  load average: 0.18, 0.13, 0.10
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -67,25 +67,22 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      41 /home/adcp/log/DAS_while_logging.warn
-      595 /home/adcp/log/hcorrstats_sc30.warn
-      1054 /home/adcp/log/hcorrstats_sc30.warn.2025-06-21
-      119 /home/adcp/log/lastensq_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
+      969 /home/adcp/log/hcorrstats_sc30.warn
+      1258 /home/adcp/log/hcorrstats_sc30.warn.2025-06-22
 (2) rbin warnings:
  
-bx992 gps 174460    0.50    0.00      46.5    1186  1578  1552     0     0
-bx992 gps 174460    0.50    0.00      46.5    1186  1578  1552     0     0
-bx992 gph 173870    0.50    0.00     257.5    1188  1578  1552     0     0
-bx992 gph 173870    0.50    0.00     257.5    1188  1578  1552     0     0
-sc30 gps  66812    1.00    0.00   20452.5       4     3     2     0     0
-sc30 gps  66812    1.00    0.00   20452.5       4     3     2     0     0
-sc30 gph 133625    0.66    0.00   20452.3       4 42505     4     0     0
-sc30 gph 133625    0.66    0.00   20452.3       4 42505     4     0     0
-gp170a gps  66813    1.00    0.00   20452.6       4     4     2     0     0
-gp170a gps  66813    1.00    0.00   20452.6       4     4     2     0     0
-gp170b gps  66812    1.00    0.00   20452.6       4     2     2     0     0
-gp170b gps  66812    1.00    0.00   20452.6       4     2     2     0     0
+bx992 gps 174614    0.50    0.00       3.0       5     5     2     0     0
+bx992 gps 174614    0.50    0.00       3.0       5     5     2     0     0
+bx992 gph 174611    0.50    0.00       3.0       6     4     2     0     0
+bx992 gph 174611    0.50    0.00       3.0       6     4     2     0     0
+sc30 gps  87313    1.00    0.00       6.4       3    10     9     0     0
+sc30 gps  87313    1.00    0.00       6.4       3    10     9     0     0
+sc30 gph 174626    0.31    0.00       3.7   87301    26    25     0     0
+sc30 gph 174626    0.31    0.00       3.7   87301    26    25     0     0
+gp170a gps  87312    1.00    0.00       4.8       4    15    10     0     0
+gp170a gps  87312    1.00    0.00       4.8       4    15    10     0     0
+gp170b gps  87311    1.00    0.00       6.4       4    11     9     0     0
+gp170b gps  87311    1.00    0.00       6.4       4    11     9     0     0
 
 Figures and files:
 
@@ -96,8 +93,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
        0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
