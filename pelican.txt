@@ -1,80 +1,24 @@
-2025/06/24 14:30:02
-currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: PE25_27_Fraiser_ADCP     ** is logging **
-
-  wh1200 2025/06/14  12:56:03 to 2025/06/24  14:28:01  (2 min. ago)
- wh300 -- no data yet
-  os75bb 2025/06/14  12:59:07 to 2025/06/24  14:27:03  (3 min. ago)
-  os75nb 2025/06/14  12:59:07 to 2025/06/24  14:27:03  (3 min. ago)
-
-approximate lat, lon, depth:   24 1.42507 N   88 55.89965 W   depth=2345
-
-link: http://www.google.com/maps/place/24%201.42507N+88%2055.89965W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2025/06/25 14:30:02
+currents01pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-no good abxtwo data out of 0 (300sec) ensembles
-===========================
------- abxtwo_b2a1 statistics ------
-===========================
-no good abxtwo_b2a1 data out of 0 (300sec) ensembles
-===========================
------- sc70_bridge statistics ------
-===========================
-no good sc70_bridge data out of 0 (300sec) ensembles
-
-=== Sonar Pingtype Summary =====
-
-wh1200: Triggering command not found
-wh1200 BB:  on
-wh1200 BT:      off
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2025/06/24 14:22:02) ens = 300 sec, 75 pings, (4.00 sec/ping)
-
-os75nb recent ping statistics
-
-(2025/06/24 14:22:02) ens = 300 sec, 75 pings, (4.00 sec/ping)
-
-wh1200 recent ping statistics
-
-(2025/06/24 14:26:01) ens = 120 sec, 200 pings, (0.60 sec/ping)
-
 
 
 
 ---------- uptime ------------
- 14:30:03 up 22 days,  1:26,  1 user,  load average: 0.20, 0.38, 0.46
+ 14:30:03 up 25 days, 16:35,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -89,28 +33,8 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_rep
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
-
-      2088 /home/adcp/log/3dayplots_wh300.warn
-      3456 /home/adcp/log/3dayplots_wh300.warn.2025-06-23
-      2757 /home/adcp/log/DAS_while_logging.warn
-      4496 /home/adcp/log/DAS_while_logging.warn.2025-06-23
-      406 /home/adcp/log/grab_pings_wh300.warn
-      672 /home/adcp/log/grab_pings_wh300.warn.2025-06-23
-      2958 /home/adcp/log/lastensq_os75bb.warn
-      4896 /home/adcp/log/lastensq_os75bb.warn.2025-06-23
-      2958 /home/adcp/log/lastensq_os75nb.warn
-      4896 /home/adcp/log/lastensq_os75nb.warn.2025-06-23
-      7493 /home/adcp/log/lastensq_wh1200.warn
-      12373 /home/adcp/log/lastensq_wh1200.warn.2025-06-23
-      22192 /home/adcp/log/lastensq_wh300.warn
-      36182 /home/adcp/log/lastensq_wh300.warn.2025-06-23
-      3762 /home/adcp/log/lastfewvec_wh300.warn
-      6219 /home/adcp/log/lastfewvec_wh300.warn.2025-06-23
-      9196 /home/adcp/log/quick_wh300.warn
-      15202 /home/adcp/log/quick_wh300.warn.2025-06-23
-      2436 /home/adcp/log/update_hbins_wh1200.warn
-      4032 /home/adcp/log/update_hbins_wh1200.warn.2025-06-23
+(1) EDAC memory warnings:
+    11 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -121,17 +45,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75bb_lastens.png
-       2      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/wh1200_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+  799033      /home/adcp/www/figures/ktprof_amp_lastens.png
+  799033      /home/adcp/www/figures/wh1200_lastens.png
+  799033      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh1200_ddaycont.png
-       2      /home/adcp/www/figures/os75bb_ddaycont.png
-       2      /home/adcp/www/figures/os75nb_ddaycont.png
+  799033      /home/adcp/www/figures/wh1200_ddaycont.png
+  799033      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
