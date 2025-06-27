@@ -1,13 +1,13 @@
-2025/06/25 14:30:01
+2025/06/26 14:30:01
 currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: HLY25TB_part3     ** is logging **
 
-  os150nb 2025/06/23  22:32:06 to 2025/06/25  09:57:06  (273 min. ago) 4.6 hrs
-  os75nb 2025/06/23  22:32:07 to 2025/06/25  09:57:08  (273 min. ago) 4.6 hrs
+  os150nb 2025/06/23  22:32:06 to 2025/06/26  14:25:00  (5 min. ago)
+  os75nb 2025/06/23  22:32:07 to 2025/06/26  14:24:59  (5 min. ago)
 
-approximate lat, lon, depth:   54 9.99224 N  162 52.75827 W   depth=69
+approximate lat, lon, depth:   56 39.53769 N  164 24.49576 W   depth=73
 
-link: http://www.google.com/maps/place/54%209.99224N+162%2052.75827W
+link: http://www.google.com/maps/place/56%2039.53769N+164%2024.49576W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -35,22 +35,22 @@ no good seapath385 data out of 0 (300sec) ensembles
 ===========================
 ------ abxtwo statistics ------
 ===========================
-no good abxtwo data out of 0 (300sec) ensembles
+no good abxtwo data out of 2 (300sec) ensembles
 ===========================
 ------ gyro27 statistics ------
 ===========================
 gyro39-gyro27 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 174.3645081 to 175.3645023
-(2025/06/24 08:44:53 to 2025/06/25 08:44:53)
+ddrange: 176.4555324 to 176.6026157
+(2025/06/26 10:55:58 to 2025/06/26 14:27:46)
 all gyro27 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
+   42 out of 42   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  4.0
-   min  = -0.20, max = 1.10
-   mean = 0.32, stddev = 0.44
+   mean N = 601, stddev N =  0.4
+   min  = -0.36, max = 0.31
+   mean = -0.07, stddev = 0.20
 
 
 === Sonar Pingtype Summary =====
@@ -72,10 +72,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.42.40                 1   8   377   100    +80us[  +83us] +/-  127us
-^+ 192.168.42.41                 1   6   377     4    +84us[  +84us] +/-  126us
+^* 192.168.42.40                 1   9   377   267    +74us[  +75us] +/-  125us
+^+ 192.168.42.41                 1   8   377     2    +24us[  +24us] +/-   67us
 
-Reference ID: C0A82A28, Stratum=2, last offset=0.000003, RMS offset=0.000003
+Reference ID: C0A82A28, Stratum=2, last offset=0.000001, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -83,17 +83,17 @@ Reference ID: C0A82A28, Stratum=2, last offset=0.000003, RMS offset=0.000003
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/06/25 09:52:07) ens = 300 sec, 167 pings, (1.80 sec/ping)
+(2025/06/26 14:20:00) ens = 300 sec, 167 pings, (1.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2025/06/25 09:52:06) ens = 300 sec, 272 pings, (1.10 sec/ping)
+(2025/06/26 14:20:00) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 27 days,  8:19,  1 user,  load average: 0.15, 0.29, 0.26
+ 14:30:02 up 28 days,  8:19,  1 user,  load average: 0.33, 0.29, 0.23
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -110,14 +110,15 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      164 /home/adcp/log/DAS_while_logging.warn
-      96 /home/adcp/log/DAS_while_logging.warn.2025-06-24
-      2766 /home/adcp/log/lastensq_os150nb.warn
-      4291 /home/adcp/log/lastensq_os150nb.warn.2025-06-24
-      2641 /home/adcp/log/lastensq_os75nb.warn
-      4130 /home/adcp/log/lastensq_os75nb.warn.2025-06-24
-      4330 /home/adcp/log/update_hbins_os150nb.warn
-      6860 /home/adcp/log/update_hbins_os150nb.warn.2025-06-24
+      319 /home/adcp/log/DAS_while_logging.warn
+      426 /home/adcp/log/DAS_while_logging.warn.2025-06-25
+      238 /home/adcp/log/hcorrstats_seapath385.warn
+      4105 /home/adcp/log/lastensq_os150nb.warn
+      5309 /home/adcp/log/lastensq_os150nb.warn.2025-06-25
+      3995 /home/adcp/log/lastensq_os75nb.warn
+      5116 /home/adcp/log/lastensq_os75nb.warn.2025-06-25
+      4065 /home/adcp/log/update_hbins_os150nb.warn
+      7560 /home/adcp/log/update_hbins_os150nb.warn.2025-06-25
 (2) proc sensor incompatibilities:
  - pitch_msg (pmvm) not in sensor_cfg.py posmv messages: (['pmv', 'gps'])
 
@@ -130,15 +131,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     272      /home/adcp/www/figures/os75nb_lastens.png
-     271      /home/adcp/www/figures/os150nb_lastens.png
-     271      /home/adcp/www/figures/ktprof_amp_lastens.png
+       5      /home/adcp/www/figures/os150nb_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
        2      /home/adcp/www/figures/os75nb_ddaycont.png
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
