@@ -1,13 +1,13 @@
-2025/06/27 14:30:01
+2025/06/28 14:30:01
 currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: HLY25TB_part3     ** is logging **
 
-  os150nb 2025/06/23  22:32:06 to 2025/06/27  14:25:00  (5 min. ago)
-  os75nb 2025/06/23  22:32:07 to 2025/06/27  14:25:01  (5 min. ago)
+  os150nb 2025/06/23  22:32:06 to 2025/06/28  14:25:00  (5 min. ago)
+  os75nb 2025/06/23  22:32:07 to 2025/06/28  14:25:00  (5 min. ago)
 
-approximate lat, lon, depth:   61 1.56362 N  167 53.97502 W   depth=30
+approximate lat, lon, depth:   64 21.24569 N  165 32.91648 W   depth=20
 
-link: http://www.google.com/maps/place/61%201.56362N+167%2053.97502W
+link: http://www.google.com/maps/place/64%2021.24569N+165%2032.91648W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -37,15 +37,15 @@ no good posmv data out of 0 (300sec) ensembles
 ===========================
 gyro39-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 176.6025694 to 177.6025637
-(2025/06/26 14:27:42 to 2025/06/27 14:27:42)
+ddrange: 177.6027662 to 178.6027604
+(2025/06/27 14:27:59 to 2025/06/28 14:27:58)
 all abxtwo messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   73 out of 73   (100%) were good
+   275 out of 279   (99%) were good
 statistics of good data:
-   mean N = 248, stddev N =  295.5
-   min  = -0.45, max = -0.35
+   mean N = 580, stddev N =  103.3
+   min  = -0.49, max = -0.35
    mean = -0.40, stddev = 0.02
 
 ===========================
@@ -53,16 +53,16 @@ statistics of good data:
 ===========================
 gyro39-gyro27 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 176.6025868 to 177.6025810
-(2025/06/26 14:27:43 to 2025/06/27 14:27:43)
+ddrange: 177.6027836 to 178.6027778
+(2025/06/27 14:28:00 to 2025/06/28 14:28:00)
 all gyro27 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   175 out of 175   (100%) were good
+   285 out of 285   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.5
-   min  = -0.90, max = 0.63
-   mean = -0.23, stddev = 0.52
+   min  = -0.21, max = 1.10
+   mean = 0.43, stddev = 0.34
 
 
 === Sonar Pingtype Summary =====
@@ -84,10 +84,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.42.40                 1  10   377   780    +17us[  +22us] +/-   71us
-^+ 192.168.42.41                 1   9   377   393    +76us[  +76us] +/-  123us
+^* 192.168.42.40                 1   7   377    56    +28us[  +30us] +/-   77us
+^+ 192.168.42.41                 1   6   377    47    +54us[  +54us] +/-   96us
 
-Reference ID: C0A82A28, Stratum=2, last offset=0.000005, RMS offset=0.000004
+Reference ID: C0A82A28, Stratum=2, last offset=0.000002, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -95,17 +95,17 @@ Reference ID: C0A82A28, Stratum=2, last offset=0.000005, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/06/27 14:20:01) ens = 300 sec, 167 pings, (1.80 sec/ping)
+(2025/06/28 14:20:01) ens = 300 sec, 167 pings, (1.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2025/06/27 14:20:00) ens = 300 sec, 273 pings, (1.10 sec/ping)
+(2025/06/28 14:20:00) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 29 days,  8:19,  1 user,  load average: 0.46, 0.45, 0.35
+ 14:30:02 up 30 days,  8:19,  1 user,  load average: 0.34, 0.33, 0.27
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -122,16 +122,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      254 /home/adcp/log/DAS_while_logging.warn
-      357 /home/adcp/log/DAS_while_logging.warn.2025-06-26
+      290 /home/adcp/log/DAS_while_logging.warn
       986 /home/adcp/log/hcorrstats_seapath385.warn
-      884 /home/adcp/log/hcorrstats_seapath385.warn.2025-06-26
-      1488 /home/adcp/log/lastensq_os150nb.warn
-      5039 /home/adcp/log/lastensq_os150nb.warn.2025-06-26
-      1440 /home/adcp/log/lastensq_os75nb.warn
-      4901 /home/adcp/log/lastensq_os75nb.warn.2025-06-26
-      1650 /home/adcp/log/update_hbins_os150nb.warn
-      5415 /home/adcp/log/update_hbins_os150nb.warn.2025-06-26
+      1632 /home/adcp/log/hcorrstats_seapath385.warn.2025-06-27
+      28 /home/adcp/log/lastensq_os150nb.warn
+      28 /home/adcp/log/lastensq_os75nb.warn
+      1685 /home/adcp/log/update_hbins_os150nb.warn
 (2) proc sensor incompatibilities:
  - pitch_msg (pmvm) not in sensor_cfg.py posmv messages: (['pmv', 'gps'])
 
@@ -151,8 +147,8 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_ddaycont.png
        2      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

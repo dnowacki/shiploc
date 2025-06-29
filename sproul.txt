@@ -1,12 +1,12 @@
-2025/06/27 14:15:01
+2025/06/29 01:17:05
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SP2525     ** is logging **
 
-  os150nb 2025/06/18  17:20:52 to 2025/06/27  14:14:54  (0 min. ago)
+  os150nb 2025/06/18  17:20:52 to 2025/06/29  01:16:08  (1 min. ago)
 
-approximate lat, lon, depth:   35 8.99204 N  120 43.15426 W   depth=18
+approximate lat, lon, depth:   35 7.03103 N  120 47.09292 W   depth=57
 
-link: http://www.google.com/maps/place/35%208.99204N+120%2043.15426W
+link: http://www.google.com/maps/place/35%207.03103N+120%2047.09292W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -35,22 +35,22 @@ os150 BT:  on
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*100.124.164.36  .GPS.            1 u  972 1024  377    0.201   -0.023   0.045
- 100.124.133.133 .INIT.          16 u    - 1024    0    0.000    0.000   0.000
- 100.124.164.33  .INIT.          16 u    - 1024    0    0.000    0.000   0.000
+*sp-bx992.ucsd.e .GPS.            1 u  181 1024  377    0.199    0.208   0.175
+ sp-ptp01-net.uc .INIT.          16 u    - 1024    0    0.000    0.000   0.000
+ sp-ptp01-das.uc .INIT.          16 u    - 1024    0    0.000    0.000   0.000
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2025/06/27 14:11:53) ens = 180 sec, 79 pings, (2.28 sec/ping)
+(2025/06/29 01:13:08) ens = 180 sec, 78 pings, (2.31 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:06 up 10 days, 8 min,  1 user,  load average: 0.28, 0.15, 0.10
+ 01:17:08 up 11 days, 11:10,  2 users,  load average: 0.63, 0.25, 0.14
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -67,19 +67,27 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      42 /home/adcp/log/DAS_while_logging.warn
-      969 /home/adcp/log/hcorrstats_sc30.warn
-      1156 /home/adcp/log/hcorrstats_sc30.warn.2025-06-26
-      186 /home/adcp/log/lastensq_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
+      12 /home/adcp/log/3dayplots_os150nb.warn
+      43 /home/adcp/log/DAS_while_logging.warn
+      102 /home/adcp/log/hcorrstats_sc30.warn
+      1122 /home/adcp/log/hcorrstats_sc30.warn.2025-06-28
+      62 /home/adcp/log/lastensq_os150nb.warn
+      9 /home/adcp/log/lastfewvec_os150nb.warn
+      26 /home/adcp/log/quick_os150nb.warn
 (2) rbin warnings:
  
-bx992 gps 174531    0.50    0.00      45.8      64   116   114     0     0
-bx992 gps 174531    0.50    0.00      45.8      64   116   114     0     0
-bx992 gph 172993    0.50    0.00     769.5      65   116   114     0     0
-bx992 gph 172993    0.50    0.00     769.5      65   116   114     0     0
-sc30 gph 170680    0.51    0.04       1.0       0     6     2     0     0
-sc30 gph 170680    0.51    0.04       1.0       0     6     2     0     0
+bx992 gps 181978    0.50    0.00      41.0     868  1883  1750     0     0
+bx992 gps 181978    0.50    0.00      41.0     868  1883  1750     0     0
+bx992 gph 180816    0.50    0.00     581.5     869  1883  1750     0     0
+bx992 gph 180816    0.50    0.00     581.5     869  1883  1750     0     0
+sc30 gps  63691    1.00    0.00   27340.1       4     7     7     0     0
+sc30 gps  63691    1.00    0.00   27340.1       4     7     7     0     0
+sc30 gph 127384    0.32    0.00   27339.5   63685    15    15     0     0
+sc30 gph 127384    0.32    0.00   27339.5   63685    15    15     0     0
+gp170a gps  63692    1.00    0.00   27340.1       5    12     7     0     0
+gp170a gps  63692    1.00    0.00   27340.1       5    12     7     0     0
+gp170b gps  63692    1.00    0.00   27340.1       5     7     7     0     0
+gp170b gps  63692    1.00    0.00   27340.1       5     7     7     0     0
 
 Figures and files:
 
@@ -96,7 +104,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

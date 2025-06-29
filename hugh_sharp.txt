@@ -1,75 +1,38 @@
-2025/06/27 14:30:02
+2025/06/28 14:30:01
 currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: Wh300_test_2025-06-26-A     ** is logging **
+Current cruise: HRS2504JS_01_1m  *** not logging ***
 
-   wh300 2025/06/26  19:44:40 to 2025/06/27  14:28:41  (1 min. ago)
+   wh300 2025/06/27  16:10:32 to 2025/06/27  20:58:33  (1051 min. ago) 17.5 hrs
 
-approximate lat, lon, depth:   38 47.30199 N   75 9.68444 W   depth=-1
+approximate lat, lon, depth:   38 56.80669 N   75 10.30567 W   depth=19
 
-link: http://www.google.com/maps/place/38%2047.30199N+75%209.68444W
+link: http://www.google.com/maps/place/38%2056.80669N+75%2010.30567W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _spare_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
-
-ddrange: 176.8213131 to 177.6026288
-(2025/06/26 19:42:41 to 2025/06/27 14:27:47)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   225 out of 225   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.1
-   min  = -1.98, max = -1.14
-   mean = -1.33, stddev = 0.13
-
-
-=== Sonar Pingtype Summary =====
-
-wh600: Triggering command not found
-wh600 BB:       off
-wh600 BT:      off
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:  on
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* Spectracom.localdomain        1  10   377   367    -53us[ -109us] +/- 1271us
+^* Spectracom.localdomain        1   7   377   125   -612ns[ -860ns] +/- 1177us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000056, RMS offset=0.000046
+Reference ID: C0A814F5, Stratum=2, last offset=-0.000000, RMS offset=0.000020
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2025/06/27 14:26:41) ens = 120 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 20:06,  1 user,  load average: 0.16, 0.20, 0.18
+ 14:30:02 up 1 day, 20:06,  1 user,  load average: 0.22, 0.16, 0.20
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -85,19 +48,15 @@ https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
+(1) I/O warnings:
+    11 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(3) wordcount of log/*.warn:
 
-      420 /home/adcp/log/3dayplots_wh600.warn
-      9 /home/adcp/log/DAS_while_cruise.warn
-      532 /home/adcp/log/DAS_while_logging.warn
-      77 /home/adcp/log/grab_pings_wh600.warn
-      1438 /home/adcp/log/lastensq_wh600.warn
+      2 /home/adcp/log/DAS_while_logging.warn
       1 /home/adcp/log/lastfewvec_wh300.warn
-      783 /home/adcp/log/lastfewvec_wh600.warn
-      1 /home/adcp/log/quick_wh300.warn
-      1914 /home/adcp/log/quick_wh600.warn
+      13 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -108,13 +67,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/wh300_lastens.png
+    1049      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1049      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
+    1049      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
