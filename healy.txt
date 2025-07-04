@@ -1,32 +1,135 @@
-2025/07/02 14:30:01
-currents02hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2025/07/04 00:17:00
+currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: HLY25TB_part4     ** is logging **
+
+  os150nb 2025/07/03  23:10:18 to 2025/07/04  00:15:18  (1 min. ago)
+  os75nb 2025/07/03  23:10:18 to 2025/07/04  00:15:19  (1 min. ago)
+
+approximate lat, lon, depth:   73 14.36020 N  165 20.49419 W   depth=66
+
+link: http://www.google.com/maps/place/73%2014.36020N+165%2020.49419W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath385")
+===========================
+------ seapath330 statistics ------
+===========================
+gyro39-seapath330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 183.9620360 to 184.0039226
+(2025/07/03 23:05:20 to 2025/07/04 00:05:39)
+all seapath330 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   12 out of 12   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 0.30, max = 0.39
+   mean = 0.34, stddev = 0.03
+
+===========================
+------ posmv statistics ------
+===========================
+no good posmv data out of 0 (300sec) ensembles
+===========================
+------ seapath385 statistics ------
+===========================
+gyro39-seapath385 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 183.9620360 to 184.0039573
+(2025/07/03 23:05:20 to 2025/07/04 00:05:42)
+all seapath385 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   12 out of 12   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 0.33, max = 0.36
+   mean = 0.34, stddev = 0.01
+
+===========================
+------ abxtwo statistics ------
+===========================
+gyro39-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 183.9620360 to 184.0039689
+(2025/07/03 23:05:20 to 2025/07/04 00:05:43)
+all abxtwo messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   12 out of 12   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.41, max = -0.35
+   mean = -0.39, stddev = 0.02
+
+===========================
+------ gyro27 statistics ------
+===========================
+gyro39-gyro27 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 183.9620360 to 184.0039804
+(2025/07/03 23:05:20 to 2025/07/04 00:05:44)
+all gyro27 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   12 out of 12   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.73, max = -0.56
+   mean = -0.63, stddev = 0.05
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.42.40                 1   7   377    62    +51us[  +49us] +/-  141us
-^+ 192.168.42.41                 1   8   377   167    +37us[  +34us] +/-  119us
+^+ 192.168.42.40                 1   9   377   153    -16us[  -39us] +/-   68us
+^* 192.168.42.41                 1   9   377    70    -28us[  -51us] +/-   48us
 
-Reference ID: C0A82A28, Stratum=2, last offset=-0.000003, RMS offset=0.000011
+Reference ID: C0A82A29, Stratum=2, last offset=-0.000023, RMS offset=0.000020
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2025/07/04 00:10:18) ens = 300 sec, 166 pings, (1.81 sec/ping)
+
+os150nb recent ping statistics
+
+(2025/07/04 00:10:18) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:31:22 up 48 days, 17:33,  1 user,  load average: 0.00, 0.00, 0.00
+ 00:17:01 up 35 days, 18:06,  1 user,  load average: 0.39, 0.33, 0.29
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -41,8 +144,25 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repor
 Summary of warnings:
 ______________________
 
-(1) proc sensor incompatibilities:
- - pitch_msg (pmvm) not in sensor_cfg.py posmv messages: (['pmv', 'gps'])
+(1) wordcount of log/*.warn:
+
+      56 /home/adcp/log/3dayplots_os75nb.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      45 /home/adcp/log/DAS_while_logging.warn.2025-07-03
+      1564 /home/adcp/log/hcorrstats_seapath330.warn
+      1564 /home/adcp/log/hcorrstats_seapath385.warn
+      7 /home/adcp/log/lastensq_os150nb.warn
+      420 /home/adcp/log/lastensq_os150nb.warn.2025-07-03
+      420 /home/adcp/log/lastensq_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      4 /home/adcp/log/quick_os150nb.warn
+      7 /home/adcp/log/quick_os150nb.warn.2025-07-03
+      1 /home/adcp/log/quick_os75nb.warn
+      3 /home/adcp/log/quick_os75nb.warn.2025-07-03
+      219 /home/adcp/log/update_hbins_os150nb.warn
+(2) proc sensor incompatibilities:
+ - roll_msg (sae) not in sensor_cfg.py seapath385 messages: (['gps', 'sea'])
 
 Figures and files:
 
@@ -53,10 +173,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
