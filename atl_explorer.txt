@@ -1,14 +1,14 @@
-2025/07/11 14:30:01
+2025/07/12 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: Pierside_PostAE2514     ** is logging **
+Current cruise: AE2515     ** is logging **
 
-   sv300 2025/07/06  20:25:29 to 2025/07/11  14:29:30  (1 min. ago)
-  os75bb 2025/07/06  20:28:32 to 2025/07/11  14:28:29  (2 min. ago)
-  os75nb 2025/07/06  20:28:32 to 2025/07/11  14:28:29  (2 min. ago)
+   sv300 2025/07/12  12:10:41 to 2025/07/12  14:30:41  (0 min. ago)
+  os75bb 2025/07/12  12:13:43 to 2025/07/12  14:28:41  (2 min. ago)
+  os75nb 2025/07/12  12:13:43 to 2025/07/12  14:28:41  (2 min. ago)
 
-approximate lat, lon, depth:   32 22.20037 N   64 41.75396 W   depth=-6
+approximate lat, lon, depth:   32 19.10644 N   64 35.95078 W   depth=1634
 
-link: http://www.google.com/maps/place/32%2022.20037N+64%2041.75396W
+link: http://www.google.com/maps/place/32%2019.10644N+64%2035.95078W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 190.6006250 to 191.6006134
-(2025/07/10 14:24:54 to 2025/07/11 14:24:53)
-all abxtwo messages:  (99%)  were good  [using available QC]
+ddrange: 192.5060301 to 192.6002083
+(2025/07/12 12:08:41 to 2025/07/12 14:24:18)
+all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   27 out of 27   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  1.0
-   min  = -0.76, max = -0.24
-   mean = -0.51, stddev = 0.09
+   mean N = 301, stddev N =  0.3
+   min  = -0.65, max = -0.33
+   mean = -0.50, stddev = 0.07
 
 
 === Sonar Pingtype Summary =====
@@ -57,9 +57,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377     2    +59us[  +59us] +/-   99us
+^* 192.168.51.9                  1   6   377     4    +48us[  +50us] +/-   91us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000004
+Reference ID: C0A83309, Stratum=2, last offset=0.000002, RMS offset=0.000005
 ------------------------------------------
 
 
@@ -67,21 +67,21 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/07/11 14:23:30) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2025/07/12 14:23:41) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 sv300 recent ping statistics
 
-(2025/07/11 14:27:30) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/07/12 14:26:41) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os75bb recent ping statistics
 
-(2025/07/11 14:23:30) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2025/07/12 14:23:41) ens = 300 sec, 76 pings, (3.95 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 23 days, 22:00,  1 user,  load average: 0.41, 0.56, 0.57
+ 14:30:52 up 24 days, 22:00,  1 user,  load average: 0.34, 0.42, 0.43
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -93,7 +93,19 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      26 /home/adcp/log/3dayplots_os75bb.warn
+      2 /home/adcp/log/3dayplots_os75nb.warn
+      8 /home/adcp/log/3dayplots_os75nb.warn.2025-07-11
+      8 /home/adcp/log/3dayplots_sv300.warn
+      1 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_sv300.warn
 
 Figures and files:
 
@@ -104,16 +116,16 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75bb_lastens.png
-       2      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/sv300_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os75bb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/sv300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/sv300_ddaycont.png
-       2      /home/adcp/www/figures/os75bb_ddaycont.png
+       1      /home/adcp/www/figures/sv300_ddaycont.png
+       1      /home/adcp/www/figures/os75bb_ddaycont.png
        1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
