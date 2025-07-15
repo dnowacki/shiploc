@@ -1,32 +1,135 @@
-2025/07/13 14:30:02
+2025/07/14 14:30:01
 currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: HLY25TC     ** is logging **
+
+  os150nb 2025/07/14  00:17:34 to 2025/07/14  14:27:34  (2 min. ago)
+  os75nb 2025/07/14  00:17:34 to 2025/07/14  14:27:34  (2 min. ago)
+
+approximate lat, lon, depth:   56 24.27368 N  166 56.93862 W   depth=109
+
+link: http://www.google.com/maps/place/56%2024.27368N+166%2056.93862W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath385")
+===========================
+------ seapath330 statistics ------
+===========================
+gyro39-seapath330 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 194.0087490 to 194.6028346
+(2025/07/14 00:12:36 to 2025/07/14 14:28:05)
+all seapath330 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   171 out of 171   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.27, max = 0.42
+   mean = 0.34, stddev = 0.02
+
+===========================
+------ posmv statistics ------
+===========================
+no good posmv data out of 0 (300sec) ensembles
+===========================
+------ seapath385 statistics ------
+===========================
+gyro39-seapath385 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 194.0087490 to 194.6028693
+(2025/07/14 00:12:36 to 2025/07/14 14:28:08)
+all seapath385 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   171 out of 171   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.29, max = 0.38
+   mean = 0.34, stddev = 0.02
+
+===========================
+------ abxtwo statistics ------
+===========================
+gyro39-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 194.0087490 to 194.6028925
+(2025/07/14 00:12:36 to 2025/07/14 14:28:10)
+all abxtwo messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   171 out of 171   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.43, max = -0.32
+   mean = -0.38, stddev = 0.02
+
+===========================
+------ gyro27 statistics ------
+===========================
+gyro39-gyro27 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 194.0087490 to 194.6029041
+(2025/07/14 00:12:36 to 2025/07/14 14:28:11)
+all gyro27 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   171 out of 171   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.40, max = 0.92
+   mean = 0.67, stddev = 0.13
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.42.40                 1   9   377   177    +18us[  +16us] +/-   75us
-^+ 192.168.42.41                 1   9   377   299    +69us[  +67us] +/-  120us
+^* 192.168.42.40                 1   8   377   151    +25us[  +27us] +/-   69us
+^+ 192.168.42.41                 1   6   377     3    +30us[  +30us] +/-   70us
 
-Reference ID: C0A82A28, Stratum=2, last offset=-0.000002, RMS offset=0.000004
+Reference ID: C0A82A28, Stratum=2, last offset=0.000001, RMS offset=0.000003
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2025/07/14 14:22:34) ens = 300 sec, 166 pings, (1.81 sec/ping)
+
+os150nb recent ping statistics
+
+(2025/07/14 14:22:34) ens = 300 sec, 273 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 45 days,  8:19,  2 users,  load average: 0.09, 0.03, 0.01
+ 14:30:02 up 46 days,  8:19,  2 users,  load average: 0.24, 0.28, 0.27
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -41,7 +144,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repor
 Summary of warnings:
 ______________________
 
-(1) proc sensor incompatibilities:
+(1) wordcount of log/*.warn:
+
+      57 /home/adcp/log/DAS_while_logging.warn
+      154 /home/adcp/log/lastensq_os150nb.warn
+      147 /home/adcp/log/lastensq_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/quick_os150nb.warn
+      245 /home/adcp/log/update_hbins_os150nb.warn
+(2) proc sensor incompatibilities:
  - roll_msg (sae) not in sensor_cfg.py seapath385 messages: (['gps', 'sea'])
 
 Figures and files:
@@ -53,15 +165,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2825      /home/adcp/www/figures/os150nb_lastens.png
-    2825      /home/adcp/www/figures/os75nb_lastens.png
-    2825      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2825      /home/adcp/www/figures/os150nb_ddaycont.png
-    2825      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
