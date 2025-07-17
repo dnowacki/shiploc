@@ -1,5 +1,5 @@
-2025/07/15 14:30:01
-currents02hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2025/07/16 14:30:01
+currents01hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.42.40                 1   7   377    14  -2577ns[  -15us] +/-  112us
-^+ 192.168.42.41                 1  10   377   652    +55us[  +46us] +/-  114us
+^* 192.168.42.40                 1   9   377   398  +7527ns[  +23us] +/-   90us
+^+ 192.168.42.41                 1   9   377   505    +57us[  +72us] +/-  129us
 
-Reference ID: C0A82A28, Stratum=2, last offset=-0.000013, RMS offset=0.000006
+Reference ID: C0A82A28, Stratum=2, last offset=0.000015, RMS offset=0.000037
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: C0A82A28, Stratum=2, last offset=-0.000013, RMS offset=0.000006
 
 
 ---------- uptime ------------
- 14:30:06 up 61 days, 17:32,  2 users,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 48 days,  8:19,  1 user,  load average: 0.23, 0.10, 0.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -41,7 +41,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repor
 Summary of warnings:
 ______________________
 
-(1) proc sensor incompatibilities:
+(1) wordcount of log/*.warn:
+
+      52 /home/adcp/log/DAS_while_logging.warn
+      96 /home/adcp/log/DAS_while_logging.warn.2025-07-15
+(2) proc sensor incompatibilities:
  - roll_msg (sae) not in sensor_cfg.py seapath385 messages: (['gps', 'sea'])
 
 Figures and files:
@@ -53,10 +57,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+      86      /home/adcp/www/figures/os150nb_lastens.png
+      86      /home/adcp/www/figures/os75nb_lastens.png
+      86      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+      86      /home/adcp/www/figures/os150nb_ddaycont.png
+      86      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
