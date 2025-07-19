@@ -1,12 +1,9 @@
-2025/07/17 14:15:01
+2025/07/18 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR25_2025-07-16-ancillary     ** is logging **
+Current cruise: RR2505  *** not logging ***
 
 
-approximate lat, lon, depth:   64 9.23767 N   21 56.50562 W   depth=-1
-
-link: http://www.google.com/maps/place/64%209.23767N+21%2056.50562W
-not using zmq publishers, position is from serial GPS
+no positions found from filelist seapath380/*.gps.rbin
 
 NOTE: This is the _primary_ computer
 
@@ -14,67 +11,20 @@ NOTE: This is the _primary_ computer
 
 
 
----- heading correction ----
 
-(heading correction from "seapath380mgc")
-===========================
------- seapath380mgc statistics ------
-===========================
-seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 196.5904091 to 197.5903976
-(2025/07/16 14:10:11 to 2025/07/17 14:10:10)
-all seapath380mgc messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.06, max = 0.08
-   mean = 0.01, stddev = 0.02
-
-===========================
------- gyro statistics ------
-===========================
-seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 196.5904323 to 197.5904207
-(2025/07/16 14:10:13 to 2025/07/17 14:10:12)
-all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.13, max = 0.36
-   mean = 0.25, stddev = 0.04
-
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:       off
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:       off
-os75 BT:      off
-
-===========================
-
----------- ps -ef | grep ntpd | grep -v grep ------------
-ntp is not running
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ 100.124.36.33   .POOL.          16 p    -   64    0    0.000   +0.000   0.000
+*rr-ntp-pool.ucs .GPS.            1 u   16   64  377    0.166  +29.371   3.751
 ------------------------------------------
 
 
-------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 42 days,  4:20,  1 user,  load average: 0.25, 0.17, 0.12
+ 14:15:02 up 55 min,  1 user,  load average: 0.02, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -89,10 +39,8 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 Summary of warnings:
 ______________________
 
-(1) rbin warnings:
- 
-gyro hdg  87120    1.00    0.00       3.2       1     2     2     0     0
-gyro hdg  87120    1.00    0.00       3.2       1     2     2     0     0
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
