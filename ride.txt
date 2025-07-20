@@ -1,7 +1,17 @@
-2025/07/18 14:30:01
-currents06sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2025/07/19 14:30:01
+currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
+Current cruise: SR2516  *** not logging ***
+
+   wh300 2025/07/18  17:16:10 to 2025/07/18  22:38:10  (952 min. ago) 15.9 hrs
+  ec150cw 2025/07/18  17:19:09 to 2025/07/18  22:34:09  (956 min. ago) 15.9 hrs
+  os150nb 2025/07/18  17:19:10 to 2025/07/18  22:34:11  (956 min. ago) 15.9 hrs
+  os38nb 2025/07/18  17:19:13 to 2025/07/18  22:34:13  (955 min. ago) 15.9 hrs
+
+approximate lat, lon, depth:   32 54.05237 N  117 25.89803 W   depth=602
+
+link: http://www.google.com/maps/place/32%2054.05237N+117%2025.89803W
+not using zmq publishers, position is from serial GPS
+
 
 
 
@@ -14,10 +24,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ sr-ntp-pool.ucsd.edu          1  10   377    46    +11us[  +11us] +/-  148us
-^* sr-seapath-mgc.ucsd.edu       1  10   377   404  -6323ns[-9491ns] +/-  175us
+^* sr-ntp-pool.ucsd.edu          1   9   377   492    -13us[  -13us] +/-   98us
+^+ sr-seapath-mgc.ucsd.edu       1  10   377   577    +18us[  +19us] +/-  155us
 
-Reference ID: 647C6426, Stratum=2, last offset=-0.000003, RMS offset=0.000009
+Reference ID: 647C6423, Stratum=2, last offset=0.000000, RMS offset=0.000008
 ------------------------------------------
 
 
@@ -26,7 +36,7 @@ Reference ID: 647C6426, Stratum=2, last offset=-0.000003, RMS offset=0.000009
 
 
 ---------- uptime ------------
- 14:30:02 up 19:27,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 1 day, 19:27,  2 users,  load average: 0.00, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -42,7 +52,18 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
+     5 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      18 /home/adcp/log/3dayplots_ec150cw.warn
+      2 /home/adcp/log/3dayplots_os150nb.warn
+      1 /home/adcp/log/lastfewvec_ec150cw.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_ec150cw.warn
+      1 /home/adcp/log/quick_os38nb.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -53,10 +74,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+     951      /home/adcp/www/figures/os38nb_lastens.png
+     951      /home/adcp/www/figures/os150nb_lastens.png
+     951      /home/adcp/www/figures/ktprof_amp_lastens.png
+     951      /home/adcp/www/figures/ec150cw_lastens.png
+     951      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+     951      /home/adcp/www/figures/os150nb_ddaycont.png
+     951      /home/adcp/www/figures/ec150cw_ddaycont.png
+     951      /home/adcp/www/figures/wh300_ddaycont.png
+     951      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
