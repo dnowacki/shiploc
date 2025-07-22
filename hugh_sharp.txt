@@ -1,7 +1,14 @@
-2025/07/20 14:30:01
+2025/07/21 14:30:01
 currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: HRS2506HM_01_1M  *** not logging ***
+
+   wh300 2025/07/20  16:02:19 to 2025/07/20  21:40:18  (1009 min. ago) 16.8 hrs
+
+approximate lat, lon, depth:   29 36.64857 N   88 46.88835 W   depth=12
+
+link: http://www.google.com/maps/place/29%2036.64857N+88%2046.88835W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _spare_ computer
 
 
@@ -14,9 +21,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* Spectracom.localdomain        1   8   377    64    +19us[  +25us] +/- 1242us
+^* Spectracom.localdomain        1   8   377   138    +15us[  +13us] +/- 1207us
 
-Reference ID: C0A814F5, Stratum=2, last offset=0.000006, RMS offset=0.000021
+Reference ID: C0A814F5, Stratum=2, last offset=-0.000002, RMS offset=0.000013
 ------------------------------------------
 
 
@@ -25,7 +32,7 @@ Reference ID: C0A814F5, Stratum=2, last offset=0.000006, RMS offset=0.000021
 
 
 ---------- uptime ------------
- 14:30:02 up 23 days, 20:06,  1 user,  load average: 0.11, 0.19, 0.17
+ 14:30:03 up 22:36,  1 user,  load average: 0.11, 0.07, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -38,7 +45,22 @@ https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      9 /home/adcp/log/DAS_while_cruise.warn
+      10 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastensq_wh300.warn
+      14 /home/adcp/log/lastensq_wh600.warn
+      2 /home/adcp/log/lastfewvec_wh300.warn
+      9 /home/adcp/log/lastfewvec_wh600.warn
+      1 /home/adcp/log/quick_wh300.warn
+      22 /home/adcp/log/quick_wh600.warn
+      2 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 
@@ -49,13 +71,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   32729      /home/adcp/www/figures/ktprof_amp_lastens.png
-   32729      /home/adcp/www/figures/wh300_lastens.png
+    1007      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1007      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   32729      /home/adcp/www/figures/wh300_ddaycont.png
+    1007      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
