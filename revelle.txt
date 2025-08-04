@@ -1,13 +1,13 @@
-2025/08/02 14:15:01
+2025/08/03 14:15:02
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: RR2505     ** is logging **
 
-  os150nb 2025/07/19  13:00:25 to 2025/08/02  14:13:17  (1 min. ago)
-  os75nb 2025/07/19  13:00:26 to 2025/08/02  14:13:17  (1 min. ago)
+  os150nb 2025/07/19  13:00:25 to 2025/08/03  14:12:32  (2 min. ago)
+  os75nb 2025/07/19  13:00:26 to 2025/08/03  14:12:34  (2 min. ago)
 
-approximate lat, lon, depth:   59 57.13612 N   39 31.29446 W   depth=2690
+approximate lat, lon, depth:   59 43.79092 N   39 21.39555 W   depth=2751
 
-link: http://www.google.com/maps/place/59%2057.13612N+39%2031.29446W
+link: http://www.google.com/maps/place/59%2043.79092N+39%2021.39555W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,15 +25,15 @@ NOTE: This is the _primary_ computer
 ===========================
 seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 212.8300619 to 213.5911036
-(2025/08/01 19:55:17 to 2025/08/02 14:11:11)
+ddrange: 213.5925735 to 214.5925619
+(2025/08/02 14:13:18 to 2025/08/03 14:13:17)
 all seapath380mgc messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   219 out of 219   (100%) were good
+   145 out of 145   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.03, max = 0.03
+   mean N = 301, stddev N =  0.3
+   min  = -0.01, max = 0.05
    mean = 0.01, stddev = 0.01
 
 ===========================
@@ -41,16 +41,16 @@ statistics of good data:
 ===========================
 seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 212.8300619 to 213.5911267
-(2025/08/01 19:55:17 to 2025/08/02 14:11:13)
+ddrange: 213.5925851 to 214.5925735
+(2025/08/02 14:13:19 to 2025/08/03 14:13:18)
 all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   219 out of 219   (100%) were good
+   145 out of 145   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.05, max = 0.31
-   mean = 0.20, stddev = 0.06
+   mean N = 301, stddev N =  0.3
+   min  = 0.05, max = 0.16
+   mean = 0.10, stddev = 0.02
 
 
 === Sonar Pingtype Summary =====
@@ -71,24 +71,24 @@ os75 BT:      off
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  100.124.36.33   .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*rr-ntp-pool.ucs .GPS.            1 u  420 1024  377    0.683   -3.726   4.569
+*rr-ptp01-das.uc .GPS.            1 u  611 1024  377    0.740   +2.471   7.522
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2025/08/02 14:10:16) ens = 180 sec, 147 pings, (1.22 sec/ping)
+(2025/08/03 14:09:33) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 os75nb recent ping statistics
 
-(2025/08/02 14:10:18) ens = 180 sec, 79 pings, (2.28 sec/ping)
+(2025/08/03 14:09:32) ens = 180 sec, 79 pings, (2.28 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 15 days, 55 min,  1 user,  load average: 0.27, 0.43, 0.44
+ 14:15:04 up 16 days, 55 min,  1 user,  load average: 0.63, 0.58, 0.48
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -105,6 +105,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
+      20 /home/adcp/log/3dayplots_os75nb.warn
       1 /home/adcp/log/lastfewvec_os150nb.warn
       1 /home/adcp/log/lastfewvec_os75nb.warn
 
@@ -117,15 +118,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os75nb_lastens.png
        1      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/os75nb_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
-       4      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
