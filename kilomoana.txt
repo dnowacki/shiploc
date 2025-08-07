@@ -1,14 +1,14 @@
-2025/08/05 14:30:01
+2025/08/06 14:30:02
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: km2504  *** not logging ***
 
-   wh300 2025/08/02  20:14:08 to 2025/08/05  12:49:47  (100 min. ago) 1.7 hrs
-  os38bb 2025/08/02  20:17:08 to 2025/08/05  12:47:52  (102 min. ago) 1.7 hrs
-  os38nb 2025/08/02  20:17:08 to 2025/08/05  12:47:52  (102 min. ago) 1.7 hrs
+   wh300 2025/08/02  20:14:08 to 2025/08/06  10:38:20  (231 min. ago) 3.9 hrs
+  os38bb 2025/08/02  20:17:08 to 2025/08/06  10:34:26  (235 min. ago) 3.9 hrs
+  os38nb 2025/08/02  20:17:08 to 2025/08/06  10:34:26  (235 min. ago) 3.9 hrs
 
-approximate lat, lon, depth:   13 52.92267 S  175 23.08787 W   depth=4388
+approximate lat, lon, depth:   16 1.48797 S  176 7.48186 W   depth=2450
 
-link: http://www.google.com/maps/place/13%2052.92267S+175%2023.08787W
+link: http://www.google.com/maps/place/16%201.48797S+176%207.48186W
 not using zmq publishers, position is from serial GPS
 
 NOTE: This is the _primary_ computer
@@ -23,9 +23,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2   6   377    26   -742ns[  -11us] +/-   28ms
+^* kmroute.km                    2   6   377    22   +173us[ +208us] +/-   27ms
 
-Reference ID: 0A009601, Stratum=3, last offset=-0.000010, RMS offset=0.000031
+Reference ID: 0A009601, Stratum=3, last offset=0.000036, RMS offset=0.000018
 ------------------------------------------
 
 
@@ -34,7 +34,7 @@ Reference ID: 0A009601, Stratum=3, last offset=-0.000010, RMS offset=0.000031
 
 
 ---------- uptime ------------
- 14:30:02 up 11 days, 13:36,  1 user,  load average: 0.00, 0.02, 0.03
+ 14:30:02 up 12 days, 13:36,  1 user,  load average: 0.22, 0.06, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -52,23 +52,19 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      14 /home/adcp/log/3dayplots_os38bb.warn
-      4 /home/adcp/log/3dayplots_os38nb.warn
       15 /home/adcp/log/DAS_while_cruise.warn
-      24 /home/adcp/log/DAS_while_cruise.warn.2025-08-04
-      4 /home/adcp/log/DAS_while_logging.warn
-      2 /home/adcp/log/DAS_while_logging.warn.2025-08-04
+      24 /home/adcp/log/DAS_while_cruise.warn.2025-08-05
+      1 /home/adcp/log/DAS_while_logging.warn
       1 /home/adcp/log/lastfewvec_os38bb.warn
-      2 /home/adcp/log/lastfewvec_os38bb.warn.2025-08-04
+      3 /home/adcp/log/lastfewvec_os38bb.warn.2025-08-05
       1 /home/adcp/log/lastfewvec_os38nb.warn
-      2 /home/adcp/log/lastfewvec_os38nb.warn.2025-08-04
+      3 /home/adcp/log/lastfewvec_os38nb.warn.2025-08-05
       1 /home/adcp/log/lastfewvec_wh300.warn
-      2 /home/adcp/log/lastfewvec_wh300.warn.2025-08-04
-      5 /home/adcp/log/send_buffered_mail.warn
+      3 /home/adcp/log/lastfewvec_wh300.warn.2025-08-05
 (2) rbin warnings:
  
-furuno gps  32296    1.00    0.00   20296.0       4    52    46     0     0
-furuno gps  32296    1.00    0.00   20296.0       4    52    46     0     0
+furuno gps  58367    1.00    0.00    5959.5       9    52    38     0     0
+furuno gps  58367    1.00    0.00    5959.5       9    52    38     0     0
 
 Figures and files:
 
@@ -79,17 +75,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-      98      /home/adcp/www/figures/wh300_lastens.png
-      98      /home/adcp/www/figures/os38nb_lastens.png
-      98      /home/adcp/www/figures/ktprof_amp_lastens.png
-      98      /home/adcp/www/figures/os38bb_lastens.png
+     230      /home/adcp/www/figures/wh300_lastens.png
+     230      /home/adcp/www/figures/os38nb_lastens.png
+     230      /home/adcp/www/figures/ktprof_amp_lastens.png
+     230      /home/adcp/www/figures/os38bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-      98      /home/adcp/www/figures/wh300_ddaycont.png
-      98      /home/adcp/www/figures/os38bb_ddaycont.png
-      98      /home/adcp/www/figures/os38nb_ddaycont.png
+     230      /home/adcp/www/figures/wh300_ddaycont.png
+     230      /home/adcp/www/figures/os38bb_ddaycont.png
+     230      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
