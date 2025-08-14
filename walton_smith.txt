@@ -1,14 +1,14 @@
-2025/08/12 14:30:01
+2025/08/13 14:30:01
 currents01ws 6.5.0-28-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: WS25221_Kelble     ** is logging **
 
-   wh600 2025/08/09  11:04:23 to 2025/08/12  14:28:23  (1 min. ago)
-  os75bb 2025/08/09  11:07:24 to 2025/08/12  14:27:24  (2 min. ago)
-  os75nb 2025/08/09  11:07:24 to 2025/08/12  14:27:24  (2 min. ago)
+   wh600 2025/08/09  11:04:23 to 2025/08/13  14:28:23  (1 min. ago)
+  os75bb 2025/08/09  11:07:24 to 2025/08/13  14:27:23  (2 min. ago)
+  os75nb 2025/08/09  11:07:24 to 2025/08/13  14:27:23  (2 min. ago)
 
-approximate lat, lon, depth:   26 37.14834 N   82 35.30056 W   depth=22
+approximate lat, lon, depth:   25 55.54642 N   84 59.09215 W   depth=3308
 
-link: http://www.google.com/maps/place/26%2037.14834N+82%2035.30056W
+link: http://www.google.com/maps/place/25%2055.54642N+84%2059.09215W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
 
-ddrange: 222.5958868 to 223.5958685
-(2025/08/11 14:18:05 to 2025/08/12 14:18:03)
+ddrange: 223.5957991 to 224.5957810
+(2025/08/12 14:17:57 to 2025/08/13 14:17:55)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -1.90, max = -0.01
-   mean = -0.97, stddev = 0.39
+   min  = -1.83, max = -0.96
+   mean = -1.53, stddev = 0.19
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   8   377   157    +16us[  -24us] +/-  467us
+^* 10.106.30.100                 1   6   377     8    +48us[  +47us] +/-  456us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000040, RMS offset=0.000042
+Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000001, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000040, RMS offset=0.000042
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/08/12 14:22:26) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2025/08/13 14:22:25) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 wh600 recent ping statistics
 
-(2025/08/12 14:26:23) ens = 120 sec, 171 pings, (0.70 sec/ping)
+(2025/08/13 14:26:23) ens = 120 sec, 171 pings, (0.70 sec/ping)
 
 os75bb recent ping statistics
 
-(2025/08/12 14:22:26) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2025/08/13 14:22:25) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days, 21:24,  1 user,  load average: 0.38, 0.39, 0.40
+ 14:30:02 up 4 days, 21:24,  1 user,  load average: 0.26, 0.36, 0.40
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -98,6 +98,9 @@ ______________________
 
 (1) EDAC memory warnings:
     27 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      2 /home/adcp/log/3dayplots_wh600.warn
 
 Figures and files:
 
