@@ -1,27 +1,94 @@
-2025/08/15 14:15:02
+2025/08/16 14:15:02
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: RR2506     ** is logging **
+
+  os150nb 2025/08/15  16:26:25 to 2025/08/16  14:13:15  (2 min. ago)
+  os75nb 2025/08/15  16:26:25 to 2025/08/16  14:13:15  (2 min. ago)
+
+approximate lat, lon, depth:   63 13.29575 N   17 17.94415 W   depth=620
+
+link: http://www.google.com/maps/place/63%2013.29575N+17%2017.94415W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath380mgc")
+===========================
+------ seapath380mgc statistics ------
+===========================
+seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 226.6829207 to 227.5866707
+(2025/08/15 16:23:24 to 2025/08/16 14:04:48)
+all seapath380mgc messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   260 out of 260   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.02, max = 0.03
+   mean = 0.01, stddev = 0.01
+
+===========================
+------ gyro statistics ------
+===========================
+seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 226.6829207 to 227.5866939
+(2025/08/15 16:23:24 to 2025/08/16 14:04:50)
+all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   260 out of 260   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 0.35, max = 0.50
+   mean = 0.41, stddev = 0.02
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:  on
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:  on
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  100.124.36.33   .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*rr-ptp01-das.uc .GPS.            1 u   18   64  377    0.190   -1.999   0.871
+*rr-ntp-pool.ucs .GPS.            1 u   14   64  377    0.125  -14.228   0.291
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2025/08/16 14:10:16) ens = 180 sec, 73 pings, (2.47 sec/ping)
+
+os75nb recent ping statistics
+
+(2025/08/16 14:10:18) ens = 180 sec, 37 pings, (4.86 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 28 days, 55 min,  1 user,  load average: 0.10, 0.07, 0.01
+ 14:15:04 up 29 days, 55 min,  1 user,  load average: 0.50, 0.39, 0.40
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -33,7 +100,17 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      42 /home/adcp/log/3dayplots_os150nb.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      7 /home/adcp/log/quick_os150nb.warn
+      6 /home/adcp/log/quick_os75nb.warn
 
 Figures and files:
 
@@ -44,15 +121,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   14616      /home/adcp/www/figures/os75nb_lastens.png
-   14616      /home/adcp/www/figures/ktprof_amp_lastens.png
-   14616      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   14616      /home/adcp/www/figures/os75nb_ddaycont.png
-   14616      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 

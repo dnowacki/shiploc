@@ -1,14 +1,14 @@
-2025/08/15 14:30:01
+2025/08/16 14:30:02
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: km2504     ** is logging **
 
-   wh300 2025/08/02  20:14:08 to 2025/08/15  14:28:59  (1 min. ago)
-  os38bb 2025/08/02  20:17:08 to 2025/08/15  14:28:04  (2 min. ago)
-  os38nb 2025/08/02  20:17:08 to 2025/08/15  14:28:04  (2 min. ago)
+   wh300 2025/08/02  20:14:08 to 2025/08/16  14:28:59  (1 min. ago)
+  os38bb 2025/08/02  20:17:08 to 2025/08/16  14:28:01  (2 min. ago)
+  os38nb 2025/08/02  20:17:08 to 2025/08/16  14:28:01  (2 min. ago)
 
-approximate lat, lon, depth:   14 6.78314 S  169 35.57233 W   depth=756
+approximate lat, lon, depth:   14 5.53646 S  169 41.72235 W   depth=1264
 
-link: http://www.google.com/maps/place/14%206.78314S+169%2035.57233W
+link: http://www.google.com/maps/place/14%205.53646S+169%2041.72235W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 225.6041661 to 226.6041566
-(2025/08/14 14:30:00 to 2025/08/15 14:29:59)
+ddrange: 226.6041508 to 227.6041414
+(2025/08/15 14:29:59 to 2025/08/16 14:29:58)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
-   mean N = 600, stddev N =  6.6
-   min  = -1.48, max = 1.48
-   mean = 0.02, stddev = 0.50
+   mean N = 601, stddev N =  0.6
+   min  = -1.24, max = 1.54
+   mean = 0.00, stddev = 0.45
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    3   6   377    19  +4632ns[  -15us] +/-   27ms
+^* kmroute.km                    3   7   377    37  -9406ns[  -32us] +/-   31ms
 
-Reference ID: 0A009601, Stratum=4, last offset=-0.000020, RMS offset=0.000050
+Reference ID: 0A009601, Stratum=4, last offset=-0.000023, RMS offset=0.000034
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A009601, Stratum=4, last offset=-0.000020, RMS offset=0.000050
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2025/08/15 14:23:04) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/08/16 14:23:01) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2025/08/15 14:26:59) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/08/16 14:26:59) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2025/08/15 14:23:04) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/08/16 14:23:01) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 21 days, 13:36,  1 user,  load average: 1.02, 0.70, 0.68
+ 14:30:03 up 22 days, 13:36,  1 user,  load average: 1.12, 0.80, 0.71
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -98,13 +98,9 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
+      2 /home/adcp/log/3dayplots_os38nb.warn
       15 /home/adcp/log/DAS_while_cruise.warn
-      24 /home/adcp/log/DAS_while_cruise.warn.2025-08-14
-      1 /home/adcp/log/DAS_while_logging.warn
-(2) rbin warnings:
- 
-furuno gps  88212    1.00    0.00       2.6       2    27     3     0     0
-furuno gps  88212    1.00    0.00       2.6       2    27     3     0     0
+      24 /home/adcp/log/DAS_while_cruise.warn.2025-08-15
 
 Figures and files:
 
@@ -115,7 +111,7 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os38bb_lastens.png
+       2      /home/adcp/www/figures/os38bb_lastens.png
        1      /home/adcp/www/figures/os38nb_lastens.png
        1      /home/adcp/www/figures/wh300_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
