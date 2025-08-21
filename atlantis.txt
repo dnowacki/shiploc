@@ -1,97 +1,31 @@
-2025/08/19 14:30:01
-atcurrents03 5.15.0-140-generic (jammy "Ubuntu 22.04.5 LTS")
-Current cruise: AT50_41     ** is logging **
-
-   wh300 2025/08/04  19:40:08 to 2025/08/19  14:29:53  (0 min. ago)
-  os75nb 2025/08/04  19:43:09 to 2025/08/19  14:25:55  (4 min. ago)
-
-approximate lat, lon, depth:   45 55.60161 N  129 58.73776 W   depth=1563
-
-link: http://www.google.com/maps/place/45%2055.60161N+129%2058.73776W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2025/08/20 14:30:01
+atcurrents04 5.15.0-107-generic (jammy "Ubuntu 22.04.4 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- hydrins2 statistics ------
-===========================
-hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 229.5949263 to 230.5949147
-(2025/08/18 14:16:42 to 2025/08/19 14:16:41)
-all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.05, max = -0.03
-   mean = -0.04, stddev = 0.00
-
-===========================
------- seapath statistics ------
-===========================
-hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 229.5949378 to 230.5949263
-(2025/08/18 14:16:43 to 2025/08/19 14:16:42)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.32, max = -0.13
-   mean = -0.21, stddev = 0.04
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    12  +2781ns[+2336ns] +/-   31us
+^* timeserver.atlantis.whoi>     1   7   377   103   -128ns[ -190ns] +/-   29us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000003
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2025/08/19 14:25:54) ens = 120 sec, 89 pings, (1.35 sec/ping)
-
-os75nb recent ping statistics
-
-(2025/08/19 14:20:56) ens = 300 sec, 133 pings, (2.26 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 14 days, 18:55,  1 user,  load average: 0.87, 1.29, 1.29
+ 14:30:02 up 15 days, 18:53,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -103,7 +37,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+    15 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -114,15 +52,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+  614583      /home/adcp/www/figures/wh300_lastens.png
+  614583      /home/adcp/www/figures/ktprof_amp_lastens.png
+  614583      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/wh300_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
+  614583      /home/adcp/www/figures/wh300_ddaycont.png
+  614583      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
