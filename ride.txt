@@ -1,17 +1,7 @@
-2025/08/22 14:30:02
+2025/08/23 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: SR2518  *** not logging ***
-
-   wh300 2025/08/18  21:14:38 to 2025/08/21  20:22:45  (1087 min. ago) 18.1 hrs
- ec150cw -- no data yet
-  os150nb 2025/08/18  21:17:38 to 2025/08/21  20:21:47  (1088 min. ago) 18.1 hrs
-  os38nb 2025/08/18  21:17:41 to 2025/08/21  20:21:48  (1088 min. ago) 18.1 hrs
-
-approximate lat, lon, depth:   45 49.85079 N  129 44.43020 W   depth=2619
-
-link: http://www.google.com/maps/place/45%2049.85079N+129%2044.43020W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
@@ -24,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377   962  +9657ns[  +13us] +/-  153us
-^+ sr-seapath-mgc.ucsd.edu       1   9   377   192  +6814ns[+6814ns] +/-  165us
+^* sr-seapath-mru.ucsd.edu       1  10   377  1002    +12us[  +10us] +/-  150us
+^+ sr-ntp-pool.ucsd.edu          1  10   377    24    +13us[  +13us] +/-  144us
 
-Reference ID: 647C6423, Stratum=2, last offset=0.000003, RMS offset=0.000008
+Reference ID: 647C6423, Stratum=2, last offset=-0.000002, RMS offset=0.000021
 ------------------------------------------
 
 
@@ -36,7 +26,7 @@ Reference ID: 647C6423, Stratum=2, last offset=0.000003, RMS offset=0.000008
 
 
 ---------- uptime ------------
- 14:30:02 up 4 days, 23:11,  2 users,  load average: 0.00, 0.01, 0.00
+ 14:30:02 up 5 days, 23:11,  2 users,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -55,12 +45,21 @@ ______________________
      3 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      1365 /home/adcp/log/3dayplots_ec150cw.warn
-      701 /home/adcp/log/DAS_while_logging.warn
-      270 /home/adcp/log/grab_pings_ec150cw.warn
-      2822 /home/adcp/log/lastensq_ec150cw.warn
-      979 /home/adcp/log/lastfewvec_ec150cw.warn
-      2670 /home/adcp/log/quick_ec150cw.warn
+      315 /home/adcp/log/3dayplots_ec150cw.warn
+      465 /home/adcp/log/3dayplots_ec150cw.warn.2025-08-22
+      160 /home/adcp/log/DAS_while_logging.warn
+      241 /home/adcp/log/DAS_while_logging.warn.2025-08-22
+      63 /home/adcp/log/grab_pings_ec150cw.warn
+      90 /home/adcp/log/grab_pings_ec150cw.warn.2025-08-22
+      620 /home/adcp/log/lastensq_ec150cw.warn
+      814 /home/adcp/log/lastensq_ec150cw.warn.2025-08-22
+      220 /home/adcp/log/lastfewvec_ec150cw.warn
+      341 /home/adcp/log/lastfewvec_ec150cw.warn.2025-08-22
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      600 /home/adcp/log/quick_ec150cw.warn
+      930 /home/adcp/log/quick_ec150cw.warn.2025-08-22
 
 Figures and files:
 
@@ -71,17 +70,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1086      /home/adcp/www/figures/os38nb_lastens.png
-    1086      /home/adcp/www/figures/os150nb_lastens.png
-    1086      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1086      /home/adcp/www/figures/wh300_lastens.png
+     764      /home/adcp/www/figures/os38nb_lastens.png
+     764      /home/adcp/www/figures/os150nb_lastens.png
+     764      /home/adcp/www/figures/ktprof_amp_lastens.png
+     764      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1086      /home/adcp/www/figures/os150nb_ddaycont.png
-    1086      /home/adcp/www/figures/wh300_ddaycont.png
-    1086      /home/adcp/www/figures/os38nb_ddaycont.png
+     764      /home/adcp/www/figures/os150nb_ddaycont.png
+     764      /home/adcp/www/figures/wh300_ddaycont.png
+     764      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
