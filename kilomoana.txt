@@ -1,15 +1,14 @@
-2025/08/25 14:30:01
+2025/08/26 14:30:01
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: km2504b     ** is logging **
 
-   DAS_while_cruise.py is *not* running.
-   wh300 2025/08/23  22:08:28 to 2025/08/25  14:28:28  (1 min. ago)
-  os38bb 2025/08/23  22:11:33 to 2025/08/25  14:26:30  (3 min. ago)
-  os38nb 2025/08/23  22:11:33 to 2025/08/25  14:26:30  (3 min. ago)
+   wh300 2025/08/23  22:08:28 to 2025/08/26  14:28:27  (1 min. ago)
+  os38bb 2025/08/23  22:11:33 to 2025/08/26  14:26:32  (3 min. ago)
+  os38nb 2025/08/23  22:11:33 to 2025/08/26  14:26:32  (3 min. ago)
 
-approximate lat, lon, depth:    7 49.60522 S  167 46.20192 W   depth=4326
+approximate lat, lon, depth:    4 8.62360 S  166 25.60000 W   depth=5357
 
-link: http://www.google.com/maps/place/7%2049.60522S+167%2046.20192W
+link: http://www.google.com/maps/place/4%208.62360S+166%2025.60000W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -27,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 235.5959936 to 236.5959846
-(2025/08/24 14:18:14 to 2025/08/25 14:18:13)
+ddrange: 236.5960135 to 237.5960044
+(2025/08/25 14:18:16 to 2025/08/26 14:18:15)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.8
-   min  = -0.41, max = 0.22
-   mean = -0.04, stddev = 0.10
+   mean N = 601, stddev N =  1.0
+   min  = -0.24, max = 0.18
+   mean = -0.01, stddev = 0.08
 
 
 === Sonar Pingtype Summary =====
@@ -57,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    2   6   377    60    +41us[  +37us] +/-   35ms
+^* kmroute.km                    2   8   377   179    -26us[  -38us] +/-   33ms
 
-Reference ID: 0A009601, Stratum=3, last offset=-0.000004, RMS offset=0.000048
+Reference ID: 0A009601, Stratum=3, last offset=-0.000013, RMS offset=0.000053
 ------------------------------------------
 
 
@@ -67,21 +66,21 @@ Reference ID: 0A009601, Stratum=3, last offset=-0.000004, RMS offset=0.000048
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2025/08/25 14:21:30) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/08/26 14:21:32) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2025/08/25 14:26:28) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/08/26 14:26:27) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2025/08/25 14:21:30) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/08/26 14:21:32) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 16:25,  1 user,  load average: 0.38, 0.69, 0.73
+ 14:30:02 up 2 days, 16:25,  1 user,  load average: 0.64, 0.81, 0.85
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -101,13 +100,18 @@ ______________________
      6 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      310 /home/adcp/log/lastensq_os38bb.warn
-      310 /home/adcp/log/lastensq_os38nb.warn
-      776 /home/adcp/log/lastensq_wh300.warn
+      1 /home/adcp/log/DAS_while_cruise.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      348 /home/adcp/log/lastensq_os38bb.warn
+      538 /home/adcp/log/lastensq_os38bb.warn.2025-08-25
+      348 /home/adcp/log/lastensq_os38nb.warn
+      538 /home/adcp/log/lastensq_os38nb.warn.2025-08-25
+      870 /home/adcp/log/lastensq_wh300.warn
+      1346 /home/adcp/log/lastensq_wh300.warn.2025-08-25
 (3) rbin warnings:
  
-furuno gps  65368    1.00    0.00     251.0     795  1386   849   824     0
-furuno gps  65368    1.00    0.00     251.0     795  1386   849   824     0
+furuno gps  86218    1.03    0.00      10.0    1198  1771  1631  1631     0
+furuno gps  86218    1.03    0.00      10.0    1198  1771  1631  1631     0
 
 Figures and files:
 
