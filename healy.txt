@@ -1,5 +1,5 @@
-2025/08/27 14:17:25
-xxx 6.8.0-78-generic (noble "Ubuntu 24.04 LTS")
+2025/09/02 14:30:01
+currents02hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -9,20 +9,29 @@ NOTE: This is the _primary_ computer
 
 
 
-WARNING: neither ntpd nor chrond are installed
-WARNING: neither ntpd nor chrond are installed
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ 192.168.42.40                 1   9   377   119    +44us[  +44us] +/-  113us
+^* 192.168.42.41                 1   8   377   131  +6462ns[+2100ns] +/-   69us
+
+Reference ID: C0A82A29, Stratum=2, last offset=-0.000004, RMS offset=0.000010
+------------------------------------------
+
+
+
 
 
 
 ---------- uptime ------------
- 14:17:26 up 5 days, 28 min,  1 user,  load average: 0.53, 0.39, 0.32
+ 14:30:02 up 110 days, 17:31,  1 user,  load average: 0.08, 0.02, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
 
-QC plots:
-https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/posmv_qc.png
-https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/abxtwo_qc.png
+
 
 
 
@@ -32,19 +41,8 @@ https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/abxtwo_qc.p
 Summary of warnings:
 ______________________
 
-(1) I/O warnings:
-     3 I/O errors in last 2 /var/log/syslog
-(2) EDAC memory warnings:
-     3 EDAC (memory) errors in last 2 /var/log/syslog
-(3) serial overruns:
-     2 "USB overruns" in syslog
-(4) wordcount of log/*.warn:
-
-      48 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/daily.py.warn
-(5) proc sensor incompatibilities:
- - pitch_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
- - roll_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
+(1) proc sensor incompatibilities:
+ - roll_msg (sae) not in sensor_cfg.py seapath385 messages: (['gps', 'sea'])
 
 Figures and files:
 
