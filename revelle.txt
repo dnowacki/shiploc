@@ -1,13 +1,13 @@
-2025/09/04 14:15:01
+2025/09/05 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: RR2507     ** is logging **
 
-  os150nb 2025/08/25  15:27:02 to 2025/09/04  14:13:26  (1 min. ago)
-  os75nb 2025/08/25  15:27:03 to 2025/09/04  14:13:27  (1 min. ago)
+  os150nb 2025/08/25  15:27:02 to 2025/09/05  14:13:27  (1 min. ago)
+  os75nb 2025/08/25  15:27:03 to 2025/09/05  14:13:26  (1 min. ago)
 
-approximate lat, lon, depth:   60 6.73777 N    5 22.10998 W   depth=785
+approximate lat, lon, depth:   61 14.41584 N    3 34.00400 W   depth=1115
 
-link: http://www.google.com/maps/place/60%206.73777N+5%2022.10998W
+link: http://www.google.com/maps/place/61%2014.41584N+3%2034.00400W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,15 +25,15 @@ NOTE: This is the _primary_ computer
 ===========================
 seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 245.5912309 to 246.5912193
-(2025/09/03 14:11:22 to 2025/09/04 14:11:21)
+ddrange: 246.5909878 to 247.5909763
+(2025/09/04 14:11:01 to 2025/09/05 14:11:00)
 all seapath380mgc messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.05, max = 0.05
+   min  = -0.06, max = 0.07
    mean = 0.01, stddev = 0.01
 
 ===========================
@@ -41,16 +41,16 @@ statistics of good data:
 ===========================
 seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 245.5912656 to 246.5912541
-(2025/09/03 14:11:25 to 2025/09/04 14:11:24)
+ddrange: 246.5910226 to 247.5910110
+(2025/09/04 14:11:04 to 2025/09/05 14:11:03)
 all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = 0.32, max = 0.72
-   mean = 0.56, stddev = 0.12
+   min  = 0.23, max = 0.61
+   mean = 0.40, stddev = 0.09
 
 
 === Sonar Pingtype Summary =====
@@ -71,24 +71,24 @@ os75 BT:      off
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  100.124.36.33   .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*rr-ptp01-das.uc .GPS.            1 u  870 1024  377    0.713   -1.824   2.479
+*rr-ntp-pool.ucs .GPS.            1 u   72  256  377    0.150   +3.746   0.770
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2025/09/04 14:10:26) ens = 180 sec, 147 pings, (1.22 sec/ping)
+(2025/09/05 14:10:26) ens = 180 sec, 148 pings, (1.22 sec/ping)
 
 os75nb recent ping statistics
 
-(2025/09/04 14:10:27) ens = 180 sec, 80 pings, (2.25 sec/ping)
+(2025/09/05 14:10:27) ens = 180 sec, 79 pings, (2.28 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 48 days, 55 min,  1 user,  load average: 0.37, 0.42, 0.46
+ 14:15:04 up 49 days, 55 min,  1 user,  load average: 0.47, 0.42, 0.43
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -105,8 +105,11 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      110 /home/adcp/log/3dayplots_os75nb.warn
-      54 /home/adcp/log/3dayplots_os75nb.warn.2025-09-03
+      112 /home/adcp/log/3dayplots_os75nb.warn
+(2) rbin warnings:
+ 
+gyro hdg  87119    1.00    0.00       3.3       1     2     2     0     0
+gyro hdg  87119    1.00    0.00       3.3       1     2     2     0     0
 
 Figures and files:
 
@@ -124,8 +127,8 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
        4      /home/adcp/www/figures/os75nb_ddaycont.png
+       3      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
