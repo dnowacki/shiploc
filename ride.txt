@@ -1,14 +1,14 @@
-2025/09/07 14:30:01
+2025/09/08 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SR2519     ** is logging **
 
-   wh300 2025/09/05  19:29:56 to 2025/09/07  14:29:56  (0 min. ago)
-  os150nb 2025/09/05  19:32:56 to 2025/09/07  14:27:56  (2 min. ago)
-  os38nb 2025/09/05  19:32:56 to 2025/09/07  14:27:56  (2 min. ago)
+   wh300 2025/09/05  19:29:56 to 2025/09/08  14:29:56  (0 min. ago)
+  os150nb 2025/09/05  19:32:56 to 2025/09/08  14:27:56  (2 min. ago)
+  os38nb 2025/09/05  19:32:56 to 2025/09/08  14:27:56  (2 min. ago)
 
-approximate lat, lon, depth:   45 30.86609 N  125 43.82516 W   depth=2467
+approximate lat, lon, depth:   45 11.43690 N  125 57.26258 W   depth=2687
 
-link: http://www.google.com/maps/place/45%2030.86609N+125%2043.82516W
+link: http://www.google.com/maps/place/45%2011.43690N+125%2057.26258W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ no heading correction device specified===========================
 ===========================
 seapath_mgc-seapath_mru statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 248.6036999 to 249.6036941
-(2025/09/06 14:29:20 to 2025/09/07 14:29:19)
+ddrange: 249.6035205 to 250.6035147
+(2025/09/07 14:29:04 to 2025/09/08 14:29:04)
 all seapath_mru messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.2
-   min  = -0.11, max = 0.09
-   mean = -0.01, stddev = 0.04
+   min  = -0.10, max = 0.10
+   mean = -0.01, stddev = 0.03
 
 ===========================
 ------ hemisphere statistics ------
 ===========================
 seapath_mgc-hemisphere statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 248.6037288 to 249.6037230
-(2025/09/06 14:29:22 to 2025/09/07 14:29:22)
+ddrange: 249.6035494 to 250.6035436
+(2025/09/07 14:29:07 to 2025/09/08 14:29:06)
 all hemisphere messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.2
-   min  = -4.10, max = 5.00
-   mean = 0.86, stddev = 1.56
+   min  = -3.18, max = 6.22
+   mean = 1.02, stddev = 1.43
 
 
 === Sonar Pingtype Summary =====
@@ -81,10 +81,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377   396  -3966ns[ -878ns] +/-   99us
-^+ sr-seapath-mgc.ucsd.edu       1  10   377   221    +31us[  +31us] +/-  144us
+^* sr-seapath-mru.ucsd.edu       1  10   377    87    +16us[  +18us] +/-  134us
+^+ sr-ntp-pool.ucsd.edu          1  10   377   652  -7225ns[-5962ns] +/-  111us
 
-Reference ID: 647C6423, Stratum=2, last offset=0.000003, RMS offset=0.000006
+Reference ID: 647C6423, Stratum=2, last offset=0.000002, RMS offset=0.000014
 ------------------------------------------
 
 
@@ -92,21 +92,21 @@ Reference ID: 647C6423, Stratum=2, last offset=0.000003, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/09/07 14:25:56) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/09/08 14:25:56) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2025/09/07 14:22:56) ens = 300 sec, 273 pings, (1.10 sec/ping)
+(2025/09/08 14:22:56) ens = 300 sec, 272 pings, (1.10 sec/ping)
 
 os38nb recent ping statistics
 
-(2025/09/07 14:22:57) ens = 300 sec, 100 pings, (3.00 sec/ping)
+(2025/09/08 14:22:56) ens = 300 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 14 days, 22:00,  2 users,  load average: 0.75, 0.77, 0.68
+ 14:30:02 up 15 days, 22:00,  2 users,  load average: 1.58, 0.70, 0.59
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -118,7 +118,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      4 /home/adcp/log/3dayplots_wh300.warn
+      10 /home/adcp/log/3dayplots_wh300.warn.2025-09-07
 
 Figures and files:
 
@@ -129,17 +135,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
        1      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/wh300_ddaycont.png
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
        1      /home/adcp/www/figures/os38nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
