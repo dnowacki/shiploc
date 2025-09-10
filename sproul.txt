@@ -1,30 +1,67 @@
-2025/09/08 14:15:01
+2025/09/09 20:42:37
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
-Current cruise: SP2531  *** not logging ***
+Current cruise: SP2532     ** is logging **
 
+  os150nb 2025/09/09  15:10:30 to 2025/09/09  20:39:30  (3 min. ago)
 
-no positions found from filelist bx992/*.gps.rbin
+approximate lat, lon, depth:   32 40.40316 N  117 19.76461 W   depth=108
 
+link: http://www.google.com/maps/place/32%2040.40316N+117%2019.76461W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is a VIRTUAL computer.
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ sc30 statistics ------
+===========================
+bx992-sc30 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 251.6301910 to 251.8567477
+(2025/09/09 15:07:28 to 2025/09/09 20:33:43)
+all sc30 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   65 out of 65   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  1.9
+   min  = -2.42, max = -0.50
+   mean = -1.53, stddev = 0.38
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:  on
+
+===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*100.124.164.36  .GPS.            1 u    6 1024  377    0.203   -0.175   0.149
+*100.124.164.36  .GPS.            1 u  534 1024  377    0.201    0.367   0.143
  100.124.154.254 .STEP.          16 u    - 1024    0    0.000    0.000   0.000
 ------------------------------------------
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2025/09/09 20:36:30) ens = 180 sec, 78 pings, (2.31 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:12 up 12 days, 22:11,  1 user,  load average: 0.00, 0.00, 0.00
+ 20:42:38 up 14 days,  4:39,  2 users,  load average: 0.02, 0.06, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -36,7 +73,22 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_repo
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      36 /home/adcp/log/DAS_while_logging.warn
+      240 /home/adcp/log/lastensq_os150nb.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn
+(2) rbin warnings:
+ 
+bx992 gps  40105    0.50    0.00      35.7       4     2     2     0     0
+bx992 gps  40105    0.50    0.00      35.7       4     2     2     0     0
+bx992 gph  40105    0.50    0.00      35.7       4     2     2     0     0
+bx992 gph  40105    0.50    0.00      35.7       4     2     2     0     0
+sc30 gph  40093    0.69    0.01      42.0       2 18703     1     0     0
+sc30 gph  40093    0.69    0.01      42.0       2 18703     1     0     0
 
 Figures and files:
 
@@ -47,10 +99,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
