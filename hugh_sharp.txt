@@ -1,0 +1,125 @@
+2025/09/11 20:18:27
+currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: HRS2508BP_02_1m     ** is logging **
+
+ wh600 -- no data yet
+   wh300 2025/09/11  03:11:01 to 2025/09/11  20:17:02  (1 min. ago)
+
+approximate lat, lon, depth:   38 44.89003 N   74 53.33412 W   depth=15
+
+link: http://www.google.com/maps/place/38%2044.89003N+74%2053.33412W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _spare_ computer
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
+
+ddrange: 253.1312746 to 253.8398927
+(2025/09/11 03:09:02 to 2025/09/11 20:09:27)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   204 out of 204   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.1
+   min  = -2.70, max = -0.45
+   mean = -1.66, stddev = 0.35
+
+
+=== Sonar Pingtype Summary =====
+
+wh600: Triggering command not found
+wh600 BB:  on
+wh600 BT:  on
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* Spectracom.localdomain        1   9   377    31  +9167ns[  -10us] +/- 1241us
+
+Reference ID: C0A814F5, Stratum=2, last offset=-0.000019, RMS offset=0.000040
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2025/09/11 20:15:02) ens = 120 sec, 75 pings, (1.60 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 20:18:28 up 4 days, 15:32,  2 users,  load average: 0.09, 0.17, 0.18
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
+
+posmv quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_qc.png
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) I/O warnings:
+    21 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
+
+      2460 /home/adcp/log/3dayplots_wh600.warn
+      3051 /home/adcp/log/DAS_while_logging.warn
+      476 /home/adcp/log/grab_pings_wh600.warn
+      13131 /home/adcp/log/lastensq_wh600.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      4446 /home/adcp/log/lastfewvec_wh600.warn
+      7 /home/adcp/log/quick_wh300.warn
+      10868 /home/adcp/log/quick_wh600.warn
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       4      /home/adcp/www/figures/wh300_ddaycont.png
+
+
+
+local_status_mailto:
+
+
