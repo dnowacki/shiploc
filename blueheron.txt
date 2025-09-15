@@ -1,14 +1,14 @@
-2025/09/13 14:30:02
+2025/09/14 14:30:01
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: BH25-13_Rennie     ** is logging **
 
  sv500 -- no data yet
-  os150bb 2025/09/09  11:25:05 to 2025/09/13  14:28:05  (2 min. ago)
-  os150nb 2025/09/09  11:25:05 to 2025/09/13  14:28:05  (2 min. ago)
+  os150bb 2025/09/09  11:25:05 to 2025/09/14  14:28:24  (2 min. ago)
+  os150nb 2025/09/09  11:25:05 to 2025/09/14  14:28:24  (2 min. ago)
 
-approximate lat, lon, depth:   48 3.50753 N   87 4.49989 W   depth=10
+approximate lat, lon, depth:   48 6.09337 N   87 10.55211 W   depth=-87
 
-link: http://www.google.com/maps/place/48%203.50753N+87%204.49989W
+link: http://www.google.com/maps/place/48%206.09337N+87%2010.55211W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ no heading correction device specified===========================
 ===========================
 posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 254.5996656 to 255.5996519
-(2025/09/12 14:23:31 to 2025/09/13 14:23:30)
+ddrange: 255.5964227 to 256.5964098
+(2025/09/13 14:18:51 to 2025/09/14 14:18:50)
 all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   177 out of 177   (100%) were good
+   191 out of 191   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.14, max = 0.57
-   mean = 0.20, stddev = 0.13
+   min  = -0.35, max = 0.72
+   mean = 0.20, stddev = 0.17
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.14                1   7   377   125    +33us[  +33us] +/-   67us
+^* 192.168.100.14                1   6   377    54    +29ns[-1951ns] +/-   38us
 
-Reference ID: C0A8640E, Stratum=2, last offset=0.000000, RMS offset=0.000004
+Reference ID: C0A8640E, Stratum=2, last offset=-0.000002, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -66,17 +66,17 @@ Reference ID: C0A8640E, Stratum=2, last offset=0.000000, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os150bb recent ping statistics
 
-(2025/09/13 14:23:04) ens = 300 sec, 123 pings, (2.44 sec/ping)
+(2025/09/14 14:23:24) ens = 300 sec, 123 pings, (2.44 sec/ping)
 
 os150nb recent ping statistics
 
-(2025/09/13 14:23:04) ens = 300 sec, 123 pings, (2.44 sec/ping)
+(2025/09/14 14:23:24) ens = 300 sec, 123 pings, (2.44 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 8 days, 21:46,  1 user,  load average: 0.11, 0.25, 0.31
+ 14:30:52 up 9 days, 21:46,  1 user,  load average: 0.32, 0.35, 0.31
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -92,24 +92,23 @@ https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/posmv_q
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      768 /home/adcp/log/3dayplots_sv500.warn
-      3456 /home/adcp/log/3dayplots_sv500.warn.2025-09-12
-      1163 /home/adcp/log/DAS_while_logging.warn
-      5222 /home/adcp/log/DAS_while_logging.warn.2025-09-12
-      147 /home/adcp/log/grab_pings_sv500.warn
-      672 /home/adcp/log/grab_pings_sv500.warn.2025-09-12
-      4952 /home/adcp/log/lastensq_sv500.warn
-      26450 /home/adcp/log/lastensq_sv500.warn.2025-09-12
-      2 /home/adcp/log/lastfewvec_os150bb.warn
-      2 /home/adcp/log/lastfewvec_os150nb.warn
-      1827 /home/adcp/log/lastfewvec_sv500.warn
-      8190 /home/adcp/log/lastfewvec_sv500.warn.2025-09-12
-      2233 /home/adcp/log/quick_sv500.warn
-      10010 /home/adcp/log/quick_sv500.warn.2025-09-12
+      2 /home/adcp/log/3dayplots_os150nb.warn
+      936 /home/adcp/log/3dayplots_sv500.warn
+      2136 /home/adcp/log/3dayplots_sv500.warn.2025-09-13
+      1418 /home/adcp/log/DAS_while_logging.warn
+      3224 /home/adcp/log/DAS_while_logging.warn.2025-09-13
+      175 /home/adcp/log/grab_pings_sv500.warn
+      413 /home/adcp/log/grab_pings_sv500.warn.2025-09-13
+      7027 /home/adcp/log/lastensq_sv500.warn
+      14433 /home/adcp/log/lastensq_sv500.warn.2025-09-13
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      2232 /home/adcp/log/lastfewvec_sv500.warn
+      5058 /home/adcp/log/lastfewvec_sv500.warn.2025-09-13
+      2728 /home/adcp/log/quick_sv500.warn
+      6182 /home/adcp/log/quick_sv500.warn.2025-09-13
 
 Figures and files:
 
