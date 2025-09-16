@@ -1,13 +1,13 @@
-2025/09/14 14:15:01
+2025/09/15 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: RR2507     ** is logging **
 
-  os150nb 2025/08/25  15:27:02 to 2025/09/14  14:13:52  (1 min. ago)
-  os75nb 2025/08/25  15:27:03 to 2025/09/14  14:13:53  (1 min. ago)
+  os150nb 2025/08/25  15:27:02 to 2025/09/15  14:13:52  (1 min. ago)
+  os75nb 2025/08/25  15:27:03 to 2025/09/15  14:13:53  (1 min. ago)
 
-approximate lat, lon, depth:   63 9.96000 N    5 37.05306 W   depth=2092
+approximate lat, lon, depth:   62 49.92859 N    7 23.78359 W   depth=521
 
-link: http://www.google.com/maps/place/63%209.96000N+5%2037.05306W
+link: http://www.google.com/maps/place/62%2049.92859N+7%2023.78359W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,33 +25,21 @@ NOTE: This is the _primary_ computer
 ===========================
 seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 255.5856985 to 256.5856869
-(2025/09/13 14:03:24 to 2025/09/14 14:03:23)
+ddrange: 256.5857332 to 257.5857216
+(2025/09/14 14:03:27 to 2025/09/15 14:03:26)
 all seapath380mgc messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   285 out of 285   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.03, max = 0.06
-   mean = 0.01, stddev = 0.01
-
-===========================
------- gyro statistics ------
-===========================
-seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 255.2789161 to 256.2789045
-(2025/09/13 06:41:38 to 2025/09/14 06:41:37)
-all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = 0.52, max = 0.87
-   mean = 0.67, stddev = 0.09
+   min  = -0.03, max = 0.05
+   mean = 0.01, stddev = 0.01
 
+===========================
+------ gyro statistics ------
+===========================
+/home/adcp/daily_report/gyro_seapath380_pystats.txt does not (yet?) exist
 
 === Sonar Pingtype Summary =====
 
@@ -71,24 +59,24 @@ os75 BT:      off
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  100.124.36.33   .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*rr-ptp01-das.uc .GPS.            1 u 1000 1024  377    0.698   -0.759   2.943
+*rr-ptp01-das.uc .GPS.            1 u  355 1024  377    0.665   +6.313   5.846
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2025/09/14 14:10:53) ens = 180 sec, 147 pings, (1.22 sec/ping)
+(2025/09/15 14:10:53) ens = 180 sec, 147 pings, (1.22 sec/ping)
 
 os75nb recent ping statistics
 
-(2025/09/14 14:10:54) ens = 180 sec, 79 pings, (2.28 sec/ping)
+(2025/09/15 14:10:54) ens = 180 sec, 80 pings, (2.25 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 58 days, 55 min,  1 user,  load average: 0.47, 0.55, 0.56
+ 14:15:06 up 59 days, 55 min,  1 user,  load average: 0.41, 0.57, 0.60
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -105,26 +93,12 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      5 /home/adcp/log/DAS_while_logging.warn
-      306 /home/adcp/log/hcorrstats_gyro.warn
-      252 /home/adcp/log/lastensq_os150nb.warn
-      246 /home/adcp/log/lastensq_os75nb.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
+      969 /home/adcp/log/hcorrstats_gyro.warn
+      969 /home/adcp/log/hcorrstats_gyro.warn.2025-09-14
 (2) rbin warnings:
  
-seapath380 gps  86680    1.00    0.00     632.0      10  1010    52     0     0
-seapath380 gps  86680    1.00    0.00     632.0      10  1010    52     0     0
-seapath380 sea  86680    1.00    0.00     632.0      10  1010    52     0     0
-seapath380 sea  86680    1.00    0.00     632.0      10  1010    52     0     0
-seapath380 hdg  86680    1.00    0.00     632.0      10  1010    52     0     0
-seapath380 hdg  86680    1.00    0.00     632.0      10  1010    52     0     0
-seapath380mgc gps  86680    1.00    0.00     632.0     208   612   566     0     0
-seapath380mgc gps  86680    1.00    0.00     632.0     199   612   566     0     0
-seapath380mgc sea  86680    1.00    0.00     632.0     208   612   566     0     0
-seapath380mgc sea  86680    1.00    0.00     632.0     199   612   566     0     0
-seapath380mgc hdg  86680    1.00    0.00     632.0     208   612   566     0     0
-seapath380mgc hdg  86680    1.00    0.00     632.0     199   612   566     0     0
+gyro hdg  87122    1.00    0.00       4.0       2     5     5     0     0
+gyro hdg  87122    1.00    0.00       4.0       2     5     5     0     0
 
 Figures and files:
 
