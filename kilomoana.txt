@@ -1,14 +1,14 @@
-2025/09/15 14:30:01
+2025/09/16 14:30:01
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: km2505-post     ** is logging **
+Current cruise: km2505     ** is logging **
 
-   wh300 2025/09/11  17:49:04 to 2025/09/15  14:28:12  (2 min. ago)
-  os38bb 2025/09/11  17:52:10 to 2025/09/15  14:28:14  (1 min. ago)
-  os38nb 2025/09/11  17:52:10 to 2025/09/15  14:28:14  (1 min. ago)
+   wh300 2025/09/15  17:50:03 to 2025/09/16  14:28:03  (2 min. ago)
+  os38bb 2025/09/15  17:53:09 to 2025/09/16  14:28:06  (2 min. ago)
+  os38nb 2025/09/15  17:53:09 to 2025/09/16  14:28:06  (2 min. ago)
 
-approximate lat, lon, depth:   21 18.90539 N  157 52.64538 W   depth=-2
+approximate lat, lon, depth:   22 17.78328 N  158 7.82803 W   depth=4820
 
-link: http://www.google.com/maps/place/21%2018.90539N+157%2052.64538W
+link: http://www.google.com/maps/place/22%2017.78328N+158%207.82803W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 256.5976286 to 257.5976186
-(2025/09/14 14:20:35 to 2025/09/15 14:20:34)
+ddrange: 257.7417136 to 258.5965611
+(2025/09/15 17:48:04 to 2025/09/16 14:19:03)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   246 out of 246   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.7
-   min  = -0.57, max = 0.37
-   mean = -0.29, stddev = 0.13
+   mean N = 601, stddev N =  0.6
+   min  = -2.14, max = 1.65
+   mean = 0.07, stddev = 0.65
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    4   8   377    12   +138us[ +146us] +/-   41ms
+^* kmroute.km                    4  10   377   125    -40us[  -30us] +/-   62ms
 
-Reference ID: 0A009601, Stratum=5, last offset=0.000008, RMS offset=0.000011
+Reference ID: 0A009601, Stratum=5, last offset=0.000010, RMS offset=0.000038
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A009601, Stratum=5, last offset=0.000008, RMS offset=0.000011
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2025/09/15 14:23:14) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/09/16 14:23:06) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2025/09/15 14:26:12) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/09/16 14:26:03) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
-(2025/09/15 14:23:14) ens = 300 sec, 50 pings, (6.00 sec/ping)
+(2025/09/16 14:23:06) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 22 days, 16:25,  1 user,  load average: 0.88, 0.88, 0.89
+ 14:30:02 up 23 days, 16:25,  1 user,  load average: 1.04, 1.00, 0.90
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -98,17 +98,25 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      28 /home/adcp/log/3dayplots_os38nb.warn
+      67 /home/adcp/log/3dayplots_os38bb.warn
+      83 /home/adcp/log/3dayplots_os38nb.warn
+      47 /home/adcp/log/3dayplots_wh300.warn
+      7 /home/adcp/log/DAS_while_logging.warn
       348 /home/adcp/log/lastensq_os38bb.warn
-      622 /home/adcp/log/lastensq_os38bb.warn.2025-09-14
+      568 /home/adcp/log/lastensq_os38bb.warn.2025-09-15
       348 /home/adcp/log/lastensq_os38nb.warn
-      620 /home/adcp/log/lastensq_os38nb.warn.2025-09-14
+      568 /home/adcp/log/lastensq_os38nb.warn.2025-09-15
       870 /home/adcp/log/lastensq_wh300.warn
-      1552 /home/adcp/log/lastensq_wh300.warn.2025-09-14
+      1420 /home/adcp/log/lastensq_wh300.warn.2025-09-15
+      9 /home/adcp/log/lastfewvec_os38bb.warn
+      1 /home/adcp/log/lastfewvec_os38nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      11 /home/adcp/log/quick_os38bb.warn
+      1 /home/adcp/log/quick_wh300.warn
 (2) rbin warnings:
  
-furuno gps  86331    1.03    0.00       6.0    1144  1514  1259  1259     0
-furuno gps  86331    1.03    0.00       6.0    1144  1514  1259  1259     0
+furuno gps  72714    1.03    0.00       6.1    1028  2345  1249  1249     0
+furuno gps  72714    1.03    0.00       6.1    1028  2345  1249  1249     0
 
 Figures and files:
 
@@ -127,9 +135,9 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/wh300_ddaycont.png
-       4      /home/adcp/www/figures/os38bb_ddaycont.png
-       4      /home/adcp/www/figures/os38nb_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/os38bb_ddaycont.png
+       1      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
