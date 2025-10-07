@@ -1,34 +1,77 @@
-2025/10/06 02:01:28
+2025/10/06 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: Pierside_PostAE2523  *** not logging ***
+Current cruise: Pierside_PostAE2523     ** is logging **
+
+   sv300 2025/10/06  11:22:21 to 2025/10/06  14:30:20  (0 min. ago)
+
+approximate lat, lon, depth:   32 22.20066 N   64 41.75354 W   depth=-6
+
+link: http://www.google.com/maps/place/32%2022.20066N+64%2041.75354W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
-no positions found from filelist abxtwo/*.gps.rbin
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 278.4724537 to 278.5978588
+(2025/10/06 11:20:20 to 2025/10/06 14:20:55)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   36 out of 36   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.60, max = -0.35
+   mean = -0.48, stddev = 0.06
 
 
+=== Sonar Pingtype Summary =====
 
+sv300: Triggering command not found
+sv300 BB:  on
+sv300 NB:  on
+sv300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:       off
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   7   377    24    +12us[  +11us] +/-   48us
+^* 192.168.51.9                  1   7   377    90    +15us[  +33us] +/-   59us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000055
+Reference ID: C0A83309, Stratum=2, last offset=0.000018, RMS offset=0.000014
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+sv300 recent ping statistics
+
+(2025/10/06 14:28:20) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 02:02:19 up  1:17,  2 users,  load average: 1.10, 1.12, 1.12
+ 14:30:52 up 13:45,  1 user,  load average: 1.61, 1.48, 1.52
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -45,6 +88,10 @@ ______________________
 
 (1) EDAC memory warnings:
      8 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      27 /home/adcp/log/3dayplots_sv300.warn
+      1 /home/adcp/log/lastfewvec_sv300.warn
 
 Figures and files:
 
@@ -55,10 +102,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/sv300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
