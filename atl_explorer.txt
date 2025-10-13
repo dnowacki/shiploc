@@ -1,12 +1,12 @@
-2025/10/11 14:30:02
+2025/10/12 22:18:00
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: Pierside_PostAE25NSF     ** is logging **
 
-   sv300 2025/10/08  17:52:35 to 2025/10/11  14:30:36  (0 min. ago)
+   sv300 2025/10/08  17:52:35 to 2025/10/12  22:18:25  (0 min. ago)
 
-approximate lat, lon, depth:   32 22.20058 N   64 41.75371 W   depth=-6
+approximate lat, lon, depth:   32 22.20038 N   64 41.75373 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2022.20058N+64%2041.75371W
+link: http://www.google.com/maps/place/32%2022.20038N+64%2041.75373W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 282.5986227 to 283.5986111
-(2025/10/10 14:22:01 to 2025/10/11 14:22:00)
-all abxtwo messages:  (99%)  were good  [using available QC]
+ddrange: 283.9289699 to 284.9289583
+(2025/10/11 22:17:43 to 2025/10/12 22:17:42)
+all abxtwo messages:  (91%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   285 out of 285   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  3.6
-   min  = -0.78, max = -0.26
-   mean = -0.49, stddev = 0.09
+   mean N = 301, stddev N =  0.2
+   min  = -0.79, max = -0.30
+   mean = -0.49, stddev = 0.08
 
 
 === Sonar Pingtype Summary =====
@@ -55,9 +55,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   7   377    53  +8210ns[  +14us] +/-   45us
+^* 192.168.51.9                  1   6   377    41  +1278ns[+3004ns] +/-   40us
 
-Reference ID: C0A83309, Stratum=2, last offset=0.000006, RMS offset=0.000006
+Reference ID: C0A83309, Stratum=2, last offset=0.000002, RMS offset=0.000007
 ------------------------------------------
 
 
@@ -65,13 +65,13 @@ Reference ID: C0A83309, Stratum=2, last offset=0.000006, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 sv300 recent ping statistics
 
-(2025/10/11 14:28:36) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/10/12 22:16:25) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:55 up 5 days, 13:45,  1 user,  load average: 1.74, 1.67, 1.67
+ 22:18:51 up  2:08,  1 user,  load average: 0.85, 0.55, 0.38
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -87,11 +87,27 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     8 EDAC (memory) errors in last 2 /var/log/syslog
+     2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      8 /home/adcp/log/3dayplots_sv300.warn
-      40 /home/adcp/log/3dayplots_sv300.warn.2025-10-10
+      16 /home/adcp/log/3dayplots_sv300.warn
+      9 /home/adcp/log/DAS_while_cruise.warn
+      8 /home/adcp/log/hcorrstats_abxtwo.warn
+(3) rbin warnings:
+ 
+hydrins gps  87088    1.01  -587877.04       1.1       0     1     1     0     1
+hydrins hdg  87088    1.01  -587877.04       1.1       0     1     1     0     1
+hydrins pmv  87089    1.01  -587877.04       1.1       0     1     1     0     1
+abxtwo gps  87090    1.01  -587877.06       1.1       0     1     1     0     1
+abxtwo adu  87089    1.01  -587876.05       1.1       0     1     1     0     1
+abxtwo_b1a1 gps  87090    1.00  -587876.05       1.1       0     1     1     0     1
+abxtwo_b1a2 gps  87090    1.00  -587876.05       1.1       0     1     1     0     1
+abxtwo_b2a1 gps  87090    1.00  -587876.05       1.1       0     1     1     0     1
+jrc_stbd gps  87090    1.00  -587876.06       1.1       0     1     1     0     1
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 283.833334
+
 
 Figures and files:
 
@@ -108,7 +124,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/sv300_ddaycont.png
+       2      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
