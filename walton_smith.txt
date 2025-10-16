@@ -1,14 +1,14 @@
-2025/10/14 14:30:01
+2025/10/15 14:30:01
 currents01ws 6.5.0-28-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: WS25287_Volkov     ** is logging **
 
-   wh600 2025/10/14  09:02:51 to 2025/10/14  14:28:51  (1 min. ago)
-  os75bb 2025/10/14  09:05:52 to 2025/10/14  14:25:52  (4 min. ago)
-  os75nb 2025/10/14  09:05:52 to 2025/10/14  14:25:52  (4 min. ago)
+   wh600 2025/10/14  09:02:51 to 2025/10/15  14:28:51  (1 min. ago)
+  os75bb 2025/10/14  09:05:52 to 2025/10/15  14:25:53  (4 min. ago)
+  os75nb 2025/10/14  09:05:52 to 2025/10/15  14:25:53  (4 min. ago)
 
-approximate lat, lon, depth:   26 19.14587 N   79 40.94024 W   depth=633
+approximate lat, lon, depth:   25 56.04451 N   80 4.92881 W   depth=52
 
-link: http://www.google.com/maps/place/26%2019.14587N+79%2040.94024W
+link: http://www.google.com/maps/place/25%2056.04451N+80%204.92881W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.013)
 
-ddrange: 286.3755918 to 286.5947728
-(2025/10/14 09:00:51 to 2025/10/14 14:16:28)
+ddrange: 286.5947959 to 287.5947772
+(2025/10/14 14:16:30 to 2025/10/15 14:16:29)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   63 out of 63   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -1.54, max = -0.70
-   mean = -0.89, stddev = 0.20
+   min  = -1.87, max = -0.75
+   mean = -1.29, stddev = 0.36
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   6   377     9    +11us[  +10us] +/-  331us
+^* 10.106.30.100                 1   7   377    71    +21us[  +21us] +/-  525us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000001, RMS offset=0.000002
+Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000000, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -66,21 +66,21 @@ Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000001, RMS offset=0.000002
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/10/14 14:20:54) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2025/10/15 14:20:51) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 wh600 recent ping statistics
 
-(2025/10/14 14:26:50) ens = 120 sec, 171 pings, (0.70 sec/ping)
+(2025/10/15 14:26:51) ens = 120 sec, 172 pings, (0.70 sec/ping)
 
 os75bb recent ping statistics
 
-(2025/10/14 14:20:54) ens = 300 sec, 76 pings, (3.95 sec/ping)
+(2025/10/15 14:20:51) ens = 300 sec, 75 pings, (4.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 40 days, 18:53,  1 user,  load average: 0.13, 0.24, 0.29
+ 14:30:01 up 41 days, 18:53,  1 user,  load average: 0.35, 0.32, 0.35
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -98,14 +98,6 @@ ______________________
 
 (1) EDAC memory warnings:
     21 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh600.warn
-      2 /home/adcp/log/quick_os75bb.warn
-      3 /home/adcp/log/quick_os75nb.warn
-      1 /home/adcp/log/quick_wh600.warn
 
 Figures and files:
 
@@ -118,8 +110,8 @@ Checking updating of 5-minute plots:
 age (minutes)          filename
        4      /home/adcp/www/figures/os75bb_lastens.png
        3      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/wh600_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
