@@ -1,7 +1,14 @@
-2025/10/16 14:30:01
-currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2025/10/17 21:04:33
+currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: MGL2511  *** not logging ***
+
+  os75nb 2025/10/11  21:27:20 to 2025/10/17  20:03:37  (61 min. ago)
+
+approximate lat, lon, depth:   10 8.22889 N   93 52.52332 W   depth=3904
+
+link: http://www.google.com/maps/place/10%208.22889N+93%2052.52332W
+not using zmq publishers, position is from serial GPS
+
 
 
 
@@ -14,10 +21,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.3.14                  1   6   377     6    +64us[  +68us] +/-   95us
-^- 192.168.3.1                   4   6   377     2    -18ms[  -18ms] +/-   73ms
+^* 192.168.3.14                  1   6   377    26   -440ns[  -15us] +/-   48us
 
-Reference ID: C0A8030E, Stratum=2, last offset=0.000004, RMS offset=0.000010
+Reference ID: C0A8030E, Stratum=2, last offset=-0.000014, RMS offset=0.000006
 ------------------------------------------
 
 
@@ -26,7 +32,7 @@ Reference ID: C0A8030E, Stratum=2, last offset=0.000004, RMS offset=0.000010
 
 
 ---------- uptime ------------
- 14:31:10 up 7 days, 11:11,  1 user,  load average: 0.00, 0.00, 0.00
+ 21:04:44 up 47 days,  8:08,  2 users,  load average: 0.02, 0.09, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -39,7 +45,16 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      2 /home/adcp/log/lastfewvec_os75nb.warn
+(2) rbin warnings:
+ 
+cnav gps  67963    1.00    0.00    9870.9       6    21     1     0     0
+cnav gps  67963    1.00    0.00    9870.9       6    21     1     0     0
 
 Figures and files:
 
@@ -50,15 +65,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  721473      /home/adcp/www/figures/os75nb_lastens.png
-  721473      /home/adcp/www/figures/os75bb_lastens.png
-  721473      /home/adcp/www/figures/ktprof_amp_lastens.png
+      59      /home/adcp/www/figures/ktprof_amp_lastens.png
+      59      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  721473      /home/adcp/www/figures/os75bb_ddaycont.png
-  721473      /home/adcp/www/figures/os75nb_ddaycont.png
+      59      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
