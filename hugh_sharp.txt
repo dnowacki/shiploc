@@ -1,31 +1,75 @@
-2025/10/21 14:30:01
-currents01hs 6.5.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
-NOTE: This is the _primary_ computer
+2025/10/22 14:30:01
+currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: HRS2510_01_1m     ** is logging **
+
+   wh300 2025/10/22  03:55:38 to 2025/10/22  14:29:36  (0 min. ago)
+
+approximate lat, lon, depth:   39 37.07688 N   74 0.63700 W   depth=22
+
+link: http://www.google.com/maps/place/39%2037.07688N+74%200.63700W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _spare_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
+
+ddrange: 294.1622304 to 294.5999434
+(2025/10/22 03:53:37 to 2025/10/22 14:23:55)
+all posmv messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   126 out of 126   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -1.71, max = -0.38
+   mean = -0.88, stddev = 0.33
+
+
+=== Sonar Pingtype Summary =====
+
+wh600: Triggering command not found
+wh600 BB:       off
+wh600 BT:      off
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.20.245                1   9   377   252    -74us[ -198us] +/- 1194us
+^* Spectracom.localdomain        1   7   377   123  +2768ns[  +11us] +/- 1216us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000124, RMS offset=0.000061
+Reference ID: C0A814F5, Stratum=2, last offset=0.000009, RMS offset=0.000022
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2025/10/22 14:27:36) ens = 120 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 122 days,  2:50,  1 user,  load average: 0.24, 0.05, 0.02
+ 14:30:02 up 45 days,  9:44,  1 user,  load average: 0.49, 1.27, 1.03
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -41,8 +85,11 @@ https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     6 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      5 /home/adcp/log/DAS_while_cruise.warn
+      5 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -53,10 +100,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
