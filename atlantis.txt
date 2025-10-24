@@ -1,31 +1,97 @@
-2025/10/22 14:30:01
-atcurrents04 5.15.0-107-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2025/10/23 14:30:01
+atcurrents03 5.15.0-140-generic (jammy "Ubuntu 22.04.5 LTS")
+Current cruise: at50-44     ** is logging **
+
+   wh300 2025/10/18  17:12:16 to 2025/10/23  14:29:27  (0 min. ago)
+  os75nb 2025/10/18  17:15:16 to 2025/10/23  14:27:26  (2 min. ago)
+
+approximate lat, lon, depth:   33 55.39407 N  120 34.82865 W   depth=1629
+
+link: http://www.google.com/maps/place/33%2055.39407N+120%2034.82865W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ hydrins2 statistics ------
+===========================
+hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 294.5992022 to 295.5991906
+(2025/10/22 14:22:51 to 2025/10/23 14:22:50)
+all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   273 out of 273   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -0.03, max = -0.01
+   mean = -0.02, stddev = 0.01
+
+===========================
+------ seapath statistics ------
+===========================
+hydrins1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 294.5992253 to 295.5992138
+(2025/10/22 14:22:53 to 2025/10/23 14:22:52)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   273 out of 273   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.28, max = -0.12
+   mean = -0.21, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377     5  +3705ns[+4622ns] +/-   28us
+^* timeserver.atlantis.whoi>     1   6   377    41  +2640ns[+4803ns] +/-   30us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000002
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000002, RMS offset=0.000003
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2025/10/23 14:27:27) ens = 120 sec, 89 pings, (1.35 sec/ping)
+
+os75nb recent ping statistics
+
+(2025/10/23 14:22:27) ens = 300 sec, 133 pings, (2.26 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 50 days, 18:11,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 51 days, 18:11,  1 user,  load average: 2.72, 1.56, 1.31
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -40,8 +106,9 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_re
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-    15 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -52,15 +119,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  705303      /home/adcp/www/figures/wh300_lastens.png
-  705303      /home/adcp/www/figures/ktprof_amp_lastens.png
-  705303      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  705303      /home/adcp/www/figures/wh300_ddaycont.png
-  705303      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 

@@ -1,12 +1,12 @@
-2025/10/22 14:30:01
+2025/10/23 14:30:01
 currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: MGL2511     ** is logging **
 
-  os75nb 2025/10/11  21:27:20 to 2025/10/22  14:27:00  (3 min. ago)
+  os75nb 2025/10/11  21:27:20 to 2025/10/23  14:24:59  (5 min. ago)
 
-approximate lat, lon, depth:    9 8.53118 N   90 0.77699 W   depth=3454
+approximate lat, lon, depth:    8 6.47389 N   90 21.71300 W   depth=3441
 
-link: http://www.google.com/maps/place/9%208.53118N+90%200.77699W
+link: http://www.google.com/maps/place/8%206.47389N+90%2021.71300W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ Database time ranges:
 ===========================
 gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 293.5990358 to 294.5990242
-(2025/10/21 14:22:37 to 2025/10/22 14:22:36)
+ddrange: 294.5973112 to 295.5972997
+(2025/10/22 14:20:08 to 2025/10/23 14:20:07)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   257 out of 257   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.35, max = 0.73
-   mean = 0.17, stddev = 0.21
+   mean N = 301, stddev N =  0.3
+   min  = -0.26, max = 0.52
+   mean = 0.19, stddev = 0.14
 
 ===========================
 ------ posmv statistics ------
@@ -54,9 +54,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    34    +36us[  +32us] +/-   78us
+^* timeserve2.langseth.ldeo>     1   6   377    14    +11us[  +11us] +/-   59us
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000004, RMS offset=0.000004
+Reference ID: C0A8030E, Stratum=2, last offset=-0.000000, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -64,13 +64,13 @@ Reference ID: C0A8030E, Stratum=2, last offset=-0.000004, RMS offset=0.000004
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2025/10/22 14:22:02) ens = 300 sec, 141 pings, (2.13 sec/ping)
+(2025/10/23 14:20:01) ens = 300 sec, 141 pings, (2.13 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 52 days,  1:34,  1 user,  load average: 0.05, 0.24, 0.27
+ 14:30:02 up 53 days,  1:34,  1 user,  load average: 0.05, 0.11, 0.16
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -88,15 +88,14 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      986 /home/adcp/log/hcorrstats_posmv.warn
-      1632 /home/adcp/log/hcorrstats_posmv.warn.2025-10-21
-      14 /home/adcp/log/lastensq_os75nb.warn
-      14 /home/adcp/log/lastensq_os75nb.warn.2025-10-21
-      14 /home/adcp/log/update_hbins_os75bb.warn
+      799 /home/adcp/log/hcorrstats_posmv.warn
+      1632 /home/adcp/log/hcorrstats_posmv.warn.2025-10-22
+      21 /home/adcp/log/lastensq_os75nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
 (2) rbin warnings:
  
-cnav gps  88113    1.00    0.00      97.9      16    83    34     0     0
-cnav gps  88113    1.00    0.00      97.9      16    83    34     0     0
+cnav gps  79164    1.00    0.00    9042.0      15    72    20     0     0
+cnav gps  79164    1.00    0.00    9042.0      15    72    20     0     0
 
 Figures and files:
 
@@ -107,13 +106,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75nb_lastens.png
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
+       5      /home/adcp/www/figures/os75nb_lastens.png
+       4      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os75nb_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
