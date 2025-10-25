@@ -1,12 +1,12 @@
-2025/10/23 14:30:01
+2025/10/24 14:30:01
 currents03skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SKQ202519S     ** is logging **
 
-   wh300 2025/10/17  22:35:09 to 2025/10/23  14:28:28  (1 min. ago)
+   wh300 2025/10/17  22:35:09 to 2025/10/24  14:28:28  (1 min. ago)
 
-approximate lat, lon, depth:   62 47.35530 N  167 23.27567 W   depth=25
+approximate lat, lon, depth:   65 8.76671 N  168 24.23445 W   depth=45
 
-link: http://www.google.com/maps/place/62%2047.35530N+167%2023.27567W
+link: http://www.google.com/maps/place/65%208.76671N+168%2024.23445W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,32 +24,32 @@ Database time ranges:
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 294.5969016 to 295.5968900
-(2025/10/22 14:19:32 to 2025/10/23 14:19:31)
-all seapath messages:  (12%)  were good  [using available QC]
+ddrange: 295.5969479 to 296.5969363
+(2025/10/23 14:19:36 to 2025/10/24 14:19:35)
+all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   283 out of 283   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.48, max = -0.11
-   mean = -0.34, stddev = 0.11
+   min  = -0.35, max = -0.22
+   mean = -0.26, stddev = 0.02
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 294.5969248 to 295.5969132
-(2025/10/22 14:19:34 to 2025/10/23 14:19:33)
-all mgc2 messages:  (12%)  were good  [QC does not exist for this instrument]
+ddrange: 295.5969595 to 296.5969479
+(2025/10/23 14:19:37 to 2025/10/24 14:19:36)
+all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   283 out of 283   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.14, max = -0.04
-   mean = -0.08, stddev = 0.03
+   min  = -0.04, max = 0.02
+   mean = -0.01, stddev = 0.01
 
 
 === Sonar Pingtype Summary =====
@@ -75,10 +75,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   6   377     2    -16us[  -16us] +/-  120us
-^* 10.1.0.6                      1   6   377    59    -12us[  -18us] +/-  106us
+^+ 10.1.0.5                      1   7   377    69    -54us[  -54us] +/-  103us
+^* 10.1.0.6                      1  10   377  1026  -7949ns[  +26us] +/-  105us
 
-Reference ID: 0A010006, Stratum=2, last offset=-0.000006, RMS offset=0.000006
+Reference ID: 0A010006, Stratum=2, last offset=0.000034, RMS offset=0.000038
 ------------------------------------------
 
 
@@ -86,13 +86,13 @@ Reference ID: 0A010006, Stratum=2, last offset=-0.000006, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/10/23 14:26:29) ens = 120 sec, 111 pings, (1.08 sec/ping)
+(2025/10/24 14:26:29) ens = 120 sec, 109 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 21:09,  3 users,  load average: 8.21, 8.22, 8.31
+ 14:30:02 up 1 day, 21:09,  3 users,  load average: 11.37, 11.29, 11.30
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -111,22 +111,8 @@ ______________________
      4 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      58 /home/adcp/log/hcorrstats_mgc2.warn
-      25 /home/adcp/log/hcorrstats_mgc2.warn.2025-10-22
-      58 /home/adcp/log/hcorrstats_seapath.warn
-      25 /home/adcp/log/hcorrstats_seapath.warn.2025-10-22
-(3) rbin warnings:
- 
-seapath gps  87076    1.01  -409054.41       1.0       0     1     1     0     1
-seapath sea  87075    1.01  -409054.39       1.0       0     1     1     0     1
-seapath hdg  87075    1.01  -409054.39       1.0       0     1     1     0     1
-cnav gps  87075    1.01  -409054.42       2.0       0     1     1     0     1
-mgc1 hdg  87076    1.01  -409054.38       1.0       0     1     1     0     1
-mgc2 hdg  87075    1.01  -409054.38       1.0       0     1     1     0     1
-(4) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 294.500005
-
+      69 /home/adcp/log/hcorrstats_mgc2.warn
+      69 /home/adcp/log/hcorrstats_seapath.warn
 
 Figures and files:
 
@@ -137,14 +123,14 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1255      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/wh300_lastens.png
+    2695      /home/adcp/www/figures/os75nb_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1255      /home/adcp/www/figures/os75nb_ddaycont.png
+    2695      /home/adcp/www/figures/os75nb_ddaycont.png
        0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
