@@ -1,8 +1,11 @@
-2025/10/26 14:30:01
-currents01hs 6.5.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
-NOTE: This is the _primary_ computer
+2025/10/27 14:30:01
+currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: test-2025-10-25  *** not logging ***
+
+
+no positions found from filelist posmv/*.gps.rbin
+
+NOTE: This is the _spare_ computer
 
 
 
@@ -14,9 +17,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.20.245                1  10   377   295    -84us[ -114us] +/- 1289us
+^* Spectracom.localdomain        1   7   377    16   +844ns[  -39us] +/- 1254us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000030, RMS offset=0.000036
+Reference ID: C0A814F5, Stratum=2, last offset=-0.000040, RMS offset=0.000023
 ------------------------------------------
 
 
@@ -25,7 +28,7 @@ Reference ID: C0A814F5, Stratum=2, last offset=-0.000030, RMS offset=0.000036
 
 
 ---------- uptime ------------
- 14:30:02 up 127 days,  2:50,  1 user,  load average: 0.08, 0.04, 0.01
+ 14:30:03 up 15:42,  1 user,  load average: 0.04, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -42,7 +45,11 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    11 EDAC (memory) errors in last 2 /var/log/syslog
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      336 /home/adcp/log/DAS_while_logging.warn
+      2 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 

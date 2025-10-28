@@ -1,76 +1,38 @@
-2025/10/26 14:30:01
+2025/10/27 14:30:02
 currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: MGL2511     ** is logging **
+Current cruise: MGL2511  *** not logging ***
 
-  os75nb 2025/10/11  21:27:20 to 2025/10/26  14:26:16  (3 min. ago)
+  os75nb 2025/10/11  21:27:20 to 2025/10/27  13:48:04  (42 min. ago)
 
-approximate lat, lon, depth:    8 39.22924 N   90 42.81805 W   depth=3463
+approximate lat, lon, depth:    8 9.78738 N   89 36.13892 W   depth=3575
 
-link: http://www.google.com/maps/place/8%2039.22924N+90%2042.81805W
+link: http://www.google.com/maps/place/8%209.78738N+89%2036.13892W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath")
-===========================
------- seapath statistics ------
-===========================
-gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 297.6016399 to 298.6016251
-(2025/10/25 14:26:22 to 2025/10/26 14:26:20)
-all seapath messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   206 out of 206   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.15, max = 0.54
-   mean = 0.24, stddev = 0.10
-
-===========================
------- posmv statistics ------
-===========================
-/home/adcp/daily_report/posmv_gyro_pystats.txt does not (yet?) exist
-
-=== Sonar Pingtype Summary =====
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    61    +31us[  +28us] +/-   74us
+^* timeserve2.langseth.ldeo>     1   6   377    15    +48us[  +49us] +/-   88us
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000003, RMS offset=0.000005
+Reference ID: C0A8030E, Stratum=2, last offset=0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2025/10/26 14:21:15) ens = 300 sec, 140 pings, (2.14 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 56 days,  1:34,  1 user,  load average: 0.21, 0.27, 0.16
+ 14:30:02 up 57 days,  1:34,  1 user,  load average: 0.02, 0.08, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -88,18 +50,13 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/DAS_while_cruise.warn
-      680 /home/adcp/log/hcorrstats_posmv.warn
-      1258 /home/adcp/log/hcorrstats_posmv.warn.2025-10-25
-      35 /home/adcp/log/lastensq_os75nb.warn
-      29 /home/adcp/log/lastensq_os75nb.warn.2025-10-25
-      2 /home/adcp/log/lastfewvec_os75nb.warn
-      2 /home/adcp/log/lastfewvec_os75nb.warn.2025-10-25
-      14 /home/adcp/log/update_hbins_os75bb.warn
+      918 /home/adcp/log/hcorrstats_posmv.warn
+      1173 /home/adcp/log/hcorrstats_posmv.warn.2025-10-26
+      1 /home/adcp/log/lastfewvec_os75nb.warn
 (2) rbin warnings:
  
-cnav gps  64008    1.00    0.00    8632.0       9    62    19     0     0
-cnav gps  64008    1.00    0.00    8632.0       9    62    19     0     0
+cnav gps  76540    1.00    0.00    8574.0       3    36    11     0     0
+cnav gps  76540    1.00    0.00    8574.0       3    36    11     0     0
 
 Figures and files:
 
@@ -110,13 +67,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/ktprof_amp_lastens.png
-       3      /home/adcp/www/figures/os75nb_lastens.png
+      40      /home/adcp/www/figures/ktprof_amp_lastens.png
+      40      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
+      40      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
