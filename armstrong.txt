@@ -1,118 +1,39 @@
-2025/10/27 14:30:02
+2025/10/28 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: ar97     ** is logging **
+Current cruise: ar97  *** not logging ***
 
-  wh300  2025/10/27  12:10:15 to 2025/10/27  14:28:14  (2 min. ago)
-  os38nb 2025/10/27  12:13:15 to 2025/10/27  14:28:15  (1 min. ago)
+  wh300  2025/10/27  12:10:15 to 2025/10/28  09:04:15  (325 min. ago) 5.4 hrs
+  os38nb 2025/10/27  12:13:15 to 2025/10/28  09:03:15  (326 min. ago) 5.4 hrs
 
-approximate lat, lon, depth:   41 12.65838 N   70 43.66513 W   depth=29
+approximate lat, lon, depth:   41 28.70933 N   70 44.02975 W   depth=17
 
-link: http://www.google.com/maps/place/41%2012.65838N+70%2043.66513W
+link: http://www.google.com/maps/place/41%2028.70933N+70%2044.02975W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath_udp")
-===========================
------- seapath_udp statistics ------
-===========================
-gyro-seapath_udp statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 299.5057398 to 299.5995708
-(2025/10/27 12:08:16 to 2025/10/27 14:23:23)
-all seapath_udp messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   27 out of 27   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -2.68, max = -0.91
-   mean = -1.70, stddev = 0.52
-
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.016)
-
-ddrange: 299.5057398 to 299.5995824
-(2025/10/27 12:08:16 to 2025/10/27 14:23:24)
-all posmv messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   27 out of 27   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -2.83, max = -0.80
-   mean = -1.66, stddev = 0.56
-
-===========================
------- gyro2 statistics ------
-===========================
-gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 299.5057398 to 299.5995940
-(2025/10/27 12:08:16 to 2025/10/27 14:23:25)
-all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   27 out of 27   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -1.52, max = -0.32
-   mean = -0.90, stddev = 0.36
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:       off
-os150 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:  on
-os38 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   305  -1333us[-1457us] +/-   12ms
+^* 192.147.41.12                 1  10   377   901   -430us[ -584us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=-0.000124, RMS offset=0.000084
+Reference ID: C093290C, Stratum=2, last offset=-0.000154, RMS offset=0.000280
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os38nb recent ping statistics
-
-(2025/10/27 14:23:15) ens = 300.0 sec, 100 pings, (3.00 sec/ping)
-
-wh300 recent ping statistics
-
-(2025/10/27 14:26:15) ens = 120.0 sec, 119 pings, (1.01 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:07 up 13 days,  2:26,  1 user,  load average: 0.26, 0.23, 0.22
+ 14:30:06 up 14 days,  2:26,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -124,19 +45,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_r
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      64 /home/adcp/log/3dayplots_os38nb.warn
-      90 /home/adcp/log/3dayplots_wh300.warn
-      2 /home/adcp/log/3dayplots_wh300.warn.2025-10-26
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      2 /home/adcp/log/lastfewvec_wh300.warn.2025-10-26
-      8 /home/adcp/log/quick_os38nb.warn
-      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -147,15 +56,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
-       1      /home/adcp/www/figures/os38nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+     324      /home/adcp/www/figures/ktprof_amp_lastens.png
+     324      /home/adcp/www/figures/wh300_lastens.png
+     324      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_ddaycont.png
-       1      /home/adcp/www/figures/os38nb_ddaycont.png
+     324      /home/adcp/www/figures/os38nb_ddaycont.png
+     324      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 

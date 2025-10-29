@@ -1,31 +1,82 @@
-2025/10/27 14:30:01
+2025/10/28 14:30:01
 currents01bh 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: BH25-25_Hill     ** is logging **
+
+ sv500 -- no data yet
+  os150bb 2025/10/28  11:55:33 to 2025/10/28  14:30:36  (0 min. ago)
+  os150nb 2025/10/28  11:55:33 to 2025/10/28  14:30:36  (0 min. ago)
+
+approximate lat, lon, depth:   46 45.96997 N   91 56.29879 W   depth=-153
+
+link: http://www.google.com/maps/place/46%2045.96997N+91%2056.29879W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ gpshead statistics ------
+===========================
+posmv-gpshead statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 300.4934537 to 300.5980261
+(2025/10/28 11:50:34 to 2025/10/28 14:21:09)
+all gpshead messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   30 out of 30   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.28, max = 0.59
+   mean = 0.18, stddev = 0.22
+
+
+=== Sonar Pingtype Summary =====
+
+sv500: Triggering command not found
+sv500 BB:       off
+sv500 NB:  on
+sv500 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:  on
+os150 NB:  on
+os150 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.14                1   6   377    27  +9883ns[+4668ns] +/-   54us
+^* 192.168.100.14                1   6   377     3  +5643ns[+8724ns] +/-   39us
 
-Reference ID: C0A8640E, Stratum=2, last offset=-0.000005, RMS offset=0.000003
+Reference ID: C0A8640E, Stratum=2, last offset=0.000003, RMS offset=0.000005
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os150bb recent ping statistics
+
+(2025/10/28 14:25:35) ens = 300 sec, 124 pings, (2.42 sec/ping)
+
+os150nb recent ping statistics
+
+(2025/10/28 14:20:35) ens = 300 sec, 124 pings, (2.42 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 37 days, 23:39,  1 user,  load average: 0.01, 0.02, 0.00
+ 14:30:52 up 38 days, 23:39,  1 user,  load average: 0.26, 0.31, 0.30
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -38,7 +89,19 @@ https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      384 /home/adcp/log/3dayplots_sv500.warn
+      577 /home/adcp/log/DAS_while_logging.warn
+      70 /home/adcp/log/grab_pings_sv500.warn
+      2404 /home/adcp/log/lastensq_sv500.warn
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      909 /home/adcp/log/lastfewvec_sv500.warn
+      1111 /home/adcp/log/quick_sv500.warn
 
 Figures and files:
 
@@ -49,15 +112,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    4194      /home/adcp/www/figures/os150nb_lastens.png
-    4194      /home/adcp/www/figures/ktprof_amp_lastens.png
-    4194      /home/adcp/www/figures/os150bb_lastens.png
+       0      /home/adcp/www/figures/os150bb_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    4194      /home/adcp/www/figures/os150nb_ddaycont.png
-    4194      /home/adcp/www/figures/os150bb_ddaycont.png
+       5      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os150bb_ddaycont.png
 
 
 
