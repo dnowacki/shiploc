@@ -1,39 +1,74 @@
-2025/10/29 14:30:01
+2025/10/30 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: ar97  *** not logging ***
+Current cruise: ar98a     ** is logging **
 
-  wh300  2025/10/27  12:10:15 to 2025/10/28  09:04:15  (1765 min. ago) 29.4 hrs
-  os38nb 2025/10/27  12:13:15 to 2025/10/28  09:03:15  (1766 min. ago) 29.4 hrs
+  wh300  2025/10/30  14:29:29 to 2025/10/30  14:29:29  (0 min. ago)
+ os38nb -- no data yet
 
-approximate lat, lon, depth:   41 28.70933 N   70 44.02975 W   depth=17
+approximate lat, lon, depth:   41 30.64861 N   70 40.19527 W   depth=4
 
-link: http://www.google.com/maps/place/41%2028.70933N+70%2044.02975W
+link: http://www.google.com/maps/place/41%2030.64861N+70%2040.19527W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath_udp")
+===========================
+------ seapath_udp statistics ------
+===========================
+/home/adcp/daily_report/seapath_udp_gyro_pystats.txt does not (yet?) exist
+===========================
+------ posmv statistics ------
+===========================
+/home/adcp/daily_report/posmv_gyro_pystats.txt does not (yet?) exist
+===========================
+------ gyro2 statistics ------
+===========================
+/home/adcp/daily_report/gyro2_gyro_pystats.txt does not (yet?) exist
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:  on
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.147.41.12                 1  10   377   382   +377us[ +425us] +/-   12ms
+^* 192.147.41.12                 1  10   377   834   +489us[ +510us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.000048, RMS offset=0.000078
+Reference ID: C093290C, Stratum=2, last offset=0.000021, RMS offset=0.000032
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:06 up 15 days,  2:26,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:07 up 16 days,  2:26,  1 user,  load average: 0.65, 0.23, 0.07
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -45,7 +80,12 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_r
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -56,15 +96,12 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1764      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1764      /home/adcp/www/figures/wh300_lastens.png
-    1764      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1764      /home/adcp/www/figures/os38nb_ddaycont.png
-    1764      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
