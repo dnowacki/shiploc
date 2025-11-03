@@ -1,107 +1,32 @@
-2025/11/01 14:15:02
+2025/11/02 14:15:02
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR2509     ** is logging **
+Current cruise: RR2509  *** not logging ***
 
-  os150nb 2025/10/12  22:53:16 to 2025/11/01  14:12:16  (3 min. ago)
-  os75nb 2025/10/12  22:53:16 to 2025/11/01  14:12:17  (2 min. ago)
+  os150nb 2025/10/12  22:53:16 to 2025/11/02  03:33:16  (642 min. ago) 10.7 hrs
+  os75nb 2025/10/12  22:53:16 to 2025/11/02  03:33:18  (641 min. ago) 10.7 hrs
 
-approximate lat, lon, depth:    1 20.12807 S   14 44.43739 W   depth=3778
+approximate lat, lon, depth:    1 17.98764 S   14 48.36081 W   depth=5014
 
-link: http://www.google.com/maps/place/1%2020.12807S+14%2044.43739W
+link: http://www.google.com/maps/place/1%2017.98764S+14%2048.36081W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath380mgc")
-===========================
------- seapath380mgc statistics ------
-===========================
-seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 304.2085341 to 304.5845527
-(2025/11/01 05:00:17 to 2025/11/01 14:01:45)
-all seapath380mgc messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   108 out of 108   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.02, max = 0.03
-   mean = 0.00, stddev = 0.01
-
-===========================
------- seapath380mgc5hz statistics ------
-===========================
-seapath380-seapath380mgc5hz statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 304.2085341 to 304.5845874
-(2025/11/01 05:00:17 to 2025/11/01 14:01:48)
-all seapath380mgc5hz messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   108 out of 108   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.0
-   min  = -0.02, max = 0.03
-   mean = 0.00, stddev = 0.01
-
-===========================
------- gyro statistics ------
-===========================
-seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 304.2085341 to 304.5846105
-(2025/11/01 05:00:17 to 2025/11/01 14:01:50)
-all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   108 out of 108   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = 0.37, max = 0.46
-   mean = 0.41, stddev = 0.02
-
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 ---------- ps -ef | grep ntpd | grep -v grep ------------
 ntp is not running
 ------------------------------------------
 
 
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2025/11/01 14:09:16) ens = 180 sec, 147 pings, (1.22 sec/ping)
-
-os75nb recent ping statistics
-
-(2025/11/01 14:09:18) ens = 180 sec, 85 pings, (2.12 sec/ping)
-
 
 
 
 ---------- uptime ------------
- 14:15:04 up 29 days, 33 min,  1 user,  load average: 0.16, 0.35, 0.47
+ 14:15:04 up 30 days, 33 min,  1 user,  load average: 0.00, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -116,10 +41,10 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
-
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
+(1) rbin warnings:
+ 
+gp170fwd gps  48857    1.00    0.00       2.1       6   136     2     0     0
+gp170fwd gps  48857    1.00    0.00       2.1       6   136     2     0     0
 
 Figures and files:
 
@@ -130,15 +55,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       2      /home/adcp/www/figures/os75nb_lastens.png
-       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+     640      /home/adcp/www/figures/os75nb_lastens.png
+     640      /home/adcp/www/figures/ktprof_amp_lastens.png
+     640      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os150nb_ddaycont.png
-       4      /home/adcp/www/figures/os75nb_ddaycont.png
+     640      /home/adcp/www/figures/os75nb_ddaycont.png
+     640      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
