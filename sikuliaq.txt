@@ -1,12 +1,12 @@
-2025/11/06 14:30:01
+2025/11/07 14:30:01
 currents04skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SKQ202519S_part2     ** is logging **
 
-   wh300 2025/10/26  23:09:02 to 2025/11/06  14:28:45  (1 min. ago)
+   wh300 2025/10/26  23:09:02 to 2025/11/07  14:28:46  (1 min. ago)
 
-approximate lat, lon, depth:   70 52.45612 N  150 0.83575 W   depth=25
+approximate lat, lon, depth:   70 46.22520 N  150 31.43128 W   depth=20
 
-link: http://www.google.com/maps/place/70%2052.45612N+150%200.83575W
+link: http://www.google.com/maps/place/70%2046.22520N+150%2031.43128W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,32 +24,32 @@ Database time ranges:
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 308.5968322 to 309.5968206
-(2025/11/05 14:19:26 to 2025/11/06 14:19:25)
+ddrange: 309.5965775 to 310.5965660
+(2025/11/06 14:19:04 to 2025/11/07 14:19:03)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   285 out of 285   (100%) were good
+   222 out of 222   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.24, max = -0.08
-   mean = -0.14, stddev = 0.02
+   mean N = 301, stddev N =  0.4
+   min  = -0.24, max = -0.06
+   mean = -0.16, stddev = 0.04
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 308.5968438 to 309.5968322
-(2025/11/05 14:19:27 to 2025/11/06 14:19:26)
+ddrange: 309.5966007 to 310.5965891
+(2025/11/06 14:19:06 to 2025/11/07 14:19:05)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   285 out of 285   (100%) were good
+   222 out of 222   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.08, max = -0.01
-   mean = -0.04, stddev = 0.02
+   mean N = 301, stddev N =  0.4
+   min  = -0.13, max = 0.01
+   mean = -0.07, stddev = 0.04
 
 
 === Sonar Pingtype Summary =====
@@ -75,10 +75,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1   6   377    56  +2901ns[  +16us] +/-   88us
-^* 10.1.0.6                      1   7   377    36  +5692ns[  +20us] +/-  105us
+^* 10.1.0.5                      1   7   377    42    +34us[  +45us] +/-  169us
+^+ 10.1.0.6                      1   8   377   232    +18us[  +11us] +/-  159us
 
-Reference ID: 0A010006, Stratum=2, last offset=0.000015, RMS offset=0.000026
+Reference ID: 0A010005, Stratum=2, last offset=0.000011, RMS offset=0.000034
 ------------------------------------------
 
 
@@ -86,13 +86,13 @@ Reference ID: 0A010006, Stratum=2, last offset=0.000015, RMS offset=0.000026
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/11/06 14:26:45) ens = 120 sec, 120 pings, (1.00 sec/ping)
+(2025/11/07 14:26:46) ens = 120 sec, 120 pings, (1.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day,  3:27,  3 users,  load average: 0.16, 0.24, 0.26
+ 14:30:02 up 2 days,  3:27,  3 users,  load average: 0.24, 0.27, 0.32
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -111,10 +111,8 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      43 /home/adcp/log/hcorrstats_mgc2.warn
-      49 /home/adcp/log/hcorrstats_mgc2.warn.2025-11-05
-      43 /home/adcp/log/hcorrstats_seapath.warn
-      49 /home/adcp/log/hcorrstats_seapath.warn.2025-11-05
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn.2025-11-06
 
 Figures and files:
 
@@ -131,7 +129,7 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
