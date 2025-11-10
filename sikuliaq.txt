@@ -1,12 +1,12 @@
-2025/11/08 14:30:01
+2025/11/09 14:30:01
 currents04skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SKQ202519S_part2     ** is logging **
 
-   wh300 2025/10/26  23:09:02 to 2025/11/08  14:28:46  (1 min. ago)
+   wh300 2025/10/26  23:09:02 to 2025/11/09  14:28:46  (1 min. ago)
 
-approximate lat, lon, depth:   71 44.62035 N  156 23.17345 W   depth=90
+approximate lat, lon, depth:   69 1.29504 N  167 6.38050 W   depth=47
 
-link: http://www.google.com/maps/place/71%2044.62035N+156%2023.17345W
+link: http://www.google.com/maps/place/69%201.29504N+167%206.38050W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,32 +24,32 @@ Database time ranges:
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 310.5966007 to 311.5965891
-(2025/11/07 14:19:06 to 2025/11/08 14:19:05)
+ddrange: 311.5968669 to 312.5968553
+(2025/11/08 14:19:29 to 2025/11/09 14:19:28)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.25, max = -0.07
-   mean = -0.18, stddev = 0.03
+   min  = -0.20, max = 0.01
+   mean = -0.11, stddev = 0.06
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 310.5966238 to 311.5966123
-(2025/11/07 14:19:08 to 2025/11/08 14:19:07)
+ddrange: 311.5968785 to 312.5968669
+(2025/11/08 14:19:30 to 2025/11/09 14:19:29)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.00, max = 0.11
-   mean = 0.06, stddev = 0.03
+   min  = 0.10, max = 0.22
+   mean = 0.16, stddev = 0.03
 
 
 === Sonar Pingtype Summary =====
@@ -75,10 +75,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.1.0.5                      1   6   377    48    +23us[  +26us] +/-  119us
-^+ 10.1.0.6                      1   6   377    61    +22us[  +26us] +/-  111us
+^* 10.1.0.5                      1   8   377   253    +42us[  +29us] +/-  168us
+^+ 10.1.0.6                      1   7   377   128    +41us[  +41us] +/-  145us
 
-Reference ID: 0A010005, Stratum=2, last offset=0.000003, RMS offset=0.000014
+Reference ID: 0A010005, Stratum=2, last offset=-0.000013, RMS offset=0.000023
 ------------------------------------------
 
 
@@ -86,13 +86,13 @@ Reference ID: 0A010005, Stratum=2, last offset=0.000003, RMS offset=0.000014
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2025/11/08 14:26:46) ens = 120 sec, 120 pings, (1.00 sec/ping)
+(2025/11/09 14:26:46) ens = 120 sec, 120 pings, (1.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days,  3:27,  3 users,  load average: 0.26, 0.30, 0.33
+ 14:30:02 up 4 days,  3:27,  2 users,  load average: 0.55, 0.48, 0.39
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -109,9 +109,6 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      2 /home/adcp/log/3dayplots_wh300.warn
 
 Figures and files:
 
@@ -122,13 +119,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
