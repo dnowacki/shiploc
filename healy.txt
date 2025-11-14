@@ -1,5 +1,5 @@
-2025/11/04 14:30:01
-currents02hly 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2025/11/13 23:41:35
+currents0foo 6.8.0-87-generic (jammy "Ubuntu 22.04.5 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
@@ -9,29 +9,19 @@ NOTE: This is the _primary_ computer
 
 
 
-
-using chrony
----------- chronyc tracking ------------
-MS Name/IP address         Stratum Poll Reach LastRx Last sample               
-===============================================================================
-^+ 192.168.42.40                 1   8   377    57    +53us[  +53us] +/-  138us
-^* 192.168.42.41                 1   9   377   334    +58us[  +66us] +/-  138us
-
-Reference ID: C0A82A29, Stratum=2, last offset=0.000008, RMS offset=0.000004
-------------------------------------------
-
-
-
+WARNING: neither ntpd nor chrond are installed
+WARNING: neither ntpd nor chrond are installed
 
 
 
 ---------- uptime ------------
- 14:30:02 up 173 days, 17:31,  1 user,  load average: 0.12, 0.04, 0.01
+ 23:41:35 up  2:31,  2 users,  load average: 0.07, 0.09, 0.09
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
 
-
+posmv quality plot:
+http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/posmv_qc.png
 
 
 
@@ -41,8 +31,20 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repor
 Summary of warnings:
 ______________________
 
-(1) proc sensor incompatibilities:
- - roll_msg (sae) not in sensor_cfg.py seapath385 messages: (['gps', 'sea'])
+(1) I/O warnings:
+     4 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     8 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
+
+      1 /home/adcp/log/DAS_while_cruise.warn
+      73 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      9 /home/adcp/log/send_buffered_mail.warn
+      4 /home/adcp/log/web_speedlog.warn
+(4) proc sensor incompatibilities:
+ - pitch_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
+ - roll_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
 
 Figures and files:
 
@@ -53,13 +55,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+     619      /home/adcp/www/figures/os150nb_lastens.png
+     619      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+     254      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
 local_status_mailto:
-
 
