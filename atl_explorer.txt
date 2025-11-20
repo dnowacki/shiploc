@@ -1,12 +1,12 @@
-2025/11/18 14:30:02
+2025/11/19 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: AE2528     ** is logging **
+Current cruise: Pierside_PostAE2528     ** is logging **
 
-   sv300 2025/11/12  17:47:55 to 2025/11/18  14:29:56  (1 min. ago)
+   sv300 2025/11/18  20:09:05 to 2025/11/19  14:29:05  (1 min. ago)
 
-approximate lat, lon, depth:   32 13.88462 N   64 32.95411 W   depth=2902
+approximate lat, lon, depth:   32 22.20011 N   64 41.75388 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2013.88462N+64%2032.95411W
+link: http://www.google.com/maps/place/32%2022.20011N+64%2041.75388W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 320.5951389 to 321.5951273
-(2025/11/17 14:17:00 to 2025/11/18 14:16:59)
+ddrange: 321.8382407 to 322.5987616
+(2025/11/18 20:07:04 to 2025/11/19 14:22:13)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   219 out of 219   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -0.73, max = -0.31
-   mean = -0.49, stddev = 0.05
+   min  = -0.73, max = -0.27
+   mean = -0.49, stddev = 0.08
 
 
 === Sonar Pingtype Summary =====
@@ -55,9 +55,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   6   377    57    +14us[  +13us] +/-   64us
+^* 192.168.51.9                  1   6   377    63    +35us[  +33us] +/-   83us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000006, RMS offset=0.000006
+Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000005
 ------------------------------------------
 
 
@@ -65,13 +65,13 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000006, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 sv300 recent ping statistics
 
-(2025/11/18 14:27:56) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2025/11/19 14:27:05) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:53 up 36 days, 18:20,  1 user,  load average: 0.39, 0.36, 0.36
+ 14:30:52 up 37 days, 18:20,  1 user,  load average: 0.25, 0.21, 0.20
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -83,7 +83,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      27 /home/adcp/log/3dayplots_sv300.warn
+      1 /home/adcp/log/lastfewvec_sv300.warn
 
 Figures and files:
 
@@ -94,13 +100,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/sv300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/sv300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/sv300_ddaycont.png
+       3      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
