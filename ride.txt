@@ -1,32 +1,97 @@
-2025/11/20 14:30:02
+2025/11/21 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: test_251120     ** is logging **
+
+
+approximate lat, lon, depth:   32 42.44019 N  117 14.20360 W   depth=1
+
+link: http://www.google.com/maps/place/32%2042.44019N+117%2014.20360W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ seapath_mgc statistics ------
+===========================
+seapath_mru-seapath_mgc statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 323.7393016 to 324.6039197
+(2025/11/20 17:44:36 to 2025/11/21 14:29:39)
+all seapath_mgc messages:  (81%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   208 out of 237   (88%) were good
+statistics of good data:
+   mean N = 486, stddev N =  186.2
+   min  = -0.13, max = 0.15
+   mean = 0.02, stddev = 0.05
+
+===========================
+------ hemisphere statistics ------
+===========================
+seapath_mru-hemisphere statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 323.7393016 to 324.6039544
+(2025/11/20 17:44:36 to 2025/11/21 14:29:42)
+all hemisphere messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   247 out of 247   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.2
+   min  = -3.43, max = 6.64
+   mean = 1.49, stddev = 1.75
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+ec150: Triggering command not found
+ec150 BB:  on
+ec150 NB:  on
+ec150 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-seapath-mru.ucsd.edu       1  10   377   821  -2709ns[ +840ns] +/-  164us
-^+ sr-ntp-pool.ucsd.edu          1  10   377   878    +11us[  +15us] +/-  161us
+^* sr-ntp-pool.ucsd.edu          1  10   377   569  +5922ns[  +13us] +/-  169us
+^+ sr-ntp-pool.ucsd.edu          1  10   377   895    +41us[  +48us] +/-  160us
 
-Reference ID: 647C6423, Stratum=2, last offset=0.000004, RMS offset=0.000009
+Reference ID: 647C6423, Stratum=2, last offset=0.000008, RMS offset=0.000009
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 8 days, 23:04,  2 users,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 9 days, 23:04,  2 users,  load average: 0.42, 0.29, 0.16
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -53,17 +118,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2382      /home/adcp/www/figures/os38nb_lastens.png
-    2382      /home/adcp/www/figures/os150nb_lastens.png
-    2382      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2382      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2382      /home/adcp/www/figures/os150nb_ddaycont.png
-    2382      /home/adcp/www/figures/wh300_ddaycont.png
-    2382      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
