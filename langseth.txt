@@ -1,7 +1,14 @@
-2025/11/26 14:30:02
-currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2025/11/27 14:30:01
+currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: MGL2513  *** not logging ***
+
+  os75nb 2025/11/27  06:40:47 to 2025/11/27  07:10:49  (439 min. ago) 7.3 hrs
+
+approximate lat, lon, depth:   32 0.62263 N  117 16.88750 W   depth=1281
+
+link: http://www.google.com/maps/place/32%200.62263N+117%2016.88750W
+not using zmq publishers, position is from serial GPS
+
 
 
 
@@ -14,10 +21,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    58    +21us[  +21us] +/-   83us
-^- _gateway                      4   6   377    53   +108us[ +108us] +/-   24ms
+^* timeserve2.langseth.ldeo>     1   6   377    48    +33us[  +33us] +/-   70us
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000000, RMS offset=0.000005
+Reference ID: C0A8030E, Stratum=2, last offset=0.000000, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -26,7 +32,7 @@ Reference ID: C0A8030E, Stratum=2, last offset=-0.000000, RMS offset=0.000005
 
 
 ---------- uptime ------------
- 14:30:02 up 48 days, 11:09,  1 user,  load average: 0.00, 0.01, 0.00
+ 14:30:02 up 88 days,  1:34,  1 user,  load average: 0.06, 0.09, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -39,7 +45,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/quick_os75nb.warn
 
 Figures and files:
 
@@ -50,15 +62,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  780512      /home/adcp/www/figures/os75nb_lastens.png
-  780512      /home/adcp/www/figures/os75bb_lastens.png
-  780512      /home/adcp/www/figures/ktprof_amp_lastens.png
+     437      /home/adcp/www/figures/ktprof_amp_lastens.png
+     437      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  780512      /home/adcp/www/figures/os75bb_ddaycont.png
-  780512      /home/adcp/www/figures/os75nb_ddaycont.png
+     437      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
