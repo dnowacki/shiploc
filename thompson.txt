@@ -1,4 +1,4 @@
-2025/12/08 01:12:39
+2025/12/08 22:46:22
 currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntpserver-11.rvtgt.uw.edu     1  10   377   542    +39us[  +59us] +/-  192us
+^* ntpserver-11.rvtgt.uw.edu     1  10   377     5    +17us[  +15us] +/-  131us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000020, RMS offset=0.000054
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000002, RMS offset=0.000022
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000020, RMS offset=0.000054
 
 
 ---------- uptime ------------
- 01:12:39 up 3 days, 10:14,  4 users,  load average: 0.58, 0.26, 0.19
+ 22:46:23 up 11:44,  4 users,  load average: 0.17, 0.08, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -46,7 +46,30 @@ ______________________
 (1) I/O warnings:
      9 I/O errors in last 2 /var/log/syslog
 (2) EDAC memory warnings:
-    10 EDAC (memory) errors in last 2 /var/log/syslog
+    12 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
+
+      4 /home/adcp/log/3dayplots_os150bb.warn
+      35 /home/adcp/log/3dayplots_os150nb.warn
+      4 /home/adcp/log/3dayplots_os75bb.warn
+      19 /home/adcp/log/3dayplots_os75nb.warn
+      6 /home/adcp/log/3dayplots_wh300.warn
+      12 /home/adcp/log/DAS_while_logging.warn
+      171 /home/adcp/log/lastensq_os150bb.warn
+      171 /home/adcp/log/lastensq_os150nb.warn
+      36 /home/adcp/log/lastensq_os75bb.warn
+      18 /home/adcp/log/lastensq_os75nb.warn
+      180 /home/adcp/log/lastensq_wh300.warn
+      4 /home/adcp/log/lastfewvec_os150bb.warn
+      16 /home/adcp/log/lastfewvec_os150nb.warn
+      3 /home/adcp/log/lastfewvec_os75bb.warn
+      15 /home/adcp/log/lastfewvec_os75nb.warn
+      5 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_os150bb.warn
+      17 /home/adcp/log/quick_os150nb.warn
+      1 /home/adcp/log/quick_os75bb.warn
+      16 /home/adcp/log/quick_os75nb.warn
+      2 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -57,21 +80,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os150bb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
+     602      /home/adcp/www/figures/ktprof_amp_lastens.png
+     602      /home/adcp/www/figures/os150nb_lastens.png
+     602      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150bb_ddaycont.png
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
-       0      /home/adcp/www/figures/os150nb_ddaycont.png
-       0      /home/adcp/www/figures/wh300_ddaycont.png
+     602      /home/adcp/www/figures/os75nb_ddaycont.png
+     602      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
