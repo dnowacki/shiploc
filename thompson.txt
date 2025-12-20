@@ -1,5 +1,5 @@
-2025/12/18 14:30:01
-currents04tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+2025/12/19 23:14:26
+currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.43.11.10                   1   9   377   448   +186ns[  +10us] +/-  198us
+^* ntpserver-11.rvtgt.uw.edu     1  10   377   826    +69us[  +71us] +/-  168us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000010, RMS offset=0.000028
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000002, RMS offset=0.000029
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000010, RMS offset=0.000028
 
 
 ---------- uptime ------------
- 14:30:02 up 9 days, 15:39,  3 users,  load average: 0.05, 0.01, 0.00
+ 23:14:27 up 11 days, 23 min,  4 users,  load average: 0.35, 0.39, 0.35
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -43,8 +43,19 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-    10 EDAC (memory) errors in last 2 /var/log/syslog
+(1) I/O warnings:
+    11 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
+
+      12 /home/adcp/log/3dayplots_os150nb.warn
+      24 /home/adcp/log/3dayplots_os75nb.warn
+      3 /home/adcp/log/3dayplots_wh300.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_os150nb.warn
 
 Figures and files:
 
@@ -55,11 +66,23 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
+
+
+
+-------------------
+cruise ended
 
 
 local_status_mailto:
