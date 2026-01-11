@@ -1,104 +1,31 @@
-2026/01/09 21:08:00
-currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: TN448     ** is logging **
-
-  wh300  2026/01/08  13:24:12 to 2026/01/09  21:06:12  (1 min. ago)
-  os150nb 2026/01/08  13:27:12 to 2026/01/09  21:07:13  (0 min. ago)
-  os75nb 2026/01/08  13:27:14 to 2026/01/09  21:07:14  (0 min. ago)
-
-approximate lat, lon, depth:   11 43.39582 N  134 57.40322 E   depth=4303
-
-link: http://www.google.com/maps/place/11%2043.39582N+134%2057.40322E
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+2026/01/10 14:30:01
+currents04tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "posmv")
-===========================
------- posmv statistics ------
-===========================
-gyro2-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
-
-ddrange:  7.8803918 to  8.8803836
-(2026/01/08 21:07:46 to 2026/01/09 21:07:45)
-all posmv messages:  (99%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.3
-   min  = 0.88, max = 1.43
-   mean = 1.08, stddev = 0.08
-
-===========================
------- seapath statistics ------
-===========================
-no good seapath data out of 1 (300sec) ensembles
-===========================
------- gyro1 statistics ------
-===========================
-gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange:  7.7660620 to  8.7660539
-(2026/01/08 18:23:08 to 2026/01/09 18:23:07)
-all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.3
-   min  = -0.01, max = 0.01
-   mean = 0.00, stddev = 0.00
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os150: Triggering not used (CX0,1)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,1)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
-WARNING: Chrony is installed but is not running
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ntpserver-11.rvtgt.uw.edu     1   9   377   459    +55us[  +98us] +/-  158us
+
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000043, RMS offset=0.000026
+------------------------------------------
 
 
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2026/01/09 21:02:13) ens = 300.0 sec, 236 pings, (1.27 sec/ping)
-
-wh300 recent ping statistics
-
-(2026/01/09 21:04:12) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
-
-os75nb recent ping statistics
-
-(2026/01/09 21:02:13) ens = 300.0 sec, 140 pings, (2.14 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 21:08:00 up 19 days, 18:50,  3 users,  load average: 0.55, 0.31, 0.28
+ 14:30:02 up 2 days,  1:13,  4 users,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -117,29 +44,7 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    11 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      27 /home/adcp/log/DAS_while_logging.warn
-      275 /home/adcp/log/hcorrstats_gyro1.warn
-      242 /home/adcp/log/hcorrstats_seapath.warn
-      20 /home/adcp/log/send_buffered_mail.warn
-      25 /home/adcp/log/send_buffered_mail.warn.2026-01-08
-(3) rbin warnings:
- 
-gps_cnav gps  90498    1.01   -9.04       1.6       0     1     1     0     1
-seapath gps   5861    1.00   -9.05       1.0       0     1     1     0     1
-seapath sea   5861    1.00   -9.05       1.0       0     1     1     0     1
-seapath hdg   5861    1.00   -9.05       1.0       0     1     1     0     1
-posmv gps 180996    0.50   -9.60       0.6       0     1     1     0     1
-posmv pmv 180995    0.50   -9.51       0.6       0     1     1     0     1
-posmv hdg 180996    0.50   -9.60       0.6       0     1     1     0     1
-gyro1 hdg 180971    0.50   -9.55       0.6       0     1     1     0     1
-gyro2 hdg 180958    0.50   -9.55       0.6       0     1     1     0     1
-(4) timestamp warnings:
-jumps forward: 0   jumps back: 1
-max backward 0 seconds at dday 7.666671
-
+     7 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -150,17 +55,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       5      /home/adcp/www/figures/os150nb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
-       0      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 

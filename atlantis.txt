@@ -1,7 +1,15 @@
-2026/01/09 14:30:01
-atcurrents04 5.15.0-161-generic (jammy "Ubuntu 22.04.5 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2026/01/10 14:30:01
+atcurrents03 5.15.0-140-generic (jammy "Ubuntu 22.04.5 LTS")
+Current cruise: at50-45  *** not logging ***
+
+ wh300 -- no data yet
+ os75nb -- no data yet
+
+approximate lat, lon, depth:   26 41.55279 N  115 4.19121 W   depth=3330
+
+link: http://www.google.com/maps/place/26%2041.55279N+115%204.19121W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
@@ -14,9 +22,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    53  +3582ns[+4192ns] +/-   31us
+^* timeserver.atlantis.whoi>     1   6   377    45    +17ns[ -389ns] +/-   28us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000002
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
@@ -25,7 +33,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000002
 
 
 ---------- uptime ------------
- 14:30:02 up 45 days, 16:45,  1 user,  load average: 0.02, 0.01, 0.00
+ 14:30:02 up 1 day, 14:48,  1 user,  load average: 0.05, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -41,7 +49,11 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    15 EDAC (memory) errors in last 2 /var/log/syslog
+     8 EDAC (memory) errors in last 2 /var/log/syslog
+(2) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 7.847230
+
 
 Figures and files:
 
@@ -52,15 +64,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  819063      /home/adcp/www/figures/wh300_lastens.png
-  819063      /home/adcp/www/figures/ktprof_amp_lastens.png
-  819063      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  819063      /home/adcp/www/figures/wh300_ddaycont.png
-  819063      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
