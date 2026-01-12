@@ -1,31 +1,104 @@
-2026/01/10 14:30:01
-currents04tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2026/01/11 14:30:01
+currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+Current cruise: TN448     ** is logging **
+
+  wh300  2026/01/08  13:24:12 to 2026/01/11  14:28:12  (1 min. ago)
+  os150nb 2026/01/08  13:27:12 to 2026/01/11  14:27:13  (2 min. ago)
+  os75nb 2026/01/08  13:27:14 to 2026/01/11  14:27:12  (2 min. ago)
+
+approximate lat, lon, depth:   13 1.11481 N  142 0.12594 E   depth=2839
+
+link: http://www.google.com/maps/place/13%201.11481N+142%200.12594E
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro2-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
+
+ddrange:  9.5997419 to 10.5997337
+(2026/01/10 14:23:38 to 2026/01/11 14:23:37)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.3
+   min  = 0.56, max = 0.98
+   mean = 0.76, stddev = 0.06
+
+===========================
+------ seapath statistics ------
+===========================
+/home/adcp/daily_report/seapath_gyro2_pystats.txt does not (yet?) exist
+===========================
+------ gyro1 statistics ------
+===========================
+gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange:  9.5997939 to 10.5997857
+(2026/01/10 14:23:42 to 2026/01/11 14:23:41)
+all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.3
+   min  = -0.00, max = 0.01
+   mean = 0.00, stddev = 0.00
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,1)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os75: Triggering not used (CX0,1)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
----------- chronyc tracking ------------
-MS Name/IP address         Stratum Poll Reach LastRx Last sample               
-===============================================================================
-^* ntpserver-11.rvtgt.uw.edu     1   9   377   459    +55us[  +98us] +/-  158us
-
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000043, RMS offset=0.000026
-------------------------------------------
+WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2026/01/11 14:22:13) ens = 300.0 sec, 236 pings, (1.27 sec/ping)
+
+wh300 recent ping statistics
+
+(2026/01/11 14:26:12) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+
+os75nb recent ping statistics
+
+(2026/01/11 14:22:13) ens = 300.0 sec, 140 pings, (2.14 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 2 days,  1:13,  4 users,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 21 days, 12:12,  3 users,  load average: 0.07, 0.31, 0.36
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -43,8 +116,12 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     7 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      200 /home/adcp/log/DAS_while_logging.warn
+      2000 /home/adcp/log/hcorrstats_gyro1.warn
+      1276 /home/adcp/log/hcorrstats_seapath.warn
+      2112 /home/adcp/log/hcorrstats_seapath.warn.2026-01-10
 
 Figures and files:
 
@@ -55,10 +132,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

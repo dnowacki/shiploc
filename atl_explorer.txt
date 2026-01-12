@@ -1,80 +1,31 @@
-2026/01/10 14:30:01
+2026/01/12 01:43:00
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: Pierside_PostAE2601     ** is logging **
-
-   sv300 2026/01/06  21:27:43 to 2026/01/10  14:29:44  (0 min. ago)
-  os75bb 2026/01/06  21:30:44 to 2026/01/10  14:25:46  (4 min. ago)
-  os75nb 2026/01/06  21:30:44 to 2026/01/10  14:25:46  (4 min. ago)
-
-approximate lat, lon, depth:   32 22.20059 N   64 41.75386 W   depth=-6
-
-link: http://www.google.com/maps/place/32%2022.20059N+64%2041.75386W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange:  8.6021528 to  9.6021412
-(2026/01/09 14:27:06 to 2026/01/10 14:27:05)
-all abxtwo messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.72, max = -0.30
-   mean = -0.50, stddev = 0.08
-
-
-=== Sonar Pingtype Summary =====
-
-sv300: Triggering command not found
-sv300 BB:  on
-sv300 NB:  on
-sv300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
-WARNING: Chrony is installed but is not running
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* 192.168.51.9                  1   7   377     4  +6616ns[+7546ns] +/-   86us
+
+Reference ID: C0A83309, Stratum=2, last offset=0.000001, RMS offset=0.000008
+------------------------------------------
 
 
-------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2026/01/10 14:20:44) ens = 300 sec, 73 pings, (4.11 sec/ping)
-
-sv300 recent ping statistics
-
-(2026/01/10 14:25:44) ens = 120 sec, 150 pings, (0.80 sec/ping)
-
-os75bb recent ping statistics
-
-(2026/01/10 14:20:44) ens = 300 sec, 73 pings, (4.11 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 89 days, 18:19,  1 user,  load average: 0.33, 0.57, 0.54
+ 01:43:50 up 91 days,  5:33,  3 users,  load average: 0.10, 0.05, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -89,11 +40,9 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/dail
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     6 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      8 /home/adcp/log/3dayplots_os75bb.warn
+      9 /home/adcp/log/DAS_while_cruise.warn
 
 Figures and files:
 
@@ -104,17 +53,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_lastens.png
-       4      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/sv300_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+     238      /home/adcp/www/figures/sv300_lastens.png
+     238      /home/adcp/www/figures/os75nb_lastens.png
+     238      /home/adcp/www/figures/ktprof_amp_lastens.png
+     238      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os75bb_ddaycont.png
-       3      /home/adcp/www/figures/os75nb_ddaycont.png
-       2      /home/adcp/www/figures/sv300_ddaycont.png
+     238      /home/adcp/www/figures/os75nb_ddaycont.png
+     238      /home/adcp/www/figures/os75bb_ddaycont.png
+     238      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
