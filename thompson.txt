@@ -1,14 +1,14 @@
-2026/01/13 14:30:01
+2026/01/14 14:30:01
 currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: TN448     ** is logging **
 
-  wh300  2026/01/08  13:24:12 to 2026/01/13  14:28:27  (1 min. ago)
-  os150nb 2026/01/08  13:27:12 to 2026/01/13  14:26:27  (3 min. ago)
-  os75nb 2026/01/08  13:27:14 to 2026/01/13  14:26:29  (3 min. ago)
+  wh300  2026/01/08  13:24:12 to 2026/01/14  14:28:27  (1 min. ago)
+  os150nb 2026/01/08  13:27:12 to 2026/01/14  14:26:27  (3 min. ago)
+  os75nb 2026/01/08  13:27:14 to 2026/01/14  14:26:29  (3 min. ago)
 
-approximate lat, lon, depth:   14 36.66721 N  144 47.83056 E   depth=1867
+approximate lat, lon, depth:   12 35.79370 N  143 37.05356 E   depth=3126
 
-link: http://www.google.com/maps/place/14%2036.66721N+144%2047.83056E
+link: http://www.google.com/maps/place/12%2035.79370N+143%2037.05356E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ Database time ranges:
 ===========================
 gyro2-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
 
-ddrange: 12.2544884 to 12.5986814
-(2026/01/13 06:06:28 to 2026/01/13 14:22:06)
+ddrange: 12.5986698 to 13.5986619
+(2026/01/13 14:22:05 to 2026/01/14 14:22:04)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   99 out of 99   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.5
-   min  = 0.88, max = 1.17
-   mean = 0.97, stddev = 0.05
+   mean N = 601, stddev N =  0.3
+   min  = 0.71, max = 1.06
+   mean = 0.94, stddev = 0.05
 
 ===========================
 ------ seapath statistics ------
@@ -46,16 +46,16 @@ statistics of good data:
 ===========================
 gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 12.2544884 to 12.5987219
-(2026/01/13 06:06:28 to 2026/01/13 14:22:10)
+ddrange: 12.5987277 to 13.5987197
+(2026/01/13 14:22:10 to 2026/01/14 14:22:09)
 all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   99 out of 99   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.3
-   min  = -0.02, max = 0.02
-   mean = -0.00, stddev = 0.00
+   min  = -0.11, max = 0.11
+   mean = 0.00, stddev = 0.01
 
 
 === Sonar Pingtype Summary =====
@@ -84,21 +84,21 @@ WARNING: Chrony is installed but is not running
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2026/01/13 14:21:27) ens = 300.0 sec, 235 pings, (1.28 sec/ping)
+(2026/01/14 14:21:28) ens = 300.0 sec, 236 pings, (1.27 sec/ping)
 
 wh300 recent ping statistics
 
-(2026/01/13 14:26:27) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+(2026/01/14 14:26:27) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
 
 os75nb recent ping statistics
 
-(2026/01/13 14:21:27) ens = 300.0 sec, 140 pings, (2.14 sec/ping)
+(2026/01/14 14:21:27) ens = 300.0 sec, 140 pings, (2.14 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 23 days, 12:12,  3 users,  load average: 0.26, 0.39, 0.37
+ 14:30:02 up 24 days, 12:12,  3 users,  load average: 0.23, 0.34, 0.40
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -118,11 +118,8 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      3 /home/adcp/log/DAS_while_logging.warn
-      726 /home/adcp/log/hcorrstats_seapath.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
+      1276 /home/adcp/log/hcorrstats_seapath.warn
+      1562 /home/adcp/log/hcorrstats_seapath.warn.2026-01-13
 
 Figures and files:
 
@@ -135,8 +132,8 @@ Checking updating of 5-minute plots:
 age (minutes)          filename
        3      /home/adcp/www/figures/os150nb_lastens.png
        3      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/wh300_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:

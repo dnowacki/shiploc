@@ -1,16 +1,7 @@
-2026/01/13 14:30:02
+2026/01/14 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: SR2601  *** not logging ***
-
-  wh300  2026/01/09  15:54:52 to 2026/01/13  05:40:53  (529 min. ago) 8.8 hrs
-  os150nb 2026/01/09  15:51:50 to 2026/01/13  05:37:52  (532 min. ago) 8.9 hrs
-  os38nb 2026/01/09  15:57:55 to 2026/01/13  05:37:54  (532 min. ago) 8.9 hrs
-
-approximate lat, lon, depth:   32 37.21156 N  117 10.82711 W   depth=22
-
-link: http://www.google.com/maps/place/32%2037.21156N+117%2010.82711W
-not using zmq publishers, position is from serial GPS
-
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
@@ -23,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377   250    +46us[  +52us] +/-  149us
-^? sr-ntp-pool.ucsd.edu          1  10     0   34d   +965ms[  -13us] +/-  147us
+^* sr-ntp-pool.ucsd.edu          1  10   377   819    -14us[-2138ns] +/-  161us
+^? sr-seapath-mgc.ucsd.edu       1  10     0   35d  +1124ms[  -13us] +/-  147us
 
-Reference ID: 647C6423, Stratum=2, last offset=0.000006, RMS offset=0.000009
+Reference ID: 647C6423, Stratum=2, last offset=0.000012, RMS offset=0.000017
 ------------------------------------------
 
 
@@ -35,7 +26,7 @@ Reference ID: 647C6423, Stratum=2, last offset=0.000006, RMS offset=0.000009
 
 
 ---------- uptime ------------
- 14:30:02 up 47 days, 21:49,  3 users,  load average: 0.00, 0.04, 0.07
+ 14:30:02 up 48 days, 21:49,  2 users,  load average: 0.24, 0.11, 0.06
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -47,12 +38,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      2 /home/adcp/log/3dayplots_os38nb.warn
 
 Figures and files:
 
@@ -63,17 +49,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     528      /home/adcp/www/figures/os38nb_lastens.png
-     528      /home/adcp/www/figures/os150nb_lastens.png
-     528      /home/adcp/www/figures/ktprof_amp_lastens.png
-     528      /home/adcp/www/figures/wh300_lastens.png
+    1968      /home/adcp/www/figures/os38nb_lastens.png
+    1968      /home/adcp/www/figures/os150nb_lastens.png
+    1968      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1968      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     528      /home/adcp/www/figures/os150nb_ddaycont.png
-     528      /home/adcp/www/figures/wh300_ddaycont.png
-     528      /home/adcp/www/figures/os38nb_ddaycont.png
+    1968      /home/adcp/www/figures/os150nb_ddaycont.png
+    1968      /home/adcp/www/figures/wh300_ddaycont.png
+    1968      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
