@@ -1,5 +1,5 @@
-2026/01/31 14:30:01
-currents01pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2026/02/03 14:30:01
+currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 
@@ -11,14 +11,20 @@ zmq is not enabled. no zmq position.
 
 
 using chrony
-WARNING: Chrony is installed but is not running
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+WARNING: Chrony has no ntp servers specified
+Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
+------------------------------------------
+
 
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 24 days, 15:40,  1 user,  load average: 0.05, 0.01, 0.00
+ 14:30:02 up 21 days, 18:44,  1 user,  load average: 0.21, 0.14, 0.08
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -30,7 +36,13 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_rep
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      15 /home/adcp/log/send_buffered_mail.warn
+      25 /home/adcp/log/send_buffered_mail.warn.2026-02-02
 
 Figures and files:
 
@@ -41,10 +53,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+    7033      /home/adcp/www/figures/ktprof_amp_lastens.png
+    7033      /home/adcp/www/figures/os75nb_lastens.png
+    7033      /home/adcp/www/figures/wh1200_lastens.png
+    7033      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+    7033      /home/adcp/www/figures/os75nb_ddaycont.png
+    7033      /home/adcp/www/figures/os75bb_ddaycont.png
+    7033      /home/adcp/www/figures/wh1200_ddaycont.png
 
 
 
