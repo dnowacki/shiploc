@@ -1,14 +1,14 @@
-2026/02/09 14:30:01
+2026/02/10 14:30:01
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: Pierside_PostAE2604  *** not logging ***
 
-  sv300  2026/02/07  13:51:43 to 2026/02/09  12:29:43  (121 min. ago) 2.0 hrs
-  os75bb 2026/02/07  13:54:44 to 2026/02/09  12:29:43  (121 min. ago) 2.0 hrs
-  os75nb 2026/02/07  13:54:44 to 2026/02/09  12:29:43  (121 min. ago) 2.0 hrs
+  sv300  2026/02/07  13:51:43 to 2026/02/10  04:00:04  (630 min. ago) 10.5 hrs
+  os75bb 2026/02/07  13:54:44 to 2026/02/10  03:57:58  (633 min. ago) 10.6 hrs
+  os75nb 2026/02/07  13:54:44 to 2026/02/10  03:57:58  (633 min. ago) 10.6 hrs
 
-approximate lat, lon, depth:   32 22.69642 N   64 40.90462 W   depth=10
+approximate lat, lon, depth:   32 22.20049 N   64 41.75375 W   depth=-6
 
-link: http://www.google.com/maps/place/32%2022.69642N+64%2040.90462W
+link: http://www.google.com/maps/place/32%2022.20049N+64%2041.75375W
 not using zmq publishers, position is from serial GPS
 
 
@@ -23,9 +23,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   8   377    57    +37us[  +37us] +/-   93us
+^* 192.168.51.9                  1   6   377    12    +25us[  +32us] +/-   83us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000003
+Reference ID: C0A83309, Stratum=2, last offset=0.000006, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -34,7 +34,7 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000003
 
 
 ---------- uptime ------------
- 14:30:52 up 7 days,  2:23,  1 user,  load average: 0.00, 0.04, 0.06
+ 14:30:52 up 8 days,  2:23,  1 user,  load average: 0.27, 0.14, 0.10
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -53,13 +53,17 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      453 /home/adcp/log/3dayplots_os75bb.warn
-      864 /home/adcp/log/3dayplots_os75bb.warn.2026-02-08
-      450 /home/adcp/log/3dayplots_os75nb.warn
-      864 /home/adcp/log/3dayplots_os75nb.warn.2026-02-08
-      450 /home/adcp/log/3dayplots_sv300.warn
-      864 /home/adcp/log/3dayplots_sv300.warn.2026-02-08
-      1 /home/adcp/log/DAS_while_logging.warn
+      465 /home/adcp/log/3dayplots_os75bb.warn
+      572 /home/adcp/log/3dayplots_os75bb.warn.2026-02-09
+      465 /home/adcp/log/3dayplots_os75nb.warn
+      569 /home/adcp/log/3dayplots_os75nb.warn.2026-02-09
+      465 /home/adcp/log/3dayplots_sv300.warn
+      558 /home/adcp/log/3dayplots_sv300.warn.2026-02-09
+      469 /home/adcp/log/DAS_while_logging.warn
+      8 /home/adcp/log/lastensq_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_sv300.warn
 
 Figures and files:
 
@@ -70,17 +74,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     120      /home/adcp/www/figures/sv300_lastens.png
-     120      /home/adcp/www/figures/os75nb_lastens.png
-     120      /home/adcp/www/figures/os75bb_lastens.png
-     120      /home/adcp/www/figures/ktprof_amp_lastens.png
+      93      /home/adcp/www/figures/sv300_lastens.png
+      93      /home/adcp/www/figures/os75nb_lastens.png
+      93      /home/adcp/www/figures/ktprof_amp_lastens.png
+      93      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     120      /home/adcp/www/figures/os75nb_ddaycont.png
-     120      /home/adcp/www/figures/os75bb_ddaycont.png
-     120      /home/adcp/www/figures/sv300_ddaycont.png
+      93      /home/adcp/www/figures/os75nb_ddaycont.png
+      93      /home/adcp/www/figures/os75bb_ddaycont.png
+      93      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
