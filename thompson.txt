@@ -1,0 +1,169 @@
+2026/02/23 14:30:02
+currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+Current cruise: TN449_part2     ** is logging **
+
+  wh300  2026/02/08  01:55:45 to 2026/02/23  14:28:46  (1 min. ago)
+  os150nb 2026/02/08  01:58:46 to 2026/02/23  14:29:47  (0 min. ago)
+  os75nb 2026/02/08  01:58:47 to 2026/02/23  14:24:48  (5 min. ago)
+
+approximate lat, lon, depth:   13 25.51184 N  149 36.29288 E   depth=6024
+
+link: http://www.google.com/maps/place/13%2025.51184N+149%2036.29288E
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro2-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
+
+ddrange: 52.6014337 to 53.6014262
+(2026/02/22 14:26:04 to 2026/02/23 14:26:03)
+all posmv messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.3
+   min  = 0.71, max = 1.04
+   mean = 0.91, stddev = 0.06
+
+===========================
+------ seapath statistics ------
+===========================
+gyro2-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 52.6014569 to 53.6014493
+(2026/02/22 14:26:06 to 2026/02/23 14:26:05)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.5
+   min  = -0.15, max = 0.15
+   mean = 0.03, stddev = 0.06
+
+===========================
+------ gyro1 statistics ------
+===========================
+gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 52.6014858 to 53.6014782
+(2026/02/22 14:26:08 to 2026/02/23 14:26:08)
+all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.3
+   min  = -0.01, max = 0.00
+   mean = 0.00, stddev = 0.00
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,1)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os75: Triggering not used (CX0,1)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ntpserver-11.rvtgt.uw.edu     1  10   377   685    -33us[-6600ns] +/-  106us
+
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000027, RMS offset=0.000024
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2026/02/23 14:19:47) ens = 300.0 sec, 236 pings, (1.27 sec/ping)
+
+wh300 recent ping statistics
+
+(2026/02/23 14:26:46) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+
+os75nb recent ping statistics
+
+(2026/02/23 14:19:48) ens = 300.0 sec, 141 pings, (2.13 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:03 up 64 days, 12:12,  3 users,  load average: 0.22, 0.40, 0.42
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
+
+posmv4 quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv4_qc.png
+posmv5 quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_qc.png
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/DAS_while_cruise.warn
+      2 /home/adcp/log/DAS_while_cruise.warn.2026-02-22
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       4      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       5      /home/adcp/www/figures/os150nb_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+
+
+
+local_status_mailto:
+
+
+
