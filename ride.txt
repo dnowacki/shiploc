@@ -1,15 +1,15 @@
-2026/02/24 14:30:02
+2026/02/25 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SR2602     ** is logging **
 
-  wh300  2026/02/21  17:26:33 to 2026/02/24  14:28:33  (1 min. ago)
+  wh300  2026/02/21  17:26:33 to 2026/02/25  14:28:32  (1 min. ago)
  ec150cw -- no data yet
-  os150nb 2026/02/21  17:29:33 to 2026/02/24  14:29:33  (0 min. ago)
-  os38nb 2026/02/21  17:29:36 to 2026/02/24  14:29:33  (0 min. ago)
+  os150nb 2026/02/21  17:29:33 to 2026/02/25  14:29:32  (0 min. ago)
+  os38nb 2026/02/21  17:29:36 to 2026/02/25  14:29:33  (0 min. ago)
 
-approximate lat, lon, depth:   32 5.46881 N  119 23.56481 W   depth=1506
+approximate lat, lon, depth:   32 15.62383 N  118 55.39610 W   depth=1027
 
-link: http://www.google.com/maps/place/32%205.46881N+119%2023.56481W
+link: http://www.google.com/maps/place/32%2015.62383N+118%2055.39610W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -30,16 +30,16 @@ no good seapath_mgc data out of 0 (300sec) ensembles
 ===========================
 seapath_mru-hemisphere statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 53.6011281 to 54.6011223
-(2026/02/23 14:25:37 to 2026/02/24 14:25:37)
+ddrange: 54.6013654 to 55.6013596
+(2026/02/24 14:25:58 to 2026/02/25 14:25:57)
 all hemisphere messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.2
-   min  = -5.21, max = 4.84
-   mean = 0.22, stddev = 1.50
+   min  = -4.01, max = 6.09
+   mean = 1.03, stddev = 1.59
 
 
 === Sonar Pingtype Summary =====
@@ -70,10 +70,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377   257    -10us[  -16us] +/-  137us
-^? sr-ntp-pool.ucsd.edu          1  10     0   76d   +449ms[  -13us] +/-  147us
+^* sr-seapath-mru.ucsd.edu       1  10   377   832    +47us[  +60us] +/-  142us
+^? sr-ntp-pool.ucsd.edu          1  10     0   77d   +167ms[  -13us] +/-  147us
 
-Reference ID: 647C6423, Stratum=2, last offset=-0.000006, RMS offset=0.000018
+Reference ID: 647C6423, Stratum=2, last offset=0.000014, RMS offset=0.000012
 ------------------------------------------
 
 
@@ -81,21 +81,21 @@ Reference ID: 647C6423, Stratum=2, last offset=-0.000006, RMS offset=0.000018
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2026/02/24 14:26:33) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+(2026/02/25 14:26:32) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2026/02/24 14:24:33) ens = 300.0 sec, 273 pings, (1.10 sec/ping)
+(2026/02/25 14:24:33) ens = 300.0 sec, 273 pings, (1.10 sec/ping)
 
 os38nb recent ping statistics
 
-(2026/02/24 14:19:33) ens = 300.0 sec, 100 pings, (3.00 sec/ping)
+(2026/02/25 14:19:33) ens = 300.0 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 89 days, 21:49,  2 users,  load average: 0.47, 0.47, 0.45
+ 14:30:02 up 90 days, 21:49,  2 users,  load average: 0.59, 0.61, 0.58
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -113,17 +113,19 @@ ______________________
 (1) wordcount of log/*.warn:
 
       2610 /home/adcp/log/3dayplots_ec150cw.warn
-      4320 /home/adcp/log/3dayplots_ec150cw.warn.2026-02-23
+      4320 /home/adcp/log/3dayplots_ec150cw.warn.2026-02-24
+      34 /home/adcp/log/3dayplots_os38nb.warn
       1348 /home/adcp/log/DAS_while_logging.warn
-      2231 /home/adcp/log/DAS_while_logging.warn.2026-02-23
+      2231 /home/adcp/log/DAS_while_logging.warn.2026-02-24
       522 /home/adcp/log/grab_pings_ec150cw.warn
-      864 /home/adcp/log/grab_pings_ec150cw.warn.2026-02-23
+      864 /home/adcp/log/grab_pings_ec150cw.warn.2026-02-24
       4991 /home/adcp/log/lastensq_ec150cw.warn
-      8255 /home/adcp/log/lastensq_ec150cw.warn.2026-02-23
+      8255 /home/adcp/log/lastensq_ec150cw.warn.2026-02-24
+      1 /home/adcp/log/lastensq_os38nb.warn
       1881 /home/adcp/log/lastfewvec_ec150cw.warn
-      3113 /home/adcp/log/lastfewvec_ec150cw.warn.2026-02-23
+      3113 /home/adcp/log/lastfewvec_ec150cw.warn.2026-02-24
       5130 /home/adcp/log/quick_ec150cw.warn
-      8490 /home/adcp/log/quick_ec150cw.warn.2026-02-23
+      8490 /home/adcp/log/quick_ec150cw.warn.2026-02-24
 
 Figures and files:
 

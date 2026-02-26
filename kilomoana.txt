@@ -1,14 +1,14 @@
-2026/02/24 14:30:01
+2026/02/25 14:30:01
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: km2601c     ** is logging **
 
-   wh300 2026/02/19  00:25:54 to 2026/02/24  14:28:26  (1 min. ago)
-  os38bb 2026/02/19  07:13:09 to 2026/02/19  22:18:06  (6732 min. ago)  4.7 days
-  os38nb 2026/02/19  00:28:56 to 2026/02/19  22:18:06  (6732 min. ago)  4.7 days
+   wh300 2026/02/19  00:25:54 to 2026/02/25  14:28:25  (1 min. ago)
+  os38bb 2026/02/19  07:13:09 to 2026/02/19  22:18:06  (8172 min. ago)  5.7 days
+  os38nb 2026/02/19  00:28:56 to 2026/02/19  22:18:06  (8172 min. ago)  5.7 days
 
-approximate lat, lon, depth:   16 50.56324 N  162 40.98359 E   depth=3840
+approximate lat, lon, depth:   18 4.40505 N  164 48.27717 E   depth=5444
 
-link: http://www.google.com/maps/place/16%2050.56324N+162%2040.98359E
+link: http://www.google.com/maps/place/18%204.40505N+164%2048.27717E
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 53.5994465 to 54.5994361
-(2026/02/23 14:23:12 to 2026/02/24 14:23:11)
+ddrange: 54.5996618 to 55.5996510
+(2026/02/24 14:23:31 to 2026/02/25 14:23:30)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 599, stddev N =  2.9
-   min  = -0.64, max = -0.14
-   mean = -0.40, stddev = 0.11
+   mean N = 600, stddev N =  1.9
+   min  = -0.73, max = -0.14
+   mean = -0.43, stddev = 0.12
 
 
 === Sonar Pingtype Summary =====
@@ -56,9 +56,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    3   8   377   232    +29us[  +32us] +/-   57ms
+^* kmroute.km                    3   6   377    46  +5496ns[+8302ns] +/-   25ms
 
-Reference ID: 0A009601, Stratum=4, last offset=0.000003, RMS offset=0.000031
+Reference ID: 0A009601, Stratum=4, last offset=0.000003, RMS offset=0.000107
 ------------------------------------------
 
 
@@ -70,7 +70,7 @@ os38nb recent ping statistics
 
 wh300 recent ping statistics
 
-(2026/02/24 14:26:26) ens = 120 sec, 150 pings, (0.80 sec/ping)
+(2026/02/25 14:26:25) ens = 120 sec, 150 pings, (0.80 sec/ping)
 
 os38bb recent ping statistics
 
@@ -80,7 +80,7 @@ os38bb recent ping statistics
 
 
 ---------- uptime ------------
- 14:30:02 up 31 days, 17:17,  2 users,  load average: 0.46, 0.61, 0.61
+ 14:30:02 up 32 days, 17:17,  2 users,  load average: 0.46, 0.68, 0.63
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -98,17 +98,16 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/DAS_while_cruise.warn
       458 /home/adcp/log/DAS_while_logging.warn
-      760 /home/adcp/log/DAS_while_logging.warn.2026-02-23
+      758 /home/adcp/log/DAS_while_logging.warn.2026-02-24
       406 /home/adcp/log/grab_pings_os38bb.warn
-      672 /home/adcp/log/grab_pings_os38bb.warn.2026-02-23
+      672 /home/adcp/log/grab_pings_os38bb.warn.2026-02-24
       406 /home/adcp/log/grab_pings_os38nb.warn
-      672 /home/adcp/log/grab_pings_os38nb.warn.2026-02-23
+      672 /home/adcp/log/grab_pings_os38nb.warn.2026-02-24
       1563 /home/adcp/log/lastensq_os38bb.warn
-      2592 /home/adcp/log/lastensq_os38bb.warn.2026-02-23
+      2583 /home/adcp/log/lastensq_os38bb.warn.2026-02-24
       1539 /home/adcp/log/lastensq_os38nb.warn
-      2556 /home/adcp/log/lastensq_os38nb.warn.2026-02-23
+      2547 /home/adcp/log/lastensq_os38nb.warn.2026-02-24
 
 Figures and files:
 
@@ -119,8 +118,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    6722      /home/adcp/www/figures/os38bb_lastens.png
-    6722      /home/adcp/www/figures/os38nb_lastens.png
+    8162      /home/adcp/www/figures/os38bb_lastens.png
+    8162      /home/adcp/www/figures/os38nb_lastens.png
        1      /home/adcp/www/figures/wh300_lastens.png
        1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
