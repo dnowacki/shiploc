@@ -1,34 +1,88 @@
-2026/02/28 14:30:01
+2026/03/01 14:30:01
 currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: MGL2602  *** not logging ***
+Current cruise: MGL2602     ** is logging **
+
+  os75nb 2026/02/28  15:25:48 to 2026/03/01  14:25:46  (4 min. ago)
+
+approximate lat, lon, depth:   13 1.63566 N  106 26.67183 W   depth=3948
+
+link: http://www.google.com/maps/place/13%201.63566N+106%2026.67183W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
-no positions found from filelist seapath/*.gps.rbin
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 58.6394358 to 59.5981626
+(2026/02/28 15:20:47 to 2026/03/01 14:21:21)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   276 out of 276   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = 0.22, max = 0.45
+   mean = 0.34, stddev = 0.04
+
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
+
+ddrange: 58.6394358 to 59.5981742
+(2026/02/28 15:20:47 to 2026/03/01 14:21:22)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   276 out of 276   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -2.00, max = -1.69
+   mean = -1.86, stddev = 0.06
 
 
+=== Sonar Pingtype Summary =====
 
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    36   +503ns[  +43ns] +/-   69us
+^* timeserve2.langseth.ldeo>     1   7   377   102  +4247ns[+4094ns] +/-   50us
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000000, RMS offset=0.000005
+Reference ID: C0A8030E, Stratum=2, last offset=-0.000000, RMS offset=0.000003
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2026/03/01 14:20:46) ens = 300 sec, 141 pings, (2.13 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 21 days, 19:39,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 22 days, 19:39,  1 user,  load average: 0.15, 0.18, 0.18
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -41,7 +95,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      3 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -52,10 +112,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/ktprof_amp_lastens.png
+       4      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
