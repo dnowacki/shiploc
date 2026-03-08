@@ -1,0 +1,162 @@
+2026/03/07 14:30:01
+currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: Pierside_PostAE2605     ** is logging **
+
+  sv300  2026/02/16  21:56:57 to 2026/03/07  14:30:46  (0 min. ago)
+  os75bb 2026/02/16  21:59:59 to 2026/03/07  14:29:47  (1 min. ago)
+  os75nb 2026/02/16  21:59:59 to 2026/03/07  14:29:47  (1 min. ago)
+
+approximate lat, lon, depth:   32 22.20035 N   64 41.75407 W   depth=-6
+
+link: http://www.google.com/maps/place/32%2022.20035N+64%2041.75407W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 64.9482407 to 65.5008102
+(2026/03/06 22:45:28 to 2026/03/07 12:01:10)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   159 out of 159   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.3
+   min  = -0.72, max = -0.30
+   mean = -0.50, stddev = 0.07
+
+
+=== Sonar Pingtype Summary =====
+
+sv300: Triggering command not found
+sv300 BB:  on
+sv300 NB:  on
+sv300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:  on
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* 192.168.51.9                  1   6   377    50    +48us[  +47us] +/-   95us
+
+Reference ID: C0A83309, Stratum=2, last offset=-0.000000, RMS offset=0.000004
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2026/03/07 14:24:46) ens = 300.0 sec, 73 pings, (4.11 sec/ping)
+
+sv300 recent ping statistics
+
+(2026/03/07 14:26:46) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+
+os75bb recent ping statistics
+
+(2026/03/07 14:24:46) ens = 300.0 sec, 73 pings, (4.11 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:53 up  2:18,  1 user,  load average: 0.94, 0.52, 0.40
+===============================
+figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
+daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
+
+
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      519 /home/adcp/log/3dayplots_os75bb.warn
+      92 /home/adcp/log/3dayplots_os75bb.warn.2026-03-06
+      519 /home/adcp/log/3dayplots_os75nb.warn
+      92 /home/adcp/log/3dayplots_os75nb.warn.2026-03-06
+      519 /home/adcp/log/3dayplots_sv300.warn
+      57 /home/adcp/log/3dayplots_sv300.warn.2026-03-06
+      21 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/daily.py.warn
+      207 /home/adcp/log/hcorrstats_abxtwo.warn
+      168 /home/adcp/log/lastensq_os75bb.warn
+      112 /home/adcp/log/lastensq_os75bb.warn.2026-03-06
+      176 /home/adcp/log/lastensq_os75nb.warn
+      112 /home/adcp/log/lastensq_os75nb.warn.2026-03-06
+      435 /home/adcp/log/lastensq_sv300.warn
+      291 /home/adcp/log/lastensq_sv300.warn.2026-03-06
+      1 /home/adcp/log/lastfewvec_os75bb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_sv300.warn
+(3) rbin warnings:
+ 
+hydrins gps  55866    1.01  -47863.75       1.0       0     1     1     0     1
+hydrins hdg  55867    1.01  -47864.76       1.0       0     1     1     0     1
+hydrins pmv  55867    1.01  -47864.76       1.0       0     1     1     0     1
+abxtwo gps  55867    1.01  -47863.77       1.0       0     1     1     0     1
+abxtwo adu  55867    1.01  -47863.77       1.0       0     1     1     0     1
+abxtwo_b1a1 gps  55866    1.00  -47862.77       1.0       0     1     1     0     1
+abxtwo_b1a2 gps  55867    1.00  -47862.77       1.0       0     1     1     0     1
+abxtwo_b2a1 gps  55867    1.00  -47862.77       1.0       0     1     1     0     1
+(4) timestamp warnings:
+jumps forward: 2   jumps back: 2
+max forward 0 seconds at dday 60.500019
+max backward 0 seconds at dday 60.500019
+
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/os75bb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/sv300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       1      /home/adcp/www/figures/os75bb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/sv300_ddaycont.png
+
+
+
+local_status_mailto:
+
+
