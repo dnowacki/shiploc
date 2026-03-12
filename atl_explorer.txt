@@ -1,14 +1,14 @@
-2026/03/10 14:30:01
+2026/03/11 14:30:02
 currents02ae 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: AE2606     ** is logging **
 
-  sv300  2026/03/08  13:29:40 to 2026/03/10  14:29:40  (1 min. ago)
-  os75bb 2026/03/08  13:32:41 to 2026/03/10  14:27:41  (3 min. ago)
-  os75nb 2026/03/08  13:32:41 to 2026/03/10  14:27:41  (3 min. ago)
+  sv300  2026/03/08  13:29:40 to 2026/03/11  14:29:40  (1 min. ago)
+  os75bb 2026/03/08  13:32:41 to 2026/03/11  14:27:40  (3 min. ago)
+  os75nb 2026/03/08  13:32:41 to 2026/03/11  14:27:40  (3 min. ago)
 
-approximate lat, lon, depth:   31 38.68980 N   64 8.98902 W   depth=4535
+approximate lat, lon, depth:   31 31.68983 N   63 32.91949 W   depth=4567
 
-link: http://www.google.com/maps/place/31%2038.68980N+64%208.98902W
+link: http://www.google.com/maps/place/31%2031.68983N+63%2032.91949W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,16 +26,16 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 67.6033681 to 68.6033565
-(2026/03/09 14:28:51 to 2026/03/10 14:28:50)
-all abxtwo messages:  (100%)  were good  [using available QC]
+ddrange: 68.6033681 to 69.6033565
+(2026/03/10 14:28:51 to 2026/03/11 14:28:50)
+all abxtwo messages:  (97%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   237 out of 254   (93%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -0.65, max = -0.12
-   mean = -0.47, stddev = 0.06
+   mean N = 238, stddev N =  107.0
+   min  = -0.85, max = -0.26
+   mean = -0.51, stddev = 0.07
 
 
 === Sonar Pingtype Summary =====
@@ -57,9 +57,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1   7   377    45   +502ns[-9804ns] +/-   44us
+^* 192.168.51.9                  1   6   377    36    +34us[  +36us] +/-   79us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000010, RMS offset=0.000006
+Reference ID: C0A83309, Stratum=2, last offset=0.000002, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -67,21 +67,21 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000010, RMS offset=0.000006
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2026/03/10 14:22:43) ens = 300.0 sec, 74 pings, (4.05 sec/ping)
+(2026/03/11 14:22:42) ens = 300.0 sec, 74 pings, (4.05 sec/ping)
 
 sv300 recent ping statistics
 
-(2026/03/10 14:27:40) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+(2026/03/11 14:27:40) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
 
 os75bb recent ping statistics
 
-(2026/03/10 14:22:43) ens = 300.0 sec, 74 pings, (4.05 sec/ping)
+(2026/03/11 14:22:42) ens = 300.0 sec, 74 pings, (4.05 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:52 up 2 days, 21:56,  1 user,  load average: 0.41, 0.44, 0.31
+ 14:30:53 up 3 days, 21:56,  1 user,  load average: 0.43, 0.42, 0.31
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -101,11 +101,21 @@ ______________________
 (2) wordcount of log/*.warn:
 
       522 /home/adcp/log/3dayplots_os75bb.warn
-      864 /home/adcp/log/3dayplots_os75bb.warn.2026-03-09
+      864 /home/adcp/log/3dayplots_os75bb.warn.2026-03-10
       522 /home/adcp/log/3dayplots_os75nb.warn
-      878 /home/adcp/log/3dayplots_os75nb.warn.2026-03-09
+      864 /home/adcp/log/3dayplots_os75nb.warn.2026-03-10
       522 /home/adcp/log/3dayplots_sv300.warn
-      864 /home/adcp/log/3dayplots_sv300.warn.2026-03-09
+      864 /home/adcp/log/3dayplots_sv300.warn.2026-03-10
+      58 /home/adcp/log/hcorrstats_abxtwo.warn
+      23 /home/adcp/log/hcorrstats_abxtwo.warn.2026-03-10
+      140 /home/adcp/log/lastensq_os75bb.warn
+      122 /home/adcp/log/lastensq_os75bb.warn.2026-03-10
+      139 /home/adcp/log/lastensq_os75nb.warn
+      122 /home/adcp/log/lastensq_os75nb.warn.2026-03-10
+      352 /home/adcp/log/lastensq_sv300.warn
+      310 /home/adcp/log/lastensq_sv300.warn.2026-03-10
+      7 /home/adcp/log/update_hbins_sv300.warn
+      19 /home/adcp/log/update_hbins_sv300.warn.2026-03-10
 
 Figures and files:
 
