@@ -1,7 +1,16 @@
-2026/03/11 14:30:01
-currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2026/03/12 14:30:01
+currents04tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+Current cruise: TN449_20260307  *** not logging ***
+
+  wh300  2026/03/07  09:11:23 to 2026/03/11  22:28:42  (961 min. ago) 16.0 hrs
+  os150nb 2026/03/07  09:14:22 to 2026/03/11  22:28:42  (961 min. ago) 16.0 hrs
+  os75nb 2026/03/07  09:14:24 to 2026/03/11  22:28:44  (961 min. ago) 16.0 hrs
+
+approximate lat, lon, depth:   15 17.66393 N  159 33.80977 E   depth=5559
+
+link: http://www.google.com/maps/place/15%2017.66393N+159%2033.80977E
+not using zmq publishers, position is from serial GPS
+
 
 
 
@@ -14,9 +23,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.43.11.10                   1  10   377   891    +10us[+8464ns] +/-  112us
+^* 10.43.11.10                   1  10   377   825    -13us[-8747ns] +/-  169us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000002, RMS offset=0.000032
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000004, RMS offset=0.000035
 ------------------------------------------
 
 
@@ -25,7 +34,7 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000002, RMS offset=0.000032
 
 
 ---------- uptime ------------
- 14:30:05 up 10 days,  6:24,  3 users,  load average: 0.00, 0.02, 0.00
+ 14:30:02 up 6 days, 18:15,  3 users,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -43,8 +52,10 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     5 EDAC (memory) errors in last 2 /var/log/syslog
+(1) I/O warnings:
+     2 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     4 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -55,17 +66,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   20541      /home/adcp/www/figures/os150nb_lastens.png
-   20541      /home/adcp/www/figures/os75nb_lastens.png
-   20541      /home/adcp/www/figures/ktprof_amp_lastens.png
-   20541      /home/adcp/www/figures/wh300_lastens.png
+     960      /home/adcp/www/figures/wh300_lastens.png
+     960      /home/adcp/www/figures/os75nb_lastens.png
+     960      /home/adcp/www/figures/ktprof_amp_lastens.png
+     960      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   20542      /home/adcp/www/figures/wh300_ddaycont.png
-   20541      /home/adcp/www/figures/os150nb_ddaycont.png
-   20541      /home/adcp/www/figures/os75nb_ddaycont.png
+     960      /home/adcp/www/figures/wh300_ddaycont.png
+     960      /home/adcp/www/figures/os150nb_ddaycont.png
+     960      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
