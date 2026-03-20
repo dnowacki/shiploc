@@ -1,8 +1,10 @@
-2026/03/18 14:30:01
-currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+2026/03/19 14:30:01
+currents05tt 6.14.0-27-generic (noble "Ubuntu 24.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
 
 
 
@@ -14,9 +16,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.43.11.10                   1   9   377    26    +44us[  +46us] +/-  177us
+^* 10.43.11.10                   1   9   377   220  -8610ns[  -31us] +/-  121us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000001, RMS offset=0.000017
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000022, RMS offset=0.000020
 ------------------------------------------
 
 
@@ -25,10 +27,10 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000001, RMS offset=0.000017
 
 
 ---------- uptime ------------
- 14:30:01 up 1 day, 20:20,  3 users,  load average: 0.03, 0.02, 0.00
+ 14:30:52 up 2 days, 20:20,  3 users,  load average: 0.00, 0.00, 0.00
 ===============================
-figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
-daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
+figures:  https://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
+daily report: https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
 
 posmv4 quality plot:
 https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv4_qc.png
@@ -44,7 +46,11 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(2) expected backup disk not found:
+
+--->>>  /disk2/home/data NOT FOUND (check mounts) <<<---
+
 
 Figures and files:
 
@@ -55,17 +61,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   30621      /home/adcp/www/figures/os150nb_lastens.png
-   30621      /home/adcp/www/figures/os75nb_lastens.png
-   30621      /home/adcp/www/figures/ktprof_amp_lastens.png
-   30621      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   30621      /home/adcp/www/figures/wh300_ddaycont.png
-   30621      /home/adcp/www/figures/os150nb_ddaycont.png
-   30621      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
