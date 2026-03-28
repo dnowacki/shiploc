@@ -1,0 +1,167 @@
+2026/03/27 14:30:01
+currents04tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+Current cruise: TN450     ** is logging **
+
+  wh300  2026/03/22  03:13:59 to 2026/03/27  14:27:59  (2 min. ago)
+  os150nb 2026/03/22  03:16:59 to 2026/03/27  14:26:59  (3 min. ago)
+  os75nb 2026/03/22  03:16:59 to 2026/03/27  14:27:01  (3 min. ago)
+
+approximate lat, lon, depth:   15 0.38024 N  147 2.34641 E   depth=5428
+
+link: http://www.google.com/maps/place/15%200.38024N+147%202.34641E
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro2-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.030)
+
+ddrange: 84.6025125 to 85.6025040
+(2026/03/26 14:27:37 to 2026/03/27 14:27:36)
+all posmv messages:  (87%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   251 out of 254   (99%) were good
+statistics of good data:
+   mean N = 524, stddev N =  200.0
+   min  = -1.93, max = 4.07
+   mean = 1.01, stddev = 0.48
+
+===========================
+------ seapath statistics ------
+===========================
+gyro2-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 84.6025415 to 85.6025330
+(2026/03/26 14:27:40 to 2026/03/27 14:27:39)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.5
+   min  = -0.05, max = 0.19
+   mean = 0.06, stddev = 0.05
+
+===========================
+------ gyro1 statistics ------
+===========================
+gyro2-gyro1 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 84.6025646 to 85.6025561
+(2026/03/26 14:27:42 to 2026/03/27 14:27:41)
+all gyro1 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.3
+   min  = -0.04, max = 0.03
+   mean = -0.00, stddev = 0.00
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os150: Triggering not used (CX0,1)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os75: Triggering not used (CX0,1)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* 10.43.11.10                   1  10   377  1037    -53us[  -83us] +/-  135us
+
+Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000030, RMS offset=0.000038
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2026/03/27 14:21:59) ens = 300.0 sec, 140 pings, (2.14 sec/ping)
+
+wh300 recent ping statistics
+
+(2026/03/27 14:25:59) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+
+os150nb recent ping statistics
+
+(2026/03/27 14:21:59) ens = 300.0 sec, 236 pings, (1.27 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:02 up 10 days, 20:20,  3 users,  load average: 0.31, 0.41, 0.36
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
+
+posmv4 quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv4_qc.png
+posmv5 quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_qc.png
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       3      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/os150nb_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+
+
+
+local_status_mailto:
+
+
+
