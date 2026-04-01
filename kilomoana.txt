@@ -1,0 +1,127 @@
+2026/03/31 14:30:01
+currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: km2602     ** is logging **
+
+   wh300 2026/03/29  18:29:40 to 2026/03/31  14:29:40  (0 min. ago)
+  os38bb 2026/03/29  18:32:45 to 2026/03/31  14:27:43  (2 min. ago)
+  os38nb 2026/03/29  18:32:45 to 2026/03/31  14:27:43  (2 min. ago)
+
+approximate lat, lon, depth:   22 44.79308 N  158 1.64150 W   depth=4713
+
+link: http://www.google.com/maps/place/22%2044.79308N+158%201.64150W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _primary_ computer
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
+
+ddrange: 88.6034886 to 89.6034814
+(2026/03/30 14:29:01 to 2026/03/31 14:29:01)
+all posmv messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   288 out of 288   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  1.0
+   min  = -2.07, max = 1.05
+   mean = -0.63, stddev = 0.62
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:  on
+os38 NB:  on
+os38 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* kmroute.km                    3   9   377   343   +119us[ +129us] +/-   61ms
+
+Reference ID: 0A009601, Stratum=4, last offset=0.000009, RMS offset=0.000034
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os38nb recent ping statistics
+
+(2026/03/31 14:22:43) ens = 300 sec, 50 pings, (6.00 sec/ping)
+
+wh300 recent ping statistics
+
+(2026/03/31 14:27:40) ens = 120 sec, 150 pings, (0.80 sec/ping)
+
+os38bb recent ping statistics
+
+(2026/03/31 14:22:43) ens = 300 sec, 50 pings, (6.00 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:02 up 66 days, 17:17,  2 users,  load average: 1.12, 0.98, 0.81
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
+
+posmv quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/posmv_qc.png
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/DAS_while_logging.warn
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/os38bb_lastens.png
+       1      /home/adcp/www/figures/os38nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/os38bb_ddaycont.png
+       1      /home/adcp/www/figures/os38nb_ddaycont.png
+
+
+
+local_status_mailto:
+
