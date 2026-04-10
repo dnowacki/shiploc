@@ -1,13 +1,13 @@
-2026/04/08 14:30:01
+2026/04/09 14:30:01
 currents05skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SKQ2603T     ** is logging **
 
-  wh300  2026/04/07  12:13:28 to 2026/04/08  14:29:28  (0 min. ago)
-  os75nb 2026/04/07  12:16:28 to 2026/04/08  14:26:29  (3 min. ago)
+  wh300  2026/04/07  12:13:28 to 2026/04/09  14:29:28  (0 min. ago)
+  os75nb 2026/04/07  12:16:28 to 2026/04/09  14:26:28  (3 min. ago)
 
-approximate lat, lon, depth:   19 45.85541 S   87 51.25014 W   depth=4054
+approximate lat, lon, depth:   16 2.73938 S   90 18.68583 W   depth=4534
 
-link: http://www.google.com/maps/place/19%2045.85541S+87%2051.25014W
+link: http://www.google.com/maps/place/16%202.73938S+90%2018.68583W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ Database time ranges:
 ===========================
 mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 96.5079664 to 97.4248993
-(2026/04/07 12:11:28 to 2026/04/08 10:11:51)
+ddrange: 97.6017573 to 98.6017457
+(2026/04/08 14:26:32 to 2026/04/09 14:26:31)
 all seapath messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   264 out of 264   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.23, max = -0.16
-   mean = -0.19, stddev = 0.02
+   min  = -0.24, max = -0.16
+   mean = -0.20, stddev = 0.01
 
 ===========================
 ------ mgc2 statistics ------
 ===========================
 mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 96.6017975 to 97.6017804
-(2026/04/07 14:26:35 to 2026/04/08 14:26:34)
+ddrange: 97.6017689 to 98.6017573
+(2026/04/08 14:26:33 to 2026/04/09 14:26:32)
 all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = 0.02, max = 0.06
-   mean = 0.04, stddev = 0.01
+   min  = -0.02, max = 0.06
+   mean = 0.03, stddev = 0.02
 
 
 === Sonar Pingtype Summary =====
@@ -76,10 +76,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 10.1.0.5                      1  10   377   116    -27us[  -27us] +/-  235us
-^* 10.1.0.6                      1  10   377   329  -7992ns[  -11us] +/-  141us
+^- 10.1.0.5                      1   9   377   337    +24us[  +40us] +/-  165us
+^* 10.1.0.6                      1   9   377   116    +26us[  +42us] +/-  172us
 
-Reference ID: 0A010006, Stratum=2, last offset=-0.000003, RMS offset=0.000040
+Reference ID: 0A010006, Stratum=2, last offset=0.000016, RMS offset=0.000077
 ------------------------------------------
 
 
@@ -87,17 +87,17 @@ Reference ID: 0A010006, Stratum=2, last offset=-0.000003, RMS offset=0.000040
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2026/04/08 14:27:28) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+(2026/04/09 14:27:28) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
 
 os75nb recent ping statistics
 
-(2026/04/08 14:21:28) ens = 300.0 sec, 132 pings, (2.27 sec/ping)
+(2026/04/09 14:21:29) ens = 300.0 sec, 133 pings, (2.26 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 53 days, 21:05,  3 users,  load average: 0.98, 0.48, 0.32
+ 14:30:01 up 54 days, 21:05,  3 users,  load average: 0.12, 0.15, 0.20
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -114,11 +114,10 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      425 /home/adcp/log/hcorrstats_seapath.warn
-      140 /home/adcp/log/lastensq_os75nb.warn
-      360 /home/adcp/log/lastensq_wh300.warn
-      28 /home/adcp/log/update_hbins_wh300.warn
-      145639 /home/adcp/log/web_speedlog.warn
+      1200 /home/adcp/log/hcorrstats_seapath.warn
+      1375 /home/adcp/log/hcorrstats_seapath.warn.2026-04-08
+      226 /home/adcp/log/lastensq_os75nb.warn
+      572 /home/adcp/log/lastensq_wh300.warn
 
 Figures and files:
 
