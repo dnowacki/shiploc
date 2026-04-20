@@ -1,31 +1,85 @@
-2026/04/18 14:30:02
+2026/04/19 14:30:01
 atcurrents03 5.15.0-140-generic (jammy "Ubuntu 22.04.5 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: at50-47     ** is logging **
+
+  wh300  2026/04/19  14:09:42 to 2026/04/19  14:29:43  (0 min. ago)
+  os75nb 2026/04/19  14:12:42 to 2026/04/19  14:27:43  (2 min. ago)
+
+approximate lat, lon, depth:   27 56.39175 N   82 26.51978 W   depth=5
+
+link: http://www.google.com/maps/place/27%2056.39175N+82%2026.51978W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ hydrins2 statistics ------
+===========================
+hydrins1-hydrins2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 108.5887037 to 108.5991782
+(2026/04/19 14:07:44 to 2026/04/19 14:22:49)
+all hydrins2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   3 out of 3   (100%) were good
+statistics of good data:
+   mean N = 300, stddev N =  1.2
+   min  = -0.03, max = -0.03
+   mean = -0.03, stddev = 0.00
+
+===========================
+------ seapath statistics ------
+===========================
+no good seapath data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    29  +2784ns[+2718ns] +/-   30us
+^* timeserver.atlantis.whoi>     1   6   377    25  +3306ns[+3983ns] +/-   31us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000002
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2026/04/19 14:27:43) ens = 120.0 sec, 75 pings, (1.60 sec/ping)
+
+os75nb recent ping statistics
+
+(2026/04/19 14:22:43) ens = 300.0 sec, 133 pings, (2.26 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 14:27,  1 user,  load average: 0.09, 0.02, 0.01
+ 14:30:02 up 2 days, 14:27,  1 user,  load average: 0.15, 0.51, 0.58
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -41,7 +95,14 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    43 EDAC (memory) errors in last 2 /var/log/syslog
+    36 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      3 /home/adcp/log/3dayplots_os75nb.warn
+      3 /home/adcp/log/3dayplots_wh300.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -52,15 +113,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2118      /home/adcp/www/figures/wh300_lastens.png
-    2118      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2118      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2118      /home/adcp/www/figures/wh300_ddaycont.png
-    2118      /home/adcp/www/figures/os75nb_ddaycont.png
+       2      /home/adcp/www/figures/wh300_ddaycont.png
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
