@@ -1,7 +1,10 @@
-2026/04/23 19:16:13
+2026/04/24 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: ar100  *** not logging ***
+
+
+no positions found from filelist seapath_udp/*.gps.rbin
+
 
 
 
@@ -14,9 +17,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ese01.armstrong.whoi.edu      1  10   377   835   +224us[ +315us] +/-   12ms
+^* ese01.armstrong.whoi.edu      1  10   377   810   -275us[ -380us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=0.000092, RMS offset=0.000329
+Reference ID: C093290C, Stratum=2, last offset=-0.000105, RMS offset=0.000168
 ------------------------------------------
 
 
@@ -25,7 +28,7 @@ Reference ID: C093290C, Stratum=2, last offset=0.000092, RMS offset=0.000329
 
 
 ---------- uptime ------------
- 19:16:14 up 1 day,  7:41,  1 user,  load average: 0.10, 0.08, 0.07
+ 14:30:02 up 2 days,  2:55,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -42,11 +45,6 @@ ______________________
 
 (1) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      330 /home/adcp/log/3dayplots_os38nb.warn
-      282 /home/adcp/log/3dayplots_wh300.warn
-      257 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
@@ -57,21 +55,11 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1407      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1407      /home/adcp/www/figures/wh300_lastens.png
-    1407      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1407      /home/adcp/www/figures/os38nb_ddaycont.png
-    1407      /home/adcp/www/figures/wh300_ddaycont.png
 
-
-
-
--------------------
-cruise ended
 
 
 local_status_mailto:
