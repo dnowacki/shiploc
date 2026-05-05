@@ -1,35 +1,95 @@
-2026/05/03 14:30:01
+2026/05/04 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: SR2608  *** not logging ***
+Current cruise: SR2608     ** is logging **
+
+  wh300  2026/05/03  17:05:24 to 2026/05/04  14:29:23  (0 min. ago)
+  os150nb 2026/05/03  17:08:23 to 2026/05/04  14:28:23  (1 min. ago)
+
+approximate lat, lon, depth:   59 51.07648 N  149 28.55121 W   depth=269
+
+link: http://www.google.com/maps/place/59%2051.07648N+149%2028.55121W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
-no positions found from filelist seapath_mru/*.gps.rbin
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ seapath_mgc statistics ------
+===========================
+no good seapath_mgc data out of 0 (300sec) ensembles
+===========================
+------ hemisphere statistics ------
+===========================
+seapath_mru-hemisphere statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 122.7106883 to 123.5964348
+(2026/05/03 17:03:23 to 2026/05/04 14:18:52)
+all hemisphere messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   255 out of 255   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.4
+   min  = -3.92, max = 5.84
+   mean = 1.42, stddev = 1.94
 
 
+=== Sonar Pingtype Summary =====
 
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+ec150: Triggering command not found
+ec150 BB:  on
+ec150 NB:  on
+ec150 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377   552    +27us[  +25us] +/-  141us
-^? sr-seapath-mgc.ucsd.edu       0  10     0     -     +0ns[   +0ns] +/-    0ns
+^* sr-ntp-pool.ucsd.edu          1  10   377    75    -33us[  -45us] +/-  137us
+^? sr-ntp-pool.ucsd.edu          0  10     0     -     +0ns[   +0ns] +/-    0ns
 
-Reference ID: 647C6423, Stratum=2, last offset=-0.000002, RMS offset=0.000009
+Reference ID: 647C6423, Stratum=2, last offset=-0.000012, RMS offset=0.000013
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2026/05/04 14:27:23) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+
+os150nb recent ping statistics
+
+(2026/05/04 14:23:23) ens = 300.0 sec, 272 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 33 days, 23:20,  2 users,  load average: 0.14, 0.04, 0.01
+ 14:30:02 up 34 days, 23:20,  3 users,  load average: 0.29, 0.28, 0.33
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -41,7 +101,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      20 /home/adcp/log/3dayplots_os150nb.warn
+      12 /home/adcp/log/3dayplots_wh300.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -52,10 +121,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
