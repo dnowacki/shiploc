@@ -1,13 +1,13 @@
-2026/05/04 14:30:01
+2026/05/05 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SR2608     ** is logging **
 
-  wh300  2026/05/03  17:05:24 to 2026/05/04  14:29:23  (0 min. ago)
-  os150nb 2026/05/03  17:08:23 to 2026/05/04  14:28:23  (1 min. ago)
+  wh300  2026/05/03  17:05:24 to 2026/05/05  14:29:29  (0 min. ago)
+  os150nb 2026/05/03  17:08:23 to 2026/05/05  14:29:29  (0 min. ago)
 
-approximate lat, lon, depth:   59 51.07648 N  149 28.55121 W   depth=269
+approximate lat, lon, depth:   60 0.24937 N  149 19.18852 W   depth=-10
 
-link: http://www.google.com/maps/place/59%2051.07648N+149%2028.55121W
+link: http://www.google.com/maps/place/60%200.24937N+149%2019.18852W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -28,16 +28,16 @@ no good seapath_mgc data out of 0 (300sec) ensembles
 ===========================
 seapath_mru-hemisphere statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 122.7106883 to 123.5964348
-(2026/05/03 17:03:23 to 2026/05/04 14:18:52)
+ddrange: 123.5975228 to 124.5975170
+(2026/05/04 14:20:26 to 2026/05/05 14:20:25)
 all hemisphere messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   255 out of 255   (100%) were good
+   212 out of 212   (100%) were good
 statistics of good data:
-   mean N = 601, stddev N =  0.4
-   min  = -3.92, max = 5.84
-   mean = 1.42, stddev = 1.94
+   mean N = 601, stddev N =  0.2
+   min  = -4.60, max = 5.25
+   mean = 0.18, stddev = 1.95
 
 
 === Sonar Pingtype Summary =====
@@ -68,10 +68,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377    75    -33us[  -45us] +/-  137us
-^? sr-ntp-pool.ucsd.edu          0  10     0     -     +0ns[   +0ns] +/-    0ns
+^* sr-ntp-pool.ucsd.edu          1  10   377   686    -31us[  -38us] +/-  161us
+^? sr-seapath-mgc.ucsd.edu       0  10     0     -     +0ns[   +0ns] +/-    0ns
 
-Reference ID: 647C6423, Stratum=2, last offset=-0.000012, RMS offset=0.000013
+Reference ID: 647C6423, Stratum=2, last offset=-0.000007, RMS offset=0.000023
 ------------------------------------------
 
 
@@ -79,17 +79,17 @@ Reference ID: 647C6423, Stratum=2, last offset=-0.000012, RMS offset=0.000013
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2026/05/04 14:27:23) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+(2026/05/05 14:27:29) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
 
 os150nb recent ping statistics
 
-(2026/05/04 14:23:23) ens = 300.0 sec, 272 pings, (1.10 sec/ping)
+(2026/05/05 14:24:30) ens = 300.0 sec, 273 pings, (1.10 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 34 days, 23:20,  3 users,  load average: 0.29, 0.28, 0.33
+ 14:30:02 up 35 days, 23:20,  3 users,  load average: 0.41, 0.37, 0.35
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -106,9 +106,6 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      20 /home/adcp/log/3dayplots_os150nb.warn
-      12 /home/adcp/log/3dayplots_wh300.warn
-      2 /home/adcp/log/DAS_while_logging.warn
       1 /home/adcp/log/lastfewvec_os150nb.warn
       1 /home/adcp/log/lastfewvec_wh300.warn
 
@@ -121,15 +118,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_lastens.png
        0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
-       1      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
