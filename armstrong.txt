@@ -1,118 +1,31 @@
-2026/05/10 14:30:02
+2026/05/12 04:19:51
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: ar100_3beam     ** is logging **
-
-  wh300  2026/04/25  14:42:24 to 2026/05/10  14:29:25  (0 min. ago)
-  os38nb 2026/04/25  14:45:23 to 2026/05/10  14:25:27  (4 min. ago)
-
-approximate lat, lon, depth:   37 7.67021 N   73 53.18856 W   depth=2377
-
-link: http://www.google.com/maps/place/37%207.67021N+73%2053.18856W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath_udp")
-===========================
------- seapath_udp statistics ------
-===========================
-gyro-seapath_udp statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 128.5946095 to 129.5945979
-(2026/05/09 14:16:14 to 2026/05/10 14:16:13)
-all seapath_udp messages:  (62%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   272 out of 272   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -9.62, max = 3.04
-   mean = -2.59, stddev = 3.12
-
-===========================
------- posmv statistics ------
-===========================
-gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.016)
-
-ddrange: 128.5946211 to 129.5946095
-(2026/05/09 14:16:15 to 2026/05/10 14:16:14)
-all posmv messages:  (62%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   272 out of 272   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -9.73, max = 3.12
-   mean = -2.56, stddev = 3.12
-
-===========================
------- gyro2 statistics ------
-===========================
-gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 128.5946442 to 129.5946326
-(2026/05/09 14:16:17 to 2026/05/10 14:16:16)
-all gyro2 messages:  (62%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   272 out of 272   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = -7.44, max = 4.16
-   mean = -1.26, stddev = 2.89
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:       off
-os150 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:  on
-os38 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ese01.armstrong.whoi.edu      1  10   377   376   -192us[ -214us] +/-   12ms
+^* ese01.armstrong.whoi.edu      1  10   377    61    -64us[  -71us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=-0.000022, RMS offset=0.000096
+Reference ID: C093290C, Stratum=2, last offset=-0.000007, RMS offset=0.000067
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-os38nb recent ping statistics
-
-(2026/05/10 14:20:27) ens = 300.0 sec, 100 pings, (3.00 sec/ping)
-
-wh300 recent ping statistics
-
-(2026/05/10 14:27:25) ens = 120.0 sec, 119 pings, (1.01 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up  9:41,  1 user,  load average: 0.18, 0.37, 0.35
+ 04:19:51 up 1 day, 23:31,  1 user,  load average: 0.27, 0.42, 0.53
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -131,28 +44,15 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      474 /home/adcp/log/3dayplots_os38nb.warn
-      864 /home/adcp/log/3dayplots_os38nb.warn.2026-05-09
-      478 /home/adcp/log/3dayplots_wh300.warn
-      864 /home/adcp/log/3dayplots_wh300.warn.2026-05-09
-      34 /home/adcp/log/hcorrstats_gyro2.warn
-      34 /home/adcp/log/hcorrstats_posmv.warn
-      34 /home/adcp/log/hcorrstats_seapath_udp.warn
+      84 /home/adcp/log/3dayplots_os38nb.warn
+      369 /home/adcp/log/3dayplots_os38nb.warn.2026-05-11
+      153 /home/adcp/log/3dayplots_wh300.warn
+      864 /home/adcp/log/3dayplots_wh300.warn.2026-05-11
+      19 /home/adcp/log/hcorrstats_gyro2.warn
+      19 /home/adcp/log/hcorrstats_posmv.warn
+      19 /home/adcp/log/hcorrstats_seapath_udp.warn
+      80 /home/adcp/log/lastensq_os38nb.warn
       1 /home/adcp/log/lastfewvec_os38nb.warn
-(3) rbin warnings:
- 
-posmv gps  83811    1.01  -1526531.81      65.0       1     1     1     0     1
-posmv pmv  83810    1.01  -1526530.80      65.0       1     1     1     0     1
-seapath_udp hdg  83816    1.00  -1526532.00      65.0       1     1     1     0     1
-seapath_udp gps  83817    1.00  -1526532.00      65.0       1     1     1     0     1
-seapath_udp sea  83817    1.00  -1526532.00      65.0       1     1     1     0     1
-cnav gps  83800    0.99  -1526530.92      65.0       8     1     1     0     1
-gyro2 hdg  83816    1.00  -1526532.09      65.0       1     1     1     0     1
-gyro hdg  83816    1.01  -1526531.60      65.0       1     1     1     0     1
-(4) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 128.583340
-
 
 Figures and files:
 
@@ -163,16 +63,21 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/os38nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       1      /home/adcp/www/figures/wh300_lastens.png
+       1      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/wh300_ddaycont.png
-       4      /home/adcp/www/figures/os38nb_ddaycont.png
+       1      /home/adcp/www/figures/os38nb_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
+
+
+
+-------------------
+cruise ended
 
 
 local_status_mailto:
