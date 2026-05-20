@@ -1,14 +1,14 @@
-2026/05/18 14:30:01
+2026/05/19 14:30:01
 arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: ar101     ** is logging **
 
-  wh300  2026/05/17  17:27:34 to 2026/05/18  14:29:33  (0 min. ago)
+  wh300  2026/05/17  17:27:34 to 2026/05/19  14:29:34  (0 min. ago)
  os150nb -- no data yet
-  os38nb 2026/05/17  17:30:34 to 2026/05/18  14:25:34  (4 min. ago)
+  os38nb 2026/05/17  17:30:34 to 2026/05/19  14:25:34  (4 min. ago)
 
-approximate lat, lon, depth:   39 29.94461 N   71 20.01362 W   depth=2305
+approximate lat, lon, depth:   40 4.98989 N   70 29.92793 W   depth=136
 
-link: http://www.google.com/maps/place/39%2029.94461N+71%2020.01362W
+link: http://www.google.com/maps/place/40%204.98989N+70%2029.92793W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -26,48 +26,48 @@ Database time ranges:
 ===========================
 gyro-seapath_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 136.7261141 to 137.6014035
-(2026/05/17 17:25:36 to 2026/05/18 14:26:01)
+ddrange: 137.6014498 to 138.6014382
+(2026/05/18 14:26:05 to 2026/05/19 14:26:04)
 all seapath_udp messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   252 out of 252   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.69, max = 2.34
-   mean = 0.67, stddev = 0.67
+   min  = -0.34, max = 1.42
+   mean = 0.62, stddev = 0.38
 
 ===========================
 ------ posmv statistics ------
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.016)
 
-ddrange: 136.7261141 to 137.6014150
-(2026/05/17 17:25:36 to 2026/05/18 14:26:02)
+ddrange: 137.6014613 to 138.6014498
+(2026/05/18 14:26:06 to 2026/05/19 14:26:05)
 all posmv messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   252 out of 252   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = -0.70, max = 2.19
-   mean = 0.72, stddev = 0.67
+   min  = -0.25, max = 1.53
+   mean = 0.66, stddev = 0.39
 
 ===========================
 ------ gyro2 statistics ------
 ===========================
 gyro-gyro2 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 136.7261141 to 137.6014266
-(2026/05/17 17:25:36 to 2026/05/18 14:26:03)
+ddrange: 137.6014729 to 138.6014613
+(2026/05/18 14:26:07 to 2026/05/19 14:26:06)
 all gyro2 messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   252 out of 252   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  0.4
-   min  = -1.27, max = 2.32
-   mean = -0.19, stddev = 0.67
+   mean N = 301, stddev N =  0.2
+   min  = -0.76, max = 0.57
+   mean = -0.08, stddev = 0.26
 
 
 === Sonar Pingtype Summary =====
@@ -93,9 +93,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ese01.armstrong.whoi.edu      1  10   377   620  -1116us[-1232us] +/-   12ms
+^* ese01.armstrong.whoi.edu      1  10   377    74   -244us[ -262us] +/-   12ms
 
-Reference ID: C093290C, Stratum=2, last offset=-0.000116, RMS offset=0.000073
+Reference ID: C093290C, Stratum=2, last offset=-0.000018, RMS offset=0.000041
 ------------------------------------------
 
 
@@ -103,17 +103,17 @@ Reference ID: C093290C, Stratum=2, last offset=-0.000116, RMS offset=0.000073
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2026/05/18 14:20:34) ens = 300.0 sec, 100 pings, (3.00 sec/ping)
+(2026/05/19 14:20:34) ens = 300.0 sec, 100 pings, (3.00 sec/ping)
 
 wh300 recent ping statistics
 
-(2026/05/18 14:27:33) ens = 120.0 sec, 119 pings, (1.01 sec/ping)
+(2026/05/19 14:27:34) ens = 120.0 sec, 119 pings, (1.01 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 8 days,  9:41,  1 user,  load average: 0.15, 0.48, 0.40
+ 14:30:02 up 9 days,  9:41,  1 user,  load average: 1.16, 0.60, 0.41
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -133,24 +133,21 @@ ______________________
 (2) wordcount of log/*.warn:
 
       2436 /home/adcp/log/3dayplots_os150nb.warn
-      1092 /home/adcp/log/3dayplots_os150nb.warn.2026-05-17
+      4032 /home/adcp/log/3dayplots_os150nb.warn.2026-05-18
       522 /home/adcp/log/3dayplots_os38nb.warn
-      441 /home/adcp/log/3dayplots_os38nb.warn.2026-05-17
+      864 /home/adcp/log/3dayplots_os38nb.warn.2026-05-18
       522 /home/adcp/log/3dayplots_wh300.warn
-      444 /home/adcp/log/3dayplots_wh300.warn.2026-05-17
-      1435 /home/adcp/log/DAS_while_logging.warn
-      657 /home/adcp/log/DAS_while_logging.warn.2026-05-17
+      864 /home/adcp/log/3dayplots_wh300.warn.2026-05-18
+      1440 /home/adcp/log/DAS_while_logging.warn
+      2375 /home/adcp/log/DAS_while_logging.warn.2026-05-18
       522 /home/adcp/log/grab_pings_os150nb.warn
-      234 /home/adcp/log/grab_pings_os150nb.warn.2026-05-17
-      8443 /home/adcp/log/lastensq_os150nb.warn
-      3061 /home/adcp/log/lastensq_os150nb.warn.2026-05-17
-      1881 /home/adcp/log/lastfewvec_os150nb.warn
-      847 /home/adcp/log/lastfewvec_os150nb.warn.2026-05-17
-      1 /home/adcp/log/lastfewvec_os38nb.warn
-      1 /home/adcp/log/lastfewvec_wh300.warn
-      5130 /home/adcp/log/quick_os150nb.warn
-      2310 /home/adcp/log/quick_os150nb.warn.2026-05-17
-      3 /home/adcp/log/quick_os38nb.warn
+      864 /home/adcp/log/grab_pings_os150nb.warn.2026-05-18
+      8492 /home/adcp/log/lastensq_os150nb.warn
+      13963 /home/adcp/log/lastensq_os150nb.warn.2026-05-18
+      1892 /home/adcp/log/lastfewvec_os150nb.warn
+      3113 /home/adcp/log/lastfewvec_os150nb.warn.2026-05-18
+      5160 /home/adcp/log/quick_os150nb.warn
+      8490 /home/adcp/log/quick_os150nb.warn.2026-05-18
 
 Figures and files:
 
