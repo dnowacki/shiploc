@@ -1,15 +1,7 @@
-2026/05/31 03:18:44
-currents02bh 6.17.0-22-generic (noble "Ubuntu 24.04.4 LTS")
-Current cruise: BH26-03_Kessler  *** not logging ***
-
-  os150bb 2026/05/21  11:29:44 to 2026/05/31  03:13:55  (4 min. ago)
-  os150nb 2026/05/21  11:29:44 to 2026/05/31  03:13:55  (4 min. ago)
-
-approximate lat, lon, depth:   43 9.76907 N   79 11.70192 W   depth=-107
-
-link: http://www.google.com/maps/place/43%209.76907N+79%2011.70192W
-not using zmq publishers, position is from serial GPS
-
+2026/05/31 14:30:02
+currents01bh 6.8.0-31-generic (noble "Ubuntu 24.04.4 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
@@ -22,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.14                1   7   377   128  +6747ns[  +17us] +/-  160us
+^* 192.168.100.14                1   6   377    96    +14us[  +13us] +/-   99us
 
-Reference ID: C0A8640E, Stratum=2, last offset=0.000010, RMS offset=0.000004
+Reference ID: C0A8640E, Stratum=2, last offset=-0.000000, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -33,7 +25,7 @@ Reference ID: C0A8640E, Stratum=2, last offset=0.000010, RMS offset=0.000004
 
 
 ---------- uptime ------------
- 03:18:44 up 12 days, 15:45,  5 users,  load average: 0.24, 0.16, 0.21
+ 14:30:03 up 11 days, 19:59,  3 users,  load average: 0.08, 0.03, 0.01
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -51,10 +43,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      117 /home/adcp/log/3dayplots_os150bb.warn
-      864 /home/adcp/log/3dayplots_os150bb.warn.2026-05-30
-      117 /home/adcp/log/3dayplots_os150nb.warn
-      864 /home/adcp/log/3dayplots_os150nb.warn.2026-05-30
+      18 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -65,21 +54,16 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/os150bb_lastens.png
-       1      /home/adcp/www/figures/os150nb_lastens.png
+   27412      /home/adcp/www/figures/ktprof_amp_lastens.png
+   27412      /home/adcp/www/figures/os150nb_lastens.png
+   27412      /home/adcp/www/figures/os150bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150bb_ddaycont.png
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
+   27412      /home/adcp/www/figures/os150nb_ddaycont.png
+   27412      /home/adcp/www/figures/os150bb_ddaycont.png
 
-
-
-
--------------------
-cruise ended
 
 
 local_status_mailto:
