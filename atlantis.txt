@@ -1,4 +1,4 @@
-2026/06/02 14:30:01
+2026/06/03 23:19:53
 atcurrents03 5.15.0-177-generic (jammy "Ubuntu 22.04.5 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   6   377    26   -565ns[-1594ns] +/-   30us
+^* timeserver.atlantis.whoi>     1   6   377    55  +2153ns[+2093ns] +/-   29us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000003
+Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000000, RMS offset=0.000001
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=-0.000001, RMS offset=0.000003
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 14:12,  1 user,  load average: 0.00, 0.02, 0.00
+ 23:20:01 up 2 days, 23:02,  2 users,  load average: 0.62, 0.35, 0.32
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -42,6 +42,11 @@ ______________________
 
 (1) EDAC memory warnings:
      8 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      144 /home/adcp/log/3dayplots_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -52,16 +57,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   28384      /home/adcp/www/figures/wh300_lastens.png
-   28384      /home/adcp/www/figures/ktprof_amp_lastens.png
-   28384      /home/adcp/www/figures/os75nb_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   28384      /home/adcp/www/figures/wh300_ddaycont.png
-   28384      /home/adcp/www/figures/os75nb_ddaycont.png
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
+
+
+
+-------------------
+cruise ended
 
 
 local_status_mailto:
