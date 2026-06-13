@@ -1,5 +1,5 @@
-2026/06/11 14:30:01
-currents03tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
+2026/06/12 23:40:14
+currents04tt 6.8.0-31-generic (noble "Ubuntu 24.04.1 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* ntpserver-11.rvtgt.uw.edu     1  10   377    73    -57us[ -105us] +/-  107us
+^* 10.43.11.10                   1  10   377   923    -74us[  +12us] +/-  184us
 
-Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000048, RMS offset=0.000029
+Reference ID: 0A2B0B0A, Stratum=2, last offset=0.000087, RMS offset=0.000042
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: 0A2B0B0A, Stratum=2, last offset=-0.000048, RMS offset=0.000029
 
 
 ---------- uptime ------------
- 14:30:02 up 23 days, 12:16,  3 users,  load average: 0.16, 0.03, 0.01
+ 23:40:14 up 12:01,  3 users,  load average: 0.15, 0.03, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/thompson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/
@@ -40,7 +40,22 @@ https://currents.soest.hawaii.edu/uhdas_fromships/thompson/daily_report/posmv5_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) I/O warnings:
+     3 I/O errors in last 2 /var/log/syslog
+(2) EDAC memory warnings:
+     4 EDAC (memory) errors in last 2 /var/log/syslog
+(3) wordcount of log/*.warn:
+
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/quick_os150nb.warn
+      1 /home/adcp/log/quick_os75nb.warn
+      1 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -51,18 +66,23 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  153021      /home/adcp/www/figures/os150nb_lastens.png
-  153021      /home/adcp/www/figures/os75nb_lastens.png
-  153021      /home/adcp/www/figures/ktprof_amp_lastens.png
-  153021      /home/adcp/www/figures/wh300_lastens.png
+     260      /home/adcp/www/figures/wh300_lastens.png
+     260      /home/adcp/www/figures/os75nb_lastens.png
+     260      /home/adcp/www/figures/ktprof_amp_lastens.png
+     260      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  153022      /home/adcp/www/figures/wh300_ddaycont.png
-  153021      /home/adcp/www/figures/os150nb_ddaycont.png
-  153021      /home/adcp/www/figures/os75nb_ddaycont.png
+     260      /home/adcp/www/figures/wh300_ddaycont.png
+     260      /home/adcp/www/figures/os150nb_ddaycont.png
+     260      /home/adcp/www/figures/os75nb_ddaycont.png
 
+
+
+
+-------------------
+cruise ended
 
 
 local_status_mailto:
