@@ -1,7 +1,16 @@
-2026/06/16 14:30:01
-arcurrents05 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2026/06/17 14:30:01
+arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: ar102-01  *** not logging ***
+
+  wh300  2026/06/07  13:31:18 to 2026/06/13  15:24:05  (5706 min. ago)  4.0 days
+  os38bb 2026/06/07  13:34:17 to 2026/06/13  15:23:10  (5706 min. ago)  4.0 days
+  os38nb 2026/06/07  13:34:17 to 2026/06/13  15:23:10  (5706 min. ago)  4.0 days
+
+approximate lat, lon, depth:   43 17.08798 N   52 39.57195 W   depth=3191
+
+link: http://www.google.com/maps/place/43%2017.08798N+52%2039.57195W
+not using zmq publishers, position is from serial GPS
+
 
 
 
@@ -14,9 +23,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? ese01.armstrong.whoi.edu      1  10     0   10d   +104us[ -172us] +/-   12ms
-
-Reference ID: C093290C, Stratum=2, last offset=-0.000275, RMS offset=0.000333
+^x time.armstrong.whoi.edu       1   6   377     1    +53ms[  +53ms] +/-   55us
+^x ese01.armstrong.whoi.edu      1  10   377   805    +81ms[  +81ms] +/-   12ms
+WARNING: Chrony cannot get time from the specified server
+Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
@@ -25,7 +35,7 @@ Reference ID: C093290C, Stratum=2, last offset=-0.000275, RMS offset=0.000333
 
 
 ---------- uptime ------------
- 14:30:02 up 60 days, 21:28,  1 user,  load average: 0.07, 0.03, 0.01
+ 14:30:02 up 38 days,  9:41,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -48,15 +58,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  407311      /home/adcp/www/figures/wh300_lastens.png
-  407311      /home/adcp/www/figures/ktprof_amp_lastens.png
-  407311      /home/adcp/www/figures/os150nb_lastens.png
+    5703      /home/adcp/www/figures/ktprof_amp_lastens.png
+    5703      /home/adcp/www/figures/os38bb_lastens.png
+    5703      /home/adcp/www/figures/wh300_lastens.png
+    5703      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  407311      /home/adcp/www/figures/os150nb_ddaycont.png
-  407311      /home/adcp/www/figures/wh300_ddaycont.png
+    5703      /home/adcp/www/figures/os38nb_ddaycont.png
+    5703      /home/adcp/www/figures/wh300_ddaycont.png
+    5703      /home/adcp/www/figures/os38bb_ddaycont.png
 
 
 
