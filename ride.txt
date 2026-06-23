@@ -1,95 +1,32 @@
-2026/06/21 14:30:01
+2026/06/22 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: SR2612     ** is logging **
-
-  wh300  2026/06/19  20:14:57 to 2026/06/21  14:28:57  (1 min. ago)
-  os150nb 2026/06/19  20:17:57 to 2026/06/21  14:27:56  (2 min. ago)
-  os38nb 2026/06/19  20:18:00 to 2026/06/21  14:27:57  (2 min. ago)
-
-approximate lat, lon, depth:   37 57.18966 N  123 10.53954 W   depth=101
-
-link: http://www.google.com/maps/place/37%2057.18966N+123%2010.53954W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
 
 
 
----- heading correction ----
-
-no heading correction device specified===========================
------- seapath_mgc statistics ------
-===========================
-no good seapath_mgc data out of 0 (300sec) ensembles
-===========================
------- hemisphere statistics ------
-===========================
-seapath_mru-hemisphere statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 170.6032462 to 171.6032404
-(2026/06/20 14:28:40 to 2026/06/21 14:28:40)
-all hemisphere messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   288 out of 288   (100%) were good
-statistics of good data:
-   mean N = 601, stddev N =  0.2
-   min  = -3.54, max = 5.35
-   mean = 0.88, stddev = 1.76
-
-
-=== Sonar Pingtype Summary =====
-
-wh300: Triggering command not found
-wh300 BB:  on
-wh300 BT:      off
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os38: Triggering not used (CX0,0)
-os38 BB:       off
-os38 NB:  on
-os38 BT:      off
-
-===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-seapath-mru.ucsd.edu       1  10   377   176  -4269ns[  -12us] +/-   93us
+^* sr-ntp-pool.ucsd.edu          1  10   377   715    +87us[  +93us] +/-  215us
 ^? sr-seapath-mgc.ucsd.edu       0  10     0     -     +0ns[   +0ns] +/-    0ns
 
-Reference ID: 647C6423, Stratum=2, last offset=-0.000008, RMS offset=0.000014
+Reference ID: 647C6423, Stratum=2, last offset=0.000006, RMS offset=0.000008
 ------------------------------------------
 
 
-
-------------- pings per ensemble ----------- 
-wh300 recent ping statistics
-
-(2026/06/21 14:26:57) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
-
-os150nb recent ping statistics
-
-(2026/06/21 14:22:57) ens = 300.0 sec, 273 pings, (1.10 sec/ping)
-
-os38nb recent ping statistics
-
-(2026/06/21 14:22:57) ens = 300.0 sec, 100 pings, (3.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 4 days, 15:47,  2 users,  load average: 0.28, 0.34, 0.38
+ 14:30:02 up 5 days, 15:47,  2 users,  load average: 0.02, 0.02, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -116,17 +53,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/os38nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
-       1      /home/adcp/www/figures/wh300_lastens.png
+    1247      /home/adcp/www/figures/os38nb_lastens.png
+    1247      /home/adcp/www/figures/os150nb_lastens.png
+    1247      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1247      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_ddaycont.png
-       1      /home/adcp/www/figures/os38nb_ddaycont.png
-       1      /home/adcp/www/figures/wh300_ddaycont.png
+    1247      /home/adcp/www/figures/os150nb_ddaycont.png
+    1247      /home/adcp/www/figures/wh300_ddaycont.png
+    1247      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
