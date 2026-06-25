@@ -1,0 +1,124 @@
+2026/06/24 14:30:01
+currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: MGL2605_C     ** is logging **
+
+  os75nb 2026/06/19  07:07:41 to 2026/06/24  14:27:39  (2 min. ago)
+
+approximate lat, lon, depth:    9 29.86507 N   96 0.10175 W   depth=3693
+
+link: http://www.google.com/maps/place/9%2029.86507N+96%200.10175W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+
+
+
+
+
+
+---- heading correction ----
+
+(heading correction from "posmv")
+===========================
+------ seapath statistics ------
+===========================
+gyro-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 173.5957028 to 174.5956915
+(2026/06/23 14:17:49 to 2026/06/24 14:17:48)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.8
+   min  = 0.02, max = 0.55
+   mean = 0.21, stddev = 0.09
+
+===========================
+------ posmv statistics ------
+===========================
+gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.020)
+
+ddrange: 173.5957202 to 174.5957088
+(2026/06/23 14:17:50 to 2026/06/24 14:17:49)
+all posmv messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   287 out of 287   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  0.5
+   min  = -2.22, max = -1.59
+   mean = -1.97, stddev = 0.11
+
+
+=== Sonar Pingtype Summary =====
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:      off
+
+===========================
+
+
+using chrony
+---------- chronyc tracking ------------
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* timeserve2.langseth.ldeo>     1   6   377    29    +39us[  +42us] +/-   86us
+
+Reference ID: C0A8030E, Stratum=2, last offset=0.000002, RMS offset=0.000002
+------------------------------------------
+
+
+
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2026/06/24 14:22:41) ens = 300 sec, 141 pings, (2.13 sec/ping)
+
+
+
+
+---------- uptime ------------
+ 14:30:02 up 6 days, 14:19,  1 user,  load average: 0.01, 0.05, 0.08
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
+
+posmv quality plot:
+https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc.png
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+       2      /home/adcp/www/figures/os75nb_ddaycont.png
+
+
+
+local_status_mailto:
+
