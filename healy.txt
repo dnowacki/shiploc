@@ -1,5 +1,5 @@
-2026/06/25 22:13:13
-currents01hly 6.17.0-29-generic (noble "Ubuntu 24.04.4 LTS")
+2026/06/26 23:57:39
+currents02hly 6.17.0-29-generic (noble "Ubuntu 24.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 
@@ -14,10 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 192.168.42.40                 0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* 192.168.42.41                 1   7   377    21    +17us[  +17us] +/-   68us
+^? PSNHTIMBRIDGE.healy.pola>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^* PSNHTIMHCO.healy.polarsc>     1   8   377   207    +11us[  +36us] +/-   80us
 
-Reference ID: C0A82A29, Stratum=2, last offset=-0.000000, RMS offset=0.000003
+Reference ID: C0A82A29, Stratum=2, last offset=0.000025, RMS offset=0.000008
 ------------------------------------------
 
 
@@ -26,7 +26,7 @@ Reference ID: C0A82A29, Stratum=2, last offset=-0.000000, RMS offset=0.000003
 
 
 ---------- uptime ------------
- 22:13:19 up 23:29,  2 users,  load average: 0.30, 0.16, 0.10
+ 23:57:40 up 2 days,  1:13,  3 users,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
@@ -42,19 +42,10 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    10 EDAC (memory) errors in last 2 /var/log/syslog
+     5 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      116 /home/adcp/log/3dayplots_os150nb.warn
-      106 /home/adcp/log/3dayplots_os75nb.warn
-      99 /home/adcp/log/DAS_while_cruise.warn
-      1 /home/adcp/log/DAS_while_logging.warn
-      11 /home/adcp/log/daily.py.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/quick_os75nb.warn
-      3 /home/adcp/log/send_buffered_mail.warn
-      60 /home/adcp/log/update_hbins_os150nb.warn
+      25 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -65,21 +56,11 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
-
-
-
--------------------
-cruise ended
 
 
 local_status_mailto:
