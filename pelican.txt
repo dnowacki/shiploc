@@ -1,103 +1,33 @@
-2026/07/09 14:30:02
+2026/07/10 14:30:01
 currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: PE26_26_Fraiser_ADCP     ** is logging **
+Current cruise: PE26_26_Fraiser_ADCP  *** not logging ***
 
-  wh1200 2026/06/19  19:07:18 to 2026/07/09  14:28:54  (1 min. ago)
-  os75bb 2026/06/19  19:10:21 to 2026/07/09  14:28:58  (1 min. ago)
-  os75nb 2026/06/19  19:10:21 to 2026/07/09  14:28:58  (1 min. ago)
+  wh1200 2026/06/19  19:07:18 to 2026/07/10  11:48:55  (161 min. ago) 2.7 hrs
+  os75bb 2026/06/19  19:10:21 to 2026/07/10  11:48:55  (161 min. ago) 2.7 hrs
+  os75nb 2026/06/19  19:10:21 to 2026/07/10  11:48:55  (161 min. ago) 2.7 hrs
 
-approximate lat, lon, depth:   27 49.72316 N   91 36.71935 W   depth=435
+approximate lat, lon, depth:   27 52.17068 N   91 12.64281 W   depth=315
 
-link: http://www.google.com/maps/place/27%2049.72316N+91%2036.71935W
+link: http://www.google.com/maps/place/27%2052.17068N+91%2012.64281W
 not using zmq publishers, position is from serial GPS
 
-Database time ranges:
 
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "abxtwo")
-===========================
------- abxtwo statistics ------
-===========================
-sc70_tech-abxtwo statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 188.8395255 to 189.6004745
-(2026/07/08 20:08:55 to 2026/07/09 14:24:41)
-all abxtwo messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   219 out of 219   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = 0.06, max = 1.93
-   mean = 1.04, stddev = 0.35
-
-===========================
------- abxtwo_b2a1 statistics ------
-===========================
-sc70_tech-abxtwo_b2a1 statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 188.8395255 to 189.6004977
-(2026/07/08 20:08:55 to 2026/07/09 14:24:43)
-all abxtwo_b2a1 messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   219 out of 219   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.3
-   min  = 0.06, max = 1.93
-   mean = 1.04, stddev = 0.35
-
-===========================
------- sc70_bridge statistics ------
-===========================
-/home/adcp/daily_report/sc70_bridge_sc70_tech_pystats.txt does not (yet?) exist
-
-=== Sonar Pingtype Summary =====
-
-wh1200: Triggering command not found
-wh1200 BB:  on
-wh1200 BT:      off
-
-wh300: Triggering command not found
-wh300 BB:       off
-wh300 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:  on
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
-------------- pings per ensemble ----------- 
-os75bb recent ping statistics
-
-(2026/07/09 14:23:57) ens = 300 sec, 76 pings, (3.95 sec/ping)
-
-os75nb recent ping statistics
-
-(2026/07/09 14:23:57) ens = 300 sec, 76 pings, (3.95 sec/ping)
-
-wh1200 recent ping statistics
-
-(2026/07/09 14:26:54) ens = 120 sec, 200 pings, (0.60 sec/ping)
-
 
 
 
 ---------- uptime ------------
- 14:30:03 up 4 days, 19:48,  1 user,  load average: 1.36, 0.64, 0.52
+ 14:30:02 up 5 days, 19:48,  1 user,  load average: 0.01, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -116,13 +46,11 @@ ______________________
      2 EDAC (memory) errors in last 2 /var/log/syslog
 (2) wordcount of log/*.warn:
 
-      58 /home/adcp/log/DAS_while_logging.warn
-      61 /home/adcp/log/DAS_while_logging.warn.2026-07-08
-      986 /home/adcp/log/hcorrstats_sc70_bridge.warn
-      1037 /home/adcp/log/hcorrstats_sc70_bridge.warn.2026-07-08
-      1 /home/adcp/log/lastfewvec_os75bb.warn
-      1 /home/adcp/log/lastfewvec_os75nb.warn
-      1 /home/adcp/log/lastfewvec_wh1200.warn
+      2 /home/adcp/log/3dayplots_os75nb.warn
+      47 /home/adcp/log/DAS_while_logging.warn
+      96 /home/adcp/log/DAS_while_logging.warn.2026-07-09
+      799 /home/adcp/log/hcorrstats_sc70_bridge.warn
+      1632 /home/adcp/log/hcorrstats_sc70_bridge.warn.2026-07-09
 
 Figures and files:
 
@@ -133,17 +61,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/wh1200_lastens.png
-       0      /home/adcp/www/figures/os75bb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
+     160      /home/adcp/www/figures/ktprof_amp_lastens.png
+     160      /home/adcp/www/figures/os75nb_lastens.png
+     160      /home/adcp/www/figures/wh1200_lastens.png
+     160      /home/adcp/www/figures/os75bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/wh1200_ddaycont.png
-       0      /home/adcp/www/figures/os75bb_ddaycont.png
-       0      /home/adcp/www/figures/os75nb_ddaycont.png
+     160      /home/adcp/www/figures/os75nb_ddaycont.png
+     160      /home/adcp/www/figures/os75bb_ddaycont.png
+     160      /home/adcp/www/figures/wh1200_ddaycont.png
 
 
 
