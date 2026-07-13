@@ -1,13 +1,12 @@
-2026/07/10 14:30:01
+2026/07/12 14:30:01
 currents05skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SKQ2604P  *** not logging ***
 
-  wh300  2026/06/28  22:36:09 to 2026/06/30  13:42:35  (14447 min. ago) 10.0 days
-  os150nb 2026/06/30  13:39:34 to 2026/06/30  13:39:34  (14450 min. ago) 10.0 days
+ os38nb -- no data yet
 
-approximate lat, lon, depth:   37 47.46593 N  122 17.45361 W   depth=-1
+approximate lat, lon, depth:   37 47.46604 N  122 17.45357 W   depth=-1
 
-link: http://www.google.com/maps/place/37%2047.46593N+122%2017.45361W
+link: http://www.google.com/maps/place/37%2047.46604N+122%2017.45357W
 not using zmq publishers, position is from serial GPS
 
 
@@ -23,10 +22,10 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? shp-ntp-0.sikuliaq.alask>     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* shp-ntp-0.sikuliaq.alask>     1   8   377   246    -32us[  -38us] +/-  166us
-^- _gateway                      2   7   377    36   +383us[ +383us] +/-   37ms
+^* shp-ntp-0.sikuliaq.alask>     1  10   377   880  -1223ns[ -166us] +/-  129us
+^- _gateway                      2   6   377    55   +331us[ +331us] +/-   37ms
 
-Reference ID: 0A010005, Stratum=2, last offset=-0.000006, RMS offset=0.000025
+Reference ID: 0A010005, Stratum=2, last offset=-0.000165, RMS offset=0.000053
 ------------------------------------------
 
 
@@ -35,7 +34,7 @@ Reference ID: 0A010005, Stratum=2, last offset=-0.000006, RMS offset=0.000025
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 21:09,  3 users,  load average: 0.06, 0.05, 0.01
+ 14:30:02 up 3 days, 21:09,  2 users,  load average: 0.10, 0.07, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -52,6 +51,10 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 178.941594
+
 
 Figures and files:
 
@@ -62,14 +65,14 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   14446      /home/adcp/www/figures/ktprof_amp_lastens.png
-   14446      /home/adcp/www/figures/wh300_lastens.png
-   14446      /home/adcp/www/figures/os150nb_lastens.png
+    1094      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1094      /home/adcp/www/figures/wh300_lastens.png
+    1094      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   14446      /home/adcp/www/figures/wh300_ddaycont.png
+    1094      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
