@@ -1,20 +1,81 @@
-2026/07/12 14:30:01
+2026/07/13 18:17:46
 currents05skq 6.8.0-41-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: SKQ2604P  *** not logging ***
+Current cruise: SKQ2605S_CAL     ** is logging **
 
- os38nb -- no data yet
+  wh300  2026/07/13  13:57:28 to 2026/07/13  18:17:07  (0 min. ago)
+  os150bb 2026/07/13  14:00:28 to 2026/07/13  18:14:08  (3 min. ago)
+  os150nb 2026/07/13  14:00:28 to 2026/07/13  18:14:08  (3 min. ago)
 
-approximate lat, lon, depth:   37 47.46604 N  122 17.45357 W   depth=-1
+approximate lat, lon, depth:   37 47.10851 N  122 33.06772 W   depth=21
 
-link: http://www.google.com/maps/place/37%2047.46604N+122%2017.45357W
+link: http://www.google.com/maps/place/37%2047.10851N+122%2033.06772W
 not using zmq publishers, position is from serial GPS
 
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath")
+===========================
+------ seapath statistics ------
+===========================
+mgc1-seapath statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 193.5801813 to 193.7530169
+(2026/07/13 13:55:28 to 2026/07/13 18:04:21)
+all seapath messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   47 out of 47   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = -0.19, max = -0.14
+   mean = -0.16, stddev = 0.02
+
+===========================
+------ mgc2 statistics ------
+===========================
+mgc1-mgc2 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 193.5801813 to 193.7530169
+(2026/07/13 13:55:28 to 2026/07/13 18:04:21)
+all mgc2 messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   47 out of 47   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.2
+   min  = 0.04, max = 0.06
+   mean = 0.05, stddev = 0.00
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:  on
+
+os150: Triggering not used (CX0,0)
+os150 BB:  on
+os150 NB:  on
+os150 BT:  on
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:       off
+os75 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
@@ -22,19 +83,32 @@ using chrony
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
 ^? shp-ntp-0.sikuliaq.alask>     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* shp-ntp-0.sikuliaq.alask>     1  10   377   880  -1223ns[ -166us] +/-  129us
-^- _gateway                      2   6   377    55   +331us[ +331us] +/-   37ms
+^* shp-ntp-0.sikuliaq.alask>     1   6   377    31  +5598ns[+5255ns] +/-   94us
+^- _gateway                      2   6   377    28  +1441us[+1441us] +/-   37ms
 
-Reference ID: 0A010005, Stratum=2, last offset=-0.000165, RMS offset=0.000053
+Reference ID: 0A010005, Stratum=2, last offset=-0.000000, RMS offset=0.000005
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2026/07/13 18:09:10) ens = 300.0 sec, 87 pings, (3.45 sec/ping)
+
+os150bb recent ping statistics
+
+(2026/07/13 18:09:10) ens = 300.0 sec, 87 pings, (3.45 sec/ping)
+
+wh300 recent ping statistics
+
+(2026/07/13 18:15:07) ens = 120.0 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days, 21:09,  2 users,  load average: 0.10, 0.07, 0.02
+ 18:17:47 up 5 days, 57 min,  2 users,  load average: 2.33, 2.21, 2.22
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sikuliaq/daily_report/
@@ -51,10 +125,12 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) timestamp warnings:
-jumps forward: 1   jumps back: 0
-max forward 0 seconds at dday 178.941594
+(2) wordcount of log/*.warn:
 
+      1 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
 
 Figures and files:
 
@@ -65,14 +141,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1094      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1094      /home/adcp/www/figures/wh300_lastens.png
-    1094      /home/adcp/www/figures/os150nb_lastens.png
+       3      /home/adcp/www/figures/os150bb_lastens.png
+       3      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1094      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/wh300_ddaycont.png
+       3      /home/adcp/www/figures/os150bb_ddaycont.png
+       3      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 

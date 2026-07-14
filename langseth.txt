@@ -1,5 +1,5 @@
-2026/07/12 14:30:02
-currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+2026/07/13 14:30:01
+currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 
@@ -14,9 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    41    +21us[  +19us] +/-   80us
+^* 192.168.3.14                  1   6   377    23   +913ns[-3330ns] +/-   83us
+^- _gateway                      4   6   377     6  +4520us[+4520us] +/-   89ms
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000002, RMS offset=0.000004
+Reference ID: C0A8030E, Stratum=2, last offset=-0.000004, RMS offset=0.000007
 ------------------------------------------
 
 
@@ -25,7 +26,7 @@ Reference ID: C0A8030E, Stratum=2, last offset=-0.000002, RMS offset=0.000004
 
 
 ---------- uptime ------------
- 14:30:02 up 8 days,  9:10,  2 users,  load average: 0.00, 0.00, 0.00
+ 14:30:04 up 15:50,  1 user,  load average: 0.08, 0.02, 0.01
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -38,7 +39,11 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
 
+(1) EDAC memory warnings:
+     3 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -49,13 +54,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   13599      /home/adcp/www/figures/ktprof_amp_lastens.png
-   13599      /home/adcp/www/figures/os75nb_lastens.png
+  1110272      /home/adcp/www/figures/os75nb_lastens.png
+  1110272      /home/adcp/www/figures/os75bb_lastens.png
+  1110272      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   13599      /home/adcp/www/figures/os75nb_ddaycont.png
+  1110272      /home/adcp/www/figures/os75bb_ddaycont.png
+  1110272      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
