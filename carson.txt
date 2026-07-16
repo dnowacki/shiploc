@@ -1,24 +1,63 @@
-2026/07/14 14:30:01
+2026/07/15 23:31:04
 rigel03 6.5.0-18-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: RC0152     ** is logging **
+
+   wh300 2026/07/14  23:52:03 to 2026/07/15  23:30:06  (1 min. ago)
+
+approximate lat, lon, depth:   47 21.74441 N  123 4.94376 W   depth=40
+
+link: http://www.google.com/maps/place/47%2021.74441N+123%204.94376W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+no heading correction device specified===========================
+------ gpscompass statistics ------
+===========================
+seapath_udp-gpscompass statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 194.9937950 to 195.9752881
+(2026/07/14 23:51:04 to 2026/07/15 23:24:25)
+all gpscompass messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   112 out of 112   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  2.1
+   min  = -0.77, max = 3.33
+   mean = 1.10, stddev = 0.72
+
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:  on
+wh300 BT:      off
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+wh300 recent ping statistics
+
+(2026/07/15 23:29:06) ens = 60 sec, 120 pings, (0.50 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:02 up 7 days, 16:16,  1 user,  load average: 0.04, 0.03, 0.00
+ 23:31:05 up 9 days,  1:17,  2 users,  load average: 0.28, 0.33, 0.30
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/carson/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/carson/daily_report/
@@ -35,6 +74,12 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      8 /home/adcp/log/3dayplots_wh300.warn
+      37 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn.2026-07-14
 
 Figures and files:
 
@@ -45,13 +90,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    3787      /home/adcp/www/figures/ktprof_amp_lastens.png
-    3787      /home/adcp/www/figures/wh300_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    3787      /home/adcp/www/figures/wh300_ddaycont.png
+       1      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
