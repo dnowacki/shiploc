@@ -1,37 +1,79 @@
-2026/06/26 23:57:39
-currents02hly 6.17.0-29-generic (noble "Ubuntu 24.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2026/07/20 00:54:55
+ticurrents02 6.17.0-14-generic (noble "Ubuntu 24.04.4 LTS")
+Current cruise: mailtest01     ** is logging **
+
+  os150nb 2026/07/20  11:26:15 to 2026/07/20  12:16:15  (-681 min. ago)
+
+approximate lat, lon, depth:   48 5.35990 N  126 20.04567 W   depth=1673
+
+link: http://www.google.com/maps/place/48%205.35990N+126%2020.04567W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
+NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
 
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+posmv-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 200.4730970 to 200.5044513
+(2026/07/20 11:21:16 to 2026/07/20 12:06:25)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   9 out of 9   (100%) were good
+statistics of good data:
+   mean N = 601, stddev N =  1.0
+   min  = -1.02, max = -0.94
+   mean = -0.97, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? PSNHTIMBRIDGE.healy.pola>     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* PSNHTIMHCO.healy.polarsc>     1   8   377   207    +11us[  +36us] +/-   80us
-
-Reference ID: C0A82A29, Stratum=2, last offset=0.000025, RMS offset=0.000008
+^? kiko-manawa.uhnet.net         0  10     0     -     +0ns[   +0ns] +/-    0ns
+WARNING: Chrony cannot get time from the specified server
+Reference ID: 00000000, Stratum=0, last offset=0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
+
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2026/07/20 12:06:14) ens = 300.0 sec, 136 pings, (2.21 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 23:57:40 up 2 days,  1:13,  3 users,  load average: 0.00, 0.00, 0.00
+ 00:54:56 up 48 days, 23:03,  6 users,  load average: 0.42, 0.44, 0.54
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/healy/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/
 
-
+QC plots:
+https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/posmv_qc.png
+https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_report/abxtwo_qc.png
 
 
 
@@ -41,11 +83,13 @@ daily report: https://currents.soest.hawaii.edu/uhdas_fromships/healy/daily_repo
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     5 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      25 /home/adcp/log/send_buffered_mail.warn
+      2 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+(2) proc sensor incompatibilities:
+ - pitch_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
+ - roll_msg (paq) not in sensor_cfg.py abxtwo messages: (['gps', 'hdg', 'adu'])
 
 Figures and files:
 
@@ -56,13 +100,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       4      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
 local_status_mailto:
-
 
