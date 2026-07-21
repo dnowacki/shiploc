@@ -1,9 +1,13 @@
-2026/07/19 14:30:02
+2026/07/20 14:30:01
 currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 Current cruise: MGL2606  *** not logging ***
 
+  os75nb 2026/07/19  14:37:28 to 2026/07/19  22:17:28  (972 min. ago) 16.2 hrs
 
-no positions found from filelist seapath/*.gps.rbin
+approximate lat, lon, depth:   10 58.82141 N   80 10.25800 W   depth=3433
+
+link: http://www.google.com/maps/place/10%2058.82141N+80%2010.25800W
+not using zmq publishers, position is from serial GPS
 
 
 
@@ -17,9 +21,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    63  +8493ns[+4544ns] +/-   72us
+^* timeserve2.langseth.ldeo>     1   6   377    63  +2551ns[+3252ns] +/-   80us
 
-Reference ID: C0A8030E, Stratum=2, last offset=-0.000004, RMS offset=0.000003
+Reference ID: C0A8030E, Stratum=2, last offset=0.000001, RMS offset=0.000004
 ------------------------------------------
 
 
@@ -28,7 +32,7 @@ Reference ID: C0A8030E, Stratum=2, last offset=-0.000004, RMS offset=0.000003
 
 
 ---------- uptime ------------
- 14:30:02 up 15 days,  9:10,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:02 up 16 days,  9:10,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -41,7 +45,13 @@ https://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/posmv_qc
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/quick_os75nb.warn
 
 Figures and files:
 
@@ -52,10 +62,13 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+     970      /home/adcp/www/figures/ktprof_amp_lastens.png
+     970      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+     970      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
