@@ -1,7 +1,16 @@
-2026/06/30 14:30:01
+2026/07/21 14:30:01
 currents01ws 6.5.0-28-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: WS26195_CRM-DOC  *** not logging ***
+
+   wh600 2026/07/14  12:36:11 to 2026/07/15  00:26:11  (9483 min. ago)  6.6 days
+  os75bb 2026/07/14  12:39:12 to 2026/07/15  00:24:12  (9485 min. ago)  6.6 days
+  os75nb 2026/07/14  12:39:12 to 2026/07/15  00:24:12  (9485 min. ago)  6.6 days
+
+approximate lat, lon, depth:   25 43.88033 N   80 9.72617 W   depth=1
+
+link: http://www.google.com/maps/place/25%2043.88033N+80%209.72617W
+not using zmq publishers, position is from serial GPS
+
 NOTE: This is the _primary_ computer
 
 
@@ -14,9 +23,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 10.106.30.100                 1   8   377    30   +341us[ +332us] +/-  878us
+^* 10.106.30.100                 1   7   377    70  +7809ns[+6241ns] +/-  491us
 
-Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000008, RMS offset=0.000016
+Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000002, RMS offset=0.000004
 ------------------------------------------
 
 
@@ -25,7 +34,7 @@ Reference ID: 0A6A1E64, Stratum=2, last offset=-0.000008, RMS offset=0.000016
 
 
 ---------- uptime ------------
- 14:30:01 up 17 days, 14:06,  1 user,  load average: 0.08, 0.05, 0.04
+ 14:30:02 up 38 days, 14:06,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/walton_smith/daily_report/
@@ -42,7 +51,11 @@ Summary of warnings:
 ______________________
 
 (1) EDAC memory warnings:
-    16 EDAC (memory) errors in last 2 /var/log/syslog
+     6 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      14 /home/adcp/log/send_buffered_mail.warn
+      25 /home/adcp/log/send_buffered_mail.warn.2026-07-20
 
 Figures and files:
 
@@ -53,17 +66,17 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-   16979      /home/adcp/www/figures/os75nb_lastens.png
-   16979      /home/adcp/www/figures/ktprof_amp_lastens.png
-   16979      /home/adcp/www/figures/os75bb_lastens.png
-   16979      /home/adcp/www/figures/wh600_lastens.png
+    9482      /home/adcp/www/figures/os75nb_lastens.png
+    9482      /home/adcp/www/figures/ktprof_amp_lastens.png
+    9482      /home/adcp/www/figures/os75bb_lastens.png
+    9482      /home/adcp/www/figures/wh600_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-   16979      /home/adcp/www/figures/os75bb_ddaycont.png
-   16979      /home/adcp/www/figures/wh600_ddaycont.png
-   16979      /home/adcp/www/figures/os75nb_ddaycont.png
+    9482      /home/adcp/www/figures/os75bb_ddaycont.png
+    9482      /home/adcp/www/figures/wh600_ddaycont.png
+    9482      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
