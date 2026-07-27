@@ -1,24 +1,91 @@
-2026/07/25 14:15:01
+2026/07/26 20:16:28
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: RR2606     ** is logging **
+
+  os150nb 2026/07/26  15:44:16 to 2026/07/26  20:16:04  (0 min. ago)
+  os75nb 2026/07/26  15:44:15 to 2026/07/26  20:16:07  (0 min. ago)
+
+approximate lat, lon, depth:   32 39.70580 N  117 38.99882 W   depth=1149
+
+link: http://www.google.com/maps/place/32%2039.70580N+117%2038.99882W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 NOTE: This is the _primary_ computer
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "seapath380mgc")
+===========================
+------ seapath380mgc statistics ------
+===========================
+seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 206.6536507 to 206.8425859
+(2026/07/26 15:41:15 to 2026/07/26 20:13:19)
+all seapath380mgc messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   50 out of 50   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -0.05, max = 0.06
+   mean = 0.00, stddev = 0.02
+
+===========================
+------ gyro statistics ------
+===========================
+seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 206.6536507 to 206.8425975
+(2026/07/26 15:41:15 to 2026/07/26 20:13:20)
+all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
+
+(300sec) ensemble heading corrections:
+   50 out of 50   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = 0.23, max = 0.40
+   mean = 0.32, stddev = 0.03
+
+
+=== Sonar Pingtype Summary =====
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:  on
+os150 BT:  on
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:  on
+
+===========================
 
 ---------- ps -ef | grep ntpd | grep -v grep ------------
 ntp is not running
 ------------------------------------------
 
 
+------------- pings per ensemble ----------- 
+os150nb recent ping statistics
+
+(2026/07/26 20:13:05) ens = 180 sec, 79 pings, (2.28 sec/ping)
+
+os75nb recent ping statistics
+
+(2026/07/26 20:13:06) ens = 180 sec, 37 pings, (4.86 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:15:02 up 9 days, 23:24,  1 user,  load average: 0.08, 0.02, 0.01
+ 20:16:32 up 11 days,  5:26,  2 users,  load average: 0.27, 0.24, 0.25
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -33,12 +100,16 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(1) wordcount of log/*.warn:
 
-      48 /home/adcp/log/DAS_while_logging.warn
-      2 /home/adcp/log/lastfewvec_os150nb.warn
+      4 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      5 /home/adcp/log/quick_os150nb.warn
+(2) rbin warnings:
+ 
+gp170fwd gps  15206    1.00    0.00    1358.0       4    10     2     0     0
+gp170fwd gps  15206    1.00    0.00    1358.0       4    10     2     0     0
 
 Figures and files:
 
@@ -49,15 +120,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    1125      /home/adcp/www/figures/os75nb_lastens.png
-    1125      /home/adcp/www/figures/ktprof_amp_lastens.png
-    1125      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os150nb_lastens.png
+       1      /home/adcp/www/figures/os75nb_lastens.png
+       1      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    1125      /home/adcp/www/figures/os75nb_ddaycont.png
-    1125      /home/adcp/www/figures/os150nb_ddaycont.png
+       4      /home/adcp/www/figures/os75nb_ddaycont.png
+       3      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
