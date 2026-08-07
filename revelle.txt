@@ -1,7 +1,10 @@
-2026/08/05 14:15:01
+2026/08/06 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+Current cruise: RR2607  *** not logging ***
+
+
+no positions found from filelist seapath380/*.gps.rbin
+
 NOTE: This is the _primary_ computer
 
 
@@ -9,8 +12,13 @@ NOTE: This is the _primary_ computer
 
 
 
----------- ps -ef | grep ntpd | grep -v grep ------------
-ntp is not running
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+ rr-ntp-pool.ucs .POOL.          16 p    -   64    0    0.000   +0.000   0.000
++rr-seapath-mru. .PPS.            1 u  706 1024  377    0.169   +0.126   0.157
++rr-ptp01-das.uc .GPS.            1 u  660 1024  377    0.996   -0.305   0.113
+*rr-ntp-pool.ucs .PPS.            1 u  804 1024  377    0.185   +0.136   0.142
 ------------------------------------------
 
 
@@ -18,7 +26,7 @@ ntp is not running
 
 
 ---------- uptime ------------
- 14:15:03 up 20 days, 23:23,  1 user,  load average: 0.06, 0.03, 0.01
+ 14:15:02 up 21 days, 23:23,  1 user,  load average: 0.04, 0.03, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -41,15 +49,10 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    2703      /home/adcp/www/figures/os75nb_lastens.png
-    2703      /home/adcp/www/figures/ktprof_amp_lastens.png
-    2703      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    2703      /home/adcp/www/figures/os75nb_ddaycont.png
-    2703      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
