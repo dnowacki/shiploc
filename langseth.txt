@@ -1,14 +1,7 @@
-2026/08/06 14:30:01
-currents01mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-Current cruise: MGL2607  *** not logging ***
-
-  os75nb 2026/08/03  21:42:22 to 2026/08/06  11:42:22  (167 min. ago) 2.8 hrs
-
-approximate lat, lon, depth:   36 37.96586 N   75 30.41849 W   depth=20
-
-link: http://www.google.com/maps/place/36%2037.96586N+75%2030.41849W
-not using zmq publishers, position is from serial GPS
-
+2026/08/07 14:30:01
+currents02mgl 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 
 
 
@@ -21,9 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserve2.langseth.ldeo>     1   6   377    27    +49us[  +49us] +/-   83us
+^* timeserve2.langseth.ldeo>     1   6   377    12    -89ns[+8661ns] +/-   88us
+^- _gateway                      4   6   377    10  +8566us[+8566us] +/-   72ms
 
-Reference ID: C0A8030E, Stratum=2, last offset=0.000000, RMS offset=0.000007
+Reference ID: C0A8030E, Stratum=2, last offset=0.000009, RMS offset=0.000010
 ------------------------------------------
 
 
@@ -32,7 +26,7 @@ Reference ID: C0A8030E, Stratum=2, last offset=0.000000, RMS offset=0.000007
 
 
 ---------- uptime ------------
- 14:30:02 up 33 days,  9:10,  1 user,  load average: 0.00, 0.00, 0.00
+ 14:30:01 up 25 days, 15:50,  1 user,  load average: 0.00, 0.01, 0.00
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/langseth/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/langseth/daily_report/
@@ -56,13 +50,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     165      /home/adcp/www/figures/ktprof_amp_lastens.png
-     165      /home/adcp/www/figures/os75nb_lastens.png
+  1146272      /home/adcp/www/figures/os75nb_lastens.png
+  1146272      /home/adcp/www/figures/os75bb_lastens.png
+  1146272      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     165      /home/adcp/www/figures/os75nb_ddaycont.png
+  1146272      /home/adcp/www/figures/os75bb_ddaycont.png
+  1146272      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 

@@ -1,14 +1,7 @@
-2026/08/06 14:30:01
-atcurrents03 5.15.0-177-generic (jammy "Ubuntu 22.04.5 LTS")
-Current cruise: at53-01  *** not logging ***
-
-  wh300  2026/07/27  16:25:31 to 2026/08/06  10:53:48  (216 min. ago) 3.6 hrs
-
-approximate lat, lon, depth:   18 22.60823 N   81 47.43583 W   depth=3104
-
-link: http://www.google.com/maps/place/18%2022.60823N+81%2047.43583W
-not using zmq publishers, position is from serial GPS
-
+2026/08/07 14:30:01
+atcurrents04 5.15.0-177-generic (jammy "Ubuntu 22.04.5 LTS")
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
@@ -21,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* timeserver.atlantis.whoi>     1   7   377    53  +1420ns[+2066ns] +/-   29us
+^* timeserver.atlantis.whoi>     1   6   377     8   +227ns[ +629ns] +/-   28us
 
-Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000000
+Reference ID: 0A64A1FA, Stratum=2, last offset=0.000000, RMS offset=0.000000
 ------------------------------------------
 
 
@@ -32,7 +25,7 @@ Reference ID: 0A64A1FA, Stratum=2, last offset=0.000001, RMS offset=0.000000
 
 
 ---------- uptime ------------
- 14:30:01 up 66 days, 14:12,  1 user,  load average: 0.00, 0.02, 0.00
+ 14:30:02 up 90 days, 15:03,  1 user,  load average: 0.03, 0.01, 0.00
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atlantis/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_report/
@@ -47,9 +40,8 @@ daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atlantis/daily_r
 Summary of warnings:
 ______________________
 
-(1) wordcount of log/*.warn:
-
-      2 /home/adcp/log/lastfewvec_wh300.warn
+(1) EDAC memory warnings:
+    15 EDAC (memory) errors in last 2 /var/log/syslog
 
 Figures and files:
 
@@ -60,13 +52,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-     214      /home/adcp/www/figures/wh300_lastens.png
-     214      /home/adcp/www/figures/ktprof_amp_lastens.png
+  161131      /home/adcp/www/figures/wh300_lastens.png
+  161131      /home/adcp/www/figures/ktprof_amp_lastens.png
+  161131      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-     214      /home/adcp/www/figures/wh300_ddaycont.png
+  161131      /home/adcp/www/figures/wh300_ddaycont.png
+  161131      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 

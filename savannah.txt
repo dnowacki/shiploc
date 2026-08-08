@@ -1,12 +1,12 @@
-2026/08/06 14:30:01
+2026/08/07 14:30:02
 currents02sv 6.5.0-18-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: SAV-26-13     ** is logging **
 
-   wh300 2026/08/04  10:50:21 to 2026/08/06  14:28:20  (1 min. ago)
+   wh300 2026/08/04  10:50:21 to 2026/08/07  14:28:20  (1 min. ago)
 
-approximate lat, lon, depth:   30 15.02513 N   80 19.54810 W   depth=44
+approximate lat, lon, depth:   29 44.14217 N   80 38.34138 W   depth=29
 
-link: http://www.google.com/maps/place/30%2015.02513N+80%2019.54810W
+link: http://www.google.com/maps/place/29%2044.14217N+80%2038.34138W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -24,16 +24,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-bx992_udp statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 216.5963310 to 217.5963194
-(2026/08/05 14:18:43 to 2026/08/06 14:18:42)
+ddrange: 217.5962963 to 218.5962847
+(2026/08/06 14:18:40 to 2026/08/07 14:18:39)
 all bx992_udp messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.4
-   min  = -0.97, max = 0.96
-   mean = -0.19, stddev = 0.33
+   min  = -0.88, max = 3.51
+   mean = 0.17, stddev = 0.50
 
 
 === Sonar Pingtype Summary =====
@@ -52,13 +52,13 @@ WARNING: Chrony is installed but is not running
 ------------- pings per ensemble ----------- 
 wh300 recent ping statistics
 
-(2026/08/06 14:26:20) ens = 120 sec, 75 pings, (1.60 sec/ping)
+(2026/08/07 14:26:20) ens = 120 sec, 75 pings, (1.60 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 470 days, 16:50,  1 user,  load average: 0.16, 0.30, 0.43
+ 14:30:02 up 471 days, 16:50,  1 user,  load average: 0.24, 0.33, 0.34
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/savannah/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/savannah/daily_report/
@@ -75,15 +75,18 @@ ______________________
 
 (1) EDAC memory warnings:
      6 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
+(2) serial overruns:
+     1 "USB overruns" in syslog
+(3) wordcount of log/*.warn:
 
-      399 /home/adcp/log/DAS_speedlog.log.warn
+      2 /home/adcp/log/3dayplots_wh300.warn
+      411 /home/adcp/log/DAS_speedlog.log.warn
       58 /home/adcp/log/grab_pings_wh300.warn
-      96 /home/adcp/log/grab_pings_wh300.warn.2026-08-05
+      96 /home/adcp/log/grab_pings_wh300.warn.2026-08-06
       443 /home/adcp/log/lastensq_wh300.warn
-      732 /home/adcp/log/lastensq_wh300.warn.2026-08-05
+      732 /home/adcp/log/lastensq_wh300.warn.2026-08-06
       438 /home/adcp/log/quick_wh300.warn
-      723 /home/adcp/log/quick_wh300.warn.2026-08-05
+      724 /home/adcp/log/quick_wh300.warn.2026-08-06
 
 Figures and files:
 
