@@ -1,0 +1,86 @@
+2026/08/19 14:15:02
+currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
+Current cruise: SP2616  *** not logging ***
+
+  os150nb 2026/08/02  15:58:14 to 2026/08/18  15:14:11  (1380 min. ago) 23.0 hrs
+
+approximate lat, lon, depth:   34 8.88419 N  119 12.15393 W   depth=-2
+
+link: http://www.google.com/maps/place/34%208.88419N+119%2012.15393W
+not using zmq publishers, position is from serial GPS
+
+NOTE: This is a VIRTUAL computer.
+
+
+
+
+
+
+---------- ntpq -p ------------
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*sp-ntp-pool.ucs .GPS.            1 u  192 1024  377    2.533   -0.053   0.569
+ sp-ptp01-net.uc .STEP.          16 u    - 1024    0    0.000    0.000   0.000
+ sp-peplink-gw.u .STEP.          16 u    - 1024    0    0.000    0.000   0.000
+------------------------------------------
+
+
+
+
+
+---------- uptime ------------
+ 14:15:03 up 22:59,  1 user,  load average: 0.08, 0.02, 0.01
+===============================
+figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
+daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
+
+
+
+
+
+
+
+
+Summary of warnings:
+______________________
+
+(1) EDAC memory warnings:
+     2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      2 /home/adcp/log/DAS_while_logging.warn
+      2 /home/adcp/log/web_speedlog.warn
+(3) rbin warnings:
+ 
+bx992 gps   9020    0.50  -7682721.17       0.5       0     1     1     0     1
+bx992 gph   9020    0.50  -7682721.17       0.5       0     1     1     0     1
+sc30 gps   4509    1.00  -7682720.67       1.0       0     1     1     0     1
+sc30 gph   9019    0.31  -7682720.97       0.7    4509     1     1     0     1
+gp170a gps   4508    1.00  -7682720.22       1.5       0     1     1     0     1
+gp170b gps   4509    1.00  -7682720.70       1.8       0     1     1     0     1
+(4) timestamp warnings:
+jumps forward: 1   jumps back: 0
+max forward 0 seconds at dday 228.500000
+
+
+Figures and files:
+
+-------------------
+
+Gyro logging and backup:
+
+
+Checking updating of 5-minute plots:
+age (minutes)          filename
+    1378      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1378      /home/adcp/www/figures/os150nb_lastens.png
+
+
+Checking updating of hourly plots:
+age (minutes)          filename
+    1378      /home/adcp/www/figures/os150nb_ddaycont.png
+
+
+
+local_status_mailto:
+
