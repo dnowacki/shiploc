@@ -1,5 +1,5 @@
-2026/08/19 19:55:59
-arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
+2026/08/20 14:30:01
+arcurrents05 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 
@@ -14,9 +14,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* time.armstrong.whoi.edu       1  10   377   515  +2213ns[  +30us] +/-   61us
-
-Reference ID: 0A00A11E, Stratum=2, last offset=0.000028, RMS offset=0.000013
+^x time.armstrong.whoi.edu       1   6   377    12   -895ms[ -895ms] +/-  177us
+^x ese01.armstrong.whoi.edu      1  10   377   206   -867ms[ -867ms] +/-   12ms
+WARNING: Chrony cannot get time from the specified server
+Reference ID: 00000000, Stratum=0, last offset=0.000006, RMS offset=0.000005
 ------------------------------------------
 
 
@@ -25,7 +26,7 @@ Reference ID: 0A00A11E, Stratum=2, last offset=0.000028, RMS offset=0.000013
 
 
 ---------- uptime ------------
- 19:55:59 up 101 days, 15:07,  1 user,  load average: 0.61, 0.48, 0.45
+ 14:30:01 up 125 days, 21:28,  1 user,  load average: 0.02, 0.02, 0.00
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -37,15 +38,7 @@ daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_
 
 
 
-Summary of warnings:
-______________________
 
-(1) wordcount of log/*.warn:
-
-      717 /home/adcp/log/3dayplots_os38nb.warn
-      864 /home/adcp/log/3dayplots_os38nb.warn.2026-08-18
-      717 /home/adcp/log/3dayplots_wh300.warn
-      864 /home/adcp/log/3dayplots_wh300.warn.2026-08-18
 
 Figures and files:
 
@@ -56,21 +49,16 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
-       0      /home/adcp/www/figures/wh300_lastens.png
-       0      /home/adcp/www/figures/os38nb_lastens.png
+  500911      /home/adcp/www/figures/wh300_lastens.png
+  500911      /home/adcp/www/figures/ktprof_amp_lastens.png
+  500911      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os38nb_ddaycont.png
-       0      /home/adcp/www/figures/wh300_ddaycont.png
+  500911      /home/adcp/www/figures/os150nb_ddaycont.png
+  500911      /home/adcp/www/figures/wh300_ddaycont.png
 
-
-
-
--------------------
-cruise ended
 
 
 local_status_mailto:
