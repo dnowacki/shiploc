@@ -1,24 +1,110 @@
-2026/08/24 14:30:02
-currents01pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2026/08/25 14:30:02
+currents02pe 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
+Current cruise: PE27_05_Martens_ADCP     ** is logging **
+
+  wh1200 2026/08/25  12:01:25 to 2026/08/25  14:29:26  (0 min. ago)
+  os75nb 2026/08/25  12:04:26 to 2026/08/25  14:29:28  (0 min. ago)
+
+approximate lat, lon, depth:   28 24.03890 N   91 2.33821 W   depth=45
+
+link: http://www.google.com/maps/place/28%2024.03890N+91%202.33821W
+not using zmq publishers, position is from serial GPS
+
+Database time ranges:
 
 
 
 
 
 
+---- heading correction ----
+
+(heading correction from "abxtwo")
+===========================
+------ abxtwo statistics ------
+===========================
+sc70_tech-abxtwo statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 236.4996065 to 236.5935995
+(2026/08/25 11:59:26 to 2026/08/25 14:14:47)
+all abxtwo messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   27 out of 27   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = 0.01, max = 1.84
+   mean = 1.11, stddev = 0.44
+
+===========================
+------ abxtwo_b2a1 statistics ------
+===========================
+sc70_tech-abxtwo_b2a1 statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 236.4996065 to 236.5936227
+(2026/08/25 11:59:26 to 2026/08/25 14:14:49)
+all abxtwo_b2a1 messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   27 out of 27   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = 0.01, max = 1.84
+   mean = 1.11, stddev = 0.44
+
+===========================
+------ sc70_bridge statistics ------
+===========================
+sc70_tech-sc70_bridge statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 236.4996065 to 236.5936343
+(2026/08/25 11:59:26 to 2026/08/25 14:14:50)
+all sc70_bridge messages:  (100%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   27 out of 27   (100%) were good
+statistics of good data:
+   mean N = 301, stddev N =  0.4
+   min  = -3.54, max = -1.40
+   mean = -2.17, stddev = 0.61
+
+
+=== Sonar Pingtype Summary =====
+
+wh1200: Triggering command not found
+wh1200 BB:  on
+wh1200 BT:  on
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+os75: Triggering not used (CX0,0)
+os75 BB:       off
+os75 NB:  on
+os75 BT:  on
+
+===========================
 
 
 using chrony
 WARNING: Chrony is installed but is not running
 
 
+------------- pings per ensemble ----------- 
+os75nb recent ping statistics
+
+(2026/08/25 14:24:27) ens = 300 sec, 77 pings, (3.90 sec/ping)
+
+wh1200 recent ping statistics
+
+(2026/08/25 14:27:26) ens = 120 sec, 100 pings, (1.20 sec/ping)
+
 
 
 
 ---------- uptime ------------
- 14:30:03 up 67 days,  5:00,  1 user,  load average: 0.15, 0.08, 0.02
+ 14:30:03 up 41 days, 20:26,  1 user,  load average: 0.79, 0.36, 0.29
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/pelican/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_report/
@@ -33,8 +119,11 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/pelican/daily_rep
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     6 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      9 /home/adcp/log/DAS_while_logging.warn
+      1 /home/adcp/log/lastfewvec_os75nb.warn
+      1 /home/adcp/log/lastfewvec_wh1200.warn
 
 Figures and files:
 
@@ -45,10 +134,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh1200_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os75nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh1200_ddaycont.png
+       0      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
