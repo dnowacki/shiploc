@@ -1,20 +1,24 @@
-2026/08/30 14:30:01
+2026/08/31 14:30:01
 currents04ae 6.8.0-31-generic (noble "Ubuntu 24.04.4 LTS")
 Current cruise: Pierside_PostAE2617_6     ** is logging **
 
-  sv300  2026/08/27  12:50:59 to 2026/08/30  14:29:00  (1 min. ago)
-  os75bb 2026/08/27  12:54:02 to 2026/08/30  14:29:00  (1 min. ago)
-  os75nb 2026/08/27  12:54:02 to 2026/08/30  14:29:00  (1 min. ago)
+  sv300  2026/08/27  12:50:59 to 2026/08/31  14:29:00  (1 min. ago)
+  os75bb 2026/08/27  12:54:02 to 2026/08/31  14:28:59  (1 min. ago)
+  os75nb 2026/08/27  12:54:02 to 2026/08/31  14:28:59  (1 min. ago)
 
-approximate lat, lon, depth:   32 41.42167 N   80 13.41906 W   depth=1
+approximate lat, lon, depth:   32 41.42171 N   80 13.41896 W   depth=1
 
-link: http://www.google.com/maps/place/32%2041.42167N+80%2013.41906W
+link: http://www.google.com/maps/place/32%2041.42171N+80%2013.41896W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
 
 
 
+
+--->>> WARNING: check os75bb temperature: (max T = 48.39) <<<---
+
+--->>> WARNING: check os75nb temperature: (max T = 48.39) <<<---
 
 
 
@@ -26,15 +30,15 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 240.5973380 to 241.5973264
-(2026/08/29 14:20:10 to 2026/08/30 14:20:09)
+ddrange: 241.5976042 to 242.5975926
+(2026/08/30 14:20:33 to 2026/08/31 14:20:32)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = 0.61, max = 0.96
+   min  = 0.61, max = 1.01
    mean = 0.78, stddev = 0.06
 
 
@@ -57,10 +61,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1  10   377    25  +1422ns[ +240ns] +/-   28us
-^+ 192.168.50.9                  1  10   377  1034    +74us[  +73us] +/-  214us
+^* 192.168.51.9                  1   9   377   191    +97us[  +98us] +/-  119us
+^+ 192.168.50.9                  1  10   377   542    +58us[  +59us] +/-  182us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000002
+Reference ID: C0A83309, Stratum=2, last offset=0.000000, RMS offset=0.000003
 ------------------------------------------
 
 
@@ -68,21 +72,21 @@ Reference ID: C0A83309, Stratum=2, last offset=-0.000001, RMS offset=0.000002
 ------------- pings per ensemble ----------- 
 os75nb recent ping statistics
 
-(2026/08/30 14:24:01) ens = 300.0 sec, 77 pings, (3.90 sec/ping)
+(2026/08/31 14:24:00) ens = 300.0 sec, 76 pings, (3.95 sec/ping)
 
 os75bb recent ping statistics
 
-(2026/08/30 14:24:01) ens = 300.0 sec, 77 pings, (3.90 sec/ping)
+(2026/08/31 14:24:00) ens = 300.0 sec, 76 pings, (3.95 sec/ping)
 
 sv300 recent ping statistics
 
-(2026/08/30 14:27:00) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+(2026/08/31 14:27:00) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 18 days, 17:37,  3 users,  load average: 1.12, 0.68, 0.55
+ 14:30:03 up 19 days, 17:37,  3 users,  load average: 0.46, 0.30, 0.32
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -100,11 +104,17 @@ ______________________
 (1) wordcount of log/*.warn:
 
       522 /home/adcp/log/3dayplots_os75bb.warn
-      864 /home/adcp/log/3dayplots_os75bb.warn.2026-08-29
+      864 /home/adcp/log/3dayplots_os75bb.warn.2026-08-30
       522 /home/adcp/log/3dayplots_os75nb.warn
-      864 /home/adcp/log/3dayplots_os75nb.warn.2026-08-29
+      864 /home/adcp/log/3dayplots_os75nb.warn.2026-08-30
       522 /home/adcp/log/3dayplots_sv300.warn
-      864 /home/adcp/log/3dayplots_sv300.warn.2026-08-29
+      864 /home/adcp/log/3dayplots_sv300.warn.2026-08-30
+(2) temperature warnings:
+
+--->>> WARNING: check os75bb temperature: (max T = 48.39) <<<---
+
+--->>> WARNING: check os75nb temperature: (max T = 48.39) <<<---
+
 
 Figures and files:
 
@@ -115,7 +125,7 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/sv300_lastens.png
+       0      /home/adcp/www/figures/sv300_lastens.png
        0      /home/adcp/www/figures/os75bb_lastens.png
        0      /home/adcp/www/figures/os75nb_lastens.png
        0      /home/adcp/www/figures/ktprof_amp_lastens.png
