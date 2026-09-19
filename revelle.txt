@@ -1,96 +1,29 @@
-2026/09/17 14:15:01
+2026/09/18 14:15:02
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
-Current cruise: RR2608     ** is logging **
-
-  os150nb 2026/09/11  15:26:37 to 2026/09/17  14:14:24  (0 min. ago)
-  os75nb 2026/09/11  15:26:37 to 2026/09/17  14:14:25  (0 min. ago)
-
-approximate lat, lon, depth:   37 8.12439 N  122 41.61637 W   depth=151
-
-link: http://www.google.com/maps/place/37%208.12439N+122%2041.61637W
-not using zmq publishers, position is from serial GPS
-
-Database time ranges:
+no cruise set
+zmq is not enabled. no zmq position.
 NOTE: This is the _primary_ computer
 
 
 
 
 
----- heading correction ----
-
-(heading correction from "seapath380mgc")
-===========================
------- seapath380mgc statistics ------
-===========================
-seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 258.5858382 to 259.5858266
-(2026/09/16 14:03:36 to 2026/09/17 14:03:35)
-all seapath380mgc messages:  (100%)  were good  [using available QC]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  0.2
-   min  = -0.06, max = 0.07
-   mean = 0.00, stddev = 0.02
-
-===========================
------- gyro statistics ------
-===========================
-seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
-
-ddrange: 258.5858498 to 259.5858382
-(2026/09/16 14:03:37 to 2026/09/17 14:03:36)
-all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
-
-(300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
-statistics of good data:
-   mean N = 301, stddev N =  1.8
-   min  = 0.23, max = 0.42
-   mean = 0.34, stddev = 0.04
-
-
-=== Sonar Pingtype Summary =====
-
-os150: Triggering not used (CX0,0)
-os150 BB:       off
-os150 NB:  on
-os150 BT:      off
-
-os75: Triggering not used (CX0,0)
-os75 BB:       off
-os75 NB:  on
-os75 BT:      off
-
-===========================
 
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  rr-ntp-pool.ucs .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*rr-ntp-pool.ucs .GPS.            1 u  892 1024  377    1.399   -0.476   0.232
-+rr-seapath-mgc. .PPS.            1 u  677 1024  377    0.130   +0.051   0.050
-+rr-seapath-mru. .PPS.            1 u  568 1024  377    0.185   +0.125   0.032
++rr-ptp01-das.uc .GPS.            1 u  447 1024  377    1.224   -0.354   0.238
++rr-seapath-mgc. .PPS.            1 u  629 1024  377    0.165   +0.108   0.024
+*rr-seapath-mru. .PPS.            1 u  254 1024  377    0.180   +0.136   0.015
 ------------------------------------------
 
-
-------------- pings per ensemble ----------- 
-os150nb recent ping statistics
-
-(2026/09/17 14:11:24) ens = 180 sec, 163 pings, (1.10 sec/ping)
-
-os75nb recent ping statistics
-
-(2026/09/17 14:11:26) ens = 180 sec, 80 pings, (2.25 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:04 up 28 days,  2:21,  1 user,  load average: 0.39, 0.25, 0.27
+ 14:15:03 up 29 days,  2:21,  1 user,  load average: 0.21, 0.07, 0.02
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -102,15 +35,7 @@ daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_rep
 
 
 
-Summary of warnings:
-______________________
 
-(1) rbin warnings:
- 
-gp170fwd gps  87248    1.00    0.00      38.0      12   149     3     0     0
-gp170fwd gps  87248    1.00    0.00      38.0      12   149     3     0     0
-gyro hdg  87064    1.00    0.00      12.2      10    11     6     0     0
-gyro hdg  87064    1.00    0.00      12.2      10    11     6     0     0
 
 Figures and files:
 
@@ -121,15 +46,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/os150nb_lastens.png
-       0      /home/adcp/www/figures/os75nb_lastens.png
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1158      /home/adcp/www/figures/os75nb_lastens.png
+    1158      /home/adcp/www/figures/ktprof_amp_lastens.png
+    1158      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os150nb_ddaycont.png
-       2      /home/adcp/www/figures/os75nb_ddaycont.png
+    1158      /home/adcp/www/figures/os75nb_ddaycont.png
+    1158      /home/adcp/www/figures/os150nb_ddaycont.png
 
 
 
