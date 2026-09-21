@@ -1,13 +1,13 @@
-2026/09/19 14:30:01
+2026/09/20 14:30:02
 currents04ae 6.8.0-31-generic (noble "Ubuntu 24.04.4 LTS")
 Current cruise: Pierside_PostSeaTrial_CHS_2026     ** is logging **
 
-  sv300  2026/09/18  22:27:41 to 2026/09/19  14:29:41  (0 min. ago)
-  os75bb 2026/09/18  22:30:40 to 2026/09/19  14:25:39  (4 min. ago)
+  sv300  2026/09/18  22:27:41 to 2026/09/20  14:29:41  (0 min. ago)
+  os75bb 2026/09/18  22:30:40 to 2026/09/20  14:25:40  (4 min. ago)
 
-approximate lat, lon, depth:   32 51.32082 N   79 57.23425 W   depth=9
+approximate lat, lon, depth:   32 51.32087 N   79 57.23422 W   depth=9
 
-link: http://www.google.com/maps/place/32%2051.32082N+79%2057.23425W
+link: http://www.google.com/maps/place/32%2051.32087N+79%2057.23422W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ Database time ranges:
 ===========================
 hydrins-abxtwo statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 260.9345139 to 261.6019329
-(2026/09/18 22:25:42 to 2026/09/19 14:26:47)
+ddrange: 261.6018981 to 262.6018866
+(2026/09/19 14:26:44 to 2026/09/20 14:26:43)
 all abxtwo messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   192 out of 192   (100%) were good
+   287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.3
-   min  = 0.55, max = 0.98
-   mean = 0.76, stddev = 0.07
+   min  = 0.64, max = 0.94
+   mean = 0.80, stddev = 0.06
 
 
 === Sonar Pingtype Summary =====
@@ -56,32 +56,28 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.51.9                  1  10   377   224  +3995ns[  -11us] +/-   39us
-^+ 192.168.50.9                  1  10   377    56    -36us[  -36us] +/-  110us
+^* 192.168.51.9                  1   9   377    40    +54us[  +55us] +/-   91us
+^+ 192.168.50.9                  1  10   377   511    +63us[  +64us] +/-  214us
 
-Reference ID: C0A83309, Stratum=2, last offset=-0.000015, RMS offset=0.000020
+Reference ID: C0A83309, Stratum=2, last offset=0.000001, RMS offset=0.000006
 ------------------------------------------
 
 
 
 ------------- pings per ensemble ----------- 
-os75nb recent ping statistics
-
-(2026/09/18 14:24:13) ens = 300.0 sec, 76 pings, (3.95 sec/ping)
-
 os75bb recent ping statistics
 
-(2026/09/19 14:20:40) ens = 300.0 sec, 167 pings, (1.80 sec/ping)
+(2026/09/20 14:20:39) ens = 300.0 sec, 167 pings, (1.80 sec/ping)
 
 sv300 recent ping statistics
 
-(2026/09/19 14:27:41) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
+(2026/09/20 14:27:41) ens = 120.0 sec, 150 pings, (0.80 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:30:03 up 38 days, 17:37,  3 users,  load average: 0.38, 0.41, 0.37
+ 14:30:03 up 39 days, 17:37,  3 users,  load average: 0.24, 0.38, 0.36
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/atl_explorer/daily_report/
@@ -98,13 +94,11 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      548 /home/adcp/log/3dayplots_os75bb.warn
-      951 /home/adcp/log/3dayplots_os75bb.warn.2026-09-18
+      522 /home/adcp/log/3dayplots_os75bb.warn
+      1044 /home/adcp/log/3dayplots_os75bb.warn.2026-09-19
       522 /home/adcp/log/3dayplots_sv300.warn
-      850 /home/adcp/log/3dayplots_sv300.warn.2026-09-18
-      2 /home/adcp/log/lastfewvec_os75bb.warn
-      2 /home/adcp/log/lastfewvec_sv300.warn
-      1 /home/adcp/log/quick_os75bb.warn
+      864 /home/adcp/log/3dayplots_sv300.warn.2026-09-19
+      1 /home/adcp/log/send_buffered_mail.warn
 
 Figures and files:
 
@@ -122,8 +116,8 @@ age (minutes)          filename
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       4      /home/adcp/www/figures/sv300_ddaycont.png
        4      /home/adcp/www/figures/os75bb_ddaycont.png
+       2      /home/adcp/www/figures/sv300_ddaycont.png
 
 
 
