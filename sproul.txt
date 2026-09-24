@@ -1,12 +1,12 @@
-2026/09/22 14:15:01
+2026/09/23 14:15:01
 currents01sp 5.4.0-110-generic (focal "Ubuntu 20.04.4 LTS")
 Current cruise: SP2617     ** is logging **
 
-  os150nb 2026/09/22  01:50:35 to 2026/09/22  14:14:35  (0 min. ago)
+  os150nb 2026/09/22  01:50:35 to 2026/09/23  14:14:36  (0 min. ago)
 
-approximate lat, lon, depth:   32 52.07971 N  118 15.43854 W   depth=833
+approximate lat, lon, depth:   32 52.07287 N  118 17.24085 W   depth=900
 
-link: http://www.google.com/maps/place/32%2052.07971N+118%2015.43854W
+link: http://www.google.com/maps/place/32%2052.07287N+118%2017.24085W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -23,16 +23,16 @@ no heading correction device specified===========================
 ===========================
 bx992-sc30 statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 264.0747164 to 264.5853877
-(2026/09/22 01:47:35 to 2026/09/22 14:02:58)
+ddrange: 264.5854572 to 265.5854514
+(2026/09/22 14:03:03 to 2026/09/23 14:03:03)
 all sc30 messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   147 out of 147   (100%) were good
+   288 out of 288   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.3
-   min  = -2.61, max = 0.96
-   mean = -1.57, stddev = 0.36
+   min  = -3.61, max = 0.74
+   mean = -1.41, stddev = 0.55
 
 
 === Sonar Pingtype Summary =====
@@ -47,7 +47,7 @@ os150 BT:  on
 ---------- ntpq -p ------------
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
-*sp-bx992.ucsd.e .GPS.            1 u  792 1024  377    1.680   -0.295   0.663
+*sp-ntp-pool.ucs .GPS.            1 u  532 1024  377    1.118    0.463   0.351
  sp-ptp01-net.uc .STEP.          16 u    - 1024    0    0.000    0.000   0.000
  sp-peplink-gw.u .STEP.          16 u    - 1024    0    0.000    0.000   0.000
 ------------------------------------------
@@ -56,13 +56,13 @@ os150 BT:  on
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2026/09/22 14:11:36) ens = 180 sec, 77 pings, (2.34 sec/ping)
+(2026/09/23 14:11:36) ens = 180 sec, 78 pings, (2.31 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:02 up 34 days, 22:59,  1 user,  load average: 0.02, 0.05, 0.07
+ 14:15:02 up 35 days, 22:59,  1 user,  load average: 0.09, 0.15, 0.16
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/sproul/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/sproul/daily_report/
@@ -79,9 +79,18 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      2 /home/adcp/log/DAS_while_logging.warn
-      1 /home/adcp/log/lastfewvec_os150nb.warn
-      8 /home/adcp/log/quick_os150nb.warn
+      41 /home/adcp/log/lastensq_os150nb.warn
+      80 /home/adcp/log/lastensq_os150nb.warn.2026-09-22
+(2) rbin warnings:
+ 
+bx992 gps 174613    0.50    0.00      12.7       1    24    24     0     0
+bx992 gps 174613    0.50    0.00      12.7       1    24    24     0     0
+bx992 gph 174612    0.50    0.00      13.2       1    24    24     0     0
+bx992 gph 174612    0.50    0.00      13.2       1    24    24     0     0
+sc30 gps  87305    1.00    0.00      13.4       1    11    11     0     0
+sc30 gps  87305    1.00    0.00      13.4       1    11    11     0     0
+sc30 gph 174612    0.31    0.00      12.6   87295    24    23     0     0
+sc30 gph 174612    0.31    0.00      12.6   87295    24    23     0     0
 
 Figures and files:
 
@@ -92,8 +101,8 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       0      /home/adcp/www/figures/ktprof_amp_lastens.png
        0      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
