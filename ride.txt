@@ -1,38 +1,79 @@
-2026/09/23 14:30:01
+2026/09/24 14:30:02
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
-Current cruise: SR26_test  *** not logging ***
-
- wh300 -- no data yet
- os150nb -- no data yet
- os38nb -- no data yet
-
-No position is available.
+Current cruise: SR26_test01     ** is logging **
 
 
+approximate lat, lon, depth:   37 47.46287 N  122 17.45094 W   depth=-1
+
+link: http://www.google.com/maps/place/37%2047.46287N+122%2017.45094W
+not using zmq publishers, position is from serial GPS
 
 
 
 
 
+
+
+---- heading correction ----
+
+no heading correction device specified===========================
+------ seapath_mgc statistics ------
+===========================
+seapath_mru-seapath_mgc statistics (comment=same sign as cal/rotate/*ang)
+
+ddrange: 265.8850525 to 266.6038546
+(2026/09/23 21:14:29 to 2026/09/24 14:29:33)
+all seapath_mgc messages:  (99%)  were good  [using available QC]
+
+(300sec) ensemble heading corrections:
+   206 out of 207   (100%) were good
+statistics of good data:
+   mean N = 598, stddev N =  27.6
+   min  = -0.10, max = 0.16
+   mean = 0.02, stddev = 0.05
+
+===========================
+------ hemisphere statistics ------
+===========================
+no good hemisphere data out of 0 (300sec) ensembles
+
+=== Sonar Pingtype Summary =====
+
+wh300: Triggering command not found
+wh300 BB:       off
+wh300 BT:      off
+
+os150: Triggering not used (CX0,0)
+os150 BB:       off
+os150 NB:       off
+os150 BT:      off
+
+os38: Triggering not used (CX0,0)
+os38 BB:       off
+os38 NB:       off
+os38 BT:      off
+
+===========================
 
 
 using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377  1040    +23us[  +18us] +/-  142us
-^+ sr-ntp-pool.ucsd.edu          1  10   377   193    +21us[  +21us] +/-  121us
+^* sr-ntp-pool.ucsd.edu          1  10   377   744    +31us[  +35us] +/-  142us
+^+ sr-seapath-mgc.ucsd.edu       1  10   377   718    +51us[  +51us] +/-  177us
 
-Reference ID: 647C6423, Stratum=2, last offset=-0.000006, RMS offset=0.000007
+Reference ID: 647C6423, Stratum=2, last offset=0.000004, RMS offset=0.000007
 ------------------------------------------
 
 
 
+------------- pings per ensemble ----------- 
 
 
 
 ---------- uptime ------------
- 14:30:02 up 23:06,  3 users,  load average: 0.02, 0.01, 0.00
+ 14:30:02 up 1 day, 23:06,  2 users,  load average: 0.14, 0.11, 0.14
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -49,9 +90,6 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      2 /home/adcp/log/web_speedlog.warn
 
 Figures and files:
 
