@@ -1,11 +1,11 @@
-2026/09/24 14:30:02
+2026/09/25 14:30:01
 currents05sr 6.8.0-51-generic (noble "Ubuntu 24.04.1 LTS")
 Current cruise: SR26_test01     ** is logging **
 
 
-approximate lat, lon, depth:   37 47.46287 N  122 17.45094 W   depth=-1
+approximate lat, lon, depth:   37 47.46286 N  122 17.45097 W   depth=-1
 
-link: http://www.google.com/maps/place/37%2047.46287N+122%2017.45094W
+link: http://www.google.com/maps/place/37%2047.46286N+122%2017.45097W
 not using zmq publishers, position is from serial GPS
 
 
@@ -21,16 +21,16 @@ no heading correction device specified===========================
 ===========================
 seapath_mru-seapath_mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 265.8850525 to 266.6038546
-(2026/09/23 21:14:29 to 2026/09/24 14:29:33)
+ddrange: 266.6038546 to 267.6038488
+(2026/09/24 14:29:33 to 2026/09/25 14:29:33)
 all seapath_mgc messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   206 out of 207   (100%) were good
+   282 out of 283   (100%) were good
 statistics of good data:
-   mean N = 598, stddev N =  27.6
-   min  = -0.10, max = 0.16
-   mean = 0.02, stddev = 0.05
+   mean N = 588, stddev N =  83.6
+   min  = -0.13, max = 141.49
+   mean = 2.68, stddev = 16.02
 
 ===========================
 ------ hemisphere statistics ------
@@ -60,10 +60,10 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* sr-ntp-pool.ucsd.edu          1  10   377   744    +31us[  +35us] +/-  142us
-^+ sr-seapath-mgc.ucsd.edu       1  10   377   718    +51us[  +51us] +/-  177us
+^* sr-seapath-mru.ucsd.edu       1  10   377   286  +1468ns[+2826ns] +/-  135us
+^+ sr-seapath-mgc.ucsd.edu       1  10   377   768  +5053ns[+6340ns] +/-  142us
 
-Reference ID: 647C6423, Stratum=2, last offset=0.000004, RMS offset=0.000007
+Reference ID: 647C6423, Stratum=2, last offset=0.000001, RMS offset=0.000009
 ------------------------------------------
 
 
@@ -73,7 +73,7 @@ Reference ID: 647C6423, Stratum=2, last offset=0.000004, RMS offset=0.000007
 
 
 ---------- uptime ------------
- 14:30:02 up 1 day, 23:06,  2 users,  load average: 0.14, 0.11, 0.14
+ 14:30:02 up 2 days, 23:06,  3 users,  load average: 0.12, 0.18, 0.23
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/ride/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/ride/daily_report/
@@ -90,6 +90,10 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      58 /home/adcp/log/hcorrstats_seapath_mgc.warn
+      8 /home/adcp/log/hcorrstats_seapath_mgc.warn.2026-09-24
 
 Figures and files:
 
