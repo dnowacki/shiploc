@@ -1,4 +1,4 @@
-2026/09/28 14:30:01
+2026/09/29 21:29:59
 currents02bh 6.17.0-22-generic (noble "Ubuntu 24.04.4 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.100.14                1   6   377   133   +115us[ +115us] +/-  274us
+^* 192.168.100.14                1  10   377  1012    +57us[  +56us] +/-  219us
 
-Reference ID: C0A8640E, Stratum=2, last offset=0.000000, RMS offset=0.000010
+Reference ID: C0A8640E, Stratum=2, last offset=-0.000001, RMS offset=0.000002
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: C0A8640E, Stratum=2, last offset=0.000000, RMS offset=0.000010
 
 
 ---------- uptime ------------
- 14:30:02 up 133 days,  2:56,  5 users,  load average: 0.02, 0.03, 0.00
+ 21:30:00 up 134 days,  9:56,  5 users,  load average: 0.10, 0.43, 0.34
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/
@@ -38,7 +38,15 @@ https://currents.soest.hawaii.edu/uhdas_fromships/blueheron/daily_report/posmv_q
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      368 /home/adcp/log/3dayplots_os150bb.warn
+      348 /home/adcp/log/3dayplots_os150nb.warn
+      1 /home/adcp/log/lastfewvec_os150bb.warn
+      1 /home/adcp/log/lastfewvec_os150nb.warn
 
 Figures and files:
 
@@ -49,16 +57,21 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-    5419      /home/adcp/www/figures/ktprof_amp_lastens.png
-    5419      /home/adcp/www/figures/os150bb_lastens.png
-    5419      /home/adcp/www/figures/os150nb_lastens.png
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/os150bb_lastens.png
+       0      /home/adcp/www/figures/os150nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-    5419      /home/adcp/www/figures/os150bb_ddaycont.png
-    5419      /home/adcp/www/figures/os150nb_ddaycont.png
+       0      /home/adcp/www/figures/os150bb_ddaycont.png
+       0      /home/adcp/www/figures/os150nb_ddaycont.png
 
+
+
+
+-------------------
+cruise ended
 
 
 local_status_mailto:
