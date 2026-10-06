@@ -1,13 +1,13 @@
-2026/10/05 01:30:00
+2026/10/06 01:03:00
 currents03km 5.15.0-25-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: km2612     ** is logging **
 
-  os38bb 2026/10/03  20:07:58 to 2026/10/05  01:27:59  (2 min. ago)
-  os38nb 2026/10/03  20:07:58 to 2026/10/05  01:27:59  (2 min. ago)
+  os38bb 2026/10/03  20:07:58 to 2026/10/06  00:58:01  (5 min. ago)
+  os38nb 2026/10/03  20:07:58 to 2026/10/06  00:58:01  (5 min. ago)
 
-approximate lat, lon, depth:   22 6.58855 N  158 27.78699 W   depth=4569
+approximate lat, lon, depth:   20 48.14021 N  155 59.36267 W   depth=258
 
-link: http://www.google.com/maps/place/22%206.58855N+158%2027.78699W
+link: http://www.google.com/maps/place/20%2048.14021N+155%2059.36267W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,16 +25,16 @@ NOTE: This is the _primary_ computer
 ===========================
 gyro-posmv statistics (comment=same sign as cal/rotate/*ang) (acc_heading_cutoff is 0.015)
 
-ddrange: 276.0543417 to 277.0543315
-(2026/10/04 01:18:15 to 2026/10/05 01:18:14)
+ddrange: 277.0335208 to 278.0335102
+(2026/10/05 00:48:16 to 2026/10/06 00:48:15)
 all posmv messages:  (99%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 601, stddev N =  0.6
-   min  = -1.07, max = 0.73
-   mean = -0.33, stddev = 0.33
+   min  = -0.77, max = 0.62
+   mean = -0.02, stddev = 0.30
 
 
 === Sonar Pingtype Summary =====
@@ -46,7 +46,7 @@ wh300 BT:      off
 os38: Triggering not used (CX0,0)
 os38 BB:  on
 os38 NB:  on
-os38 BT:  on
+os38 BT:      off
 
 ===========================
 
@@ -55,9 +55,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* kmroute.km                    3   7   377   122    +52us[  +63us] +/-   30ms
+^* kmroute.km                    3   7   377    81    +87us[  +94us] +/-   28ms
 
-Reference ID: 0A009601, Stratum=4, last offset=0.000012, RMS offset=0.000026
+Reference ID: 0A009601, Stratum=4, last offset=0.000007, RMS offset=0.000027
 ------------------------------------------
 
 
@@ -65,17 +65,17 @@ Reference ID: 0A009601, Stratum=4, last offset=0.000012, RMS offset=0.000026
 ------------- pings per ensemble ----------- 
 os38nb recent ping statistics
 
-(2026/10/05 01:23:02) ens = 300 sec, 34 pings, (8.82 sec/ping)
+(2026/10/06 00:53:01) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 os38bb recent ping statistics
 
-(2026/10/05 01:23:02) ens = 300 sec, 34 pings, (8.82 sec/ping)
+(2026/10/06 00:53:01) ens = 300 sec, 50 pings, (6.00 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 01:30:01 up 254 days,  4:17,  1 user,  load average: 0.38, 0.37, 0.34
+ 01:03:01 up 255 days,  3:50,  1 user,  load average: 0.51, 0.28, 0.29
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/kilomoana/daily_report/
@@ -93,8 +93,7 @@ ______________________
 
 (1) wordcount of log/*.warn:
 
-      1 /home/adcp/log/DAS_while_logging.warn
-      32 /home/adcp/log/DAS_while_logging.warn.2026-10-04
+      15 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
@@ -105,15 +104,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os38bb_lastens.png
-       1      /home/adcp/www/figures/os38nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       4      /home/adcp/www/figures/os38nb_lastens.png
+       4      /home/adcp/www/figures/ktprof_amp_lastens.png
+       4      /home/adcp/www/figures/os38bb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       2      /home/adcp/www/figures/os38bb_ddaycont.png
-       2      /home/adcp/www/figures/os38nb_ddaycont.png
+       5      /home/adcp/www/figures/os38bb_ddaycont.png
+       0      /home/adcp/www/figures/os38nb_ddaycont.png
 
 
 
