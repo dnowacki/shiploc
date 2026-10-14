@@ -1,13 +1,13 @@
-2026/10/12 14:15:01
+2026/10/13 14:15:02
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: RR2609     ** is logging **
 
-  os150nb 2026/10/10  16:13:35 to 2026/10/12  14:13:35  (1 min. ago)
-  os75nb 2026/10/10  16:13:36 to 2026/10/12  14:13:37  (1 min. ago)
+  os150nb 2026/10/10  16:13:35 to 2026/10/13  14:13:35  (1 min. ago)
+  os75nb 2026/10/10  16:13:36 to 2026/10/13  14:13:35  (1 min. ago)
 
-approximate lat, lon, depth:   35 39.62848 N  122 0.18690 W   depth=1200
+approximate lat, lon, depth:   35 37.79921 N  121 58.76185 W   depth=1091
 
-link: http://www.google.com/maps/place/35%2039.62848N+122%200.18690W
+link: http://www.google.com/maps/place/35%2037.79921N+121%2058.76185W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,32 +25,32 @@ NOTE: This is the _primary_ computer
 ===========================
 seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 283.5913270 to 284.5913154
-(2026/10/11 14:11:31 to 2026/10/12 14:11:30)
+ddrange: 284.5913154 to 285.5913038
+(2026/10/12 14:11:30 to 2026/10/13 14:11:29)
 all seapath380mgc messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.05, max = 0.05
-   mean = -0.00, stddev = 0.01
+   min  = -0.06, max = 0.06
+   mean = 0.00, stddev = 0.02
 
 ===========================
 ------ gyro statistics ------
 ===========================
 seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 283.5913501 to 284.5913385
-(2026/10/11 14:11:33 to 2026/10/12 14:11:32)
+ddrange: 284.5913385 to 285.5913270
+(2026/10/12 14:11:32 to 2026/10/13 14:11:31)
 all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
    287 out of 287   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = 0.21, max = 0.39
-   mean = 0.28, stddev = 0.03
+   min  = 0.14, max = 0.34
+   mean = 0.23, stddev = 0.04
 
 
 === Sonar Pingtype Summary =====
@@ -71,26 +71,26 @@ os75 BT:      off
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  rr-ntp-pool.ucs .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*rr-seapath-mgc. .PPS.            1 u  405 1024  377    0.170   +0.039   0.042
-+rr-ntp-pool.ucs .GPS.            1 u  302 1024  377    0.973   -0.393   0.399
-+rr-seapath-mru. .PPS.            1 u  529 1024  377    0.159   +0.023   0.046
+*rr-ntp-pool.ucs .PPS.            1 u   33 1024  377    0.155   +0.141   0.064
++rr-ptp01-das.uc .GPS.            1 u  887 1024  377    1.054   -0.317   0.129
++rr-seapath-mru. .PPS.            1 u  999 1024  377    0.153   +0.135   0.085
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2026/10/12 14:10:36) ens = 180 sec, 164 pings, (1.10 sec/ping)
+(2026/10/13 14:10:36) ens = 180 sec, 164 pings, (1.10 sec/ping)
 
 os75nb recent ping statistics
 
-(2026/10/12 14:10:35) ens = 180 sec, 79 pings, (2.28 sec/ping)
+(2026/10/13 14:10:36) ens = 180 sec, 80 pings, (2.25 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 3 days, 18:48,  1 user,  load average: 0.09, 0.25, 0.26
+ 14:15:03 up 4 days, 18:48,  1 user,  load average: 0.27, 0.32, 0.26
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -107,15 +107,12 @@ ______________________
 
 (1) EDAC memory warnings:
      3 EDAC (memory) errors in last 2 /var/log/syslog
-(2) wordcount of log/*.warn:
-
-      18 /home/adcp/log/3dayplots_os75nb.warn
-(3) rbin warnings:
+(2) rbin warnings:
  
-gp170fwd gps  87311    1.00    0.00       2.1       5   102     3     0     0
-gp170fwd gps  87311    1.00    0.00       2.1       5   102     3     0     0
-gyro hdg  87115    1.00    0.00       5.0       1     4     4     0     0
-gyro hdg  87115    1.00    0.00       5.0       1     4     4     0     0
+gp170fwd gps  87313    1.00    0.00       2.1       6   185     2     0     0
+gp170fwd gps  87313    1.00    0.00       2.1       6   185     2     0     0
+gyro hdg  87116    1.00    0.01       4.1       1     3     3     0     0
+gyro hdg  87116    1.00    0.01       4.1       1     3     3     0     0
 
 Figures and files:
 
