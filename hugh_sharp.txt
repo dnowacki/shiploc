@@ -1,5 +1,5 @@
-2026/10/22 14:30:01
-currents01hs 6.5.0-25-generic (jammy "Ubuntu 22.04.3 LTS")
+2026/10/23 23:12:59
+currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
 NOTE: This is the _spare_ computer
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* 192.168.20.245                1  10   377   490    +28us[-4280ns] +/- 1178us
+^* Spectracom.localdomain        1   8   377    48    +85us[  +89us] +/- 1278us
 
-Reference ID: C0A814F5, Stratum=2, last offset=-0.000032, RMS offset=0.000021
+Reference ID: C0A814F5, Stratum=2, last offset=0.000004, RMS offset=0.000008
 ------------------------------------------
 
 
@@ -25,10 +25,10 @@ Reference ID: C0A814F5, Stratum=2, last offset=-0.000032, RMS offset=0.000021
 
 
 ---------- uptime ------------
- 14:30:02 up 3 days,  1:09,  1 user,  load average: 0.00, 0.00, 0.00
+ 23:13:00 up 19 days,  9:09,  2 users,  load average: 0.21, 0.15, 0.14
 ===============================
-figures:  http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
-daily report: http://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
+figures:  https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
+daily report: https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
 
 posmv quality plot:
 https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_qc.png
@@ -41,8 +41,19 @@ https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/posmv_
 Summary of warnings:
 ______________________
 
-(1) EDAC memory warnings:
-     2 EDAC (memory) errors in last 2 /var/log/syslog
+(1) wordcount of log/*.warn:
+
+      156 /home/adcp/log/3dayplots_wh300.warn
+      922 /home/adcp/log/3dayplots_wh600.warn
+      1 /home/adcp/log/DAS_while_cruise.warn
+      1140 /home/adcp/log/DAS_while_logging.warn
+      174 /home/adcp/log/grab_pings_wh600.warn
+      87 /home/adcp/log/lastensq_wh300.warn
+      4210 /home/adcp/log/lastensq_wh600.warn
+      30 /home/adcp/log/lastfewvec_wh300.warn
+      1685 /home/adcp/log/lastfewvec_wh600.warn
+      66 /home/adcp/log/quick_wh300.warn
+      4053 /home/adcp/log/quick_wh600.warn
 
 Figures and files:
 
@@ -53,11 +64,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
+
+
+
+-------------------
+cruise ended
 
 
 local_status_mailto:
