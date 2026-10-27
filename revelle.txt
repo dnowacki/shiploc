@@ -1,13 +1,13 @@
-2026/10/25 14:15:02
+2026/10/26 14:15:01
 rr-currents 5.15.0-92-generic (jammy "Ubuntu 22.04.4 LTS")
 Current cruise: RR2610     ** is logging **
 
-  os150nb 2026/10/23  18:03:34 to 2026/10/25  14:13:56  (1 min. ago)
-  os75nb 2026/10/23  18:03:35 to 2026/10/25  14:13:56  (1 min. ago)
+  os150nb 2026/10/23  18:03:34 to 2026/10/26  14:12:09  (3 min. ago)
+  os75nb 2026/10/23  18:03:35 to 2026/10/26  14:12:11  (3 min. ago)
 
-approximate lat, lon, depth:   36 8.01411 N  122 30.60203 W   depth=2690
+approximate lat, lon, depth:   35 38.51837 N  122 1.79983 W   depth=1302
 
-link: http://www.google.com/maps/place/36%208.01411N+122%2030.60203W
+link: http://www.google.com/maps/place/35%2038.51837N+122%201.79983W
 not using zmq publishers, position is from serial GPS
 
 Database time ranges:
@@ -25,15 +25,15 @@ NOTE: This is the _primary_ computer
 ===========================
 seapath380-seapath380mgc statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 296.5873802 to 297.5873686
-(2026/10/24 14:05:50 to 2026/10/25 14:05:49)
+ddrange: 297.5859797 to 298.5859682
+(2026/10/25 14:03:49 to 2026/10/26 14:03:48)
 all seapath380mgc messages:  (100%)  were good  [using available QC]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   228 out of 228   (100%) were good
 statistics of good data:
    mean N = 301, stddev N =  0.2
-   min  = -0.05, max = 0.06
+   min  = -0.07, max = 0.07
    mean = 0.00, stddev = 0.02
 
 ===========================
@@ -41,16 +41,16 @@ statistics of good data:
 ===========================
 seapath380-gyro statistics (comment=same sign as cal/rotate/*ang)
 
-ddrange: 296.5874034 to 297.5873918
-(2026/10/24 14:05:52 to 2026/10/25 14:05:51)
+ddrange: 297.5860029 to 298.5859913
+(2026/10/25 14:03:51 to 2026/10/26 14:03:50)
 all gyro messages:  (100%)  were good  [QC does not exist for this instrument]
 
 (300sec) ensemble heading corrections:
-   287 out of 287   (100%) were good
+   228 out of 228   (100%) were good
 statistics of good data:
-   mean N = 301, stddev N =  2.7
-   min  = 0.06, max = 0.22
-   mean = 0.14, stddev = 0.02
+   mean N = 301, stddev N =  0.2
+   min  = -0.07, max = 0.32
+   mean = 0.15, stddev = 0.07
 
 
 === Sonar Pingtype Summary =====
@@ -71,26 +71,26 @@ os75 BT:      off
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
  rr-ntp-pool.ucs .POOL.          16 p    -   64    0    0.000   +0.000   0.000
-*rr-seapath-mgc. .PPS.            1 u  545 1024  377    0.165   +0.134   0.028
-+rr-ptp01-das.uc .GPS.            1 u  627 1024  377    0.937   -0.280   0.190
-+rr-seapath-mru. .PPS.            1 u  215 1024  377    0.155   +0.124   0.016
++rr-ntp-pool.ucs .PPS.            1 u  670 1024  377    0.159   +0.120   0.028
++rr-ptp01-das.uc .GPS.            1 u  449 1024  377    1.109   -0.378   0.037
+*rr-seapath-mru. .PPS.            1 u   73 1024  377    0.157   +0.115   0.037
 ------------------------------------------
 
 
 ------------- pings per ensemble ----------- 
 os150nb recent ping statistics
 
-(2026/10/25 14:10:55) ens = 180 sec, 163 pings, (1.10 sec/ping)
+(2026/10/26 14:09:10) ens = 180 sec, 164 pings, (1.10 sec/ping)
 
 os75nb recent ping statistics
 
-(2026/10/25 14:10:57) ens = 180 sec, 80 pings, (2.25 sec/ping)
+(2026/10/26 14:09:10) ens = 180 sec, 79 pings, (2.28 sec/ping)
 
 
 
 
 ---------- uptime ------------
- 14:15:03 up 1 day, 23:47,  1 user,  load average: 0.16, 0.22, 0.24
+ 14:15:03 up 2 days, 23:47,  1 user,  load average: 0.22, 0.20, 0.22
 ===============================
 figures:  http://currents.soest.hawaii.edu/uhdas_fromships/revelle/figs/
 daily report: http://currents.soest.hawaii.edu/uhdas_fromships/revelle/daily_report/
@@ -107,12 +107,17 @@ ______________________
 
 (1) EDAC memory warnings:
      2 EDAC (memory) errors in last 2 /var/log/syslog
-(2) rbin warnings:
+(2) wordcount of log/*.warn:
+
+      4 /home/adcp/log/DAS_while_logging.warn
+      2 /home/adcp/log/lastfewvec_os150nb.warn
+      2 /home/adcp/log/lastfewvec_os75nb.warn
+(3) rbin warnings:
  
-gp170fwd gps  87300    1.00    0.00      11.2       9   256     4     0     0
-gp170fwd gps  87300    1.00    0.00      11.2       9   256     4     0     0
-gyro hdg  87072    1.00    0.01      44.9       2     4     3     0     0
-gyro hdg  87072    1.00    0.01      44.9       2     4     3     0     0
+gp170fwd gps  69785    1.00    0.00   10393.9       7   108     2     0     0
+gp170fwd gps  69785    1.00    0.00   10393.9       7   108     2     0     0
+gyro hdg  69628    1.00    0.00   10394.7       3     4     3     0     0
+gyro hdg  69628    1.00    0.00   10394.7       3     4     3     0     0
 
 Figures and files:
 
@@ -123,15 +128,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-       1      /home/adcp/www/figures/os150nb_lastens.png
-       1      /home/adcp/www/figures/os75nb_lastens.png
-       1      /home/adcp/www/figures/ktprof_amp_lastens.png
+       2      /home/adcp/www/figures/os150nb_lastens.png
+       2      /home/adcp/www/figures/os75nb_lastens.png
+       2      /home/adcp/www/figures/ktprof_amp_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-       5      /home/adcp/www/figures/os150nb_ddaycont.png
-       5      /home/adcp/www/figures/os75nb_ddaycont.png
+       1      /home/adcp/www/figures/os150nb_ddaycont.png
+       1      /home/adcp/www/figures/os75nb_ddaycont.png
 
 
 
