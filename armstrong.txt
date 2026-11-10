@@ -1,7 +1,15 @@
-2026/11/08 14:30:01
-arcurrents05 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
-no cruise set
-zmq is not enabled. no zmq position.
+2026/11/09 14:30:01
+arcurrents04 6.2.0-34-generic (jammy "Ubuntu 22.04.4 LTS")
+Current cruise: ar105-01_part2  *** not logging ***
+
+  wh300  2026/11/07  05:41:01 to 2026/11/09  13:37:11  (52 min. ago)
+  os38nb 2026/11/07  05:44:00 to 2026/11/09  13:38:13  (51 min. ago)
+
+approximate lat, lon, depth:   46 47.92505 N   92 1.88905 W   depth=-159
+
+link: http://www.google.com/maps/place/46%2047.92505N+92%201.88905W
+not using zmq publishers, position is from serial GPS
+
 
 
 
@@ -14,9 +22,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* time.armstrong.whoi.edu       1   6   377    49  +6578ns[+7843ns] +/-   64us
+^* time.armstrong.whoi.edu       1   6   377    23    +13us[  +13us] +/-   62us
 
-Reference ID: 0A00A11E, Stratum=2, last offset=0.000001, RMS offset=0.000003
+Reference ID: 0A00A11E, Stratum=2, last offset=-0.000000, RMS offset=0.000004
 ------------------------------------------
 
 
@@ -25,7 +33,7 @@ Reference ID: 0A00A11E, Stratum=2, last offset=0.000001, RMS offset=0.000003
 
 
 ---------- uptime ------------
- 14:30:01 up 24 days, 22:29,  1 user,  load average: 0.06, 0.05, 0.01
+ 14:30:02 up 183 days,  9:41,  1 user,  load average: 0.00, 0.00, 0.00
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_report/
@@ -37,7 +45,16 @@ daily report: https://currents.soest.hawaii.edu/uhdas_fromships/armstrong/daily_
 
 
 
+Summary of warnings:
+______________________
 
+(1) wordcount of log/*.warn:
+
+      492 /home/adcp/log/3dayplots_os38nb.warn
+      645 /home/adcp/log/3dayplots_os38nb.warn.2026-11-08
+      492 /home/adcp/log/3dayplots_wh300.warn
+      645 /home/adcp/log/3dayplots_wh300.warn.2026-11-08
+      1 /home/adcp/log/DAS_while_logging.warn
 
 Figures and files:
 
@@ -48,15 +65,15 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
-  616111      /home/adcp/www/figures/wh300_lastens.png
-  616111      /home/adcp/www/figures/ktprof_amp_lastens.png
-  616111      /home/adcp/www/figures/os150nb_lastens.png
+      51      /home/adcp/www/figures/ktprof_amp_lastens.png
+      51      /home/adcp/www/figures/wh300_lastens.png
+      51      /home/adcp/www/figures/os38nb_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
-  616111      /home/adcp/www/figures/os150nb_ddaycont.png
-  616111      /home/adcp/www/figures/wh300_ddaycont.png
+      51      /home/adcp/www/figures/os38nb_ddaycont.png
+      51      /home/adcp/www/figures/wh300_ddaycont.png
 
 
 
