@@ -1,4 +1,4 @@
-2026/11/09 14:30:01
+2026/11/10 19:12:28
 currents02hs 6.2.0-26-generic (jammy "Ubuntu 22.04.3 LTS")
 no cruise set
 zmq is not enabled. no zmq position.
@@ -14,9 +14,9 @@ using chrony
 ---------- chronyc tracking ------------
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^* Spectracom.localdomain        1   7   377    76    +17us[  +21us] +/- 1275us
+^* Spectracom.localdomain        1  10   377   299  +9486ns[  -44us] +/- 1184us
 
-Reference ID: C0A814F5, Stratum=2, last offset=0.000004, RMS offset=0.000014
+Reference ID: C0A814F5, Stratum=2, last offset=-0.000053, RMS offset=0.000046
 ------------------------------------------
 
 
@@ -25,7 +25,7 @@ Reference ID: C0A814F5, Stratum=2, last offset=0.000004, RMS offset=0.000014
 
 
 ---------- uptime ------------
- 14:30:02 up 16 days, 14:26,  1 user,  load average: 0.00, 0.00, 0.00
+ 19:12:29 up 17 days, 19:08,  1 user,  load average: 0.44, 0.23, 0.14
 ===============================
 figures:  https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/figs/
 daily report: https://currents.soest.hawaii.edu/uhdas_fromships/hugh_sharp/daily_report/
@@ -43,6 +43,11 @@ ______________________
 
 (1) EDAC memory warnings:
      6 EDAC (memory) errors in last 2 /var/log/syslog
+(2) wordcount of log/*.warn:
+
+      885 /home/adcp/log/3dayplots_wh300.warn
+      1 /home/adcp/log/lastfewvec_wh300.warn
+      106 /home/adcp/log/quick_wh300.warn
 
 Figures and files:
 
@@ -53,11 +58,19 @@ Gyro logging and backup:
 
 Checking updating of 5-minute plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/ktprof_amp_lastens.png
+       0      /home/adcp/www/figures/wh300_lastens.png
 
 
 Checking updating of hourly plots:
 age (minutes)          filename
+       0      /home/adcp/www/figures/wh300_ddaycont.png
 
+
+
+
+-------------------
+cruise ended
 
 
 local_status_mailto:
